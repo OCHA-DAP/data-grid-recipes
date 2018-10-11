@@ -1,5 +1,5 @@
 ---
-# This YAML file contains sasmple configuration information for the default data grid.  
+# This YAML file contains sample configuration information for the default data grid.  
 # NOTE:  this version is not complete.  It has only 3 categories and is intended as a starting point for discussion/development.
 
 inherits_from: #for v2. name of another recipe which this one will partially overwrite
