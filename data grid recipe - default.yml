@@ -1,5 +1,5 @@
 ---
-# This YAML file contains sasmple configuration information for the default data grid.  
+# This YAML file contains sample configuration information for the default data grid.  
 # NOTE:  this version is not complete.  It has only 3 categories and is intended as a starting point for discussion/development.
 
 inherits_from: #for v2. name of another recipe which this one will partially overwrite
@@ -47,7 +47,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           exclude:
   - name: socio-economic
     title: Population and Socio-economic Indicators
-    description: Data regarding baseline population numbers and key indicators relating to social and economic factors - test
+    description: Data regarding baseline population numbers and key indicators relating to social and economic factors - TEST
     data_series:
       - name: population
         title: Population
