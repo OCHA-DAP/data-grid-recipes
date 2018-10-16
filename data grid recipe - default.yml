@@ -47,7 +47,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           exclude:
   - name: socio-economic
     title: Population and Socio-economic Indicators
-    description: Data regarding baseline population numbers and key indicators relating to social and economic factors - TEST
+    description: Data regarding baseline population numbers and key indicators relating to social and economic factors - test
     data_series:
       - name: population
         title: Population
