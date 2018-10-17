@@ -21,8 +21,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - 
           exclude: #a list of queries (OR between each list item) that remove datasets from the data series
             -
-        metadata_overrides: #for v2.  a list of settings at the dataset level which forces the dataset to be included and controls how it is displayed in data grid.  This is where information coming from "manual curation" is stored (unless we decide to build it as a db).
-          - dataset_id:  #id of dataset to include and override
-            display_state:  #a string that determines how the dataset will be displayed in datagrid.  Might split this into several states like "query match state", "freshness state", "definition state", "geo extent state"
-            comments: # a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
-            
+        metadata_overrides:
+          - dataset_name:  #the ckan package name
+            display_state:  #values can be {{solid}} or {{hashed}}
+            comments: #a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
