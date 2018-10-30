@@ -41,7 +41,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
         metadata_overrides:
           - dataset_name: hotosm_yem_roads
             display_state:  complete
-            comment: This is a test
+            comments: This is a test
       - name: aerodromes
         title: Aerodromes
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
