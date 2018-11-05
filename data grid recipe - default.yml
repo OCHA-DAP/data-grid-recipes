@@ -101,31 +101,31 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"severe acute malnutrition" AND subnational:1)
             - (tags:sam AND subnational:1)
           exclude:
-    - name: education
-      title: Education
-      description: Data describing education facilities and key education indicators
-      data_series:
-        - name: education_facilities
-          title: Education Facilities
-          description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
-          rules:
-            include:
-              - (tags:"education facilities" AND subnational:1)
-              - (tags:schools AND subnational:1)
-            exclude:
-    - name: food_security_and_nutrition
-      title: Food Security and Nutrition
-      description: Data about a population's access to food and key nutrition indicators
-      data_series:
-        - name: food_insecurity
-          title: Food Insecurity
-          description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
-          rules:
-            include:
-              - (tags:"integrated phase classification - ipc" AND subnational:1)
-              - (tags:"ipc" AND subnational:1)
-              - (tags:"food security" AND subnational:1)
-            exclude:
+  - name: education
+    title: Education
+    description: Data describing education facilities and key education indicators
+    data_series:
+      - name: education_facilities
+        title: Education Facilities
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
+        rules:
+          include:
+            - (tags:"education facilities" AND subnational:1)
+            - (tags:schools AND subnational:1)
+          exclude:
+  - name: food_security_and_nutrition
+    title: Food Security and Nutrition
+    description: Data about a population's access to food and key nutrition indicators
+    data_series:
+      - name: food_insecurity
+        title: Food Insecurity
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
+        rules:
+          include:
+            - (tags:"integrated phase classification - ipc" AND subnational:1)
+            - (tags:ipc AND subnational:1)
+            - (tags:"food security" AND subnational:1)
+          exclude:
 
 
 
