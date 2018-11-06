@@ -54,7 +54,9 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
         description: Total population aggregated by administrative division
         rules:
           include:
-            - (tags:"demographics" AND tags:"population" AND subnational:1)
+            - (tags:"population" AND subnational:1)
+            - (tags:"population statistics" AND subnational:1)
+            - (tags:"demographics" AND subnational:1)
           exclude:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
       - name: population-sadd
