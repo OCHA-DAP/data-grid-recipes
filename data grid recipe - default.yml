@@ -226,6 +226,10 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
+        rules:
+          include:
+            - (tags:missing persons AND subnational:1)
+          exclude:
 
 
 
