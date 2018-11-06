@@ -56,7 +56,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           include:
             - (tags:"demographics" AND tags:"population" AND subnational:1)
           exclude:
-            - (organization:"worldpop")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
       - name: population-sadd
         title: Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
