@@ -26,8 +26,8 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           - dataset_id:  #id of dataset to include and override
             display_state:  #a string that determines how the dataset will be displayed in datagrid.  Might split this into several states like "query match state", "freshness state", "definition state", "geo extent state"
             comments: # a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
-  - name: physical_infrastructure 
-    title: Physical Infrastructure
+  - name: physical_infrastructure_and_geography
+    title: Physical Infrastructure and Geography
     description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
     data_series:
       - name:  roads
@@ -146,7 +146,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           exclude:
       - name: refugees_poc
         title: Refugees and Persons of Concern
-        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
+        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
             - (tags:"refugees" AND subnational:1)
@@ -171,6 +171,62 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
-            
+  - name: humanitarian_coordination
+    title: Humanitarian Coordination
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis
+    data_series:
+      - name: 3w
+        title: 3w - Who is doing what where
+        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division
+        rules:
+          include:
+            - (tags:3w AND subnational:1)
+          exclude:
+      - name: affected_areas
+        title: Affected Areas
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
+        rules:
+          include:
+            - (tags:"affected area" AND subnational:1)
+            - (tags:"affected areas" AND subnational:1)
+          exclude:
+            - (tags:"damage assessment")
+      - name: damaged_buildings
+        title: Damaged and Destroyed Buildings
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
+        rules:
+          include:
+            - (tags:"damaged buildings" AND subnational:1)
+            - (tags:"damage assessment" AND subnational:1)
+          exclude:
+      - name: humanitarian_access
+        title: Humanitarian Access
+        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
+        rules:
+          include:
+            - (tags:"humanitarian access" AND subnational:1)
+            - (tags:"obstacles" AND subnational:1)
+          exclude:
+      - name: transportation_status
+        title: Transportation Status
+        description: Vector or tabular data representing local transportation routes with an indication of status or practicability
+        rules:
+          include:
+            - (tags:"obstacles" AND subnational:1)
+            - (tags:"transportation status" AND subnational:1)
+      - name: casualties
+        title: Casualties
+        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
+        rules:
+          include:
+            - (tags:casualties AND subnational:1)
+            - (tags:fatalities AND subnational:1)
+            - (tags:deaths AND subnational:1)
+          exclulde:
+      - name: missing_persons
+        title: Missing Persons
+        description: Current number of people missing, disaggregated by location.
+
+
 
 
