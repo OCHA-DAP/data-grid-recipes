@@ -126,8 +126,24 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
-
-
+  - name: humanitarian_profile
+    title: Humanitarian Profile
+    description: Data about the number of people affected by a crisis.
+    data_series:
+      - name: idp
+        title: Internally-Displaced Persons
+        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
+        rules:
+          include:
+            - (tags:"internally displaced persons - idp" AND subnational:1)
+            - (tags:idp AND subnational:1)
+            - (tags:idps AND subnational:1)
+            - (tags:"internally displaced" AND subnational:1)
+            - (tags:"internally displaced people" AND subnational:1)
+            - (tags:"internally displaced persons" AND subnational:1)
+          exclude:
+      - name: refugees_poc
+        title: Refugees and Persons of Concern
 
 
 
