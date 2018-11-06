@@ -58,7 +58,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
-            - (organization:"worldpop" AND title:" - Population")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
       - name: population-sadd
         title: Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
@@ -146,6 +146,31 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           exclude:
       - name: refugees_poc
         title: Refugees and Persons of Concern
-
+        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
+        rules:
+          include:
+            - (tags:"refugees" AND subnational:1)
+            - (tags:"refugee" AND subnational:1)
+            - (tags:"persons of concern" AND subnational:1)
+            - (tags:"poc" AND subnational:1)
+          exclude:
+      - name: returnees
+        title: Returnees
+        description: Tabular data of the number of displaced people who have returned. 
+        rules:
+          include:
+            - (tags:"returnees" AND subnational:1)
+            - (tags:"returned refugees" AND subnational:1)
+          exclude:
+      - name: humanitarian_profile_locations
+        title: Humanitarian Profile Locations
+        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
+        rules: 
+          include:
+            - (tags:"affected persons location" AND subnational:1)
+            - (tags:"affected persons locations" AND subnational:1)
+            - (tags:"camps" AND subnational:1)
+          exclulde:
+            
 
 
