@@ -46,7 +46,7 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
       - name: aerodromes
-        title: Aerodromes
+        title: Airports and HLZs
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
