@@ -21,6 +21,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           include: #a list of queries (OR between each list item) that create a list of datasets to include in the data series.  
           #NOTE: the location query is not included here, but should be included with ALL of the "include" list items. 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
+              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
           exclude: # There are no exclude rules in this data series.
         metadata_overrides: #for v2.  a list of settings at the dataset level which forces the dataset to be included and controls how it is displayed in data grid.  This is where information coming from "manual curation" is stored (unless we decide to build it as a db).
           - dataset_id:  #id of dataset to include and override
