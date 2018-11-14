@@ -50,7 +50,7 @@ categories:
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
-            - ((helicopter landing zone - hlz OR airports) AND subnational:1)
+            - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
           exclude:
   - name: socio-economic
     title: Population and Socio-economic Indicators
