@@ -11,11 +11,11 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
   - name: administration #a short unique name for the category
     title: Administration #the text that appears at the top of each grouping in the data grid
     type: #for v2. we may want to distinguish between 'preparedness' and 'crisis' at the category level
-    description: Data relating to the administration of a location, most importantly, the administrative units (regions, distrcits, counties, etc.). #text that appears on hover of the title
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, distrcits, counties, etc.). #text that appears on hover of the title
     data_series: #list of the actual indicators or data series into which the datasets are categorized, like 'food prices'
       - name:  administrative_divisions #a short unique name for the data series
         title: Administrative Divisions #the text that appears in the interface to at the top of each data series list of datasets
-        description:  Data describing the administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "ready", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the <a href="https://en.wikipedia.org/wiki/Common_Operational_Datasets" target="_blank">Common Operational Dataset</a>.  Other, non-endorsed datasets for administrative divisions may also be available on HDX. More information on the status of a location's Common Operaational Datasets may be found <a href="https://data.humdata.org/cod" target="_blank">here</a>.  #the definition of the data series. 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
         type: #for v2. we may want to distinguish between 'preparedness' and 'crisis' at the data series level
         rules:  #the set of 'include' and 'exclude' rules that determine what datasets appear in the data series
           include: #a list of queries (OR between each list item) that create a list of datasets to include in the data series.  
@@ -26,6 +26,13 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           - dataset_id:  #id of dataset to include and override
             display_state:  #a string that determines how the dataset will be displayed in datagrid.  Might split this into several states like "query match state", "freshness state", "definition state", "geo extent state"
             comments: # a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
+      - name: populated_places
+        title: Populated Places
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        rules:
+          include:
+            - (tags:"populated places" AND subnational:1)
+          exclude:
   - name: physical_infrastructure_and_geography
     title: Physical Infrastructure and Geography
     description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
