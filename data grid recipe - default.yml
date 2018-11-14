@@ -32,6 +32,10 @@ categories:
           include:
             - (tags:"populated places" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
   - name: physical_infrastructure_and_geography
     title: Physical Infrastructure and Geography
     description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
@@ -44,6 +48,10 @@ categories:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
+        metadata_overrides:
+        - dataset_id: 
+          display_state: 
+          comments: 
       - name: aerodromes
         title: Airports and HLZs
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
@@ -51,6 +59,10 @@ categories:
           include: 
             - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
           exclude:
+        metadata_overrides:
+        - dataset_id: 
+          display_state: 
+          comments: 
   - name: socio-economic
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
@@ -65,6 +77,10 @@ categories:
             - (tags:"demographics" AND subnational:1)
           exclude:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+        metadata_overrides:
+        - dataset_id: 
+          display_state: 
+          comments: 
       - name: population-sadd
         title: Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
@@ -72,6 +88,10 @@ categories:
           include:
             - (tags:"demographics" AND tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number
@@ -79,6 +99,10 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
   - name: health
     title: Health
     description: Data describing health facilities and key health indicators
@@ -91,6 +115,10 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
@@ -100,6 +128,10 @@ categories:
             - (tags:"global acute malnutrition" AND subnational:1)
             - (tags:gam AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
@@ -150,6 +182,10 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: refugees_poc
         title: Refugees and Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
@@ -160,6 +196,10 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned. 
@@ -168,6 +208,10 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
@@ -177,6 +221,10 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
   - name: humanitarian_coordination
     title: Humanitarian Coordination
     description: Core data relating to the coordination of humanitarian activities in a country or crisis
@@ -188,6 +236,10 @@ categories:
           include:
             - (tags:3w AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
@@ -197,6 +249,10 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
         description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
@@ -205,6 +261,10 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
@@ -213,6 +273,10 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or practicability
@@ -220,6 +284,11 @@ categories:
           include:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
@@ -229,6 +298,10 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclulde:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -236,3 +309,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments: 

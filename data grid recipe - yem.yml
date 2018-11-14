@@ -45,6 +45,10 @@ categories:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_id: f3f3cc68-1a28-4b96-a113-60eebe0ca9ef
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive for all areas.  Dataset does not always contain information about practicability of a road.
       - name: aerodromes
         title: Airports and HLZs
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
