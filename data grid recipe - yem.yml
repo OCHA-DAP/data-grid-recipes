@@ -8,11 +8,12 @@ title:  Global Default Essential Data
 type:  
 description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
 categories: 
-  - name: administration 
-    title: Administration 
+  - name: administration
+    title: Administration
     type: 
     description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, distrcits, counties, etc.). 
     data_series: 
+#ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
         title: Administrative Divisions 
         description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
