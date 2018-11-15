@@ -27,6 +27,7 @@ categories:
           - dataset_id: 6b2656e2-b915-4671-bfed-468d5edcd80a
             display_state: incomplete
             comments: Dataset has not been endorsed as a COD
+#POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
@@ -38,6 +39,7 @@ categories:
     title: Physical Infrastructure and Geography
     description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
     data_series:
+#ROADS
       - name:  roads
         title: Roads
         description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
@@ -50,8 +52,9 @@ categories:
           - dataset_id: f3f3cc68-1a28-4b96-a113-60eebe0ca9ef
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+#AERODROMES
       - name: aerodromes
-        title: Airports and HLZs
+        title: Airports and HLZ
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
@@ -66,6 +69,7 @@ categories:
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
     data_series:
+#POPULATION
       - name: population
         title: Population
         description: Total population aggregated by administrative division
@@ -83,13 +87,25 @@ categories:
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (id:b36e7bc3-461f-4ec4-9297-1210f84e91e5) #only needed on feature, dataset removed from prod
+        metadata_overrides:
+          - dataset_id: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
+            display_state: incomplete
+            comments: The dataset is only available in a geographic format, and tabular data is preferred for this subcategory. 
+#POPULATION-SADD
       - name: population-sadd
         title: Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
         rules:
           include:
             - (tags:"demographics" AND tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (id:90d299f0-da43-453b-b435-941df85da189) #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
           exclude:
+        metadata_overrides:
+          - dataset_id:90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
+            display_state: incomplete
+            comments: Dataset is not disaggregated to the most commonly used level (adm2) for this location. Dataset contains data about sex disaggregation but does not include the expected data about age disaggregation.
+#POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number
@@ -101,6 +117,7 @@ categories:
     title: Health
     description: Data describing health facilities and key health indicators
     data_series:
+#HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.)
@@ -108,24 +125,6 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-          exclude:
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"global acute malnutrition - gam" AND subnational:1)
-            - (tags:"global acute malnutrition" AND subnational:1)
-            - (tags:gam AND subnational:1)
-          exclude:
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"severe acute malnutrition - sam" AND subnational:1)
-            - (tags:"severe acute malnutrition" AND subnational:1)
-            - (tags:sam AND subnational:1)
           exclude:
   - name: education
     title: Education
@@ -151,6 +150,24 @@ categories:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
+          exclude:
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
+        rules:
+          include:
+            - (tags:"global acute malnutrition - gam" AND subnational:1)
+            - (tags:"global acute malnutrition" AND subnational:1)
+            - (tags:gam AND subnational:1)
+          exclude:
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
+        rules:
+          include:
+            - (tags:"severe acute malnutrition - sam" AND subnational:1)
+            - (tags:"severe acute malnutrition" AND subnational:1)
+            - (tags:sam AND subnational:1)
           exclude:
   - name: humanitarian_profile
     title: Humanitarian Profile

@@ -55,8 +55,9 @@ categories:
         - dataset_id: 
           display_state: 
           comments: 
+#AERODROMES
       - name: aerodromes
-        title: Airports and HLZs
+        title: Airports and HLZ
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
@@ -70,6 +71,7 @@ categories:
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
     data_series:
+#POPULATION
       - name: population
         title: Population
         description: Total population aggregated by administrative division
@@ -91,6 +93,7 @@ categories:
         - dataset_id: 
           display_state: 
           comments: 
+#POPULATION-SADD
       - name: population-sadd
         title: Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
@@ -102,6 +105,7 @@ categories:
           - dataset_id: 
             display_state: 
             comments: 
+#POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number
@@ -117,6 +121,7 @@ categories:
     title: Health
     description: Data describing health facilities and key health indicators
     data_series:
+#HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.)
@@ -129,28 +134,6 @@ categories:
           - dataset_id: 
             display_state: 
             comments: 
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"global acute malnutrition - gam" AND subnational:1)
-            - (tags:"global acute malnutrition" AND subnational:1)
-            - (tags:gam AND subnational:1)
-          exclude:
-        metadata_overrides:
-          - dataset_id: 
-            display_state: 
-            comments: 
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"severe acute malnutrition - sam" AND subnational:1)
-            - (tags:"severe acute malnutrition" AND subnational:1)
-            - (tags:sam AND subnational:1)
-          exclude:
   - name: education
     title: Education
     description: Data describing education facilities and key education indicators
@@ -175,6 +158,30 @@ categories:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
+          exclude:
+#GAM
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
+        rules:
+          include:
+            - (tags:"global acute malnutrition - gam" AND subnational:1)
+            - (tags:"global acute malnutrition" AND subnational:1)
+            - (tags:gam AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_id: 
+            display_state: 
+            comments:
+#SAM 
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
+        rules:
+          include:
+            - (tags:"severe acute malnutrition - sam" AND subnational:1)
+            - (tags:"severe acute malnutrition" AND subnational:1)
+            - (tags:sam AND subnational:1)
           exclude:
   - name: humanitarian_profile
     title: Humanitarian Profile
