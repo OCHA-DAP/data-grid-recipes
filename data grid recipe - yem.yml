@@ -53,16 +53,15 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AERODROMES
-      - name: aerodromes
-        title: Airports and HLZ
-        description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
+      - name: airports
+        title: Airport
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
             - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
-            - (id:5215eb04-a8f5-4eda-9b12-787edc96f35e)
           exclude:
         metadata_overrides:
-          - dataset_id: 5215eb04-a8f5-4eda-9b12-787edc96f35e
+          - dataset_id: 5215eb04-a8f5-4eda-9b12-787edc96f35e #ourairports
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive. Dataset contains information about airports, but does not include information about helicopter landing zones.
   - name: socio-economic
@@ -153,6 +152,7 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+#GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
@@ -162,6 +162,7 @@ categories:
             - (tags:"global acute malnutrition" AND subnational:1)
             - (tags:gam AND subnational:1)
           exclude:
+#SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
@@ -175,6 +176,7 @@ categories:
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
+#IDP
       - name: idp
         title: Internally-Displaced Persons
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
@@ -187,6 +189,7 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+#REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
@@ -197,6 +200,7 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+#RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned. 
@@ -205,6 +209,7 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+#HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
@@ -218,6 +223,7 @@ categories:
     title: Humanitarian Coordination
     description: Core data relating to the coordination of humanitarian activities in a country or crisis
     data_series:
+#WHO WHAT WHERE
       - name: 3w
         title: 3w - Who is doing what where
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division
@@ -225,6 +231,7 @@ categories:
           include:
             - (tags:3w AND subnational:1)
           exclude:
+#AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
@@ -234,6 +241,7 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+#DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
         description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
@@ -242,6 +250,7 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
+#HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
@@ -250,6 +259,7 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+#TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or practicability
