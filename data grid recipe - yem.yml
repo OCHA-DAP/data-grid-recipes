@@ -102,7 +102,7 @@ categories:
             - (id:90d299f0-da43-453b-b435-941df85da189) #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
           exclude:
         metadata_overrides:
-          - dataset_id:90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
+          - dataset_id: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
             display_state: incomplete
             comments: Dataset is not disaggregated to the most commonly used level (adm2) for this location. Dataset contains data about sex disaggregation but does not include the expected data about age disaggregation.
 #POVERTY RATE
@@ -130,6 +130,7 @@ categories:
     title: Education
     description: Data describing education facilities and key education indicators
     data_series:
+#EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
@@ -142,6 +143,7 @@ categories:
     title: Food Security and Nutrition
     description: Data about a population's access to food and key nutrition indicators
     data_series:
+#FOOD INSECURITY
       - name: food_insecurity
         title: Food Insecurity
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
