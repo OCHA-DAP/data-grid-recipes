@@ -76,6 +76,13 @@ categories:
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
         metadata_overrides:
         - dataset_id: 

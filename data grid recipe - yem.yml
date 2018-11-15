@@ -48,14 +48,19 @@ categories:
         metadata_overrides:
           - dataset_id: f3f3cc68-1a28-4b96-a113-60eebe0ca9ef
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive for all areas.  Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
       - name: aerodromes
         title: Airports and HLZs
         description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
             - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
+            - (id:5215eb04-a8f5-4eda-9b12-787edc96f35e)
           exclude:
+        metadata_overrides:
+          - dataset_id: 5215eb04-a8f5-4eda-9b12-787edc96f35e
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive. Dataset contains information about airports, but does not include information about helicopter landing zones.
   - name: socio-economic
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
@@ -69,6 +74,13 @@ categories:
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
       - name: population-sadd
         title: Population by Age and Sex
