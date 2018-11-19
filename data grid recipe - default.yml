@@ -161,7 +161,8 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
-            - (name:b6f73cf7-e4ff-4afe-9e07-0d95931e270a) #if can be updated regularly, we may want to add a new subcategory for this one
+            - (id:8c9cb774-5668-40e5-a139-3aa53c775d62) # wfp coping strategies; if can be updated regularly, we may want to add a new subcategory for this one
+            - (id:b6f73cf7-e4ff-4afe-9e07-0d95931e270a) # wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
