@@ -49,7 +49,7 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: f3f3cc68-1a28-4b96-a113-60eebe0ca9ef
+          - dataset_name: hotosm_yem_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
