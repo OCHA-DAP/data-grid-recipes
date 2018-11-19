@@ -24,7 +24,7 @@ categories:
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
           exclude: 
         metadata_overrides:
-          - dataset_id: 6b2656e2-b915-4671-bfed-468d5edcd80a
+          - dataset_name: 6b2656e2-b915-4671-bfed-468d5edcd80a
             display_state: incomplete
             comments: Dataset has not been endorsed as a COD
 #POPULATED PLACES
@@ -61,7 +61,7 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 5215eb04-a8f5-4eda-9b12-787edc96f35e #ourairports
+          - dataset_name: 5215eb04-a8f5-4eda-9b12-787edc96f35e #ourairports
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive. Dataset contains information about airports, but does not include information about helicopter landing zones.
   - name: socio-economic
@@ -88,7 +88,7 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (id:b36e7bc3-461f-4ec4-9297-1210f84e91e5) #only needed on feature, dataset removed from prod
         metadata_overrides:
-          - dataset_id: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
+          - dataset_name: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
             display_state: incomplete
             comments: The dataset is only available in a geographic format, and tabular data is preferred for this subcategory. 
 #POPULATION-SADD
@@ -101,7 +101,7 @@ categories:
             - (id:90d299f0-da43-453b-b435-941df85da189) #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
           exclude:
         metadata_overrides:
-          - dataset_id: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
+          - dataset_name: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
             display_state: incomplete
             comments: Dataset is not disaggregated to the most commonly used level (adm2) for this location. Dataset contains data about sex disaggregation but does not include the expected data about age disaggregation.
 #POVERTY RATE
