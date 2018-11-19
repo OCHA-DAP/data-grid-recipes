@@ -23,7 +23,7 @@ categories:
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
 #POPULATED PLACES
@@ -35,7 +35,7 @@ categories:
             - (tags:"populated places" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
   - name: physical_infrastructure_and_geography
@@ -52,7 +52,7 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-        - dataset_id: 
+        - dataset_name: 
           display_state: 
           comments: 
 #AIRPORTS
@@ -64,7 +64,7 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-        - dataset_id: #insert ID of OurAirports dataset here
+        - dataset_name: #insert ID of OurAirports dataset here
           display_state: incomplete
           comments: Ourairports data relies on user contributions and may not be comprehensive. Dataset contains information about airports, but does not include information about helicopter landing zones.
   - name: socio-economic
@@ -90,7 +90,7 @@ categories:
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
         metadata_overrides:
-        - dataset_id: 
+        - dataset_name: 
           display_state: 
           comments: 
 #POPULATION-SADD
@@ -102,7 +102,7 @@ categories:
             - (tags:"demographics" AND tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
 #POVERTY RATE
@@ -114,7 +114,7 @@ categories:
             - (tags:poverty AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
   - name: health
@@ -131,7 +131,7 @@ categories:
             - (tags:hospitals AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
   - name: education
@@ -174,7 +174,7 @@ categories:
             - (tags:gam AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments:
 #SAM 
@@ -204,7 +204,7 @@ categories:
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: refugees_poc
@@ -218,7 +218,7 @@ categories:
             - (tags:"poc" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: returnees
@@ -230,7 +230,7 @@ categories:
             - (tags:"returned refugees" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: humanitarian_profile_locations
@@ -243,7 +243,7 @@ categories:
             - (tags:"camps" AND subnational:1)
           exclulde:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
   - name: humanitarian_coordination
@@ -258,7 +258,7 @@ categories:
             - (tags:3w AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: affected_areas
@@ -271,7 +271,7 @@ categories:
           exclude:
             - (tags:"damage assessment")
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: damaged_buildings
@@ -283,7 +283,7 @@ categories:
             - (tags:"damage assessment" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: humanitarian_access
@@ -295,7 +295,7 @@ categories:
             - (tags:"obstacles" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: transportation_status
@@ -307,7 +307,7 @@ categories:
             - (tags:"transportation status" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: casualties
@@ -320,7 +320,7 @@ categories:
             - (tags:deaths AND subnational:1)
           exclulde:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
       - name: missing_persons
@@ -331,6 +331,6 @@ categories:
             - (tags:missing persons AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_id: 
+          - dataset_name: 
             display_state: 
             comments: 
