@@ -54,7 +54,7 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
-        title: Airport
+        title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
