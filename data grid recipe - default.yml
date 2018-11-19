@@ -55,18 +55,18 @@ categories:
         - dataset_id: 
           display_state: 
           comments: 
-#AERODROMES
-      - name: aerodromes
-        title: Airports and HLZ
-        description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
+#AIRPORTS
+      - name: airports
+        title: Airports
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
             - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
           exclude:
         metadata_overrides:
-        - dataset_id: 
-          display_state: 
-          comments: 
+        - dataset_id: #insert ID of OurAirports dataset here
+          display_state: incomplete
+          comments: Ourairports data relies on user contributions and may not be comprehensive. Dataset contains information about airports, but does not include information about helicopter landing zones.
   - name: socio-economic
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
@@ -138,6 +138,7 @@ categories:
     title: Education
     description: Data describing education facilities and key education indicators
     data_series:
+#EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
@@ -150,8 +151,9 @@ categories:
     title: Food Security and Nutrition
     description: Data about a population's access to food and key nutrition indicators
     data_series:
-      - name: food_insecurity
-        title: Food Insecurity
+#FOOD SECURITY
+      - name: food_security
+        title: Food Security
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
         rules:
           include:
@@ -159,6 +161,7 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:b6f73cf7-e4ff-4afe-9e07-0d95931e270a) #if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
