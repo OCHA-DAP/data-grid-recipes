@@ -57,11 +57,11 @@ categories:
           comments: 
 #AIRPORTS
       - name: airports
-        title: Airports
+        title: Airport
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each
         rules:
           include: 
-            - ((tags:"helicopter landing zone - hlz" OR tags:"airports") AND subnational:1)
+            - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
         - dataset_id: #insert ID of OurAirports dataset here
