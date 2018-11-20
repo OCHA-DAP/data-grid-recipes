@@ -242,7 +242,7 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
-            - (name:ngoaidmap)
+            - (title:"InterAction member activities in")
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-yem #interaction
