@@ -147,6 +147,13 @@ categories:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+          exclude:
   - name: food_security_and_nutrition
     title: Food Security and Nutrition
     description: Data about a population's access to food and key nutrition indicators

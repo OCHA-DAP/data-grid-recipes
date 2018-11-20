@@ -138,6 +138,14 @@ categories:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+            - (name:affected-schools-in-yemen)
+          exclude:
   - name: food_security_and_nutrition
     title: Food Security and Nutrition
     description: Data about a population's access to food and key nutrition indicators
@@ -261,7 +269,7 @@ categories:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
