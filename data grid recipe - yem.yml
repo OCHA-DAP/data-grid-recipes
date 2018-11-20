@@ -217,6 +217,10 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-assessment-data-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -238,7 +242,12 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
+            - (name:ngoaidmap)
           exclude:
+        metadata_overrides:
+          - dataset_name: ngoaidmap-yem #interaction
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
