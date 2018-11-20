@@ -303,8 +303,8 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclulde:
-            - (id:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
-            - (id:infant_mortality_rate_both_sexes_combined_by_major_area_region_and_country_1950-2100) #this dataset may get deleted soon
+            - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
+            - (name:infant_mortality_rate_both_sexes_combined_by_major_area_region_and_country_1950-2100) #this dataset may get deleted soon
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
