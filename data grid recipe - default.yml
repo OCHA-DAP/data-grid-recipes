@@ -198,6 +198,7 @@ categories:
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
+#IDPs
       - name: idp
         title: Internally-Displaced Persons
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
@@ -214,6 +215,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
@@ -228,6 +230,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned. 
@@ -240,6 +243,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#HUMANITARIAN PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
@@ -257,6 +261,7 @@ categories:
     title: Humanitarian Coordination
     description: Core data relating to the coordination of humanitarian activities in a country or crisis
     data_series:
+#WHO WHAT WHERE
       - name: 3w
         title: 3w - Who is doing what where
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division
@@ -268,6 +273,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#AFFECTED BUILDINGS
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
@@ -281,6 +287,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
         description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
@@ -293,6 +300,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
@@ -305,6 +313,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or practicability
@@ -317,6 +326,7 @@ categories:
           - dataset_name: 
             display_state: 
             comments: 
+#CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
