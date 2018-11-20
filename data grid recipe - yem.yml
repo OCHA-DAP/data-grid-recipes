@@ -194,7 +194,7 @@ categories:
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
             - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is included
         metadata_overrides:
-            dataset_name: yemen-assessment-data-dtm
+          - dataset_name: yemen-assessment-data-dtm
             display_state: incomplete
             comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
 #REFUGEES POCs
