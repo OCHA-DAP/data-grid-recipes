@@ -138,6 +138,7 @@ categories:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
+#AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
@@ -186,7 +187,7 @@ categories:
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
-#IDP
+#IDPs
       - name: idp
         title: Internally-Displaced Persons
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
@@ -287,11 +288,12 @@ categories:
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or practicability
+        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability
         rules:
           include:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
+#CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
@@ -300,7 +302,7 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
-          exclulde:
+          exclulde:- (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
