@@ -23,7 +23,7 @@ categories:
         metadata_overrides:
           - dataset_name: 6b2656e2-b915-4671-bfed-468d5edcd80a
             display_state: incomplete
-            comments: Dataset has not been endorsed as a COD
+            comments: Dataset has not been endorsed as a COD.
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -51,7 +51,7 @@ categories:
 #AIRPORTS
       - name: airports
         title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
@@ -62,12 +62,12 @@ categories:
             comments: Ourairports data relies on user contributions and may not be comprehensive.
   - name: socio-economic
     title: Population and Socio-economic Indicators
-    description: Data regarding populations and key indicators relating to social and economic factors
+    description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division
+        description: Total population aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND subnational:1)
@@ -89,7 +89,7 @@ categories:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
@@ -104,19 +104,19 @@ categories:
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
   - name: health
     title: Health
-    description: Data describing health facilities and key health indicators
+    description: Data describing health facilities and key health indicators.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
-        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.)
+        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
@@ -124,12 +124,12 @@ categories:
           exclude:
   - name: education
     title: Education
-    description: Data describing education facilities and key education indicators
+    description: Data describing education facilities and key education indicators.
     data_series:
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
-        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
             - (tags:"education facilities" AND subnational:1)
@@ -146,24 +146,24 @@ categories:
           exclude:
   - name: food_security_and_nutrition
     title: Food Security and Nutrition
-    description: Data about a population's access to food and key nutrition indicators
+    description: Data about a population's access to food and key nutrition indicators.
     data_series:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
-            - (id:8c9cb774-5668-40e5-a139-3aa53c775d62) # wfp coping strategies; if can be updated regularly, we may want to add a new subcategory for this one
-            - (id:b6f73cf7-e4ff-4afe-9e07-0d95931e270a) # wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
         rules:
           include:
             - (tags:"global acute malnutrition - gam" AND subnational:1)
@@ -173,7 +173,7 @@ categories:
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
         rules:
           include:
             - (tags:"severe acute malnutrition - sam" AND subnational:1)
@@ -187,7 +187,7 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
+        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (tags:"internally displaced persons - idp" AND subnational:1)
@@ -198,7 +198,7 @@ categories:
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
-            - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is included
+            - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
         metadata_overrides:
           - dataset_name: yemen-assessment-data-dtm
             display_state: incomplete
@@ -239,12 +239,12 @@ categories:
           exclulde:
   - name: humanitarian_coordination
     title: Humanitarian Coordination
-    description: Core data relating to the coordination of humanitarian activities in a country or crisis
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis.
     data_series:
 #WHO WHAT WHERE
       - name: 3w
         title: 3w - Who is doing what where
-        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division
+        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
             - (tags:3w AND subnational:1)
@@ -257,7 +257,7 @@ categories:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
             - (tags:"affected area" AND subnational:1)
@@ -267,7 +267,7 @@ categories:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
@@ -276,7 +276,7 @@ categories:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
-        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
+        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
             - (tags:"humanitarian access" AND subnational:1)
@@ -285,11 +285,12 @@ categories:
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability
+        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -301,7 +302,6 @@ categories:
             - (tags:deaths AND subnational:1)
           exclude:
             - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
-            - (name:infant_mortality_rate_both_sexes_combined_by_major_area_region_and_country_1950-2100) #this dataset may get deleted soon
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
