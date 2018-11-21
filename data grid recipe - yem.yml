@@ -68,7 +68,7 @@ categories:
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
     data_series:
-#POPULATION
+#BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
         description: Total population aggregated by administrative division
@@ -86,12 +86,11 @@ categories:
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (id:b36e7bc3-461f-4ec4-9297-1210f84e91e5) #only needed on feature, dataset removed from prod
         metadata_overrides:
           - dataset_name: 90d299f0-da43-453b-b435-941df85da189 #yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020
             display_state: incomplete
             comments: The dataset is only available in a GIS format, and tabular data is preferred for this subcategory. 
-#POPULATION-SADD
+#BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
