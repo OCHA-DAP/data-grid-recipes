@@ -1,0 +1,581 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "data grid recipe - template.yml",
+			"settings":
+			{
+				"buffer_size": 2141,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data grid recipe - default.yml",
+			"settings":
+			{
+				"buffer_size": 15540,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data grid recipe - yem.yml",
+			"settings":
+			{
+				"buffer_size": 16609,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "pretty py",
+		"selected_items":
+		[
+			[
+				"pretty py",
+				"Pretty Print: Format (Pretty Print) Python code"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/HENDRIX/Documents/GitHub/data-grid-recipes/data grid recipe - template.yml",
+		"/C/Users/HENDRIX/Documents/GitHub/data-grid-recipes/data grid recipe - yem.yml",
+		"/C/Users/HENDRIX/Documents/GitHub/data-grid-recipes/data grid recipe - default.yml",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Payroll/Centre_Contracts_from_2017-09/Timesheets To Open.txt",
+		"/C/Users/HENDRIX/Downloads/user_list.json",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/Work/Test Data/recipes/2_line_test.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Analytics/2018 Year In Review/test_data.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/config/hdx_mixpanel_key.txt",
+		"/C/Users/HENDRIX/Downloads/clipping_boundary.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/coxbazar.geojson",
+		"/C/Users/HENDRIX/Desktop/latest chained rules errors.txt",
+		"/C/Users/HENDRIX/Documents/GitHub/viz-inform-risk/js/app.js",
+		"/C/Users/HENDRIX/Desktop/df.tsv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Data Grid/v1/data grid recipe - default.yml",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Data Grid/v1/data grid recipe - template.yml",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Data Grid/v1/data grid recipe.yml",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/balances 2018-08-16.txt",
+		"/C/Users/HENDRIX/Desktop/startJupyter.bat",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/expected_update_frequency as of 10-Aug-2018",
+		"/C/Users/HENDRIX/Documents/GitHub/hdx-ckan/ckanext-hdx_theme/ckanext/hdx_theme/helpers/faq_data.py",
+		"/C/Users/HENDRIX/Downloads/faq_data 7 Aug.py",
+		"/C/Users/HENDRIX/Downloads/faq_data.py",
+		"/C/Users/HENDRIX/Downloads/Hurricane Prep Locations.txt",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/Work/Test Data/iso3166-1-alpha3-hxl.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/carribean_query.txt",
+		"/C/Users/HENDRIX/Downloads/afghan-voluntary-repatriation-2018 (1).csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/guy.geojson",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/Work/Test Data/HXL BNLX Relief ERU-Excel test-2018 - no hxl.csv",
+		"/C/Users/HENDRIX/Downloads/ignore (1)",
+		"/C/Users/HENDRIX/Downloads/HDX+-+WorldPop+%2B+COD+Dataset+Generator.py",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Guidance and Documentation/Performance Review/2017-2018/2017-18 Inspira Work Plan - Performance Evaluation",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Guidance and Documentation/Performance Review/2017-2018/sm self evaluation",
+		"/C/Users/HENDRIX/Desktop/Classification of Pages without Page Titles.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/CPS Indicator Cleanup 2018/dataset IDs removed - final round - 2018-06-01.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/bhs.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/CPS Indicator Cleanup 2018/narrowing down to only recent deletions.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/CPS Indicator Cleanup 2018/all deleted datasets on ckan after deletion work - 2018-06-14 - flipped.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/CPS Indicator Cleanup 2018/all deleted datasets on ckan after deletion work - 2018-06-14.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/CPS Indicator Cleanup 2018/2011 Census Data - compiled spreadsheet for areas - narrowing down to only recent deletions.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/Tag cleanup errors.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - 2nd full run on demo 8-jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/all tags found on demo after run 8-jun.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/temp.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/temp2.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - full run on demo 8-jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/ago.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/mdv.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/aia.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/tag cleanup - 832 accepted tags.txt",
+		"/C/Users/HENDRIX/Downloads/tags found on demo after run - 7-jun.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/tags in processing 7-jun.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - full run on demo 7-Jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - full run on test 7-Jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - full run on demo - 6-jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/408 dataset ids for invalid datastes - full run on demo 6-jun.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - full run on test - 05-jun.log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/errors - dry run on demo - 6-jun.log",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/Work/example hdx dataset.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Data Grid/tag testing/invalid dataset list with country, last modified, private.csv",
+		"/C/Users/HENDRIX/Downloads/errors (2).log",
+		"/C/Users/HENDRIX/Downloads/tag cleanup - 832 unqiue tags.txt",
+		"/C/Users/HENDRIX/Downloads/all_public_dataset_tags.txt",
+		"/C/Users/HENDRIX/Downloads/errors (1).log",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/tag cleanup/dry run - public with no tags.txt",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2018-04/chase_cj_cc.csv",
+		"/C/Users/HENDRIX/Downloads/datasets_tagged_cod.csv",
+		"/C/Users/HENDRIX/Downloads/2008",
+		"/C/Users/HENDRIX/Downloads/all public datasets.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/config/hdx_key.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/WorldPopCODs/DataDictionary.txt",
+		"/C/Users/HENDRIX/AppData/Local/Continuum/Anaconda3/Lib/site-packages/hdx/data/resource.py",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2018-04/layd_eur.tab",
+		"/C/Users/HENDRIX/Dropbox/Work/Data/WRL/Simple Bounds for HDX Loc Page/boundaries_for_location_page_ 2018-04-11.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/Data/WRL/countries.geo.json/esh-mco.geo.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HID Integration/hdx_users_2018-03-21.txt",
+		"/C/Users/HENDRIX/Downloads/ignore",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/Data/user_list.json",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/user_list.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/Data/user_list_short.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HID Integration/user_list_short_minified.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HID Integration/user_list_flat.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/WorldPopCODs/Testing/v1/BFA/BFA14adjv1_tif+BFA-HDX-Borders_adm2_zonal.csv",
+		"/C/Users/HENDRIX/Desktop/Lillian onboarding.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/query_counter_output.csv",
+		"/C/Users/HENDRIX/Downloads/test.json",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/startup pages.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/results framework/all hdx orgs as of 31-jan-2018.txt",
+		"/C/Users/HENDRIX/Downloads/HDX-MP+Query+Counter.py",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/results framework/indicators and tasks.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/pse.geojson",
+		"/C/Users/HENDRIX/Downloads/bookmarks_1_9_18.html",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/FAQ/edits to faq for markdown - 2018-01 - faq_data.py",
+		"/C/Users/HENDRIX/Downloads/Podcasts.txt",
+		"/C/Users/HENDRIX/Downloads/standup_2017-12-04.txt",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2017-11/layd_chf.tab",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2017-11/ubs_cj.csv",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2017-11/layd_eur.tab",
+		"/C/Users/HENDRIX/Dropbox/Pers/CJAK/Financial/CJ/Bank Statements/DataDownloads/2017-11/unrecognized.csv",
+		"/C/Users/HENDRIX/Downloads/irq_adm2.txt",
+		"/C/Users/HENDRIX/Dropbox/Briefcase/Travel Docs/Hague/Instructions.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Analytics/List of quick charts examples resources - nov 2017.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Analytics/Query Tool/working query examples.txt",
+		"/C/Users/HENDRIX/Downloads/Rohingya/archive/rohingya_sites.csv",
+		"/C/Users/HENDRIX/AppData/Roaming/Skype/My Skype Received Files/rohingya_sites.csv",
+		"/C/Users/HENDRIX/Downloads/Rohingya/rohingya_sites.csv",
+		"/C/Users/HENDRIX/Downloads/bdi_adm2.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/hnd.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/prk.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/nic.geojson",
+		"/C/Users/HENDRIX/Downloads/query_counter_test.csv",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/Analytics/Query Tool/Untitled.py",
+		"/C/Users/HENDRIX/Desktop/laydernier_joint_account_360days_2017-10-28.tab",
+		"/C/Users/HENDRIX/Desktop/Hendrix_bio_2017-10.txt",
+		"/C/Users/HENDRIX/Desktop/attendees",
+		"/C/Users/HENDRIX/Desktop/ITOS+Logs.py",
+		"/C/Users/HENDRIX/Dropbox/Work/Jupyter/ITOS Logs.ipynb",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HXL/Quick Charts/example filtering recipe.json",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/WorldPopCODs/COD Datasets on HDX with ITOS Service.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/WorldPopCODs/meeting notes 2017-10.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/Data/WRL/m49/m49_names_only-2017-10.txt",
+		"/C/Users/HENDRIX/Downloads/Rohingya/rohingya_text.txt",
+		"/C/Users/HENDRIX/Downloads/copy.txt",
+		"/C/Users/HENDRIX/Downloads/original.txt",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/ukr/ukr_north.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/ukr/ukr_south.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/phl_north.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/fji_east.geojson",
+		"/C/Users/HENDRIX/Dropbox/Work/OCHA/Projects/DAP/HOT-OSM Extract Tool/Boundaries/phl_south.geojson"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"exclude:\\n            ",
+			"\\(name:",
+			"(name:",
+			"dataset_id:",
+			"#.*$",
+			"^ *title: *",
+			"^    title: *.*$",
+			"^title: *.*$",
+			"^ *description: *",
+			"^    description: *.*$",
+			"^description: *.*$",
+			"^ *title: *",
+			"^ *title:.*$",
+			"^ *description:.*$",
+			"            - (tags:\"affected persons locations\" AND subnational:1)\n",
+			"\"",
+			"not found\\n",
+			"skipped\\n",
+			"csv",
+			"<li>",
+			"<a href",
+			"data.humdata.org",
+			"i/",
+			"tools",
+			"hdx@un.org",
+			"<i>",
+			"\\n",
+			" \\|  \\| \\n",
+			".* \\| None \\| None\\n",
+			"c0e0998c",
+			"http://",
+			"not found\\n",
+			"skipped\\n",
+			".*\\| None \\| None\\n",
+			"skipped\\n",
+			"not found\\n",
+			".*\\| None \\| None\\n",
+			"not found\\n",
+			"skipped\\n",
+			"not found\\n",
+			".* \\| ",
+			"\\n",
+			"OR Groups=",
+			"&groups",
+			"\\n",
+			"\\(..\\)\\n",
+			" - .*\\n",
+			" •",
+			"^",
+			"^page view,https:\\/\\/data.humdata.org\\/dataset\\/([0-9,a-z,\\-,_]*)\\/resource\\/",
+			"^page view,https:\\/\\/data.humdata.org\\/dataset\\/([0-9,a-z,\\-]*)\\/resource\\/",
+			"^page view,https://data.humdata.org/dashboards",
+			"^page view,https://data.humdata.org/country/topline",
+			"^.*/dataset/",
+			",,,,$",
+			"^\\n",
+			"\"([a-z]|[0-9])+ \",\\n",
+			";",
+			"^\\n",
+			"^  File \"run.py.*\\n",
+			"^The above exception.*\\n",
+			"^    raise ValidationError.*\\n",
+			"^    return .*\\)\\n",
+			"^  File \"/home/venv.*\\n",
+			"^Traceback \\(most.*\\n",
+			"^Error - 2018-06-08.*- __main__ - Failed.*\\n",
+			"^INFO - .*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', '.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'group.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'resources': \\[.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'methodology': \\['Missing val.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'methodology_other.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'maintainer.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'dataset_date.*\\n",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'dataset_date.*",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error', 'data_update_fre.*\\n",
+			"WARNING - .*tags already exists.*\\n",
+			"^.*\\(public\\) has no tags!\\n",
+			"^.*\\(private\\) has no tags!\\n",
+			"^.* - Anglicising:.*\\n",
+			"bolilvia",
+			"acceso a alimentos",
+			"ckanapi.errors.ValidationError.*\\n",
+			"^INFO.*\\n",
+			"^.*\\(private\\) has no tags!\\n",
+			"^.*\\(public\\) has no tags!\\n",
+			"WARNING - .*tags already exists.*\\n",
+			"^.* - Anglicising:.*\\n",
+			"ckanapi\\.errors.ValidationError: \\{'notes': \\['Missing.*\\n",
+			"ckanapi\\.errors.ValidationError: {'data_update_fre.*\\n",
+			"ckanapi\\.errors.ValidationError: {'methodology_other'.*\\n",
+			"ckanapi\\.errors.ValidationError: {'dataset_date.*\\n",
+			"hdx.data.hdxobject.HDXError: Failed when trying to update .{36}! \\(POST\\)\\n",
+			"ckanapi\\.errors.ValidationError: {'resources'.*\\n",
+			"hdx.data.hdxobject.HDXError: Failed when trying to update .{36}! \\(POST\\)\\n",
+			"ckanapi\\.errors.ValidationError: {'resources'.*\\n",
+			"ckanapi\\.errors.ValidationError: {'resources': \\[{'format.*\\n",
+			"ckanapi\\.errors.ValidationError: {'dataset_date.*\\n",
+			"ckanapi\\.errors.ValidationError: {'methodology_other'.*\\n",
+			"ckanapi\\.errors.ValidationError: {'data_update_fre.*\\n",
+			"ckanapi\\.errors.ValidationError: {'__type': 'Validation Error', 'maintainer.*\\n",
+			"ckanapi\\.errors.ValidationError: \\{'notes': \\['Missing.*\\n",
+			"^.* - Anglicising:.*\\n",
+			"WARNING - .*tags already exists.*\\n",
+			"^.*\\(public\\) has no tags!\\n",
+			"^.*\\(private\\) has no tags!\\n",
+			"^INFO.*\\n",
+			"WARNING - .*tags already exists.*\\n",
+			"^INFO.*\\n",
+			"^.*\\(private\\) has no tags!\\n",
+			"^.*\\(public\\) has no tags!\\n",
+			"^.* - Anglicising:.*\\n",
+			"tag",
+			"access",
+			"funding",
+			"shelter",
+			"shelter ",
+			"prices",
+			"gam",
+			"ckanapi.errors.ValidationError",
+			"ckanapi.errors.ValidationError: {'license_other':.*\\n",
+			"ckanapi.errors.ValidationError: ",
+			"ckanapi.errors.ValidationError: {'__type': 'Validation Error',.*\\n",
+			"^.* - Anglicising:.*\\n",
+			"^.*\\(public\\) has no tags!\\n",
+			"^.*\\(private\\) has no tags!\\n",
+			"^INFO.*\\n",
+			" | "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"dataset_name:",
+			"",
+			"<a href=\"mailto:hdx@un.org\">hdx@un.org</a>",
+			"\",\"",
+			"\\n",
+			"",
+			"\",\"",
+			"OR groups:",
+			" OR groups",
+			" OR ",
+			"&groups=",
+			"\\n",
+			"",
+			"row ",
+			"resource,page view,https://data.humdata.org/dataset/$1/resource/",
+			"dashboard,page view,https://data.humdata.org/dashboards",
+			"topline,page view,https://data.humdata.org/country/topline",
+			"",
+			"\\n",
+			"",
+			",",
+			"",
+			"\\n",
+			"",
+			"\\n",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "data grid recipe - template.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2141,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1720,
+								1745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "data grid recipe - default.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7711,
+								7732
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data grid recipe - yem.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8486,
+								8507
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1368.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "data grid recipies.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
