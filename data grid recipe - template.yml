@@ -22,7 +22,6 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           exclude: #a list of queries (OR between each list item) that remove datasets from the data series
             -
         metadata_overrides:
-          - dataset_name:  #the ckan package name
+          - dataset_name:  #the ckan package name (id also works)
             display_state:  #values can be {{complete}} or {{incomplete}}
             comments: #a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
-            
