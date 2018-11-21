@@ -5,7 +5,6 @@
 inherits_from: 
 name: yem 
 title:  Yemen Core Data
-
 description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
 categories: 
   - name: administration
