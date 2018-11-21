@@ -71,9 +71,9 @@ categories:
     title: Population and Socio-economic Indicators
     description: Data regarding baseline population numbers and key indicators relating to social and economic factors
     data_series:
-#POPULATION
-      - name: population
-        title: Population
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
         description: Total population aggregated by administrative division
         rules:
           include:
@@ -93,9 +93,9 @@ categories:
         - dataset_name: 
           display_state: 
           comments: 
-#POPULATION-SADD
-      - name: population-sadd
-        title: Population by Age and Sex
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age and Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division
         rules:
           include:
