@@ -1,34 +1,33 @@
 ---
-# This YAML file contains sample configuration information for the default data grid.  
-# NOTE:  this version is not complete.  It has only 3 categories and is intended as a starting point for discussion/development.
 
-inherits_from: #for v2. name of another recipe which this one will partially overwrite
-name: global_default #a short, unique name for the recipe
-title:  Global Default Essential Data #a display name for the recipe
-type:  #for v2. this will let us distinguish different types of data grid like 'preparedness' or 'crisis' or 'hdx curated' or 'automatically generated', but not used in v1
-description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. #for v2. we may show this in the interface somewhere to help users understand different recipes, but not used in v1
-categories: #list of the high level groupings visible in the data grid, like 'Food Security'
-  - name: administration #a short unique name for the category
-    title: Administration #the text that appears at the top of each grouping in the data grid
-    type: #for v2. we may want to distinguish between 'preparedness' and 'crisis' at the category level
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, distrcits, counties, etc.). #text that appears on hover of the title
-    data_series: #list of the actual indicators or data series into which the datasets are categorized, like 'food prices'
-      - name:  administrative_divisions #a short unique name for the data series
-        title: Administrative Divisions #the text that appears in the interface to at the top of each data series list of datasets
+
+
+inherits_from: 
+name: global_default 
+title:  Global Default Essential Data 
+description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
+categories: 
+  - name: administration 
+    title: Administration 
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, distrcits, counties, etc.). 
+    data_series: 
+#ADMINISTRATIVE DIVISIONS
+      - name:  administrative_divisions 
+        title: Administrative Divisions
         description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        type: #for v2. we may want to distinguish between 'preparedness' and 'crisis' at the data series level
-        rules:  #the set of 'include' and 'exclude' rules that determine what datasets appear in the data series
-          include: #a list of queries (OR between each list item) that create a list of datasets to include in the data series.  
-          #NOTE: the location query is not included here, but should be included with ALL of the "include" list items. 
+        rules:
+          include:  
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
-          exclude: # There are no exclude rules in this data series.
-        metadata_overrides: #for v2.  a list of settings at the dataset level which forces the dataset to be included and controls how it is displayed in data grid.  This is where information coming from "manual curation" is stored (unless we decide to build it as a db).
-          - dataset_id:  #id of dataset to include and override
-            display_state:  #a string that determines how the dataset will be displayed in datagrid.  Might split this into several states like "query match state", "freshness state", "definition state", "geo extent state"
-            comments: # a string to pop up on hover over a dataset in the grid.  this would contain comments from whoever did the curation about limitations of the dataset
+              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
@@ -37,111 +36,156 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
     title: Physical Infrastructure and Geography
     description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
     data_series:
+#ROADS
       - name:  roads
         title: Roads
         description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
-        type:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
-      - name: aerodromes
-        title: Aerodromes
-        description: Geographic data representing all operational aerodromes (airports and helicopter landing zones) including a name or other unique identifier and an indication of what types of aircraft can use each
+        metadata_overrides:
+        - dataset_name: 
+          display_state: 
+          comments: 
+#AIRPORTS
+      - name: airports
+        title: Airports
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include: 
-            - ((helicopter landing zone - hlz OR airports) AND subnational:1)
+            - (tags:"airports" AND subnational:1)
           exclude:
+        metadata_overrides:
+        - dataset_name: #insert ID of OurAirports dataset here
+          display_state: incomplete
+          comments: Ourairports data relies on user contributions and may not be comprehensive. 
   - name: socio-economic
     title: Population and Socio-economic Indicators
-    description: Data regarding baseline population numbers and key indicators relating to social and economic factors
+    description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
-      - name: population
-        title: Population
-        description: Total population aggregated by administrative division
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-      - name: population-sadd
-        title: Population by Age and Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division
+        metadata_overrides:
+        - dataset_name: 
+          display_state: 
+          comments: 
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age and Sex
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (tags:"demographics" AND tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
   - name: health
     title: Health
-    description: Data describing health facilities and key health indicators
+    description: Data describing health facilities and key health indicators.
     data_series:
+#HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
-        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.)
+        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"global acute malnutrition - gam" AND subnational:1)
-            - (tags:"global acute malnutrition" AND subnational:1)
-            - (tags:gam AND subnational:1)
-          exclude:
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division
-        rules:
-          include:
-            - (tags:"severe acute malnutrition - sam" AND subnational:1)
-            - (tags:"severe acute malnutrition" AND subnational:1)
-            - (tags:sam AND subnational:1)
-          exclude:
   - name: education
     title: Education
-    description: Data describing education facilities and key education indicators
+    description: Data describing education facilities and key education indicators.
     data_series:
+#EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
-        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.)
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
+#AFFECTED SCHOOLS
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+          exclude:
   - name: food_security_and_nutrition
     title: Food Security and Nutrition
-    description: Data about a population's access to food and key nutrition indicators
+    description: Data about a population's access to food and key nutrition indicators.
     data_series:
-      - name: food_insecurity
-        title: Food Insecurity
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division
+#FOOD SECURITY
+      - name: food_security
+        title: Food Security
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+#GAM
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"global acute malnutrition - gam" AND subnational:1)
+            - (tags:"global acute malnutrition" AND subnational:1)
+            - (tags:gam AND subnational:1)
+          exclude:
+#SAM 
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"severe acute malnutrition - sam" AND subnational:1)
+            - (tags:"severe acute malnutrition" AND subnational:1)
+            - (tags:sam AND subnational:1)
+          exclude:
   - name: humanitarian_profile
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
+#IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available
+        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (tags:"internally displaced persons - idp" AND subnational:1)
@@ -151,6 +195,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+#REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
@@ -161,6 +206,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+#RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned. 
@@ -169,6 +215,11 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
@@ -178,49 +229,80 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
   - name: humanitarian_coordination
     title: Humanitarian Coordination
-    description: Core data relating to the coordination of humanitarian activities in a country or crisis
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis.
     data_series:
+#WHO WHAT WHERE
       - name: 3w
         title: 3w - Who is doing what where
-        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division
+        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
             - (tags:3w AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
             - (tags:"affected area" AND subnational:1)
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative division.
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
-        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions
+        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or practicability
+        description: Vector or tabular data representing local transportation routes with an indication of status or practicability.
         rules:
           include:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
@@ -230,6 +312,10 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclulde:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -237,7 +323,7 @@ categories: #list of the high level groupings visible in the data grid, like 'Fo
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
-
-
-
-
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
