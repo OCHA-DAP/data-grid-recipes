@@ -70,9 +70,9 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
+            - (tags:"population" AND subnational:1)
           exclude:
             - (tags:"people in need")
             - (tags:"people affected")
@@ -92,7 +92,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population  statistics" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
@@ -225,8 +225,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules: 
           include:
-            - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
+            - (tags:"affected persons location" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
         metadata_overrides:
@@ -243,6 +243,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (tags:"who is doing what where - 3w")
             - (tags:3w AND subnational:1)
           exclude:
         metadata_overrides:
