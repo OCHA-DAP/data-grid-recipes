@@ -9,7 +9,7 @@ description: This data grid is configured based on a glboal default list of esse
 categories: 
   - name: administration
     title: Administration
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, distrcits, counties, etc.). 
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
     data_series: 
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
