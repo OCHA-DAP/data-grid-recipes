@@ -305,10 +305,6 @@ categroies:
             - (tags:"roads" AND tags:"transportation" AND subnational:1)
             - (name:hotosm_yem_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads #add country code here and uncomment two lines below for hotosm override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -317,8 +313,3 @@ categroies:
           include: 
             - (tags:"airports" AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: #ourairports-XXX #uncomment and add country code here, and uncomment two lines below to get standard OurAirports override
-            display_state: #incomplete
-            comments: #Ourairports data relies on user contributions and may not be comprehensive.
-
