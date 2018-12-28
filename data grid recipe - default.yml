@@ -3,10 +3,10 @@
 
 
 inherits_from: 
-name: global_default 
-title:  Global Default Core Data 
-description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
-categroies:
+name: global_default
+title:  Global Default Core Data
+description:  
+categories: 
 
 
 #HUMANITARIAN COORDINATION
@@ -23,6 +23,11 @@ categroies:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+        metadata_overrides:
+          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
+            display_state: #incomplete
+            comments: #Only covers activities by InterAction Members.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -32,7 +37,6 @@ categroies:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
-
 
 #HUMANITARIAN PROFILE
   - name: humanitarian_profile
@@ -169,6 +173,8 @@ categroies:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -246,6 +252,8 @@ categroies:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
@@ -256,6 +264,10 @@ categroies:
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -303,10 +315,10 @@ categroies:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:hotosm_yem_roads)
+              #- (name:hotosm_XXX_roads)  replace XXX with country code to include hotosm
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads #add country code here and uncomment two lines below for hotosm override
+          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include hotosm override
             display_state: #incomplete
             comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -318,7 +330,6 @@ categroies:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX #uncomment and add country code here, and uncomment two lines below to get standard OurAirports override
+          - dataset_name: #ourairports-XXX  replace XXX with country code to include hotosm override
             display_state: #incomplete
             comments: #Ourairports data relies on user contributions and may not be comprehensive.
-
