@@ -254,6 +254,7 @@ categories:
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
@@ -264,6 +265,7 @@ categories:
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
           - dataset_name: 
             display_state: 
