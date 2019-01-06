@@ -3,8 +3,8 @@
 
 
 inherits_from: 
-name: sdn
-title:  Sudan Core Data
+name: global_default
+title:  Global Default Core Data
 description:  
 categories: 
 
@@ -22,15 +22,12 @@ categories:
           include:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
-            - (name:sudan-who-is-doing-what-where-3w)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-sdn
-            display_state: incomplete
-            comments: Only covers activities by InterAction Members.
-          - dataset_name: sudan-who-is-doing-what-where-3w
-            display_state: incomplete
-            comments: " "
+          - dataset_name: ngoaidmap-som #Interaction
+            display_state: #incomplete
+            comments: #Only covers activities by InterAction Members.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -59,8 +56,6 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -72,7 +67,6 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -82,7 +76,6 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -92,12 +85,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclulde:
-        metadata_overrides:
-          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
-            display_state: incomplete 
-            comments: Dataset covers a limited area.
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -187,9 +175,6 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:ethiopia-food-security-0) # many years out of date
-            - (name:ethiopia-food-security) # many years out of date
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -234,12 +219,7 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-              - (name:sudan-administrative-boundaries-levels-0-2)
-          exclude:
-        metadata_overrides:
-          - dataset_name: sudan-administrative-boundaries-levels-0-2
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
+          exclude: 
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -275,7 +255,6 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
@@ -314,12 +293,7 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:sudan-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -328,12 +302,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:food-for-education-ffe-supported-schools-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: food-for-education-ffe-supported-schools-sudan
-            display_state: incomplete
-            comments: Dataset covers a limited area and only includes schools in the program.
 
 
 #PHYSICAL INFRASTRUCTURE AND GEOGRAPHY
@@ -348,12 +317,11 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:hotosm_sdn_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_roads  replace XXX with country code to include hotosm override
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
+            display_state: #incomplete
+            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -363,6 +331,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-sdn
-            display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
+            display_state: #incomplete
+            comments: #OurAirports data relies on user contributions and may not be comprehensive.
