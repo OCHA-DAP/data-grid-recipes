@@ -183,6 +183,7 @@ categories:
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:somalia-3w-q1-2015) #This a 3W
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:ethiopia-food-security-0) #dataset is a duplication
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
