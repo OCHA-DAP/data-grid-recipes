@@ -56,6 +56,7 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -67,6 +68,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:unicef-esaro-regional-refugee-db-2018) #not subnational
+            - (name:hoa-refugee-database) #subnational but does not include Somalia
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -175,6 +179,8 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:somalia-3w-q1-2015) #This a 3W
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -185,6 +191,7 @@ categories:
             - (tags:"global acute malnutrition" AND subnational:1)
             - (tags:gam AND subnational:1)
           exclude:
+           - (name:regional-nutrition-dashboard) #not subnational
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -255,6 +262,8 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:total-migrants-total-migrants)
+            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
