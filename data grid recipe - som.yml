@@ -23,13 +23,11 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:somalia-3w-q1-2015) #Dataset is delinquent
         metadata_overrides:
-          - dataset_name: ngoaidmap-som
-            display_state: incomplete
-            comments: Only covers activities by InterAction Members.
-         
-          
+          - dataset_name: ngoaidmap-som #Interaction
+            display_state: #incomplete
+            comments: #Only covers activities by InterAction Members.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -205,7 +203,6 @@ categories:
             - (tags:"severe acute malnutrition" AND subnational:1)
             - (tags:sam AND subnational:1)
           exclude:
-            - (name:regional-nutrition-dashboard) #not subnational
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -267,8 +264,7 @@ categories:
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)
-            - (name:somalia-iom-dtm-dataset-round-3) #not a baseline population dataset
-            - (name:boderlands-analysis-dataset) #not a baseline population dataset
+            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
@@ -333,9 +329,9 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_som_roads  #replace XXX with country code to include this override
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
+            display_state: #incomplete
+            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -345,6 +341,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-som  #replace XXX with country code to include this override
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
+            display_state: #incomplete
+            comments: #OurAirports data relies on user contributions and may not be comprehensive.
