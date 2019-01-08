@@ -1,0 +1,360 @@
+---
+
+
+
+inherits_from: 
+name: yem 
+title:  Yemen Core Data
+description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
+categories: 
+
+
+#HUMANITARIAN COORDINATION
+  - name: humanitarian_coordination
+    title: Humanitarian Coordination
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis.
+    data_series:
+#WHO WHAT WHERE
+      - name: 3w
+        title: 3w - Who is doing what where
+        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
+        rules:
+          include:
+            - (tags:3w AND subnational:1)
+            - (title:"InterAction member activities in")
+          exclude:
+        metadata_overrides:
+          - dataset_name: ngoaidmap-yem #interaction
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
+#HUMANITARIAN ACCESS
+      - name: humanitarian_access
+        title: Humanitarian Access
+        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
+        rules:
+          include:
+            - (tags:"humanitarian access" AND subnational:1)
+            - (tags:"obstacles" AND subnational:1)
+          exclude:
+
+#HUMANITARIAN PROFILE
+  - name: humanitarian_profile
+    title: Humanitarian Profile
+    description: Data about the number of people affected by a crisis.
+    data_series:
+#IDPs
+      - name: idp
+        title: Internally-Displaced Persons
+        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        rules:
+          include:
+            - (tags:"internally displaced persons - idp" AND subnational:1)
+            - (tags:idp AND subnational:1)
+            - (tags:idps AND subnational:1)
+            - (tags:"internally displaced" AND subnational:1)
+            - (tags:"internally displaced people" AND subnational:1)
+            - (tags:"internally displaced persons" AND subnational:1)
+          exclude:
+            - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
+            - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
+        metadata_overrides:
+          - dataset_name: yemen-assessment-data-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+#REFUGEES POCs
+      - name: refugees_poc
+        title: Refugees and Persons of Concern
+        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
+        rules:
+          include:
+            - (tags:"refugees" AND subnational:1)
+            - (tags:"refugee" AND subnational:1)
+            - (tags:"persons of concern" AND subnational:1)
+            - (tags:"poc" AND subnational:1)
+          exclude:
+#RETURNEES
+      - name: returnees
+        title: Returnees
+        description: Tabular data of the number of displaced people who have returned. 
+        rules:
+          include:
+            - (tags:"returnees" AND subnational:1)
+            - (tags:"returned refugees" AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_name: yemen-assessment-data-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+#HUM PROFILE LOCATIONS
+      - name: humanitarian_profile_locations
+        title: Humanitarian Profile Locations
+        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
+        rules: 
+          include:
+            - (tags:"affected persons location" AND subnational:1)
+            - (tags:"affected persons locations" AND subnational:1)
+            - (tags:"camps" AND subnational:1)
+          exclulde:
+#CASUALTIES
+      - name: casualties
+        title: Casualties
+        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
+        rules:
+          include:
+            - (tags:casualties AND subnational:1)
+            - (tags:fatalities AND subnational:1)
+            - (tags:deaths AND subnational:1)
+          exclude:
+            - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
+ #MISSING PERSONS
+      - name: missing_persons
+        title: Missing Persons
+        description: Current number of people missing, disaggregated by location.
+        rules:
+          include:
+            - (tags:missing persons AND subnational:1)
+          exclude:
+
+
+#SITUATIONAL AWARENESS
+  - name: crisis-specific
+    title: Situational Awareness
+    description: Crisis-specific data.  Subcategories vary depending on the type of crisis.
+    data_series:
+#TRANSPORTATION STATUS
+      - name: transportation_status
+        title: Transportation Status
+        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
+        rules:
+          include:
+            - (tags:"obstacles" AND subnational:1)
+            - (tags:"transportation status" AND subnational:1)
+          exclude:
+#AFFECTED AREAS
+      - name: affected_areas
+        title: Affected Areas
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+        rules:
+          include:
+            - (tags:"affected area" AND subnational:1)
+            - (tags:"affected areas" AND subnational:1)
+          exclude:
+            - (tags:"damage assessment")
+#AFFECTED SCHOOLS
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+            - (name:affected-schools-in-yemen)
+          exclude:
+#DAMAGED BUILDINGS
+      - name: damaged_buildings
+        title: Damaged and Destroyed Buildings
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        rules:
+          include:
+            - (tags:"damaged buildings" AND subnational:1)
+            - (tags:"damage assessment" AND subnational:1)
+          exclude:
+#CONFLICT EVENTS
+      - name: conflict_events
+        title: Conflict Events
+        description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
+        rules:
+          include:
+            - (tags:"conflicts" AND subnational:1)
+            - (tags:"security incidents" AND subnational:1)
+          exclude:
+            - (name:yemen-cholera-outbreak-daily-epidemiology-update)
+            - (name:yemen-assessment-data-dtm)
+            - (name:affected-schools-in-yemen)
+
+
+#FOOD SECURITY AND NUTRITION
+  - name: food_security_and_nutrition
+    title: Food Security and Nutrition
+    description: Data about a population's access to food and key nutrition indicators.
+    data_series:
+#FOOD SECURITY
+      - name: food_security
+        title: Food security
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        rules:
+          include:
+            - (tags:"integrated phase classification - ipc" AND subnational:1)
+            - (tags:ipc AND subnational:1)
+            - (tags:"food security" AND subnational:1)
+          exclude:
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+#GAM
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"global acute malnutrition - gam" AND subnational:1)
+            - (tags:"global acute malnutrition" AND subnational:1)
+            - (tags:gam AND subnational:1)
+          exclude:
+#SAM
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"severe acute malnutrition - sam" AND subnational:1)
+            - (tags:"severe acute malnutrition" AND subnational:1)
+            - (tags:sam AND subnational:1)
+          exclude:
+#FOOD PRICES
+      - name: food_prices
+        title: Food Prices
+        description: Timeseries prices for common food commodoties at a set of locations
+        rules:
+          include:
+            - (tags:"food prices" AND subnational:1)
+            - (name:"wfp-food-prices")
+          exclude:
+
+
+#ADMINISTRATION
+  - name: administration
+    title: Administration
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
+    data_series: 
+#ADMINISTRATIVE DIVISIONS
+      - name:  administrative_divisions 
+        title: Administrative Divisions 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
+        rules:  
+          include: 
+              - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
+              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+          exclude: 
+        metadata_overrides:
+          - dataset_name: yemen-admin-boundaries
+            display_state: incomplete
+            comments: Dataset has not been endorsed as a COD.
+#POPULATED PLACES
+      - name: populated_places
+        title: Populated Places
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        rules:
+          include:
+            - (tags:"populated places" AND subnational:1)
+          exclude:
+
+
+#POPULATION AND SOCIO-ECONOMIC INDICATORS
+  - name: socio-economic
+    title: Population and Socio-economic Indicators
+    description: Data regarding populations and key indicators relating to social and economic factors.
+    data_series:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population aggregated by administrative division.
+        rules:
+          include:
+            - (tags:"population" AND subnational:1)
+            - (tags:"population statistics" AND subnational:1)
+            - (tags:"demographics" AND subnational:1)
+            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
+          exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age and Sex
+        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        rules:
+          include:
+            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
+          exclude:
+            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
+        metadata_overrides:
+          - dataset_name: 
+            display_state: 
+            comments: 
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (tags:poverty AND subnational:1)
+          exclude:
+
+
+#HEALTH AND EDUCATION
+  - name: health_and_education
+    title: Health and Education
+    description: Data describing health and education related facilities and key indicators.
+    data_series:
+#HEALTH FACILITIES
+      - name: health_facilities
+        title: Health Facilities
+        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        rules:
+          include:
+            - (tags:"health facilities" AND subnational:1)
+            - (tags:hospitals AND subnational:1)
+          exclude:
+#EDUCATION FACILITIES
+      - name: education_facilities
+        title: Education Facilities
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        rules:
+          include:
+            - (tags:"education facilities" AND subnational:1)
+            - (tags:schools AND subnational:1)
+          exclude:
+
+
+#PHYSICAL INFRASTRUCTURE AND GEOGRAPHY
+  - name: physical_infrastructure_and_geography
+    title: Physical Infrastructure and Geography
+    description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
+    data_series:
+#ROADS
+      - name:  roads
+        title: Roads
+        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        rules:
+          include:
+              - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (name:hotosm_yem_roads)
+          exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_yem_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+#AIRPORTS
+      - name: airports
+        title: Airports
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
+        rules:
+          include: 
+            - (tags:"airports" AND subnational:1)
+          exclude:
+        metadata_overrides:
+          - dataset_name: ourairports-yem
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
