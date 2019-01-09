@@ -71,7 +71,6 @@ categories:
           - dataset_name: desplazamientosmasivos
             display_state: incomplete
             comments:
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -85,7 +84,6 @@ categories:
           exclude:
             - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
             - (name:colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
-
 #RETURNEES
       - name: returnees
         title: Returnees
