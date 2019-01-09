@@ -334,7 +334,7 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (tags:hospitals AND subnational:1)
+            - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
