@@ -2,11 +2,11 @@
 
 
 
-inherits_from: 
+inherits_from:
 name: global_default
 title:  Global Default Core Data
-description:  
-categories: 
+description:
+categories:
 
 
 #HUMANITARIAN COORDINATION
@@ -23,10 +23,12 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            -(name: ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
-          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-            display_state: #incomplete
-            comments: #Only covers activities by InterAction Members.
+          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
+            display_state: incomplete
+            comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
+
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -36,14 +38,19 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
+            - (name: xxxx)
           exclude:
-
+        metadata_overrides:
+          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
+            display_state: incomplete
+            comments:
 #HUMANITARIAN PROFILE
   - name: humanitarian_profile
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
 #IDPs
+#reminder to ask CJ about including in the IDP definition a 'from' and 'to' clause
       - name: idp
         title: Internally-Displaced Persons
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
@@ -56,6 +63,20 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name: restricciones-de-acceso) #unidentifiable with poor metadata
+            - (name: idps-anual-departamental) #national level data
+
+          metadata_overrides:
+            - dataset_name: subsidiariedad-uariv15
+              display_state: incomplete
+              comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
+            - dataset_name: idps-data-by-year-and-municipality
+              display_state: complete
+              comments: dataset contains all admin 2 levels municipios of colombia
+            - dataset_name: desplazamientosmasivos
+              display_state: incomplete
+              comments:
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -67,10 +88,13 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name: olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
+            - (name: colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
+            
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned. 
+        description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
             - (tags:"returnees" AND subnational:1)
@@ -80,7 +104,7 @@ categories:
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules: 
+        rules:
           include:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
@@ -209,21 +233,21 @@ categories:
 #ADMINISTRATION
   - name: administration
     title: Administration
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
-    data_series: 
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.).
+    data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
+      - name:  administrative_divisions
+        title: Administrative Divisions
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD).
+        rules:
+          include:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-          exclude: 
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
@@ -258,7 +282,7 @@ categories:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
@@ -267,9 +291,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+          - dataset_name:
+            display_state:
+            comments:
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -327,7 +351,7 @@ categories:
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
-          include: 
+          include:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
