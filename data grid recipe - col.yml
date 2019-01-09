@@ -63,8 +63,8 @@ categories:
             - (name:idps-anual-departamental) #national level data
         metadata_overrides:
           - dataset_name: subsidiariedad-uariv15
-              display_state: incomplete
-              comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
+            display_state: incomplete
+            comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
           - dataset_name: idps-data-by-year-and-municipality
             display_state: complete
             comments: dataset contains all admin 2 levels municipios of colombia
