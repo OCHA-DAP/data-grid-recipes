@@ -85,4 +85,4 @@ categories:
             - (tags:"poc" AND subnational:1)
           exclude:
             - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name:colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
+            - (name:colombia-venezuela-border-humanitarian-crisis# #broken AID link)
