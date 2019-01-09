@@ -23,7 +23,7 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            -(name:ngoaidmap-col) #dataset does not contain data below national level.
+            - (name:ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
