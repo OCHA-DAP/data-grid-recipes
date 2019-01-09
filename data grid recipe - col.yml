@@ -38,7 +38,7 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name: xxxx)
+            - (name:potentially-affected-zones-by-the-mudflow-in-mocoa-colombia-situation-as-of-10-april-2017)
           exclude:
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
@@ -63,8 +63,8 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name: restricciones-de-acceso) #unidentifiable with poor metadata
-            - (name: idps-anual-departamental) #national level data
+            - (name:restricciones-de-acceso) #unidentifiable with poor metadata
+            - (name:idps-anual-departamental) #national level data
 
           metadata_overrides:
             - dataset_name: subsidiariedad-uariv15
@@ -88,9 +88,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name: olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name: colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
-            
+            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
+            - (name:colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -252,6 +252,7 @@ categories:
           include:
             - (tags:"populated places" AND subnational:1)
           exclude:
+            - (name: centros-poblados-2012#)
 
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
@@ -291,9 +292,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
+          - dataset_name: proyecciones-de-poblacion-municipalmente
+            display_state: complete
+            comments: dataset has incomplete metadata for reference
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
