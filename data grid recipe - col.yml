@@ -105,3 +105,21 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclude:
+#CASUALTIES
+      - name: casualties
+        title: Casualties
+        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
+        rules:
+          include:
+            - (tags:casualties AND subnational:1)
+            - (tags:fatalities AND subnational:1)
+            - (tags:deaths AND subnational:1)
+          exclude:
+#MISSING PERSONS
+      - name: missing_persons
+        title: Missing Persons
+        description: Current number of people missing, disaggregated by location.
+        rules:
+          include:
+            - (tags:missing persons AND subnational:1)
+          exclude:
