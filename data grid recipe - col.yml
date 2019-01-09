@@ -73,3 +73,16 @@ categories:
           - dataset_name: desplazamientosmasivos
             display_state: incomplete
             comments:
+#REFUGEES POCs
+      - name: refugees_poc
+        title: Refugees and Persons of Concern
+        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
+        rules:
+          include:
+            - (tags:"refugees" AND subnational:1)
+            - (tags:"refugee" AND subnational:1)
+            - (tags:"persons of concern" AND subnational:1)
+            - (tags:"poc" AND subnational:1)
+          exclude:
+            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
+            - (name:colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
