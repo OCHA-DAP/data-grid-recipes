@@ -23,7 +23,7 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            -(name: ngoaidmap-col) #dataset does not contain data below national level.
+            -(name:ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
@@ -38,7 +38,6 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name: xxxx)
           exclude:
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
@@ -63,8 +62,8 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name: restricciones-de-acceso) #unidentifiable with poor metadata
-            - (name: idps-anual-departamental) #national level data
+            - (name:restricciones-de-acceso) #unidentifiable with poor metadata
+            - (name:idps-anual-departamental) #national level data
 
           metadata_overrides:
             - dataset_name: subsidiariedad-uariv15
@@ -88,9 +87,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name: olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name: colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
-            
+            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
+            - (name:colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -109,7 +108,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-          exclulde:
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -343,9 +342,9 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_col_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -355,6 +354,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-col
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
