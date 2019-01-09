@@ -335,6 +335,7 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (tags:healthsites AND subnational:1)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
