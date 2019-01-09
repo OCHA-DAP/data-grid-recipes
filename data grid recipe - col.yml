@@ -95,3 +95,13 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+#HUM PROFILE LOCATIONS
+      - name: humanitarian_profile_locations
+        title: Humanitarian Profile Locations
+        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
+        rules:
+          include:
+            - (tags:"affected persons location" AND subnational:1)
+            - (tags:"affected persons locations" AND subnational:1)
+            - (tags:"camps" AND subnational:1)
+          exclude:
