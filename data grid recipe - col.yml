@@ -86,3 +86,12 @@ categories:
           exclude:
             - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
             - (name:colombia-venezuela-border-humanitarian-crisis#)
+#RETURNEES
+      - name: returnees
+        title: Returnees
+        description: Tabular data of the number of displaced people who have returned.
+        rules:
+          include:
+            - (tags:"returnees" AND subnational:1)
+            - (tags:"returned refugees" AND subnational:1)
+          exclude:
