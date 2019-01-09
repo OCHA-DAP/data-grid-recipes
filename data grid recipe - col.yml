@@ -174,4 +174,50 @@ categories:
           include:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
-          exclude:            
+          exclude:
+#FOOD SECURITY AND NUTRITION
+  - name: food_security_and_nutrition
+    title: Food Security and Nutrition
+    description: Data about a population's access to food and key nutrition indicators.
+    data_series:
+#FOOD SECURITY
+      - name: food_security
+        title: Food security
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        rules:
+          include:
+            - (tags:"integrated phase classification - ipc" AND subnational:1)
+            - (tags:ipc AND subnational:1)
+            - (tags:"food security" AND subnational:1)
+          exclude:
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+#GAM
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"global acute malnutrition - gam" AND subnational:1)
+            - (tags:"global acute malnutrition" AND subnational:1)
+            - (tags:gam AND subnational:1)
+          exclude:
+#SAM
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
+        rules:
+          include:
+            - (tags:"severe acute malnutrition - sam" AND subnational:1)
+            - (tags:"severe acute malnutrition" AND subnational:1)
+            - (tags:sam AND subnational:1)
+          exclude:
+#FOOD PRICES
+      - name: food_prices
+        title: Food Prices
+        description: Timeseries prices for common food commodoties at a set of locations
+        rules:
+          include:
+            - (tags:"food prices" AND subnational:1)
+            - (name:"wfp-food-prices")
+          exclude:                        
