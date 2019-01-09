@@ -28,6 +28,7 @@ categories:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -36,9 +37,9 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-          exclude:
+            exclude:
         metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
+        -   dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
             comments:
 #HUMANITARIAN PROFILE
