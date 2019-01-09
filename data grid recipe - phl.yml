@@ -64,7 +64,7 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-         metadata_overrides:
+        metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
               comments: Dataset too old from 2013.
@@ -85,7 +85,7 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-         metadata_overrides:
+        metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
               comments: Dataset too old from 2013.
