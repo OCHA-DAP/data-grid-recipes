@@ -59,6 +59,7 @@ categories:
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:reach-som-baidoa-idp-settlement-assessment-kii-cleandata-april2017) #not tabular data
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
