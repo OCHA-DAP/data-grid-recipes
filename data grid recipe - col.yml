@@ -220,6 +220,7 @@ categories:
           include:
             - (tags:"food prices" AND subnational:1)
             - (name:"wfp-food-prices")
+            - (name:wfp-food-prices-for-colombia)
           exclude:
 
 
@@ -346,4 +347,3 @@ categories:
           - dataset_name: ourairports-col
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
-            
