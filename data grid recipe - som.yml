@@ -60,6 +60,12 @@ categories:
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
             - (name:reach-som-baidoa-idp-settlement-assessment-kii-cleandata-april2017) #not tabular data
+            - (name:reach-som-baidoa-idp-settlement-assessment-hh-survey-cleandata-april2017) #not tabular data
+            - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017) #not tabular data
+            - (name:somalia-kismayo-idp-settlement-assessment-household-dataset) #not tabular data
+            - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset) #not tabular data
+            - (name:internal-displacement-profiling-in-hargeisa) #not tabular data
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -184,7 +190,8 @@ categories:
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:somalia-3w-q1-2015) #This a 3W
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:ethiopia-food-security-0) #dataset is a duplication
+            - (name:ethiopia-food-security-0) #Dataset is a duplication
+            - (name:somalia-drought-situation-in-somalia) #Dataset is about drought
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
