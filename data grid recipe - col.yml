@@ -244,4 +244,52 @@ categories:
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
+          exclude:
+#POPULATION AND SOCIO-ECONOMIC INDICATORS
+  - name: socio-economic
+    title: Population and Socio-economic Indicators
+    description: Data regarding populations and key indicators relating to social and economic factors.
+    data_series:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population aggregated by administrative division.
+        rules:
+          include:
+            - (tags:"population" AND subnational:1)
+            - (tags:"population statistics" AND subnational:1)
+            - (tags:"demographics" AND subnational:1)
+          exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age and Sex
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+          exclude:
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (tags:poverty AND subnational:1)
           exclude:                                    
