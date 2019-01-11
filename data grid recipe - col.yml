@@ -22,6 +22,7 @@ categories:
           include:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
+            - (name:ngoaidmap-col)
           exclude:
             - (name:ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
@@ -30,7 +31,7 @@ categories:
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
           - dataset_name: ngoaidmap-col
             display_state: incomplete
-            comments: Dataset does not include all administrative region
+            comments: Dataset does not include all administrative regions
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -240,6 +241,7 @@ categories:
           include:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (name:colombia-administrative-boundaries-levels-0-3)
           exclude:
 #POPULATED PLACES
       - name: populated_places
