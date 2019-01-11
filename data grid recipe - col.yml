@@ -30,7 +30,7 @@ categories:
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
           - dataset_name: ngoaidmap-col
             display_state: incomplete
-            comments: Dataset does not include all administrative regions
+            comments: Dataset does not include all administrative region
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
