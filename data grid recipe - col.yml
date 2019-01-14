@@ -34,7 +34,7 @@ categories:
             comments: Dataset does not include all administrative regions
           - dataset_name: colombia-3w-who-does-what-where
             display_state: incomplete
-            comments: This dataset is not up to date
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
