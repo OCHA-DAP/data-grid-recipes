@@ -36,7 +36,7 @@ categories:
           - dataset_name: 3w-for-typhoon-hagupit-ruby
             display_state: incomplete
             comments: Old dataset.
-#HUMANITARIAN ACCESS
+#HUMANITARIAN ACCESS # Humanitarian data
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
@@ -64,7 +64,7 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-         metadata_overrides:
+        metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
               comments: Dataset too old from 2013.
@@ -85,7 +85,7 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-         metadata_overrides:
+        metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
               comments: Dataset too old from 2013.
@@ -334,7 +334,7 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (tags:hospitals AND subnational:1)
+            - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
