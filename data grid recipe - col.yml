@@ -119,6 +119,8 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:mortalidad)
+            - (name:morbilidad)
           exclude:
 #MISSING PERSONS
       - name: missing_persons
