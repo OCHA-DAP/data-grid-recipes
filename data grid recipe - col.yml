@@ -98,6 +98,7 @@ categories:
           include:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
+            - (name:retornos-y-reubicaciones)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
