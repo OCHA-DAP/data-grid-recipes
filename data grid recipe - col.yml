@@ -9,7 +9,7 @@ description:
 categories:
 
 
-#HUMANITARIAN COORDINATION
+#HUMANITARIAN COORDINATIONz
   - name: humanitarian_coordination
     title: Humanitarian Coordination
     description: Core data relating to the coordination of humanitarian activities in a country or crisis.
@@ -22,12 +22,18 @@ categories:
           include:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
+            - (name:ngoaidmap-col)
           exclude:
-            -(name: ngoaidmap-col) #dataset does not contain data below national level.
+            - (name:ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
+          - dataset_name: ngoaidmap-col
+            display_state: incomplete
+            comments: Dataset does not include all administrative regions
+          - dataset_name: colombia-3w-who-does-what-where
+            display_state: incomplete
 
 
 #HUMANITARIAN ACCESS
@@ -38,19 +44,19 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name: xxxx)
           exclude:
         metadata_overrides:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
             comments:
+
+
 #HUMANITARIAN PROFILE
   - name: humanitarian_profile
     title: Humanitarian Profile
     description: Data about the number of people affected by a crisis.
     data_series:
 #IDPs
-#reminder to ask CJ about including in the IDP definition a 'from' and 'to' clause
       - name: idp
         title: Internally-Displaced Persons
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
@@ -63,20 +69,20 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name: restricciones-de-acceso) #unidentifiable with poor metadata
-            - (name: idps-anual-departamental) #national level data
-
-          metadata_overrides:
-            - dataset_name: subsidiariedad-uariv15
-              display_state: incomplete
-              comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
-            - dataset_name: idps-data-by-year-and-municipality
-              display_state: complete
-              comments: dataset contains all admin 2 levels municipios of colombia
-            - dataset_name: desplazamientosmasivos
-              display_state: incomplete
-              comments:
-
+            - (name:restricciones-de-acceso) #unidentifiable with poor metadata
+            - (name:idps-anual-departamental) #national level data
+        metadata_overrides:
+          - dataset_name: subsidiariedad-uariv15
+            display_state: incomplete
+            comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
+          - dataset_name: idps-data-by-year-and-municipality
+            display_state: complete
+            comments: dataset contains all admin 2 levels municipios of colombia
+          - dataset_name: desplazamientosmasivos
+            display_state: incomplete
+          - dataset_name: tendencias-humanitarias-y-paz
+            display_state: incomplete
+            comments: dataset is not up-to-date
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -88,9 +94,8 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name: olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name: colombia-venezuela-border-humanitarian-crisis# #broken AIDR link)
-            
+            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
+            - (name:colombia-venezuela-border-humanitarian-crisis#)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -99,6 +104,7 @@ categories:
           include:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
+            - (name:retornos-y-reubicaciones)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -109,7 +115,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-          exclulde:
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -119,8 +125,10 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:mortalidad)
+            - (name:morbilidad)
           exclude:
- #MISSING PERSONS
+#MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -180,8 +188,6 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
-
-
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
     title: Food Security and Nutrition
@@ -227,6 +233,7 @@ categories:
           include:
             - (tags:"food prices" AND subnational:1)
             - (name:"wfp-food-prices")
+            - (name:wfp-food-prices-for-colombia)
           exclude:
 
 
@@ -243,6 +250,7 @@ categories:
           include:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (name:colombia-administrative-boundaries-levels-0-3)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -252,8 +260,6 @@ categories:
           include:
             - (tags:"populated places" AND subnational:1)
           exclude:
-
-
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
     title: Population and Socio-economic Indicators
@@ -268,6 +274,7 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
+            - (name:proyecciones-de-poblacion-municipalmente)
           exclude:
             - (tags:"people in need")
             - (tags:"people affected")
@@ -303,7 +310,6 @@ categories:
             - (tags:poverty AND subnational:1)
           exclude:
 
-
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health and Education
@@ -327,8 +333,6 @@ categories:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
-
-
 #PHYSICAL INFRASTRUCTURE AND GEOGRAPHY
   - name: physical_infrastructure_and_geography
     title: Physical Infrastructure and Geography
@@ -343,9 +347,9 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_col_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -355,6 +359,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-col
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
