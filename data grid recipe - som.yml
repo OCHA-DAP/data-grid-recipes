@@ -24,6 +24,7 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
             - (name:somalia-3w-q1-2015) #Dataset is delinquent
+            - (name:ngoaidmap-somalia) #Dataset is a duplication
         metadata_overrides:
           - dataset_name: ngoaidmap-som
             display_state: incomplete
@@ -192,6 +193,8 @@ categories:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
             - (name:ethiopia-food-security-0) #Dataset is a duplication
             - (name:somalia-drought-situation-in-somalia) #Dataset is about drought
+            - (name:ethiopia-food-security-0-0) #Dataset is a duplication
+            - (name:horn-of-africa-food-security) #Dataset is a duplication
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
