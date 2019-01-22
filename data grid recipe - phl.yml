@@ -21,6 +21,7 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
+            - (name:philippines-mindanao-3w-sept-2016)
             - (title:"InterAction member activities in")
           exclude:
         metadata_overrides:
@@ -334,9 +335,13 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (organization:"Global Healthsites Mapping Project" AND title:" - philippines-healthsites" AND res_format:"csv") 
+            - (name:philippines-healthsites") 
             - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
+        metadata_overrides:
+          - dataset_name: philippines-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
