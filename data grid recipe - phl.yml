@@ -29,13 +29,13 @@ categories:
             comments: Dataset covers a limited area.
           - dataset_name: who-is-doing-what-where-in-mindanao-philippines-december-2016
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
           - dataset_name: philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
           - dataset_name: 3w-for-typhoon-hagupit-ruby
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -334,6 +334,7 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
+            - (organization:"Global Healthsites Mapping Project" AND title:" - philippines-healthsites" AND res_format:"csv") 
             - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
 #EDUCATION FACILITIES
