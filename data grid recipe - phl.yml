@@ -67,13 +67,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -88,13 +88,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -117,13 +117,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -137,7 +137,7 @@ categories:
         metadata_overrides:
             - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
               display_state: incomplete
-              comments: Dataset too old from 2014.
+              comments: 
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
