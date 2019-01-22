@@ -20,10 +20,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)
-            - (name:philippines-mindanao-3w-sept-2016)
+            - (tags:3w AND subnational:1)            
             - (title:"InterAction member activities in")
           exclude:
+            - (name:philippines-mindanao-3w-sept-2016)
         metadata_overrides:
           - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
             display_state: incomplete
@@ -335,7 +335,7 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites") 
+            - (name:philippines-healthsites) 
             - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
         metadata_overrides:
