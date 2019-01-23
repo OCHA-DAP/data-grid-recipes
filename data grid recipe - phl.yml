@@ -20,22 +20,23 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)
+            - (tags:3w AND subnational:1)            
             - (title:"InterAction member activities in")
           exclude:
+            - (name:philippines-mindanao-3w-sept-2016)
         metadata_overrides:
           - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
             display_state: incomplete
             comments: Dataset covers a limited area.
           - dataset_name: who-is-doing-what-where-in-mindanao-philippines-december-2016
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
           - dataset_name: philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
           - dataset_name: 3w-for-typhoon-hagupit-ruby
             display_state: incomplete
-            comments: Old dataset.
+            comments: 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -67,13 +68,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -88,13 +89,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -117,13 +118,13 @@ categories:
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
             - dataset_name: philippines-humanitarian-profile-affected-persons-locations
               display_state: incomplete
-              comments: Dataset too old from 2013.
+              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -137,7 +138,7 @@ categories:
         metadata_overrides:
             - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
               display_state: incomplete
-              comments: Dataset too old from 2014.
+              comments: 
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -334,8 +335,13 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
+            - (name:philippines-healthsites) 
             - (tags:hospitals AND subnational:1) #caters for health facilities
           exclude:
+        metadata_overrides:
+          - dataset_name: philippines-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
