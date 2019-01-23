@@ -322,7 +322,7 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:https://data.humdata.org/dataset/colombia-healthsites)
+            - (name:colombia-healthsites)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
