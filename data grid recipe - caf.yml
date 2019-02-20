@@ -23,6 +23,7 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+           - (name:ngoaidmap-caf)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
@@ -56,6 +57,10 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: car-baseline-assessment-data-iom-dtm
+            display_state: complete
+            comments: Dataset is complete.
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
