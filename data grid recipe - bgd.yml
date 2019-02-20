@@ -55,7 +55,11 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
+            - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
+            - (needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
