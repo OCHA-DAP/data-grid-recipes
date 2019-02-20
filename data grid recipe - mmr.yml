@@ -156,6 +156,11 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: acled-data-for-myanmar
+            display_state: complete
+            comments:
+
 
 
 #FOOD SECURITY AND NUTRITION
