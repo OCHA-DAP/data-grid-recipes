@@ -23,6 +23,8 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            - (name:ngoaidmap-ven) #not relevant 
+            - (name:iati-ven) #not subnational
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
@@ -67,6 +69,7 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:colombia-venezuela-border-humanitarian-crisis) #dataset link is broken
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -294,6 +297,7 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
+            
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
