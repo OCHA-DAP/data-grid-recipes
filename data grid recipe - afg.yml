@@ -2,11 +2,11 @@
 
 
 
-inherits_from: 
+inherits_from:
 name: global_default
 title:  Global Default Core Data
-description:  
-categories: 
+description:
+categories:
 
 
 #HUMANITARIAN COORDINATION
@@ -36,7 +36,7 @@ categories:
             -(name:"afghanistan-who-does-what-where-january-to-march-2016")
             -(name:"afghanistan-who-does-what-where-july-to-september-2016")
             -(name:"afghanistan-who-does-what-where-january-to-march-2017")
-            -(name:"afghanistan-ngo-presence-between-the-years-2000-and-2014")
+            
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
@@ -51,7 +51,7 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
-           
+
 #HUMANITARIAN PROFILE
   - name: humanitarian_profile
     title: Humanitarian Profile
@@ -90,7 +90,7 @@ categories:
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned. 
+        description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
             - (tags:"returnees" AND subnational:1)
@@ -100,7 +100,7 @@ categories:
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules: 
+        rules:
           include:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
@@ -229,21 +229,21 @@ categories:
 #ADMINISTRATION
   - name: administration
     title: Administration
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
-    data_series: 
+    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.).
+    data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
+      - name:  administrative_divisions
+        title: Administrative Divisions
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD).
+        rules:
+          include:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-          exclude: 
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
@@ -278,7 +278,7 @@ categories:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
@@ -287,9 +287,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+          - dataset_name:
+            display_state:
+            comments:
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -347,7 +347,7 @@ categories:
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
-          include: 
+          include:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
