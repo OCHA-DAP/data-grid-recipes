@@ -20,13 +20,14 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
+            - (name:"iati-cod")
+            - (name:"drc-3-w-national-mai-2018")
           exclude:
         metadata_overrides:
-          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-            display_state: #incomplete
-            comments: #Only covers activities by InterAction Members.
+          - dataset_name: drc-3-w-national-mai-2018
+            display_state: incomplete
+            comments: The dataset is not up-to-date
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
