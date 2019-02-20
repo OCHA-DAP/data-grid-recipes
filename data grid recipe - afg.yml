@@ -51,6 +51,8 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+            -(name:"incidents-against-humanitarian-related-workers-and-assets") # Resource download link broken
+
 
 #HUMANITARIAN PROFILE
   - name: humanitarian_profile
