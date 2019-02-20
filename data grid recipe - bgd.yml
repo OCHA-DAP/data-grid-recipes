@@ -59,7 +59,12 @@ categories:
           exclude:
             - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
             - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
-            - (needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment)
+            - (name:npm-bangladesh-round-9-baseline-master-list-march-2018)
+            - (name:cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
