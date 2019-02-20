@@ -71,6 +71,11 @@ categories:
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
             -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
+            -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
+            -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
+            -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
+            -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
+            -(name:"whole-of-afghanistan-assessment-household-dataset-august-2018")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
