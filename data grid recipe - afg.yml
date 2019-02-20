@@ -23,20 +23,6 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            -(name:"ngoaidmap-afg")
-            -(name:"afghanistan-who-does-what-where-january-to-march-2015")
-            -(name:"afghanistan-who-does-what-where-july-to-september-2015")
-            -(name:"afghanistan-who-does-what-where-april-to-june-2017")
-            -(name:"afghanistan-who-does-what-where-october-to-december-2017")
-            -(name:"afghanistan-who-does-what-where-july-to-september-2017")
-            -(name:"afghanistan-who-does-what-where-october-to-december-2016")
-            -(name:"afghanistan-who-does-what-where-april-to-june-2015")
-            -(name:"afghanistan-who-does-what-where-october-to-december-2015")
-            -(name:"afghanistan-who-does-what-where-april-to-june-2016")
-            -(name:"afghanistan-who-does-what-where-january-to-march-2016")
-            -(name:"afghanistan-who-does-what-where-july-to-september-2016")
-            -(name:"afghanistan-who-does-what-where-january-to-march-2017")
-            
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
