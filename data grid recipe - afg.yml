@@ -17,7 +17,7 @@ categories:
 #WHO WHAT WHERE
       - name: 3w
         title: 3w - Who is doing what where
-        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
+        description: List1 of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
             - (tags:3w AND subnational:1)
