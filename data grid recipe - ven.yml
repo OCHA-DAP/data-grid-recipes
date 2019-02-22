@@ -144,7 +144,7 @@ categories:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
@@ -181,7 +181,7 @@ categories:
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
+        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
             - (tags:"global acute malnutrition - gam" AND subnational:1)
@@ -191,7 +191,7 @@ categories:
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
+        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
             - (tags:"severe acute malnutrition - sam" AND subnational:1)
@@ -201,7 +201,7 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Timeseries prices for common food commodoties at a set of locations
+        description: Timeseries prices for common food commodities  at a set of locations
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
@@ -217,7 +217,7 @@ categories:
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
         title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
         rules:  
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
