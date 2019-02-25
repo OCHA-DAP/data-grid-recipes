@@ -148,7 +148,7 @@ categories:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
@@ -210,7 +210,7 @@ categories:
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global accute malnutrition (GAM) rate by administrative division.
+        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
             - (tags:"global acute malnutrition - gam" AND subnational:1)
@@ -220,7 +220,7 @@ categories:
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe accute malnutrition (SAM) rate by administrative division.
+        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
             - (tags:"severe acute malnutrition - sam" AND subnational:1)
