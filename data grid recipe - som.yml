@@ -3,16 +3,16 @@
 
 
 inherits_from: 
-name: global_default
-title:  Global Default Core Data
+name: som_data_completeness
+title:  Somalia Data Completeness
 description:  
 categories: 
 
 
-#HUMANITARIAN COORDINATION
-  - name: humanitarian_coordination
-    title: Humanitarian Coordination
-    description: Core data relating to the coordination of humanitarian activities in a country or crisis.
+#COORDINATION & CCONTEXT
+  - name: coordination_context
+    title: Coordination & Context
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis and an understanding of the context in which humanitarian activities are taking place.
     data_series:
 #WHO WHAT WHERE
       - name: 3w
@@ -33,8 +33,25 @@ categories:
           - dataset_name: ngoaidmap-som
             display_state: incomplete
             comments: Only covers activities by InterAction Members.
-         
-          
+#AFFECTED AREAS
+      - name: affected_areas
+        title: Affected Areas
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+        rules:
+          include:
+            - (tags:"affected area" AND subnational:1)
+            - (tags:"affected areas" AND subnational:1)
+          exclude:
+            - (tags:"damage assessment")
+#CONFLICT EVENTS
+      - name: conflict_events
+        title: Conflict Events
+        description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
+        rules:
+          include:
+            - (tags:"conflicts" AND subnational:1)
+            - (tags:"security incidents" AND subnational:1)
+          exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -44,11 +61,31 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+#TRANSPORTATION STATUS
+      - name: transportation_status
+        title: Transportation Status
+        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
+        rules:
+          include:
+            - (tags:"obstacles" AND subnational:1)
+            - (tags:"transportation status" AND subnational:1)
+          exclude:
+#DAMAGED BUILDINGS
+      - name: damaged_buildings
+        title: Damaged and Destroyed Buildings
+        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        rules:
+          include:
+            - (tags:"damaged buildings" AND subnational:1)
+            - (tags:"damage assessment" AND subnational:1)
+          exclude:
 
-#HUMANITARIAN PROFILE
-  - name: humanitarian_profile
-    title: Humanitarian Profile
-    description: Data about the number of people affected by a crisis.
+
+
+#AFFECTED PEOPLE
+  - name: affected_people
+    title: Affected People
+    description: Data about the people affected by a crisis.
     data_series:
 #IDPs
       - name: idp
@@ -70,7 +107,6 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-household-dataset) #not tabular data
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset) #not tabular data
             - (name:internal-displacement-profiling-in-hargeisa) #not tabular data
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -123,57 +159,6 @@ categories:
             - (tags:missing persons AND subnational:1)
           exclude:
 
-
-#SITUATIONAL AWARENESS
-  - name: crisis-specific
-    title: Situational Awareness
-    description: Crisis-specific data.  Subcategories vary depending on the type of crisis.
-    data_series:
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (tags:"obstacles" AND subnational:1)
-            - (tags:"transportation status" AND subnational:1)
-          exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (tags:"affected area" AND subnational:1)
-            - (tags:"affected areas" AND subnational:1)
-          exclude:
-            - (tags:"damage assessment")
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (tags:"affected schools" AND subnational:1)
-          exclude:
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged and Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (tags:"damaged buildings" AND subnational:1)
-            - (tags:"damage assessment" AND subnational:1)
-          exclude:
-#CONFLICT EVENTS
-      - name: conflict_events
-        title: Conflict Events
-        description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
-        rules:
-          include:
-            - (tags:"conflicts" AND subnational:1)
-            - (tags:"security incidents" AND subnational:1)
-          exclude:
 
 
 #FOOD SECURITY AND NUTRITION
@@ -233,29 +218,6 @@ categories:
             - (name:"wfp-food-prices")
           exclude:
 
-
-#ADMINISTRATION
-  - name: administration
-    title: Administration
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
-    data_series: 
-#ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
-              - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
-              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-          exclude: 
-#POPULATED PLACES
-      - name: populated_places
-        title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
-        rules:
-          include:
-            - (tags:"populated places" AND subnational:1)
-          exclude:
 
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
@@ -334,13 +296,38 @@ categories:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
           exclude:
+#AFFECTED SCHOOLS
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+          exclude:
 
 
-#PHYSICAL INFRASTRUCTURE AND GEOGRAPHY
-  - name: physical_infrastructure_and_geography
-    title: Physical Infrastructure and Geography
-    description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
+#GEOGRAPHY AND INFRASTRUCTURE
+  - name: geography_and_infrastructure
+    title: Geography and Infrastructure
+    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
+#ADMINISTRATIVE DIVISIONS
+      - name:  administrative_divisions 
+        title: Administrative Divisions 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perfered set of administrative boundaries as the Common Operational Dataset (COD). 
+        rules:  
+          include: 
+              - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
+              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+          exclude: 
+#POPULATED PLACES
+      - name: populated_places
+        title: Populated Places
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        rules:
+          include:
+            - (tags:"populated places" AND subnational:1)
+          exclude:
 #ROADS
       - name:  roads
         title: Roads
