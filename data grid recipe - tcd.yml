@@ -24,7 +24,7 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
             - (title:"3w-who-what-where")
-            - (name: who-is-doing-what-where-in-lake-chad-basin)
+            - (name:who-is-doing-what-where-in-lake-chad-basin)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
