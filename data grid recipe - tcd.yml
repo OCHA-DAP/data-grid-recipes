@@ -58,6 +58,8 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -69,6 +71,8 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -175,6 +179,8 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:reponse-de-la-fao-dans-le-bassin-du-lac-tchad)
+            - (name:sahel-food-security-projects-2015-2016)
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
@@ -221,6 +227,7 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (name:chad-admin-boundaries-admin-1-and-admin-2)
           exclude: 
 #POPULATED PLACES
       - name: populated_places
@@ -247,6 +254,11 @@ categories:
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
+            - (name:chad-uneca-population-and-migration)
+            - (name:chad-gis-geodatabase)
+            - (name:total-migrants-total-migrants)
+            - (name:economically-active-population-population-active)
+            - (name:urban-and-female-population)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
