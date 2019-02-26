@@ -308,6 +308,7 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
+            - (name:chad-gis-geodatabase)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
