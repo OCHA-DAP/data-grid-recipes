@@ -334,9 +334,9 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_chad_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -346,6 +346,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-tcd
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive. 
