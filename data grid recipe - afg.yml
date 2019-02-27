@@ -354,12 +354,12 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              #- (name:afghanistan-roads)
+              - (name:"afghanistan-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: #afghanistan-roads
-            display_state: #incomplete
-            comments: #The positional accuracy of this dataset is unknown.
+          - dataset_name: afghanistan-roads
+            display_state: incomplete
+            comments: The positional accuracy of this dataset is unknown.
 #AIRPORTS
       - name: airports
         title: Airports
