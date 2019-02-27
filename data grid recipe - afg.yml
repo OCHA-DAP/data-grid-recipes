@@ -37,7 +37,7 @@ categories:
             - (name:afghanistan-who-does-what-where-july-to-september-2016)
             - (name:afghanistan-ngo-presence-between-the-years-2000-and-2014)
             - (name:afghanistan-who-does-what-where-april-to-june-2018)
-            - (name"afghanistan-who-does-what-where-january-to-march-2018)
+            - (name:afghanistan-who-does-what-where-january-to-march-2018)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
