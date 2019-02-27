@@ -68,6 +68,14 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-conflict-induced-displacements-in-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+            - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
+            - (name:afghanistan-conflict-induced-displacements-in-2017)
+            - (name:reach-dataset-multi-cluster-needs-assessment-of-prolonged-idps-in-afghanistan)
+            - (name:afg-conflict-idps)
+            - (name:afghanistan-verified-estimates-of-idps-displaced-between-1-january-2014-and-1-march-2016)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -79,6 +87,10 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+            - (name:afghan-voluntary-repatriation-2016)
+            - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -88,6 +100,8 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -108,6 +122,9 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
+            - (name:natural-disaster-incidents-from-1-january-to-31-december-2015)
+            - (name:natural-disaster-incidents-from-1-january-to-31-december-2016)
+            - (name:natural-disaster-incidents-from-1-january-to-30-june-2015)
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -168,7 +185,7 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
-
+            - (name:security-incidents)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -268,6 +285,8 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:estimated-population-of-afghanistan-2015-2016)
+            - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
@@ -344,6 +363,6 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-afg
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
