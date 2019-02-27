@@ -76,6 +76,20 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
+            - (name:bangladesh_cox-s-bazar-host-community-multi-sector-needs-assessment)
+            - (name:rohingya-displacement-topline-figures)
+            - (name:iom-npm-cox-bazar-uav-imagery)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-majhee-blocks-mapping)
+            - (name:bangladeshi-host-community-perspectives-on-the-rohingya-crisis-june-july-2018)
+            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:streams-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:information-needs-assessment-bangladesh-rohingya-2017)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:landslide-and-flooding-risk-analysis-cox-s-bazar-site-planning-and-site-management-sector)
+            - (name:existing-and-planned-bridges-of-kutupalong-balukhali-rohingya-refugee-sites)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -326,11 +340,18 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (name:"bangladesh-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: bangladesh-roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_bgd_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_bgd_cxb_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -338,8 +359,12 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"bangladesh-aerodromes")
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-bgd
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: bangladesh-aerodromes
+            display_state: incomplete
+            comments: 
