@@ -354,12 +354,11 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:"afghanistan-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-roads
-            display_state: incomplete
-            comments: The positional accuracy of this dataset is unknown.
+          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
+            display_state: #incomplete
+            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
