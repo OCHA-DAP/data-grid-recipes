@@ -26,9 +26,9 @@ categories:
             - (name:ngoaidmap-ven) #not relevant 
             - (name:iati-ven) #not subnational
         metadata_overrides:
-          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-            display_state: #incomplete
-            comments: #Only covers activities by InterAction Members.
+          - dataset_name: venezuela-4w-december-ocha
+            display_state: incomplete
+            comments: Dataset is available upon request.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -68,6 +68,7 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
+            - (name:"unhcr-demographics-residing-ven")
           exclude:
             - (name:colombia-venezuela-border-humanitarian-crisis) #dataset link is broken
 #RETURNEES
@@ -296,8 +297,13 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (name:"venezuela-healthsites")
           exclude:
-            
+            - (name:venezuelan-hospital-national-survey)
+        metadata_overrides:
+          - dataset_name: venezuela-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -333,6 +339,7 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"ourairports-ven")
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-ven
