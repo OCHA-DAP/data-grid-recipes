@@ -129,9 +129,9 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
         metadata_overrides:
-          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-            display_state: #incomplete
-            comments: #Only covers activities by InterAction Members.
+          - dataset_name: ngoaidmap-bgd
+            display_state: incomplete
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
