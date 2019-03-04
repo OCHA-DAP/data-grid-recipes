@@ -368,3 +368,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+            - (name:bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data)
