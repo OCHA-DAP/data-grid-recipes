@@ -162,6 +162,7 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -171,6 +172,7 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged and Destroyed Buildings
@@ -228,17 +230,11 @@ categories:
             - (name:"wfp-food-prices")
           exclude:
 
-
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
-#ADMINISTRATION
-  - name: administration
-    title: Administration
-    description: Data relating to the administration of a location, most importantly, the administrative divisions (regions, districts, counties, etc.). 
-    data_series: 
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
         title: Administrative Divisions 
