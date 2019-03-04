@@ -26,6 +26,9 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:dr-congo-affected-persons-locations)
+            - (name:rd-congo-statistiques-des-personnes-deplacees-internes-idps)
+            - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -37,6 +40,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:unicef-burundi-great-lakes-30-june-2017)
+            - (name:dr-congo-affected-persons-locations)
+            - (name:unicef-esaro-regional-refugee-db-2018)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -46,6 +52,7 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+            - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -56,6 +63,7 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
+            - (name:dr-congo-affected-persons-locations)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -66,6 +74,7 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
+            - (name:ebola-cases-and-deaths-drc)
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -296,6 +305,8 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:total-migrants-total-migrants)
+            - (name:urban-and-female-population)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
