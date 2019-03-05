@@ -27,6 +27,11 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:philippines-affected-persons-locations)
+            - (name:philippines-affected-persons-locations-0)
+            - (name:philippines-humanitarian-profile-affected-persons-locations)
+            - (name:philippines-tropical-storm-vinta-tembin-idps)
+            - (name:marawi-conflict-idps-as-of-29-june-2017)
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
@@ -48,6 +53,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
+            - (name:philippines-affected-persons-locations)
+            - (name:philippines-affected-persons-locations-0)
+            - (name:philippines-humanitarian-profile-affected-persons-locations)
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
@@ -77,6 +85,9 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
+            - (name:philippines-affected-persons-locations)
+            - (name:philippines-affected-persons-locations-0)
+            - (name:philippines-humanitarian-profile-affected-persons-locations)
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
@@ -125,6 +136,10 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
             - (name:philippines-mindanao-3w-sept-2016)
+            - (name:philippines-tropical-storm-tembin-vinta-3w)
+            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
+            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
+            - (name:3w-for-typhoon-hagupit-ruby)
         metadata_overrides:
           - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
             display_state: incomplete
@@ -266,11 +281,12 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (name:"philippines-roads-0")
           exclude:
         metadata_overrides:
-          - dataset_name: #hotosm_XXX_roads  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_phl_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -280,9 +296,9 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: #ourairports-XXX  replace XXX with country code to include this override
-            display_state: #incomplete
-            comments: #OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-phl
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -311,6 +327,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
+            - (name:"philippines-education-0-0")
           exclude:
 
 #AFFECTED SCHOOLS
@@ -348,6 +365,7 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:philippines-pre-disaster-indicators)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age and Sex
