@@ -284,7 +284,10 @@ categories:
               - (name:"philippines-roads-0")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_roads
+          - dataset_name: hotosm_phl_south_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_phl_north_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
