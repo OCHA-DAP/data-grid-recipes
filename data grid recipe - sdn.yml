@@ -98,7 +98,6 @@ categories:
           include:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
-            - (name:sudan-who-is-doing-what-where-3w)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-sdn
@@ -177,6 +176,8 @@ categories:
             - (name:ethiopia-food-security-0) # many years out of date
             - (name:ethiopia-food-security) # many years out of date
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
+            - (name:horn-of-africa-food-security)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -241,7 +242,7 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:hotosm_sdn_roads)
+              - (name:sudan-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_sdn_roads
@@ -256,9 +257,12 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-sdn
+          - dataset_name: ourairports-sdn #sudan-aerodromes
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: sudan-aerodromes
+            display_state: incomplete
+            comments: " "
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -328,6 +332,7 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
