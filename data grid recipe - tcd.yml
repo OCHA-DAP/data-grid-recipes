@@ -220,6 +220,7 @@ categories:
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
+            - (name:chad-gis-geodatabase)
           exclude:
 #ROADS
       - name:  roads
@@ -259,8 +260,13 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (name:chad-healthsites)
           exclude:
             - (name:chad-gis-geodatabase)
+        metadata_overrides:
+          - dataset_name: chad-healthsites
+            display_state: incomplete
+            comments: 
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
