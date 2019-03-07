@@ -295,7 +295,7 @@ categories:
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
-    title: Population and Socio-economic Indicators
+    title: Population & Socio-economic Indicators
     description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
 #BASELINE POPULATION
