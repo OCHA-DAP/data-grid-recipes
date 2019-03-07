@@ -31,7 +31,7 @@ categories:
             - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
 #REFUGEES POCs
       - name: refugees_poc
-        title: Refugees and Persons of Concern
+        title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
@@ -147,7 +147,7 @@ categories:
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
-        title: Damaged and Destroyed Buildings
+        title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
@@ -158,7 +158,7 @@ categories:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
-    title: Food Security and Nutrition
+    title: Food Security & Nutrition
     description: Data about a population's access to food and key nutrition indicators.
     data_series:
 #FOOD SECURITY
@@ -266,7 +266,7 @@ categories:
 
 #HEALTH AND EDUCATION
   - name: health_and_education
-    title: Health and Education
+    title: Health & Education
     description: Data describing health and education related facilities and key indicators.
     data_series:
 #HEALTH FACILITIES
@@ -309,7 +309,7 @@ categories:
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
-    title: Population and Socio-economic Indicators
+    title: Population & Socio-economic Indicators
     description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
 #BASELINE POPULATION
@@ -336,7 +336,7 @@ categories:
 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
-        title: Baseline Population by Age and Sex
+        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
