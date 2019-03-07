@@ -324,7 +324,7 @@ categories:
             comments: 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
-        title: Baseline Population by Age and Sex
+        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
