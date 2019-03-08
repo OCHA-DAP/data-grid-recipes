@@ -213,7 +213,11 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
+<<<<<<< HEAD
         description: Timeseries prices for common food commodities  at a set of locations
+=======
+        description: Timeseries prices for common food commodities at a set of locations
+>>>>>>> som
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
