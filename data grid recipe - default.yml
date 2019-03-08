@@ -198,7 +198,7 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Timeseries prices for common food commodoties at a set of locations
+        description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
@@ -214,7 +214,7 @@ categories:
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
         title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD). 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
         rules:  
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
