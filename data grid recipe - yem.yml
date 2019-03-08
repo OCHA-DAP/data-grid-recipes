@@ -26,7 +26,7 @@ categories:
         metadata_overrides:
           - dataset_name: ngoaidmap-yem #interaction
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -61,6 +61,10 @@ categories:
           - dataset_name: yemen-assessment-data-dtm
             display_state: incomplete
             comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+          - dataset_name: yemen-emergency-event-tracking-jun-aug-2018-iom-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees and Persons of Concern
@@ -151,7 +155,7 @@ categories:
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
-        title: Damaged and Destroyed Buildings
+        title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
