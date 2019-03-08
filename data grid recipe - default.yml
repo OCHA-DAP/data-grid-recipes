@@ -1,7 +1,6 @@
 ---
 
 
-
 inherits_from: 
 name: global_default
 title:  Global Default Core Data
