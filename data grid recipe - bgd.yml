@@ -1,11 +1,12 @@
 ---
 
 
-inherits_from:
+
+inherits_from: 
 name: global_default
 title:  Global Default Core Data
-description:
-categories:
+description:  
+categories: 
 
 
 #AFFECTED PEOPLE
@@ -25,21 +26,16 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
-            - (name:restricciones-de-acceso) #unidentifiable with poor metadata
-            - (name:idps-anual-departamental) #national level data
-        metadata_overrides:
-          - dataset_name: subsidiariedad-uariv15
-            display_state: incomplete
-            comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
-          - dataset_name: idps-data-by-year-and-municipality
-            display_state: complete
-            comments: dataset contains all admin 2 levels municipios of colombia
-          - dataset_name: desplazamientosmasivos
-            display_state: incomplete
-          - dataset_name: tendencias-humanitarias-y-paz
-            display_state: incomplete
-            comments: dataset is not up-to-date
+            - (name:"needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment")
+            - (name:"reach-bangladesh-who-health-services")
+            - (name:"health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment")
+            - (name:"npm-bangladesh-round-9-baseline-master-list-march-2018")
+            - (name:"cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -51,28 +47,53 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name:colombia-venezuela-border-humanitarian-crisis#)
+            - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
+            - (name:bangladesh_cox-s-bazar-host-community-multi-sector-needs-assessment)
+            - (name:rohingya-displacement-topline-figures)
+            - (name:iom-npm-cox-bazar-uav-imagery)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-majhee-blocks-mapping)
+            - (name:bangladeshi-host-community-perspectives-on-the-rohingya-crisis-june-july-2018)
+            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:streams-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:information-needs-assessment-bangladesh-rohingya-2017)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:landslide-and-flooding-risk-analysis-cox-s-bazar-site-planning-and-site-management-sector)
+            - (name:existing-and-planned-bridges-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:cox-s-bazar-refugee-settlement-infrastructure)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
+            - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
+            - (name:npm-bangladesh-round-9-baseline-master-list-march-2018)
+            - (name:health-facility-registry)
+            - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
+            - (name:cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery)
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-health-facilities)
+            - (name:cox-s-bazar-refugee-settlement-learning-centers)
+            - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned.
+        description: Tabular data of the number of displaced people who have returned. 
         rules:
           include:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
-            - (name:retornos-y-reubicaciones)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
+        rules: 
           include:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-          exclude:
+          exclulde:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -82,10 +103,8 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
-            - (name:mortalidad)
-            - (name:morbilidad)
           exclude:
-#MISSING PERSONS
+ #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -93,6 +112,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -107,18 +127,11 @@ categories:
           include:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
-            - (name:ngoaidmap-col)
           exclude:
-            - (name:ngoaidmap-col) #dataset does not contain data below national level.
         metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
+          - dataset_name: ngoaidmap-bgd
             display_state: incomplete
-            comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
-          - dataset_name: ngoaidmap-col
-            display_state: incomplete
-            comments: Dataset does not include all administrative regions
-          - dataset_name: colombia-3w-who-does-what-where
-            display_state: incomplete
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -129,6 +142,7 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -138,6 +152,7 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -147,10 +162,7 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
-            display_state: incomplete
-            comments:
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -160,6 +172,7 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -215,9 +228,7 @@ categories:
           include:
             - (tags:"food prices" AND subnational:1)
             - (name:"wfp-food-prices")
-            - (name:wfp-food-prices-for-colombia)
           exclude:
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -225,19 +236,18 @@ categories:
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions
-        title: Administrative Divisions
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
-        rules:
-          include:
-            - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
-            - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-            - (name:colombia-administrative-boundaries-levels-0-3)
-          exclude:
+      - name:  administrative_divisions 
+        title: Administrative Divisions 
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
+        rules:  
+          include: 
+              - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
+              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+          exclude: 
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
@@ -248,10 +258,17 @@ categories:
         description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (name:"bangladesh-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_col_roads
+          - dataset_name: bangladesh-roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_bgd_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_bgd_cxb_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -259,13 +276,17 @@ categories:
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
-          include:
+          include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"bangladesh-aerodromes")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-col
+          - dataset_name: ourairports-bgd
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: bangladesh-aerodromes
+            display_state: incomplete
+            comments:
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -280,7 +301,6 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:colombia-healthsites)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -314,7 +334,6 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
-            - (name:proyecciones-de-poblacion-municipalmente)
           exclude:
             - (tags:"people in need")
             - (tags:"people affected")
@@ -329,7 +348,7 @@ categories:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
@@ -338,9 +357,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
+          - dataset_name: 
+            display_state: 
+            comments: 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -349,4 +368,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-
+            - (name:bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data)
