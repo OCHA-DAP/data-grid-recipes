@@ -3,11 +3,10 @@
 
 
 inherits_from: 
-name: sdn
-title:  Sudan Core Data
+name: global_default
+title:  Global Default Core Data
 description:  
 categories: 
-
 
 #AFFECTED PEOPLE
   - name: affected_people
@@ -27,8 +26,9 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
+            - (name:dr-congo-affected-persons-locations)
+            - (name:rd-congo-statistiques-des-personnes-deplacees-internes-idps)
+            - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -40,7 +40,9 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:unicef-burundi-great-lakes-30-june-2017)
+            - (name:dr-congo-affected-persons-locations)
+            - (name:unicef-esaro-regional-refugee-db-2018)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -50,7 +52,7 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
+            - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -60,12 +62,8 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclulde:
-        metadata_overrides:
-          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
-            display_state: incomplete 
-            comments: Dataset covers a limited area.
+            - (name:dr-congo-affected-persons-locations)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -76,6 +74,7 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
+            - (name:ebola-cases-and-deaths-drc)
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -84,6 +83,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -96,16 +96,14 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
+            - (name:"iati-cod")
+            - (name:"drc-3-w-national-mai-2018")
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-sdn
+          - dataset_name: drc-3-w-national-mai-2018
             display_state: incomplete
-            comments: Only covers activities by InterAction Members.
-          - dataset_name: sudan-who-is-doing-what-where-3w
-            display_state: incomplete
-            comments: " "
+            comments: The dataset is not up-to-date
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -125,7 +123,6 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -135,7 +132,6 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
-
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -145,10 +141,11 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        description: Vector data with locations of damanged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
             - (tags:"damaged buildings" AND subnational:1)
@@ -173,11 +170,6 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:ethiopia-food-security-0) # many years out of date
-            - (name:ethiopia-food-security) # many years out of date
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
-            - (name:horn-of-africa-food-security)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -208,11 +200,12 @@ categories:
             - (name:"wfp-food-prices")
           exclude:
 
+
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
-    data_series:
+    data_series: 
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions 
         title: Administrative Divisions 
@@ -221,12 +214,7 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-              - (name:sudan-administrative-boundaries-levels-0-2)
-          exclude:
-        metadata_overrides:
-          - dataset_name: sudan-administrative-boundaries-levels-0-2
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
+          exclude: 
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -242,10 +230,9 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:sudan-roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_roads
+          - dataset_name: hotosm_cod_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -257,12 +244,9 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-sdn #sudan-aerodromes
+          - dataset_name: ourairports-cod
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: sudan-aerodromes
-            display_state: incomplete
-            comments: " "
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -277,12 +261,7 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:sudan-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -291,12 +270,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:food-for-education-ffe-supported-schools-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: food-for-education-ffe-supported-schools-sudan
-            display_state: incomplete
-            comments: Dataset covers a limited area and only includes schools in the program.
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -305,7 +279,6 @@ categories:
           include:
             - (tags:"affected schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -332,8 +305,8 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
-
+            - (name:total-migrants-total-migrants)
+            - (name:urban-and-female-population)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex

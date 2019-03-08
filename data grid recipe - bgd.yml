@@ -3,8 +3,8 @@
 
 
 inherits_from: 
-name: sdn
-title:  Sudan Core Data
+name: global_default
+title:  Global Default Core Data
 description:  
 categories: 
 
@@ -26,9 +26,16 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
+            - (name:"needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment")
+            - (name:"reach-bangladesh-who-health-services")
+            - (name:"health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment")
+            - (name:"npm-bangladesh-round-9-baseline-master-list-march-2018")
+            - (name:"cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -40,7 +47,34 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
+            - (name:bangladesh_cox-s-bazar-host-community-multi-sector-needs-assessment)
+            - (name:rohingya-displacement-topline-figures)
+            - (name:iom-npm-cox-bazar-uav-imagery)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-majhee-blocks-mapping)
+            - (name:bangladeshi-host-community-perspectives-on-the-rohingya-crisis-june-july-2018)
+            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:streams-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:information-needs-assessment-bangladesh-rohingya-2017)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:landslide-and-flooding-risk-analysis-cox-s-bazar-site-planning-and-site-management-sector)
+            - (name:existing-and-planned-bridges-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:cox-s-bazar-refugee-settlement-infrastructure)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
+            - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
+            - (name:npm-bangladesh-round-9-baseline-master-list-march-2018)
+            - (name:health-facility-registry)
+            - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
+            - (name:cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery)
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-health-facilities)
+            - (name:cox-s-bazar-refugee-settlement-learning-centers)
+            - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -50,7 +84,6 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -60,12 +93,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclulde:
-        metadata_overrides:
-          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
-            display_state: incomplete 
-            comments: Dataset covers a limited area.
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -85,6 +113,7 @@ categories:
             - (tags:missing persons AND subnational:1)
           exclude:
 
+
 #COORDINATION & CONTEXT
   - name: coordination_context
     title: Coordination & Context
@@ -100,12 +129,9 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-sdn
+          - dataset_name: ngoaidmap-bgd
             display_state: incomplete
             comments: Only covers activities by InterAction Members.
-          - dataset_name: sudan-who-is-doing-what-where-3w
-            display_state: incomplete
-            comments: " "
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -116,6 +142,7 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -145,6 +172,7 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -154,7 +182,6 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -173,11 +200,6 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:ethiopia-food-security-0) # many years out of date
-            - (name:ethiopia-food-security) # many years out of date
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
-            - (name:horn-of-africa-food-security)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -221,12 +243,7 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-              - (name:sudan-administrative-boundaries-levels-0-2)
-          exclude:
-        metadata_overrides:
-          - dataset_name: sudan-administrative-boundaries-levels-0-2
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
+          exclude: 
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -242,10 +259,16 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:sudan-roads)
+              - (name:"bangladesh-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_roads
+          - dataset_name: bangladesh-roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_bgd_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_bgd_cxb_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -255,14 +278,15 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"bangladesh-aerodromes")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-sdn #sudan-aerodromes
+          - dataset_name: ourairports-bgd
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: sudan-aerodromes
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: bangladesh-aerodromes
             display_state: incomplete
-            comments: " "
+            comments:
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -277,12 +301,7 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:sudan-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -291,12 +310,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:food-for-education-ffe-supported-schools-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: food-for-education-ffe-supported-schools-sudan
-            display_state: incomplete
-            comments: Dataset covers a limited area and only includes schools in the program.
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -305,7 +319,6 @@ categories:
           include:
             - (tags:"affected schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -332,8 +345,6 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -357,3 +368,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+            - (name:bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data)

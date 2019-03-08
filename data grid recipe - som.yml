@@ -34,6 +34,7 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-household-dataset) #not tabular data
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset) #not tabular data
             - (name:internal-displacement-profiling-in-hargeisa) #not tabular data
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -85,7 +86,6 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
-
 
 
 #COORDINATION & CONTEXT
@@ -160,7 +160,6 @@ categories:
           exclude:
 
 
-
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
     title: Food Security & Nutrition
@@ -216,8 +215,8 @@ categories:
             - (tags:"food prices" AND subnational:1)
             - (name:"wfp-food-prices")
           exclude:
-
-
+          
+          
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -301,7 +300,6 @@ categories:
           exclude:
 
 
-
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
     title: Population & Socio-economic Indicators
@@ -353,4 +351,5 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+
 
