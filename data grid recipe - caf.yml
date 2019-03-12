@@ -252,7 +252,12 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (name:central-african-republic-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: central-african-republic-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
