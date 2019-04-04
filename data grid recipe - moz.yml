@@ -27,6 +27,8 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:"iom-dtm-mozambique-datset-round-1")
+            - (name:"mozambique-iom-dtm-dataset-july-2015")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
