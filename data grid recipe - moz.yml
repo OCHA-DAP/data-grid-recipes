@@ -37,9 +37,7 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
-            - (name:"unhcr-demographics-residing-ven")
           exclude:
-            - (name:colombia-venezuela-border-humanitarian-crisis) #dataset link is broken
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -58,6 +56,8 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
+            - (name:"mozambique-beira-idp-april-2019")
+
           exclulde:
 #CASUALTIES
       - name: casualties
@@ -92,12 +92,10 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:ngoaidmap-ven) #not relevant 
-            - (name:iati-ven) #not subnational
         metadata_overrides:
-          - dataset_name: venezuela-4w-december-ocha
-            display_state: incomplete
-            comments: Dataset is available upon request.
+          - dataset_name: #
+            display_state: #incomplete
+            comments:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -228,7 +226,7 @@ categories:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_ven_roads
+          - dataset_name: hotosm_moz_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -238,10 +236,10 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
-            - (name:"ourairports-ven")
+            - (name:"ourairports-moz")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-ven
+          - dataset_name: ourairports-moz
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
 
@@ -258,11 +256,11 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:"venezuela-healthsites")
+            - (name:"mozambique-healthsites")
+            - (name:"mozambique-health-facilities")
           exclude:
-            - (name:venezuelan-hospital-national-survey)
         metadata_overrides:
-          - dataset_name: venezuela-healthsites
+          - dataset_name: mozambique-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
