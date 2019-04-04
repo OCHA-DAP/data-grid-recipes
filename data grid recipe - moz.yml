@@ -307,6 +307,7 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:"total-migrants-total-migrants")
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
