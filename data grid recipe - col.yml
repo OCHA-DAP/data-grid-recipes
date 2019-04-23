@@ -39,7 +39,7 @@ categories:
             display_state: incomplete
           - dataset_name: tendencias-humanitarias-y-paz
             display_state: incomplete
-            comments: dataset is not up-to-date
+            comments: 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
