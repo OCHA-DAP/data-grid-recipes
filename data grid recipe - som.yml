@@ -328,6 +328,7 @@ categories:
             - (name:total-migrants-total-migrants)
             - (name:somalia-iom-dtm-dataset-round-3) #not a baseline population dataset
             - (name:boderlands-analysis-dataset) #not a baseline population dataset
+            - (name:worldpop-by-cod-som)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
