@@ -30,6 +30,7 @@ categories:
             - (name:"iom-dtm-mozambique-datset-round-1")
             - (name:"mozambique-iom-dtm-dataset-july-2015")
             - (name:mozambique-beira-idp-april-2019)
+            - (name:mozambique-displacement-data-daily-sites-tracking-iom-dtm)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
