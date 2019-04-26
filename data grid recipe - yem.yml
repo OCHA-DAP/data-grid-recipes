@@ -27,16 +27,10 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
+            - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
+            - (name:yemen-assessment-data-dtm)
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
             - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
-        metadata_overrides:
-          - dataset_name: yemen-assessment-data-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
-          - dataset_name: yemen-emergency-event-tracking-jun-aug-2018-iom-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -70,6 +64,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
+            - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
           exclulde:
 #CASUALTIES
       - name: casualties
