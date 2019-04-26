@@ -418,8 +418,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: indonesia-population-living-below-the-poverty-line-2007-2018
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-
+            - (name:indonesia-population-living-below-the-poverty-line-2007-2018)
