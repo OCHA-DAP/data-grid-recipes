@@ -29,6 +29,8 @@ categories:
           exclude:
             - (name:"iom-dtm-mozambique-datset-round-1")
             - (name:"mozambique-iom-dtm-dataset-july-2015")
+            - (name:mozambique-beira-idp-april-2019)
+            - (name:mozambique-displacement-data-daily-sites-tracking-iom-dtm)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -94,6 +96,9 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            - (name:hrp-projects-moz)
+            - (name:ngoaidmap-moz)
+            - (name:iati-moz)
         metadata_overrides:
           - dataset_name: #
             display_state: #incomplete
@@ -261,6 +266,7 @@ categories:
             - (name:"mozambique-healthsites")
             - (name:"mozambique-health-facilities")
           exclude:
+            - (name:mozambique-health-facility-damages-after-cyclone-idai)
         metadata_overrides:
           - dataset_name: mozambique-healthsites
             display_state: incomplete
@@ -310,6 +316,9 @@ categories:
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:"total-migrants-total-migrants")
+            - (name:mozambique-high-resolution-population-density)
+            - (name:mozambique-worldpop-population-estimates-by-cod-administrative-unit)
+            - (name:worldpop-by-cod-moz)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
