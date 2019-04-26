@@ -140,19 +140,9 @@ categories:
             - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
             - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
             - (name:3w-for-typhoon-hagupit-ruby)
-        metadata_overrides:
-          - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-          - dataset_name: who-is-doing-what-where-in-mindanao-philippines-december-2016
-            display_state: incomplete
-            comments: 
-          - dataset_name: philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016
-            display_state: incomplete
-            comments: 
-          - dataset_name: 3w-for-typhoon-hagupit-ruby
-            display_state: incomplete
-            comments: 
+            - (name:philippines-typhoon-mangkhut-3w)
+            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
