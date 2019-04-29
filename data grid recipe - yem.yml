@@ -66,6 +66,7 @@ categories:
             - (tags:"camps" AND subnational:1)
             - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
           exclulde:
+            - (name:yemen-assessment-data-dtm)
 #CASUALTIES
       - name: casualties
         title: Casualties
