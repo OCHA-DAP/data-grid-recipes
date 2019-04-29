@@ -319,6 +319,7 @@ categories:
             - (name:mozambique-high-resolution-population-density)
             - (name:mozambique-worldpop-population-estimates-by-cod-administrative-unit)
             - (name:worldpop-by-cod-moz)
+            - (organization:facebook) #FaceBook pop data are not accurate
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
