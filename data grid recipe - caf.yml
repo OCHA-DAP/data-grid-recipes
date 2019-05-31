@@ -42,6 +42,10 @@ categories:
             - (tags:"poc" AND subnational:1)
             - (name:"unhcr-demographics-residing-caf")
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-demographics-residing-caf
+            display_state: complete
+            comments: Dataset is complete.
 #RETURNEES
       - name: returnees
         title: Returnees
