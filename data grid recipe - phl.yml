@@ -274,6 +274,9 @@ categories:
               - (name:"philippines-roads-0")
           exclude:
         metadata_overrides:
+          - dataset_name: philippines-roads-0
+              display_state: incomplete
+              comments: The national and provincial do not match.
           - dataset_name: hotosm_phl_south_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
