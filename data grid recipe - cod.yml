@@ -30,6 +30,7 @@ categories:
             - (name:rd-congo-statistiques-des-personnes-deplacees-internes-idps)
             - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
             - (name:drc-site-assessment-data-iom-dtm)
+            - (name:drc-displacement-data-baseline-assessment-iom-dtm)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
