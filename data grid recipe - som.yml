@@ -314,6 +314,7 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
+            - (organization:"worldpop" AND title:" - Population Estimates by COD")
           exclude:
             - (tags:"people in need")
             - (tags:"people affected")
