@@ -108,6 +108,8 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            - (name:afghanistan-who-does-what-where-july-to-september-2018)
+            - (name:afghanistan-who-does-what-where-october-to-december-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2015)
             - (name:afghanistan-who-does-what-where-july-to-september-2015)
             - (name:afghanistan-who-does-what-where-april-to-june-2015)
