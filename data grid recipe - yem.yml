@@ -305,6 +305,8 @@ categories:
             - (tags:"demographics" AND subnational:1)
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
+            - (name:worldpop-yemen-population)
+            - (name:dhs-data-for-yemen)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
