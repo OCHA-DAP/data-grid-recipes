@@ -65,7 +65,7 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
             - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
-          exclulde:
+          exclude:
             - (name:yemen-assessment-data-dtm)
 #CASUALTIES
       - name: casualties
@@ -250,6 +250,7 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:ourairports-yem) #for some reason the rule above is not working
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-yem
@@ -305,6 +306,8 @@ categories:
             - (tags:"demographics" AND subnational:1)
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
+            - (name:worldpop-yemen-population)
+            - (name:dhs-data-for-yemen)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
@@ -330,6 +333,9 @@ categories:
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
             - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
+            - (name:worldpop-yemen-population)
+            - (name:dhs-data-for-yemen)
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
         metadata_overrides:
           - dataset_name: 
             display_state: 
