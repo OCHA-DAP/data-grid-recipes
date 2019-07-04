@@ -330,6 +330,8 @@ categories:
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
             - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
+            - (name:worldpop-yemen-population)
+            - (name:dhs-data-for-yemen)
             - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
         metadata_overrides:
           - dataset_name: 
