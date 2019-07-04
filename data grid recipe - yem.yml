@@ -250,6 +250,7 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:ourairports-yem) #for some reason the rule above is not working
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-yem
