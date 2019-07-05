@@ -27,21 +27,8 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-            - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -53,19 +40,8 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -85,19 +61,6 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -108,10 +71,6 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
-        metadata_overrides:
-            - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
-              display_state: incomplete
-              comments: 
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -132,17 +91,15 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)            
+            - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:philippines-mindanao-3w-sept-2016)
-            - (name:philippines-tropical-storm-tembin-vinta-3w)
-            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
-            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
-            - (name:3w-for-typhoon-hagupit-ruby)
-            - (name:philippines-typhoon-mangkhut-3w)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
-
+            - (title:"3w-who-what-where")
+            - (name:who-is-doing-what-where-in-lake-chad-basin)
+        metadata_overrides:
+          - dataset_name: ngoaidmap-tcd
+            display_state: incomplete
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -172,7 +129,6 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
           exclude:
-
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -182,7 +138,6 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
-
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -209,6 +164,8 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:reponse-de-la-fao-dans-le-bassin-du-lac-tchad)
+            - (name:sahel-food-security-projects-2015-2016)
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
 #GAM
@@ -241,7 +198,6 @@ categories:
             - (name:"wfp-food-prices")
           exclude:
 
-
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
@@ -255,6 +211,7 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (name:chad-admin-boundaries-admin-1-and-admin-2)
           exclude: 
 #POPULATED PLACES
       - name: populated_places
@@ -263,6 +220,7 @@ categories:
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
+            - (name:chad-gis-geodatabase)
           exclude:
 #ROADS
       - name:  roads
@@ -271,15 +229,11 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:"philippines-roads-0")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_roads
+          - dataset_name: hotosm_chad_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -289,9 +243,9 @@ categories:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-phl
+          - dataset_name: ourairports-tcd
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+            comments: Ourairports data relies on user contributions and may not be comprehensive. 
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -305,13 +259,14 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites) 
-            - (tags:hospitals AND subnational:1) #caters for health facilities
+            - (tags:hospitals AND subnational:1)
+            - (name:chad-healthsites)
           exclude:
+            - (name:chad-gis-geodatabase)
         metadata_overrides:
-          - dataset_name: philippines-healthsites
+          - dataset_name: chad-healthsites
             display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+            comments: 
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -320,9 +275,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:"philippines-education-0-0")
           exclude:
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -348,6 +301,11 @@ categories:
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
           exclude:
+            - (name:chad-uneca-population-and-migration)
+            - (name:chad-gis-geodatabase)
+            - (name:total-migrants-total-migrants)
+            - (name:economically-active-population-population-active)
+            - (name:urban-and-female-population)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
@@ -358,7 +316,6 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:philippines-pre-disaster-indicators)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -371,9 +328,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: philippines-small-area-poverty-estimates-2012-2009-2006
-            display_state: incomplete
-            comments: data too old  (from 2006-2012).
+          - dataset_name: 
+            display_state: 
+            comments: 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -382,4 +339,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-          
+

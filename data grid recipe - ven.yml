@@ -27,21 +27,6 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-            - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -52,20 +37,9 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
+            - (name:"unhcr-demographics-residing-ven")
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:colombia-venezuela-border-humanitarian-crisis) #dataset link is broken
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -85,19 +59,6 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -108,10 +69,6 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
-        metadata_overrides:
-            - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
-              display_state: incomplete
-              comments: 
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -132,17 +89,15 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)            
+            - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:philippines-mindanao-3w-sept-2016)
-            - (name:philippines-tropical-storm-tembin-vinta-3w)
-            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
-            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
-            - (name:3w-for-typhoon-hagupit-ruby)
-            - (name:philippines-typhoon-mangkhut-3w)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
-
+            - (name:ngoaidmap-ven) #not relevant 
+            - (name:iati-ven) #not subnational
+        metadata_overrides:
+          - dataset_name: venezuela-4w-december-ocha
+            display_state: incomplete
+            comments: Dataset is available upon request.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -162,7 +117,6 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -192,6 +146,7 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
+
 
 
 #FOOD SECURITY AND NUTRITION
@@ -271,13 +226,9 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:"philippines-roads-0")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
+          - dataset_name: hotosm_ven_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -287,9 +238,10 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"ourairports-ven")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-phl
+          - dataset_name: ourairports-ven
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
 
@@ -305,11 +257,12 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites) 
-            - (tags:hospitals AND subnational:1) #caters for health facilities
+            - (tags:hospitals AND subnational:1)
+            - (name:"venezuela-healthsites")
           exclude:
+            - (name:venezuelan-hospital-national-survey)
         metadata_overrides:
-          - dataset_name: philippines-healthsites
+          - dataset_name: venezuela-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
@@ -320,7 +273,6 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:"philippines-education-0-0")
           exclude:
 
 #AFFECTED SCHOOLS
@@ -331,7 +283,6 @@ categories:
           include:
             - (tags:"affected schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -358,7 +309,6 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:philippines-pre-disaster-indicators)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -371,9 +321,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: philippines-small-area-poverty-estimates-2012-2009-2006
-            display_state: incomplete
-            comments: data too old  (from 2006-2012).
+          - dataset_name: 
+            display_state: 
+            comments: 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -382,4 +332,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-          
+

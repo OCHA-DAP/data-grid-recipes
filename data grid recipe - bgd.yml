@@ -26,22 +26,16 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-            - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:"needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment")
+            - (name:"reach-bangladesh-who-health-services")
+            - (name:"health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment")
+            - (name:"npm-bangladesh-round-9-baseline-master-list-march-2018")
+            - (name:"cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -53,19 +47,34 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
+            - (name:bangladesh_cox-s-bazar-host-community-multi-sector-needs-assessment)
+            - (name:rohingya-displacement-topline-figures)
+            - (name:iom-npm-cox-bazar-uav-imagery)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-majhee-blocks-mapping)
+            - (name:bangladeshi-host-community-perspectives-on-the-rohingya-crisis-june-july-2018)
+            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:streams-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:information-needs-assessment-bangladesh-rohingya-2017)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:landslide-and-flooding-risk-analysis-cox-s-bazar-site-planning-and-site-management-sector)
+            - (name:existing-and-planned-bridges-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:cox-s-bazar-refugee-settlement-infrastructure)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
+            - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
+            - (name:npm-bangladesh-round-9-baseline-master-list-march-2018)
+            - (name:health-facility-registry)
+            - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
+            - (name:cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery)
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-health-facilities)
+            - (name:cox-s-bazar-refugee-settlement-learning-centers)
+            - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -85,19 +94,6 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -108,10 +104,6 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
-        metadata_overrides:
-            - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
-              display_state: incomplete
-              comments: 
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -120,6 +112,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -132,17 +125,13 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)            
+            - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:philippines-mindanao-3w-sept-2016)
-            - (name:philippines-tropical-storm-tembin-vinta-3w)
-            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
-            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
-            - (name:3w-for-typhoon-hagupit-ruby)
-            - (name:philippines-typhoon-mangkhut-3w)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
-
+        metadata_overrides:
+          - dataset_name: ngoaidmap-bgd
+            display_state: incomplete
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -153,6 +142,7 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -192,7 +182,6 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -241,7 +230,6 @@ categories:
             - (name:"wfp-food-prices")
           exclude:
 
-
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
@@ -271,13 +259,16 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:"philippines-roads-0")
+              - (name:"bangladesh-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_roads
+          - dataset_name: bangladesh-roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_bgd_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
+          - dataset_name: hotosm_bgd_cxb_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -287,11 +278,15 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
+            - (name:"bangladesh-aerodromes")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-phl
+          - dataset_name: ourairports-bgd
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: bangladesh-aerodromes
+            display_state: incomplete
+            comments:
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -305,13 +300,8 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites) 
-            - (tags:hospitals AND subnational:1) #caters for health facilities
+            - (tags:hospitals AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -320,9 +310,7 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:"philippines-education-0-0")
           exclude:
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -331,7 +319,6 @@ categories:
           include:
             - (tags:"affected schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -358,7 +345,6 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:philippines-pre-disaster-indicators)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -371,9 +357,9 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: philippines-small-area-poverty-estimates-2012-2009-2006
-            display_state: incomplete
-            comments: data too old  (from 2006-2012).
+          - dataset_name: 
+            display_state: 
+            comments: 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -382,4 +368,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-          
+            - (name:bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data)
