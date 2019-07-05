@@ -261,6 +261,108 @@ categories:
           - dataset_name: indonesian-capital-cities
             display_state: incomplete
             comments: Dataset is limited to captials of administrative divsions.
+
+#POPULATION AND SOCIO-ECONOMIC INDICATORS
+  - name: socio-economic
+    title: Population & Socio-economic Indicators
+    description: Data regarding populations and key indicators relating to social and economic factors.
+    data_series:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population aggregated by administrative division.
+        rules:
+          include:
+            - (tags:"population" AND subnational:1)
+            - (tags:"population statistics" AND subnational:1)
+            - (tags:"demographics" AND subnational:1)
+          exclude:
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:high-resolution-settlement-layer-for-indonesia)
+        metadata_overrides:
+          - dataset_name: population-at-village-level-admin4-of-lampung-province
+            display_state: incomplete
+            comments: Dataset covers a limited area.
+          - dataset_name: population-at-village-level-admin4-of-banten-province
+            display_state: incomplete
+            comments: Data covers a limited area.
+          - dataset_name: 2018-population-projection-central-sulawesi-province
+            display_state: incomplete
+            comments: Data covers a limited area.
+          - dataset_name: indonesia-population-by-age-group-sex-and-urban-rural-2010
+            display_state: incomplete
+            comments: The dataset is not publicly available and must be requested from the contributor.
+          - dataset_name: indonesia-population-projection-by-province-2010-2035
+            display_state: incomplete
+            comments: The dataset is not publicly available and must be requested from the contributor.
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age & Sex
+        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        rules:
+          include:
+            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+            - (name:"indonesia-population-by-age-group-sex-and-urban-rural-2010")
+          exclude:
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (tags:poverty AND subnational:1)
+          exclude:
+            - (name:indonesia-population-living-below-the-poverty-line-2007-2018)
+
+#HEALTH AND EDUCATION
+  - name: health_and_education
+    title: Health & Education
+    description: Data describing health and education related facilities and key indicators.
+    data_series:
+#HEALTH FACILITIES
+      - name: health_facilities
+        title: Health Facilities
+        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        rules:
+          include:
+            - (tags:"health facilities" AND subnational:1)
+            - (tags:hospitals AND subnational:1)
+          exclude:
+#EDUCATION FACILITIES
+      - name: education_facilities
+        title: Education Facilities
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        rules:
+          include:
+            - (tags:"education facilities" AND subnational:1)
+            - (tags:schools AND subnational:1)
+          exclude:
+#AFFECTED SCHOOLS
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+            - (tags:"affected schools" AND subnational:1)
+          exclude:
+
+#PHYSICAL INFRASTRUCTURE AND GEOGRAPHY
+  - name: physical_infrastructure_and_geography
+    title: Physical Infrastructure and Geography
+    description: Data describing the location and nature of key physical infrastructure such as transportation facilities, roads, communications facilities, etc.
+    data_series:
 #ROADS
       - name:  roads
         title: Roads
@@ -271,6 +373,30 @@ categories:
               #- (name:hotosm_XXX_roads)  replace XXX with country code to include hotosm
           exclude:
         metadata_overrides:
+          - dataset_name: hotosm_idn_sumatra_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_westjava_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_eastjava_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_westpapua_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_sulawesi_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_lsi_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_kalimantan_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_maluku_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
           - dataset_name: hotosm_idn_sunda_strait_tsunami_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
@@ -308,114 +434,3 @@ categories:
           - dataset_name: ourairports-idn
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
-
-#HEALTH AND EDUCATION
-  - name: health_and_education
-    title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
-    data_series:
-#HEALTH FACILITIES
-      - name: health_facilities
-        title: Health Facilities
-        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
-        rules:
-          include:
-            - (tags:"health facilities" AND subnational:1)
-            - (tags:hospitals AND subnational:1)
-          exclude:
-#EDUCATION FACILITIES
-      - name: education_facilities
-        title: Education Facilities
-        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
-        rules:
-          include:
-            - (tags:"education facilities" AND subnational:1)
-            - (tags:schools AND subnational:1)
-          exclude:
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (tags:"affected schools" AND subnational:1)
-          exclude:
-
-#POPULATION AND SOCIO-ECONOMIC INDICATORS
-  - name: socio-economic
-    title: Population & Socio-economic Indicators
-    description: Data regarding populations and key indicators relating to social and economic factors.
-    data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population aggregated by administrative division.
-        rules:
-          include:
-            - (tags:"population" AND subnational:1)
-            - (tags:"population statistics" AND subnational:1)
-            - (tags:"demographics" AND subnational:1)
-          exclude:
-            - (tags:"people in need")
-            - (tags:"people affected")
-            - (tags:"displaced people")
-            - (tags:"interally displaced people")
-            - (tags:"hno")
-            - (tags:"humanitarian needs overview")
-            - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:high-resolution-settlement-layer-for-indonesia)
-        metadata_overrides:
-          - dataset_name: population-at-village-level-admin4-of-lampung-province
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-          - dataset_name: population-at-village-level-admin4-of-banten-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-          - dataset_name: 2018-population-projection-central-sulawesi-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-          - dataset_name: indonesia-population-by-age-group-sex-and-urban-rural-2010
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-          - dataset_name: indonesia-population-projection-by-province-2010-2035
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
-        rules:
-          include:
-            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
-          exclude:
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-        metadata_overrides:
-          - dataset_name: population-at-village-level-admin4-of-lampung-province
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-          - dataset_name: population-at-village-level-admin4-of-banten-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-          - dataset_name: 2018-population-projection-central-sulawesi-province
-            display_state: incomplete
-            comments: Data covers a limited area and is disaggregated by sex but not age.
-          - dataset_name: indonesia-population-by-age-group-sex-and-urban-rural-2010
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-          - dataset_name: indonesia-population-projection-by-province-2010-2035
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
-        rules:
-          include:
-            - (tags:poverty AND subnational:1)
-          exclude:
-            - (name:indonesia-population-living-below-the-poverty-line-2007-2018)
