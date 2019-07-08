@@ -29,6 +29,11 @@ categories:
             - (name:dr-congo-affected-persons-locations)
             - (name:rd-congo-statistiques-des-personnes-deplacees-internes-idps)
             - (name:idps-and-returnees-figures-per-province-per-trimester-as-of-30-septembre-2014)
+            - (name:drc-site-assessment-data-iom-dtm)
+          metadata_overrides:
+            - dataset_name: drc-displacement-data-baseline-assessment-iom-dtm
+              display_state: incomplete
+              comments: The dataset is not complete.           
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -261,7 +266,12 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (name:democratic-republic-of-the-congo-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -307,6 +317,7 @@ categories:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)
             - (name:urban-and-female-population)
+            - (name:democratic-republic-of-the-congo-uneca-population-and-migration)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
