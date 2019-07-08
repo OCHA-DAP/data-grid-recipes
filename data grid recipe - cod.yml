@@ -33,7 +33,8 @@ categories:
           metadata_overrides:
             - dataset_name: drc-displacement-data-baseline-assessment-iom-dtm
               display_state: incomplete
-              comments: The dataset is not complete           
+              comments: The dataset is not complete.           
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
