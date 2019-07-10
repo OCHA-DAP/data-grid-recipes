@@ -29,6 +29,10 @@ categories:
           exclude:
             - (name:lake-chad-basin-key-figures)
             - (name:chad-gis-geodatabase)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
+            - (name:chad-humanitarian-needs-overview)
+     
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -96,6 +100,9 @@ categories:
           exclude:
             - (title:"3w-who-what-where")
             - (name:who-is-doing-what-where-in-lake-chad-basin)
+            - (name:hrp-projects-tcd)
+            - (name:ngoaidmap-tcd)
+            - (name:iati-tcd)
         metadata_overrides:
           - dataset_name: ngoaidmap-tcd
             display_state: incomplete
@@ -306,6 +313,10 @@ categories:
             - (name:total-migrants-total-migrants)
             - (name:economically-active-population-population-active)
             - (name:urban-and-female-population)
+            - (name:worldpop-chad-population)
+            - (name:lake-chad-basin-baseline-population)
+            - (name:worldpop-by-cod-tcd)
+            - (name:dhs-data-for-chad)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
@@ -316,6 +327,9 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (organization:facebook)
+            
+            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
