@@ -305,9 +305,11 @@ categories:
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:facebook)
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:worldpop-by-cod-caf)
+            - (name:worldpop-central-african-republic-population)
             - (name:total-migrants-total-migrants)
             - (name:economically-active-population-population-active)
             - (name:urban-and-female-population)
