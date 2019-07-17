@@ -139,6 +139,8 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
+            - (name:yemen-hard-to-reach-districts)
+            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
