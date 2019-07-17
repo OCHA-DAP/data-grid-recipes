@@ -41,6 +41,7 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
+            - (name:unhcr-demographics-residing-yem)
           exclude:
 #RETURNEES
       - name: returnees
