@@ -52,6 +52,9 @@ categories:
             - (tags:"returned refugees" AND subnational:1)
           exclude:
         metadata_overrides:
+          - dataset_name: yemen-displacement-data-area-assessment-iom-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
           - dataset_name: yemen-assessment-data-dtm
             display_state: incomplete
             comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
