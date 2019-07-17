@@ -137,6 +137,8 @@ categories:
             - (name:afghanistan-ngo-presence-between-the-years-2000-and-2014)
             - (name:afghanistan-who-does-what-where-april-to-june-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2018)
+            - (name:afghanistan-who-does-what-where-october-to-december-2018)
+            - (name:afghanistan-who-does-what-where-july-to-september-2018)            
         metadata_overrides:
             - dataset_name: afghanistan-who-does-what-where-january-to-march-2019 
               display_state: incomplete
