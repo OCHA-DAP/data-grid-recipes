@@ -35,6 +35,10 @@ categories:
             - (name:afg-conflict-idps)
             - (name:afghanistan-verified-estimates-of-idps-displaced-between-1-january-2014-and-1-march-2016)
             - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
+          metadata_overrides:
+            - dataset_name: afghanistan-conflict-induced-displacements-in-2019  
+              display_state: incomplete
+              comments: data is up to date, sourced from OCHA DTS
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -50,6 +54,10 @@ categories:
             - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
             - (name:afghan-voluntary-repatriation-2016)
             - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
+          metadata_overrides:
+            - dataset_name: afghan-voluntary-repatriation  
+              display_state: incomplete
+              comments: data is up to date, sourced from UNHCR
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -61,6 +69,10 @@ categories:
           exclude:
             - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
             - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+          metadata_overrides:
+            - dataset_name: afghan-voluntary-repatriation  
+              display_state: incomplete
+              comments: data is up to date, sourced from UNHCR
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -108,6 +120,8 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            - (name:afghanistan-who-does-what-where-july-to-september-2018)
+            - (name:afghanistan-who-does-what-where-october-to-december-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2015)
             - (name:afghanistan-who-does-what-where-july-to-september-2015)
             - (name:afghanistan-who-does-what-where-april-to-june-2015)
@@ -124,9 +138,12 @@ categories:
             - (name:afghanistan-who-does-what-where-april-to-june-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2018)
         metadata_overrides:
-          - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-            display_state: #incomplete
-            comments: #Only covers activities by InterAction Members.
+            - dataset_name: afghanistan-who-does-what-where-january-to-march-2019 
+              display_state: incomplete
+              comments: data is up to date, sourced from OCHA AFG
+            - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
+              display_state: #incomplete
+              comments: #Only covers activities by InterAction Members.
 
 #AFFECTED AREAS
       - name: affected_areas
