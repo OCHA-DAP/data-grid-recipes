@@ -141,7 +141,7 @@ categories:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
             - (name:yemen-hard-to-reach-districts)
-            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
+            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -277,6 +277,7 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
