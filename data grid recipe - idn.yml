@@ -124,6 +124,7 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
+            - (name:indonesia-monthly-humanitarian-update)
           exclude:
 
 #TRANSPORTATION STATUS
@@ -192,6 +193,8 @@ categories:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
+            - (name:"faostat-indonesia-indicators-for-food-security")
+            - (name:"indonesia-vulnerability-to-food-insecurity-2015")
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
