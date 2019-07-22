@@ -134,6 +134,7 @@ categories:
           include:
             - (tags:3w AND subnational:1)            
             - (title:"InterAction member activities in")
+            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
           exclude:
             - (name:philippines-mindanao-3w-sept-2016)
             - (name:philippines-tropical-storm-tembin-vinta-3w)
@@ -142,6 +143,8 @@ categories:
             - (name:3w-for-typhoon-hagupit-ruby)
             - (name:philippines-typhoon-mangkhut-3w)
             - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
+            - (name:iati-phl)
+            - (name:ngoaidmap-phl)
 
 #AFFECTED AREAS
       - name: affected_areas
@@ -171,8 +174,12 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
+            - (name:philippines-geohazards-data)
           exclude:
-
+        metadata_overrides:
+          - dataset_name: philippines-geohazards-data
+              display_state: incomplete
+              comments: Dataset covers only volcanoes and seisms prone area.
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
