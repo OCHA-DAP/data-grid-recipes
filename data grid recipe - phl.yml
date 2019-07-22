@@ -178,8 +178,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: philippines-geohazards-data
-              display_state: incomplete
-              comments: Dataset covers only volcanoes and seisms prone area.
+            display_state: incomplete
+            comments: Dataset covers only volcanoes and seisms prone area.
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
