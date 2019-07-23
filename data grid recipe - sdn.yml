@@ -29,6 +29,10 @@ categories:
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
             - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO data having IDP figures.
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -41,6 +45,13 @@ categories:
             - (tags:"poc" AND subnational:1)
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO data having IDP figures.
+          - dataset_name: sudan-returnee-data-iom-dtm
+            display_state: incomplete 
+            comments: IOM data source for refugees and POCs.
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -103,7 +114,7 @@ categories:
           - dataset_name: ngoaidmap-sdn
             display_state: incomplete
             comments: Only covers activities by InterAction Members.
-          - dataset_name: sudan-who-is-doing-what-where-3w
+          - dataset_name: sudan-who-is-doing-what-and-where-3ws
             display_state: incomplete
             comments: " "
 #AFFECTED AREAS
@@ -205,8 +216,8 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
           exclude:
+            - (name: wfp-food-prices)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -248,6 +259,9 @@ categories:
           - dataset_name: hotosm_sdn_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: sudan-roads
+            display_state: incomplete
+            comments: " "
 #AIRPORTS
       - name: airports
         title: Airports
