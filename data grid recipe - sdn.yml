@@ -29,6 +29,10 @@ categories:
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
             - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO data containing IDP figures 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -41,6 +45,16 @@ categories:
             - (tags:"poc" AND subnational:1)
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+        metadata_overrides:
+          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
+            display_state: incomplete 
+            comments: Dataset covers a limited area. 
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO data containing IDP figures  
+          - dataset_name: sudan-returnee-data-iom-dtm
+            display_state: incomplete 
+            comments: IOM returnee data at village level  
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -65,7 +79,7 @@ categories:
         metadata_overrides:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
             display_state: incomplete 
-            comments: Dataset covers a limited area.
+            comments: Dataset covers a limited area.          
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -248,6 +262,9 @@ categories:
           - dataset_name: hotosm_sdn_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: Sudan - Roads
+            display_state: incomplete 
+            comments: sourced from OCHA SDN
 #AIRPORTS
       - name: airports
         title: Airports
