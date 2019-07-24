@@ -114,9 +114,9 @@ categories:
             - dataset_name: ngoaidmap-sdn
               display_state: incomplete
               comments: Only covers activities by InterAction Members.
-            - dataset_name: sudan-who-is-doing-what-and-where-3ws
-              display_state: incomplete
-              comments: " "
+            # - dataset_name: sudan-who-is-doing-what-and-where-3ws
+            #   display_state: incomplete
+            #   comments: " "
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -270,13 +270,14 @@ categories:
           include: 
             - (tags:"airports" AND subnational:1)
           exclude:
+          - (name:sudan-aerodromes)
         metadata_overrides:
             - dataset_name: ourairports-sdn #sudan-aerodromes
               display_state: incomplete
               comments: Ourairports data relies on user contributions and may not be comprehensive.
-            - dataset_name: sudan-aerodromes
-              display_state: incomplete
-              comments: " "
+            # - dataset_name: sudan-aerodromes
+            #   display_state: incomplete
+            #   comments: " "
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -357,11 +358,7 @@ categories:
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-        metadata_overrides:
-            - dataset_name: 
-              display_state: 
-              comments: 
+            - (organization:afdb) #African Development Bank Group datasets are not subnational 
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
