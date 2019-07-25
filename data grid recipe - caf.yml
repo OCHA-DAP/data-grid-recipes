@@ -99,6 +99,7 @@ categories:
             - (title:"InterAction member activities in")
           exclude:
            - (name:ngoaidmap-caf)
+           - (name:iati-caf)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
@@ -271,8 +272,8 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:central-african-republic-healthsites)
           exclude:
+            - (name:central-african-republic-healthsites)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
