@@ -29,6 +29,10 @@ categories:
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
             - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO dataset containing multiple information.
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -41,6 +45,13 @@ categories:
             - (tags:"poc" AND subnational:1)
           exclude:
             - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete 
+            comments: HNO dataset containing people in need figuers at Admin 2 level.
+          - dataset_name: sudan-returnee-data-iom-dtm
+            display_state: incomplete 
+            comments: IOM dataset at village level.
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -204,8 +215,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
+            - (tags:"food prices" AND subnational:1)            
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -248,6 +258,9 @@ categories:
           - dataset_name: hotosm_sdn_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: sudan-roads
+            display_state: incomplete
+            comments: ""
 #AIRPORTS
       - name: airports
         title: Airports
