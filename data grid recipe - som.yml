@@ -183,7 +183,12 @@ categories:
             - (name:somalia-drought-situation-in-somalia) #Dataset is about drought
             - (name:ethiopia-food-security-0-0) #Dataset is a duplication
             - (name:horn-of-africa-food-security) #Dataset is a duplication
-            - (name:somalia-food-insecurity-phase-east-africa-drought-2011-fewsnet-07-22-2011) #Dataset is delinquent     
+            - (name:somalia-food-insecurity-phase-east-africa-drought-2011-fewsnet-07-22-2011) #Dataset is delinquent 
+            - (name:projected-ipc-population-estimates-february-june-2016) #old dataset
+        metadata_overrides:
+          - dataset_name: ethiopia-food-security
+            display_state: incompete
+            comments: " "
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -213,7 +218,6 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
           exclude:
           
           
@@ -322,7 +326,7 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)
