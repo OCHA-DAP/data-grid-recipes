@@ -247,7 +247,7 @@ categories:
 #ROADS
       - name:  roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
@@ -326,7 +326,11 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
+<<<<<<< HEAD
             - (organization:"worldpop" AND title:" - Population")
+=======
+            - (organization:"worldpop" AND title:"Somalia - Population" AND res_format:"geotiff")
+>>>>>>> master
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)

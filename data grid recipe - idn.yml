@@ -124,6 +124,7 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
+            - (name:indonesia-monthly-humanitarian-update)
           exclude:
 
 #TRANSPORTATION STATUS
@@ -192,6 +193,8 @@ categories:
             - (tags:"integrated phase classification - ipc" AND subnational:1)
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
+            - (name:"faostat-indonesia-indicators-for-food-security")
+            - (name:"indonesia-vulnerability-to-food-insecurity-2015")
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
@@ -271,6 +274,30 @@ categories:
               #- (name:hotosm_XXX_roads)  replace XXX with country code to include hotosm
           exclude:
         metadata_overrides:
+          - dataset_name: hotosm_idn_sumatra_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_westjava_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_eastjava_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_westpapua_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_sulawesi_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_lsi_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_kalimantan_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_idn_maluku_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
           - dataset_name: hotosm_idn_sunda_strait_tsunami_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
@@ -341,6 +368,8 @@ categories:
             - (tags:"affected schools" AND subnational:1)
           exclude:
 
+
+
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
     title: Population & Socio-economic Indicators
@@ -363,7 +392,7 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:high-resolution-settlement-layer-for-indonesia)
@@ -392,24 +421,9 @@ categories:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+            - (name:"indonesia-population-by-age-group-sex-and-urban-rural-2010")
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-        metadata_overrides:
-          - dataset_name: population-at-village-level-admin4-of-lampung-province
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-          - dataset_name: population-at-village-level-admin4-of-banten-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-          - dataset_name: 2018-population-projection-central-sulawesi-province
-            display_state: incomplete
-            comments: Data covers a limited area and is disaggregated by sex but not age.
-          - dataset_name: indonesia-population-by-age-group-sex-and-urban-rural-2010
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-          - dataset_name: indonesia-population-projection-by-province-2010-2035
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -418,8 +432,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: indonesia-population-living-below-the-poverty-line-2007-2018
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-
+            - (name:indonesia-population-living-below-the-poverty-line-2007-2018)
