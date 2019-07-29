@@ -244,6 +244,10 @@ categories:
           include:
             - (tags:"populated places" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-population-data
+            display_state: incomplete
+            comments:
 #ROADS
       - name:  roads
         title: Roads
