@@ -55,6 +55,7 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm) #Data set is incomplete
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -175,6 +176,7 @@ categories:
             - (name:sahel-food-security-projects-2015-2016)
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:lake-chad-basin-dashboard) # Data set is not complete
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
