@@ -244,6 +244,10 @@ categories:
           include:
             - (tags:"populated places" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-population-data
+            display_state: incomplete
+            comments:
 #ROADS
       - name:  roads
         title: Roads
@@ -326,7 +330,7 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:"Somalia - Population" AND res_format:"geotiff")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)
