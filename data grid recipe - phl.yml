@@ -107,11 +107,15 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:philippines-pre-disaster-indicators)
           exclude:
         metadata_overrides:
             - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
               display_state: incomplete
               comments: 
+            - dataset_name: philippines-pre-disaster-indicators
+              display_state: incomplete
+              comments: Dataset dosen't include coordinates.
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -311,11 +315,15 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (name:philippines-healthsites) 
             - (tags:hospitals AND subnational:1) #caters for health facilities
+            - (name:philippines-pre-disaster-indicators)
           exclude:
         metadata_overrides:
           - dataset_name: philippines-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: philippines-pre-disaster-indicators
+            display_state: incomplete
+            comments: Dataset dosen't include coordinates.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
