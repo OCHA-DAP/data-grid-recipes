@@ -110,12 +110,11 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-            - (name:sudan-who-is-doing-what-where-3w)
         metadata_overrides:
           - dataset_name: ngoaidmap-sdn
             display_state: incomplete
             comments: Only covers activities by InterAction Members.
-          - dataset_name: sudan-who-is-doing-what-and-where-3ws
+          - dataset_name: sudan-who-is-doing-what-where-3w
             display_state: incomplete
             comments: " "
 #AFFECTED AREAS
