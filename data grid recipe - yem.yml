@@ -29,6 +29,7 @@ categories:
           exclude:
             - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
             - (name:yemen-assessment-data-dtm)
+            - (name:yemen-displacement-data-tracking-idp-iom-dtm) #Dataset is not up to date
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
             - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
 #REFUGEES POCs
