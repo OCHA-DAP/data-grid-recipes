@@ -215,6 +215,7 @@ categories:
             - (name:"wfp-food-prices")
             - (name:wfp-food-prices-for-colombia)
           exclude:
+            - (name:wfp-food-prices)
 
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -312,7 +313,6 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
-            - (name:proyecciones-de-poblacion-municipalmente)
           exclude:
             - (tags:"people in need")
             - (tags:"people affected")
@@ -324,6 +324,13 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:demographic-ethnic-data-on-colombia)
+            - (name:colombia-poverty-rate)
+            - (name:proyecciones-de-poblacion-municipalmente)
+            - (name:demographic-ethnic-data-on-colombia)
+            - (name:multi-sector-municipal-data-from-1993-census)
+            - (name:worldpop-colombia-population)
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
