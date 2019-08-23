@@ -28,18 +28,16 @@ categories:
           exclude:
             - (name:restricciones-de-acceso) #unidentifiable with poor metadata
             - (name:idps-anual-departamental) #national level data
+            - (name:tendencias-humanitarias-y-paz)
+            - (name:tendencias-humanitarias-y-paz-dic-2015)
+            - (name:subsidiariedad-uariv15)
+            - (name:idps-data-by-year-and-municipality)
+            - (name:desplazamientosmasivos)
         metadata_overrides:
-          - dataset_name: subsidiariedad-uariv15
+          - dataset_name: afectados-y-eventos-de-desplazamientos-masivos-2012-2019-por-departamento-y-municipio
             display_state: incomplete
-            comments: Dataset does not appear to cover all admin 2 units and is therefore assumed to be incomplete.
-          - dataset_name: idps-data-by-year-and-municipality
-            display_state: complete
-            comments: dataset contains all admin 2 levels municipios of colombia
-          - dataset_name: desplazamientosmasivos
-            display_state: incomplete
-          - dataset_name: tendencias-humanitarias-y-paz
-            display_state: incomplete
-            comments: dataset is not up-to-date
+            comment: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
