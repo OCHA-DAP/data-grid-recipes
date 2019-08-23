@@ -330,6 +330,7 @@ categories:
             - (name:demographic-ethnic-data-on-colombia)
             - (name:multi-sector-municipal-data-from-1993-census)
             - (name:worldpop-colombia-population)
+            - (name:municipal-population-density)
 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
