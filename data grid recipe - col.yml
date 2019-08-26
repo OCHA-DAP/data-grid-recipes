@@ -212,7 +212,6 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
             - (name:wfp-food-prices-for-colombia)
           exclude:
             - (name:wfp-food-prices)
