@@ -3,9 +3,9 @@
 
 
 inherits_from: 
-name: yem 
-title:  Yemen Core Data
-description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
+name: global_default
+title:  Global Default Core Data
+description:  
 categories: 
 
 
@@ -27,10 +27,12 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
-            - (name:yemen-assessment-data-dtm)
-            - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
-            - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
+            - (name:chad-humanitarian-needs-overview)
+     
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -41,8 +43,9 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
-            - (name:unhcr-demographics-residing-yem)
           exclude:
+            - (name:lake-chad-basin-key-figures)
+            - (name:chad-gis-geodatabase)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -52,13 +55,7 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-displacement-data-area-assessment-iom-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
-          - dataset_name: yemen-assessment-data-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm) #Data set is incomplete
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -68,9 +65,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-            - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
-          exclude:
-            - (name:yemen-assessment-data-dtm)
+          exclulde:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -81,7 +76,6 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
-            - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -105,10 +99,15 @@ categories:
             - (tags:3w AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            - (title:"3w-who-what-where")
+            - (name:who-is-doing-what-where-in-lake-chad-basin)
+            - (name:hrp-projects-tcd)
+            - (name:ngoaidmap-tcd)
+            - (name:iati-tcd)
         metadata_overrides:
-          - dataset_name: ngoaidmap-yem #interaction
+          - dataset_name: ngoaidmap-tcd
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -128,9 +127,6 @@ categories:
             - (tags:"conflicts" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
-            - (name:yemen-cholera-outbreak-daily-epidemiology-update)
-            - (name:yemen-assessment-data-dtm)
-            - (name:affected-schools-in-yemen)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -140,8 +136,6 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name:yemen-hard-to-reach-districts)
-            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -178,8 +172,11 @@ categories:
             - (tags:ipc AND subnational:1)
             - (tags:"food security" AND subnational:1)
           exclude:
+            - (name:reponse-de-la-fao-dans-le-bassin-du-lac-tchad)
+            - (name:sahel-food-security-projects-2015-2016)
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:lake-chad-basin-dashboard) # Data set is not complete
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -223,11 +220,8 @@ categories:
           include: 
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (name:chad-admin-boundaries-admin-1-and-admin-2)
           exclude: 
-        metadata_overrides:
-          - dataset_name: yemen-admin-boundaries
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -235,6 +229,7 @@ categories:
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
+            - (name:chad-gis-geodatabase)
           exclude:
 #ROADS
       - name:  roads
@@ -243,12 +238,11 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:hotosm_yem_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_yem_roads
+          - dataset_name: hotosm_chad_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -256,12 +250,11 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
-            - (name:ourairports-yem) #for some reason the rule above is not working
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-yem
+          - dataset_name: ourairports-tcd
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+            comments: Ourairports data relies on user contributions and may not be comprehensive. 
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -276,8 +269,13 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
+            - (name:chad-healthsites)
           exclude:
-            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
+            - (name:chad-gis-geodatabase)
+        metadata_overrides:
+          - dataset_name: chad-healthsites
+            display_state: incomplete
+            comments: 
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -294,8 +292,8 @@ categories:
         rules:
           include:
             - (tags:"affected schools" AND subnational:1)
-            - (name:affected-schools-in-yemen)
           exclude:
+
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -311,10 +309,16 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
-            - (name:worldpop-yemen-population)
-            - (name:dhs-data-for-yemen)
+            - (name:chad-uneca-population-and-migration)
+            - (name:chad-gis-geodatabase)
+            - (name:total-migrants-total-migrants)
+            - (name:economically-active-population-population-active)
+            - (name:urban-and-female-population)
+            - (name:worldpop-chad-population)
+            - (name:lake-chad-basin-baseline-population)
+            - (name:worldpop-by-cod-tcd)
+            - (name:dhs-data-for-chad)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
@@ -323,11 +327,11 @@ categories:
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
-        metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (organization:facebook)
+            
+            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -337,12 +341,8 @@ categories:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
-            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
-            - (name:worldpop-yemen-population)
-            - (name:dhs-data-for-yemen)
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
           - dataset_name: 
             display_state: 
@@ -355,3 +355,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+
