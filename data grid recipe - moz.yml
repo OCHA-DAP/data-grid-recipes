@@ -119,8 +119,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -332,9 +333,12 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+          - dataset_name: worldpop-mozambique-population
+            display_state: incomplete
+            comments: Dataset is not COD.
+          - dataset_name: mozambique-population-2018-by-administrative-post
+            display_state: incomplete
+            comments: Dataset is not COD.
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
