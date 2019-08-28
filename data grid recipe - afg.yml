@@ -118,8 +118,9 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
-            - (title:"InterAction member activities in")
+            #- (title:"InterAction member activities in")
           exclude:
+            - (name:iati-afg)
             - (name:afghanistan-who-does-what-where-july-to-september-2018)
             - (name:afghanistan-who-does-what-where-october-to-december-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2015)
@@ -137,6 +138,7 @@ categories:
             - (name:afghanistan-ngo-presence-between-the-years-2000-and-2014)
             - (name:afghanistan-who-does-what-where-april-to-june-2018)
             - (name:afghanistan-who-does-what-where-january-to-march-2018)
+            - (name:afghanistan-who-does-what-where-january-to-march-2019)
         metadata_overrides:
             - dataset_name: afghanistan-who-does-what-where-january-to-march-2019 
               display_state: incomplete
@@ -161,8 +163,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
             - (name:security-incidents)
 
