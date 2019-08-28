@@ -76,6 +76,7 @@ categories:
             - (name:cox-s-bazar-refugee-settlement-learning-centers)
             - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-15-site-assessment-female-key-informant)
+            - (name:bangladesh-refugee-camp-infrastructure-foot-print-january-2019)
 
 #RETURNEES
       - name: returnees
@@ -154,6 +155,7 @@ categories:
           include:
             - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
 
 #HUMANITARIAN ACCESS
