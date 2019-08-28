@@ -132,6 +132,7 @@ categories:
             - (tags:"security incidents" AND subnational:1)
             - (organization:acled)
           exclude:
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
