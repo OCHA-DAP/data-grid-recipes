@@ -130,8 +130,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -317,12 +318,14 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:total-migrants-total-migrants)
             - (name:urban-and-female-population)
             - (name:democratic-republic-of-the-congo-uneca-population-and-migration)
+            - (name:highresolutionpopulationdensitymaps-cod)
+            - (name:worldpop-democratic-republic-of-the-congo-population)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
