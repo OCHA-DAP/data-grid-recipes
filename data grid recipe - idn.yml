@@ -113,8 +113,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -198,6 +199,7 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:faostat-indonesia-indicators-for-food-security) # have excluded this one as it is very old
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -433,3 +435,6 @@ categories:
             - (tags:poverty AND subnational:1)
           exclude:
             - (name:indonesia-population-living-below-the-poverty-line-2007-2018)
+            - (name:indonesia-vulnerability-to-food-insecurity-2015)
+
+# some comments added in the end for demo
