@@ -97,6 +97,7 @@ categories:
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
           exclulde:
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
 #CASUALTIES
       - name: casualties
         title: Casualties
