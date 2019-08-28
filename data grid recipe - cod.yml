@@ -69,6 +69,10 @@ categories:
             - (tags:"camps" AND subnational:1)
           exclulde:
             - (name:dr-congo-affected-persons-locations)
+        metadata_overrides:
+            - dataset_name: dr-congo-affected-persons-locations
+              display_state: incomplete
+              comments: dataset not up to date and covers few regions.
 #CASUALTIES
       - name: casualties
         title: Casualties
