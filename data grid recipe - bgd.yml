@@ -3,9 +3,9 @@
 
 
 inherits_from: 
-name: yem 
-title:  Yemen Core Data
-description: This data grid is configured based on a glboal default list of essential datasets for humanitarian data readiness. 
+name: global_default
+title:  Global Default Core Data
+description:  
 categories: 
 
 
@@ -26,11 +26,16 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
-            - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
-            - (name:yemen-assessment-data-dtm)
-            - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
-            - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
+            - (name:"needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment")
+            - (name:"reach-bangladesh-who-health-services")
+            - (name:"health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas")
+            - (name:"needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment")
+            - (name:"npm-bangladesh-round-9-baseline-master-list-march-2018")
+            - (name:"cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery")
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -41,8 +46,38 @@ categories:
             - (tags:"refugee" AND subnational:1)
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
-            - (name:unhcr-demographics-residing-yem)
           exclude:
+            - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
+            - (name:bangladesh_cox-s-bazar-host-community-multi-sector-needs-assessment)
+            - (name:rohingya-displacement-topline-figures)
+            - (name:iom-npm-cox-bazar-uav-imagery)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-majhee-blocks-mapping)
+            - (name:bangladeshi-host-community-perspectives-on-the-rohingya-crisis-june-july-2018)
+            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
+            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
+            - (name:streams-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:information-needs-assessment-bangladesh-rohingya-2017)
+            - (name:reach-bangladesh-who-health-services)
+            - (name:landslide-and-flooding-risk-analysis-cox-s-bazar-site-planning-and-site-management-sector)
+            - (name:existing-and-planned-bridges-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:cox-s-bazar-refugee-settlement-infrastructure)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-10-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-7-site-assessment)
+            - (name:needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment)
+            - (name:needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district)
+            - (name:npm-bangladesh-round-9-baseline-master-list-march-2018)
+            - (name:health-facility-registry)
+            - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
+            - (name:cloud-to-street-rohingya-refugees-flood-maps-2018-06-13-based-on-sentinel-1-imagery)
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-shelter-footprints-kutupalong-area)
+            - (name:cox-s-bazar-refugee-settlement-health-facilities)
+            - (name:cox-s-bazar-refugee-settlement-learning-centers)
+            - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-15-site-assessment-female-key-informant)
+            - (name:bangladesh-refugee-camp-infrastructure-foot-print-january-2019)
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -52,13 +87,6 @@ categories:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-displacement-data-area-assessment-iom-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
-          - dataset_name: yemen-assessment-data-dtm
-            display_state: incomplete
-            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -68,9 +96,8 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
-            - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
-          exclude:
-            - (name:yemen-assessment-data-dtm)
+          exclulde:
+            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -81,7 +108,6 @@ categories:
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
           exclude:
-            - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -90,6 +116,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -103,12 +130,13 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
-            - (title:"InterAction member activities in")
+           # - (title:"InterAction member activities in")
           exclude:
+            - (name:iati-bgd)
         metadata_overrides:
-          - dataset_name: ngoaidmap-yem #interaction
+          - dataset_name: ngoaidmap-bgd
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently. 
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -119,18 +147,17 @@ categories:
             - (tags:"affected areas" AND subnational:1)
           exclude:
             - (tags:"damage assessment")
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
-            - (name:yemen-cholera-outbreak-daily-epidemiology-update)
-            - (name:yemen-assessment-data-dtm)
-            - (name:affected-schools-in-yemen)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -140,9 +167,8 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name:yemen-hard-to-reach-districts)
-            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
           exclude:
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -152,6 +178,7 @@ categories:
             - (tags:"obstacles" AND subnational:1)
             - (tags:"transportation status" AND subnational:1)
           exclude:
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -161,7 +188,6 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -224,10 +250,6 @@ categories:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
           exclude: 
-        metadata_overrides:
-          - dataset_name: yemen-admin-boundaries
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -243,10 +265,16 @@ categories:
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:hotosm_yem_roads)
+              - (name:"bangladesh-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_yem_roads
+          - dataset_name: bangladesh-roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_bgd_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_bgd_cxb_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -256,12 +284,15 @@ categories:
         rules:
           include: 
             - (tags:"airports" AND subnational:1)
-            - (name:ourairports-yem) #for some reason the rule above is not working
+            - (name:"bangladesh-aerodromes")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-yem
+          - dataset_name: ourairports-bgd
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: bangladesh-aerodromes
+            display_state: incomplete
+            comments:
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -277,7 +308,6 @@ categories:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
           exclude:
-            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -294,7 +324,6 @@ categories:
         rules:
           include:
             - (tags:"affected schools" AND subnational:1)
-            - (name:affected-schools-in-yemen)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
@@ -311,10 +340,7 @@ categories:
             - (tags:"population" AND subnational:1)
             - (tags:"population statistics" AND subnational:1)
             - (tags:"demographics" AND subnational:1)
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
-            - (name:worldpop-yemen-population)
-            - (name:dhs-data-for-yemen)
             - (tags:"people in need")
             - (tags:"people affected")
             - (tags:"displaced people")
@@ -322,12 +348,10 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
-        metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:worldpop-bangladesh-population)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -337,12 +361,8 @@ categories:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
             - (tags:"population" AND tags:"sadd" AND subnational:1)
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
-            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
-            - (name:worldpop-yemen-population)
-            - (name:dhs-data-for-yemen)
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
           - dataset_name: 
             display_state: 
@@ -355,3 +375,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+            - (name:bangladesh-1km-resolution-poverty-estimates-mapping-poverty-using-mobile-phone-and-satellite-data)
