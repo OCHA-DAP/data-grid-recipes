@@ -136,9 +136,11 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
