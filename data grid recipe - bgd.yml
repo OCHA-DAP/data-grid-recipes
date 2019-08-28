@@ -75,6 +75,8 @@ categories:
             - (name:cox-s-bazar-refugee-settlement-health-facilities)
             - (name:cox-s-bazar-refugee-settlement-learning-centers)
             - (name:existing-and-planned-roads-of-kutupalong-balukhali-rohingya-refugee-sites)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-15-site-assessment-female-key-informant)
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -126,8 +128,9 @@ categories:
         rules:
           include:
             - (tags:3w AND subnational:1)
-            - (title:"InterAction member activities in")
+           # - (title:"InterAction member activities in")
           exclude:
+            - (name:iati-bgd)
         metadata_overrides:
           - dataset_name: ngoaidmap-bgd
             display_state: incomplete
@@ -149,7 +152,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
           exclude:
 
@@ -342,9 +345,10 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:worldpop-bangladesh-population)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
