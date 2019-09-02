@@ -32,7 +32,7 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-humanitarianneeds-overview
             display_state: incomplete 
-            comments: HNO dataset containing multiple information.
+            comments: HNO dataset containing different types of information.
 
 #REFUGEES POCs
       - name: refugees_poc
