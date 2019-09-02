@@ -82,6 +82,7 @@ categories:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
+            - (name:"afghanistan-displacement-data-baseline-assessment-iom-dtm" AND subnational:1)
           exclulde:
 #CASUALTIES
       - name: casualties
@@ -92,11 +93,12 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:"acled-data-for-afghanistan" AND subnational:1)
           exclude:
             - (name:natural-disaster-incidents-from-1-january-to-31-december-2015)
             - (name:natural-disaster-incidents-from-1-january-to-31-december-2016)
             - (name:natural-disaster-incidents-from-1-january-to-30-june-2015)
- #MISSING PERSONS
+#MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -168,6 +170,10 @@ categories:
             - (organization:acled)
           exclude:
             - (name:security-incidents)
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -198,6 +204,10 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -217,6 +227,10 @@ categories:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -244,7 +258,7 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
+            - (name:"wfp-food-prices-for-afghanistan" AND subnational:1)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
