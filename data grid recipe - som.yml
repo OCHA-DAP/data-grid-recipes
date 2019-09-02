@@ -77,6 +77,7 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:"acled-data-for-somalia" AND subnational:1)
           exclude:
  #MISSING PERSONS
       - name: missing_persons
@@ -132,6 +133,7 @@ categories:
             - (tags:"security incidents" AND subnational:1)
             - (organization:acled)
           exclude:
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -219,6 +221,7 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
+            - (name:"wfp-food-prices-for-somalia" AND subnational:1)
           exclude:
           
           
