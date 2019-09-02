@@ -88,6 +88,7 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
+            - (name:"acled-data-for-sudan" AND subnational:1)
           exclude:
  #MISSING PERSONS
       - name: missing_persons
@@ -220,7 +221,8 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (tags:"food prices" AND subnational:1)            
+            - (tags:"food prices" AND subnational:1) 
+            - (name:"wfp-food-prices-for-sudan" AND subnational:1)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
