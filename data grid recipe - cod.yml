@@ -348,4 +348,5 @@ categories:
         rules:
           include:
             - (tags:poverty AND subnational:1)
+            - (name:democratic-republic-of-the-congo-drc-global-multidimensional-poverty-index)
           exclude:
