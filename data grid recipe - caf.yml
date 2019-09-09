@@ -25,10 +25,14 @@ categories:
             - (tags:"internally displaced" AND subnational:1)
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
+            - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
             - (name:car-baseline-assessment-data-iom-dtm) #Dataset is not up to date
         metadata_overrides:
-          - dataset_name: car-baseline-assessment-data-iom-dtm
+          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
+            display_state: complete
+            comments: Dataset is complete.
+          - dataset_name: statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine
             display_state: complete
             comments: Dataset is complete.
 #REFUGEES POCs
