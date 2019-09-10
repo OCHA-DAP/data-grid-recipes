@@ -34,7 +34,6 @@ categories:
             - dataset_name: drc-displacement-data-baseline-assessment-iom-dtm
               display_state: incomplete
               comments: The dataset is not complete.           
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -113,7 +112,7 @@ categories:
         metadata_overrides:
           - dataset_name: drc-3-w-national-mai-2018
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: The dataset is not up-to-date.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -275,7 +274,7 @@ categories:
             - (tags:hospitals AND subnational:1)
             - (name:drc-health-facilities)
           exclude:
-        metadata_overrides:
+        # metadata_overrides:
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
