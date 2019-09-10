@@ -134,6 +134,7 @@ categories:
             - (tags:"security incidents" AND subnational:1)
             - (organization:acled)
           exclude:
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -272,12 +273,9 @@ categories:
           include:
             - (tags:"health facilities" AND subnational:1)
             - (tags:hospitals AND subnational:1)
-            - (name:democratic-republic-of-the-congo-healthsites)
+            - (name:drc-health-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: democratic-republic-of-the-congo-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
