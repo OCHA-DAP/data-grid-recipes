@@ -274,7 +274,7 @@ categories:
             - (tags:hospitals AND subnational:1)
             - (name:drc-health-facilities)
           exclude:
-        metadata_overrides:
+        # metadata_overrides:
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
