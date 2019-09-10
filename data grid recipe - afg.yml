@@ -2,12 +2,11 @@
 
 
 
-inherits_from: 
+inherits_from:
 name: global_default
 title:  Global Default Core Data
-description:  
-categories: 
-
+description:
+categories:
 
 #AFFECTED PEOPLE
   - name: affected_people
@@ -27,21 +26,19 @@ categories:
             - (tags:"internally displaced people" AND subnational:1)
             - (tags:"internally displaced persons" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-            - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-conflict-induced-displacements-in-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+            - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
+            - (name:afghanistan-conflict-induced-displacements-in-2017)
+            - (name:reach-dataset-multi-cluster-needs-assessment-of-prolonged-idps-in-afghanistan)
+            - (name:afg-conflict-idps)
+            - (name:afghanistan-verified-estimates-of-idps-displaced-between-1-january-2014-and-1-march-2016)
+            - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
         metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
+            - dataset_name: afghanistan-conflict-induced-displacements-in-2019  
               display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+              comments: data is up to date, sourced from OCHA DTS
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -53,51 +50,40 @@ categories:
             - (tags:"persons of concern" AND subnational:1)
             - (tags:"poc" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+            - (name:afghan-voluntary-repatriation-2016)
+            - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
         metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
+            - dataset_name: afghan-voluntary-repatriation  
               display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+              comments: data is up to date, sourced from UNHCR
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned. 
+        description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
             - (tags:"returnees" AND subnational:1)
             - (tags:"returned refugees" AND subnational:1)
           exclude:
+            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
+            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
+        metadata_overrides:
+            - dataset_name: afghan-voluntary-repatriation  
+              display_state: incomplete
+              comments: data is up to date, sourced from UNHCR
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules: 
+        rules:
           include:
             - (tags:"affected persons location" AND subnational:1)
             - (tags:"affected persons locations" AND subnational:1)
             - (tags:"camps" AND subnational:1)
+            - (name:"afghanistan-displacement-data-baseline-assessment-iom-dtm" AND subnational:1)
           exclulde:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -107,16 +93,12 @@ categories:
             - (tags:casualties AND subnational:1)
             - (tags:fatalities AND subnational:1)
             - (tags:deaths AND subnational:1)
-            - (name:philippines-pre-disaster-indicators)
+            - (name:"acled-data-for-afghanistan" AND subnational:1)
           exclude:
-        metadata_overrides:
-            - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-pre-disaster-indicators
-              display_state: incomplete
-              comments: Dataset dosen't include coordinates.
- #MISSING PERSONS
+            - (name:natural-disaster-incidents-from-1-january-to-31-december-2015)
+            - (name:natural-disaster-incidents-from-1-january-to-31-december-2016)
+            - (name:natural-disaster-incidents-from-1-january-to-30-june-2015)
+#MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -124,6 +106,7 @@ categories:
           include:
             - (tags:missing persons AND subnational:1)
           exclude:
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -136,19 +119,35 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)            
-            - (title:"InterAction member activities in")
-            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
+            - (tags:3w AND subnational:1)
+            #- (title:"InterAction member activities in")
           exclude:
-            - (name:philippines-mindanao-3w-sept-2016)
-            - (name:philippines-tropical-storm-tembin-vinta-3w)
-            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
-            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
-            - (name:3w-for-typhoon-hagupit-ruby)
-            - (name:philippines-typhoon-mangkhut-3w)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
-            - (name:iati-phl)
-            - (name:ngoaidmap-phl)
+            - (name:iati-afg)
+            - (name:afghanistan-who-does-what-where-july-to-september-2018)
+            - (name:afghanistan-who-does-what-where-october-to-december-2018)
+            - (name:afghanistan-who-does-what-where-january-to-march-2015)
+            - (name:afghanistan-who-does-what-where-july-to-september-2015)
+            - (name:afghanistan-who-does-what-where-april-to-june-2015)
+            - (name:afghanistan-who-does-what-where-october-to-december-2015)
+            - (name:afghanistan-who-does-what-where-april-to-june-2017)
+            - (name:afghanistan-who-does-what-where-october-to-december-2017)
+            - (name:afghanistan-who-does-what-where-july-to-september-2017)
+            - (name:afghanistan-who-does-what-where-january-to-march-2017)
+            - (name:afghanistan-who-does-what-where-october-to-december-2016)
+            - (name:afghanistan-who-does-what-where-april-to-june-2016)
+            - (name:afghanistan-who-does-what-where-january-to-march-2016)
+            - (name:afghanistan-who-does-what-where-july-to-september-2016)
+            - (name:afghanistan-ngo-presence-between-the-years-2000-and-2014)
+            - (name:afghanistan-who-does-what-where-april-to-june-2018)
+            - (name:afghanistan-who-does-what-where-january-to-march-2018)
+            - (name:afghanistan-who-does-what-where-january-to-march-2019)
+        metadata_overrides:
+            - dataset_name: afghanistan-who-does-what-where-january-to-march-2019 
+              display_state: incomplete
+              comments: data is up to date, sourced from OCHA AFG
+            - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
+              display_state: #incomplete
+              comments: #Only covers activities by InterAction Members.
 
 #AFFECTED AREAS
       - name: affected_areas
@@ -170,6 +169,11 @@ categories:
             - (tags:"security incidents" AND subnational:1)
             - (organization:acled)
           exclude:
+            - (name:security-incidents)
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -179,12 +183,8 @@ categories:
           include:
             - (tags:"humanitarian access" AND subnational:1)
             - (tags:"obstacles" AND subnational:1)
-            - (name:philippines-geohazards-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-geohazards-data
-            display_state: incomplete
-            comments: Dataset covers only volcanoes and seisms prone area.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -204,7 +204,10 @@ categories:
             - (tags:"damaged buildings" AND subnational:1)
             - (tags:"damage assessment" AND subnational:1)
           exclude:
-
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -223,6 +226,11 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
+        metadata_overrides:
+          - dataset_name:
+            display_state:
+            comments:
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -250,28 +258,28 @@ categories:
         rules:
           include:
             - (tags:"food prices" AND subnational:1)
-            - (name:"wfp-food-prices")
+            - (name:"wfp-food-prices-for-afghanistan" AND subnational:1)
           exclude:
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
+
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
+      - name:  administrative_divisions
+        title: Administrative Divisions
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        rules:
+          include:
               - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
               - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
-          exclude: 
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
             - (tags:"populated places" AND subnational:1)
@@ -279,33 +287,26 @@ categories:
 #ROADS
       - name:  roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
               - (tags:"roads" AND tags:"transportation" AND subnational:1)
-              - (name:"philippines-roads-0")
+              - (name:"afghanistan-roads")
           exclude:
-          - (name:philippines-roads-0)
         metadata_overrides:
-          # - dataset_name: philippines-roads-0
-          #     display_state: incomplete
-          #     comments: The national and provincial do not match.
-          - dataset_name: hotosm_phl_south_roads
+          - dataset_name: afghanistan-roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: The positional accuracy of this dataset is unknown.
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
-          include: 
+          include:
             - (tags:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-phl
+          - dataset_name: ourairports-afg
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
 
@@ -321,17 +322,8 @@ categories:
         rules:
           include:
             - (tags:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites) 
-            - (tags:hospitals AND subnational:1) #caters for health facilities
-            - (name:philippines-pre-disaster-indicators)
+            - (tags:hospitals AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: philippines-pre-disaster-indicators
-            display_state: incomplete
-            comments: Dataset dosen't include coordinates.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -340,7 +332,6 @@ categories:
           include:
             - (tags:"education facilities" AND subnational:1)
             - (tags:schools AND subnational:1)
-            - (name:"philippines-education-0-0")
           exclude:
 
 #AFFECTED SCHOOLS
@@ -375,15 +366,15 @@ categories:
             - (tags:"hno")
             - (tags:"humanitarian needs overview")
             - (tags:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:"worldpop" AND title:" - Population")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:philippines-pre-disaster-indicators)
-            - (name:worldpop-philippines-population)
+            - (name:estimated-population-of-afghanistan-2015-2016)
+            - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
             - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
@@ -391,10 +382,11 @@ categories:
             - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:estimated-population-of-afghanistan-2015-2016)
         metadata_overrides:
-          - dataset_name: philippines-small-area-poverty-estimates-2012-2009-2006
-            display_state: incomplete
-            comments: data too old  (from 2006-2012).
+          - dataset_name:
+            display_state:
+            comments:
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -403,3 +395,4 @@ categories:
           include:
             - (tags:poverty AND subnational:1)
           exclude:
+
