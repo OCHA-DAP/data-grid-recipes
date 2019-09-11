@@ -20,7 +20,8 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
+            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-14-baseline-assessment)
           exclude:
             - (name:"needs-and-population-monitoring-npm-round-6-for-rohingya-population-in-cox-s-bazar-district")
             - (name:"needs-and-population-monitoring-npm-bangladesh-round-8-site-assessment")
