@@ -8,6 +8,8 @@ title:  Global Default Core Data
 description:
 categories:
 
+
+
 #AFFECTED PEOPLE
   - name: affected_people
     title: Affected People
@@ -21,19 +23,6 @@ categories:
           include:
             - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
           exclude:
-            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
-            - (name:afghanistan-conflict-induced-displacements-in-2018)
-            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
-            - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
-            - (name:afghanistan-conflict-induced-displacements-in-2017)
-            - (name:reach-dataset-multi-cluster-needs-assessment-of-prolonged-idps-in-afghanistan)
-            - (name:afg-conflict-idps)
-            - (name:afghanistan-verified-estimates-of-idps-displaced-between-1-january-2014-and-1-march-2016)
-            - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
-        metadata_overrides:
-            - dataset_name: afghanistan-conflict-induced-displacements-in-2019  
-              display_state: incomplete
-              comments: data is up to date, sourced from OCHA DTS
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -43,14 +32,6 @@ categories:
             - (vocab_Topics:"refugees" AND subnational:1)
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
           exclude:
-            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
-            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
-            - (name:afghan-voluntary-repatriation-2016)
-            - (name:afghanistan-joint-education-and-child-protection-needs-assessment)
-        metadata_overrides:
-            - dataset_name: afghan-voluntary-repatriation  
-              display_state: incomplete
-              comments: data is up to date, sourced from UNHCR
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -59,12 +40,6 @@ categories:
           include:
             - (vocab_Topics:"returnees" AND subnational:1)
           exclude:
-            - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
-            - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
-        metadata_overrides:
-            - dataset_name: afghan-voluntary-repatriation  
-              display_state: incomplete
-              comments: data is up to date, sourced from UNHCR
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -72,7 +47,6 @@ categories:
         rules:
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-            - (name:"afghanistan-displacement-data-baseline-assessment-iom-dtm" AND subnational:1)
           exclulde:
 #CASUALTIES
       - name: casualties
@@ -82,12 +56,8 @@ categories:
           include:
             - (vocab_Topics:"casualties" AND subnational:1)
             - (vocab_Topics:"fatalities - deaths" AND subnational:1)
-            - (name:"acled-data-for-afghanistan" AND subnational:1)
           exclude:
-            - (name:natural-disaster-incidents-from-1-january-to-31-december-2015)
-            - (name:natural-disaster-incidents-from-1-january-to-31-december-2016)
-            - (name:natural-disaster-incidents-from-1-january-to-30-june-2015)
-#MISSING PERSONS
+ #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
@@ -95,7 +65,6 @@ categories:
           include:
             - (vocab_Topics:"missing persons" AND subnational:1)
           exclude:
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -111,33 +80,11 @@ categories:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             #- (title:"InterAction member activities in")
           exclude:
-            - (name:iati-afg)
-            - (name:afghanistan-who-does-what-where-july-to-september-2018)
-            - (name:afghanistan-who-does-what-where-october-to-december-2018)
-            - (name:afghanistan-who-does-what-where-january-to-march-2015)
-            - (name:afghanistan-who-does-what-where-july-to-september-2015)
-            - (name:afghanistan-who-does-what-where-april-to-june-2015)
-            - (name:afghanistan-who-does-what-where-october-to-december-2015)
-            - (name:afghanistan-who-does-what-where-april-to-june-2017)
-            - (name:afghanistan-who-does-what-where-october-to-december-2017)
-            - (name:afghanistan-who-does-what-where-july-to-september-2017)
-            - (name:afghanistan-who-does-what-where-january-to-march-2017)
-            - (name:afghanistan-who-does-what-where-october-to-december-2016)
-            - (name:afghanistan-who-does-what-where-april-to-june-2016)
-            - (name:afghanistan-who-does-what-where-january-to-march-2016)
-            - (name:afghanistan-who-does-what-where-july-to-september-2016)
-            - (name:afghanistan-ngo-presence-between-the-years-2000-and-2014)
-            - (name:afghanistan-who-does-what-where-april-to-june-2018)
-            - (name:afghanistan-who-does-what-where-january-to-march-2018)
-            - (name:afghanistan-who-does-what-where-january-to-march-2019)
+            - (name:iati-mmr)
         metadata_overrides:
-            - dataset_name: afghanistan-who-does-what-where-january-to-march-2019 
-              display_state: incomplete
-              comments: data is up to date, sourced from OCHA AFG
-            - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
-              display_state: #incomplete
-              comments: #Only covers activities by InterAction Members.
-
+          - dataset_name: ngoaidmap-mmr
+            display_state: incomplete
+            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -158,12 +105,10 @@ categories:
             - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
-            - (name:security-incidents)
         metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
-
+          - dataset_name: acled-data-for-myanmar
+            display_state: complete
+            comments: #debugcommit
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -182,7 +127,6 @@ categories:
             - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
             - (vocab_Topics:"transportation status" AND subnational:1)
           exclude:
-
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -192,10 +136,6 @@ categories:
             - (vocab_Topics:"damaged buildings" AND subnational:1)
             - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
-        metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -213,11 +153,6 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
-        metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -237,23 +172,23 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        description: Timeseries prices for common food commodoties at a set of locations
         rules:
           include:
             - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1)
-            - (name:"wfp-food-prices-for-afghanistan" AND subnational:1)
+            - (name:"wfp-food-prices")
           exclude:
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
-
 #ADMINISTRATIVE DIVISIONS
       - name:  administrative_divisions
         title: Administrative Divisions
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
               - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
@@ -273,12 +208,11 @@ categories:
         rules:
           include:
               - (vocab_Topics:"roads" AND subnational:1)
-              - (name:"afghanistan-roads")
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-roads
+          - dataset_name: hotosm_mmr_roads
             display_state: incomplete
-            comments: The positional accuracy of this dataset is unknown.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -288,7 +222,7 @@ categories:
             - (vocab_Topics:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-afg
+          - dataset_name: ourairports-mmr
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
 
@@ -314,7 +248,6 @@ categories:
           include:
             - (vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -323,7 +256,6 @@ categories:
           include:
             - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -344,11 +276,9 @@ categories:
             - (vocab_Topics:"displacement")
             - (vocab_Topics:"internally displaced persons - idp")
             - (vocab_Topics:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:estimated-population-of-afghanistan-2015-2016)
-            - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -358,7 +288,6 @@ categories:
             - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:estimated-population-of-afghanistan-2015-2016)
         metadata_overrides:
           - dataset_name:
             display_state:
@@ -371,4 +300,3 @@ categories:
           include:
             - (vocab_Topics:poverty AND subnational:1)
           exclude:
-
