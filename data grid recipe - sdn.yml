@@ -338,17 +338,17 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"population" AND subnational:1)
-            - (vocab_Topics:"population statistics" AND subnational:1)
-            - (vocab_Topics:"demographics" AND subnational:1)
+            - (tags:"population" AND subnational:1)
+            - (tags:"population statistics" AND subnational:1)
+            - (tags:"demographics" AND subnational:1)
           exclude:
-            - (vocab_Topics:"people in need")
-            - (vocab_Topics:"people affected")
-            - (vocab_Topics:"displaced people")
-            - (vocab_Topics:"interally displaced people")
-            - (vocab_Topics:"hno")
-            - (vocab_Topics:"humanitarian needs overview")
-            - (vocab_Topics:"humanitarian needs overview - hno")
+            - (tags:"people in need")
+            - (tags:"people affected")
+            - (tags:"displaced people")
+            - (tags:"interally displaced people")
+            - (tags:"hno")
+            - (tags:"humanitarian needs overview")
+            - (tags:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:"Sudan - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
@@ -360,9 +360,9 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
-            - (vocab_Topics:"population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
-            - (vocab_Topics:"population" AND vocab_Topics:"sadd" AND subnational:1)
-            - (vocab_Topics:"population" AND vocab_Topics:"sex and age disaggregated" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sadd" AND subnational:1)
+            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
@@ -375,5 +375,5 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (vocab_Topics:poverty AND subnational:1)
+            - (tags:poverty AND subnational:1)
           exclude:
