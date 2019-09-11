@@ -20,15 +20,11 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (tags:"internally displaced persons - idp" AND subnational:1)
-            - (tags:idp AND subnational:1)
-            - (tags:idps AND subnational:1)
-            - (tags:"internally displaced" AND subnational:1)
-            - (tags:"internally displaced people" AND subnational:1)
-            - (tags:"internally displaced persons" AND subnational:1)
+            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
           exclude:
             - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
             - (name:yemen-assessment-data-dtm)
+            - (name:yemen-displacement-data-tracking-idp-iom-dtm) #Dataset is not up to date
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
             - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
 #REFUGEES POCs
@@ -37,10 +33,9 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (tags:"refugees" AND subnational:1)
-            - (tags:"refugee" AND subnational:1)
-            - (tags:"persons of concern" AND subnational:1)
-            - (tags:"poc" AND subnational:1)
+            - (vocab_Topics:"refugees" AND subnational:1)
+            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
+            - (name:unhcr-demographics-residing-yem)
           exclude:
 #RETURNEES
       - name: returnees
@@ -48,10 +43,12 @@ categories:
         description: Tabular data of the number of displaced people who have returned. 
         rules:
           include:
-            - (tags:"returnees" AND subnational:1)
-            - (tags:"returned refugees" AND subnational:1)
+            - (vocab_Topics:"returnees" AND subnational:1)
           exclude:
         metadata_overrides:
+          - dataset_name: yemen-displacement-data-area-assessment-iom-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
           - dataset_name: yemen-assessment-data-dtm
             display_state: incomplete
             comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
@@ -61,9 +58,7 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules: 
           include:
-            - (tags:"affected persons location" AND subnational:1)
-            - (tags:"affected persons locations" AND subnational:1)
-            - (tags:"camps" AND subnational:1)
+            - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
             - (name:dataset/yemen-displacement-data-area-assessment-iom-dtm)
           exclude:
             - (name:yemen-assessment-data-dtm)
@@ -73,9 +68,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (tags:casualties AND subnational:1)
-            - (tags:fatalities AND subnational:1)
-            - (tags:deaths AND subnational:1)
+            - (vocab_Topics:"casualties" AND subnational:1)
+            - (vocab_Topics:"fatalities - deaths" AND subnational:1)
           exclude:
             - (name:yemen-cholera-outbreak-daily-epidemiology-update) #no longer updated and new cases seems to have slowed, assuming this crisis considered over
  #MISSING PERSONS
@@ -84,7 +78,7 @@ categories:
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-            - (tags:missing persons AND subnational:1)
+            - (vocab_Topics:"missing persons" AND subnational:1)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -98,7 +92,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (tags:3w AND subnational:1)
+            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
         metadata_overrides:
@@ -111,22 +105,24 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (tags:"affected area" AND subnational:1)
-            - (tags:"affected areas" AND subnational:1)
+            - (vocab_Topics:"affected area" AND subnational:1)
           exclude:
-            - (tags:"damage assessment")
+            - (vocab_Topics:"damage assessment")
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
-            - (tags:"security incidents" AND subnational:1)
+            - (vocab_Topics:"violence and conflict" AND subnational:1)
+            - (vocab_Topics:"security incidents" AND subnational:1)
+            - (vocab_Topics:"armed violence" AND subnational:1)
+            - (organization:acled)
           exclude:
             - (name:yemen-cholera-outbreak-daily-epidemiology-update)
             - (name:yemen-assessment-data-dtm)
             - (name:affected-schools-in-yemen)
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -134,8 +130,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (tags:"humanitarian access" AND subnational:1)
-            - (tags:"obstacles" AND subnational:1)
+            - (vocab_Topics:"humanitarian access" AND subnational:1)
+            - (name:yemen-hard-to-reach-districts)
+            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -143,8 +140,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (tags:"obstacles" AND subnational:1)
-            - (tags:"transportation status" AND subnational:1)
+            - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
+            - (vocab_Topics:"transportation status" AND subnational:1)
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -152,8 +149,8 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (tags:"damaged buildings" AND subnational:1)
-            - (tags:"damage assessment" AND subnational:1)
+            - (vocab_Topics:"damaged buildings" AND subnational:1)
+            - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
 
 
@@ -168,9 +165,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (tags:"integrated phase classification - ipc" AND subnational:1)
-            - (tags:ipc AND subnational:1)
-            - (tags:"food security" AND subnational:1)
+            - (vocab_Topics:"integrated phase classification - ipc" AND subnational:1)
+            - (vocab_Topics:"food security" AND subnational:1)
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
@@ -180,9 +176,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (tags:"global acute malnutrition - gam" AND subnational:1)
-            - (tags:"global acute malnutrition" AND subnational:1)
-            - (tags:gam AND subnational:1)
+            - (vocab_Topics:"global acute malnutrition - gam" AND subnational:1)
           exclude:
 #SAM
       - name: sam
@@ -190,9 +184,7 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (tags:"severe acute malnutrition - sam" AND subnational:1)
-            - (tags:"severe acute malnutrition" AND subnational:1)
-            - (tags:sam AND subnational:1)
+            - (vocab_Topics:"severe acute malnutrition - sam" AND subnational:1)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -200,7 +192,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (tags:"food prices" AND subnational:1)
+            - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1)
             - (name:"wfp-food-prices")
           exclude:
 
@@ -215,8 +207,7 @@ categories:
         description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
         rules:  
           include: 
-              - (tags:"administrative divisions" AND tags:"common operational dataset - cod" AND subnational:1)
-              - ((tags:"administrative divisions" OR tags:"administrative boundaries") AND tags:"cod" AND subnational:1)
+              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
           exclude: 
         metadata_overrides:
           - dataset_name: yemen-admin-boundaries
@@ -228,7 +219,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
         rules:
           include:
-            - (tags:"populated places" AND subnational:1)
+            - (vocab_Topics:"populated places - settlements" AND subnational:1)
           exclude:
 #ROADS
       - name:  roads
@@ -236,7 +227,7 @@ categories:
         description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-              - (tags:"roads" AND tags:"transportation" AND subnational:1)
+              - (vocab_Topics:"roads" AND subnational:1)
               - (name:hotosm_yem_roads)
           exclude:
         metadata_overrides:
@@ -249,7 +240,7 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include: 
-            - (tags:"airports" AND subnational:1)
+            - (vocab_Topics:"airports" AND subnational:1)
             - (name:ourairports-yem) #for some reason the rule above is not working
           exclude:
         metadata_overrides:
@@ -268,17 +259,17 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (tags:"health facilities" AND subnational:1)
-            - (tags:hospitals AND subnational:1)
+            - (vocab_Topics:"health facilities" AND subnational:1)
+            - (vocab_Topics:hospitals AND subnational:1)
           exclude:
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (tags:"education facilities" AND subnational:1)
-            - (tags:schools AND subnational:1)
+            - (vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -286,7 +277,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (tags:"affected schools" AND subnational:1)
+            - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
             - (name:affected-schools-in-yemen)
           exclude:
 
@@ -301,20 +292,17 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (tags:"population" AND subnational:1)
-            - (tags:"population statistics" AND subnational:1)
-            - (tags:"demographics" AND subnational:1)
+            - (vocab_Topics:"baseline population" AND subnational:1)
+            - (vocab_Topics:"demographics" AND subnational:1)
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
             - (name:worldpop-yemen-population)
             - (name:dhs-data-for-yemen)
-            - (tags:"people in need")
-            - (tags:"people affected")
-            - (tags:"displaced people")
-            - (tags:"interally displaced people")
-            - (tags:"hno")
-            - (tags:"humanitarian needs overview")
-            - (tags:"humanitarian needs overview - hno")
+            - (vocab_Topics:"people in need - pin")
+            - (vocab_Topics:"affected population")
+            - (vocab_Topics:"displacement")
+            - (vocab_Topics:"internally displaced persons - idp")
+            - (vocab_Topics:"humanitarian needs overview - hno")
             - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
         metadata_overrides:
@@ -327,9 +315,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
-            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
             - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
@@ -346,5 +332,5 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (tags:poverty AND subnational:1)
+            - (vocab_Topics:poverty AND subnational:1)
           exclude:
