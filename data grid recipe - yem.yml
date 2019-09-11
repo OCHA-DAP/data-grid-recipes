@@ -29,6 +29,7 @@ categories:
           exclude:
             - (name:yemen-emergency-event-tracking-jun-aug-2018-iom-dtm)
             - (name:yemen-assessment-data-dtm)
+            - (name:yemen-displacement-data-tracking-idp-iom-dtm) #Dataset is not up to date
             - (id:51e83597-474d-40d7-bdd6-15ea4c9986b9) #old version of the DTM data from 2017
             - (id:96fea290-f0be-4241-8f10-858ff159e85f) #an aggregated version of another DTM dataset that is already included.  This one would be duplicative.
 #REFUGEES POCs
@@ -125,12 +126,14 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (tags:"conflicts" AND subnational:1)
+            - (tags:"violence and conflict" AND subnational:1)
             - (tags:"security incidents" AND subnational:1)
+            - (organization:acled)
           exclude:
             - (name:yemen-cholera-outbreak-daily-epidemiology-update)
             - (name:yemen-assessment-data-dtm)
             - (name:affected-schools-in-yemen)
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
