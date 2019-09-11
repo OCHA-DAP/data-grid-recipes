@@ -22,21 +22,10 @@ categories:
           include:
             - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-            - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
+            - (name:"iom-dtm-mozambique-datset-round-1")
+            - (name:"mozambique-iom-dtm-dataset-july-2015")
+            - (name:mozambique-beira-idp-april-2019)
+            - (name:mozambique-displacement-data-daily-sites-tracking-iom-dtm)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -46,19 +35,6 @@ categories:
             - (vocab_Topics:"refugees" AND subnational:1)
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
           exclude:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -74,20 +50,9 @@ categories:
         rules: 
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
+            - (name:"mozambique-beira-idp-april-2019")
+
           exclulde:
-            - (name:philippines-affected-persons-locations)
-            - (name:philippines-affected-persons-locations-0)
-            - (name:philippines-humanitarian-profile-affected-persons-locations)
-        metadata_overrides:
-            - dataset_name: philippines-affected-persons-locations-0
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-affected-persons-locations
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-humanitarian-profile-affected-persons-locations
-              display_state: incomplete
-              comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -96,15 +61,7 @@ categories:
           include:
             - (vocab_Topics:"casualties" AND subnational:1)
             - (vocab_Topics:"fatalities - deaths" AND subnational:1)
-            - (name:philippines-pre-disaster-indicators)
           exclude:
-        metadata_overrides:
-            - dataset_name: impact-data-casualties-and-damage-typhoon-haiyan-yolanda
-              display_state: incomplete
-              comments: 
-            - dataset_name: philippines-pre-disaster-indicators
-              display_state: incomplete
-              comments: Dataset dosen't include coordinates.
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -125,20 +82,16 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)            
+            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
-            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
           exclude:
-            - (name:philippines-mindanao-3w-sept-2016)
-            - (name:philippines-tropical-storm-tembin-vinta-3w)
-            - (name:who-is-doing-what-where-in-mindanao-philippines-december-2016)
-            - (name:philippines-typhoon-haima-lawin-who-is-doing-what-and-where-as-of-4-november-2016)
-            - (name:3w-for-typhoon-hagupit-ruby)
-            - (name:philippines-typhoon-mangkhut-3w)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
-            - (name:iati-phl)
-            - (name:ngoaidmap-phl)
-
+            - (name:hrp-projects-moz)
+            - (name:ngoaidmap-moz)
+            - (name:iati-moz)
+        metadata_overrides:
+          - dataset_name: #
+            display_state: #incomplete
+            comments:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -159,7 +112,6 @@ categories:
             - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -167,12 +119,8 @@ categories:
         rules:
           include:
             - (vocab_Topics:"humanitarian access" AND subnational:1)
-            - (name:philippines-geohazards-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-geohazards-data
-            display_state: incomplete
-            comments: Dataset covers only volcanoes and seisms prone area.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -192,6 +140,7 @@ categories:
             - (vocab_Topics:"damaged buildings" AND subnational:1)
             - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
+
 
 
 #FOOD SECURITY AND NUTRITION
@@ -261,21 +210,13 @@ categories:
 #ROADS
       - name:  roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
               - (vocab_Topics:"roads" AND subnational:1)
-              - (name:"philippines-roads-0")
           exclude:
-          - (name:philippines-roads-0)
         metadata_overrides:
-          # - dataset_name: philippines-roads-0
-          #     display_state: incomplete
-          #     comments: The national and provincial do not match.
-          - dataset_name: hotosm_phl_south_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
+          - dataset_name: hotosm_moz_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 #AIRPORTS
@@ -285,9 +226,10 @@ categories:
         rules:
           include: 
             - (vocab_Topics:"airports" AND subnational:1)
+            - (name:"ourairports-moz")
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-phl
+          - dataset_name: ourairports-moz
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
 
@@ -303,17 +245,15 @@ categories:
         rules:
           include:
             - (vocab_Topics:"health facilities" AND subnational:1)
-            - (name:philippines-healthsites) 
-            - (vocab_Topics:hospitals AND subnational:1) #caters for health facilities
-            - (name:philippines-pre-disaster-indicators)
+            - (vocab_Topics:hospitals AND subnational:1)
+            - (name:"mozambique-healthsites")
+            - (name:"mozambique-health-facilities")
           exclude:
+            - (name:mozambique-health-facility-damages-after-cyclone-idai)
         metadata_overrides:
-          - dataset_name: philippines-healthsites
+          - dataset_name: mozambique-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: philippines-pre-disaster-indicators
-            display_state: incomplete
-            comments: Dataset dosen't include coordinates.
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -321,7 +261,6 @@ categories:
         rules:
           include:
             - (vocab_Topics:"education facilities - schools" AND subnational:1)
-            - (name:"philippines-education-0-0")
           exclude:
 
 #AFFECTED SCHOOLS
@@ -332,7 +271,6 @@ categories:
           include:
             - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
-
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -353,11 +291,14 @@ categories:
             - (vocab_Topics:"displacement")
             - (vocab_Topics:"internally displaced persons - idp")
             - (vocab_Topics:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
+            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:philippines-pre-disaster-indicators)
-            - (name:worldpop-philippines-population)
+            - (name:"total-migrants-total-migrants")
+            - (name:mozambique-high-resolution-population-density)
+            - (name:mozambique-worldpop-population-estimates-by-cod-administrative-unit)
+            - (name:worldpop-by-cod-moz)
+            - (organization:facebook) #FaceBook pop data are not accurate
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -368,9 +309,12 @@ categories:
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: philippines-small-area-poverty-estimates-2012-2009-2006
+          - dataset_name: worldpop-mozambique-population
             display_state: incomplete
-            comments: data too old  (from 2006-2012).
+            comments: Dataset is not COD.
+          - dataset_name: mozambique-population-2018-by-administrative-post
+            display_state: incomplete
+            comments: Dataset is not COD.
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -379,3 +323,4 @@ categories:
           include:
             - (vocab_Topics:poverty AND subnational:1)
           exclude:
+
