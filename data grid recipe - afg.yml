@@ -41,7 +41,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc")
+            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
           exclude:
             - (name:whole-of-afghanistan-assessment-household-dataset-august-2018)
             - (name:afghanistan-protection-assessment-of-conflict-affected-populations-may-2018)
@@ -155,7 +155,7 @@ categories:
           include:
             - (vocab_Topics:"violence and conflict" AND subnational:1)
             - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1
+            - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
             - (name:security-incidents)

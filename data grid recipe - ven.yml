@@ -29,7 +29,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc")
+            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
             - (name:unhcr-demographics-residing-ven)
           exclude:
             - (name:colombia-venezuela-border-humanitarian-crisis) #dataset link is broken
@@ -104,7 +104,7 @@ categories:
           include:
             - (vocab_Topics:"violence and conflict" AND subnational:1)
             - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1
+            - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
 #HUMANITARIAN ACCESS

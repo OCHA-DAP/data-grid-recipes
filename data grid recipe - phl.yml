@@ -44,7 +44,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc")
+            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
           exclude:
             - (name:philippines-affected-persons-locations)
             - (name:philippines-affected-persons-locations-0)
@@ -156,7 +156,7 @@ categories:
           include:
             - (vocab_Topics:"violence and conflict" AND subnational:1)
             - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1
+            - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
 
