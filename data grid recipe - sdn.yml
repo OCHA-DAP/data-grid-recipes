@@ -338,7 +338,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND subnational:1)
+            - (vocab_Topics:"population" AND subnational:1)
             - (vocab_Topics:"population statistics" AND subnational:1)
             - (vocab_Topics:"demographics" AND subnational:1)
           exclude:
@@ -360,9 +360,9 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sadd" AND subnational:1)
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated" AND subnational:1)
+            - (vocab_Topics:"population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
+            - (vocab_Topics:"population" AND vocab_Topics:"sadd" AND subnational:1)
+            - (vocab_Topics:"population" AND vocab_Topics:"sex and age disaggregated" AND subnational:1)
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
