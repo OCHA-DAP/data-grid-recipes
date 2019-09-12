@@ -214,7 +214,16 @@ categories:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:afghanistan-rainfall-2013-2016-and-population-comparisons-2010-2020)
-            - (name:food-insecurity-mapping-central-asia) # All of these are currently out of date
+            - (name:food-insecurity-mapping-central-asia-april-june-2015)
+            - (name:food-insecurity-mapping-central-asia-january-march-2015)
+            - (name:food-insecurity-mapping-central-asia-october-december-2014)
+            - (name:food-insecurity-mapping-central-asia-july-september-2014)
+            - (name:food-insecurity-mapping-central-asia-april-june-2014)
+            - (name:food-insecurity-mapping-central-asia-january-march-2014)
+            - (name:food-insecurity-mapping-central-asia-october-december-2013)
+            - (name:food-insecurity-mapping-central-asia-july-september-2013)
+            - (name:food-insecurity-mapping-central-asia-april-june-2013)
+            - (name:food-insecurity-mapping-central-asia-january-march-2013)
         metadata_overrides:
           - dataset_name:
             display_state:
