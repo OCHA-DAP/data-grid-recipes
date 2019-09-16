@@ -27,6 +27,7 @@ categories:
             - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
             - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:chad-humanitarian-needs-overview)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
      
 #REFUGEES POCs
       - name: refugees_poc
@@ -48,6 +49,7 @@ categories:
             - (vocab_Topics:"returnees" AND subnational:1)
           exclude:
             - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm) #Data set is incomplete
+            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm) #Data set is incomplete
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -117,7 +119,7 @@ categories:
             - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
-
+            - (name:)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -165,6 +167,18 @@ categories:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:lake-chad-basin-dashboard) # Data set is not complete
+            - (name:income-activitie) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-july-september-2015) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-april-june-2015) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-january-march-2015) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-october-december-2014) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-july-september-2014) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-april-june-2014) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-january-march-2014) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-october-december-2013) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-april-june-2013) # Data set is not up to date
+            - (name:food-insecurity-mapping-west-africa-january-march-2013) # Data set is not up to date
+            
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
