@@ -168,6 +168,7 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:income-activitie) # This dataset is about income activities
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
