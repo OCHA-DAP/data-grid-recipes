@@ -99,8 +99,8 @@ categories:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-           - (name:ngoaidmap-caf)
-           - (name:iati-caf)
+            - (name:ngoaidmap-caf)
+            - (name:iati-caf)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
