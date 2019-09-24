@@ -25,6 +25,7 @@ categories:
             - (name:car-baseline-assessment-data-iom-dtm)
             
           exclude:
+            - (name:car-shapefile-idp-sites)
             
         metadata_overrides:
           - dataset_name: republique-centre-africaine-humanitarian-needs-overview
@@ -41,9 +42,9 @@ categories:
           include:
             - (vocab_Topics:"refugees" AND subnational:1)
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
-            - (name:"unhcr-demographics-residing-caf")
+            - (name:unhcr-demographics-residing-caf)
           exclude:
-            - (name:"statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine")
+            - (name: statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
         metadata_overrides:
           - dataset_name: unhcr-demographics-residing-caf
             display_state: complete
@@ -64,7 +65,7 @@ categories:
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
           exclulde:
-            - (name:"car-shapefile-idp-sites")
+            - (name:car-shapefile-idp-sites)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -180,6 +181,7 @@ categories:
             - (name:food-insecurity-mapping-west-africa-october-december-2013)
             - (name:food-insecurity-mapping-west-africa-july-september-2013)
             - (name:food-insecurity-mapping-west-africa-january-march-2013)
+            - (name:food-insecurity-mapping-west-africa-april-june-2013)
             
 #GAM
       - name: gam
@@ -228,7 +230,7 @@ categories:
           include:
             - (vocab_Topics:"populated places - settlements" AND subnational:1)
           exclude:
-            - (name:"west-and-central-africa-administrative-boundaries-levels")
+            - (name:west-and-central-africa-administrative-boundaries-levels)
 #ROADS
       - name:  roads
         title: Roads
@@ -321,6 +323,9 @@ categories:
             - (name:economically-active-population-population-active)
             - (name:urban-and-female-population)
             - (name:central-african-republic-uneca-population-and-migration)
+            - (name:worldpop-by-cod-caf)
+            - (name:dhs-data-for-central-african-republic)
+            - (name:worldpop-central-african-republic-age-and-sex-structures)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -334,10 +339,7 @@ categories:
             - (name:economically-active-population-population-active)
             - (name:total-migrants-total-migrants)
             - (name:car-data-20160215-population-by-admin) #old
-            - (name:worldpop-by-cod-caf)
-            - (name:dhs-data-for-central-african-republic)
-            - (name:worldpop-central-african-republic-age-and-sex-structures)
-            
+          
         metadata_overrides:
           - dataset_name: 
             display_state: 
