@@ -111,7 +111,8 @@ categories:
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-          exclude:
+          exclude: 
+            - (name:all)
           metadata_overrides:
 
 #COORDINATION & CONTEXT
