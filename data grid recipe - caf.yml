@@ -44,7 +44,7 @@ categories:
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
             - (name:unhcr-demographics-residing-caf)
           exclude:
-            - (name: statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
+            - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
         metadata_overrides:
           - dataset_name: unhcr-demographics-residing-caf
             display_state: complete
