@@ -168,17 +168,17 @@ categories:
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
             - (name:lake-chad-basin-dashboard) # Data set is not complete
             - (name:income-activitie) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-july-september-2015) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-april-june-2015) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-january-march-2015) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-october-december-2014) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-july-september-2014) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-april-june-2014) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-january-march-2014) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-october-december-2013) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-april-june-2013) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-january-march-2013) # Data set is not up to date
-            
+            - (name:food-insecurity-mapping-west-africa-july-september-2015)
+            - (name:food-insecurity-mapping-west-africa-april-june-2015) 
+            - (name:food-insecurity-mapping-west-africa-january-march-2015) 
+            - (name:food-insecurity-mapping-west-africa-october-december-2014) 
+            - (name:food-insecurity-mapping-west-africa-july-september-2014) 
+            - (name:food-insecurity-mapping-west-africa-april-june-2014) 
+            - (name:food-insecurity-mapping-west-africa-january-march-2014) 
+            - (name:food-insecurity-mapping-west-africa-october-december-2013) 
+            - (name:food-insecurity-mapping-west-africa-april-june-2013) 
+            - (name:food-insecurity-mapping-west-africa-january-march-2013) 
+            - (name:food-insecurity-mapping-west-africa-july-september-2013)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -313,6 +313,7 @@ categories:
             - (name:worldpop-chad-population)
             - (name:lake-chad-basin-baseline-population)
             - (name:worldpop-by-cod-tcd)
+            - (name:worldpop-chad-age-and-sex-structures)
             - (name:dhs-data-for-chad)
             - (vocab_Topics:"people in need - pin")
             - (vocab_Topics:"affected population")
