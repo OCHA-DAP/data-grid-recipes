@@ -119,7 +119,7 @@ categories:
             - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
-            - (name:)
+        
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
