@@ -111,7 +111,7 @@ categories:
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-          exclude: 
+          exclude:
             - (private:false)
           metadata_overrides:
 
@@ -161,6 +161,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -169,6 +170,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -207,6 +209,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #SAM
       - name: sam
@@ -215,6 +218,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #FOOD PRICES
       - name: food_prices
@@ -250,6 +254,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #ROADS
       - name: roads
@@ -304,6 +309,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -312,6 +318,7 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
           metadata_overrides:
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
