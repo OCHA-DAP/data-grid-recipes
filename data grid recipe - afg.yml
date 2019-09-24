@@ -131,7 +131,7 @@ categories:
           exclude:
           metadata_overrides:
             - dataset_name: afghanistan-operational-presence
-              display_state: incomplete
+              display_state: complete
               comments: 
 #AFFECTED AREAS
       - name: affected_areas
@@ -145,7 +145,7 @@ categories:
           metadata_overrides:
             - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
               display_state: incomplete
-              comments: 
+              comments: The dataset does not cover the whole country
             - dataset_name: reach-dataset-afghanistan-north-flood-response-evaluation-assessment
               display_state: incomplete
               comments: The dataset does not cover all admin boundaries.
