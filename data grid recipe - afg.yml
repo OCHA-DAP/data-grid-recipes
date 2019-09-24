@@ -24,15 +24,9 @@ categories:
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-idps-returnees-needs-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
           - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
             comments: data is not up-to-date.
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
-            display_state: incomplete
-            comments: 
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -44,15 +38,6 @@ categories:
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
         metadata_overrides:
-          - dataset_name: afghan-voluntary-repatriation
-            display_state: incomplete
-            comments: 
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
-          - dataset_name: pakistani-refugee-in-afghanistan-2017
-            display_state: incomplete
-            comments: 
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -64,15 +49,6 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: afghan-voluntary-repatriation
-            display_state: incomplete
-            comments: 
-          - dataset_name: afghanistan-idps-returnees-needs-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -82,9 +58,6 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -96,15 +69,6 @@ categories:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-casualties
-            display_state: incomplete
-            comments: 
-          - dataset_name: acled-data-for-afghanistan
-            display_state: incomplete
-            comments: 
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
-            display_state: incomplete
-            comments: 
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -130,9 +94,6 @@ categories:
             - (name:afghanistan-operational-presence)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-operational-presence
-            display_state: complete
-            comments: 
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -158,9 +119,6 @@ categories:
             - (name:acled-data-for-afghanistan)
           exclude:
         metadata_overrides:
-          - dataset_name: acled-data-for-afghanistan
-            display_state: complete
-            comments: 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -190,9 +148,6 @@ categories:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
-            display_state: incomplete
-            comments: 
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -240,9 +195,6 @@ categories:
             - (name:wfp-food-prices-for-afghanistan)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-food-prices-for-afghanistan
-            display_state: complete
-            comments: 
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -311,12 +263,6 @@ categories:
             - (name:afghanistan-healthsites)
           exclude:
         metadata_overrides:
-          - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
-            display_state: incomplete
-            comments: 
-          - dataset_name: afghanistan-healthsites
-            display_state: incomplete
-            comments: 
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -353,12 +299,6 @@ categories:
             - (name:afg-est-pop)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-poverty-rate
-            display_state: incomplete
-            comments: 
-          - dataset_name: afg-est-pop
-            display_state: incomplete
-            comments: 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
