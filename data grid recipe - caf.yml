@@ -26,7 +26,7 @@ categories:
             
           exclude:
             - (name:car-shapefile-idp-sites)
-            
+            - (name:car-baseline-assessment-data-iom-dtm)
         metadata_overrides:
           - dataset_name: republique-centre-africaine-humanitarian-needs-overview
             display_state: complete
@@ -56,6 +56,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"returnees" AND subnational:1)
+            - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -71,7 +72,7 @@ categories:
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
-          include:
+          include:33
             - (vocab_Topics:"casualties" AND subnational:1)
             - (vocab_Topics:"fatalities - deaths" AND subnational:1)
           exclude:
