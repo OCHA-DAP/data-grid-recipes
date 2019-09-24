@@ -130,6 +130,9 @@ categories:
             - (name:afghanistan-operational-presence)
           exclude:
           metadata_overrides:
+            - dataset_name: afghanistan-operational-presence
+              display_state: complete
+              comments: 
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -155,6 +158,9 @@ categories:
             - (name:acled-data-for-afghanistan)
           exclude:
           metadata_overrides:
+            - dataset_name: acled-data-for-afghanistan
+              display_state: complete
+              comments: 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -234,6 +240,9 @@ categories:
             - (name:wfp-food-prices-for-afghanistan)
           exclude:
           metadata_overrides:
+            - dataset_name: wfp-food-prices-for-afghanistan
+              display_state: complete
+              comments: 
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
