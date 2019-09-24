@@ -65,7 +65,7 @@ categories:
         rules: 
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
+          exclude:
             - (name:car-shapefile-idp-sites)
 #CASUALTIES
       - name: casualties
