@@ -24,15 +24,15 @@ categories:
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-idps-returnees-needs-assessment-iom-dtm
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-              display_state: incomplete
-              comments: data is not up-to-date.
-            - dataset_name: afghanistan-conflict-induced-displacements-in-2019
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghanistan-idps-returnees-needs-assessment-iom-dtm
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-displacement-data-baseline-assessment-iom-dtm
+              display_state:incomplete
+              comments:data is not up-to-date.
+            - dataset_name:afghanistan-conflict-induced-displacements-in-2019
+              display_state:incomplete
+              comments:
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -44,15 +44,15 @@ categories:
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
           metadata_overrides:
-            - dataset_name: afghan-voluntary-repatriation
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-              display_state: incomplete
-              comments: 
-            - dataset_name: pakistani-refugee-in-afghanistan-2017
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghan-voluntary-repatriation
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-displacement-data-baseline-assessment-iom-dtm
+              display_state:incomplete
+              comments:
+            - dataset_name:pakistani-refugee-in-afghanistan-2017
+              display_state:incomplete
+              comments:
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -64,15 +64,15 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
           metadata_overrides:
-            - dataset_name: afghan-voluntary-repatriation
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-idps-returnees-needs-assessment-iom-dtm
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghan-voluntary-repatriation
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-idps-returnees-needs-assessment-iom-dtm
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-displacement-data-baseline-assessment-iom-dtm
+              display_state:incomplete
+              comments:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -82,9 +82,9 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghanistan-displacement-data-baseline-assessment-iom-dtm
+              display_state:incomplete
+              comments:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -96,15 +96,15 @@ categories:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-casualties
-              display_state: incomplete
-              comments: 
-            - dataset_name: acled-data-for-afghanistan
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-natural-disaster-incidents-in-2019
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghanistan-casualties
+              display_state:incomplete
+              comments:
+            - dataset_name:acled-data-for-afghanistan
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-natural-disaster-incidents-in-2019
+              display_state:incomplete
+              comments:
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -140,12 +140,12 @@ categories:
             - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
           exclude:
           metadata_overrides:
-            - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
-              display_state: incomplete
-              comments: 
-            - dataset_name: reach-dataset-afghanistan-north-flood-response-evaluation-assessment
-              display_state: incomplete
-              comments: The dataset does not cover all admin boundaries.
+            - dataset_name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
+              display_state:incomplete
+              comments:
+            - dataset_name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment
+              display_state:incomplete
+              comments:The dataset does not cover all admin boundaries.
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -184,9 +184,9 @@ categories:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-natural-disaster-incidents-in-2019
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghanistan-natural-disaster-incidents-in-2019
+              display_state:incomplete
+              comments:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -202,9 +202,9 @@ categories:
             - (name:afghanistan-food-insecurity)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-food-insecurity
-              display_state: incomplete
-              comments: data is not up-to-date.
+            - dataset_name:afghanistan-food-insecurity
+              display_state:incomplete
+              comments:data is not up-to-date.
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -249,9 +249,9 @@ categories:
             - (name:afg-admin-boundaries)
           exclude:
           metadata_overrides:
-            - dataset_name: afg-admin-boundaries
-              display_state: incomplete
-              comments: data is not up-to-date.
+            - dataset_name:afg-admin-boundaries
+              display_state:incomplete
+              comments:data is not up-to-date.
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -271,9 +271,9 @@ categories:
             - (name:afghanistan-roads)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-roads
-              display_state: incomplete
-              comments: The positional acuracy of this dataset is unknown.
+            - dataset_name:afghanistan-roads
+              display_state:incomplete
+              comments:The positional acuracy of this dataset is unknown.
 #AIRPORTS
       - name: airports
         title: Airports
@@ -283,9 +283,9 @@ categories:
             - (name:ourairports-afg)
           exclude:
           metadata_overrides:
-            - dataset_name: ourairports-afg
-              display_state: incomplete
-              comments: OurAirports data relies on user contributions and may not be comprehensive.
+            - dataset_name:ourairports-afg
+              display_state:incomplete
+              comments:OurAirports data relies on user contributions and may not be comprehensive.
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -302,12 +302,12 @@ categories:
             - (name:afghanistan-healthsites)
           exclude:
           metadata_overrides:
-            - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
-              display_state: incomplete
-              comments: 
-            - dataset_name: afghanistan-healthsites
-              display_state: incomplete
-              comments: 
+            - dataset_name:2018-impact-of-explosive-weapons-on-health-facilities
+              display_state:incomplete
+              comments:
+            - dataset_name:afghanistan-healthsites
+              display_state:incomplete
+              comments:
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -344,12 +344,12 @@ categories:
             - (name:afg-est-pop)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-poverty-rate
-              display_state: incomplete
-              comments: 
-            - dataset_name: afg-est-pop
-              display_state: incomplete
-              comments: 
+            - dataset_name:afghanistan-poverty-rate
+              display_state:incomplete
+              comments:
+            - dataset_name:afg-est-pop
+              display_state:incomplete
+              comments:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -359,9 +359,9 @@ categories:
             - (name:afg-est-pop)
           exclude:
           metadata_overrides:
-            - dataset_name: afg-est-pop
-              display_state: incomplete
-              comments: The dataset is not disaggregated by age.
+            - dataset_name:afg-est-pop
+              display_state:incomplete
+              comments:The dataset is not disaggregated by age.
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -371,7 +371,7 @@ categories:
             - (name:afghanistan-poverty-rate)
           exclude:
           metadata_overrides:
-            - dataset_name: afghanistan-poverty-rate
-              display_state: incomplete
-              comments: The dataset is not up-to-date.
+            - dataset_name:afghanistan-poverty-rate
+              display_state:incomplete
+              comments:The dataset is not up-to-date.
 
