@@ -23,7 +23,7 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-idps-returnees-needs-assessment-iom-dtm
               display_state: incomplete
               comments: 
@@ -43,7 +43,7 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghan-voluntary-repatriation
               display_state: incomplete
               comments: 
@@ -63,7 +63,7 @@ categories:
             - (name:afghanistan-idps-returnees-needs-assessment-iom-dtm)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghan-voluntary-repatriation
               display_state: incomplete
               comments: 
@@ -81,7 +81,7 @@ categories:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
               display_state: incomplete
               comments: 
@@ -95,7 +95,7 @@ categories:
             - (name:acled-data-for-afghanistan)
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-casualties
               display_state: incomplete
               comments: 
@@ -114,7 +114,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -129,7 +129,7 @@ categories:
           include:
             - (name:afghanistan-operational-presence)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-operational-presence
               display_state: complete
               comments: 
@@ -142,7 +142,7 @@ categories:
             - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
             - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
               display_state: incomplete
               comments: The dataset does not cover the whole country
@@ -157,7 +157,7 @@ categories:
           include:
             - (name:acled-data-for-afghanistan)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: acled-data-for-afghanistan
               display_state: complete
               comments: 
@@ -170,7 +170,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -180,7 +180,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -189,7 +189,7 @@ categories:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-natural-disaster-incidents-in-2019
               display_state: incomplete
               comments: 
@@ -207,7 +207,7 @@ categories:
           include:
             - (name:afghanistan-food-insecurity)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-food-insecurity
               display_state: incomplete
               comments: data is not up-to-date.
@@ -220,7 +220,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -230,7 +230,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -239,7 +239,7 @@ categories:
           include:
             - (name:wfp-food-prices-for-afghanistan)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: wfp-food-prices-for-afghanistan
               display_state: complete
               comments: 
@@ -257,7 +257,7 @@ categories:
           include:
             - (name:afg-admin-boundaries)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afg-admin-boundaries
               display_state: incomplete
               comments: data is not up-to-date.
@@ -270,7 +270,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #ROADS
       - name: roads
         title: Roads
@@ -279,7 +279,7 @@ categories:
           include:
             - (name:afghanistan-roads)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-roads
               display_state: incomplete
               comments: The positional acuracy of this dataset is unknown.
@@ -291,7 +291,7 @@ categories:
           include:
             - (name:ourairports-afg)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: ourairports-afg
               display_state: incomplete
               comments: OurAirports data relies on user contributions and may not be comprehensive.
@@ -310,7 +310,7 @@ categories:
             - (name:2018-impact-of-explosive-weapons-on-health-facilities)
             - (name:afghanistan-healthsites)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
               display_state: incomplete
               comments: 
@@ -326,7 +326,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -336,7 +336,7 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-          metadata_overrides:
+        metadata_overrides:
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -352,7 +352,7 @@ categories:
             - (name:afghanistan-poverty-rate)
             - (name:afg-est-pop)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-poverty-rate
               display_state: incomplete
               comments: 
@@ -367,7 +367,7 @@ categories:
           include:
             - (name:afg-est-pop)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afg-est-pop
               display_state: incomplete
               comments: The dataset is not disaggregated by age.
@@ -379,7 +379,7 @@ categories:
           include:
             - (name:afghanistan-poverty-rate)
           exclude:
-          metadata_overrides:
+        metadata_overrides:
             - dataset_name: afghanistan-poverty-rate
               display_state: incomplete
               comments: The dataset is not up-to-date.
