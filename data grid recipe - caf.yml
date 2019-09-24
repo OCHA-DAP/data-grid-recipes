@@ -72,7 +72,7 @@ categories:
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
-          include:33
+          include:
             - (vocab_Topics:"casualties" AND subnational:1)
             - (vocab_Topics:"fatalities - deaths" AND subnational:1)
           exclude:
