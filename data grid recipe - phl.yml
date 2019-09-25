@@ -105,7 +105,7 @@ categories:
               comments: 
             - dataset_name: philippines-pre-disaster-indicators
               display_state: incomplete
-              comments: Dataset dosen't include coordinates.
+              comments: Dataset does not include coordinates.
  #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
