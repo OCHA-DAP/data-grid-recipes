@@ -75,7 +75,7 @@ categories:
         rules: 
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
+          exclude:
             - (name:philippines-affected-persons-locations)
             - (name:philippines-affected-persons-locations-0)
             - (name:philippines-humanitarian-profile-affected-persons-locations)
