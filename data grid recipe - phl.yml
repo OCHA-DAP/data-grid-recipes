@@ -27,7 +27,7 @@ categories:
             - (name:philippines-affected-persons-locations-0)
             - (name:philippines-humanitarian-profile-affected-persons-locations)
             - (name:philippines-tropical-storm-vinta-tembin-idps)
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
+            
         metadata_overrides:
             - dataset_name: philippines-affected-persons-locations-0
               display_state: incomplete
