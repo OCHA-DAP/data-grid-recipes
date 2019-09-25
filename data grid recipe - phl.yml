@@ -21,6 +21,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+            - (name:marawi-conflict-idps-as-of-29-june-2017)
           exclude:
             - (name:philippines-affected-persons-locations)
             - (name:philippines-affected-persons-locations-0)
@@ -127,7 +128,7 @@ categories:
           include:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)            
             - (title:"InterAction member activities in")
-            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
+            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
           exclude:
             - (name:philippines-mindanao-3w-sept-2016)
             - (name:philippines-tropical-storm-tembin-vinta-3w)
@@ -138,6 +139,7 @@ categories:
             - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
             - (name:iati-phl)
             - (name:ngoaidmap-phl)
+            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
 
 #AFFECTED AREAS
       - name: affected_areas
@@ -159,6 +161,9 @@ categories:
             - (vocab_Topics:"armed violence" AND subnational:1)
             - (organization:acled)
           exclude:
+            - (name:mindanao-displacement-dataset)
+            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
+            - (name:marawi-conflict-idps-as-of-29-june-2017)
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -192,6 +197,10 @@ categories:
             - (vocab_Topics:"damaged buildings" AND subnational:1)
             - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
+            - (name:typhoon-nina-windspeed-rainfall-and-priority-index)
+            - (name:shelter-cluster-needs-assessment-baseline-dataset-following-typhoon-haiyan-philippines-december-2013)
+            - (name:impact-data-casualties-and-damage-typhoon-haiyan-yolanda)
+            - (name:impact-data-casualties-and-damage-typhoon-haima-lawin)
 
 
 #FOOD SECURITY AND NUTRITION
@@ -210,6 +219,8 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:income-activitie)
+            
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -258,6 +269,7 @@ categories:
           include:
             - (vocab_Topics:"populated places - settlements" AND subnational:1)
           exclude:
+            - (name:shelter-cluster-monitoring-assessment-ii-july-2014-following-typhoon-haiyan-in-the-philippines)
 #ROADS
       - name:  roads
         title: Roads
@@ -358,6 +370,9 @@ categories:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
             - (name:philippines-pre-disaster-indicators)
             - (name:worldpop-philippines-population)
+            - (name:dhs-data-for-philippines)
+            - (name:worldpop-philippines-age-and-sex-structures)
+            - (name:)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -379,3 +394,5 @@ categories:
           include:
             - (vocab_Topics:poverty AND subnational:1)
           exclude:
+            - (name:philippines-poverty-statistics)
+            - (name:philippines-small-area-poverty-estimates-2012-2009-2006)
