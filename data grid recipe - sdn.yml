@@ -20,7 +20,11 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)          
+            - (name:sudan-humanitarianneeds-overview)
+            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+          exclude:
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:sudan-returnee-data-iom-dtm) #excluding from idp, but is allowed in returnee subcat
         metadata_overrides:
           - dataset_name: sudan-humanitarianneeds-overview
             display_state: incomplete 
@@ -33,7 +37,11 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
-            - (name:refugee-camps-in-west-nile-and-east-sudan)            
+            - (name:refugee-camps-in-west-nile-and-east-sudan)
+            - (vocab_Topics:"refugees" AND subnational:1)
+            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
+          exclude:
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
         metadata_overrides:
           - dataset_name: sudan-humanitarianneeds-overview
             display_state: incomplete 
@@ -47,6 +55,9 @@ categories:
             - (name:sudan-registration-data-iom-dtm)
             - (name:sudan-returnee-data-iom-dtm)
             - (name:sudan-humanitarianneeds-overview)
+            - (vocab_Topics:"returnees" AND subnational:1)
+          exclude:
+            - (name:refugee-camps-in-west-nile-and-east-sudan)
         metadata_overrides:        
           - dataset_name: sudan-returnee-data-iom-dtm
             display_state: incomplete 
@@ -57,9 +68,7 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules: 
           include:
-            - (tags:"affected persons location" AND subnational:1)
-            - (tags:"affected persons locations" AND subnational:1)
-            - (tags:"camps" AND subnational:1)
+            - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
             - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclulde:
         metadata_overrides:
@@ -74,13 +83,16 @@ categories:
           include:
             - (name:acled-data-for-sudan)
             - (name:ucdp-data-for-sudan)
+            - (vocab_Topics:"casualties" AND subnational:1)
+            - (vocab_Topics:"fatalities - deaths" AND subnational:1)
+          exclude:
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-            - (tags:missing persons AND subnational:1)
+            - (vocab_Topics:"missing persons" AND subnational:1)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -94,9 +106,12 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-who-is-doing-what-and-where-3ws)
+            - (name:sudan-operational-presence)
             - (name:ngoaidmap-sdn)
             - (name:iati-sdn)
+            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
+          exclude:
+            - (name:sudan-who-is-doing-what-where-3w)
         metadata_overrides:
           - dataset_name: ngoaidmap-sdn
             display_state: incomplete
@@ -111,6 +126,9 @@ categories:
         rules:
           include:
             - (name:sudan-flood-affected-people-from-2013-to-2019)
+            - (vocab_Topics:"affected area" AND subnational:1)
+          exclude:
+            - (vocab_Topics:"damage assessment")
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -119,6 +137,11 @@ categories:
           include:
             - (name:acled-data-for-sudan)
             - (name:ucdp-data-for-sudan)
+            - (vocab_Topics:"violence and conflict" AND subnational:1)
+            - (vocab_Topics:"security incidents" AND subnational:1)
+            - (vocab_Topics:"armed violence" AND subnational:1)
+          exclude:
+            - (name:acled-conflict-data-for-africa-1997-lastyear)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -126,14 +149,16 @@ categories:
         rules:
           include:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
+            - (vocab_Topics:"humanitarian access" AND subnational:1)
+          exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (tags:"obstacles" AND subnational:1)
-            - (tags:"transportation status" AND subnational:1)
+            - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
+            - (vocab_Topics:"transportation status" AND subnational:1)
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -141,8 +166,8 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (tags:"damaged buildings" AND subnational:1)
-            - (tags:"damage assessment" AND subnational:1)
+            - (vocab_Topics:"damaged buildings" AND subnational:1)
+            - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -157,6 +182,16 @@ categories:
           include:
             - (name:sudan-humanitarianneeds-overview)
             - (name:food-insecurity-mapping-east-africa-february-may-2016)
+            - (vocab_Topics:"integrated phase classification - ipc" AND subnational:1)
+            - (vocab_Topics:"food security" AND subnational:1)
+          exclude:
+            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:ethiopia-food-security-0) # many years out of date
+            - (name:ethiopia-food-security) # many years out of date
+            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
+            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
+            - (name:horn-of-africa-food-security)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -164,15 +199,15 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
+            - (vocab_Topics:"global acute malnutrition - gam" AND subnational:1)
+          exclude:
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (tags:"severe acute malnutrition - sam" AND subnational:1)
-            - (tags:"severe acute malnutrition" AND subnational:1)
-            - (tags:sam AND subnational:1)
+            - (vocab_Topics:"severe acute malnutrition - sam" AND subnational:1)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -181,7 +216,8 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-sudan)
-
+            - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1) 
+          exclude:
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
@@ -192,7 +228,8 @@ categories:
         title: Administrative Divisions 
         description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
         rules:  
-          include:              
+          include: 
+              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
               - (name:sudan-administrative-boundaries-levels-0-2)
           exclude:
         metadata_overrides:
@@ -206,6 +243,7 @@ categories:
         rules:
           include:
             - (name:sudan-settlements)
+            - (vocab_Topics:"populated places - settlements" AND subnational:1)
           exclude:
 #ROADS
       - name:  roads
@@ -213,6 +251,7 @@ categories:
         description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
+              - (vocab_Topics:"roads" AND subnational:1)
               - (name:sudan-roads)
               - (name:hotosm_sdn_roads)
         metadata_overrides:
@@ -230,6 +269,7 @@ categories:
           include: 
             - (name:ourairports-sdn)
             - (name:sudan-aerodromes)
+            - (vocab_Topics:"airports" AND subnational:1)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-sdn #sudan-aerodromes
@@ -250,6 +290,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (vocab_Topics:"health facilities" AND subnational:1)
+            - (vocab_Topics:hospitals AND subnational:1)
             - (name:sudan-healthsites)
         metadata_overrides:
           - dataset_name: sudan-healthsites
@@ -261,6 +303,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (vocab_Topics:"education facilities - schools" AND subnational:1)
             - (name:food-for-education-ffe-supported-schools-sudan)
         metadata_overrides:
           - dataset_name: food-for-education-ffe-supported-schools-sudan
@@ -272,7 +315,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (tags:"affected schools" AND subnational:1)
+            - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -287,15 +330,25 @@ categories:
           include:
             - (name:dhs-data-for-sudan)
             - (name:worldpop-by-cod-sdn)
+            - (vocab_Topics:"baseline population" AND subnational:1)
+            - (vocab_Topics:"demographics" AND subnational:1)
+          exclude:
+            - (vocab_Topics:"people in need - pin")
+            - (vocab_Topics:"affected population")
+            - (vocab_Topics:"displacement")
+            - (vocab_Topics:"internally displaced persons - idp")
+            - (vocab_Topics:"humanitarian needs overview - hno")
+            - (organization:"worldpop" AND title:"Sudan - Population" AND res_format:"zipped geotiff")
+            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
+            - (organization:afdb) #African Development Bank Group datasets are not subnational
+            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division. 
         rules:
           include:
-            - (tags:"population" AND tags:"sex and age disaggregated data - sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sadd" AND subnational:1)
-            - (tags:"population" AND tags:"sex and age disaggregated" AND subnational:1)
+            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
           exclude:
             - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
@@ -309,3 +362,5 @@ categories:
         rules:
           include:
             - (name:sudan-poverty-rate)
+            - (vocab_Topics:poverty AND subnational:1)
+          exclude:
