@@ -139,7 +139,7 @@ categories:
             - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
             - (name:iati-phl)
             - (name:ngoaidmap-phl)
-            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
+            - (name:who-is-doing-what-and-where-in-mindanao-conflict) #This is an HDX Connect dataset
 
 #AFFECTED AREAS
       - name: affected_areas
@@ -279,7 +279,7 @@ categories:
               - (vocab_Topics:"roads" AND subnational:1)
               - (name:"philippines-roads-0")
           exclude:
-          - (name:philippines-roads-0)
+              - (name:philippines-roads-0)
         metadata_overrides:
           # - dataset_name: philippines-roads-0
           #     display_state: incomplete
@@ -372,7 +372,7 @@ categories:
             - (name:worldpop-philippines-population)
             - (name:dhs-data-for-philippines)
             - (name:worldpop-philippines-age-and-sex-structures)
-            - (name:)
+            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
