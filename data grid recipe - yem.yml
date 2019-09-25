@@ -136,9 +136,9 @@ categories:
           include:
             - (vocab_Topics:"humanitarian access" AND subnational:1)
             - (name:yemen-hard-to-reach-districts)
-            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
-            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
+            
           exclude:
+            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
