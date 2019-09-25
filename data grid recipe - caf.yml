@@ -26,7 +26,7 @@ categories:
             
           exclude:
             - (name:car-shapefile-idp-sites)
-            
+            - (name:car-baseline-assessment-data-iom-dtm)
         metadata_overrides:
           - dataset_name: republique-centre-africaine-humanitarian-needs-overview
             display_state: complete
@@ -44,7 +44,7 @@ categories:
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
             - (name:unhcr-demographics-residing-caf)
           exclude:
-            - (name: statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
+            - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
         metadata_overrides:
           - dataset_name: unhcr-demographics-residing-caf
             display_state: complete
@@ -56,6 +56,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"returnees" AND subnational:1)
+            - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -64,7 +65,7 @@ categories:
         rules: 
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
+          exclude:
             - (name:car-shapefile-idp-sites)
 #CASUALTIES
       - name: casualties
@@ -98,8 +99,8 @@ categories:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-           - (name:ngoaidmap-caf)
-           - (name:iati-caf)
+            - (name:ngoaidmap-caf)
+            - (name:iati-caf)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
