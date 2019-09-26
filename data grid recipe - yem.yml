@@ -95,6 +95,7 @@ categories:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
+            
         metadata_overrides:
           - dataset_name: ngoaidmap-yem #interaction
             display_state: incomplete
@@ -123,7 +124,10 @@ categories:
             - (name:yemen-assessment-data-dtm)
             - (name:affected-schools-in-yemen)
             - (name:acled-conflict-data-for-africa-1997-lastyear)
-
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities) #Dataset is related to damaged facilities
+            - (name:yemen-displacement-data-tracking-idp-iom-dtm)
+            - (name:yemen-displacement-data-area-assessment-iom-dtm)
+                        
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -132,8 +136,9 @@ categories:
           include:
             - (vocab_Topics:"humanitarian access" AND subnational:1)
             - (name:yemen-hard-to-reach-districts)
-            #- (name:severity-of-humanitarian-access-difficulties-in-yemen)
+            
           exclude:
+            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -151,6 +156,7 @@ categories:
           include:
             - (vocab_Topics:"damaged buildings" AND subnational:1)
             - (vocab_Topics:"damage assessment" AND subnational:1)
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities) 
           exclude:
 
 
@@ -170,6 +176,18 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:food-insecurity-mapping-east-africa-july-september-2015) #old
+            - (name:food-insecurity-mapping-east-africa-april-june-2015)
+            - (name:food-insecurity-mapping-east-africa-january-march-2015)
+            - (name:food-insecurity-mapping-east-africa-october-december-2014)
+            - (name:food-insecurity-mapping-east-africa-july-september-2014)
+            - (name:food-insecurity-mapping-east-africa-april-june-2014)
+            - (name:food-insecurity-mapping-east-africa-january-march-2014)
+            - (name:food-insecurity-mapping-east-africa-october-september-2013)
+            - (name:food-insecurity-mapping-east-africa-july-september-2013)
+            - (name:food-insecurity-mapping-east-africa-january-march-2013)
+            - (name:food-insecurity-mapping-east-africa-february-may-2016)
+            - (name:income-activitie)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -297,6 +315,7 @@ categories:
             - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
             - (name:worldpop-yemen-population)
+            - (name:worldpop-yemen-age-and-sex-structures)
             - (name:dhs-data-for-yemen)
             - (vocab_Topics:"people in need - pin")
             - (vocab_Topics:"affected population")
