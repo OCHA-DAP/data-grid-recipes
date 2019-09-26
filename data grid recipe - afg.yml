@@ -23,11 +23,6 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: data is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -154,11 +149,6 @@ categories:
           include:
             - (name:afghanistan-food-insecurity)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-food-insecurity
-            display_state: incomplete
-            comments: data is not up-to-date.
-
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -199,11 +189,6 @@ categories:
           include:
             - (name:afg-admin-boundaries)
           exclude:
-        metadata_overrides:
-          - dataset_name: afg-admin-boundaries
-            display_state: incomplete
-            comments: data is not up-to-date.
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -308,9 +293,4 @@ categories:
           include:
             - (name:afghanistan-poverty-rate)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-poverty-rate
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
