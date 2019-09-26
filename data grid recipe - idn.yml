@@ -231,9 +231,9 @@ categories:
           exclude: 
               - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
         metadata_overrides:
-          - dataset_name: indonesia-administrative-boundary-2017
-            display_state: incomplete
-            comments: The dataset is the latest administrative boundaries for Indonesia.
+          - dataset_name: 
+            display_state: 
+            comments:
           - dataset_name: indonesia-central-sulawesi-administrative-boundary-polygons-levels-1-4
             display_state: incomplete
             comments: Dataset covers a limited area.
