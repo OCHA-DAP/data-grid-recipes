@@ -19,9 +19,14 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)            - (name:republique-centre-africaine-humanitarian-needs-overview)
+            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)            
+            - (name:republique-centre-africaine-humanitarian-needs-overview)
+            - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
+            - (name:car-baseline-assessment-data-iom-dtm)
+            
           exclude:
-            - (name:car-baseline-assessment-data-iom-dtm) #Dataset is not up to date
+            - (name:car-shapefile-idp-sites)
+            - (name:car-baseline-assessment-data-iom-dtm)
         metadata_overrides:
           - dataset_name: republique-centre-africaine-humanitarian-needs-overview
             display_state: complete
@@ -37,8 +42,9 @@ categories:
           include:
             - (vocab_Topics:"refugees" AND subnational:1)
             - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
-            - (name:"unhcr-demographics-residing-caf")
+            - (name:unhcr-demographics-residing-caf)
           exclude:
+            - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
         metadata_overrides:
           - dataset_name: unhcr-demographics-residing-caf
             display_state: complete
@@ -50,6 +56,7 @@ categories:
         rules:
           include:
             - (vocab_Topics:"returnees" AND subnational:1)
+            - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -58,7 +65,8 @@ categories:
         rules: 
           include:
             - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
+          exclude:
+            - (name:car-shapefile-idp-sites)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -91,8 +99,8 @@ categories:
             - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
             - (title:"InterAction member activities in")
           exclude:
-           - (name:ngoaidmap-caf)
-           - (name:iati-caf)
+            - (name:ngoaidmap-caf)
+            - (name:iati-caf)
         metadata_overrides:
           - dataset_name: #ngoaidmap-XXX  replace XXX with country code to include standard Interaction override
             display_state: #incomplete
@@ -118,6 +126,7 @@ categories:
             - (organization:acled)
           exclude:
             - (name:acled-conflict-data-for-africa-1997-lastyear)
+            - (name:inso-key-data-dashboard)
             
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -162,6 +171,19 @@ categories:
           exclude:
             - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
             - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
+            - (name:income-activitie)
+            - (name:food-insecurity-mapping-west-africa-july-september-2015)
+            - (name:food-insecurity-mapping-west-africa-april-june-2015)
+            - (name:food-insecurity-mapping-west-africa-january-march-2015)
+            - (name:food-insecurity-mapping-west-africa-october-december-2014)
+            - (name:food-insecurity-mapping-west-africa-july-september-2014)
+            - (name:food-insecurity-mapping-west-africa-april-june-2014)
+            - (name:food-insecurity-mapping-west-africa-january-march-2014)
+            - (name:food-insecurity-mapping-west-africa-october-december-2013)
+            - (name:food-insecurity-mapping-west-africa-july-september-2013)
+            - (name:food-insecurity-mapping-west-africa-january-march-2013)
+            - (name:food-insecurity-mapping-west-africa-april-june-2013)
+            
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -209,6 +231,7 @@ categories:
           include:
             - (vocab_Topics:"populated places - settlements" AND subnational:1)
           exclude:
+            - (name:west-and-central-africa-administrative-boundaries-levels)
 #ROADS
       - name:  roads
         title: Roads
@@ -301,6 +324,9 @@ categories:
             - (name:economically-active-population-population-active)
             - (name:urban-and-female-population)
             - (name:central-african-republic-uneca-population-and-migration)
+            - (name:worldpop-by-cod-caf)
+            - (name:dhs-data-for-central-african-republic)
+            - (name:worldpop-central-african-republic-age-and-sex-structures)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -314,7 +340,7 @@ categories:
             - (name:economically-active-population-population-active)
             - (name:total-migrants-total-migrants)
             - (name:car-data-20160215-population-by-admin) #old
-            - (name:worldpop-by-cod-caf)
+          
         metadata_overrides:
           - dataset_name: 
             display_state: 
