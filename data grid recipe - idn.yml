@@ -225,14 +225,15 @@ categories:
         description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
         rules:  
           include: 
-              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
+              - (name:indonesia-administrative-boundary-2017)
               - (name:indonesia-administrative-boundary-polygons-lines-and-places-levels-0-4b)
               - (name:indonesia-central-sulawesi-administrative-boundary-polygons-levels-1-4)
           exclude: 
+              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
         metadata_overrides:
-          - dataset_name: indonesia-administrative-boundary-polygons-lines-and-places-levels-0-4b
+          - dataset_name: indonesia-administrative-boundary-2017
             display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
+            comments: The dataset is the latest administrative boundaries for Indonesia.
           - dataset_name: indonesia-central-sulawesi-administrative-boundary-polygons-levels-1-4
             display_state: incomplete
             comments: Dataset covers a limited area.
