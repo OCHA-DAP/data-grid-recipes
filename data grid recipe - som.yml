@@ -337,10 +337,8 @@ categories:
             - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
             - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
             - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:total-migrants-total-migrants)
-            - (name:somalia-iom-dtm-dataset-round-3) #not a baseline population dataset
-            - (name:boderlands-analysis-dataset) #not a baseline population dataset
-            - (name:worldpop-by-cod-som)
+            - (name:total-migrants-total-migrants)            
+            - (name:boderlands-analysis-dataset) #not a baseline population dataset            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
