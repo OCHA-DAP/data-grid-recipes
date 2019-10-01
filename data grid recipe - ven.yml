@@ -272,7 +272,6 @@ categories:
         rules:
           include:
             - (name:venezuela-administrative-level-0-1-2-and-3-population-statistics-and-gazeteer)
-            - (name:worldpop-venezuela-bolivarian-republic-of-age-and-sex-structures)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
