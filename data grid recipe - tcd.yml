@@ -2,12 +2,11 @@
 
 
 
-inherits_from: 
+inherits_from:
 name: global_default
 title:  Global Default Core Data
-description:  
-categories: 
-
+description:
+categories:
 
 #AFFECTED PEOPLE
   - name: affected_people
@@ -20,61 +19,55 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+            - (name:lake-chad-basin-dashboard)
+            - (name:sahel-population-movment)
+            - (name:chad-site-assessment-data-iom-dtm)
           exclude:
-            - (name:lake-chad-basin-key-figures)
-            - (name:chad-gis-geodatabase)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
-            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
-            - (name:chad-humanitarian-needs-overview)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
-     
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
+            - (name:lake-chad-basin-dashboard)
+            - (name:sahel-population-movment)
+            - (name:chad-humanitarian-needs-overview)
           exclude:
-            - (name:lake-chad-basin-key-figures)
-            - (name:chad-gis-geodatabase)
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned. 
+        description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (vocab_Topics:"returnees" AND subnational:1)
+            - (name:sahel-population-movment)
+            - (name:chad-humanitarian-needs-overview)
           exclude:
-            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm) #Data set is incomplete
-            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm) #Data set is incomplete
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules: 
+        rules:
           include:
-            - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (vocab_Topics:"casualties" AND subnational:1)
-            - (vocab_Topics:"fatalities - deaths" AND subnational:1)
+            - (name:conflict-events)
           exclude:
- #MISSING PERSONS
+#MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-            - (vocab_Topics:"missing persons" AND subnational:1)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -87,66 +80,52 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
-            - (title:"InterAction member activities in")
+            - (name:chad-3w-operational-presence)
           exclude:
-            - (title:"3w-who-what-where")
-            - (name:who-is-doing-what-where-in-lake-chad-basin)
-            - (name:hrp-projects-tcd)
-            - (name:ngoaidmap-tcd)
-            - (name:iati-tcd)
-        metadata_overrides:
-          - dataset_name: ngoaidmap-tcd
-            display_state: incomplete
-            comments: Only covers activities by InterAction Members.
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (vocab_Topics:"affected area" AND subnational:1)
           exclude:
-            - (vocab_Topics:"damage assessment")
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (vocab_Topics:"violence and conflict" AND subnational:1)
-            - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1)
-            - (organization:acled)
+            - (name:ucdp-data-for-chad)
           exclude:
-        
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (vocab_Topics:"humanitarian access" AND subnational:1)
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
-            - (vocab_Topics:"transportation status" AND subnational:1)
           exclude:
+            - (private:false)
+            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (vocab_Topics:"damaged buildings" AND subnational:1)
-            - (vocab_Topics:"damage assessment" AND subnational:1)
           exclude:
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -159,33 +138,15 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (vocab_Topics:"integrated phase classification - ipc" AND subnational:1)
-            - (vocab_Topics:"food security" AND subnational:1)
+            - (name:cadre-harmonise)
           exclude:
-            - (name:reponse-de-la-fao-dans-le-bassin-du-lac-tchad)
-            - (name:sahel-food-security-projects-2015-2016)
-            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
-            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:lake-chad-basin-dashboard) # Data set is not complete
-            - (name:income-activitie) # Data set is not up to date
-            - (name:food-insecurity-mapping-west-africa-july-september-2015)
-            - (name:food-insecurity-mapping-west-africa-april-june-2015) 
-            - (name:food-insecurity-mapping-west-africa-january-march-2015) 
-            - (name:food-insecurity-mapping-west-africa-october-december-2014) 
-            - (name:food-insecurity-mapping-west-africa-july-september-2014) 
-            - (name:food-insecurity-mapping-west-africa-april-june-2014) 
-            - (name:food-insecurity-mapping-west-africa-january-march-2014) 
-            - (name:food-insecurity-mapping-west-africa-october-december-2013) 
-            - (name:food-insecurity-mapping-west-africa-april-june-2013) 
-            - (name:food-insecurity-mapping-west-africa-january-march-2013) 
-            - (name:food-insecurity-mapping-west-africa-july-september-2013)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (vocab_Topics:"global acute malnutrition - gam" AND subnational:1)
+            - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
           exclude:
 #SAM
       - name: sam
@@ -193,7 +154,7 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (vocab_Topics:"severe acute malnutrition - sam" AND subnational:1)
+            - (name:prevalence-of-severe-acute-malnutrition-of-sahel)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -201,8 +162,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1)
-            - (name:"wfp-food-prices")
+            - (name:wfp-food-prices)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -211,47 +171,48 @@ categories:
     description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
-              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
-              - (name:chad-admin-boundaries-admin-1-and-admin-2)
-          exclude: 
+      - name: administrative_divisions
+        title: Administrative Divisions
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        rules:
+          include:
+            - (name:chad-admin-boundaries-admin-1-and-admin-2)
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (vocab_Topics:"populated places - settlements" AND subnational:1)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
             - (name:chad-gis-geodatabase)
           exclude:
 #ROADS
-      - name:  roads
+      - name: roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-              - (vocab_Topics:"roads" AND subnational:1)
+            - (name:hotosm_chad_roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_chad_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
-          include: 
-            - (vocab_Topics:"airports" AND subnational:1)
+          include:
+            - (name:ourairports-tcd)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-tcd
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive. 
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -264,32 +225,26 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (vocab_Topics:"health facilities" AND subnational:1)
-            - (vocab_Topics:hospitals AND subnational:1)
             - (name:chad-healthsites)
           exclude:
-            - (name:chad-gis-geodatabase)
-        metadata_overrides:
-          - dataset_name: chad-healthsites
-            display_state: incomplete
-            comments: 
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
+            - (private:false)
+            - (private:true)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
           exclude:
-
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -302,49 +257,23 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND subnational:1)
-            - (vocab_Topics:"demographics" AND subnational:1)
+            - (name:population-statistics-of-chad)
           exclude:
-            - (name:chad-uneca-population-and-migration)
-            - (name:chad-gis-geodatabase)
-            - (name:total-migrants-total-migrants)
-            - (name:economically-active-population-population-active)
-            - (name:urban-and-female-population)
-            - (name:worldpop-chad-population)
-            - (name:lake-chad-basin-baseline-population)
-            - (name:worldpop-by-cod-tcd)
-            - (name:worldpop-chad-age-and-sex-structures)
-            - (name:dhs-data-for-chad)
-            - (vocab_Topics:"people in need - pin")
-            - (vocab_Topics:"affected population")
-            - (vocab_Topics:"displacement")
-            - (vocab_Topics:"internally displaced persons - idp")
-            - (vocab_Topics:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (organization:facebook)
-            
-            
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
           exclude:
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-        metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (vocab_Topics:poverty AND subnational:1)
+            - (name:chad-poverty-rate)
           exclude:
 
