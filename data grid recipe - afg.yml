@@ -58,10 +58,14 @@ categories:
         rules:
           include:
             - (name:afghanistan-casualties)
+            - (name:ucdp-data-for-afghanistan)
             - (name:acled-data-for-afghanistan)
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
         metadata_overrides:
+          - dataset_name: ucdp-data-for-afghanistan
+            display_state: incomplete
+            comments: Dataset may not cover all casualities.
           - dataset_name: acled-data-for-afghanistan
             display_state: incomplete
             comments: Dataset may not cover all casualities.
@@ -116,9 +120,13 @@ categories:
         rules:
           include:
             - (name:acled-data-for-afghanistan)
+            - (name:ucdp-data-for-afghanistan)
           exclude:
         metadata_overrides:
           - dataset_name: acled-data-for-afghanistan
+            display_state: incomplete
+            comments: Dataset may not cover all conflict events.
+          - dataset_name: ucdp-data-for-afghanistan
             display_state: incomplete
             comments: Dataset may not cover all conflict events.
 
