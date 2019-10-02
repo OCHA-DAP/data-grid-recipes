@@ -81,6 +81,9 @@ categories:
             - (name:acled-data-for-sudan)
           exclude:
         metadata_overrides:
+          - dataset_name: ucdp-data-for-sudan
+            display_state: incomplete
+            comments: Dataset may not cover all casualities.
           - dataset_name: acled-data-for-sudan
             display_state: incomplete
             comments: Dataset may not cover all casualities.
@@ -127,6 +130,9 @@ categories:
             - (name:acled-data-for-sudan)
           exclude:
         metadata_overrides:
+          - dataset_name: ucdp-data-for-sudan
+            display_state: incomplete
+            comments: Dataset may not cover all conflict events.
           - dataset_name: acled-data-for-sudan
             display_state: incomplete
             comments: Dataset may not cover all conflict events.
