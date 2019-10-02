@@ -61,6 +61,14 @@ categories:
             - (name:acled-data-for-afghanistan)
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: acled-data-for-afghanistan
+            display_state: incomplete
+            comments: Dataset may not cover all casualities.
+          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
+            display_state: incomplete
+            comments: Dataset covers casualities due to natural disaster incidents.
+
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -109,6 +117,11 @@ categories:
           include:
             - (name:acled-data-for-afghanistan)
           exclude:
+        metadata_overrides:
+          - dataset_name: acled-data-for-afghanistan
+            display_state: incomplete
+            comments: Dataset may not cover all conflict events.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -221,7 +234,7 @@ categories:
         metadata_overrides:
           - dataset_name: ourairports-afg
             display_state: incomplete
-            comments: 
+            comments: OurAirports data relies on user contributions and may not be comprehensive
 
 
 #HEALTH AND EDUCATION
