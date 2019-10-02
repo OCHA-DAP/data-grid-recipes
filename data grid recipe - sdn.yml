@@ -314,7 +314,6 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:worldpop-by-cod-sdn)
             - (name:sudan-humanitarianneeds-overview)
           exclude:
 #BASELINE POPULATION SADD
