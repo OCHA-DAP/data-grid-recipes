@@ -29,7 +29,6 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-som)
-            - (name:unicef-refugees-situation-and-response-database)
           exclude:
 #RETURNEES
       - name: returnees
@@ -57,6 +56,14 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
+        metadata_overrides:
+          - dataset_name: ucdp-data-for-somalia
+            display_state: incomplete
+            comments: Dataset may not cover all casualities.
+          - dataset_name: acled-data-for-somalia
+            display_state: incomplete
+            comments: Dataset may not cover all casualities.
+
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -99,6 +106,14 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
+        metadata_overrides:
+          - dataset_name: ucdp-data-for-somalia
+            display_state: incomplete
+            comments: Dataset may not cover all conflict events.
+          - dataset_name: acled-data-for-somalia
+            display_state: incomplete
+            comments: Dataset may not cover all conflict events.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
