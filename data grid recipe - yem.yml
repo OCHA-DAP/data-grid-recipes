@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:marawi-conflict-idps-as-of-29-june-2017)
+            - (name:yemen-displacement-data-area-assessment-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,40 +27,43 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:unhcr-demographics-residing-yem)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:yemen-displacement-data-area-assessment-iom-dtm)
+            - (name:yemen-assessment-data-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: yemen-displacement-data-area-assessment-iom-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+          - dataset_name: yemen-assessment-data-dtm
+            display_state: incomplete
+            comments: Dataset is disaggregated using administrative divisions, but the p-codes do not conform to the standard.  Dataset is disaggregated using specific locations, but no corresponding dataset defining those locations is available.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:philippines-other-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0)
           exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:philippines-pre-disaster-indicators)
-            - (name:impact-data-casualties-and-damage-typhoon-haiyan-yolanda)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-pre-disaster-indicators
-            display_state: incomplete
-            comments: Dataset does not include coordinates. The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -82,9 +85,15 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:ngoaidmap-yem)
+            - (name:yemen-education-cluster-5w)
+            - (name:iati-yem)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ngoaidmap-yem
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -100,7 +109,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-philippines)
+            - (name:ucdp-data-for-yemen)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -108,13 +117,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:philippines-geohazards-data)
+            - (name:yemen-hard-to-reach-districts)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-geohazards-data
-            display_state: incomplete
-            comments: Dataset covers only volcanoes and seisms prone area. The dataset is not up-to-date.
-
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -130,9 +134,8 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -145,9 +148,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -186,8 +188,13 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:philippines-administrative-levels-0-to-3)
+            - (name:yemen-admin-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-admin-boundaries
+            display_state: incomplete
+            comments: Dataset has not been endorsed as a COD.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -203,16 +210,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_phl_south_roads)
-            - (name:hotosm_phl_north_roads)
+            - (name:hotosm_yem_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_roads
+          - dataset_name: hotosm_yem_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road. The dataset is not up-to-date.
-          - dataset_name: hotosm_phl_north_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road. The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
 #AIRPORTS
       - name: airports
@@ -220,16 +223,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:philippines-airport-locations)
-            - (name:ourairports-phl)
+            - (name:ourairports-yem)
           exclude:
         metadata_overrides:
-          - dataset_name: philippines-airport-locations
+          - dataset_name: ourairports-yem
             display_state: incomplete
-            comments: The dataset is not up-to-date.
-          - dataset_name: ourairports-phl
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive. The dataset is not up-to-date.
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -243,31 +242,25 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:philippines-healthsites)
-            - (name:philippines-pre-disaster-indicators)
+            - (name:yemen-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine. The dataset is not up-to-date.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:philippines-education-0-0)
           exclude:
+            - (private:false)
+            - (private:true)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:affected-schools-in-yemen)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -280,8 +273,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:philippines-2015-census-population-administrative-level-1-to-4)
-            - (name:philippines-other-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0)
+            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
@@ -289,7 +281,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:philippines-2015-census-population-administrative-level-1-to-4)
+            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -297,6 +289,7 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:philippines-other-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0)
           exclude:
+            - (private:false)
+            - (private:true)
 
