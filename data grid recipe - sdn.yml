@@ -186,6 +186,11 @@ categories:
             - (name:sudan-humanitarianneeds-overview)
             - (name:food-insecurity-mapping-east-africa-february-may-2016)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete
+            comments: 
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -266,6 +271,9 @@ categories:
             - (name:ourairports-sdn)
           exclude:
         metadata_overrides:
+          - dataset_name: sudan-aerodromes
+            display_state: incomplete
+            comments: 
           - dataset_name: ourairports-sdn
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
