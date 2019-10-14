@@ -45,18 +45,16 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:opt-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-state-of-palestine)
           exclude:
-            - (private:false)
-            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -78,9 +76,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:iati-pse)
+            - (name:ngoaidmap-pse)
+            - (name:hrp-projects-pse)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -96,36 +95,33 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:acled-data-for-state-of-palestine)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:state-of-palestine-security)
           exclude:
-            - (private:false)
-            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:state-of-palestine-hebron_h2_closures)
+            - (name:state-of-palestine-roads)
           exclude:
-            - (private:false)
-            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
+            - (name:geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -165,9 +161,8 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:wfp-food-prices-for-state-of-palestine)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -180,36 +175,32 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
+            - (name:state-of-palestine-administrative-boundaries)
           exclude:
-            - (private:false)
-            - (private:true)
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:state-of-palestine-admin-level-2-boundaries)
           exclude:
-            - (private:false)
-            - (private:true)
 #ROADS
       - name: roads
         title: Roads
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
+            - (name:state-of-palestine-roads)
           exclude:
-            - (private:false)
-            - (private:true)
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
+            - (name:ourairports-pse)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -222,27 +213,28 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:state-of-palestine-health-0)
+            - (name:state-of-palestine-government-health-centers)
+            - (name:geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014)
           exclude:
-            - (private:false)
-            - (private:true)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:state-of-palestine-west-bank-schools)
+            - (name:state-of-palestine-gaza-strip-schools)
+            - (name:state-of-palestine-school-districts)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
@@ -255,9 +247,9 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:stateofpalestine_population_projection_1997-2021)
+            - (name:worldpop-by-cod-pse)
           exclude:
-            - (private:false)
-            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
