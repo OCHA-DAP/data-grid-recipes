@@ -23,6 +23,11 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
+            display_state: incomplete
+            comments: Displaced population due to conflict between 01 Jan and 12 Sep 2019, compiled by OCHA sub offices based on inter-agency assessment results. This data is a snapshot as of 29 Aug 2019.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -33,6 +38,11 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghan-voluntary-repatriation
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -43,6 +53,11 @@ categories:
             - (name:afghanistan-idps-returnees-needs-assessment-iom-dtm)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghan-voluntary-repatriation
+            display_state: incomplete
+            comments: 
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -95,7 +110,13 @@ categories:
         rules:
           include:
             - (name:afghanistan-operational-presence)
+            - (name:iati-afg)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-operational-presence
+            display_state: incomplete
+            comments: 
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -225,6 +246,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-roads)
+            - (name:hotosm_afg_roads)
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-roads
@@ -258,6 +280,7 @@ categories:
           include:
             - (name:2018-impact-of-explosive-weapons-on-health-facilities)
             - (name:afghanistan-healthsites)
+            - (name:hotosm_afg_points_of_interest)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -265,9 +288,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_afg_points_of_interest)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -289,7 +311,6 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-poverty-rate)
             - (name:afg-est-pop)
           exclude:
 #BASELINE POPULATION SADD
