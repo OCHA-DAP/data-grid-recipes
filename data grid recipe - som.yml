@@ -88,6 +88,11 @@ categories:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-operational-presence
+            display_state: incomplete
+            comments: 
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -246,6 +251,7 @@ categories:
             - (name:somalia-healthsites)
             - (name:somalia-health-facilities)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
+            - (name:hotosm_som_points_of_interest)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -255,6 +261,7 @@ categories:
           include:
             - (name:somalia-schools)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
+            - (name:hotosm_som_points_of_interest)
           exclude:
 #AFFECTED SCHOOLS
       - name: affected_schools
