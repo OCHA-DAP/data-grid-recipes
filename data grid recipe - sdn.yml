@@ -51,6 +51,9 @@ categories:
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
         metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete
+            comments: 
           - dataset_name: sudan-returnee-data-iom-dtm
             display_state: incomplete
             comments: IOM dataset at village level.
@@ -112,6 +115,11 @@ categories:
             - (name:sudan-operational-presence)
             - (name:iati-sdn)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-operational-presence
+            display_state: incomplete
+            comments: 
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -178,6 +186,11 @@ categories:
             - (name:sudan-humanitarianneeds-overview)
             - (name:food-insecurity-mapping-east-africa-february-may-2016)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete
+            comments: 
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -238,6 +251,7 @@ categories:
           include:
             - (name:hotosm_sdn_roads)
             - (name:sudan-roads)
+            - (name:hotosm_sdn_roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_sdn_roads
@@ -253,10 +267,13 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-sdn)
             - (name:sudan-aerodromes)
+            - (name:ourairports-sdn)
           exclude:
         metadata_overrides:
+          - dataset_name: sudan-aerodromes
+            display_state: incomplete
+            comments: 
           - dataset_name: ourairports-sdn
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
@@ -274,6 +291,7 @@ categories:
         rules:
           include:
             - (name:sudan-healthsites)
+            - (name:hotosm_sdn_points_of_interest)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-healthsites
@@ -287,6 +305,7 @@ categories:
         rules:
           include:
             - (name:food-for-education-ffe-supported-schools-sudan)
+            - (name:hotosm_sdn_points_of_interest)
           exclude:
         metadata_overrides:
           - dataset_name: food-for-education-ffe-supported-schools-sudan
