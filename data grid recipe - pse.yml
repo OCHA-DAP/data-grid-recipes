@@ -121,6 +121,7 @@ categories:
         rules:
           include:
             - (name:geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014)
+            - (name:palestine-disaster-inventories)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
