@@ -152,6 +152,7 @@ categories:
         rules:
           include:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
+            - (name:sudan-hazards)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
