@@ -254,7 +254,6 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:worldpop-mozambique-population)
             - (name:mozambique-population-2018-by-administrative-post)
           exclude:
 #BASELINE POPULATION SADD
