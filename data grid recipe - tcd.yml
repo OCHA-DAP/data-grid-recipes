@@ -22,6 +22,7 @@ categories:
             - (name:lake-chad-basin-dashboard)
             - (name:sahel-population-movment)
             - (name:chad-site-assessment-data-iom-dtm)
+            - (name:chad-humanitarian-needs-overview)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -57,7 +58,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:conflict-events)
+            - (name:ucdp-data-for-chad)
           exclude:
 #MISSING PERSONS
       - name: missing_persons
