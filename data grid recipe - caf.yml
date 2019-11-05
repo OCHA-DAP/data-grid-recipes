@@ -21,6 +21,7 @@ categories:
           include:
             - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
             - (name:republique-centre-africaine-humanitarian-needs-overview)
+            - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -53,9 +54,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:ucdp-data-for-central-african-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -268,9 +268,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:car-data-20160215-population-by-admin)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
