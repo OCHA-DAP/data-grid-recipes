@@ -227,6 +227,11 @@ categories:
           include:
             - (name:chad-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
