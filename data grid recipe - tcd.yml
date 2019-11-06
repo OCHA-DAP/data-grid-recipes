@@ -21,7 +21,6 @@ categories:
           include:
             - (name:lake-chad-basin-dashboard)
             - (name:sahel-population-movment)
-            - (name:chad-site-assessment-data-iom-dtm)
             - (name:chad-humanitarian-needs-overview)
           exclude:
 #REFUGEES POCs
