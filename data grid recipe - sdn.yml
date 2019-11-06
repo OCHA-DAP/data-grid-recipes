@@ -117,11 +117,6 @@ categories:
           include:
             - (name:sudan-flood-affected-people-from-2013-to-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-flood-affected-people-from-2013-to-2019
-            display_state: incomplete
-            comments: The dataset does not cover the whole country
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
