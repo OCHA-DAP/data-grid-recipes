@@ -19,6 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:lake-chad-basin-dashboard)
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
@@ -48,15 +49,15 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-chad)
             - (name:ucdp-data-for-chad)
           exclude:
 #MISSING PERSONS
@@ -97,6 +98,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:acled-data-for-chad)
             - (name:ucdp-data-for-chad)
           exclude:
 #HUMANITARIAN ACCESS
