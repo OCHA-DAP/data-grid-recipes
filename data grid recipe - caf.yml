@@ -45,15 +45,15 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-central-african-republic)
             - (name:ucdp-data-for-central-african-republic)
           exclude:
 #MISSING PERSONS
@@ -94,6 +94,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:acled-data-for-central-african-republic)
             - (name:ucdp-data-for-central-african-republic)
           exclude:
 #HUMANITARIAN ACCESS
