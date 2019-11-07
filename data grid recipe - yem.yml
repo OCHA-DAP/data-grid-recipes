@@ -109,6 +109,7 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-yemen)
+            - (name:acled-data-for-yemen)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
