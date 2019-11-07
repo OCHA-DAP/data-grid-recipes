@@ -171,8 +171,13 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
-            - (name:food-insecurity-mapping-east-africa-february-may-2016)
+            - (name:sudan-acute-food-insecurity)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete
+            comments: as of December 2018
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
