@@ -60,9 +60,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-yemen)
           exclude:
-            - (private:false)
-            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -109,7 +108,6 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-yemen)
-            - (name:acled-data-for-yemen)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
