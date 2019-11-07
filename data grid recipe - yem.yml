@@ -52,18 +52,16 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:yemen-displacement-data-area-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-yemen)
           exclude:
-            - (private:false)
-            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
