@@ -60,9 +60,6 @@ categories:
           - dataset_name: ucdp-data-for-somalia
             display_state: incomplete
             comments: Dataset may not cover all casualities.
-          - dataset_name: acled-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all casualities.
 
 #MISSING PERSONS
       - name: missing_persons
@@ -115,9 +112,6 @@ categories:
           - dataset_name: ucdp-data-for-somalia
             display_state: incomplete
             comments: Dataset may not cover all conflict events.
-          - dataset_name: acled-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all conflict events.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -158,7 +152,6 @@ categories:
         rules:
           include:
             - (name:somalia-acute-food-insecurity)
-            - (name:food-insecurity-mapping-east-africa-february-may-2016)
           exclude:
 #GAM
       - name: gam
