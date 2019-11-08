@@ -23,6 +23,7 @@ categories:
             - (name:lake-chad-basin-dashboard)
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
+            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -31,6 +32,7 @@ categories:
         rules:
           include:
             - (name:lake-chad-basin-dashboard)
+            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
           exclude:
@@ -41,6 +43,7 @@ categories:
         rules:
           include:
             - (name:sahel-population-movment)
+            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
           exclude:
 #HUM PROFILE LOCATIONS
