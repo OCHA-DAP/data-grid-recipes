@@ -59,7 +59,7 @@ categories:
         metadata_overrides:
           - dataset_name: philippines-pre-disaster-indicators
             display_state: incomplete
-            comments: Dataset does not include coordinates. The dataset is not up-to-date.
+            comments: Dataset does not include coordinates.
 
 #MISSING PERSONS
       - name: missing_persons
@@ -82,9 +82,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -113,7 +112,7 @@ categories:
         metadata_overrides:
           - dataset_name: philippines-geohazards-data
             display_state: incomplete
-            comments: Dataset covers only volcanoes and seisms prone area. The dataset is not up-to-date.
+            comments: Dataset covers only volcanoes and seisms prone area.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -209,10 +208,10 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_phl_south_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road. The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
           - dataset_name: hotosm_phl_north_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road. The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
 #AIRPORTS
       - name: airports
@@ -224,12 +223,9 @@ categories:
             - (name:ourairports-phl)
           exclude:
         metadata_overrides:
-          - dataset_name: philippines-airport-locations
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: ourairports-phl
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive. The dataset is not up-to-date.
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -249,7 +245,7 @@ categories:
         metadata_overrides:
           - dataset_name: philippines-healthsites
             display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine. The dataset is not up-to-date.
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 
 #EDUCATION FACILITIES
       - name: education_facilities
