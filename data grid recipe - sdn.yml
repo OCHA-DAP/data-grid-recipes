@@ -276,7 +276,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_sdn_points_of_interest
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -293,7 +293,7 @@ categories:
             comments: Dataset covers a limited area and only includes schools in the program.
           - dataset_name: hotosm_sdn_points_of_interest
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
