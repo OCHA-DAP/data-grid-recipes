@@ -20,12 +20,8 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
+            - (name:sudan-registration-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarianneeds-overview
-            display_state: incomplete
-            comments: HNO dataset containing different types of information.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -47,7 +43,6 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
-            - (name:sudan-registration-data-iom-dtm)
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
@@ -57,6 +52,7 @@ categories:
         rules:
           include:
             - (name:refugee-camps-in-west-nile-and-east-sudan)
+            - (name:sudan-registration-data-iom-dtm)
             - (name:geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014)
             - (name:geodata-of-um-gargour-refugee-camp-al-qadarif-province-sudan-july-21-2014)
             - (name:geodata-of-shagarab-1-refugee-camp-al-qadarif-province-sudan-july-21-2014)
