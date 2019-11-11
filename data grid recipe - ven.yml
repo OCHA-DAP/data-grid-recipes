@@ -45,6 +45,7 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
+            - (name:dtm-round-3-flow-monitoring-of-venezuelan-migration-peru)
           exclude:
 #CASUALTIES
       - name: casualties
