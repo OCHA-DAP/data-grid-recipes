@@ -44,9 +44,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -62,9 +61,8 @@ categories:
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
+            - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
