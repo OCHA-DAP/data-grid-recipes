@@ -28,7 +28,6 @@ categories:
         rules:
           include:
             - (name:democratic-republic-of-the-congo-drc-country-refugee-response-plan)
-            - (name:congolese-returnees)
           exclude:
 #RETURNEES
       - name: returnees
