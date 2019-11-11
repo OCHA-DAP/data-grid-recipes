@@ -57,9 +57,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:ucdp-data-for-democratic-republic-of-the-congo)
           exclude:
-            - (private:false)
-            - (private:true)
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
