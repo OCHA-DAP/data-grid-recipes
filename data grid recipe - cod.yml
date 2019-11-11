@@ -37,6 +37,7 @@ categories:
         rules:
           include:
             - (name:drc-displacement-data-baseline-assessment-iom-dtm)
+            - (name:congolese-returnees)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
