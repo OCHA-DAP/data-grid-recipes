@@ -19,7 +19,6 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
             - (name:sudan-registration-data-iom-dtm)
           exclude:
 #REFUGEES POCs
@@ -42,7 +41,6 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
