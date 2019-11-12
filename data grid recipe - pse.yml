@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:idmc-idp-data-for-palestine)
+            - (name:idmc-idp-data-for-state-of-palestine)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -121,6 +121,7 @@ categories:
         rules:
           include:
             - (name:geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014)
+            - (name:palestine-disaster-inventory)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
@@ -192,6 +193,7 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-roads)
+            - (name:hotosm_pse_roads)
           exclude:
 #AIRPORTS
       - name: airports
@@ -215,7 +217,8 @@ categories:
           include:
             - (name:state-of-palestine-health-0)
             - (name:state-of-palestine-government-health-centers)
-            - (name:geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014)
+            - (name:hotosm_pse_points_of_interest)
+            - (name:palestine-healthsites)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -226,6 +229,7 @@ categories:
             - (name:state-of-palestine-west-bank-schools)
             - (name:state-of-palestine-gaza-strip-schools)
             - (name:state-of-palestine-school-districts)
+            - (name:hotosm_pse_points_of_interest)
           exclude:
 #AFFECTED SCHOOLS
       - name: affected_schools
