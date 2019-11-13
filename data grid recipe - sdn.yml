@@ -92,11 +92,6 @@ categories:
             - (name:sudan-operational-presence)
             - (name:iati-sdn)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-operational-presence
-            display_state: incomplete
-            comments: 
-
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -258,7 +253,10 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_sdn_points_of_interest
             display_state: incomplete
-            comments: 
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: sudan-hospitals-in-khartoum-state-as-of-oct-2019
+            display_state: incomplete
+            comments: Dataset covers only Khartoum state.
 
 #EDUCATION FACILITIES
       - name: education_facilities
