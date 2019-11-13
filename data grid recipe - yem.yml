@@ -98,9 +98,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:yemen-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -146,7 +145,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:yemen-admin1-combined-food-insecurity-phase-2017-and-population-estimates-2015-2020)
+            - (name:yemen-acute-food-insecurity)
           exclude:
 #GAM
       - name: gam
@@ -242,6 +241,11 @@ categories:
           include:
             - (name:yemen-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
