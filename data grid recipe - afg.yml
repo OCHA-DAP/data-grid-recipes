@@ -23,11 +23,6 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
-            display_state: incomplete
-            comments: Displaced population due to conflict between 01 Jan and 12 Sep 2019, compiled by OCHA sub offices based on inter-agency assessment results. This data is a snapshot as of 29 Aug 2019.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -53,6 +48,11 @@ categories:
             - (name:afghanistan-idps-returnees-needs-assessment-iom-dtm)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -75,10 +75,10 @@ categories:
         metadata_overrides:
           - dataset_name: ucdp-data-for-afghanistan
             display_state: incomplete
-            comments: Dataset may not cover all casualities.
+            comments: Dataset may not cover all casualties.
           - dataset_name: afghanistan-natural-disaster-incidents-in-2019
             display_state: incomplete
-            comments: Dataset covers casualities due to natural disaster incidents.
+            comments: Dataset covers casualties due to natural disaster incidents.
 
 #MISSING PERSONS
       - name: missing_persons
@@ -111,16 +111,7 @@ categories:
         rules:
           include:
             - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
-            - (name:reach-dataset-afghanistan-north-flood-response-evaluation-assessment)
           exclude:
-        metadata_overrides:
-          - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
-            display_state: incomplete
-            comments: The dataset does not cover the whole country.
-          - dataset_name: reach-dataset-afghanistan-north-flood-response-evaluation-assessment
-            display_state: incomplete
-            comments: The dataset does not cover all admin boundaries.
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -141,9 +132,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
-            - (private:false)
-            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -236,6 +226,9 @@ categories:
           - dataset_name: afghanistan-roads
             display_state: incomplete
             comments: The positional acuracy of this dataset is unknown.
+          - dataset_name: hotosm_afg_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 #AIRPORTS
       - name: airports
@@ -266,6 +259,14 @@ categories:
             - (name:afghanistan-healthsites)
             - (name:hotosm_afg_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
+            display_state: incomplete
+            comments: Dataset covers only affected health facilities.
+          - dataset_name: hotosm_afg_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -274,6 +275,11 @@ categories:
           include:
             - (name:hotosm_afg_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -305,11 +311,6 @@ categories:
           include:
             - (name:afg-est-pop)
           exclude:
-        metadata_overrides:
-          - dataset_name: afg-est-pop
-            display_state: incomplete
-            comments: The dataset is not disaggregated by age.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
