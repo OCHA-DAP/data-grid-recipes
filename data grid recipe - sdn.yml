@@ -66,14 +66,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-sudan)
             - (name:acled-data-for-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-sudan
-            display_state: incomplete
-            comments: Dataset may not cover all casualities.
-
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -117,14 +111,8 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-sudan)
             - (name:acled-data-for-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-sudan
-            display_state: incomplete
-            comments: Dataset may not cover all conflict events.
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -163,14 +151,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
             - (name:sudan-acute-food-insecurity)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarianneeds-overview
-            display_state: incomplete
-            comments: as of December 2018
-
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
