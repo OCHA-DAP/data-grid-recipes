@@ -85,11 +85,6 @@ categories:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-operational-presence
-            display_state: incomplete
-            comments: 
-
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
