@@ -81,6 +81,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:3w_drc_presence_operationnelle_decembre_2018)
             - (name:ngoaidmap-cod)
             - (name:iati-cod)
             - (name:drc-3-w-national-mai-2018)
