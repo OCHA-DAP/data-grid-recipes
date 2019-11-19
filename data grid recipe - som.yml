@@ -29,6 +29,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-som)
+            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #RETURNEES
       - name: returnees
@@ -46,6 +47,7 @@ categories:
           include:
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
+            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -184,7 +186,6 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
-            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #ROADS
       - name: roads
