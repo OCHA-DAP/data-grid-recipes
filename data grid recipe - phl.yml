@@ -94,6 +94,7 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-philippines)
+            - (name:acled-data-for-philippines)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
