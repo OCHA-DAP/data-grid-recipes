@@ -132,8 +132,9 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -239,6 +240,7 @@ categories:
         rules:
           include:
             - (name:yemen-healthsites)
+            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: yemen-healthsites
