@@ -106,6 +106,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:acled-data-for-yemen)
             - (name:ucdp-data-for-yemen)
           exclude:
 #HUMANITARIAN ACCESS
