@@ -30,11 +30,6 @@ categories:
             - (name:sudan-humanitarianneeds-overview)
             - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarianneeds-overview
-            display_state: incomplete
-            comments: HNO dataset containing people in need figuers at Admin 2 level.
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -67,6 +62,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-sudan)
+            - (name:ucdp-data-for-sudan)
           exclude:
 #MISSING PERSONS
       - name: missing_persons
@@ -107,6 +103,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-sudan)
+            - (name:ucdp-data-for-sudan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -213,9 +210,6 @@ categories:
           - dataset_name: hotosm_sdn_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: sudan-roads
-            display_state: incomplete
-            comments: dataset not up-to-date
 
 #AIRPORTS
       - name: airports
@@ -227,9 +221,6 @@ categories:
             - (name:ourairports-sdn)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-aerodromes
-            display_state: incomplete
-            comments: 
           - dataset_name: ourairports-sdn
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
@@ -297,6 +288,7 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
+            - (name:worldpop-by-cod-som)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
