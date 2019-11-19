@@ -55,6 +55,7 @@ categories:
           include:
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
+            - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
 #MISSING PERSONS
       - name: missing_persons
