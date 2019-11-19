@@ -30,6 +30,11 @@ categories:
             - (name:sudan-humanitarianneeds-overview)
             - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclude:
+        metadata_overrides:
+          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
+            display_state: incomplete
+            comments: Dataset covers a limited area.
+
 #RETURNEES
       - name: returnees
         title: Returnees
