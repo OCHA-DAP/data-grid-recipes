@@ -56,11 +56,6 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all casualities.
-
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -103,11 +98,6 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all conflict events.
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -241,6 +231,11 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -251,6 +246,11 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -273,6 +273,7 @@ categories:
         rules:
           include:
             - (name:somalia-population-data)
+            - (name:worldpop-by-cod-som)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
