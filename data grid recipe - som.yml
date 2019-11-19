@@ -29,6 +29,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-som)
+            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #RETURNEES
       - name: returnees
@@ -46,6 +47,7 @@ categories:
           include:
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
+            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -56,11 +58,6 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all casualities.
-
 #MISSING PERSONS
       - name: missing_persons
         title: Missing Persons
@@ -85,11 +82,6 @@ categories:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-operational-presence
-            display_state: incomplete
-            comments: 
-
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -108,11 +100,6 @@ categories:
             - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-somalia
-            display_state: incomplete
-            comments: Dataset may not cover all conflict events.
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -199,7 +186,6 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
-            - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
 #ROADS
       - name: roads
@@ -246,6 +232,11 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -256,6 +247,11 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -278,6 +274,7 @@ categories:
         rules:
           include:
             - (name:somalia-population-data)
+            - (name:worldpop-by-cod-som)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
