@@ -276,7 +276,6 @@ categories:
         rules:
           include:
             - (name:rdc-statistiques-des-populations)
-            - (name:worldpop-democratic-republic-of-the-congo-age-and-sex-structures)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
