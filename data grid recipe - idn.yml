@@ -46,9 +46,13 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm
+            display_state: incomplete
+            comments: indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm
+
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -122,11 +126,6 @@ categories:
           include:
             - (name:indonesia-flight-routes)
           exclude:
-        metadata_overrides:
-          - dataset_name: indonesia-flight-routes
-            display_state: incomplete
-            comments: Dataset contains data about air transportation routes but does not include the expected data about other forms of transport.
-
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
