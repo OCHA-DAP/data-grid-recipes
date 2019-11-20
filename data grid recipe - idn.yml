@@ -51,7 +51,7 @@ categories:
         metadata_overrides:
           - dataset_name: indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm
             display_state: incomplete
-            comments: indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm
+            comments: The dataset is not up-to-date.
 
 #CASUALTIES
       - name: casualties
