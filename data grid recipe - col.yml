@@ -54,9 +54,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:subsidiariedad-uariv15)
+            - (name:ucdp-data-for-colombia)
             - (name:mortalidad)
-            - (name:indice-de-riesgo-de-victimizacion-irv)
           exclude:
 #MISSING PERSONS
       - name: missing_persons
@@ -64,11 +63,9 @@ categories:
         description: Current number of people missing, disaggregated by location.
         rules:
           include:
-            - (name:violencia-aramada-de-moritor)
             - (name:sidih-desaparecidos-reportados)
             - (name:base-de-datos-infograma-primer-semestre-del-2016)
             - (name:datos-infograma-2015)
-            - (name:indice-territorial-para-la-construccion-de-datos)
             - (name:datos-infogramas-i-semestre-2015)
           exclude:
 
@@ -108,18 +105,7 @@ categories:
             - (name:ucdp-data-for-colombia)
             - (name:violencia-aramada-de-moritor)
             - (name:attacksagainstcivilianscolombiamun)
-            - (name:delito-sexual-y-violencia-intrafamiliar-en-colombia)
-            - (name:homicidios-en-colombia-policia-nacional-y-olds)
-            - (name:sidih-indice-de-riesgo-de-situacion-humanitaria-nueva-metodologia)
             - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
-            - (name:dato-de-fichas-zonas-veredales-de-transicion)
-            - (name:tendencias-humanitarias-y-paz-dic-2015)
-            - (name:conflicto-tierras-y-territorios)
-            - (name:crisis-humanitaria-etnica-pueblo-embera)
-            - (name:tendencias-humanitarias-y-paz)
-            - (name:indice-de-riesgo-de-victimizacion-irv)
-            - (name:datos-de-vulnerabilidades-amenazas-y-capacidades)
-            - (name:high-impact-crime-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -210,9 +196,6 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:asentamientos-albergues-y-rastreo-de-usuarios-que-vivian-en-venezuela-en-bogota)
-            - (name:vegetacion-de-la-comunidad-isla-de-leon-en-cartagena)
-            - (name:discapacidad)
             - (name:proyecciones-de-poblacion-municipalmente)
           exclude:
 #ROADS
@@ -257,6 +240,14 @@ categories:
             - (name:crisis-humanitaria-etnica-pueblo-embera)
             - (name:hotosm_col_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: hotosm_col_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -265,6 +256,11 @@ categories:
           include:
             - (name:hotosm_col_points_of_interest)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_col_points_of_interest
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -286,12 +282,9 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:dhs-data-for-colombia)
             - (name:sidih-poblacion-total)
             - (name:sidih-poblacion-con-nbi-resto)
-            - (name:colombia-admin-level-4-boundaries)
-            - (name:crisis-humanitaria-etnica-pueblo-embera)
-            - (name:resguardos-indigenas)
+            - (name:colombia-population-estimates-and-projections)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
@@ -299,7 +292,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:colombia-admin-level-4-boundaries)
+            - (name:colombia-population-estimates-and-projections)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -308,6 +301,5 @@ categories:
         rules:
           include:
             - (name:colombia-poverty-rate)
-            - (name:sidih-poblacion-con-nbi-resto)
           exclude:
 
