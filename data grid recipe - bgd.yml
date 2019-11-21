@@ -29,12 +29,10 @@ categories:
         rules:
           include:
             - (name:iscg-4w-influx-cox-s-bazar-bangladesh)
+            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-16-site-assessment)
             - (name:site-location-of-rohingya-refugees-in-cox-s-bazar)
-            - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-15-site-assessment)
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-teknaf-para-mapping)
-            - (name:iom-bangladesh-needs-and-population-monitoring-npm-drone-imagery-and-gis-package-by-camp-july-2018)
-            - (name:iom-bangladesh-needs-and-population-monitoring-npm-drone-imagery-and-gis-package-by-camp-june-2018)
-            - (name:gis-pakages-may2018)
+            - (name:iom-bangladesh-npm-drone-imagery-and-gis-package-by-camp-sept-oct-2018)
             - (name:data-and-resources-by-camps)
           exclude:
 #RETURNEES
@@ -54,9 +52,6 @@ categories:
           include:
             - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
             - (name:iom-bangladesh-npm-drone-imagery-and-gis-package-by-camp-sept-oct-2018)
-            - (name:iom-bangladesh-needs-and-population-monitoring-npm-drone-imagery-and-gis-package-by-camp-august-2018)
-            - (name:iom-bangladesh-needs-and-population-monitoring-npm-drone-imagery-and-gis-package-by-camp-june-2018)
-            - (name:gis-pakages-may2018)
             - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
             - (name:data-and-resources-by-camps)
             - (name:southern-camps-infrastructure-risk-to-flood-and-landslide-hazards)
