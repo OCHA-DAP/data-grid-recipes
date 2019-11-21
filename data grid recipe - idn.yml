@@ -213,6 +213,7 @@ categories:
           include:
             - (name:indonesia-administrative-boundary-polygons-lines-and-places-levels-0-4b)
             - (name:indonesia-administrative-boundary-2017)
+            - (name:indonesia-administrative-boundary-2017)
           exclude:
 #POPULATED PLACES
       - name: populated_places
