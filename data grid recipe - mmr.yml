@@ -179,6 +179,7 @@ categories:
         rules:
           include:
             - (name:myanmar-boundaries-admin-levels-0-3)
+            - (name:mimu-myanmar-state-region-district-township-boundary-lines-mimu-v9-0-1)
           exclude:
 #POPULATED PLACES
       - name: populated_places
