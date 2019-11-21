@@ -237,7 +237,6 @@ categories:
         rules:
           include:
             - (name:colombia-healthsites)
-            - (name:crisis-humanitaria-etnica-pueblo-embera)
             - (name:hotosm_col_points_of_interest)
           exclude:
         metadata_overrides:
