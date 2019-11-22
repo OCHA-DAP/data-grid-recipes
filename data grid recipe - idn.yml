@@ -126,6 +126,7 @@ categories:
         rules:
           include:
             - (name:indonesia-flight-routes)
+            - (name:indonesia-sea-routes)
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
