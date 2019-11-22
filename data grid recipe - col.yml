@@ -57,17 +57,6 @@ categories:
             - (name:ucdp-data-for-colombia)
             - (name:mortalidad)
           exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-            - (name:sidih-desaparecidos-reportados)
-            - (name:base-de-datos-infograma-primer-semestre-del-2016)
-            - (name:datos-infograma-2015)
-            - (name:datos-infogramas-i-semestre-2015)
-          exclude:
 
 #COORDINATION & CONTEXT
   - name: coordination_context
