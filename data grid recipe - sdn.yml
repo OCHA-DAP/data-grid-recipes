@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:sudan-registration-data-iom-dtm)
+            - (name:sudan-humanitarianneeds-overview)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -69,15 +70,6 @@ categories:
             - (name:acled-data-for-sudan)
             - (name:ucdp-data-for-sudan)
           exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
