@@ -60,6 +60,16 @@ categories:
             - (name:acled-data-for-afghanistan)
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
+#MISSING PERSONS
+      - name: missing_persons
+        title: Missing Persons
+        description: Current number of people missing, disaggregated by location.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+
 #COORDINATION & CONTEXT
   - name: coordination_context
     title: Coordination & Context
