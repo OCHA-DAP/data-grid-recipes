@@ -22,6 +22,7 @@ categories:
             - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
             - (name:republique-centre-africaine-humanitarian-needs-overview)
             - (name:car-baseline-assessment-data-iom-dtm)
+            - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -69,6 +70,7 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-3w-presence-operationnelle)
+            - (name:iati-caf)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -254,7 +256,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:car-data-20160215-population-by-admin)
+            - (name:central-african-republic-education-cluster-people-in-need-population-and-targets-2019)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
