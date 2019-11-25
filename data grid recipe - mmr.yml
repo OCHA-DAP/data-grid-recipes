@@ -54,18 +54,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:myanmar-disaster-inventory)
           exclude:
-            - (private:false)
-            - (private:true)
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
