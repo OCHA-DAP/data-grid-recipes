@@ -56,14 +56,6 @@ categories:
             - (name:homicides_venezuela_2017_1)
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-            - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
-          exclude:
 
 #COORDINATION & CONTEXT
   - name: coordination_context
