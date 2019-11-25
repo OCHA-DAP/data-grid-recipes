@@ -63,15 +63,6 @@ categories:
             - (name:acled-data-for-chad)
             - (name:ucdp-data-for-chad)
           exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
