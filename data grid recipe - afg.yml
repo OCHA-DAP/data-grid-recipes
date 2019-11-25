@@ -32,6 +32,11 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -231,7 +236,7 @@ categories:
             comments: Dataset covers only affected health facilities.
           - dataset_name: afghanistan-healthsites
             display_state: incomplete
-            comments: 
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: hotosm_afg_points_of_interest
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
