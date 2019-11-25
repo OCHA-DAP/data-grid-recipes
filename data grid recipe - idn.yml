@@ -64,14 +64,6 @@ categories:
             - (name:indonesia-dengue-fever-cases-by-province-2015-2017)
             - (name:indonesia-monthly-humanitarian-update)
           exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-            - (name:indonesia-monthly-humanitarian-update)
-          exclude:
 
 #COORDINATION & CONTEXT
   - name: coordination_context
