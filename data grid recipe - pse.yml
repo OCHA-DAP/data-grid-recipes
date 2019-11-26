@@ -107,6 +107,11 @@ categories:
             - (name:state-of-palestine-hebron_h2_closures)
             - (name:state-of-palestine-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-hebron_h2_closures
+            display_state: incomplete
+            comments: The dataset covers information on small area. It's not up-to-date.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -116,6 +121,14 @@ categories:
             - (name:geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014)
             - (name:state-of-palestine-disaster-inventory)
           exclude:
+        metadata_overrides:
+          - dataset_name: geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+          - dataset_name: state-of-palestine-disaster-inventory
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -255,6 +268,11 @@ categories:
           include:
             - (name:geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014)
           exclude:
+        metadata_overrides:
+          - dataset_name: geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014
+            display_state: incomplete
+            comments: The dataset is a preliminary analysis and not verified on the field. It's not up-to-date.
+
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
