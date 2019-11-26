@@ -256,7 +256,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:central-african-republic-education-cluster-people-in-need-population-and-targets-2019)
+            - (name:population-sadd-car-2019)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
