@@ -49,6 +49,14 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
+        metadata_overrides:
+          - dataset_name: reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017
+            display_state: incomplete
+            comments: Geo. coordinates not available. The dataset is not up-to-date.
+          - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -148,6 +156,11 @@ categories:
             - (name:somalia-sam-admissions-in-2015)
             - (name:eastern-africa-region-food-security-statistics-2013-2014)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-sam-admissions-in-2015
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -222,14 +235,24 @@ categories:
             - (name:somalia-health-facilities)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
+            - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: somalia-health-facilities
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+          - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
+            display_state: incomplete
+            comments: The dataset covers limited area. It is not up-to-date
           - dataset_name: hotosm_som_points_of_interest
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017
+            display_state: incomplete
+            comments: The dataset covers limited area. It is not up-to-date
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -240,11 +263,21 @@ categories:
             - (name:somalia-schools)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_points_of_interest)
+            - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
           exclude:
         metadata_overrides:
+          - dataset_name: somalia-schools
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+          - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
+            display_state: incomplete
+            comments: The dataset covers limited area. It is not up-to-date
           - dataset_name: hotosm_som_points_of_interest
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017
+            display_state: incomplete
+            comments: The dataset covers limited area. It is not up-to-date
 
 #AFFECTED SCHOOLS
       - name: affected_schools
