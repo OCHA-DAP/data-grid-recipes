@@ -32,11 +32,6 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -144,6 +139,11 @@ categories:
           include:
             - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-prevalence-of-global-acute-malnutrition-gam
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
