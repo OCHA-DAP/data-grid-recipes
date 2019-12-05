@@ -213,11 +213,15 @@ categories:
         rules:
           include:
             - (name:ourairports-pse)
+            - (name:hotosm_pse_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-pse
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_pse_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -233,11 +237,11 @@ categories:
           include:
             - (name:state-of-palestine-health-0)
             - (name:state-of-palestine-government-health-centers)
-            - (name:hotosm_pse_points_of_interest)
+            - (name:hotosm_pse_health_facilities)
             - (name:palestine-healthsites)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_pse_points_of_interest
+          - dataset_name: hotosm_pse_health_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: palestine-healthsites
@@ -253,10 +257,10 @@ categories:
             - (name:state-of-palestine-west-bank-schools)
             - (name:state-of-palestine-gaza-strip-schools)
             - (name:state-of-palestine-school-districts)
-            - (name:hotosm_pse_points_of_interest)
+            - (name:hotosm_pse_education_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_pse_points_of_interest
+          - dataset_name: hotosm_pse_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
