@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:philippines-displacement-data-mindanao-earthquake-site-assessment-iom-dtm)
+            - (name:marawi-conflict-idp-and-returned-figures-by-month-and-region)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -36,9 +37,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:marawi-conflict-idp-and-returned-figures-by-month-and-region)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -68,6 +68,7 @@ categories:
         rules:
           include:
             - (name:who-is-doing-what-and-where-in-mindanao-conflict)
+            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -84,7 +85,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-philippines)
             - (name:acled-data-for-philippines)
           exclude:
 #HUMANITARIAN ACCESS
@@ -178,9 +178,17 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_phl_north_populated_places)
+            - (name:hotosm_phl_south_populated_places)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_phl_north_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_phl_south_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #ROADS
       - name: roads
         title: Roads
@@ -239,7 +247,17 @@ categories:
         rules:
           include:
             - (name:philippines-education-0-0)
+            - (name:hotosm_phl_south_education_facilities)
+            - (name:hotosm_phl_north_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_phl_south_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_phl_north_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -283,6 +301,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:philippines-other-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0)
+            - (name:philippines-poverty-statistics)
           exclude:
 
