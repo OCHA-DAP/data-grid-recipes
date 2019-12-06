@@ -67,11 +67,10 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sahel-population-movment)
             - (name:chad-displacement-data-baseline-assessment-iom-dtm)
+            - (name:sahel-population-movment)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
-            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: sahel-population-movment
@@ -81,9 +80,6 @@ categories:
             display_state: incomplete
             comments: 
           - dataset_name: chad-humanitarian-needs-overview
-            display_state: incomplete
-            comments: 
-          - dataset_name: chad-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
             comments: 
 
