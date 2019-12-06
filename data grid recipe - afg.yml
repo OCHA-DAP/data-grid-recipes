@@ -69,7 +69,7 @@ categories:
           exclude:
 #HNO
       - name: hno
-        title: Humanitarian Needs Overview
+        title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
