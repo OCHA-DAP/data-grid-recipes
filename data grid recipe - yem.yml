@@ -176,11 +176,6 @@ categories:
           include:
             - (name:yemen-admin-boundaries)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-admin-boundaries
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
