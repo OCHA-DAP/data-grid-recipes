@@ -83,6 +83,14 @@ categories:
             - (name:cox-s-bazar-5w-data-education-sector)
             - (name:cox-s-bazar-4w-reached-education-sector)
           exclude:
+        metadata_overrides:
+          - dataset_name: cox-s-bazar-5w-data-education-sector
+            display_state: incomplete
+            comments: The data only focus on Education sector
+          - dataset_name: cox-s-bazar-4w-reached-education-sector
+            display_state: incomplete
+            comments: The data only focus on Education sector
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
