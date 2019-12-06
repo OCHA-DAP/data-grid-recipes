@@ -187,9 +187,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_yem_populated_places)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_yem_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #ROADS
       - name: roads
         title: Roads
@@ -229,11 +233,15 @@ categories:
         rules:
           include:
             - (name:yemen-healthsites)
+            - (name:hotosm_yem_health_facilities)
           exclude:
         metadata_overrides:
           - dataset_name: yemen-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: hotosm_yem_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -241,9 +249,13 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_yem_education_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_yem_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
