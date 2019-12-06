@@ -46,6 +46,15 @@ categories:
           include:
             - (name:dtm-round-3-flow-monitoring-of-venezuelan-migration-peru)
           exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -56,6 +65,14 @@ categories:
             - (name:homicides_venezuela_2017_1)
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
+        metadata_overrides:
+          - dataset_name: homicides_venezuela_2017
+            display_state: incomplete
+            comments: 
+          - dataset_name: homicides_venezuela_2017_1
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -75,6 +92,15 @@ categories:
             display_state: incomplete
             comments: Dataset is available upon request.
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -94,6 +120,14 @@ categories:
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
           exclude:
+        metadata_overrides:
+          - dataset_name: homicides_venezuela_2017
+            display_state: incomplete
+            comments: 
+          - dataset_name: homicides_venezuela_2017_1
+            display_state: incomplete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
