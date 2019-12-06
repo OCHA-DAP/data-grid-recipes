@@ -22,6 +22,11 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
+            display_state: incomplete
+            comments: complementary dataset.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -32,6 +37,14 @@ categories:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: complementary dataset.
+          - dataset_name: pakistani-refugee-in-afghanistan-2017
+            display_state: incomplete
+            comments: complementary dataset.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -41,6 +54,11 @@ categories:
             - (name:afghan-voluntary-repatriation)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: complementary dataset.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -56,10 +74,17 @@ categories:
         rules:
           include:
             - (name:afghanistan-casualties)
-            - (name:ucdp-data-for-afghanistan)
             - (name:acled-data-for-afghanistan)
             - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-casualties
+            display_state: incomplete
+            comments: complementary dataset.
+          - dataset_name: acled-data-for-afghanistan
+            display_state: incomplete
+            comments: complementary dataset.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -75,6 +100,11 @@ categories:
             - (name:afghanistan-operational-presence)
             - (name:iati-afg)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-afg
+            display_state: incomplete
+            comments: complementary dataset.
+
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -90,7 +120,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-afghanistan)
-            - (name:ucdp-data-for-afghanistan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
