@@ -25,6 +25,20 @@ categories:
             - (name:chad-humanitarian-needs-overview)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
+        metadata_overrides:
+          - dataset_name: lake-chad-basin-dashboard
+            display_state: incomplete
+            comments: 
+          - dataset_name: sahel-population-movment
+            display_state: incomplete
+            comments: 
+          - dataset_name: chad-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -36,6 +50,17 @@ categories:
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: lake-chad-basin-dashboard
+            display_state: incomplete
+            comments: 
+          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
+            display_state: incomplete
+            comments: 
+          - dataset_name: chad-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -43,9 +68,25 @@ categories:
         rules:
           include:
             - (name:sahel-population-movment)
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
+            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: sahel-population-movment
+            display_state: incomplete
+            comments: 
+          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
+            display_state: incomplete
+            comments: 
+          - dataset_name: chad-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+          - dataset_name: chad-displacement-data-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -61,7 +102,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-chad)
-            - (name:ucdp-data-for-chad)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -93,7 +133,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-chad)
-            - (name:ucdp-data-for-chad)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -183,6 +222,11 @@ categories:
             - (name:west-and-central-africa-administrative-boundaries-levels)
             - (name:chad-gis-geodatabase)
           exclude:
+        metadata_overrides:
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
