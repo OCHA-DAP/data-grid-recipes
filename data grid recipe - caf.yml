@@ -24,6 +24,17 @@ categories:
             - (name:car-baseline-assessment-data-iom-dtm)
             - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+          - dataset_name: car-baseline-assessment-data-iom-dtm
+            display_state: incomplete
+            comments: 
+          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -55,7 +66,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-central-african-republic)
-            - (name:ucdp-data-for-central-african-republic)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -70,7 +80,6 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-3w-presence-operationnelle)
-            - (name:iati-caf)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -88,7 +97,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-central-african-republic)
-            - (name:ucdp-data-for-central-african-republic)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
