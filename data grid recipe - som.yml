@@ -57,13 +57,20 @@ categories:
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:somalia-humanitarian-needs-overview)
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
 
@@ -81,6 +88,14 @@ categories:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
           exclude:
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-somalia)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -96,7 +111,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-somalia)
             - (name:acled-data-for-somalia)
           exclude:
 #HUMANITARIAN ACCESS
@@ -303,6 +317,11 @@ categories:
             - (name:somalia-population-data)
             - (name:worldpop-by-cod-som)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-population-data
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
