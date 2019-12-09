@@ -58,6 +58,15 @@ categories:
             - (name:kutupalong-potential-facilities-for-upgrade)
             - (name:bangladesh-health-and-nutrition-centre-for-rohingya-refugees-and-host-commuities-in-cox-s-bazar)
           exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -91,6 +100,14 @@ categories:
             display_state: incomplete
             comments: The data only focus on Education sector
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-bangladesh)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
