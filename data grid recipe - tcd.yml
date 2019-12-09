@@ -336,4 +336,9 @@ categories:
           include:
             - (name:chad-poverty-rate)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-poverty-rate
+            display_state: incomplete
+            comments: 
+
 
