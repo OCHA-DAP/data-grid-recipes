@@ -65,9 +65,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -141,6 +140,11 @@ categories:
           include:
             - (name:central-african-republic-damage-assessments-0-0)
           exclude:
+        metadata_overrides:
+          - dataset_name: central-african-republic-damage-assessments-0-0
+            display_state: incomplete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
