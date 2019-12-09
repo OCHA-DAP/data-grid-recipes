@@ -47,6 +47,15 @@ categories:
           include:
             - (name:philippines-displacement-data-mindanao-earthquake-site-assessment-iom-dtm)
           exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -69,6 +78,14 @@ categories:
           include:
             - (name:who-is-doing-what-and-where-in-mindanao-conflict)
             - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
+          exclude:
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-philippines)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
