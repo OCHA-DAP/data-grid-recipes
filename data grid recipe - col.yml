@@ -48,6 +48,15 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -77,6 +86,14 @@ categories:
             display_state: incomplete
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-colombia)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -96,6 +113,11 @@ categories:
             - (name:attacksagainstcivilianscolombiamun)
             - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
           exclude:
+        metadata_overrides:
+          - dataset_name: ucdp-data-for-colombia
+            display_state: incomplete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
