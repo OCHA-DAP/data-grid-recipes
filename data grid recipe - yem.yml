@@ -54,6 +54,14 @@ categories:
           include:
             - (name:yemen-displacement-data-area-assessment-iom-dtm)
           exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:yemen-humanitarian-needs-overview)
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -82,6 +90,14 @@ categories:
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-yemen)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
