@@ -79,6 +79,14 @@ categories:
             - (name:ngoaidmap-cod)
             - (name:iati-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: ngoaidmap-cod
+            display_state: incomplete
+            comments: 
+          - dataset_name: iati-cod
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
@@ -235,6 +243,11 @@ categories:
             - (name:drc-health-facilities)
             - (name:democratic-republic-of-the-congo-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-health-facilities
+            display_state: incomplete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
