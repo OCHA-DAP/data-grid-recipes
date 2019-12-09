@@ -59,6 +59,15 @@ categories:
           include:
             - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -80,6 +89,14 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-3w-presence-operationnelle)
+          exclude:
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-central-african-republic)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
