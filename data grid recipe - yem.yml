@@ -82,8 +82,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ngoaidmap-yem)
             - (name:yemen-education-cluster-5w)
+            - (name:ngoaidmap-yem)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-yem
