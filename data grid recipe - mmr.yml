@@ -48,6 +48,15 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -71,6 +80,14 @@ categories:
             - (name:myanmar-consolidated-3w)
             - (name:myanmar-2018-cash-transfer-programming-activities-4w)
           exclude:
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-myanmar)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -86,7 +103,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-myanmar)
             - (name:acled-data-for-myanmar)
           exclude:
 #HUMANITARIAN ACCESS
@@ -195,6 +211,11 @@ categories:
             - (name:mimu-village-points-rakhine-state-pcode-v9-0-1)
             - (name:myanmar-ward-boundaries-v8-1)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-ward-boundaries-v8-1
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
