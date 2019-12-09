@@ -49,6 +49,14 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:opt-humanitarian-needs-overview)
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -72,6 +80,22 @@ categories:
             - (name:iati-pse)
             - (name:ngoaidmap-pse)
             - (name:hrp-projects-pse)
+          exclude:
+        metadata_overrides:
+          - dataset_name: iati-pse
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: ngoaidmap-pse
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-occupied-palestinian-territory)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -292,6 +316,11 @@ categories:
             - (name:stateofpalestine_population_projection_1997-2021)
             - (name:worldpop-by-cod-pse)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-by-cod-pse
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
