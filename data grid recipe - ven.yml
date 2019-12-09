@@ -98,9 +98,8 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
+            - (name:fts-requirements-and-funding-data-for-venezuela-bolivarian-republic-of)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
