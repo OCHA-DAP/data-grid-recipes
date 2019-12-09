@@ -22,6 +22,11 @@ categories:
             - (name:sudan-registration-data-iom-dtm)
             - (name:sudan-humanitarianneeds-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarianneeds-overview
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -60,7 +65,24 @@ categories:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
             display_state: incomplete
             comments: Dataset covers a limited area.
+          - dataset_name: geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: geodata-of-um-gargour-refugee-camp-al-qadarif-province-sudan-july-21-2014
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: geodata-of-shagarab-1-refugee-camp-al-qadarif-province-sudan-july-21-2014
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:sudan-humanitarianneeds-overview)
+          exclude:
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -68,7 +90,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-sudan)
-            - (name:ucdp-data-for-sudan)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -85,6 +106,19 @@ categories:
             - (name:sudan-operational-presence)
             - (name:iati-sdn)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-sdn
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-sudan)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -100,7 +134,6 @@ categories:
         rules:
           include:
             - (name:acled-data-for-sudan)
-            - (name:ucdp-data-for-sudan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -111,6 +144,11 @@ categories:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
             - (name:sudan-hazards)
           exclude:
+        metadata_overrides:
+          - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
