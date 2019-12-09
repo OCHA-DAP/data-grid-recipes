@@ -47,11 +47,15 @@ categories:
           include:
             - (name:dr-congo-affected-persons-locations)
           exclude:
-        metadata_overrides:
-          - dataset_name: dr-congo-affected-persons-locations
-            display_state: incomplete
-            comments: dataset not up to date and covers few regions.
-
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -75,6 +79,14 @@ categories:
             - (name:3w_drc_presence_operationnelle_decembre_2018)
             - (name:ngoaidmap-cod)
             - (name:iati-cod)
+          exclude:
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-congo-the-democratic-republic-of-the)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
