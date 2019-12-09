@@ -25,7 +25,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-conflict-induced-displacements-in-2019
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -40,10 +40,10 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: pakistani-refugee-in-afghanistan-2017
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #RETURNEES
       - name: returnees
@@ -57,7 +57,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -66,6 +66,14 @@ categories:
         rules:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
+          exclude:
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:afghanistan-humanitarian-needs-overview)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -80,10 +88,10 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-casualties
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: acled-data-for-afghanistan
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 
 #COORDINATION & CONTEXT
@@ -103,8 +111,16 @@ categories:
         metadata_overrides:
           - dataset_name: iati-afg
             display_state: incomplete
-            comments: complementary dataset.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-afghanistan)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -168,11 +184,6 @@ categories:
           include:
             - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-prevalence-of-global-acute-malnutrition-gam
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
