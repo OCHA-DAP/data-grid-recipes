@@ -80,6 +80,11 @@ categories:
             - (name:myanmar-consolidated-3w)
             - (name:myanmar-2018-cash-transfer-programming-activities-4w)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-2018-cash-transfer-programming-activities-4w
+            display_state: incomplete
+            comments: The data only focus on cash transfer programme
+
 #FUNDING
       - name: funding
         title: Funding
@@ -120,9 +125,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:myanmar-transportation-network)
           exclude:
-            - (private:false)
-            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -184,7 +188,6 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:myanmar-boundaries-admin-levels-0-3)
             - (name:mimu-myanmar-state-region-district-township-boundary-lines-mimu-v9-0-1)
           exclude:
 #POPULATED PLACES
@@ -193,6 +196,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:mimu-myanmar-town-2019-july)
+            - (name:myanmar-ward-boundaries-v8-1)
             - (name:mimu-village-points-sagaing-region-pcode-v9-0-1)
             - (name:mimu-village-points-chin-state-pcode-v9-0-1)
             - (name:mimu-village-points-nay-pyi-taw-union-territory-pcode-v9-0-1)
@@ -207,14 +212,57 @@ categories:
             - (name:mimu-village-points-tanintharyi-region-pcode-v9-0-1)
             - (name:mimu-village-points-ayeyarwady-region-pcode-v9-0-1)
             - (name:mimu-village-points-bago-region-pcode-v9-0-1)
-            - (name:mimu-myanmar-town-2019-july)
             - (name:mimu-village-points-rakhine-state-pcode-v9-0-1)
-            - (name:myanmar-ward-boundaries-v8-1)
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-ward-boundaries-v8-1
             display_state: incomplete
-            comments: 
+            comments: Dataset only cover ward administrative boundaries for 96 towns in Myanmar
+          - dataset_name: mimu-village-points-sagaing-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Sagaing Region (points).
+          - dataset_name: mimu-village-points-chin-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Chin State (points).
+          - dataset_name: mimu-village-points-nay-pyi-taw-union-territory-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Nay Pyi Taw union Territory (points).
+          - dataset_name: mimu-village-points-mandalay-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Mandalay Region (points).
+          - dataset_name: mimu-village-points-yangon-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Yangon Region (points).
+          - dataset_name: mimu-village-points-magway-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Magway Region (points).
+          - dataset_name: mimu-village-points-shan-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Shan State (points).
+          - dataset_name: mimu-village-points-mon-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Mon State (points).
+          - dataset_name: mimu-village-points-kachin-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Kachin State (points).
+          - dataset_name: mimu-village-points-kayah-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Kayah State (points).
+          - dataset_name: mimu-village-points-kayin-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Kayin State (points).
+          - dataset_name: mimu-village-points-tanintharyi-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Tanintharyi Region (points).
+          - dataset_name: mimu-village-points-ayeyarwady-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Ayeyarwady Region (points).
+          - dataset_name: mimu-village-points-bago-region-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Bago Region (points).
+          - dataset_name: mimu-village-points-rakhine-state-pcode-v9-0-1
+            display_state: incomplete
+            comments: Dataset only cover village locations for the Rakhine State (points).
 
 #ROADS
       - name: roads
@@ -222,9 +270,8 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_mmr_roads)
-            - (name:myanmar-transportation-network)
             - (name:myanmar-road-network-2019)
+            - (name:hotosm_mmr_roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_mmr_roads
@@ -272,6 +319,14 @@ categories:
             - (name:mimu-formal-sector-school-location-lower-myanmar-2019)
             - (name:public-school-location-in-upper-myanmar)
           exclude:
+        metadata_overrides:
+          - dataset_name: mimu-formal-sector-school-location-lower-myanmar-2019
+            display_state: incomplete
+            comments: Dataset only cover school location on lower myanmar
+          - dataset_name: public-school-location-in-upper-myanmar
+            display_state: incomplete
+            comments: Dataset only cover school location on upper myanmar
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -297,6 +352,14 @@ categories:
             - (name:myanmar-population-census-2014)
             - (name:myanmar-population-statistics-2011)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-population-census-2014
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+          - dataset_name: myanmar-population-statistics-2011
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
