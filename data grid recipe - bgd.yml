@@ -211,9 +211,6 @@ categories:
             - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
             - (name:cox-s-bazar-refugee-settlement-infrastructure)
             - (name:bangladesh-settlements-0)
-            - (name:cox-s-bazar-refugee-settlement-shelter-footprints-kutupalong-area)
-            - (name:cox-s-bazar-refugee-settlement-shelter-footprints)
-            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
           exclude:
 #ROADS
       - name: roads
@@ -225,7 +222,6 @@ categories:
             - (name:hotosm_bgd_roads)
             - (name:cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps)
             - (name:bangladesh-roads)
-            - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bgd_cxb_roads
@@ -237,9 +233,6 @@ categories:
           - dataset_name: cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps
             display_state: incomplete
             comments: The data only cover existing and planned access road network of all Rohingya refugee camps
-          - dataset_name: cox-s-bazar-refugee-settlement-roads-and-footpaths
-            display_state: incomplete
-            comments: The data is not up-to-date
 
 #AIRPORTS
       - name: airports
