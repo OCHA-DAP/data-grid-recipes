@@ -84,9 +84,6 @@ categories:
           - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
             display_state: incomplete
             comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
-          - dataset_name: iati-col
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #FUNDING
       - name: funding
