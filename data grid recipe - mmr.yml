@@ -217,7 +217,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-ward-boundaries-v8-1
             display_state: incomplete
-            comments: 
+            comments: Dataset only cover ward administrative boundaries for 96 towns in Myanmar
           - dataset_name: mimu-village-points-sagaing-region-pcode-v9-0-1
             display_state: incomplete
             comments: Dataset only cover village locations for the Sagaing Region (points).
@@ -319,6 +319,14 @@ categories:
             - (name:mimu-formal-sector-school-location-lower-myanmar-2019)
             - (name:public-school-location-in-upper-myanmar)
           exclude:
+        metadata_overrides:
+          - dataset_name: mimu-formal-sector-school-location-lower-myanmar-2019
+            display_state: incomplete
+            comments: Dataset only cover school location on lower myanmar
+          - dataset_name: public-school-location-in-upper-myanmar
+            display_state: incomplete
+            comments: Dataset only cover school location on upper myanmar
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
