@@ -63,6 +63,7 @@ categories:
         rules:
           include:
             - (name:myanmar-disaster-inventory)
+            - (name:acled-data-for-myanmar)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -146,8 +147,9 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:faostat-myanmar-indicators-for-food-security)
           exclude:
+            - (private:false)
+            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -196,71 +198,11 @@ categories:
           include:
             - (name:mimu-myanmar-town-2019-july)
             - (name:myanmar-ward-boundaries-v8-1)
-            - (name:mimu-village-points-sagaing-region-pcode-v9-0-1)
-            - (name:mimu-village-points-chin-state-pcode-v9-0-1)
-            - (name:mimu-village-points-nay-pyi-taw-union-territory-pcode-v9-0-1)
-            - (name:mimu-village-points-mandalay-region-pcode-v9-0-1)
-            - (name:mimu-village-points-yangon-region-pcode-v9-0-1)
-            - (name:mimu-village-points-magway-region-pcode-v9-0-1)
-            - (name:mimu-village-points-shan-state-pcode-v9-0-1)
-            - (name:mimu-village-points-mon-state-pcode-v9-0-1)
-            - (name:mimu-village-points-kachin-state-pcode-v9-0-1)
-            - (name:mimu-village-points-kayah-state-pcode-v9-0-1)
-            - (name:mimu-village-points-kayin-state-pcode-v9-0-1)
-            - (name:mimu-village-points-tanintharyi-region-pcode-v9-0-1)
-            - (name:mimu-village-points-ayeyarwady-region-pcode-v9-0-1)
-            - (name:mimu-village-points-bago-region-pcode-v9-0-1)
-            - (name:mimu-village-points-rakhine-state-pcode-v9-0-1)
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-ward-boundaries-v8-1
             display_state: incomplete
             comments: Dataset only cover ward administrative boundaries for 96 towns in Myanmar
-          - dataset_name: mimu-village-points-sagaing-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Sagaing Region (points).
-          - dataset_name: mimu-village-points-chin-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Chin State (points).
-          - dataset_name: mimu-village-points-nay-pyi-taw-union-territory-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Nay Pyi Taw union Territory (points).
-          - dataset_name: mimu-village-points-mandalay-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Mandalay Region (points).
-          - dataset_name: mimu-village-points-yangon-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Yangon Region (points).
-          - dataset_name: mimu-village-points-magway-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Magway Region (points).
-          - dataset_name: mimu-village-points-shan-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Shan State (points).
-          - dataset_name: mimu-village-points-mon-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Mon State (points).
-          - dataset_name: mimu-village-points-kachin-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Kachin State (points).
-          - dataset_name: mimu-village-points-kayah-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Kayah State (points).
-          - dataset_name: mimu-village-points-kayin-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Kayin State (points).
-          - dataset_name: mimu-village-points-tanintharyi-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Tanintharyi Region (points).
-          - dataset_name: mimu-village-points-ayeyarwady-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Ayeyarwady Region (points).
-          - dataset_name: mimu-village-points-bago-region-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Bago Region (points).
-          - dataset_name: mimu-village-points-rakhine-state-pcode-v9-0-1
-            display_state: incomplete
-            comments: Dataset only cover village locations for the Rakhine State (points).
 
 #ROADS
       - name: roads
