@@ -146,9 +146,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:faostat-myanmar-indicators-for-food-security)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -365,9 +364,13 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:myanmar-population-census-2014)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: myanmar-population-census-2014
+            display_state: incomplete
+            comments: Dataset is not up to date and missing value in age variable
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
