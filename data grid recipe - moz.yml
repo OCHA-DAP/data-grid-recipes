@@ -125,6 +125,11 @@ categories:
             - (name:mozambique-disaster-inventory)
             - (name:mozambique-health-facility-damages-after-cyclone-idai)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-disaster-inventory
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -187,6 +192,11 @@ categories:
           include:
             - (name:worldpop-by-cod-moz)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-by-cod-moz
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #ROADS
       - name: roads
         title: Roads
@@ -282,4 +292,9 @@ categories:
           include:
             - (name:mozambique-poverty-rate)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-poverty-rate
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
