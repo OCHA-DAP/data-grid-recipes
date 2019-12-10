@@ -28,13 +28,17 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:iscg-4w-influx-cox-s-bazar-bangladesh)
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-16-site-assessment)
             - (name:site-location-of-rohingya-refugees-in-cox-s-bazar)
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-teknaf-para-mapping)
             - (name:iom-bangladesh-npm-drone-imagery-and-gis-package-by-camp-sept-oct-2018)
             - (name:data-and-resources-by-camps)
           exclude:
+        metadata_overrides:
+          - dataset_name: iom-bangladesh-needs-and-population-monitoring-npm-teknaf-para-mapping
+            display_state: incomplete
+            comments: Datasets only cover on in the areas of Teknaf upazila
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -123,7 +127,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-bangladesh)
             - (name:acled-data-for-bangladesh)
           exclude:
 #HUMANITARIAN ACCESS
@@ -166,6 +169,7 @@ categories:
         rules:
           include:
             - (name:income-activitie)
+            - (name:faostat-bangladesh-indicators-for-food-security)
           exclude:
 #GAM
       - name: gam
@@ -206,7 +210,6 @@ categories:
         rules:
           include:
             - (name:administrative-boundaries-of-bangladesh-as-of-2015)
-            - (name:bangladesh-administrative-level-0-3-population-statistics)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -234,6 +237,9 @@ categories:
             - (name:cox-s-bazar-refugee-settlement-roads-and-footpaths)
           exclude:
         metadata_overrides:
+          - dataset_name: hotosm_bgd_cxb_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
           - dataset_name: hotosm_bgd_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
@@ -306,6 +312,14 @@ categories:
             - (name:bangladesh-administrative-level-0-3-population-statistics)
             - (name:bangladesh-other-0)
           exclude:
+        metadata_overrides:
+          - dataset_name: dhs-data-for-bangladesh
+            display_state: incomplete
+            comments: 
+          - dataset_name: bangladesh-other-0
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
