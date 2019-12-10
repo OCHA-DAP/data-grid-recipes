@@ -54,9 +54,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:myanmar-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -322,10 +321,10 @@ categories:
         metadata_overrides:
           - dataset_name: mimu-formal-sector-school-location-lower-myanmar-2019
             display_state: incomplete
-            comments: Dataset only cover school location on lower myanmar
+            comments: Dataset only cover school location on lower Myanmar
           - dataset_name: public-school-location-in-upper-myanmar
             display_state: incomplete
-            comments: Dataset only cover school location on upper myanmar
+            comments: Dataset only cover school location on upper Myanmar
 
 #AFFECTED SCHOOLS
       - name: affected_schools
