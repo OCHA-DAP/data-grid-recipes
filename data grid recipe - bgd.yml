@@ -31,8 +31,6 @@ categories:
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-round-16-site-assessment)
             - (name:site-location-of-rohingya-refugees-in-cox-s-bazar)
             - (name:iom-bangladesh-needs-and-population-monitoring-npm-teknaf-para-mapping)
-            - (name:iom-bangladesh-npm-drone-imagery-and-gis-package-by-camp-sept-oct-2018)
-            - (name:data-and-resources-by-camps)
           exclude:
         metadata_overrides:
           - dataset_name: iom-bangladesh-needs-and-population-monitoring-npm-teknaf-para-mapping
@@ -55,12 +53,7 @@ categories:
         rules:
           include:
             - (name:outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)
-            - (name:iom-bangladesh-npm-drone-imagery-and-gis-package-by-camp-sept-oct-2018)
-            - (name:location-of-cic-office-in-the-rohingya-refugee-camps-of-kutupalong-area)
-            - (name:data-and-resources-by-camps)
             - (name:southern-camps-infrastructure-risk-to-flood-and-landslide-hazards)
-            - (name:kutupalong-potential-facilities-for-upgrade)
-            - (name:bangladesh-health-and-nutrition-centre-for-rohingya-refugees-and-host-commuities-in-cox-s-bazar)
           exclude:
 #HNO
       - name: hno
@@ -77,9 +70,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-bangladesh)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
