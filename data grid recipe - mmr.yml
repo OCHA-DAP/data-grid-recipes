@@ -62,7 +62,6 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:myanmar-disaster-inventory)
             - (name:acled-data-for-myanmar)
           exclude:
 
@@ -81,6 +80,9 @@ categories:
             - (name:myanmar-2018-cash-transfer-programming-activities-4w)
           exclude:
         metadata_overrides:
+          - dataset_name: myanmar-consolidated-3w
+            display_state: incomplete
+            comments: The dataset is not up-to-date
           - dataset_name: myanmar-2018-cash-transfer-programming-activities-4w
             display_state: incomplete
             comments: The data only focus on cash transfer programme
@@ -259,14 +261,6 @@ categories:
             - (name:mimu-formal-sector-school-location-lower-myanmar-2019)
             - (name:public-school-location-in-upper-myanmar)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-formal-sector-school-location-lower-myanmar-2019
-            display_state: incomplete
-            comments: Dataset only cover school location on lower Myanmar
-          - dataset_name: public-school-location-in-upper-myanmar
-            display_state: incomplete
-            comments: Dataset only cover school location on upper Myanmar
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -288,15 +282,15 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:dhs-data-for-myanmar)
             - (name:myanmar-population-census-2014)
             - (name:myanmar-population-statistics-2011)
+            - (name:dhs-data-for-myanmar)
           exclude:
         metadata_overrides:
-          - dataset_name: myanmar-population-census-2014
+          - dataset_name: myanmar-population-statistics-2011
             display_state: incomplete
             comments: The dataset is not up-to-date
-          - dataset_name: myanmar-population-statistics-2011
+          - dataset_name: dhs-data-for-myanmar
             display_state: incomplete
             comments: The dataset is not up-to-date
 
