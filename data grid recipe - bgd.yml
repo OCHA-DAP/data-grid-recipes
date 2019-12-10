@@ -243,6 +243,12 @@ categories:
           - dataset_name: hotosm_bgd_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: cox-s-bazar-existing-and-planned-access-road-network-of-all-rohingya-refugee-camps
+            display_state: incomplete
+            comments: The data only cover existing and planned access road network of all Rohingya refugee camps
+          - dataset_name: cox-s-bazar-refugee-settlement-roads-and-footpaths
+            display_state: incomplete
+            comments: The data is not up-to-date
 
 #AIRPORTS
       - name: airports
@@ -281,21 +287,35 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:cox-bazar-education-facilities-damage-reports)
-            - (name:learning-centres-affected-by-road-closures)
             - (name:cox-s-bazar-facility-data-for-the-education-sector)
             - (name:education-facility-registration-data-for-cox-s-bazar-2018)
             - (name:bangladesh-education-facilities-by-lged)
           exclude:
+        metadata_overrides:
+          - dataset_name: cox-s-bazar-facility-data-for-the-education-sector
+            display_state: incomplete
+            comments: The data is not up-to-date
+          - dataset_name: education-facility-registration-data-for-cox-s-bazar-2018
+            display_state: incomplete
+            comments: The data is not up-to-date
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:cox-bazar-education-facilities-damage-reports)
+            - (name:learning-centres-affected-by-road-closures)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: cox-bazar-education-facilities-damage-reports
+            display_state: incomplete
+            comments: 
+          - dataset_name: learning-centres-affected-by-road-closures
+            display_state: incomplete
+            comments: 
+
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
