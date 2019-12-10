@@ -169,7 +169,6 @@ categories:
         rules:
           include:
             - (name:income-activitie)
-            - (name:faostat-bangladesh-indicators-for-food-security)
           exclude:
 #GAM
       - name: gam
