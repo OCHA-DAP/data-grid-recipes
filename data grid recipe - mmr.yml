@@ -80,9 +80,6 @@ categories:
             - (name:myanmar-2018-cash-transfer-programming-activities-4w)
           exclude:
         metadata_overrides:
-          - dataset_name: myanmar-consolidated-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date
           - dataset_name: myanmar-2018-cash-transfer-programming-activities-4w
             display_state: incomplete
             comments: The data only focus on cash transfer programme
