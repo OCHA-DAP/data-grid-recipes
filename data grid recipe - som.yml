@@ -20,8 +20,14 @@ categories:
         rules:
           include:
             - (name:somalia-drought-dashboard)
+            - (name:total-number-of-people-targeted-and-reached-per-region-and-per-cluster)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
+        metadata_overrides:
+          - dataset_name: total-number-of-people-targeted-and-reached-per-region-and-per-cluster
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -209,7 +215,13 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
+            - (name:hotosm_som_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #ROADS
       - name: roads
         title: Roads
