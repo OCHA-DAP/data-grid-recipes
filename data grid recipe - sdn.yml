@@ -231,7 +231,13 @@ categories:
         rules:
           include:
             - (name:sudan-settlements)
+            - (name:hotosm_sdn_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_sdn_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #ROADS
       - name: roads
         title: Roads
@@ -326,8 +332,13 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarianneeds-overview)
-            - (name:worldpop-by-cod-som)
+            - (name:worldpop-by-cod-sdn)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-by-cod-sdn
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
