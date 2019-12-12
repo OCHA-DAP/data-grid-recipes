@@ -244,6 +244,11 @@ categories:
             - (name:drc-health-facilities)
             - (name:democratic-republic-of-the-congo-healthsites)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-healthsites
+            display_state: incomplete
+            comments: Global healthsites data is derived from the openstreetmap. Completeness is difficult to determine
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
