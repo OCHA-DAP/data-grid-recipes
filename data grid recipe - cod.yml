@@ -244,11 +244,6 @@ categories:
             - (name:drc-health-facilities)
             - (name:democratic-republic-of-the-congo-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: drc-health-facilities
-            display_state: incomplete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
