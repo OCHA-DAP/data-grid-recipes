@@ -86,7 +86,7 @@ categories:
             comments: 
           - dataset_name: iati-cod
             display_state: incomplete
-            comments: 
+            comments: This data provides complimentary data 
 
 #FUNDING
       - name: funding
