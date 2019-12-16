@@ -31,6 +31,11 @@ categories:
             - (name:unhcr-demographics-residing-ven)
             - (name:dtm-round-3-flow-monitoring-of-venezuelan-migration-peru)
           exclude:
+        metadata_overrides:
+          - dataset_name: dtm-round-3-flow-monitoring-of-venezuelan-migration-peru
+            display_state: incomplete
+            comments: Dataset is available upon request.
+
 #RETURNEES
       - name: returnees
         title: Returnees
