@@ -287,8 +287,13 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
+            - (name:wfp-geonode-yem-pop-popest2019-hnohrp-1)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-yem-pop-popest2019-hnohrp-1
+            display_state: incomplete
+            comments: Dataset is not endorsed as COD.
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
