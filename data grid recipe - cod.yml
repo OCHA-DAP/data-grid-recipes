@@ -151,7 +151,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:wfp-food-prices-for-democratic-republic-of-the-congo)
+            - (name:democratic-republic-of-the-congo-drc-acute-food-insecurity-situation)
           exclude:
 #GAM
       - name: gam
@@ -177,7 +177,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices)
+            - (name:wfp-food-prices-for-democratic-republic-of-the-congo)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
