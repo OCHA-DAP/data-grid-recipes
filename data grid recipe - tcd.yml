@@ -119,7 +119,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:chad-3w-operational-presence)
+            - (name:chad-operational-presence)
           exclude:
 #FUNDING
       - name: funding
