@@ -93,9 +93,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:philippines-key-figures-on-the-severely-affected)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -136,7 +135,7 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:philippines-typhoon-mangkhut-priority-index-forecasted-damage)
+            - (name:philippines-key-figures-on-the-severely-affected)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
@@ -285,9 +284,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:philippines-key-figures-on-the-severely-affected)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMIC INDICATORS
   - name: socio-economic
