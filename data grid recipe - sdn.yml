@@ -300,13 +300,13 @@ categories:
         rules:
           include:
             - (name:food-for-education-ffe-supported-schools-sudan)
-            - (name:otosm_sdn_education_facilities)
+            - (name:hotosm_sdn_education_facilities)
           exclude:
         metadata_overrides:
           - dataset_name: food-for-education-ffe-supported-schools-sudan
             display_state: incomplete
             comments: Dataset covers a limited area and only includes schools in the program.
-          - dataset_name: otosm_sdn_education_facilities
+          - dataset_name: hotosm_sdn_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
