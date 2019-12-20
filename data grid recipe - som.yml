@@ -265,7 +265,7 @@ categories:
             - (name:somalia-healthsites)
             - (name:somalia-health-facilities)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
-            - (name:hotosm_som_points_of_interest)
+            - (name:hotosm_som_health_facilities)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
           exclude:
         metadata_overrides:
@@ -278,7 +278,7 @@ categories:
           - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
             display_state: incomplete
             comments: The dataset covers limited area. It is not up-to-date
-          - dataset_name: hotosm_som_points_of_interest
+          - dataset_name: hotosm_som_health_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017
@@ -293,7 +293,7 @@ categories:
           include:
             - (name:somalia-schools)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
-            - (name:hotosm_som_points_of_interest)
+            - (name:hotosm_som_education_facilities)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
           exclude:
         metadata_overrides:
@@ -303,7 +303,7 @@ categories:
           - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
             display_state: incomplete
             comments: The dataset covers limited area. It is not up-to-date
-          - dataset_name: hotosm_som_points_of_interest
+          - dataset_name: hotosm_som_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017
