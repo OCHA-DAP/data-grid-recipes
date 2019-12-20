@@ -183,7 +183,13 @@ categories:
         rules:
           include:
             - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
+            - (name:wfp-geonode-afg-ica-malnutrition-geonode)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-afg-ica-malnutrition-geonode
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
