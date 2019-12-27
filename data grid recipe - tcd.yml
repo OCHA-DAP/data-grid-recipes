@@ -21,11 +21,9 @@ categories:
           include:
             - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:lake-chad-basin-dashboard)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: lake-chad-basin-dashboard
