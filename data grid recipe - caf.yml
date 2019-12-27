@@ -129,9 +129,18 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:car-roads-and-paths-shapefile)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-caf-trs-roads-osm)
+            - (name:hotosm_caf_roads)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-caf-trs-roads-osm
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+          - dataset_name: hotosm_caf_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -165,18 +174,16 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:nutrition-in-central-african-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
+            - (name:nutrition-in-central-african-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -220,7 +227,17 @@ categories:
         rules:
           include:
             - (name:car-roads-and-paths-shapefile)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-caf-trs-roads-osm)
+            - (name:hotosm_caf_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-caf-trs-roads-osm
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+          - dataset_name: hotosm_caf_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+
 #AIRPORTS
       - name: airports
         title: Airports
