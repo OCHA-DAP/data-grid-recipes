@@ -21,9 +21,11 @@ categories:
           include:
             - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:lake-chad-basin-dashboard)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
             - (name:sahel-population-movment)
             - (name:chad-humanitarian-needs-overview)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: lake-chad-basin-dashboard
@@ -71,6 +73,8 @@ categories:
             - (name:sahel-population-movment)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
+            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: sahel-population-movment
@@ -250,15 +254,15 @@ categories:
         rules:
           include:
             - (name:hotosm_chad_roads)
-            - (name:car-roads-and-paths-shapefile)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_chad_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
-          - dataset_name: car-roads-and-paths-shapefile
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 
 #AIRPORTS
       - name: airports
