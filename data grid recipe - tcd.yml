@@ -84,6 +84,12 @@ categories:
           - dataset_name: chad-humanitarian-needs-overview
             display_state: incomplete
             comments: 
+          - dataset_name: chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm
+            display_state: incomplete
+            comments: 
+          - dataset_name: chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm
+            display_state: incomplete
+            comments: 
 
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
