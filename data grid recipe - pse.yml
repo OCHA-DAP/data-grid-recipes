@@ -130,11 +130,19 @@ categories:
           include:
             - (name:state-of-palestine-hebron_h2_closures)
             - (name:state-of-palestine-roads)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-pse-trs-roads-osm)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-pse-trs-streets-osm)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-hebron_h2_closures
             display_state: incomplete
             comments: The dataset covers information on small area. It's not up-to-date.
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-pse-trs-roads-osm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-pse-trs-streets-osm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #DAMAGED BUILDINGS
       - name: damaged_buildings
