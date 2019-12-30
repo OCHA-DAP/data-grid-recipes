@@ -155,9 +155,17 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-roads-osm)
+            - (name:wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-streets-osm)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-roads-osm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-streets-osm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
