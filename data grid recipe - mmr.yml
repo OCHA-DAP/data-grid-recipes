@@ -173,7 +173,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices)
+            - (name:wfp-food-prices-for-myanmar)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -302,7 +302,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-population-census-2014
             display_state: incomplete
-            comments: Dataset is not up to date and missing value in age variable
+            comments: The dataset missing value in age variable
 
 #POVERTY RATE
       - name: poverty_rate
