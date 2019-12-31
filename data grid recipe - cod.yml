@@ -245,6 +245,9 @@ categories:
             - (name:democratic-republic-of-the-congo-healthsites)
           exclude:
         metadata_overrides:
+          - dataset_name: drc-health-facilities
+            display_state: incomplete
+            comments: Dataset only covers health facilities affected by Ebola.
           - dataset_name: democratic-republic-of-the-congo-healthsites
             display_state: incomplete
             comments: Global healthsites data is derived from the openstreetmap. Completeness is difficult to determine
