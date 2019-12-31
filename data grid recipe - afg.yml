@@ -89,7 +89,7 @@ categories:
           - dataset_name: afghanistan-casualties
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: acled-data-for-afghanistan
+          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
