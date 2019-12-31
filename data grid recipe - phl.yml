@@ -22,6 +22,11 @@ categories:
             - (name:philippines-displacement-data-mindanao-earthquake-site-assessment-iom-dtm)
             - (name:marawi-conflict-idp-and-returned-figures-by-month-and-region)
           exclude:
+        metadata_overrides:
+          - dataset_name: marawi-conflict-idp-and-returned-figures-by-month-and-region
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -79,6 +84,14 @@ categories:
             - (name:who-is-doing-what-and-where-in-mindanao-conflict)
             - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
           exclude:
+        metadata_overrides:
+          - dataset_name: who-is-doing-what-and-where-in-mindanao-conflict
+            display_state: incomplete
+            comments: Dataset only covers the operational presence in the specified region.
+          - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
+            display_state: incomplete
+            comments: Dataset only covers the operational presence in the specified region.
+
 #FUNDING
       - name: funding
         title: Funding
