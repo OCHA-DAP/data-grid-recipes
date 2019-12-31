@@ -99,7 +99,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-indonesia)
             - (name:acled-data-for-indonesia)
           exclude:
 #HUMANITARIAN ACCESS
