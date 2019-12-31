@@ -186,7 +186,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices)
+            - (name:wfp-food-prices-for-bangladesh)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -322,7 +322,7 @@ categories:
             comments: 
           - dataset_name: bangladesh-other-0
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: 
 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
