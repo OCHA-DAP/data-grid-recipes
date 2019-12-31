@@ -263,7 +263,6 @@ categories:
             - (name:bangladesh-healthsites)
             - (name:bangladesh-health-facilities-by-lged)
             - (name:reach-bangladesh-who-health-services)
-            - (name:health-facilities-within-camp-areas-in-rohingya-refugee-sites-in-ukhia-and-teknaf-upazilas)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
