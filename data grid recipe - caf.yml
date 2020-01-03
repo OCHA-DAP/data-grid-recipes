@@ -87,7 +87,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:republique-centrafricaine-3w-presence-operationnelle)
+            - (name:republique-centrafricaine-presence-operationnelle)
           exclude:
 #FUNDING
       - name: funding
