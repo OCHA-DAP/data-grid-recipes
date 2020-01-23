@@ -193,12 +193,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:worldpop-by-cod-moz)
+            - (name:hotosm_moz_populated_places)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-by-cod-moz
+          - dataset_name: hotosm_moz_populated_places
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
