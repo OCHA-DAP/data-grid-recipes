@@ -175,7 +175,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-yemen)
+            - (name:wfp-food-prices-for-niger)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
