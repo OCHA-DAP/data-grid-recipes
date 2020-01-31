@@ -19,9 +19,8 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,9 +36,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -64,9 +62,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-burkina-faso)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -79,12 +76,13 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:burkina-faso-presence-operationnelle)
             - (name:ngoaidmap-bfa)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-bfa
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically but inconsistently.?
 
 #FUNDING
       - name: funding
@@ -154,18 +152,25 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:cadre-harmonise)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
+            - (name:burkina-faso-nutrition)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: global-acute-malnutrition-prevalence-of-sahel-countries
+            display_state: incomplete
+            comments: Dataset is old.
+          - dataset_name: burkina-faso-nutrition
+            display_state: incomplete
+            comments: Dataset is not up to date.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -203,9 +208,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_bfa_populated_places)
             - (name:hotosm_yem_populated_places)
           exclude:
         metadata_overrides:
+          - dataset_name: hotosm_bfa_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
           - dataset_name: hotosm_yem_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
@@ -265,9 +274,13 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:burkina-faso-education)
             - (name:hotosm_bfa_education_facilities)
           exclude:
         metadata_overrides:
+          - dataset_name: burkina-faso-education
+            display_state: incomplete
+            comments: Dataset is not up to date.
           - dataset_name: hotosm_bfa_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
@@ -278,9 +291,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:number-of-schools-teachers-and-students-affected-in-2018-for-burkina-faso)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
