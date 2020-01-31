@@ -132,6 +132,8 @@ categories:
             - (name:state-of-palestine-roads)
             - (name:wfp-ogcserver-gis-wfp-org-geonode-pse-trs-roads-osm)
             - (name:wfp-ogcserver-gis-wfp-org-geonode-pse-trs-streets-osm)
+            - (name:wfp-geonode-palestine-streets-and-pathways)
+            - (name:wfp-geonode-palestine-road-network-main-roads)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-hebron_h2_closures
@@ -141,6 +143,12 @@ categories:
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-pse-trs-streets-osm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-geonode-palestine-streets-and-pathways
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-geonode-palestine-road-network-main-roads
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -232,11 +240,19 @@ categories:
           include:
             - (name:state-of-palestine-roads)
             - (name:hotosm_pse_roads)
+            - (name:wfp-geonode-palestine-road-network-main-roads)
+            - (name:wfp-geonode-palestine-streets-and-pathways)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_pse_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: wfp-geonode-palestine-road-network-main-roads
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-geonode-palestine-streets-and-pathways
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #AIRPORTS
       - name: airports
@@ -271,6 +287,7 @@ categories:
             - (name:state-of-palestine-government-health-centers)
             - (name:hotosm_pse_health_facilities)
             - (name:palestine-healthsites)
+            - (name:palestine-healthsites)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-health-0
@@ -282,6 +299,9 @@ categories:
           - dataset_name: palestine-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: palestine-healthsites
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #EDUCATION FACILITIES
       - name: education_facilities
