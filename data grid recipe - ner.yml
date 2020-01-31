@@ -19,9 +19,14 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:sahel-population-movment)
+            - (name:lake-chad-basin-dashboard)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: lake-chad-basin-dashboard
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,16 +34,25 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-ner)
+            - (name:sahel-population-movment)
+            - (name:lake-chad-basin-dashboard)
           exclude:
+        metadata_overrides:
+          - dataset_name: sahel-population-movment
+            display_state: incomplete
+            comments: 
+          - dataset_name: lake-chad-basin-dashboard
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:sahel-population-movment)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -54,15 +68,15 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:niger-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-niger)
             - (name:acled-data-for-niger)
           exclude:
 
@@ -78,6 +92,7 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-ner)
+            - (name:niger-operational-presence)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-ner
@@ -148,18 +163,16 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:cadre-harmonise)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:prevalence-of-severe-acute-malnutrition-of-sahel)
           exclude:
-            - (private:false)
-            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -197,9 +210,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_niger_populated_places)
             - (name:niger-settlements)
           exclude:
         metadata_overrides:
+          - dataset_name: hotosm_niger_populated_places
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
           - dataset_name: niger-settlements
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
