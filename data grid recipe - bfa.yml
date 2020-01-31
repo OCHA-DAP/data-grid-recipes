@@ -161,13 +161,13 @@ categories:
         rules:
           include:
             - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
-            - (name:/burkina-faso-nutrition)
+            - (name:burkina-faso-nutrition)
           exclude:
         metadata_overrides:
           - dataset_name: global-acute-malnutrition-prevalence-of-sahel-countries
             display_state: incomplete
             comments: Dataset is old.
-          - dataset_name: /burkina-faso-nutrition
+          - dataset_name: burkina-faso-nutrition
             display_state: incomplete
             comments: Dataset is not up to date.
 
