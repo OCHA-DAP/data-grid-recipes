@@ -155,14 +155,14 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-roads-osm)
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-streets-osm)
+            - (name:wfp-geonode-sudan-road-network-main-roads)
+            - (name:wfp-geonode-sudan-streets-and-pathways)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-roads-osm
+          - dataset_name: wfp-geonode-sudan-road-network-main-roads
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-sdn-trs-streets-osm
+          - dataset_name: wfp-geonode-sudan-streets-and-pathways
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -254,11 +254,19 @@ categories:
           include:
             - (name:hotosm_sdn_roads)
             - (name:sudan-roads)
+            - (name:wfp-geonode-sudan-road-network-main-roads)
+            - (name:wfp-geonode-sudan-streets-and-pathways)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_sdn_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: wfp-geonode-sudan-road-network-main-roads
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: wfp-geonode-sudan-streets-and-pathways
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #AIRPORTS
       - name: airports
