@@ -263,6 +263,7 @@ categories:
           include:
             - (name:hotosm_chad_roads)
             - (name:wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm)
+            - (name:wfp-geonode-chad-road-network-main-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_chad_roads
@@ -270,7 +271,10 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+            comments: The data is updated in near-real time from OpenStreetMap servers. OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+          - dataset_name: wfp-geonode-chad-road-network-main-roads
+            display_state: incomplete
+            comments: The data is updated in near-real time from OpenStreetMap servers. OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 
 #AIRPORTS
       - name: airports
