@@ -237,6 +237,11 @@ categories:
           include:
             - (name:chad-admin-boundaries-admin-1-and-admin-2)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-admin-boundaries-admin-1-and-admin-2
+            display_state: incomplete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
