@@ -49,7 +49,7 @@ categories:
         metadata_overrides:
           - dataset_name: syria-idp-sites
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The data may be outadated (June 2015).
 
 #HNO
       - name: hno
@@ -84,7 +84,7 @@ categories:
         metadata_overrides:
           - dataset_name: ngoaidmap-syr
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -294,9 +294,12 @@ categories:
             - (name:schools-in-syria-2018-edition-4)
           exclude:
         metadata_overrides:
+          - dataset_name: schools-in-syria-2019
+            display_state: incomplete
+            comments: Dataset is available upon request.
           - dataset_name: schools-in-syria-2018-edition-4
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The data may be outadated (from 2017). A newer version is available on HDX Connect.
 
 
 #POPULATION AND SOCIO-ECONOMY
@@ -315,7 +318,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-other-0-0-0-0-0-0-0
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The dataset is outdated (from 2004).
 
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
