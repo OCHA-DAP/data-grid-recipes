@@ -46,11 +46,6 @@ categories:
           include:
             - (name:syria-idp-sites)
           exclude:
-        metadata_overrides:
-          - dataset_name: syria-idp-sites
-            display_state: incomplete
-            comments: The data may be outadated (June 2015).
-
 #HNO
       - name: hno
         title: Humanitarian Needs
