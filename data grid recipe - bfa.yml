@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
+            - (name:situation-des-personnes-deplacees-internes)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -44,9 +45,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
