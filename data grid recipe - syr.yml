@@ -19,9 +19,8 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -45,27 +44,29 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:syria-idp-sites)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: syria-idp-sites
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-data-for-syrian-arab-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -83,7 +84,7 @@ categories:
         metadata_overrides:
           - dataset_name: ngoaidmap-syr
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.?
 
 #FUNDING
       - name: funding
@@ -91,18 +92,21 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
+            - (name:fts-requirements-and-funding-data-for-syrian-arab-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:northern-syria-burned-land-analysis-dataset-may-june-2019)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: northern-syria-burned-land-analysis-dataset-may-june-2019
+            display_state: incomplete
+            comments: The dataset does not cover all of the country.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -128,9 +132,13 @@ categories:
         rules:
           include:
             - (name:wfp-ogcserver-gis-wfp-org-geonode-syr-trs-roads-osm)
+            - (name:hotosm_syr_roads)
           exclude:
         metadata_overrides:
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-syr-trs-roads-osm
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_syr_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
@@ -182,9 +190,8 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:wfp-food-prices-for-syrian-arab-republic)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -206,11 +213,15 @@ categories:
         rules:
           include:
             - (name:syrian-arab-republic-populated-places)
+            - (name:hotosm_syr_populated_places)
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-populated-places
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_syr_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -259,7 +270,7 @@ categories:
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: hotosm_syr_health_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -272,7 +283,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_syr_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -280,9 +291,14 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:schools-in-syria-2019)
+            - (name:schools-in-syria-2018-edition-4)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: schools-in-syria-2018-edition-4
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -295,9 +311,13 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:syrian-arab-republic-other-0-0-0-0-0-0-0)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-other-0-0-0-0-0-0-0
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
