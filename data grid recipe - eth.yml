@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
+            - (name:ethiopia-baseline-assessment-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -279,11 +279,6 @@ categories:
           include:
             - (name:total-population-by-regions-2013)
           exclude:
-        metadata_overrides:
-          - dataset_name: total-population-by-regions-2013
-            display_state: incomplete
-            comments: 
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
