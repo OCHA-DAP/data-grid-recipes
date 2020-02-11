@@ -53,6 +53,11 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -207,6 +212,11 @@ categories:
           include:
             - (name:syrian-arab-republic-administrative-boundaries-populated-places)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-administrative-boundaries-populated-places
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
