@@ -35,9 +35,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
