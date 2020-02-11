@@ -81,14 +81,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:who-is-doing-what-and-where-in-mindanao-conflict)
-            - (name:philippines-who-is-doing-what-where-in-marawi-conflict)
+            - (name:philippines-who-is-doing-what-and-where-in-taal-volcano-eruption)
           exclude:
         metadata_overrides:
-          - dataset_name: who-is-doing-what-and-where-in-mindanao-conflict
-            display_state: incomplete
-            comments: Dataset only covers the operational presence in the specified region.
-          - dataset_name: philippines-who-is-doing-what-where-in-marawi-conflict
+          - dataset_name: philippines-who-is-doing-what-and-where-in-taal-volcano-eruption
             display_state: incomplete
             comments: Dataset only covers the operational presence in the specified region.
 
@@ -114,7 +110,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-philippines)
+            - (name:philippines-2019-natural-disaster-events-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
