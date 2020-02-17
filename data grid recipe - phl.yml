@@ -136,7 +136,7 @@ categories:
         metadata_overrides:
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-phl-trs-roads-osm
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -212,10 +212,10 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_phl_north_populated_places
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: hotosm_phl_south_populated_places
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -281,10 +281,10 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_phl_south_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: hotosm_phl_north_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
