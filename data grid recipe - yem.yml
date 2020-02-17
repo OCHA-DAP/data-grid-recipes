@@ -133,7 +133,7 @@ categories:
         metadata_overrides:
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-yem-trs-roads-osm
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -207,7 +207,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_yem_populated_places
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -256,7 +256,7 @@ categories:
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: hotosm_yem_health_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -269,7 +269,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_yem_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
