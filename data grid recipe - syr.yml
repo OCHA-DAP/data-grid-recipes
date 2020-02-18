@@ -129,13 +129,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:hotosm_syr_roads)
+            - (name:syria-infrastructure-maps-power-line-water-way-dam-highway)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_syr_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
