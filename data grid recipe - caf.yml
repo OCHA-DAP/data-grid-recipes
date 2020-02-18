@@ -67,6 +67,11 @@ categories:
           include:
             - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
+            display_state: incomplete
+            comments: Dataset is not up to date.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
