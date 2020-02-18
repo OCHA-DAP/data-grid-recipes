@@ -43,9 +43,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:people-in-need-of-humanitarian-assistance-in-2020-by-population-group)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -80,7 +79,7 @@ categories:
         metadata_overrides:
           - dataset_name: ngoaidmap-eth
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
