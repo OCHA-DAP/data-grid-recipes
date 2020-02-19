@@ -74,7 +74,7 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the 2020 HNO.
+            comments: The data is from 2019, it needs to be updated with the HNO 2020.
 
 #CASUALTIES
       - name: casualties
