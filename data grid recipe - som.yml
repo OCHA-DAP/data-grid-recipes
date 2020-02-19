@@ -171,7 +171,13 @@ categories:
         rules:
           include:
             - (name:eastern-africa-region-food-security-statistics-2013-2014)
+            - (name:somalia-2019-post-deyr-seasonal-assessment-key-nutrition-results-summary)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-2019-post-deyr-seasonal-assessment-key-nutrition-results-summary
+            display_state: incomplete
+            comments: GAM values specified for assessed population but not clearly defined under admin levels.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -180,11 +186,15 @@ categories:
           include:
             - (name:somalia-sam-admissions-in-2015)
             - (name:eastern-africa-region-food-security-statistics-2013-2014)
+            - (name:somalia-2019-post-deyr-seasonal-assessment-key-nutrition-results-summary)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-sam-admissions-in-2015
             display_state: incomplete
             comments: The dataset is not up-to-date
+          - dataset_name: somalia-2019-post-deyr-seasonal-assessment-key-nutrition-results-summary
+            display_state: incomplete
+            comments: SAM values specified for assessed population but not clearly defined under admin levels.
 
 #FOOD PRICES
       - name: food_prices
