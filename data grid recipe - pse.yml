@@ -57,6 +57,11 @@ categories:
           include:
             - (name:opt-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: opt-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data is from 2019, it needs to be updated with the HNO 2020.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
