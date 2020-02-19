@@ -71,6 +71,11 @@ categories:
           include:
             - (name:somalia-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data is from 2019, it needs to be updated with the 2020 HNO.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
