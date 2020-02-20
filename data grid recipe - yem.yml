@@ -195,6 +195,7 @@ categories:
         rules:
           include:
             - (name:yemen-admin-boundaries)
+            - (name:yemen-admin-boundaries)
           exclude:
 #POPULATED PLACES
       - name: populated_places
