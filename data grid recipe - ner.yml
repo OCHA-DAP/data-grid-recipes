@@ -265,6 +265,7 @@ categories:
           include:
             - (name:niger-healthsites)
             - (name:hotosm_niger_health_facilities)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
           - dataset_name: niger-healthsites
@@ -273,6 +274,9 @@ categories:
           - dataset_name: hotosm_niger_health_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: incomplete
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
