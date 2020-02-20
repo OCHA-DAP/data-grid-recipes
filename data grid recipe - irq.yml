@@ -51,9 +51,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:iraq-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
