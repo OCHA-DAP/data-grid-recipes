@@ -317,6 +317,7 @@ categories:
           include:
             - (name:chad-healthsites)
             - (name:hotosm_chad_health_facilities)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
           - dataset_name: chad-healthsites
@@ -325,6 +326,9 @@ categories:
           - dataset_name: hotosm_chad_health_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: incomplete
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
