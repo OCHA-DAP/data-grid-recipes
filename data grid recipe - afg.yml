@@ -37,7 +37,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:afghan-voluntary-repatriation)
+            - (name:afghanistan-voluntary-repatriation-2020)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghan-voluntary-repatriation)
+            - (name:afghanistan-voluntary-repatriation-2020)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
