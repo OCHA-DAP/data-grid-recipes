@@ -203,7 +203,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:benin-administrative-level-0-2-sadd-2019-projected-population-statistics)
+            - (name:benin-settlements)
             - (name:hotosm_ben_populated_places)
             - (name:hotosm_benin_populated_places)
           exclude:
