@@ -121,6 +121,7 @@ categories:
         rules:
           include:
             - (name:wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm)
+            - (name:iraq-roads)
           exclude:
         metadata_overrides:
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm
@@ -213,6 +214,11 @@ categories:
             - (name:wfp-geonode-iraq-road-network-main-roads)
             - (name:iraq-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-iraq-road-network-main-roads
+            display_state: incomplete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
