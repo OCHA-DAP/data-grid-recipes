@@ -131,10 +131,10 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-phl-trs-roads-osm)
+            - (name:wfp-geonode-philippines-road-network-main-roads)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-phl-trs-roads-osm
+          - dataset_name: wfp-geonode-philippines-road-network-main-roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -307,7 +307,6 @@ categories:
         rules:
           include:
             - (name:philippines-population-projections-by-province-level)
-            - (name:philippines-population-projections-by-province-level)
           exclude:
         metadata_overrides:
           - dataset_name: philippines-population-projections-by-province-level
@@ -322,6 +321,11 @@ categories:
           include:
             - (name:philippines-population-projections-by-province-level)
           exclude:
+        metadata_overrides:
+          - dataset_name: philippines-population-projections-by-province-level
+            display_state: incomplete
+            comments: Dataset is not endorsed as COD.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
