@@ -218,11 +218,6 @@ categories:
             - (name:wfp-geonode-iraq-road-network-main-roads)
             - (name:iraq-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-iraq-road-network-main-roads
-            display_state: incomplete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
