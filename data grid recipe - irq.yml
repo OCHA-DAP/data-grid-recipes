@@ -123,7 +123,10 @@ categories:
             - (name:wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm)
             - (name:iraq-roads)
           exclude:
-
+        metadata_overrides:
+          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -215,11 +218,6 @@ categories:
             - (name:wfp-geonode-iraq-road-network-main-roads)
             - (name:iraq-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-iraq-road-network-main-roads
-            display_state: incomplete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
