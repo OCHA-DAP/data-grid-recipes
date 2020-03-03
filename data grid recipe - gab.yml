@@ -20,7 +20,8 @@ categories:
         rules:
           include:
           exclude:
-           
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -28,6 +29,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -35,7 +38,8 @@ categories:
         rules:
           include:
           exclude:
-            
+            - (private:false)
+            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -43,7 +47,8 @@ categories:
         rules:
           include:
           exclude:
-          
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -51,7 +56,8 @@ categories:
         rules:
           include:
           exclude:
-           
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -86,6 +92,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -93,13 +101,15 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-gab)
+            - (name:acled-data-for-gabon)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -108,6 +118,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -115,6 +127,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -122,6 +136,9 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
+
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
     title: Food Security & Nutrition
@@ -142,6 +159,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -149,6 +168,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -171,11 +192,6 @@ categories:
           include:
             - (name:gabon-administrative-boundaries)
           exclude:
-        metadata_overrides:
-          - dataset_name: benin-administrative-boundaries
-            display_state: incomplete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -184,13 +200,9 @@ categories:
           include:
             - (name:gabon-settlements)
             - (name:hotosm_gab_populated_places)
-            - (name:hotosm_gabon_populated_places)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_gab_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_gabon_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -271,6 +283,9 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
+
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
     title: Population & Socio-economy
@@ -283,6 +298,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -290,6 +307,8 @@ categories:
         rules:
           include:
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -297,4 +316,6 @@ categories:
         rules:
           include:
           exclude:
-            
+            - (private:false)
+            - (private:true)
+
