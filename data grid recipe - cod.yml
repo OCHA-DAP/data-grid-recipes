@@ -151,7 +151,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-drc-acute-food-insecurity-situation)
+            - (name:drc-acute-food-insecurity)
           exclude:
 #GAM
       - name: gam
