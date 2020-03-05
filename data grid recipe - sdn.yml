@@ -81,13 +81,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
+            - (name:sudan-humanitarian-needs-overview-2015-2020)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarianneeds-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
