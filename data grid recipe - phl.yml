@@ -158,7 +158,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:philippines-acute-food-insecurity)
+            - (name:philippines-chronic-food-insecurity)
           exclude:
 #GAM
       - name: gam
