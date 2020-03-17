@@ -218,6 +218,11 @@ categories:
             - (name:wfp-geonode-iraq-road-network-main-roads)
             - (name:iraq-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-iraq-road-network-main-roads
+            display_state: incomplete
+            comments: This dataset is an extraction of roads from OpenStreetMap data made by WFP following UNSDI-T standards. OpenStreetMap data relies on user contributions and may not be comprehensive. 
+
 #AIRPORTS
       - name: airports
         title: Airports
