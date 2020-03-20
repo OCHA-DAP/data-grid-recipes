@@ -75,18 +75,7 @@ categories:
         rules:
           include:
             - (name:drc_presence_operationnelle)
-            - (name:3w_drc_presence_operationnelle_decembre_2018)
-            - (name:ngoaidmap-cod)
-            - (name:iati-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: ngoaidmap-cod
-            display_state: incomplete
-            comments: 
-          - dataset_name: iati-cod
-            display_state: incomplete
-            comments: This data provides complimentary data 
-
 #FUNDING
       - name: funding
         title: Funding
