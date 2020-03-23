@@ -20,7 +20,6 @@ categories:
         rules:
           include:
             - (name:afectados-y-eventos-de-desplazamientos-masivos-2012-2019-por-departamento-y-municipio)
-            - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -77,14 +76,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:3w-who-is-doing-what-where-in-colombia-jan-dec-2018)
-            - (name:iati-col)
+            - (name:colombia-4ws)
           exclude:
-        metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
-            display_state: incomplete
-            comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
-
 #FUNDING
       - name: funding
         title: Funding
