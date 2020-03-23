@@ -73,14 +73,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:yemen-education-cluster-5w)
-            - (name:ngoaidmap-yem)
+            - (name:yemen-education-cluster-5w-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: ngoaidmap-yem
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
-
 #FUNDING
       - name: funding
         title: Funding
