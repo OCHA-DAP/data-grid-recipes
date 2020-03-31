@@ -20,13 +20,8 @@ categories:
         rules:
           include:
             - (name:sudan-registration-data-iom-dtm)
-            - (name:sudan-humanitarianneeds-overview)
+            - (name:sudan-idp-camps)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarianneeds-overview
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -56,6 +51,7 @@ categories:
         rules:
           include:
             - (name:refugee-camps-in-west-nile-and-east-sudan)
+            - (name:sudan-idp-camps)
             - (name:sudan-registration-data-iom-dtm)
             - (name:geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014)
             - (name:geodata-of-um-gargour-refugee-camp-al-qadarif-province-sudan-july-21-2014)
@@ -64,7 +60,7 @@ categories:
         metadata_overrides:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
             display_state: incomplete
-            comments: Dataset covers a limited area.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -143,6 +139,7 @@ categories:
           include:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
             - (name:sudan-hazards)
+            - (name:sudan-idp-settlements-by-risk-level)
           exclude:
         metadata_overrides:
           - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
