@@ -40,6 +40,11 @@ categories:
             - (name:unhcr-demographics-residing-som)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-iom-dtm-dataset-round-3
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #RETURNEES
       - name: returnees
         title: Returnees
