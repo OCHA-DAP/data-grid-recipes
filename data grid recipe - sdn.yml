@@ -191,7 +191,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
+            - (name:sudan-humanitarian-needs-overview-2015-2020)
           exclude:
 #SAM
       - name: sam
@@ -344,7 +344,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarianneeds-overview)
+            - (name:sudan-humanitarian-needs-overview-2015-2020)
             - (name:worldpop-by-cod-sdn)
           exclude:
         metadata_overrides:
