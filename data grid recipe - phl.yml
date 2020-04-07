@@ -81,17 +81,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:philippines-north-cotabato-and-davao-del-sur-earthquakes-3w-who-is-doing-what-and-where)
-            - (name:philippines-who-is-doing-what-and-where-in-taal-volcano-eruption)
+            - (name:philippines-covid-19-response-who-does-what-where)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-north-cotabato-and-davao-del-sur-earthquakes-3w-who-is-doing-what-and-where
-            display_state: incomplete
-            comments: Dataset only covers the operational presence in the specified region.
-          - dataset_name: philippines-who-is-doing-what-and-where-in-taal-volcano-eruption
-            display_state: incomplete
-            comments: Dataset only covers the operational presence in the specified region.
-
 #FUNDING
       - name: funding
         title: Funding
