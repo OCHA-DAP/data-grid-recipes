@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:libya-humanitarian-needs-overview)
+            - (name:south-sudan-humanitarian-needs-overview)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -63,7 +63,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-nigeria)
+            - (name:ucdp-data-for-south-sudan)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -86,7 +86,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-nigeria)
+            - (name:fts-requirements-and-funding-data-for-south-sudan)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -103,7 +103,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-nigeria)
+            - (name:ucdp-data-for-south-sudan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -171,7 +171,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-nigeria)
+            - (name:wfp-food-prices-for-south-sudan)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -185,7 +185,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:nga-administrative-boundaries)
+            - (name:south-sudan-administrative-boundaries)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -259,7 +259,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:nigeria-2016-population-data)
+            - (name:south-sudan-administrative-levels-0-2-2020-population-estimates)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
