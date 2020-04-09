@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:haiti-pin-hno-2019)
+            - (name:libya-humanitarian-needs-overview)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -63,7 +63,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-haiti)
+            - (name:ucdp-data-for-libya)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -86,7 +86,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-haiti)
+            - (name:fts-requirements-and-funding-data-for-libya)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -103,7 +103,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-haiti)
+            - (name:ucdp-data-for-libya)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -171,7 +171,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-haiti)
+            - (name:wfp-food-prices-for-libya)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -185,7 +185,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:hti-polbndl-adm1-cnigs-zip)
+            - (name:admin-boundaries-villages-libya-cods)
           exclude:
 #POPULATED PLACES
       - name: populated_places
