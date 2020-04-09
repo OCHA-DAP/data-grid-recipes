@@ -63,7 +63,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-libya)
+            - (name:ucdp-data-for-nigeria)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -86,7 +86,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-libya)
+            - (name:fts-requirements-and-funding-data-for-nigeria)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -103,7 +103,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-libya)
+            - (name:ucdp-data-for-nigeria)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -171,7 +171,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-libya)
+            - (name:wfp-food-prices-for-nigeria)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -185,7 +185,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:admin-boundaries-villages-libya-cods)
+            - (name:nga-administrative-boundaries)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -259,9 +259,8 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:nigeria-2016-population-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
