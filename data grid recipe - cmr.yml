@@ -55,18 +55,16 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:cameroon-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:ucdp-data-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -79,18 +77,16 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:cameroon-operational-presence)
           exclude:
-            - (private:false)
-            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
+            - (name:fts-requirements-and-funding-data-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -106,9 +102,8 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:ucdp-data-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -175,9 +170,8 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:wfp-food-prices-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
