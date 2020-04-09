@@ -190,7 +190,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:burundi-administrative-level-0-1-and-2-administrative-boundaries)
+            - (name:cameroon-administrative-boundaries)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -264,8 +264,9 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:burundi-administrative-level-0-2-population-statistics-2018)
           exclude:
+            - (private:false)
+            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
