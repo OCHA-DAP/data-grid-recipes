@@ -192,6 +192,7 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
 #SAM
       - name: sam
@@ -199,9 +200,8 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
+            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
