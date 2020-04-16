@@ -36,8 +36,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:returnee-population-of-sudan-dtm-iom)
-            - (name:sudan-returnee-data-iom-dtm)
+            - (name:south-sudan-displacement-multi-sectoral-village-assessment-idps-returnees-iom-dtm)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
