@@ -78,11 +78,6 @@ categories:
           include:
             - (name:nigeria-operational-presence)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-operational-presence
-            display_state: incomplete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -156,18 +151,16 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:north-east-nigeria-acute-malnutrition-situation)
           exclude:
-            - (private:false)
-            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
+            - (name:north-east-nigeria-acute-malnutrition-situation)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -207,11 +200,6 @@ categories:
           include:
             - (name:wfp-geonode-nigeria-road-network-main-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-nigeria-road-network-main-roads
-            display_state: incomplete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
