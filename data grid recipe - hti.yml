@@ -56,11 +56,6 @@ categories:
           include:
             - (name:haiti-pin-hno-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-pin-hno-2019
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -82,6 +77,8 @@ categories:
         rules:
           include:
             - (name:haiti-operational-presence)
+            - (name:hrp-projects-hti)
+            - (name:haiti-cible-hrp-2019-2020)
           exclude:
 #FUNDING
       - name: funding
@@ -148,7 +145,13 @@ categories:
         rules:
           include:
             - (name:haiti-acute-food-insecurity)
+            - (name:wfp-geonode-ica-haiti-recurrence-of-food-insecurity)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-ica-haiti-recurrence-of-food-insecurity
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -220,6 +223,7 @@ categories:
           include:
             - (name:ourairports-hti)
             - (name:hotosm_hti_airports)
+            - (name:haiti-unhas-helicopter-landing-zones)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-hti
