@@ -77,7 +77,6 @@ categories:
         rules:
           include:
             - (name:haiti-operational-presence)
-            - (name:hrp-projects-hti)
             - (name:haiti-cible-hrp-2019-2020)
           exclude:
 #FUNDING
