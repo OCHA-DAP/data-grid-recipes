@@ -62,7 +62,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-haiti)
+            - (name:acled-data-for-haiti)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -102,7 +102,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-haiti)
+            - (name:acled-data-for-haiti)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
