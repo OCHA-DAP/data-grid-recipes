@@ -57,9 +57,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:burundi-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -246,6 +245,7 @@ categories:
           include:
             - (name:hotosm_bdi_health_facilities)
             - (name:burundi-healthsites)
+            - (name:burundi-health-district-boundaries)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
