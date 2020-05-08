@@ -53,21 +53,9 @@ categories:
             - (name:refugee-camps-in-west-nile-and-east-sudan)
             - (name:sudan-idp-camps)
             - (name:sudan-registration-data-iom-dtm)
-            - (name:geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014)
-            - (name:geodata-of-um-gargour-refugee-camp-al-qadarif-province-sudan-july-21-2014)
-            - (name:geodata-of-shagarab-1-refugee-camp-al-qadarif-province-sudan-july-21-2014)
           exclude:
         metadata_overrides:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: geodata-of-shagarab-2-refugee-camp-al-qadarif-province-sudan-july-21-2014
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: geodata-of-um-gargour-refugee-camp-al-qadarif-province-sudan-july-21-2014
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: geodata-of-shagarab-1-refugee-camp-al-qadarif-province-sudan-july-21-2014
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -192,7 +180,6 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
 #SAM
       - name: sam
@@ -200,8 +187,9 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
