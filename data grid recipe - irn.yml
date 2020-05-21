@@ -77,9 +77,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:iati-irn)
           exclude:
-            - (private:false)
-            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
@@ -193,9 +192,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_irn_populated_places)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_irn_populated_places
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -213,6 +216,11 @@ categories:
             - (name:ourairports-irn)
             - (name:hotosm_irn_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_irn_airports
+            display_state: incomplete
+            comments: 
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -225,18 +233,27 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:iran-healthsites)
+            - (name:hotosm_irn_health_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_irn_health_facilities
+            display_state: incomplete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_irn_education_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_irn_education_facilities
+            display_state: incomplete
+            comments: 
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
