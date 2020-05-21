@@ -119,9 +119,18 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:wfp-geonode-iran-road-network-main-roads)
+            - (name:hotosm_irn_railways)
+            - (name:hotosm_irn_roads)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_irn_railways
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_irn_roads
+            display_state: incomplete
+            comments: 
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -206,6 +215,7 @@ categories:
         rules:
           include:
             - (name:wfp-geonode-iran-road-network-main-roads)
+            - (name:hotosm_irn_roads)
           exclude:
 #AIRPORTS
       - name: airports
