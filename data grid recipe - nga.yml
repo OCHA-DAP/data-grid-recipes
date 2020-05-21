@@ -45,9 +45,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:nigeria-location-assessment-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -118,9 +117,22 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:wfp-geonode-nigeria-road-network-main-roads)
+            - (name:hotosm_nga_waterways)
+            - (name:hotosm_nga_railways)
+            - (name:hotosm_nga_roads)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_nga_waterways
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_nga_railways
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_nga_roads
+            display_state: incomplete
+            comments: 
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -199,9 +211,17 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_nga_buildings)
+            - (name:hotosm_nga_populated_places)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_nga_buildings
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_nga_populated_places
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -230,18 +250,27 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:hotosm_nga_health_facilities)
+            - (name:nigeria-healthsites)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_nga_health_facilities
+            display_state: incomplete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_nga_education_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_nga_education_facilities
+            display_state: incomplete
+            comments: 
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
