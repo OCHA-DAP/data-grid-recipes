@@ -211,9 +211,9 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
+            - (name:ourairports-irn)
+            - (name:hotosm_irn_airports)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #HEALTH AND EDUCATION
   - name: health_and_education
