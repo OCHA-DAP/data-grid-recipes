@@ -1,4 +1,4 @@
----
+
 #This YAML file is intended as an empty template and documentation for YAML files used to configure the data grid
 
 inherits_from: #for v2. name of another recipe which this one will partially overwrite
