@@ -222,13 +222,7 @@ categories:
         rules:
           include:
             - (name:ourairports-ssd)
-            - (name:hotosm_ssd_airports)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_ssd_airports
-            display_state: incomplete
-            comments: 
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
