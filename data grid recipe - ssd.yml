@@ -118,18 +118,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:hotosm_ssd_roads)
-            - (name:hotosm_ssd_railways)
             - (name:wfp-geonode-south-sudan-road-network-main-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_ssd_roads
-            display_state: incomplete
-            comments: 
-          - dataset_name: hotosm_ssd_railways
-            display_state: incomplete
-            comments: 
-
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
