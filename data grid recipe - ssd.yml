@@ -118,9 +118,18 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:hotosm_ssd_roads)
+            - (name:hotosm_ssd_railways)
+            - (name:wfp-geonode-south-sudan-road-network-main-roads)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_ssd_roads
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_ssd_railways
+            display_state: incomplete
+            comments: 
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -190,9 +199,14 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_ssd_buildings)
+            - (name:hotosm_ssd_populated_places)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_ssd_buildings
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -208,7 +222,13 @@ categories:
         rules:
           include:
             - (name:ourairports-ssd)
+            - (name:hotosm_ssd_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_ssd_airports
+            display_state: incomplete
+            comments: 
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -221,18 +241,26 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:hotosm_ssd_health_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_ssd_health_facilities
+            display_state: incomplete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_sdn_education_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_sdn_education_facilities
+            display_state: incomplete
+            comments: 
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
