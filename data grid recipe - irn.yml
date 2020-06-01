@@ -36,8 +36,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:iraq-returnee-data-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -284,18 +285,17 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:iraq-returnee-data-iom-dtm)
+            - (name:iran-census-population-results-from-dis-aggregated-by-gender-and-age)
           exclude:
-            - (private:false)
-            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:iran-census-population-results-from-dis-aggregated-by-gender-and-age)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
