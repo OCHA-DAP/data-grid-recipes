@@ -276,20 +276,15 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:wfp-geonode-yemen-population-estimates)
+            - (name:population-estimates-in-yemen-for-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-yemen-population-estimates
-            display_state: incomplete
-            comments: Dataset is not endorsed as COD.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:yemen-cso-2017-population-projections-by-governorate-district-sex-age-disaggregated)
+            - (name:population-estimates-in-yemen-for-2020)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
