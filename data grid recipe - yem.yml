@@ -284,7 +284,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:population-estimates-in-yemen-for-2020)
+            - (name:population-estimates-in-yemen-for-2019)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
