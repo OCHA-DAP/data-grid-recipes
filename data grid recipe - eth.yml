@@ -292,4 +292,9 @@ categories:
           include:
             - (name:ethiopia-poverty-rate)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-poverty-rate
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
