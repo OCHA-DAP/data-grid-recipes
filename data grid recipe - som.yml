@@ -183,6 +183,7 @@ categories:
         rules:
           include:
             - (name:somalia-acute-food-insecurity)
+            - (name:ipc-country-data)
           exclude:
 #GAM
       - name: gam
