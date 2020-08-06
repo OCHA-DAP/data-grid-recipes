@@ -30,6 +30,7 @@ categories:
           include:
             - (name:sudan-humanitarianneeds-overview)
             - (name:refugee-camps-in-west-nile-and-east-sudan)
+            - (name:sudan-pin-and-severity-2020)
           exclude:
         metadata_overrides:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
@@ -52,10 +53,14 @@ categories:
           include:
             - (name:refugee-camps-in-west-nile-and-east-sudan)
             - (name:sudan-idp-camps)
+            - (name:sudan-pin-and-severity-2020)
             - (name:sudan-registration-data-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: refugee-camps-in-west-nile-and-east-sudan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: sudan-pin-and-severity-2020
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -172,6 +177,7 @@ categories:
         rules:
           include:
             - (name:sudan-acute-food-insecurity)
+            - (name:ipc-country-data)
           exclude:
 #GAM
       - name: gam
