@@ -74,6 +74,7 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-irq)
+            - (name:iraq-humanitarian-operational-presence-3w)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-irq
