@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:yemen-displacement-data-tracking-idp-iom-dtm)
+            - (name:unhcr-population-data-for-yem)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -28,6 +29,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-yem)
+            - (name:unhcr-population-data-for-yem)
           exclude:
 #RETURNEES
       - name: returnees
