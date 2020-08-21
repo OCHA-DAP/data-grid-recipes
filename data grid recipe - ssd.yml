@@ -229,6 +229,7 @@ categories:
         rules:
           include:
             - (name:hotosm_ssd_health_facilities)
+            - (name:south-sudan-health)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_ssd_health_facilities
