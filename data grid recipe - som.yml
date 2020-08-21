@@ -360,7 +360,7 @@ categories:
             - (name:worldpop-by-cod-som)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-population-data
+          - dataset_name: worldpop-by-cod-som
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -370,9 +370,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:somalia-population-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
