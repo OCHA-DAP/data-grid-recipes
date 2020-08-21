@@ -63,7 +63,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-ukraine)
+            - (name:acled-data-for-ukraine)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -102,7 +102,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-ukraine)
             - (name:acled-data-for-ukraine)
           exclude:
 #HUMANITARIAN ACCESS
