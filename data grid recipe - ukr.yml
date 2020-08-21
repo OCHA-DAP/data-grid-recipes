@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:haiti-pin-hno-2019)
+            - (name:ukraine-humanitarian-needs-overview)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -77,9 +77,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:ukraine-who-does-what-where-3w-january-to-december-2019)
           exclude:
-            - (private:false)
-            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
@@ -104,6 +103,7 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-ukraine)
+            - (name:acled-data-for-ukraine)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -144,9 +144,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:faostat-food-security-indicators-for-ukraine)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -171,6 +170,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:wfp-food-prices-for-ukraine)
             - (name:wfp-food-prices-for-ukraine)
           exclude:
 
@@ -226,9 +226,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:ukraine-healthsites)
           exclude:
-            - (private:false)
-            - (private:true)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
