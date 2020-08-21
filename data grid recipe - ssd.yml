@@ -20,6 +20,8 @@ categories:
         rules:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
+            - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
+            - (name:sudan-idp-registration-dtm-iom)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -118,6 +120,7 @@ categories:
         rules:
           include:
             - (name:wfp-geonode-south-sudan-road-network-main-roads)
+            - (name:south-sudan-road-network)
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -203,6 +206,7 @@ categories:
         rules:
           include:
             - (name:wfp-geonode-south-sudan-road-network-main-roads)
+            - (name:south-sudan-road-network)
           exclude:
 #AIRPORTS
       - name: airports
