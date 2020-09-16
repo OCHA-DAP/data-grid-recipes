@@ -19,6 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:somalia-drought-dashboard)
             - (name:total-number-of-people-targeted-and-reached-per-region-and-per-cluster)
             - (name:somalia-iom-dtm-dataset-round-3)
