@@ -367,6 +367,7 @@ categories:
         rules:
           include:
             - (name:sudan-poverty-rate)
+            - (name:sudan-mpi)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-poverty-rate
