@@ -60,7 +60,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-libya)
+            - (name:acled-data-for-libya)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -99,7 +99,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-libya)
+            - (name:acled-data-for-libya)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -297,7 +297,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:libya-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 
