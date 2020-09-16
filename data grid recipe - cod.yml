@@ -289,6 +289,6 @@ categories:
         rules:
           include:
             - (name:democratic-republic-of-the-congo-drc-global-multidimensional-poverty-index)
-            - (name:congo-mpi)
+            - (name:democratic-republic-of-the-congo-mpi)
           exclude:
 
