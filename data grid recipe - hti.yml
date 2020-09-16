@@ -142,14 +142,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:haiti-acute-food-insecurity)
-            - (name:wfp-geonode-ica-haiti-recurrence-of-food-insecurity)
+            - (name:haiti-acute-food-insecurity-country-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-ica-haiti-recurrence-of-food-insecurity
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
