@@ -292,6 +292,11 @@ categories:
           include:
             - (name:iraq-population-and-poverty-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-population-and-poverty-data
+            display_state: incomplete
+            comments: Data is not up to date
+
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -307,6 +312,7 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:iraq-mpi)
             - (name:iraq-population-and-poverty-data)
           exclude:
 
