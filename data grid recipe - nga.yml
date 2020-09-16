@@ -310,5 +310,11 @@ categories:
         rules:
           include:
             - (name:nigeria-multidimensional-poverty-index)
+            - (name:nigeria-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-multidimensional-poverty-index
+            display_state: incomplete
+            comments: 
+
 
