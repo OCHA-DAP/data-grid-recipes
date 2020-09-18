@@ -156,9 +156,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:zimbabwe-acute-food-insecurity-country-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
