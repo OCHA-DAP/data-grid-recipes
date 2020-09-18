@@ -145,8 +145,13 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:burundi-acute-food-insecurity)
+            - (name:burundi-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-acute-food-insecurity-country-data
+            display_state: incomplete
+            comments: 
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -310,7 +315,11 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:burundi-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: burundi-mpi
+            display_state: incomplete
+            comments: 
+
 
