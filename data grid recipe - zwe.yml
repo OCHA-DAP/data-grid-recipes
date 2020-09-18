@@ -148,7 +148,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:zimbabwe-acute-food-insecurity)
+            - (name:zimbabwe-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -156,8 +156,9 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:zimbabwe-acute-food-insecurity-country-data)
           exclude:
+            - (private:false)
+            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
