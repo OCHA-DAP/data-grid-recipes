@@ -147,11 +147,6 @@ categories:
           include:
             - (name:burundi-acute-food-insecurity-country-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-acute-food-insecurity-country-data
-            display_state: incomplete
-            comments: 
-
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -317,9 +312,4 @@ categories:
           include:
             - (name:burundi-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-mpi
-            display_state: incomplete
-            comments: 
-
 
