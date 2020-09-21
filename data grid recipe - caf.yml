@@ -161,7 +161,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:central-african-republic-acute-food-insecurity)
+            - (name:central-african-republic-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -327,11 +327,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:central-african-republic-povery-rate)
+            - (name:central-african-republic-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: central-african-republic-povery-rate
-            display_state: incomplete
-            comments: 
-
 
