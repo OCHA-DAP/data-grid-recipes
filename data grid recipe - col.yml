@@ -297,5 +297,6 @@ categories:
         rules:
           include:
             - (name:colombia-poverty-rate)
+            - (name:colombia-mpi)
           exclude:
 
