@@ -140,6 +140,7 @@ categories:
         rules:
           include:
             - (name:drc-acute-food-insecurity)
+            - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
