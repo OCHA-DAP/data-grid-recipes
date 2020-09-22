@@ -144,6 +144,7 @@ categories:
         rules:
           include:
             - (name:south-sudan-acute-food-insecurity)
+            - (name:south-sudan-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
