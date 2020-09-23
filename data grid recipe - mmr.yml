@@ -311,5 +311,6 @@ categories:
         rules:
           include:
             - (name:myanmar-poverty-rate)
+            - (name:myanmar-mpi)
           exclude:
 
