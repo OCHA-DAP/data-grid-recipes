@@ -346,5 +346,6 @@ categories:
         rules:
           include:
             - (name:afghanistan-poverty-rate)
+            - (name:afghanistan-mpi)
           exclude:
 
