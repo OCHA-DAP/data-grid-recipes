@@ -137,6 +137,7 @@ categories:
             - (name:state-of-palestine-roads)
             - (name:wfp-geonode-palestine-streets-and-pathways)
             - (name:wfp-geonode-palestine-road-network-main-roads)
+            - (name:hotosm_pse_railways)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-hebron_h2_closures
@@ -284,6 +285,7 @@ categories:
             - (name:state-of-palestine-government-health-centers)
             - (name:hotosm_pse_health_facilities)
             - (name:palestine-healthsites)
+            - (name:palestinian-territories-healthsites)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-health-0
@@ -357,16 +359,19 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:palestine-population-admin-0-to-2_bysex-and-agegroup_2017)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: palestine-population-admin-0-to-2_bysex-and-agegroup_2017
+            display_state: incomplete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:state-of-palestine-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 
