@@ -381,11 +381,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:chad-poverty-rate)
+            - (name:chad-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-poverty-rate
-            display_state: incomplete
-            comments: 
-
 
