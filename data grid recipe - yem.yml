@@ -144,6 +144,7 @@ categories:
         rules:
           include:
             - (name:yemen-acute-food-insecurity)
+            - (name:yemen-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
