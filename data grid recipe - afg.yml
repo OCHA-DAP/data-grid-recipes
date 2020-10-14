@@ -132,7 +132,13 @@ categories:
         rules:
           include:
             - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
           exclude:
+        metadata_overrides:
+          - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
+            display_state: incomplete
+            comments: The data is out of date
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -165,6 +171,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
