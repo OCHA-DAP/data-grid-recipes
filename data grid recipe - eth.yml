@@ -79,7 +79,7 @@ categories:
         metadata_overrides:
           - dataset_name: ngoaidmap-eth
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but not consistently.
 
 #FUNDING
       - name: funding
@@ -203,6 +203,7 @@ categories:
         rules:
           include:
             - (name:roads-network)
+            - (name:hotosm_eth_roads)
           exclude:
 #AIRPORTS
       - name: airports
@@ -211,6 +212,7 @@ categories:
         rules:
           include:
             - (name:ourairports-eth)
+            - (name:hotosm_eth_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-eth
@@ -238,7 +240,7 @@ categories:
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: hotosm_eth_health_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -251,7 +253,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_eth_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
