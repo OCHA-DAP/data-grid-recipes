@@ -131,14 +131,9 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
             - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:reach_afg_dataset_htr-assessment-round-1_august-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018
-            display_state: incomplete
-            comments: The data is out of date
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -231,6 +226,7 @@ categories:
         rules:
           include:
             - (name:afg-admin-boundaries)
+            - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -269,11 +265,15 @@ categories:
         rules:
           include:
             - (name:ourairports-afg)
+            - (name:hotosm_afg_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-afg
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_afg_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 
 #HEALTH AND EDUCATION
