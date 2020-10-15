@@ -111,11 +111,6 @@ categories:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
           exclude:
-        metadata_overrides:
-          - dataset_name: cash-based-programming-in-somalia-2018
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -269,6 +264,7 @@ categories:
         rules:
           include:
             - (name:ourairports-som)
+            - (name:hotosm_som_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-som
