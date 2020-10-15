@@ -57,11 +57,6 @@ categories:
           include:
             - (name:opt-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: opt-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -126,6 +121,8 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-security)
+            - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
+            - (name:state-of-palestine-transportation-network)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -229,6 +226,7 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
+            - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
           exclude:
 #ROADS
       - name: roads
@@ -361,11 +359,6 @@ categories:
           include:
             - (name:palestine-population-admin-0-to-2_bysex-and-agegroup_2017)
           exclude:
-        metadata_overrides:
-          - dataset_name: palestine-population-admin-0-to-2_bysex-and-agegroup_2017
-            display_state: incomplete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
