@@ -272,6 +272,7 @@ categories:
           include:
             - (name:sudan-aerodromes)
             - (name:ourairports-sdn)
+            - (name:hotosm_sdn_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-sdn
@@ -293,6 +294,7 @@ categories:
             - (name:sudan-healthsites)
             - (name:hotosm_sdn_health_facilities)
             - (name:sudan-hospitals-in-khartoum-state-as-of-oct-2019)
+            - (name:health-facilities-locations-darfur)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-healthsites
