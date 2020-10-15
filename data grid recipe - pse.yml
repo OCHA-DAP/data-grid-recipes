@@ -122,6 +122,7 @@ categories:
           include:
             - (name:state-of-palestine-security)
             - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
+            - (name:state-of-palestine-transportation-network)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
