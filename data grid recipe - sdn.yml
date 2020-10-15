@@ -306,6 +306,9 @@ categories:
           - dataset_name: sudan-hospitals-in-khartoum-state-as-of-oct-2019
             display_state: incomplete
             comments: Dataset covers only Khartoum state.
+          - dataset_name: health-facilities-locations-darfur
+            display_state: incomplete
+            comments: Dataset covers only Darfur region.
 
 #EDUCATION FACILITIES
       - name: education_facilities
