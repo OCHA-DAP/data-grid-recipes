@@ -148,7 +148,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:rdc-taux-de-la-malnutrition-decembre-2019)
+            - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
 #SAM
       - name: sam
@@ -156,7 +156,7 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (name:rdc-taux-de-la-malnutrition-decembre-2019)
+            - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -289,7 +289,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-drc-global-multidimensional-poverty-index)
             - (name:democratic-republic-of-the-congo-mpi)
           exclude:
 
