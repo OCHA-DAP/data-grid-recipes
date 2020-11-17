@@ -234,7 +234,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:sudan-settlements)
+            - (name:sudan-settlement-26-july-2020)
             - (name:hotosm_sdn_populated_places)
           exclude:
         metadata_overrides:
