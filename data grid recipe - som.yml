@@ -66,6 +66,7 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:somalia-iom-dtm-dataset-round-3)
