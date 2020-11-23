@@ -52,6 +52,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
         metadata_overrides:
