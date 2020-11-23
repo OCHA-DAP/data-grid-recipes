@@ -120,7 +120,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:sudan-flood-affected-people-from-2013-to-2019)
+            - (name:sudan-flood-affected-people-from-2013-to-2020)
+            - (name:sudan-flood-affected-areas-2020)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
