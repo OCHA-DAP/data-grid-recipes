@@ -53,11 +53,6 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -121,7 +116,13 @@ categories:
         rules:
           include:
             - (name:syria-violent-and-threatening-incidents-affecting-aid-operations)
+            - (name:syria-violent-and-threatening-incidents-against-healthcare)
           exclude:
+        metadata_overrides:
+          - dataset_name: syria-violent-and-threatening-incidents-against-healthcare
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
