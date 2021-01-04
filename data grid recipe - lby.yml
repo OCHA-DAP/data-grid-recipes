@@ -109,6 +109,11 @@ categories:
           include:
             - (name:libya-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: libya-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
