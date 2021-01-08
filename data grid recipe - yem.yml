@@ -77,6 +77,11 @@ categories:
           include:
             - (name:yemen-education-cluster-5w-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-education-cluster-5w-2019
+            display_state: incomplete
+            comments: Dataset is not up to date
+
 #FUNDING
       - name: funding
         title: Funding
