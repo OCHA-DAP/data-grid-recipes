@@ -77,11 +77,6 @@ categories:
           include:
             - (name:philippines-covid-19-response-who-does-what-where)
           exclude:
-        metadata_overrides:
-          - dataset_name: philippines-covid-19-response-who-does-what-where
-            display_state: incomplete
-            comments: Dataset only covers the operational presence in the specified region.
-
 #FUNDING
       - name: funding
         title: Funding
