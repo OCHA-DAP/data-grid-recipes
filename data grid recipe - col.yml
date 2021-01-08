@@ -62,7 +62,6 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-colombia)
-            - (name:mortalidad)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -136,7 +135,6 @@ categories:
         rules:
           include:
             - (name:colombia-disaster-inventory)
-            - (name:disaster-loss-and-damage-dataset-for-colombia)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
