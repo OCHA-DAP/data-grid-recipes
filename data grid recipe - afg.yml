@@ -132,7 +132,13 @@ categories:
         rules:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:reach_afg_dataset_htr-assessment-round-1_august-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: reach_afg_dataset_htr-assessment-round-1_august-2019
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
