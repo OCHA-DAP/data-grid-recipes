@@ -20,7 +20,6 @@ categories:
         rules:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
-            - (name:drc-site-assessment-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
