@@ -79,11 +79,6 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -136,8 +131,14 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:reach_afg_dataset_htr-assessment-round-1_august-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: reach_afg_dataset_htr-assessment-round-1_august-2019
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -170,6 +171,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
@@ -183,7 +185,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:afghanistan-food-insecurity)
+            - (name:afghanistan-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -228,7 +230,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:afg-admin-boundaries)
+            - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -267,11 +269,15 @@ categories:
         rules:
           include:
             - (name:ourairports-afg)
+            - (name:hotosm_afg_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-afg
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_afg_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 
 #HEALTH AND EDUCATION
@@ -351,5 +357,6 @@ categories:
         rules:
           include:
             - (name:afghanistan-poverty-rate)
+            - (name:afghanistan-mpi)
           exclude:
 
