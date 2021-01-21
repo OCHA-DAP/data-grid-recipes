@@ -235,14 +235,10 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-afg)
             - (name:ourairports-pak)
             - (name:hotosm_pak_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-afg
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
           - dataset_name: ourairports-pak
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
