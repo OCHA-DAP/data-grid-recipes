@@ -211,11 +211,6 @@ categories:
           include:
             - (name:pakistan-settlement)
           exclude:
-        metadata_overrides:
-          - dataset_name: pakistan-settlement
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
