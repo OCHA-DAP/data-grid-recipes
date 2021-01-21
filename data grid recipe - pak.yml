@@ -19,84 +19,53 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
-            - (name:afghanistan-conflict-induced-displacements-in-2020)
-            - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2020
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
-            - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: pakistani-refugee-in-afghanistan-2017
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:afghanistan-humanitarian-needs-overview)
           exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:afghanistan-casualties)
-            - (name:acled-data-for-afghanistan)
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:acled-data-for-pakistan)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-casualties
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -109,11 +78,14 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-operational-presence)
-            - (name:iati-afg)
+            - (name:who-is-doing-what-where-and-when)
+            - (name:iati-pak)
           exclude:
         metadata_overrides:
-          - dataset_name: iati-afg
+          - dataset_name: who-is-doing-what-where-and-when
+            display_state: incomplete
+            comments: Dataset is old.
+          - dataset_name: iati-pak
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -123,7 +95,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-afghanistan)
+            - (name:fts-requirements-and-funding-data-for-pakistan)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -131,21 +103,16 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:afghanistan-natural-disaster-incidents-in-2020)
-            - (name:reach_afg_dataset_htr-assessment-round-1_august-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: reach_afg_dataset_htr-assessment-round-1_august-2019
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-afghanistan)
+            - (name:acled-data-for-pakistan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -153,8 +120,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -170,9 +138,17 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
-            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015)
+            - (name:geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015)
           exclude:
+        metadata_overrides:
+          - dataset_name: geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -185,7 +161,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:afghanistan-acute-food-insecurity-country-data)
+            - (name:pakistan-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -193,14 +169,9 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
-            - (name:wfp-geonode-afg-ica-malnutrition-geonode)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-afg-ica-malnutrition-geonode
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -216,7 +187,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-afghanistan)
+            - (name:wfp-food-prices-for-pakistan)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -230,7 +201,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
+            - (name:pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -238,10 +209,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_afg_populated_places)
+            - (name:pakistan-settlement)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_afg_populated_places
+          - dataset_name: pakistan-settlement
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -251,14 +222,10 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:afghanistan-roads)
-            - (name:hotosm_afg_roads)
+            - (name:hotosm_pak_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-roads
-            display_state: incomplete
-            comments: The positional acuracy of this dataset is unknown.
-          - dataset_name: hotosm_afg_roads
+          - dataset_name: hotosm_pak_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
@@ -269,15 +236,19 @@ categories:
         rules:
           include:
             - (name:ourairports-afg)
-            - (name:hotosm_afg_airports)
+            - (name:ourairports-pak)
+            - (name:hotosm_pak_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-afg
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_afg_airports
+          - dataset_name: ourairports-pak
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_pak_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -291,20 +262,28 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
-            - (name:afghanistan-healthsites)
-            - (name:hotosm_afg_health_facilities)
+            - (name:pakistan-healthsites)
+            - (name:hotosm_pak_health_facilities)
+            - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
+            - (name:pakistan-health)
+            - (name:pakistan-health)
           exclude:
         metadata_overrides:
-          - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
+          - dataset_name: pakistan-healthsites
             display_state: incomplete
-            comments: Dataset covers only affected health facilities.
-          - dataset_name: afghanistan-healthsites
+            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: hotosm_pak_health_facilities
             display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_afg_health_facilities
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: health-facilities-in-khyber-pakhtunkhwa-tribal-districts
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: pakistan-health
+            display_state: incomplete
+            comments: Dataset is old.
+          - dataset_name: pakistan-health
+            display_state: incomplete
+            comments: Dataset is old.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -312,10 +291,10 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_afg_education_facilities)
+            - (name:hotosm_pak_education_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_afg_education_facilities
+          - dataset_name: hotosm_pak_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -340,7 +319,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:afg-est-pop)
+            - (name:pakistan-administrative-level-0-3-population-statistics)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
@@ -348,8 +327,9 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:afg-est-pop)
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -357,6 +337,6 @@ categories:
         rules:
           include:
             - (name:afghanistan-poverty-rate)
-            - (name:afghanistan-mpi)
+            - (name:pakistan-mpi)
           exclude:
 
