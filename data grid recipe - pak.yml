@@ -103,9 +103,13 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts
+            display_state: incomplete
+            comments: Dataset is old.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -258,6 +262,7 @@ categories:
             - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
             - (name:pakistan-health)
             - (name:pakistan-health)
+            - (name:wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan)
           exclude:
         metadata_overrides:
           - dataset_name: pakistan-healthsites
@@ -275,6 +280,9 @@ categories:
           - dataset_name: pakistan-health
             display_state: incomplete
             comments: Dataset is old.
+          - dataset_name: wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -283,11 +291,15 @@ categories:
         rules:
           include:
             - (name:hotosm_pak_education_facilities)
+            - (name:wfp-geonode-pakistan-edu-institute-balochistan)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_pak_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: wfp-geonode-pakistan-edu-institute-balochistan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
