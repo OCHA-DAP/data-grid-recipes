@@ -81,8 +81,14 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:cameroon-operational-presence)
+            - (name:cameroon-5w-operational-presence)
+            - (name:iati-cmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-cmr
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+
 #FUNDING
       - name: funding
         title: Funding
