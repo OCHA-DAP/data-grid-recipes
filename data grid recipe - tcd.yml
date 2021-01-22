@@ -139,7 +139,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-tcd
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: The data in this dataset provides complimentary data.
 
 #FUNDING
       - name: funding
