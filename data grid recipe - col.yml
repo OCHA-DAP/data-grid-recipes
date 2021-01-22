@@ -76,7 +76,13 @@ categories:
         rules:
           include:
             - (name:colombia-4ws)
+            - (name:iati-col)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-col
+            display_state: incomplete
+            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -198,7 +204,13 @@ categories:
         rules:
           include:
             - (name:proyecciones-de-poblacion-municipalmente)
+            - (name:colombia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-high-resolution-population-density-maps-demographic-estimates
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
