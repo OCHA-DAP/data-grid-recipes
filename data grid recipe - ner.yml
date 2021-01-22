@@ -211,6 +211,7 @@ categories:
           include:
             - (name:hotosm_niger_populated_places)
             - (name:niger-settlements)
+            - (name:highresolutionpopulationdensitymaps-ner)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_niger_populated_places
@@ -219,6 +220,9 @@ categories:
           - dataset_name: niger-settlements
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-ner
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #ROADS
       - name: roads
