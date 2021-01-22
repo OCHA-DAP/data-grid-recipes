@@ -275,7 +275,7 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
-            comments: 
+            comments: The data in this dataset provides complimentary data.
 
 #EDUCATION FACILITIES
       - name: education_facilities
