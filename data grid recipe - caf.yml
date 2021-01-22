@@ -88,7 +88,13 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-presence-operationnelle)
+            - (name:iati-caf)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-caf
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #FUNDING
       - name: funding
         title: Funding
