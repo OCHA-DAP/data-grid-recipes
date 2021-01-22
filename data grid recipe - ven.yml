@@ -102,11 +102,15 @@ categories:
         rules:
           include:
             - (name:venezuela-4w-december-ocha)
+            - (name:iati-ven)
           exclude:
         metadata_overrides:
           - dataset_name: venezuela-4w-december-ocha
             display_state: incomplete
             comments: Dataset is available upon request.
+          - dataset_name: iati-ven
+            display_state: incomplete
+            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
