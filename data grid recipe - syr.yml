@@ -74,11 +74,15 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-syr)
+            - (name:iati-syr)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-syr
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+          - dataset_name: iati-syr
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
