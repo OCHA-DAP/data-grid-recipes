@@ -209,7 +209,7 @@ categories:
         metadata_overrides:
           - dataset_name: colombia-high-resolution-population-density-maps-demographic-estimates
             display_state: incomplete
-            comments: 
+            comments: The dataset is not desaggregated by admin boundaries.
 
 #ROADS
       - name: roads
