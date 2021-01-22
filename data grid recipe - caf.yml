@@ -93,7 +93,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-caf
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
