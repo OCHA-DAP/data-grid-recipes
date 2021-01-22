@@ -23,7 +23,7 @@ categories:
             - (name:situation-des-personnes-deplacees-internes)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
+          - dataset_name: situation-des-personnes-deplacees-internes
             display_state: incomplete
             comments: 
 
@@ -215,6 +215,7 @@ categories:
           include:
             - (name:hotosm_bfa_populated_places)
             - (name:hotosm_yem_populated_places)
+            - (name:highresolutionpopulationdensitymaps-bfa)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bfa_populated_places
@@ -223,6 +224,9 @@ categories:
           - dataset_name: hotosm_yem_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-bfa
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
