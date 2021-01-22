@@ -259,6 +259,7 @@ categories:
             - (name:chad-populated-places-settlements)
             - (name:chad-gis-geodatabase)
             - (name:hotosm_chad_populated_places)
+            - (name:highresolutionpopulationdensitymaps-tcd)
           exclude:
         metadata_overrides:
           - dataset_name: west-and-central-africa-administrative-boundaries-levels
@@ -270,6 +271,9 @@ categories:
           - dataset_name: hotosm_chad_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-tcd
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
