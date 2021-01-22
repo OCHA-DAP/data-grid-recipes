@@ -107,13 +107,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:libya-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: libya-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
