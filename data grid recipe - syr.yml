@@ -45,6 +45,11 @@ categories:
           include:
             - (name:syria-idp-sites)
           exclude:
+        metadata_overrides:
+          - dataset_name: syria-idp-sites
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -302,15 +307,11 @@ categories:
         rules:
           include:
             - (name:schools-in-syria-2019)
-            - (name:schools-in-syria-2018-edition-4)
           exclude:
         metadata_overrides:
           - dataset_name: schools-in-syria-2019
             display_state: incomplete
             comments: Dataset is available upon request.
-          - dataset_name: schools-in-syria-2018-edition-4
-            display_state: incomplete
-            comments: The data may be outadated (from 2017). A newer version is available on HDX Connect.
 
 
 #POPULATION AND SOCIO-ECONOMY
