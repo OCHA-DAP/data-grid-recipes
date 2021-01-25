@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:afectados-y-eventos-de-desplazamientos-masivos-2012-2019-por-departamento-y-municipio)
+            - (name:pin-colombia-2021-resultado-intersectorial-estimacion-de-indicadores-de-severidades)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -36,13 +36,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:retornos-y-reubicaciones)
           exclude:
-        metadata_overrides:
-          - dataset_name: retornos-y-reubicaciones
-            display_state: incomplete
-            comments: Dataset is not up to date.
-
+            - (private:false)
+            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -102,7 +98,7 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:potentially-affected-zones-by-the-mudflow-in-mocoa-colombia-situation-as-of-10-april-2017)
+            - (name:pin-colombia-2021-resultados-intersectorial-y-sectoriales-desagregado-por-municipio-severidades)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -208,7 +204,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:proyecciones-de-poblacion-municipalmente)
+            - (name:veredas-de-colombia)
             - (name:colombia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
         metadata_overrides:
