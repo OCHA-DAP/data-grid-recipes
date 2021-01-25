@@ -117,8 +117,6 @@ categories:
           include:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
           exclude:
-            - (private:false)
-            - (private:true)
         metadata_overrides:
           - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
             display_state: incomplete
