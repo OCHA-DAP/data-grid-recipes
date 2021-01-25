@@ -150,9 +150,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites)
           exclude:
-            - (private:false)
-            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -243,6 +242,7 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
+            - (name:)
             - (name:hotosm_som_populated_places)
           exclude:
         metadata_overrides:
