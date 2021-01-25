@@ -39,6 +39,11 @@ categories:
           include:
             - (name:yemen-displacement-population-movement-migrants-and-returns-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-displacement-population-movement-migrants-and-returns-iom-dtm
+            display_state: incomplete
+            comments: Dataset is not up to date.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -81,7 +86,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-education-cluster-5w-2019
             display_state: incomplete
-            comments: Dataset is not up to date
+            comments: Dataset is not up to date.
           - dataset_name: iati-yem
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
