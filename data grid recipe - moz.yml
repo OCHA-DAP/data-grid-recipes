@@ -98,6 +98,11 @@ categories:
           include:
             - (name:aerial-survey-idai-24-29-march-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: aerial-survey-idai-24-29-march-2019
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -114,6 +119,11 @@ categories:
           include:
             - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-road-access-constraints-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -122,6 +132,11 @@ categories:
           include:
             - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-road-access-constraints-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -135,6 +150,9 @@ categories:
           - dataset_name: mozambique-disaster-inventory
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: mozambique-health-facility-damages-after-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 
 #FOOD SECURITY AND NUTRITION
