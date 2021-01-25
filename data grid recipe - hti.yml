@@ -117,6 +117,11 @@ categories:
           include:
             - (name:haiti-road-obstacles-hurricane-matthew)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-road-obstacles-hurricane-matthew
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
