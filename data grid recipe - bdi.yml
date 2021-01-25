@@ -80,7 +80,13 @@ categories:
         rules:
           include:
             - (name:burundi-operational-presence)
+            - (name:iati-bdi)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-bdi
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+
 #FUNDING
       - name: funding
         title: Funding
@@ -195,11 +201,15 @@ categories:
         rules:
           include:
             - (name:hotosm_bdi_populated_places)
+            - (name:highresolutionpopulationdensitymaps-bdi)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bdi_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-bdi
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
