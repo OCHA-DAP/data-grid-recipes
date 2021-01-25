@@ -214,7 +214,13 @@ categories:
         rules:
           include:
             - (name:pakistan-settlement)
+            - (name:southasia_as43-high-resolution-population-density-maps)
           exclude:
+        metadata_overrides:
+          - dataset_name: southasia_as43-high-resolution-population-density-maps
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #ROADS
       - name: roads
         title: Roads
