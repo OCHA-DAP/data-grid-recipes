@@ -123,6 +123,7 @@ categories:
             - (name:state-of-palestine-security)
             - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
             - (name:state-of-palestine-transportation-network)
+            - (name:opt-violent-and-threatening-incidents-against-healthcare)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
