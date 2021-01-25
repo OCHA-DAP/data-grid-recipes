@@ -115,9 +115,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:nigeria-violence-agaiinst-civilians-and-vital-civilian-faciltties)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: nigeria-violence-agaiinst-civilians-and-vital-civilian-faciltties
+            display_state: incomplete
+            comments: The dataset covers health related access constraints
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
