@@ -123,7 +123,13 @@ categories:
           include:
             - (name:severity-of-humanitarian-access-difficulties-in-yemen)
             - (name:yemen-hard-to-reach-districts)
+            - (name:yemen-violence-aganist-civilian-and-vital-civilian-faciltities)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-violence-aganist-civilian-and-vital-civilian-faciltities
+            display_state: incomplete
+            comments: The dataset covers health related access constraints.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
