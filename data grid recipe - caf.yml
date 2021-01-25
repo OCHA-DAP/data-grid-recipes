@@ -128,6 +128,11 @@ categories:
           include:
             - (name:car-violence-against-civilians-and-vital-civlian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: car-violence-against-civilians-and-vital-civlian-facilities
+            display_state: incomplete
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
