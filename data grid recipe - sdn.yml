@@ -146,6 +146,9 @@ categories:
           - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -171,6 +174,7 @@ categories:
         rules:
           include:
             - (name:sudan-floods-27th-of-october-2019)
+            - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
 
 #FOOD SECURITY AND NUTRITION
