@@ -125,6 +125,11 @@ categories:
             - (name:state-of-palestine-transportation-network)
             - (name:opt-violent-and-threatening-incidents-against-healthcare)
           exclude:
+        metadata_overrides:
+          - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
