@@ -124,9 +124,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -144,6 +148,7 @@ categories:
           include:
             - (name:geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015)
             - (name:geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015)
+            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015
@@ -152,6 +157,9 @@ categories:
           - dataset_name: geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
+          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
 
 
 #FOOD SECURITY AND NUTRITION
