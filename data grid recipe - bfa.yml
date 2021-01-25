@@ -125,7 +125,7 @@ categories:
         metadata_overrides:
           - dataset_name: burkina-faso-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
-            comments: The incidents reported are not a complete.
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
