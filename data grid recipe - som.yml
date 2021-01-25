@@ -152,6 +152,11 @@ categories:
           include:
             - (name:somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
