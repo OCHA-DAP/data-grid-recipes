@@ -154,6 +154,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
 #TRANSPORTATION STATUS
       - name: transportation_status
