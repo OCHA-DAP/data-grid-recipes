@@ -112,9 +112,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:attacks-on-ebola-response)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: attacks-on-ebola-response
+            display_state: incomplete
+            comments: The dataset covers health related access constraints
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
