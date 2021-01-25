@@ -187,7 +187,13 @@ categories:
           include:
             - (name:west-and-central-africa-administrative-boundaries-levels)
             - (name:dr-congo-settlements)
+            - (name:highresolutionpopulationdensitymaps-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-cod
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
+
 #ROADS
       - name: roads
         title: Roads
