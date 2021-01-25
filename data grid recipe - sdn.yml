@@ -176,6 +176,11 @@ categories:
             - (name:sudan-floods-27th-of-october-2019)
             - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
