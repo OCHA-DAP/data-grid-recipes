@@ -152,6 +152,11 @@ categories:
           include:
             - (name:faostat-food-security-indicators-for-ukraine)
           exclude:
+        metadata_overrides:
+          - dataset_name: faostat-food-security-indicators-for-ukraine
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
