@@ -130,7 +130,7 @@ categories:
         metadata_overrides:
           - dataset_name: syria-violent-and-threatening-incidents-against-healthcare
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The dataset covers health related access constraints. The dataset is not up-to-date.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
