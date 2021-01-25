@@ -77,7 +77,13 @@ categories:
         rules:
           include:
             - (name:nigeria-operational-presence)
+            - (name:iati-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-nga
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
+
 #FUNDING
       - name: funding
         title: Funding
@@ -212,16 +218,24 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:highresolutionpopulationdensitymaps-nga)
             - (name:hotosm_nga_buildings)
             - (name:hotosm_nga_populated_places)
+            - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
         metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-nga
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
           - dataset_name: hotosm_nga_buildings
             display_state: incomplete
             comments: 
           - dataset_name: hotosm_nga_populated_places
             display_state: incomplete
             comments: 
+          - dataset_name: highresolutionpopulationdensitymaps-nga
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
 
 #ROADS
       - name: roads
