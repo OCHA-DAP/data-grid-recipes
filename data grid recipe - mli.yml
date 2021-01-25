@@ -75,6 +75,7 @@ categories:
         rules:
           include:
             - (name:mali-operational-presence)
+            - (name:iati-mli)
           exclude:
 #FUNDING
       - name: funding
@@ -107,7 +108,13 @@ categories:
         rules:
           include:
             - (name:mali-access-data-march-2019)
+            - (name:mali-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The dataset covers health related access constraints.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -185,7 +192,13 @@ categories:
         rules:
           include:
             - (name:mali-settlements)
+            - (name:highresolutionpopulationdensitymaps-mli)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-mli
+            display_state: incomplete
+            comments: The dataset is not desaggregated by admin boundaries.
+
 #ROADS
       - name: roads
         title: Roads
