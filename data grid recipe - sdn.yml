@@ -140,6 +140,7 @@ categories:
             - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
             - (name:sudan-hazards)
             - (name:sudan-idp-settlements-by-risk-level)
+            - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
