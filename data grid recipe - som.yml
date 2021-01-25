@@ -242,7 +242,6 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
-            - (name:)
             - (name:hotosm_som_populated_places)
           exclude:
         metadata_overrides:
