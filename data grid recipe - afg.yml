@@ -156,6 +156,11 @@ categories:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
             - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -173,7 +178,13 @@ categories:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2019)
             - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
