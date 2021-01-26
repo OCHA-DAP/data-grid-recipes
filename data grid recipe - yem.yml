@@ -247,7 +247,6 @@ categories:
         rules:
           include:
             - (name:yemen-herams-dataset-2020-list-of-health-facilities)
-            - (name:yemen-health)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
