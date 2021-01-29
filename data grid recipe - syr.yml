@@ -43,13 +43,9 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:syria-idp-sites)
           exclude:
-        metadata_overrides:
-          - dataset_name: syria-idp-sites
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
