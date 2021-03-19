@@ -20,14 +20,14 @@ categories:
         rules:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
+            - (name:afghanistan-conflict-induced-displacements-in-2021)
             - (name:afghanistan-conflict-induced-displacements-in-2020)
-            - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2020
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2021
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2020
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -37,7 +37,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
+            - (name:afghanistan-voluntary-repatriation-2021)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
+            - (name:afghanistan-voluntary-repatriation-2021)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
