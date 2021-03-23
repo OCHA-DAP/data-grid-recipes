@@ -20,7 +20,13 @@ categories:
         rules:
           include:
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
+            - (name:ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
