@@ -64,6 +64,7 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-ukraine)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -110,6 +111,7 @@ categories:
           include:
             - (name:ucdp-data-for-ukraine)
             - (name:acled-data-for-ukraine)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
