@@ -75,8 +75,8 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-niger)
-            - (name:acled-data-for-niger)
+            - (name:acled-database)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
