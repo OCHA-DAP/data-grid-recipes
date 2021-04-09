@@ -61,6 +61,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-mali)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -105,6 +106,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-mali)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
