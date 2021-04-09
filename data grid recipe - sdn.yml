@@ -74,6 +74,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:acled-database)
             - (name:acled-data-for-sudan)
           exclude:
 
@@ -123,6 +124,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:acled-database)
             - (name:acled-data-for-sudan)
           exclude:
 #HUMANITARIAN ACCESS
