@@ -75,6 +75,7 @@ categories:
           include:
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
+            - (name:acled-database)
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
         metadata_overrides:
@@ -134,6 +135,7 @@ categories:
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
+            - (name:acled-database)
           exclude:
         metadata_overrides:
           - dataset_name: homicides_venezuela_2017
