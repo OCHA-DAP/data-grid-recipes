@@ -19,8 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:pin-colombia-2021-resultado-intersectorial-estimacion-de-indicadores-de-severidades)
           exclude:
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -45,23 +46,24 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:pin-colombia-2021-resultado-intersectorial-estimacion-de-indicadores-de-severidades)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:colombia-humanitarian-needs-overview)
           exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-colombia)
             - (name:acled-database)
           exclude:
 
@@ -76,13 +78,16 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:colombia-4ws)
-            - (name:iati-col)
+            - (name:who-is-doing-what-where-and-when)
+            - (name:iati-pak)
           exclude:
         metadata_overrides:
-          - dataset_name: iati-col
+          - dataset_name: who-is-doing-what-where-and-when
             display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
+            comments: Dataset is old.
+          - dataset_name: iati-pak
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #FUNDING
       - name: funding
@@ -90,7 +95,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-colombia)
+            - (name:fts-requirements-and-funding-data-for-pakistan)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -98,35 +103,34 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:pin-colombia-2021-resultados-intersectorial-y-sectoriales-desagregado-por-municipio-severidades)
+            - (name:wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts
+            display_state: incomplete
+            comments: Dataset is old.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-colombia)
-            - (name:violencia-aramada-de-moritor)
-            - (name:attacksagainstcivilianscolombiamun)
-            - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
             - (name:acled-database)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-colombia
-            display_state: incomplete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afectados-y-eventos-de-restricciones-al-acceso-2012-2019)
-            - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
-            - (name:restricciones-de-acceso)
+            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -142,8 +146,21 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:colombia-disaster-inventory)
+            - (name:geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015)
+            - (name:geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015)
+            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -156,9 +173,8 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:pakistan-acute-food-insecurity-country-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -183,7 +199,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-colombia)
+            - (name:wfp-food-prices-for-pakistan)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -197,7 +213,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:colombia-administrative-boundaries-levels-0-3)
+            - (name:pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -205,13 +221,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:veredas-de-colombia)
-            - (name:colombia-high-resolution-population-density-maps-demographic-estimates)
+            - (name:pakistan-settlement)
+            - (name:southasia_as43-high-resolution-population-density-maps)
           exclude:
         metadata_overrides:
-          - dataset_name: colombia-high-resolution-population-density-maps-demographic-estimates
+          - dataset_name: southasia_as43-high-resolution-population-density-maps
             display_state: incomplete
-            comments: The dataset is not desaggregated by admin boundaries.
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
@@ -219,12 +235,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_col_roads)
+            - (name:hotosm_pak_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_col_roads
+          - dataset_name: hotosm_pak_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 #AIRPORTS
       - name: airports
@@ -232,12 +248,16 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-col)
+            - (name:ourairports-pak)
+            - (name:hotosm_pak_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-col
+          - dataset_name: ourairports-pak
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_pak_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -251,12 +271,32 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:colombia-healthsites)
+            - (name:pakistan-healthsites)
+            - (name:hotosm_pak_health_facilities)
+            - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
+            - (name:pakistan-health)
+            - (name:pakistan-health)
+            - (name:wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan)
           exclude:
         metadata_overrides:
-          - dataset_name: colombia-healthsites
+          - dataset_name: pakistan-healthsites
             display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: hotosm_pak_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: health-facilities-in-khyber-pakhtunkhwa-tribal-districts
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: pakistan-health
+            display_state: incomplete
+            comments: Dataset is old.
+          - dataset_name: pakistan-health
+            display_state: incomplete
+            comments: Dataset is old.
+          - dataset_name: wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -264,12 +304,16 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_col_points_of_interest)
+            - (name:hotosm_pak_education_facilities)
+            - (name:wfp-geonode-pakistan-edu-institute-balochistan)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_col_points_of_interest
+          - dataset_name: hotosm_pak_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: wfp-geonode-pakistan-edu-institute-balochistan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -292,7 +336,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:colombia-population-estimates-and-projections)
+            - (name:pakistan-administrative-level-0-3-population-statistics)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
@@ -300,15 +344,15 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:colombia-population-estimates-and-projections)
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:colombia-poverty-rate)
-            - (name:colombia-mpi)
+            - (name:pakistan-mpi)
           exclude:
 

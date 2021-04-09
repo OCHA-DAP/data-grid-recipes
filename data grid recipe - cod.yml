@@ -20,7 +20,6 @@ categories:
         rules:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
-            - (name:drc-site-assessment-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -28,8 +27,9 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-drc-country-refugee-response-plan)
           exclude:
+            - (private:false)
+            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -61,6 +61,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-democratic-republic-of-the-congo)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -75,7 +76,13 @@ categories:
         rules:
           include:
             - (name:drc_presence_operationnelle)
+            - (name:iati-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-cod
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
+
 #FUNDING
       - name: funding
         title: Funding
@@ -100,6 +107,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-democratic-republic-of-the-congo)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -107,9 +115,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:attacks-on-ebola-response)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: attacks-on-ebola-response
+            display_state: incomplete
+            comments: The dataset covers health related access constraints
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -140,6 +152,7 @@ categories:
         rules:
           include:
             - (name:drc-acute-food-insecurity)
+            - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -147,7 +160,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:rdc-taux-de-la-malnutrition-decembre-2019)
+            - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
 #SAM
       - name: sam
@@ -155,7 +168,7 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (name:rdc-taux-de-la-malnutrition-decembre-2019)
+            - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -187,7 +200,13 @@ categories:
           include:
             - (name:west-and-central-africa-administrative-boundaries-levels)
             - (name:dr-congo-settlements)
+            - (name:highresolutionpopulationdensitymaps-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-cod
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
+
 #ROADS
       - name: roads
         title: Roads
@@ -288,6 +307,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-drc-global-multidimensional-poverty-index)
+            - (name:democratic-republic-of-the-congo-mpi)
           exclude:
 

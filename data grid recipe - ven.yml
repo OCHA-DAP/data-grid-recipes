@@ -75,6 +75,7 @@ categories:
           include:
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
+            - (name:acled-database)
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
           exclude:
         metadata_overrides:
@@ -98,11 +99,15 @@ categories:
         rules:
           include:
             - (name:venezuela-4w-december-ocha)
+            - (name:iati-ven)
           exclude:
         metadata_overrides:
           - dataset_name: venezuela-4w-december-ocha
             display_state: incomplete
             comments: Dataset is available upon request.
+          - dataset_name: iati-ven
+            display_state: incomplete
+            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -130,6 +135,7 @@ categories:
             - (name:ucdp-data-for-venezuela-bolivarian-republic-of)
             - (name:homicides_venezuela_2017)
             - (name:homicides_venezuela_2017_1)
+            - (name:acled-database)
           exclude:
         metadata_overrides:
           - dataset_name: homicides_venezuela_2017
@@ -329,9 +335,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:venezuela-administrative-level-0-1-2-and-3-population-statistics-and-gazeteer)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate

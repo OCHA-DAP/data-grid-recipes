@@ -19,9 +19,14 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:cameroon-baseline-assessment-data-iom-dtm)
+            - (name:sahel-population-movment)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: sahel-population-movment
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -46,27 +51,30 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:cameroon-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
+            - (name:ucdp-data-for-cameroon)
+            - (name:acled-database)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ucdp-data-for-cameroon
+            display_state: incomplete
+            comments: Dataset is incomplete
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -79,18 +87,22 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:cameroon-5w-operational-presence)
+            - (name:iati-cmr)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: iati-cmr
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
+            - (name:fts-requirements-and-funding-data-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
@@ -106,18 +118,27 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:ucdp-data-for-cameroon)
+            - (name:acled-database)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ucdp-data-for-cameroon
+            display_state: incomplete
+            comments: Dataset is incomplete
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:cameroon-attacks-on-civilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: cameroon-attacks-on-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -133,9 +154,13 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
+            - (name:cameroon-attacks-on-civilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: cameroon-attacks-on-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -148,18 +173,21 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:cadre-harmonise)
           exclude:
-            - (private:false)
-            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: global-acute-malnutrition-prevalence-of-sahel-countries
+            display_state: incomplete
+            comments: Dataset is old.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -175,9 +203,8 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:wfp-food-prices-for-cameroon)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -198,27 +225,51 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:hotosm_cameroon_populated_places)
+            - (name:highresolutionpopulationdensitymaps-cmr)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_cameroon_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-cmr
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #ROADS
       - name: roads
         title: Roads
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
+            - (name:hotosm_cameroon_roads)
+            - (name:wfp-geonode-cameroon-road-network-main-roads)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_cameroon_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: wfp-geonode-cameroon-road-network-main-roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
+            - (name:hotosm_cameroon_airports)
+            - (name:ourairports-cmr)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_cameroon_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: ourairports-cmr
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -231,18 +282,34 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:hotosm_cameroon_health_facilities)
+            - (name:cameroon-healthsites)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_cameroon_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: cameroon-healthsites
+            display_state: incomplete
+            comments: 
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:hotosm_cameroon_education_facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: hotosm_cameroon_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -282,7 +349,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:cameroon-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

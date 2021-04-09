@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:mali-baseline-assessment-data-iom-dtm)
+            - (name:mali-humanitarian-response-plan)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -61,6 +61,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-mali)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -75,7 +76,13 @@ categories:
         rules:
           include:
             - (name:mali-operational-presence)
+            - (name:iati-mli)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-mli
+            display_state: incomplete
+            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -99,6 +106,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-mali)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -107,7 +115,13 @@ categories:
         rules:
           include:
             - (name:mali-access-data-march-2019)
+            - (name:mali-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The dataset covers health related access constraints.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -185,11 +199,12 @@ categories:
         rules:
           include:
             - (name:mali-settlements)
+            - (name:highresolutionpopulationdensitymaps-mli)
           exclude:
         metadata_overrides:
-          - dataset_name: mali-settlements
+          - dataset_name: highresolutionpopulationdensitymaps-mli
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+            comments: The dataset is not desaggregated by admin boundaries.
 
 #ROADS
       - name: roads
@@ -199,11 +214,6 @@ categories:
           include:
             - (name:mali-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #AIRPORTS
       - name: airports
         title: Airports
@@ -286,7 +296,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:mali-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

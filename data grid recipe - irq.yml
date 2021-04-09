@@ -28,6 +28,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-irq)
+            - (name:unhcr-population-data-for-irq)
           exclude:
 #RETURNEES
       - name: returnees
@@ -60,6 +61,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-iraq)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -74,6 +76,8 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-irq)
+            - (name:iraq-humanitarian-operational-presence-3w)
+            - (name:iati-irq)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-irq
@@ -104,6 +108,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-iraq)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -111,9 +116,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:iraq-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -199,11 +203,15 @@ categories:
         rules:
           include:
             - (name:settlements-villages-towns-cities)
+            - (name:iraq-high-resolution-population-density-maps-demographic-estimates)
           exclude:
         metadata_overrides:
           - dataset_name: settlements-villages-towns-cities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+          - dataset_name: iraq-high-resolution-population-density-maps-demographic-estimates
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
 
 #ROADS
       - name: roads
@@ -289,13 +297,9 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:iraq-population-and-poverty-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: iraq-population-and-poverty-data
-            display_state: incomplete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
@@ -311,11 +315,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:iraq-population-and-poverty-data)
+            - (name:iraq-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: iraq-population-and-poverty-data
-            display_state: incomplete
-            comments: 
-
 

@@ -57,18 +57,13 @@ categories:
           include:
             - (name:opt-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: opt-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-state-of-palestine)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -117,7 +112,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-state-of-palestine)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -126,7 +121,15 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-security)
+            - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
+            - (name:state-of-palestine-transportation-network)
+            - (name:opt-violent-and-threatening-incidents-against-healthcare)
           exclude:
+        metadata_overrides:
+          - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -137,6 +140,7 @@ categories:
             - (name:state-of-palestine-roads)
             - (name:wfp-geonode-palestine-streets-and-pathways)
             - (name:wfp-geonode-palestine-road-network-main-roads)
+            - (name:hotosm_pse_railways)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-hebron_h2_closures
@@ -228,6 +232,7 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
+            - (name:occupied-palestinian-territory-closures-barriers-and-settlements)
           exclude:
 #ROADS
       - name: roads
@@ -284,6 +289,7 @@ categories:
             - (name:state-of-palestine-government-health-centers)
             - (name:hotosm_pse_health_facilities)
             - (name:palestine-healthsites)
+            - (name:palestinian-territories-healthsites)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-health-0
@@ -357,16 +363,14 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:palestine-population-admin-0-to-2_bysex-and-agegroup_2017)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:state-of-palestine-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

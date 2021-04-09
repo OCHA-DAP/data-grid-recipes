@@ -119,7 +119,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-chad)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -134,7 +134,13 @@ categories:
         rules:
           include:
             - (name:chad-operational-presence)
+            - (name:iati-tcd)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-tcd
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -158,7 +164,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-chad)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -253,6 +259,7 @@ categories:
             - (name:chad-populated-places-settlements)
             - (name:chad-gis-geodatabase)
             - (name:hotosm_chad_populated_places)
+            - (name:highresolutionpopulationdensitymaps-tcd)
           exclude:
         metadata_overrides:
           - dataset_name: west-and-central-africa-administrative-boundaries-levels
@@ -264,6 +271,9 @@ categories:
           - dataset_name: hotosm_chad_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-tcd
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
@@ -381,11 +391,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:chad-poverty-rate)
+            - (name:chad-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-poverty-rate
-            display_state: incomplete
-            comments: 
-
 

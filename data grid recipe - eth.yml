@@ -20,7 +20,13 @@ categories:
         rules:
           include:
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
+            - (name:ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -59,7 +65,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-ethiopia)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -74,12 +80,16 @@ categories:
         rules:
           include:
             - (name:ethiopia-operational-presence)
+            - (name:iati-eth)
             - (name:ngoaidmap-eth)
           exclude:
         metadata_overrides:
+          - dataset_name: iati-eth
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: ngoaidmap-eth
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but not consistently.
 
 #FUNDING
       - name: funding
@@ -103,7 +113,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-ethiopia)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -111,9 +121,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:ethiopia-humanitarian-access_admin-level-3)
           exclude:
-            - (private:false)
-            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -133,8 +142,9 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:climate-change-in-ethiopia)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -147,7 +157,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:ethiopia-acute-food-insecurity)
+            - (name:ethiopia-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -196,7 +206,13 @@ categories:
         rules:
           include:
             - (name:ethiopia-settlements)
+            - (name:ethiopia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-high-resolution-population-density-maps-demographic-estimates
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #ROADS
       - name: roads
         title: Roads
@@ -204,6 +220,7 @@ categories:
         rules:
           include:
             - (name:roads-network)
+            - (name:hotosm_eth_roads)
           exclude:
 #AIRPORTS
       - name: airports
@@ -212,6 +229,7 @@ categories:
         rules:
           include:
             - (name:ourairports-eth)
+            - (name:hotosm_eth_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-eth
@@ -239,7 +257,7 @@ categories:
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: hotosm_eth_health_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -252,7 +270,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_eth_education_facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -291,7 +309,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:ethiopia-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

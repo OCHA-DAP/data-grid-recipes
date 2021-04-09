@@ -75,8 +75,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-niger)
-            - (name:acled-data-for-niger)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -90,11 +89,11 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ngoaidmap-ner)
+            - (name:iati-ner)
             - (name:niger-operational-presence)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-ner
+          - dataset_name: iati-ner
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
 
@@ -122,6 +121,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-niger)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -129,9 +129,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:niger-violence-against-cvilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: niger-violence-against-cvilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -209,14 +213,18 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_niger_populated_places)
             - (name:niger-settlements)
+            - (name:highresolutionpopulationdensitymaps-ner)
+            - (name:hotosm_niger_populated_places)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_niger_populated_places
+          - dataset_name: niger-settlements
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: niger-settlements
+          - dataset_name: highresolutionpopulationdensitymaps-ner
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+          - dataset_name: hotosm_niger_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -271,7 +279,7 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
-            comments: 
+            comments: The data in this dataset provides complimentary data.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -328,7 +336,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:niger-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

@@ -64,6 +64,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-zimbabwe)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -78,11 +79,15 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-zwe)
+            - (name:iati-zwe)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-zwe
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+          - dataset_name: iati-zwe
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -108,6 +113,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-zimbabwe)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -148,7 +154,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:zimbabwe-acute-food-insecurity)
+            - (name:zimbabwe-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -197,11 +203,15 @@ categories:
         rules:
           include:
             - (name:zimbabwe-settlements)
+            - (name:highresolutionpopulationdensitymaps-zwe)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-settlements
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+            comments: Dataset is not up to date
+          - dataset_name: highresolutionpopulationdensitymaps-zwe
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries.
 
 #ROADS
       - name: roads
@@ -308,7 +318,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:zimbabwe-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

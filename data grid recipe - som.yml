@@ -19,11 +19,15 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:somalia-drought-dashboard)
             - (name:total-number-of-people-targeted-and-reached-per-region-and-per-cluster)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
         metadata_overrides:
+          - dataset_name: somalia-drought-dashboard
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
           - dataset_name: total-number-of-people-targeted-and-reached-per-region-and-per-cluster
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -51,6 +55,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:somalia-iom-dtm-dataset-round-3)
           exclude:
         metadata_overrides:
@@ -64,6 +69,7 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:somalia-iom-dtm-dataset-round-3)
@@ -87,18 +93,13 @@ categories:
           include:
             - (name:somalia-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-somalia)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -114,9 +115,10 @@ categories:
           include:
             - (name:somalia-operational-presence)
             - (name:cash-based-programming-in-somalia-2018)
+            - (name:iati-som)
           exclude:
         metadata_overrides:
-          - dataset_name: cash-based-programming-in-somalia-2018
+          - dataset_name: iati-som
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -143,7 +145,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-somalia)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -151,9 +153,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -168,9 +174,13 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
+            - (name:somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -183,7 +193,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:somalia-acute-food-insecurity)
+            - (name:somalia-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -269,6 +279,7 @@ categories:
         rules:
           include:
             - (name:ourairports-som)
+            - (name:hotosm_som_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-som
@@ -360,7 +371,7 @@ categories:
             - (name:worldpop-by-cod-som)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-population-data
+          - dataset_name: worldpop-by-cod-som
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -370,9 +381,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:somalia-population-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate

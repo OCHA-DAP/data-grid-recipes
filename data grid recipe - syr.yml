@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-demographics-residing-syr)
+            - (name:unhcr-population-data-for-syr)
           exclude:
 #RETURNEES
       - name: returnees
@@ -43,8 +43,9 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:syria-idp-sites)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -53,18 +54,13 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-syrian-arab-republic)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -79,11 +75,15 @@ categories:
         rules:
           include:
             - (name:ngoaidmap-syr)
+            - (name:iati-syr)
           exclude:
         metadata_overrides:
           - dataset_name: ngoaidmap-syr
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+          - dataset_name: iati-syr
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -112,7 +112,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-syrian-arab-republic)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -120,9 +120,14 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:syria-violent-and-threatening-incidents-affecting-aid-operations)
+            - (name:syria-violent-and-threatening-incidents-against-healthcare)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: syria-violent-and-threatening-incidents-against-healthcare
+            display_state: incomplete
+            comments: The dataset covers health related access constraints. The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -298,15 +303,11 @@ categories:
         rules:
           include:
             - (name:schools-in-syria-2019)
-            - (name:schools-in-syria-2018-edition-4)
           exclude:
         metadata_overrides:
           - dataset_name: schools-in-syria-2019
             display_state: incomplete
             comments: Dataset is available upon request.
-          - dataset_name: schools-in-syria-2018-edition-4
-            display_state: incomplete
-            comments: The data may be outadated (from 2017). A newer version is available on HDX Connect.
 
 
 #POPULATION AND SOCIO-ECONOMY
@@ -342,7 +343,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:syrian-arab-republic-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 

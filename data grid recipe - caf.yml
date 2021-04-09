@@ -73,7 +73,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-central-african-republic)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -88,7 +88,13 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-presence-operationnelle)
+            - (name:iati-caf)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-caf
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -112,7 +118,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-central-african-republic)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -120,9 +126,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:car-violence-against-civilians-and-vital-civlian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: car-violence-against-civilians-and-vital-civlian-facilities
+            display_state: incomplete
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -161,7 +171,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:central-african-republic-acute-food-insecurity)
+            - (name:central-african-republic-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -209,11 +219,15 @@ categories:
           include:
             - (name:central-african-republic-settlements)
             - (name:hotosm_caf_populated_places)
+            - (name:highresolutionpopulationdensitymaps-caf)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_caf_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-caf
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
@@ -327,11 +341,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:central-african-republic-povery-rate)
+            - (name:central-african-republic-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: central-african-republic-povery-rate
-            display_state: incomplete
-            comments: 
-
 

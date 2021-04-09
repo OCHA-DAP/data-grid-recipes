@@ -20,14 +20,14 @@ categories:
         rules:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
+            - (name:afghanistan-conflict-induced-displacements-in-2021)
             - (name:afghanistan-conflict-induced-displacements-in-2020)
-            - (name:afghanistan-conflict-induced-displacements-in-2019)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2020
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2021
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-conflict-induced-displacements-in-2019
+          - dataset_name: afghanistan-conflict-induced-displacements-in-2020
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -37,7 +37,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
+            - (name:afghanistan-voluntary-repatriation-2021)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:pakistani-refugee-in-afghanistan-2017)
           exclude:
@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2020)
+            - (name:afghanistan-voluntary-repatriation-2021)
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
@@ -79,11 +79,6 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is from 2019, it needs to be updated with the HNO 2020.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -91,14 +86,14 @@ categories:
         rules:
           include:
             - (name:afghanistan-casualties)
-            - (name:acled-data-for-afghanistan)
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:acled-database)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-casualties
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2019
+          - dataset_name: afghanistan-natural-disaster-incidents-in-2020
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -136,15 +131,21 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:whole-of-afghanistan-assessment-hard-to-reach-dataset-august-2018)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:reach_afg_dataset_htr-assessment-round-1_august-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: reach_afg_dataset_htr-assessment-round-1_august-2019
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-afghanistan)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -152,8 +153,14 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -169,8 +176,15 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:afghanistan-natural-disaster-incidents-in-2019)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:afghanistan-natural-disaster-incidents-in-2020)
+            - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -183,7 +197,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:afghanistan-food-insecurity)
+            - (name:afghanistan-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -228,7 +242,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:afg-admin-boundaries)
+            - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -267,11 +281,15 @@ categories:
         rules:
           include:
             - (name:ourairports-afg)
+            - (name:hotosm_afg_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-afg
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_afg_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
 
 
 #HEALTH AND EDUCATION
@@ -351,5 +369,6 @@ categories:
         rules:
           include:
             - (name:afghanistan-poverty-rate)
+            - (name:afghanistan-mpi)
           exclude:
 

@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-demographics-residing-moz)
+            - (name:unhcr-population-data-for-moz)
           exclude:
 #RETURNEES
       - name: returnees
@@ -60,7 +60,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-mozambique)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -75,7 +75,13 @@ categories:
         rules:
           include:
             - (name:mozambique-operational-presence)
+            - (name:iati-moz)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-moz
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -92,13 +98,18 @@ categories:
           include:
             - (name:aerial-survey-idai-24-29-march-2019)
           exclude:
+        metadata_overrides:
+          - dataset_name: aerial-survey-idai-24-29-march-2019
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-mozambique)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -108,6 +119,11 @@ categories:
           include:
             - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-road-access-constraints-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -116,6 +132,11 @@ categories:
           include:
             - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-road-access-constraints-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -129,6 +150,9 @@ categories:
           - dataset_name: mozambique-disaster-inventory
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: mozambique-health-facility-damages-after-cyclone-idai
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 
 #FOOD SECURITY AND NUTRITION
@@ -142,7 +166,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:mozambique-acute-food-insecurity)
+            - (name:mozambique-acute-food-insecurity-country-data)
           exclude:
 #GAM
       - name: gam
@@ -194,11 +218,15 @@ categories:
         rules:
           include:
             - (name:hotosm_moz_populated_places)
+            - (name:highresolutionpopulationdensitymaps-moz)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_moz_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-moz
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries.
 
 #ROADS
       - name: roads
@@ -245,6 +273,9 @@ categories:
           - dataset_name: mozambique-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: mozambique-health-facilities
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -297,11 +328,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:mozambique-poverty-rate)
+            - (name:mozambique-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-poverty-rate
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 

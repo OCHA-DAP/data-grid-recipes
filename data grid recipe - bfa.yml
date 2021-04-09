@@ -23,7 +23,7 @@ categories:
             - (name:situation-des-personnes-deplacees-internes)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
+          - dataset_name: situation-des-personnes-deplacees-internes
             display_state: incomplete
             comments: 
 
@@ -67,7 +67,7 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-data-for-burkina-faso)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -82,10 +82,10 @@ categories:
         rules:
           include:
             - (name:burkina-faso-presence-operationnelle)
-            - (name:ngoaidmap-bfa)
+            - (name:iati-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-bfa
+          - dataset_name: iati-bfa
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically but inconsistently.?
 
@@ -112,7 +112,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-burkina-faso)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -120,9 +120,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:burkina-faso-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: burkina-faso-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -215,6 +219,7 @@ categories:
           include:
             - (name:hotosm_bfa_populated_places)
             - (name:hotosm_yem_populated_places)
+            - (name:highresolutionpopulationdensitymaps-bfa)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bfa_populated_places
@@ -223,6 +228,9 @@ categories:
           - dataset_name: hotosm_yem_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: highresolutionpopulationdensitymaps-bfa
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
@@ -330,7 +338,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:burkina-faso-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
 
