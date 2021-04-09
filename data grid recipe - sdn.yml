@@ -75,7 +75,6 @@ categories:
         rules:
           include:
             - (name:acled-database)
-            - (name:acled-data-for-sudan)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -125,7 +124,6 @@ categories:
         rules:
           include:
             - (name:acled-database)
-            - (name:acled-data-for-sudan)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
