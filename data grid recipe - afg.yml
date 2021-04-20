@@ -359,7 +359,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-subnational-population-statistics)
+            - (name:afg-est-pop)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
@@ -367,7 +367,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-subnational-population-statistics)
+            - (name:afg-est-pop)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
