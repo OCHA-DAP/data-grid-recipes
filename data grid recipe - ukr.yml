@@ -55,7 +55,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:ukraine-humanitarian-needs-overview)
+            - (name:2021-humanitarian-needs-overview-people-in-need)
           exclude:
 #CASUALTIES
       - name: casualties
