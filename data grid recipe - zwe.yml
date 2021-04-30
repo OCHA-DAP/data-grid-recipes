@@ -29,6 +29,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-zwe)
+            - (name:unhcr-population-data-for-zwe)
           exclude:
 #RETURNEES
       - name: returnees
