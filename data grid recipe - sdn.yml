@@ -368,9 +368,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:sudan-humanitarian-needs-overview-2015-2020)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
