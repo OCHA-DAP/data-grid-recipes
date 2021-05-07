@@ -91,6 +91,7 @@ categories:
             - (name:sudan-operational-presence)
             - (name:sudan-covid-19-preparedness-and-response-4w)
             - (name:iati-sdn)
+            - (name:hrp-projects-sdn)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-covid-19-preparedness-and-response-4w
@@ -116,6 +117,7 @@ categories:
           include:
             - (name:sudan-flood-affected-people-from-2013-to-2020)
             - (name:sudan-flood-affected-areas-2020)
+            - (name:2021-hazards-planning-numbers)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
