@@ -303,11 +303,6 @@ categories:
           include:
             - (name:myanmar-population-census-2014)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-population-census-2014
-            display_state: incomplete
-            comments: The dataset missing value in age variable
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
