@@ -173,10 +173,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:north-east-nigeria-acute-malnutrition-situation)
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
         metadata_overrides:
-          - dataset_name: north-east-nigeria-acute-malnutrition-situation
+          - dataset_name: nigeria-acute-malnutrition-data
             display_state: incomplete
             comments: 
 
@@ -186,10 +186,10 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (name:north-east-nigeria-acute-malnutrition-situation)
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
         metadata_overrides:
-          - dataset_name: north-east-nigeria-acute-malnutrition-situation
+          - dataset_name: nigeria-acute-malnutrition-data
             display_state: incomplete
             comments: 
 
