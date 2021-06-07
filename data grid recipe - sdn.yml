@@ -280,6 +280,7 @@ categories:
             - (name:sudan-aerodromes)
             - (name:ourairports-sdn)
             - (name:hotosm_sdn_airports)
+            - (name:unhas-air-fields-sudan)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-sdn
