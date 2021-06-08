@@ -230,11 +230,6 @@ categories:
           include:
             - (name:sudan-administrative-boundaries-levels-0-2)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-administrative-boundaries-levels-0-2
-            display_state: incomplete
-            comments: Dataset has not been endorsed as a COD.
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
