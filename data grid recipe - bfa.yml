@@ -170,6 +170,8 @@ categories:
           include:
             - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
             - (name:burkina-faso-nutrition)
+            - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
+            - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
         metadata_overrides:
           - dataset_name: global-acute-malnutrition-prevalence-of-sahel-countries
@@ -185,9 +187,8 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
+            - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
