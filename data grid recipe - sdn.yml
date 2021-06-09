@@ -171,7 +171,6 @@ categories:
           include:
             - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
             - (name:sudan-flood-affected-areas-2020)
-            - (name:sudan-people-affected-by-floods-as-of-6-october-2020)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
