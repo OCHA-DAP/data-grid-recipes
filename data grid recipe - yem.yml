@@ -20,7 +20,6 @@ categories:
         rules:
           include:
             - (name:yemen-humanitarian-needs-overview)
-            - (name:unhcr-population-data-for-yem)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
