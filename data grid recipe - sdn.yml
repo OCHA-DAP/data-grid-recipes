@@ -320,6 +320,7 @@ categories:
           include:
             - (name:food-for-education-ffe-supported-schools-sudan)
             - (name:hotosm_sdn_education_facilities)
+            - (name:sudan-schools)
           exclude:
         metadata_overrides:
           - dataset_name: food-for-education-ffe-supported-schools-sudan
