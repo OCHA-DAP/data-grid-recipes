@@ -19,9 +19,8 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:zimbabwe-idps-returnees-cyclone-idai-baseline-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,9 +36,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:zimbabwe-idps-returnees-cyclone-idai-baseline-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
