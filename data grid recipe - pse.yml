@@ -263,6 +263,7 @@ categories:
           include:
             - (name:ourairports-pse)
             - (name:hotosm_pse_airports)
+            - (name:ports-airports-crossings)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-pse
