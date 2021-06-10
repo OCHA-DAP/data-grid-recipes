@@ -30,13 +30,7 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -51,12 +45,12 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:refugee-camps-in-west-nile-and-east-sudan)
             - (name:sudan-idp-camps)
             - (name:sudan-registration-data-iom-dtm)
+            - (name:refu)
           exclude:
         metadata_overrides:
-          - dataset_name: refugee-camps-in-west-nile-and-east-sudan
+          - dataset_name: refu
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
