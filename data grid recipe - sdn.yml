@@ -30,7 +30,13 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:refugee-population-of-sudan-unhcr)
           exclude:
+        metadata_overrides:
+          - dataset_name: refugee-population-of-sudan-unhcr
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -131,6 +137,7 @@ categories:
             - (name:sudan-hazards)
             - (name:sudan-idp-settlements-by-risk-level)
             - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
+            - (name:border-crossing-points-sudan)
           exclude:
         metadata_overrides:
           - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
@@ -139,6 +146,9 @@ categories:
           - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
             comments: The data may not be comprehensive.
+          - dataset_name: border-crossing-points-sudan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -268,11 +278,15 @@ categories:
             - (name:sudan-aerodromes)
             - (name:ourairports-sdn)
             - (name:hotosm_sdn_airports)
+            - (name:unhas-air-fields-sudan)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-sdn
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: unhas-air-fields-sudan
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 
 #HEALTH AND EDUCATION
@@ -359,7 +373,13 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:population-socio-economy-baseline-population-by-age-and-sex)
           exclude:
+        metadata_overrides:
+          - dataset_name: population-socio-economy-baseline-population-by-age-and-sex
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
