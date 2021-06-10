@@ -297,6 +297,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:zimbabwe-baseline-population-projection)
             - (name:zimbabwe-administrative-levels-0-2-population-statistics)
           exclude:
         metadata_overrides:
@@ -310,9 +311,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:zimbabwe-baseline-population-projection)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
