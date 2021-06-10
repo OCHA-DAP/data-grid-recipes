@@ -19,18 +19,16 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:state-of-palestine-idp-s)
           exclude:
-            - (private:false)
-            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:state-of-palestine-refugees)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -124,6 +122,7 @@ categories:
             - (name:occupied-palestinian-territory-closures-barriers)
             - (name:state-of-palestine-transportation-network)
             - (name:opt-violent-and-threatening-incidents-against-healthcare)
+            - (name:crossings-with-israel)
           exclude:
         metadata_overrides:
           - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
