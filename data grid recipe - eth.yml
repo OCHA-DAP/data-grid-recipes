@@ -50,6 +50,8 @@ categories:
         rules:
           include:
             - (name:people-in-need-of-humanitarian-assistance-in-2020-by-population-group)
+            - (name:ethiopia-baseline-assessment-data-iom-dtm)
+            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
