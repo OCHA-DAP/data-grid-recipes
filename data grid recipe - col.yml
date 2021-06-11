@@ -174,9 +174,8 @@ categories:
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
+            - (name:tasa-de-desnutricion-aguda-en-menores-de-5-anos-2020)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -265,6 +264,7 @@ categories:
         rules:
           include:
             - (name:hotosm_col_points_of_interest)
+            - (name:centros-educativos-2020)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_col_points_of_interest
