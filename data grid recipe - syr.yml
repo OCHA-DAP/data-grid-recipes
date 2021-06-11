@@ -218,11 +218,11 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:syrian-arab-republic-populated-places)
+            - (name:hotosm_syr_populated_places)
             - (name:syrian-arab-republic-administrative-boundaries-populated-places)
           exclude:
         metadata_overrides:
-          - dataset_name: syrian-arab-republic-populated-places
+          - dataset_name: hotosm_syr_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
