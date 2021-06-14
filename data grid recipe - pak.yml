@@ -82,9 +82,6 @@ categories:
             - (name:iati-pak)
           exclude:
         metadata_overrides:
-          - dataset_name: who-is-doing-what-where-and-when
-            display_state: incomplete
-            comments: Dataset is old.
           - dataset_name: iati-pak
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
