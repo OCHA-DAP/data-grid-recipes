@@ -75,6 +75,7 @@ categories:
         rules:
           include:
             - (name:libya-operational-presence)
+            - (name:libya-who-is-doing-what-and-where-3w)
             - (name:iati-lby)
           exclude:
         metadata_overrides:
