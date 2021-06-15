@@ -28,7 +28,6 @@ categories:
         rules:
           include:
             - (name:zimbabwe-humanitarian-needs-overview-2021)
-            - (name:unhcr-population-data-for-zwe)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-humanitarian-needs-overview-2021
