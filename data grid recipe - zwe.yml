@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:zimbabwe-idps-returnees-cyclone-idai-baseline-assessment-iom-dtm)
+            - (name:zimbabwe-humanitarian-needs-overview-2021)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,16 +27,21 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-demographics-residing-zwe)
+            - (name:zimbabwe-humanitarian-needs-overview-2021)
             - (name:unhcr-population-data-for-zwe)
           exclude:
+        metadata_overrides:
+          - dataset_name: zimbabwe-humanitarian-needs-overview-2021
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:zimbabwe-idps-returnees-cyclone-idai-baseline-assessment-iom-dtm)
+            - (name:zimbabwe-humanitarian-needs-overview-2021)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -53,7 +58,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:zimbabwe-humanitarian-needs-overview)
+            - (name:zimbabwe-humanitarian-needs-overview-2021)
           exclude:
 #CASUALTIES
       - name: casualties
