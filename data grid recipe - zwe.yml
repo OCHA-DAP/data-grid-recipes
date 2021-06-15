@@ -29,11 +29,6 @@ categories:
           include:
             - (name:zimbabwe-humanitarian-needs-overview-2021)
           exclude:
-        metadata_overrides:
-          - dataset_name: zimbabwe-humanitarian-needs-overview-2021
-            display_state: incomplete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
