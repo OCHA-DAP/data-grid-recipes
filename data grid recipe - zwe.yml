@@ -215,6 +215,7 @@ categories:
         rules:
           include:
             - (name:hotosm_zwe_roads)
+            - (name:zimbabwe-zimbabwe-road-network-main-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_zwe_roads
