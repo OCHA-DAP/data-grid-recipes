@@ -276,9 +276,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
+            - (name:nyiragongo-2021-eruption-affected-schools)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
