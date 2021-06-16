@@ -228,6 +228,11 @@ categories:
           include:
             - (name:ourairports-ssd)
           exclude:
+        metadata_overrides:
+          - dataset_name: ourairports-ssd
+            display_state: incomplete
+            comments: 
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
