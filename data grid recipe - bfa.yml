@@ -33,9 +33,8 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:burkina-humanitarian-needs-overview-2021)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -44,6 +43,11 @@ categories:
           include:
             - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
+            display_state: incomplete
+            comments: Dataset is old.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -52,6 +56,11 @@ categories:
           include:
             - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
+            display_state: incomplete
+            comments: Dataset is old.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -67,13 +76,7 @@ categories:
         rules:
           include:
             - (name:acled-database)
-            - (name:ucdp-data-for-burkina-faso)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-burkina-faso
-            display_state: incomplete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -90,6 +93,9 @@ categories:
             - (name:iati-bfa)
           exclude:
         metadata_overrides:
+          - dataset_name: burkina-faso-presence-operationnelle
+            display_state: incomplete
+            comments: Dataset is old.
           - dataset_name: iati-bfa
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically but inconsistently.?
@@ -108,9 +114,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:burkina-humanitarian-needs-overview-2021)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -118,13 +123,7 @@ categories:
         rules:
           include:
             - (name:acled-database)
-            - (name:ucdp-data-for-burkina-faso)
           exclude:
-        metadata_overrides:
-          - dataset_name: ucdp-data-for-burkina-faso
-            display_state: incomplete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -144,13 +143,9 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-bfa-trs-roads-osm)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-bfa-trs-roads-osm
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
+            - (private:false)
+            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -180,18 +175,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:global-acute-malnutrition-prevalence-of-sahel-countries)
-            - (name:burkina-faso-nutrition)
             - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-acute-malnutrition-prevalence-of-sahel-countries
-            display_state: incomplete
-            comments: Dataset is old.
-          - dataset_name: burkina-faso-nutrition
-            display_state: incomplete
-            comments: Dataset is not up to date.
-
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -229,17 +214,9 @@ categories:
         rules:
           include:
             - (name:settlements)
-            - (name:hotosm_bfa_populated_places)
-            - (name:hotosm_yem_populated_places)
             - (name:highresolutionpopulationdensitymaps-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_bfa_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_yem_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: highresolutionpopulationdensitymaps-bfa
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
@@ -283,20 +260,9 @@ categories:
         rules:
           include:
             - (name:burkina-faso-health-districts-districts-de-sante)
-            - (name:burkina-faso-healthsites)
-            - (name:hotosm_bfa_health_facilities)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-health-districts-districts-de-sante
-            display_state: incomplete
-            comments: 
-          - dataset_name: burkina-faso-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_bfa_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
             comments: 
@@ -330,6 +296,11 @@ categories:
           include:
             - (name:number-of-schools-teachers-and-students-affected-in-2018-for-burkina-faso)
           exclude:
+        metadata_overrides:
+          - dataset_name: number-of-schools-teachers-and-students-affected-in-2018-for-burkina-faso
+            display_state: incomplete
+            comments: Dataset is old.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
