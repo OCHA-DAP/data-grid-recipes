@@ -75,14 +75,13 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ngoaidmap-irq)
             - (name:iraq-humanitarian-operational-presence-3w)
             - (name:iati-irq)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-irq
+          - dataset_name: iati-irq
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
 
 #FUNDING
       - name: funding
@@ -117,19 +116,23 @@ categories:
           include:
             - (name:iraq-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-violence-against-civilians-and-vital-civilian-facilities
+            display_state: incomplete
+            comments: 
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm)
             - (name:iraq-roads)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-irq-trs-roads-osm
+          - dataset_name: iraq-roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+            comments: 
 
 #DAMAGED BUILDINGS
       - name: damaged_buildings
@@ -225,6 +228,9 @@ categories:
           - dataset_name: wfp-geonode-iraq-road-network-main-roads
             display_state: incomplete
             comments: This dataset is an extraction of roads from OpenStreetMap data made by WFP following UNSDI-T standards. OpenStreetMap data relies on user contributions and may not be comprehensive. 
+          - dataset_name: iraq-roads
+            display_state: incomplete
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -283,6 +289,11 @@ categories:
           include:
             - (name:iraq-affected-schools)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-affected-schools
+            display_state: incomplete
+            comments: 
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
