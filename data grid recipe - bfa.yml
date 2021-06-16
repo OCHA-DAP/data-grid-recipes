@@ -293,10 +293,10 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:number-of-schools-teachers-and-students-affected-in-2018-for-burkina-faso)
+            - (name:number-of-schools-teachers-and-students-in-burkina-faso)
           exclude:
         metadata_overrides:
-          - dataset_name: number-of-schools-teachers-and-students-affected-in-2018-for-burkina-faso
+          - dataset_name: number-of-schools-teachers-and-students-in-burkina-faso
             display_state: incomplete
             comments: Dataset is old.
 
