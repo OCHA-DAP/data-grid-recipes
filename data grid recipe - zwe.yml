@@ -264,6 +264,7 @@ categories:
         rules:
           include:
             - (name:hotosm_zwe_education_facilities)
+            - (name:zimbabwe-education-facilities-in-zimbabwe)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_zwe_education_facilities
