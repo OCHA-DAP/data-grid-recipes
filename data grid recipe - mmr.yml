@@ -194,13 +194,8 @@ categories:
         rules:
           include:
             - (name:mimu-geonode-myanmar-town)
-            - (name:mimu-geonode-myanmar-ward-boundaries-mimu)
+            - (name:mimu-geonode-myanmar-town-points-pcode)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-myanmar-ward-boundaries-mimu
-            display_state: incomplete
-            comments: Dataset only cover ward administrative boundaries for 96 towns in Myanmar
-
 #ROADS
       - name: roads
         title: Roads
