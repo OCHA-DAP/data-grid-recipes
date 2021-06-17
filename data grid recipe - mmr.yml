@@ -194,10 +194,10 @@ categories:
         rules:
           include:
             - (name:mimu-geonode-myanmar-town)
-            - (name:myanmar-ward-boundaries-v8-1)
+            - (name:mimu-geonode-myanmar-ward-boundaries-mimu)
           exclude:
         metadata_overrides:
-          - dataset_name: myanmar-ward-boundaries-v8-1
+          - dataset_name: mimu-geonode-myanmar-ward-boundaries-mimu
             display_state: incomplete
             comments: Dataset only cover ward administrative boundaries for 96 towns in Myanmar
 
