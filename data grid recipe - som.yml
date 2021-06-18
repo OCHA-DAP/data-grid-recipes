@@ -303,6 +303,7 @@ categories:
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_health_facilities)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
+            - (name:somalia-health-facilities-data)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-healthsites
