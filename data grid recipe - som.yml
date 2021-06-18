@@ -299,7 +299,6 @@ categories:
         rules:
           include:
             - (name:somalia-healthsites)
-            - (name:somalia-health-facilities)
             - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset)
             - (name:hotosm_som_health_facilities)
             - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017)
@@ -309,9 +308,6 @@ categories:
           - dataset_name: somalia-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: somalia-health-facilities
-            display_state: incomplete
-            comments: The dataset is not up-to-date
           - dataset_name: somalia-kismayo-idp-settlement-assessment-facility-dataset
             display_state: incomplete
             comments: The dataset covers limited area. It is not up-to-date
