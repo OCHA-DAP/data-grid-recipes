@@ -21,6 +21,11 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,6 +42,11 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
+            display_state: incomplete
+            comments: 
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -54,14 +64,20 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data is outdated.
+
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -74,13 +90,9 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ngoaidmap-syr)
             - (name:iati-syr)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-syr
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
           - dataset_name: iati-syr
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
@@ -99,28 +111,24 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:northern-syria-burned-land-analysis-dataset-may-june-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: northern-syria-burned-land-analysis-dataset-may-june-2019
-            display_state: incomplete
-            comments: The dataset does not cover all of the country.
-
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:syria-violent-and-threatening-incidents-affecting-aid-operations)
             - (name:syria-violent-and-threatening-incidents-against-healthcare)
           exclude:
         metadata_overrides:
@@ -134,29 +142,18 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:syria-infrastructure-maps-power-line-water-way-dam-highway)
           exclude:
+            - (private:false)
+            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:infrastructure-and-roads-damage-assessment-of-ar-raqqa-ar-raqqa-governorate-syria-2747)
-            - (name:infrastructure-and-roads-damage-assessment-of-deir-ez-zor-deir-ez-zor-governorate-syria-2748)
-            - (name:damage-assessment-of-daraa-daraa-governorate-syria)
           exclude:
-        metadata_overrides:
-          - dataset_name: infrastructure-and-roads-damage-assessment-of-ar-raqqa-ar-raqqa-governorate-syria-2747
-            display_state: incomplete
-            comments: The data does not cover all of the country. The data is outdated.
-          - dataset_name: infrastructure-and-roads-damage-assessment-of-deir-ez-zor-deir-ez-zor-governorate-syria-2748
-            display_state: incomplete
-            comments: The data does not cover all of the country. The data is outdated.
-          - dataset_name: damage-assessment-of-daraa-daraa-governorate-syria
-            display_state: incomplete
-            comments: The data does not cover all of the country. The data is outdated.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -233,9 +230,13 @@ categories:
         rules:
           include:
             - (name:hotosm_syr_roads)
+            - (name:syria-infrastructure-maps-power-line-water-way-dam-highway)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_syr_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: syria-infrastructure-maps-power-line-water-way-dam-highway
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
