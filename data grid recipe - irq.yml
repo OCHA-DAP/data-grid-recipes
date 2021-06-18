@@ -275,11 +275,15 @@ categories:
         rules:
           include:
             - (name:hotosm_irq_education_facilities)
+            - (name:iraq-humanitarian-priority-schools)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_irq_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+          - dataset_name: iraq-humanitarian-priority-schools
+            display_state: incomplete
+            comments: 
 
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -287,13 +291,9 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:iraq-affected-schools)
           exclude:
-        metadata_overrides:
-          - dataset_name: iraq-affected-schools
-            display_state: incomplete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
