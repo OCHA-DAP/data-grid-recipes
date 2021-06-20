@@ -34,6 +34,7 @@ categories:
         rules:
           include:
             - (name:unhcr-demographics-residing-eth)
+            - (name:ethiopia-refugee-camp-locations)
           exclude:
 #RETURNEES
       - name: returnees
@@ -52,6 +53,7 @@ categories:
             - (name:people-in-need-of-humanitarian-assistance-in-2020-by-population-group)
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
             - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
+            - (name:ethiopia-refugee-camp-locations)
           exclude:
 #HNO
       - name: hno
@@ -108,6 +110,7 @@ categories:
         rules:
           include:
             - (name:ethiopia-2020-severity-of-needs-analysis-xlsx)
+            - (name:irc-ethiopia-echo-funded-emergency-responses-30-june-2020-update-and-hotspot-woredas)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
