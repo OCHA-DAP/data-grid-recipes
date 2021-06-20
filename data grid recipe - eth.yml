@@ -60,6 +60,11 @@ categories:
             - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
             - (name:ethiopia-refugee-camp-locations)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-refugee-camp-locations
+            display_state: incomplete
+            comments: Data is not up to date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
