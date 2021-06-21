@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:myanmar-2021-hno-and-hrp-data-by-humanitarian-consequence-by-township)
+            - (name:myanmar-humanitarian-needs-overview#)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -36,7 +36,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:myanmar-2021-hno-and-hrp-data-by-humanitarian-consequence-by-township)
+            - (name:myanmar-humanitarian-needs-overview#)
           exclude:
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
@@ -53,7 +53,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:myanmar-2021-hno-and-hrp-data-by-humanitarian-consequence-by-township)
+            - (name:myanmar-humanitarian-needs-overview#)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -274,13 +274,9 @@ categories:
           include:
             - (name:myanmar-population-census-2014)
             - (name:myanmar-population-statistics-2011)
-            - (name:dhs-data-for-myanmar)
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-population-statistics-2011
-            display_state: incomplete
-            comments: The dataset is not up-to-date
-          - dataset_name: dhs-data-for-myanmar
             display_state: incomplete
             comments: The dataset is not up-to-date
 
