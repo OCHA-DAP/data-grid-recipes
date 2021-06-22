@@ -295,13 +295,9 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:schools-in-syria-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: schools-in-syria-2019
-            display_state: incomplete
-            comments: Dataset is available upon request.
-
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
