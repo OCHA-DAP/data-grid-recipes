@@ -163,11 +163,6 @@ categories:
           include:
             - (name:nigeria-acute-malnutrition-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-acute-malnutrition-data
-            display_state: incomplete
-            comments: 
-
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -176,11 +171,6 @@ categories:
           include:
             - (name:nigeria-acute-malnutrition-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-acute-malnutrition-data
-            display_state: incomplete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
