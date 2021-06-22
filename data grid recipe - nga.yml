@@ -210,7 +210,6 @@ categories:
         rules:
           include:
             - (name:highresolutionpopulationdensitymaps-nga)
-            - (name:hotosm_nga_buildings)
             - (name:hotosm_nga_populated_places)
             - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
@@ -218,9 +217,6 @@ categories:
           - dataset_name: highresolutionpopulationdensitymaps-nga
             display_state: incomplete
             comments: The dataset is not disaggregated by admin boundaries
-          - dataset_name: hotosm_nga_buildings
-            display_state: incomplete
-            comments: 
           - dataset_name: hotosm_nga_populated_places
             display_state: incomplete
             comments: 
