@@ -270,6 +270,7 @@ categories:
           include:
             - (name:hotosm_nga_health_facilities)
             - (name:nigeria-healthsites)
+            - (name:nigeria-health-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_nga_health_facilities
