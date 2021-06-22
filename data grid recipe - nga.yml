@@ -130,22 +130,9 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-geonode-nigeria-road-network-main-roads)
-            - (name:hotosm_nga_waterways)
-            - (name:hotosm_nga_railways)
-            - (name:hotosm_nga_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_nga_waterways
-            display_state: incomplete
-            comments: 
-          - dataset_name: hotosm_nga_railways
-            display_state: incomplete
-            comments: 
-          - dataset_name: hotosm_nga_roads
-            display_state: incomplete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
