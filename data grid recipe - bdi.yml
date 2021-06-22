@@ -83,6 +83,9 @@ categories:
             - (name:iati-bdi)
           exclude:
         metadata_overrides:
+          - dataset_name: burundi-operational-presence
+            display_state: incomplete
+            comments: Dataset is not up to date.
           - dataset_name: iati-bdi
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
@@ -265,9 +268,6 @@ categories:
           - dataset_name: burundi-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -311,9 +311,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:burundi-administrative-level-0-2-population-statistics-2018)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
