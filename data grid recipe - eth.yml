@@ -121,14 +121,8 @@ categories:
         rules:
           include:
             - (name:ethiopia-2020-severity-of-needs-analysis-xlsx)
-            - (name:irc-ethiopia-echo-funded-emergency-responses-30-june-2020-update-and-hotspot-woredas)
             - (name:ethiopia-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: irc-ethiopia-echo-funded-emergency-responses-30-june-2020-update-and-hotspot-woredas
-            display_state: incomplete
-            comments: Data is not up to date.
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
