@@ -27,8 +27,9 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -43,8 +44,9 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -78,6 +80,9 @@ categories:
             - (name:iati-mli)
           exclude:
         metadata_overrides:
+          - dataset_name: mali-operational-presence
+            display_state: incomplete
+            comments: 
           - dataset_name: iati-mli
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
@@ -96,8 +101,9 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:mali-humanitarian-response-plan)
           exclude:
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -201,6 +207,9 @@ categories:
             - (name:highresolutionpopulationdensitymaps-mli)
           exclude:
         metadata_overrides:
+          - dataset_name: mali-settlements
+            display_state: incomplete
+            comments: 
           - dataset_name: highresolutionpopulationdensitymaps-mli
             display_state: incomplete
             comments: The dataset is not desaggregated by admin boundaries.
@@ -213,6 +222,11 @@ categories:
           include:
             - (name:mali-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-roads
+            display_state: incomplete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -256,6 +270,11 @@ categories:
           include:
             - (name:mali-schools)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-schools
+            display_state: incomplete
+            comments: The nature of the effect is not specified.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -278,6 +297,11 @@ categories:
           include:
             - (name:population-of-mali-disaggregated-by-age)
           exclude:
+        metadata_overrides:
+          - dataset_name: population-of-mali-disaggregated-by-age
+            display_state: incomplete
+            comments: The dataset is not desaggregated by age.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
