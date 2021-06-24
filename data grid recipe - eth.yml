@@ -255,7 +255,6 @@ categories:
         rules:
           include:
             - (name:ourairports-eth)
-            - (name:hotosm_eth_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-eth
