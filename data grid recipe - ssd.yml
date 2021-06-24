@@ -62,9 +62,9 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:ucdp-data-for-south-sudan)
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -108,22 +108,18 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-south-sudan)
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
           exclude:
-        metadata_overrides:
-          - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
