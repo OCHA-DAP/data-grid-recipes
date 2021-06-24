@@ -19,9 +19,8 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:ukraine-idps)
           exclude:
-            - (private:false)
-            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -64,7 +63,6 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-ukraine)
-            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -78,7 +76,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ukraine-who-does-what-where-3w-january-to-december-2019)
+            - (name:ukraine-who-does-what-where-3w)
             - (name:iati-ukr)
           exclude:
         metadata_overrides:
@@ -110,7 +108,6 @@ categories:
         rules:
           include:
             - (name:ucdp-data-for-ukraine)
-            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -201,9 +198,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
+            - (name:ukraine-populated-places)
           exclude:
-            - (private:false)
-            - (private:true)
 #ROADS
       - name: roads
         title: Roads
@@ -247,6 +243,7 @@ categories:
         rules:
           include:
             - (name:ukraine-healthsites)
+            - (name:ukraine-health-facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -254,9 +251,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
+            - (name:ukraine-education-facilities)
           exclude:
-            - (private:false)
-            - (private:true)
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
