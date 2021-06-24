@@ -39,7 +39,7 @@ categories:
         metadata_overrides:
           - dataset_name: ethiopia-refugee-camp-locations
             display_state: incomplete
-            comments: Data is not up to date.
+            comments: Data is not up to date and does not contain the number of refugees or persons of concerns.
 
 #RETURNEES
       - name: returnees
@@ -55,12 +55,14 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:people-in-need-of-humanitarian-assistance-in-2020-by-population-group)
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
             - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
             - (name:ethiopia-refugee-camp-locations)
           exclude:
         metadata_overrides:
+          - dataset_name: ethiopia-displacement-data-village-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
           - dataset_name: ethiopia-refugee-camp-locations
             display_state: incomplete
             comments: Data is not up to date.
@@ -95,15 +97,14 @@ categories:
           include:
             - (name:ethiopia-operational-presence)
             - (name:iati-eth)
-            - (name:ngoaidmap-eth)
           exclude:
         metadata_overrides:
+          - dataset_name: ethiopia-operational-presence
+            display_state: incomplete
+            comments: Data is not up to date.
           - dataset_name: iati-eth
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: ngoaidmap-eth
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but not consistently.
 
 #FUNDING
       - name: funding
@@ -121,6 +122,7 @@ categories:
           include:
             - (name:ethiopia-2020-severity-of-needs-analysis-xlsx)
             - (name:irc-ethiopia-echo-funded-emergency-responses-30-june-2020-update-and-hotspot-woredas)
+            - (name:ethiopia-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
           - dataset_name: irc-ethiopia-echo-funded-emergency-responses-30-june-2020-update-and-hotspot-woredas
@@ -141,8 +143,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:ethiopia-humanitarian-access_admin-level-3)
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -229,6 +232,9 @@ categories:
             - (name:ethiopia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
         metadata_overrides:
+          - dataset_name: ethiopia-settlements
+            display_state: incomplete
+            comments: Data is not up to date.
           - dataset_name: ethiopia-high-resolution-population-density-maps-demographic-estimates
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
