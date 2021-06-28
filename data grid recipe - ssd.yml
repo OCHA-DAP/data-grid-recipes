@@ -28,9 +28,13 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:refugees-inside-south-sudan)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: refugees-inside-south-sudan
+            display_state: incomplete
+            comments: Dataset contains only 11 locations (ADM2 level)
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -158,9 +162,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
+            - (name:south-sudan-global-acute-malnutrition-rate)
           exclude:
-            - (private:false)
-            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
