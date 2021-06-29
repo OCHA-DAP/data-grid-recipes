@@ -64,11 +64,6 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is outdated.
-
 #CASUALTIES
       - name: casualties
         title: Casualties
@@ -111,9 +106,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
