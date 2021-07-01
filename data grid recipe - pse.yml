@@ -29,6 +29,11 @@ categories:
           include:
             - (name:state-of-palestine-refugees)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-refugees
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -76,14 +81,9 @@ categories:
         rules:
           include:
             - (name:iati-pse)
-            - (name:ngoaidmap-pse)
-            - (name:hrp-projects-pse)
           exclude:
         metadata_overrides:
           - dataset_name: iati-pse
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: ngoaidmap-pse
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -118,11 +118,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:state-of-palestine-security)
-            - (name:occupied-palestinian-territory-closures-barriers)
-            - (name:state-of-palestine-transportation-network)
+            - (name:state-of-palestine-humanitarian-access)
             - (name:opt-violent-and-threatening-incidents-against-healthcare)
-            - (name:crossings-with-israel)
           exclude:
         metadata_overrides:
           - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
@@ -158,17 +155,9 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014)
-            - (name:state-of-palestine-disaster-inventory)
           exclude:
-        metadata_overrides:
-          - dataset_name: geodata-of-gaza-damage-assessment-2014-unosat-satellite-derived-geospatial-an-october-02-2014
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-          - dataset_name: state-of-palestine-disaster-inventory
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -233,6 +222,11 @@ categories:
             - (name:state-of-palestine-admin-level-2-boundaries)
             - (name:state-of-palestine-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-settlements
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #ROADS
       - name: roads
         title: Roads
@@ -262,16 +256,12 @@ categories:
         rules:
           include:
             - (name:ourairports-pse)
-            - (name:hotosm_pse_airports)
             - (name:ports-airports-crossings)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-pse
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_pse_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -285,23 +275,9 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:state-of-palestine-health-0)
             - (name:state-of-palestine-government-health-centers)
-            - (name:hotosm_pse_health_facilities)
-            - (name:palestine-healthsites)
             - (name:palestinian-territories-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-health-0
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: hotosm_pse_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: palestine-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -310,33 +286,16 @@ categories:
           include:
             - (name:state-of-palestine-west-bank-schools)
             - (name:state-of-palestine-gaza-strip-schools)
-            - (name:state-of-palestine-school-districts)
-            - (name:hotosm_pse_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-west-bank-schools
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: state-of-palestine-gaza-strip-schools
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: hotosm_pse_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014)
           exclude:
-        metadata_overrides:
-          - dataset_name: geodata-of-health-facilities-damage-assessment-in-gaza-strip-occupied-palesti-september-26-2014
-            display_state: incomplete
-            comments: The dataset is a preliminary analysis and not verified on the field. It's not up-to-date.
-
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -350,13 +309,7 @@ categories:
         rules:
           include:
             - (name:stateofpalestine_population_projection_1997-2021)
-            - (name:worldpop-by-cod-pse)
           exclude:
-        metadata_overrides:
-          - dataset_name: worldpop-by-cod-pse
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
