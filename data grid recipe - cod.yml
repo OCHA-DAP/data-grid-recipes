@@ -30,6 +30,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-cod
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
