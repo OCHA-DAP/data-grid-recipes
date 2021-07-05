@@ -82,7 +82,7 @@ categories:
         metadata_overrides:
           - dataset_name: libya-who-is-doing-what-and-where-3w
             display_state: incomplete
-            comments: The date in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: The date in this dataset provides complimentary data that is useful to understanding the context.
           - dataset_name: iati-lby
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
