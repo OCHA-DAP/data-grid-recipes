@@ -61,8 +61,9 @@ categories:
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -97,21 +98,18 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-ica-pakistan-combined-hazard-floods-and-droughts
-            display_state: incomplete
-            comments: Dataset is old.
-
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -140,21 +138,9 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015)
-            - (name:geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015)
-            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: geodata-of-damage-assessment-of-kalam-area-khyber-pakhtunkhwa-province-pakist-november-05-2015
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-          - dataset_name: geodata-of-damage-assessment-of-chitral-area-khyber-pakhtunkhwa-province-paki-november-03-2015
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -214,13 +200,7 @@ categories:
         rules:
           include:
             - (name:pakistan-settlement)
-            - (name:southasia_as43-high-resolution-population-density-maps)
           exclude:
-        metadata_overrides:
-          - dataset_name: southasia_as43-high-resolution-population-density-maps
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-
 #ROADS
       - name: roads
         title: Roads
@@ -267,8 +247,6 @@ categories:
             - (name:hotosm_pak_health_facilities)
             - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
             - (name:pakistan-health)
-            - (name:pakistan-health)
-            - (name:wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan)
           exclude:
         metadata_overrides:
           - dataset_name: pakistan-healthsites
@@ -278,15 +256,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-khyber-pakhtunkhwa-tribal-districts
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-          - dataset_name: pakistan-health
-            display_state: incomplete
-            comments: Dataset is old.
-          - dataset_name: pakistan-health
-            display_state: incomplete
-            comments: Dataset is old.
-          - dataset_name: wfp-geonode-cmam-surge-sites-in-district-umerkot-pakistan
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
 
@@ -305,7 +274,7 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: wfp-geonode-pakistan-edu-institute-balochistan
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
+            comments: The data in this dataset does not cover the entire country.
 
 #AFFECTED SCHOOLS
       - name: affected_schools
@@ -336,9 +305,13 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:pakistan-administrative-level-0-3-population-statistics)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: pakistan-administrative-level-0-3-population-statistics
+            display_state: incomplete
+            comments: The data in this dataset includes baseline population disaggregated by sex but not by age.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
