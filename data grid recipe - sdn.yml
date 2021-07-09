@@ -19,8 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:hno-baseline-data)
-            - (name:sudan-registration-data-iom-dtm)
+            - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:sudan-idp-camps)
           exclude:
 #REFUGEES POCs
@@ -45,6 +44,11 @@ categories:
           include:
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-returnee-data-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -52,7 +56,6 @@ categories:
         rules:
           include:
             - (name:sudan-idp-camps)
-            - (name:sudan-registration-data-iom-dtm)
             - (name:refu)
           exclude:
         metadata_overrides:
@@ -66,7 +69,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:sudan-humanitarian-needs-overview-2015-2021)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -91,7 +94,6 @@ categories:
             - (name:sudan-operational-presence)
             - (name:sudan-covid-19-preparedness-and-response-4w)
             - (name:iati-sdn)
-            - (name:hrp-projects-sdn)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-covid-19-preparedness-and-response-4w
@@ -118,7 +120,16 @@ categories:
             - (name:sudan-flood-affected-people-from-2013-to-2020)
             - (name:sudan-flood-affected-areas-2020)
             - (name:2021-hazards-planning-numbers)
+            - (name:sudan-hazards)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-flood-affected-people-from-2013-to-2020
+            display_state: incomplete
+            comments: Data covers affected areas only due to flood.
+          - dataset_name: sudan-flood-affected-areas-2020
+            display_state: incomplete
+            comments: Data covers historical data on affected areas due to flood.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -133,22 +144,17 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan)
             - (name:sudan-hazards)
             - (name:sudan-idp-settlements-by-risk-level)
             - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
-            - (name:border-crossing-points-sudan)
           exclude:
         metadata_overrides:
-          - dataset_name: rainfall-conflict-and-food-insecurity-measurement-in-post-succession-sudan-and-south-sudan
+          - dataset_name: sudan-hazards
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: 
           - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
             comments: The data may not be comprehensive.
-          - dataset_name: border-crossing-points-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -173,14 +179,8 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
             - (name:sudan-flood-affected-areas-2020)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -201,7 +201,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:sudan-humanitarian-needs-overview-2015-2021)
+            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
 #SAM
       - name: sam
