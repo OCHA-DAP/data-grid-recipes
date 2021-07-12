@@ -262,7 +262,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:affected-schools-in-yemen)
+            - (name:affected-schools-september-2017-included-july-2021-updated)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
