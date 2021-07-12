@@ -111,9 +111,6 @@ categories:
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
-        flags:
-          - key: not_applicable
-            comments: Comment set from yaml file.
         rules:
           include:
             - (name:acled-data-for-yemen)
@@ -133,9 +130,6 @@ categories:
           - dataset_name: yemen-violence-aganist-civilian-and-vital-civilian-faciltities
             display_state: incomplete
             comments: The dataset covers health related access constraints.
-          - dataset_name: severity-of-humanitarian-access-difficulties-in-yemen
-            display_state: complete
-            comments: Forcing dataset as complete from yaml file
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -268,7 +262,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
         rules:
           include:
-            - (name:affected-schools-in-yemen)
+            - (name:affected-schools-september-2017-included-july-2021-updated)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
