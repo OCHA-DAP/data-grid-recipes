@@ -19,8 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
-            - (name:sudan-idp-camps)
+            - (name:state-of-palestine-idp-s)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -28,13 +27,12 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:refugee-population-of-sudan-unhcr)
+            - (name:state-of-palestine-refugees)
           exclude:
         metadata_overrides:
-          - dataset_name: refugee-population-of-sudan-unhcr
+          - dataset_name: state-of-palestine-refugees
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: The dataset is not up-to-date.
 
 #RETURNEES
       - name: returnees
@@ -42,34 +40,25 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sudan-returnee-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-returnee-data-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:sudan-idp-camps)
-            - (name:refu)
           exclude:
-        metadata_overrides:
-          - dataset_name: refu
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
+            - (name:opt-humanitarian-needs-overview)
           exclude:
 #CASUALTIES
       - name: casualties
@@ -91,15 +80,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-operational-presence)
-            - (name:sudan-covid-19-preparedness-and-response-4w)
-            - (name:iati-sdn)
+            - (name:iati-pse)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-covid-19-preparedness-and-response-4w
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: iati-sdn
+          - dataset_name: iati-pse
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -109,7 +93,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-sudan)
+            - (name:fts-requirements-and-funding-data-for-occupied-palestinian-territory)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -117,19 +101,9 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:sudan-flood-affected-people-from-2013-to-2020)
-            - (name:sudan-flood-affected-areas-2020)
-            - (name:2021-hazards-planning-numbers)
-            - (name:sudan-hazards)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-flood-affected-people-from-2013-to-2020
-            display_state: incomplete
-            comments: Data covers affected areas only due to flood.
-          - dataset_name: sudan-flood-affected-areas-2020
-            display_state: incomplete
-            comments: Data covers historical data on affected areas due to flood.
-
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -144,15 +118,11 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:sudan-hazards)
-            - (name:sudan-idp-settlements-by-risk-level)
-            - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
+            - (name:state-of-palestine-humanitarian-access)
+            - (name:opt-violent-and-threatening-incidents-against-healthcare)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-hazards
-            display_state: incomplete
-            comments: 
-          - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
+          - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
             display_state: incomplete
             comments: The data may not be comprehensive.
 
@@ -162,14 +132,20 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-geonode-sudan-road-network-main-roads)
-            - (name:wfp-geonode-sudan-streets-and-pathways)
+            - (name:state-of-palestine-hebron_h2_closures)
+            - (name:state-of-palestine-roads)
+            - (name:wfp-geonode-palestine-streets-and-pathways)
+            - (name:wfp-geonode-palestine-road-network-main-roads)
+            - (name:hotosm_pse_railways)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-geonode-sudan-road-network-main-roads
+          - dataset_name: state-of-palestine-hebron_h2_closures
+            display_state: incomplete
+            comments: The dataset covers information on small area. It's not up-to-date.
+          - dataset_name: wfp-geonode-palestine-streets-and-pathways
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: wfp-geonode-sudan-streets-and-pathways
+          - dataset_name: wfp-geonode-palestine-road-network-main-roads
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -179,8 +155,9 @@ categories:
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:sudan-flood-affected-areas-2020)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -193,32 +170,34 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:sudan-acute-food-insecurity-country-data)
           exclude:
+            - (private:false)
+            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
+            - (private:false)
+            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
         description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
         rules:
           include:
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-sudan)
+            - (name:wfp-food-prices-for-state-of-palestine)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -232,7 +211,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:sudan-administrative-boundaries-levels-0-2)
+            - (name:state-of-palestine-administrative-boundaries)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -240,13 +219,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:sudan-settlement-26-july-2020)
-            - (name:hotosm_sdn_populated_places)
+            - (name:state-of-palestine-admin-level-2-boundaries)
+            - (name:state-of-palestine-settlements)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_populated_places
+          - dataset_name: state-of-palestine-settlements
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+            comments: The dataset is not up-to-date.
 
 #ROADS
       - name: roads
@@ -254,19 +233,19 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_roads)
-            - (name:sudan-roads)
-            - (name:wfp-geonode-sudan-road-network-main-roads)
-            - (name:wfp-geonode-sudan-streets-and-pathways)
+            - (name:state-of-palestine-roads)
+            - (name:hotosm_pse_roads)
+            - (name:wfp-geonode-palestine-road-network-main-roads)
+            - (name:wfp-geonode-palestine-streets-and-pathways)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_roads
+          - dataset_name: hotosm_pse_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: wfp-geonode-sudan-road-network-main-roads
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: wfp-geonode-palestine-road-network-main-roads
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: wfp-geonode-sudan-streets-and-pathways
+          - dataset_name: wfp-geonode-palestine-streets-and-pathways
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -276,18 +255,13 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:sudan-aerodromes)
-            - (name:ourairports-sdn)
-            - (name:hotosm_sdn_airports)
-            - (name:unhas-air-fields-sudan)
+            - (name:ourairports-pse)
+            - (name:ports-airports-crossings)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-sdn
+          - dataset_name: ourairports-pse
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: unhas-air-fields-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 
 #HEALTH AND EDUCATION
@@ -301,43 +275,18 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:sudan-healthsites)
-            - (name:hotosm_sdn_health_facilities)
-            - (name:sudan-hospitals-in-khartoum-state-as-of-oct-2019)
-            - (name:health-facilities-locations-darfur)
+            - (name:state-of-palestine-government-health-centers)
+            - (name:palestinian-territories-healthsites)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_sdn_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: sudan-hospitals-in-khartoum-state-as-of-oct-2019
-            display_state: incomplete
-            comments: Dataset covers only Khartoum state.
-          - dataset_name: health-facilities-locations-darfur
-            display_state: incomplete
-            comments: Dataset covers only Darfur region.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:food-for-education-ffe-supported-schools-sudan)
-            - (name:hotosm_sdn_education_facilities)
-            - (name:sudan-schools)
+            - (name:state-of-palestine-west-bank-schools)
+            - (name:state-of-palestine-gaza-strip-schools)
           exclude:
-        metadata_overrides:
-          - dataset_name: food-for-education-ffe-supported-schools-sudan
-            display_state: incomplete
-            comments: Dataset covers a limited area and only includes schools in the program.
-          - dataset_name: hotosm_sdn_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -359,40 +308,22 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:worldpop-by-cod-sdn)
+            - (name:stateofpalestine_population_projection_1997-2021)
           exclude:
-        metadata_overrides:
-          - dataset_name: worldpop-by-cod-sdn
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:population-socio-economy-baseline-population-by-age-and-sex)
+            - (name:palestine-population-admin-0-to-2_bysex-and-agegroup_2017)
           exclude:
-        metadata_overrides:
-          - dataset_name: population-socio-economy-baseline-population-by-age-and-sex
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:sudan-poverty-rate)
-            - (name:sudan-mpi)
+            - (name:state-of-palestine-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-poverty-rate
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
