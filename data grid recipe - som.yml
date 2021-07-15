@@ -262,6 +262,7 @@ categories:
           include:
             - (name:somalia-schools)
             - (name:hotosm_som_education_facilities)
+            - (name:somalia-schools-and-enrollment)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-schools
