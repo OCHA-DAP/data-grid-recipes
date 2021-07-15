@@ -103,7 +103,7 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:a)
+            - (name:drc-severity-of-needs)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
