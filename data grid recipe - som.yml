@@ -130,6 +130,7 @@ categories:
         rules:
           include:
             - (name:somalia-road-network-and-access-constraints)
+            - (name:somalia-transportation-status)
           exclude:
 #DAMAGED BUILDINGS
       - name: damaged_buildings
