@@ -95,9 +95,6 @@ categories:
             - (name:iati-bdi)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-operational-presence
-            display_state: incomplete
-            comments: Dataset is not up to date.
           - dataset_name: iati-bdi
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
@@ -245,13 +242,9 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:hotosm_bdi_airports)
             - (name:ourairports-bdi)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_bdi_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: ourairports-bdi
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
@@ -268,15 +261,11 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:hotosm_bdi_health_facilities)
             - (name:burundi-healthsites)
             - (name:burundi-health-district-boundaries)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_bdi_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: burundi-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
