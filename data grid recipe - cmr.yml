@@ -135,9 +135,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:wfp-geonode-cameroon-road-network-main-roads)
           exclude:
-            - (private:false)
-            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
