@@ -50,23 +50,12 @@ categories:
             - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm)
-            - (name:chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: chad-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
             comments: Dataset is old.
-          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
-            display_state: incomplete
-            comments: 
           - dataset_name: chad-humanitarian-needs-overview
-            display_state: incomplete
-            comments: 
-          - dataset_name: chad-displacement-data-baseline-assessment-returns-region-logone-oriental-iom-dtm
-            display_state: incomplete
-            comments: 
-          - dataset_name: chad-displacement-data-baseline-assessment-returns-region-moyen-chari-iom-dtm
             display_state: incomplete
             comments: 
 
