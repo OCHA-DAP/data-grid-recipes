@@ -20,13 +20,7 @@ categories:
         rules:
           include:
             - (name:cameroon-baseline-assessment-data-iom-dtm)
-            - (name:sahel-population-movment)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movment
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
