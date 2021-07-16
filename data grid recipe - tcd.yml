@@ -149,6 +149,7 @@ categories:
         rules:
           include:
             - (name:wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm)
+            - (name:wfp-geonode-chad-road-network-main-roads)
           exclude:
         metadata_overrides:
           - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm
