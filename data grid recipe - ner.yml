@@ -43,6 +43,11 @@ categories:
           include:
             - (name:sahel-population-movment)
           exclude:
+        metadata_overrides:
+          - dataset_name: sahel-population-movment
+            display_state: incomplete
+            comments: 
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
