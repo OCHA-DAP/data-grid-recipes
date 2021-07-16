@@ -20,17 +20,7 @@ categories:
         rules:
           include:
             - (name:niger-population-movment)
-            - (name:sahel-population-movment)
-            - (name:lake-chad-basin-dashboard)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movment
-            display_state: incomplete
-            comments: 
-          - dataset_name: lake-chad-basin-dashboard
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -39,13 +29,9 @@ categories:
           include:
             - (name:unhcr-demographics-residing-ner)
             - (name:sahel-population-movment)
-            - (name:lake-chad-basin-dashboard)
           exclude:
         metadata_overrides:
           - dataset_name: sahel-population-movment
-            display_state: incomplete
-            comments: 
-          - dataset_name: lake-chad-basin-dashboard
             display_state: incomplete
             comments: 
 
@@ -63,7 +49,7 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:sahel-population-movment)
+            - (name:niger-population-movment)
           exclude:
 #HNO
       - name: hno
@@ -178,8 +164,9 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
         rules:
           include:
-            - (name:prevalence-of-severe-acute-malnutrition-of-sahel)
           exclude:
+            - (private:false)
+            - (private:true)
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
@@ -219,7 +206,6 @@ categories:
           include:
             - (name:niger-settlements)
             - (name:highresolutionpopulationdensitymaps-ner)
-            - (name:hotosm_niger_populated_places)
           exclude:
         metadata_overrides:
           - dataset_name: niger-settlements
@@ -228,9 +214,6 @@ categories:
           - dataset_name: highresolutionpopulationdensitymaps-ner
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
-          - dataset_name: hotosm_niger_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -271,16 +254,12 @@ categories:
         rules:
           include:
             - (name:niger-healthsites)
-            - (name:hotosm_niger_health_facilities)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
           - dataset_name: niger-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_niger_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
@@ -321,11 +300,6 @@ categories:
           include:
             - (name:niger-administrative-level-0-3-population-statistics)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-administrative-level-0-3-population-statistics
-            display_state: incomplete
-            comments: Dataset is not endorsed as COD.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
