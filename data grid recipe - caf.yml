@@ -21,13 +21,9 @@ categories:
           include:
             - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
             - (name:car-baseline-assessment-data-iom-dtm)
-            - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
           - dataset_name: car-baseline-assessment-data-iom-dtm
-            display_state: incomplete
-            comments: 
-          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
             display_state: incomplete
             comments: 
 
