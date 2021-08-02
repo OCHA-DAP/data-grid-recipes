@@ -44,9 +44,8 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
+            - (name:haiti-pin-hno-2019)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -76,7 +75,6 @@ categories:
         rules:
           include:
             - (name:haiti-operational-presence)
-            - (name:haiti-cible-hrp-2019-2020)
             - (name:iati-hti)
           exclude:
         metadata_overrides:
@@ -309,9 +307,8 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
+            - (name:haiti-population-statistics-country-level)
           exclude:
-            - (private:false)
-            - (private:true)
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
