@@ -295,11 +295,6 @@ categories:
             - (name:zimbabwe-baseline-population-projection)
             - (name:zimbabwe-administrative-levels-0-2-population-statistics)
           exclude:
-        metadata_overrides:
-          - dataset_name: zimbabwe-administrative-levels-0-2-population-statistics
-            display_state: incomplete
-            comments: Dataset is not endorsed as COD.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
