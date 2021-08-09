@@ -222,9 +222,6 @@ categories:
             - (name:ethiopia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
         metadata_overrides:
-          - dataset_name: ethiopia-settlements
-            display_state: incomplete
-            comments: Data is not up to date.
           - dataset_name: ethiopia-high-resolution-population-density-maps-demographic-estimates
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
