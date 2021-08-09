@@ -99,9 +99,6 @@ categories:
             - (name:iati-eth)
           exclude:
         metadata_overrides:
-          - dataset_name: ethiopia-operational-presence
-            display_state: incomplete
-            comments: Data is not up to date.
           - dataset_name: iati-eth
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
