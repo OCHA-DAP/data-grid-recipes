@@ -25,7 +25,7 @@ categories:
         metadata_overrides:
           - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
             display_state: incomplete
-            comments: 
+            comments: Dataset is old.
 
 #REFUGEES POCs
       - name: refugees_poc
