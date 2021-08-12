@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
+            - (name:situation-des-personnes-deplacees-internes)
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
