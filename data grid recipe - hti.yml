@@ -76,6 +76,7 @@ categories:
           include:
             - (name:haiti-operational-presence)
             - (name:iati-hti)
+            - (name:haiti-organizations-physical-presence)
           exclude:
         metadata_overrides:
           - dataset_name: iati-hti
@@ -307,7 +308,7 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:haiti-population-statistics-country-level)
+            - (name:haiti-subnational-population-statistics)
           exclude:
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
