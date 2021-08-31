@@ -79,6 +79,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:5w-unicef-venezuela-january-june-2021)
             - (name:iati-ven)
           exclude:
         metadata_overrides:
