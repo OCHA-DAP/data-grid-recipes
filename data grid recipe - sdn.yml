@@ -19,6 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
+            - (name:sudan-displacement-data-idps-iom-dtm)
             - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:sudan-idp-camps)
           exclude:
@@ -28,7 +29,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
+            - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:refugee-population-of-sudan-unhcr)
           exclude:
         metadata_overrides:
@@ -44,11 +45,6 @@ categories:
           include:
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-returnee-data-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -125,10 +121,10 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-flood-affected-people-from-2013-to-2020
             display_state: incomplete
-            comments: Data covers affected areas only due to flood.
+            comments: Data covers historical data on affected areas due to flood.
           - dataset_name: sudan-flood-affected-areas-2020
             display_state: incomplete
-            comments: Data covers historical data on affected areas due to flood.
+            comments: Data covers affected areas only due to flood.
 
 #CONFLICT EVENTS
       - name: conflict_events
