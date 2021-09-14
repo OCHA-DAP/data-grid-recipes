@@ -255,6 +255,9 @@ categories:
           - dataset_name: hotosm_nga_health_facilities
             display_state: incomplete
             comments: 
+          - dataset_name: nigeria-healthsites
+            display_state: incomplete
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
