@@ -29,6 +29,7 @@ categories:
           include:
             - (name:refugees-residing-nga)
             - (name:unhcr-demographics-residing-nga)
+            - (name:nigeria-refugees-and-asylum-seekers-in-nigeria)
           exclude:
 #RETURNEES
       - name: returnees
