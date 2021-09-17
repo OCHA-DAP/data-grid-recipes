@@ -261,14 +261,13 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:burundi-healthsites)
             - (name:burundi-health-district-boundaries)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-healthsites
+          - dataset_name: burundi-health-district-boundaries
             display_state: incomplete
-            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
+            comments: Dataset is not up to date.
 
 #EDUCATION FACILITIES
       - name: education_facilities
