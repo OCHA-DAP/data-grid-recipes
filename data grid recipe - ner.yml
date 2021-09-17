@@ -213,9 +213,6 @@ categories:
             - (name:highresolutionpopulationdensitymaps-ner)
           exclude:
         metadata_overrides:
-          - dataset_name: niger-settlements
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: highresolutionpopulationdensitymaps-ner
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
@@ -265,9 +262,6 @@ categories:
           - dataset_name: niger-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
 
 #EDUCATION FACILITIES
       - name: education_facilities
