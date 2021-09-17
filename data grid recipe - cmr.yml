@@ -27,26 +27,16 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:sahel-population-movment)
+            - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movment
-            display_state: incomplete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sahel-population-movment)
+            - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movment
-            display_state: incomplete
-            comments: 
-
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
@@ -211,6 +201,7 @@ categories:
         rules:
           include:
             - (name:highresolutionpopulationdensitymaps-cmr)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
           - dataset_name: highresolutionpopulationdensitymaps-cmr
@@ -256,10 +247,7 @@ categories:
         metadata_overrides:
           - dataset_name: cameroon-healthsites
             display_state: incomplete
-            comments: 
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
+            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine. 
 
 #EDUCATION FACILITIES
       - name: education_facilities
