@@ -19,13 +19,13 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
+            - (name:chad-site-village-assessment-lac-province-data-iom-dtm)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
         metadata_overrides:
-          - dataset_name: chad-displacement-data-baseline-assessment-iom-dtm
+          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
             display_state: incomplete
-            comments: Dataset is old.
+            comments: 
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -47,14 +47,10 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:chad-displacement-data-baseline-assessment-iom-dtm)
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:chad-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
-          - dataset_name: chad-displacement-data-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: Dataset is old.
           - dataset_name: chad-humanitarian-needs-overview
             display_state: incomplete
             comments: 
@@ -65,10 +61,10 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:sites-des-pdis-et-refugies-au-tchad)
+            - (name:chad-site-village-assessment-lac-province-data-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: sites-des-pdis-et-refugies-au-tchad
+          - dataset_name: chad-site-village-assessment-lac-province-data-iom-dtm
             display_state: incomplete
             comments: 
 
@@ -249,7 +245,7 @@ categories:
             comments: The data is updated in near-real time from OpenStreetMap servers. OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
           - dataset_name: wfp-geonode-chad-road-network-main-roads
             display_state: incomplete
-            comments: The data is updated in near-real time from OpenStreetMap servers. OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -283,9 +279,6 @@ categories:
           - dataset_name: chad-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
