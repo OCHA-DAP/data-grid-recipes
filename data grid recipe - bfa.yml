@@ -35,6 +35,11 @@ categories:
           include:
             - (name:burkina-humanitarian-needs-overview-2021)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-humanitarian-needs-overview-2021
+            display_state: incomplete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -271,14 +276,10 @@ categories:
         rules:
           include:
             - (name:burkina-faso-education)
-            - (name:liste-des-ecoles-primaires-publiques-en-2016-2017)
             - (name:hotosm_bfa_education_facilities)
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-education
-            display_state: incomplete
-            comments: Dataset is not up to date.
-          - dataset_name: liste-des-ecoles-primaires-publiques-en-2016-2017
             display_state: incomplete
             comments: Dataset is not up to date.
           - dataset_name: hotosm_bfa_education_facilities
