@@ -23,6 +23,11 @@ categories:
             - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:sudan-idp-camps)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarian-needs-overview-2015-2021
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -125,6 +130,9 @@ categories:
           - dataset_name: sudan-flood-affected-areas-2020
             display_state: incomplete
             comments: Data covers affected areas only due to flood.
+          - dataset_name: sudan-hazards
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #CONFLICT EVENTS
       - name: conflict_events
@@ -200,6 +208,11 @@ categories:
             - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-humanitarian-needs-overview-2015-2021
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #SAM
       - name: sam
         title: Severe Acute Malnutrition Rate
