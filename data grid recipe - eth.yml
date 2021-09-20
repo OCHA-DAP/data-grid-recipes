@@ -120,6 +120,11 @@ categories:
             - (name:ethiopia-2020-severity-of-needs-analysis-xlsx)
             - (name:ethiopia-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
