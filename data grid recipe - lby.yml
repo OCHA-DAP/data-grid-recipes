@@ -227,6 +227,9 @@ categories:
             - (name:hotosm_lby_roads)
           exclude:
         metadata_overrides:
+          - dataset_name: wfp-geonode-libya-streets-and-pathways
+            display_state: incomplete
+            comments: 
           - dataset_name: hotosm_lby_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
