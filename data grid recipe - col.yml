@@ -195,6 +195,11 @@ categories:
             - (name:colombia-administrative-boundaries-levels-0-3)
             - (name:veredas-de-colombia)
           exclude:
+        metadata_overrides:
+          - dataset_name: veredas-de-colombia
+            display_state: incomplete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
