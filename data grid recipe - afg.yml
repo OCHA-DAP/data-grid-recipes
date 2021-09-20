@@ -27,6 +27,9 @@ categories:
           - dataset_name: afghanistan-conflict-induced-displacements-in-2021
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: afghanistan-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -36,6 +39,11 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -45,6 +53,11 @@ categories:
             - (name:afghanistan-voluntary-repatriation-2021)
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #HUM PROFILE LOCATIONS
       - name: humanitarian_profile_locations
         title: Humanitarian Profile Locations
