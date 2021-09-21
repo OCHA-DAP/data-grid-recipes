@@ -145,9 +145,8 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:wfp-geonode-burkina-faso-road-network-main-roads)
           exclude:
-            - (private:false)
-            - (private:true)
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -230,6 +229,7 @@ categories:
         rules:
           include:
             - (name:hotosm_bfa_roads)
+            - (name:wfp-geonode-burkina-faso-road-network-main-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bfa_roads
