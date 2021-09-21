@@ -133,6 +133,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-road-network-main-roads
+            display_state: incomplete
+            comments: 
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -217,6 +222,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-road-network-main-roads
+            display_state: incomplete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
