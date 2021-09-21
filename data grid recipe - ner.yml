@@ -224,11 +224,15 @@ categories:
         rules:
           include:
             - (name:hotosm_niger_roads)
+            - (name:niger-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_niger_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: niger-roads
+            display_state: incomplete
+            comments: Dataset is old.
 
 #AIRPORTS
       - name: airports
