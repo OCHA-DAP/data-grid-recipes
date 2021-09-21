@@ -280,6 +280,9 @@ categories:
             - (name:state-of-palestine-health-0)
           exclude:
         metadata_overrides:
+          - dataset_name: state-of-palestine-government-health-centers
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: palestinian-territories-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
