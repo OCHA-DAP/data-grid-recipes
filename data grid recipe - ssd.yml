@@ -29,6 +29,7 @@ categories:
         rules:
           include:
             - (name:refugees-inside-south-sudan)
+            - (name:unhcr-population-data-for-ssd)
           exclude:
         metadata_overrides:
           - dataset_name: refugees-inside-south-sudan
