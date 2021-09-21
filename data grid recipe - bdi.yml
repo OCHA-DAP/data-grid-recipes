@@ -139,9 +139,13 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:burundi-road-network)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: burundi-road-network
+            display_state: incomplete
+            comments: Dataset is old.
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
@@ -230,11 +234,15 @@ categories:
         rules:
           include:
             - (name:hotosm_bdi_roads)
+            - (name:burundi-road-network)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bdi_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: burundi-road-network
+            display_state: incomplete
+            comments: Dataset is old.
 
 #AIRPORTS
       - name: airports
