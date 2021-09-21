@@ -203,7 +203,7 @@ categories:
             - (name:wfp-geonode-ica-afghanistan-prevalence-of-global-acute-malnutrition-gam)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-prevalence-of-global-acute-malnutrition-gam
+          - dataset_name: wfp-geonode-ica-afghanistan-prevalence-of-global-acute-malnutrition-gam
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
