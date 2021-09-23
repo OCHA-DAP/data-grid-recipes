@@ -198,12 +198,11 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:haiti-settlements)
-            - (name:hotosm_hti_populated_places)
+            - (name:haiti-osm-settlements)
             - (name:haiti-high-resolution-population-density-maps-demographic-estimates)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_hti_populated_places
+          - dataset_name: haiti-osm-settlements
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: haiti-high-resolution-population-density-maps-demographic-estimates
