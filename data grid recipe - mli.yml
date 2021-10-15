@@ -97,7 +97,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         flags:
           - key: not_applicable
-            comments: This sub-category is not applicable in this context.
+            comments: Conflict Events is not applicable in Mali at this stage.
         rules:
           include:
             - (name:acled-data-for-mali)
