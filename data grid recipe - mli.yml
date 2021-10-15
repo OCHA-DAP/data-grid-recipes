@@ -86,6 +86,9 @@ categories:
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+        flags:
+          - key: not_applicable
+            comments: 
         rules:
           include:
           exclude:
