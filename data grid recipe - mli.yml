@@ -86,9 +86,6 @@ categories:
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        flags:
-          - key: not_applicable
-            comments: 
         rules:
           include:
           exclude:
@@ -98,9 +95,6 @@ categories:
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
-        flags:
-          - key: not_applicable
-            comments: Conflict Events is not applicable in Mali at this stage.
         rules:
           include:
             - (name:acled-data-for-mali)
