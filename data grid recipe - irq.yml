@@ -109,8 +109,9 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:iraq-major-roads-network)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -181,16 +182,12 @@ categories:
         rules:
           include:
             - (name:wfp-geonode-iraq-road-network-main-roads)
-            - (name:iraq-roads)
             - (name:iraq-major-roads-network)
           exclude:
         metadata_overrides:
           - dataset_name: wfp-geonode-iraq-road-network-main-roads
             display_state: incomplete
             comments: This dataset is an extraction of roads from OpenStreetMap data made by WFP following UNSDI-T standards. OpenStreetMap data relies on user contributions and may not be comprehensive. 
-          - dataset_name: iraq-roads
-            display_state: incomplete
-            comments: 
           - dataset_name: iraq-major-roads-network
             display_state: incomplete
             comments: 
