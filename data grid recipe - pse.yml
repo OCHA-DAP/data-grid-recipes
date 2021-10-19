@@ -27,13 +27,8 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:state-of-palestine-refugees)
+            - (name:unhcr-population-data-for-pse)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-refugees
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #RETURNEES
       - name: returnees
         title: Returnees
