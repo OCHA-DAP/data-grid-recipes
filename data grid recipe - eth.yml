@@ -16,16 +16,20 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
             - (name:ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm)
+            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
           exclude:
         metadata_overrides:
           - dataset_name: ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: ethiopia-displacement-data-village-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -35,6 +39,7 @@ categories:
           include:
             - (name:unhcr-demographics-residing-eth)
             - (name:ethiopia-refugee-camp-locations)
+            - (name:unhcr-population-data-for-eth)
           exclude:
         metadata_overrides:
           - dataset_name: ethiopia-refugee-camp-locations
@@ -49,24 +54,6 @@ categories:
           include:
             - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
           exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
-          include:
-            - (name:ethiopia-baseline-assessment-data-iom-dtm)
-            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
-            - (name:ethiopia-refugee-camp-locations)
-          exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-displacement-data-village-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
-          - dataset_name: ethiopia-refugee-camp-locations
-            display_state: incomplete
-            comments: Data is not up to date.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -74,14 +61,6 @@ categories:
         rules:
           include:
             - (name:ethiopia-humanitarian-needs-overview)
-          exclude:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -155,15 +134,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -178,19 +148,10 @@ categories:
           include:
             - (name:ethiopia-acute-food-insecurity-country-data)
           exclude:
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
             - (name:ethiopia-severe-acute-malnutrition-2021)
@@ -289,15 +250,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -307,14 +259,6 @@ categories:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division.
-        rules:
-          include:
-            - (name:ethiopia-population-data-_-admin-level-0-3)
-          exclude:
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
