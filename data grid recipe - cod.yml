@@ -16,7 +16,7 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
@@ -42,14 +42,6 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
-          include:
-            - (name:drc-displacement-deplace-site-assessment-ocha)
-          exclude:
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -57,15 +49,6 @@ categories:
         rules:
           include:
             - (name:democratic-republic-of-the-congo-humanitarian-needs-overview)
-          exclude:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (name:acled-data-for-democratic-republic-of-the-congo)
-            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -109,9 +92,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-democratic-republic-of-the-congo)
-            - (name:acled-database)
           exclude:
+            - (private:false)
+            - (private:true)
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -138,15 +121,6 @@ categories:
             display_state: incomplete
             comments: 
 
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -159,21 +133,12 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:drc-acute-food-insecurity)
             - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
           exclude:
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
-        rules:
-          include:
-            - (name:prevalence-de-la-malnutrition-en-rdc)
-          exclude:
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
             - (name:prevalence-de-la-malnutrition-en-rdc)
@@ -276,19 +241,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (name:nyiragongo-2021-eruption-affected-schools)
-          exclude:
-        metadata_overrides:
-          - dataset_name: nyiragongo-2021-eruption-affected-schools
-            display_state: incomplete
-            comments: The dataset covers only affected schools by the Nyiragongo 2021 eruption.
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -298,14 +250,6 @@ categories:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division.
-        rules:
-          include:
-            - (name:rdc-statistiques-des-populations)
-          exclude:
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
