@@ -16,28 +16,26 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (name:sudan-displacement-data-idps-iom-dtm)
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
             - (name:sudan-idp-camps)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarian-needs-overview-2015-2021
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
+            - (name:unhcr-refugee-camps)
             - (name:refugee-population-of-sudan-unhcr)
+            - (name:unhcr-population-data-for-sdn)
           exclude:
         metadata_overrides:
+          - dataset_name: unhcr-refugee-camps
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
           - dataset_name: refugee-population-of-sudan-unhcr
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -50,20 +48,6 @@ categories:
           include:
             - (name:sudan-returnee-data-iom-dtm)
           exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
-          include:
-            - (name:sudan-idp-camps)
-            - (name:refu)
-          exclude:
-        metadata_overrides:
-          - dataset_name: refu
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -71,14 +55,7 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2021)
-          exclude:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (name:acled-database)
+            - (name:2020-multi-sectoral-needs-assessment-analysis-results-of-household-data-sudan)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -177,14 +154,6 @@ categories:
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (name:sudan-flood-affected-areas-2020)
-          exclude:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -199,24 +168,10 @@ categories:
           include:
             - (name:sudan-acute-food-insecurity-country-data)
           exclude:
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
-        rules:
-          include:
-            - (name:sudan-humanitarian-needs-overview-2015-2021)
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
-          exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarian-needs-overview-2015-2021
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
             - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
@@ -347,15 +302,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -365,27 +311,17 @@ categories:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division.
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview-2015-2020)
             - (name:worldpop-by-cod-sdn)
+            - (name:population-socio-economy-baseline-population-by-age-and-sex)
           exclude:
         metadata_overrides:
           - dataset_name: worldpop-by-cod-sdn
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
-        rules:
-          include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
-            - (name:population-socio-economy-baseline-population-by-age-and-sex)
-          exclude:
-        metadata_overrides:
           - dataset_name: population-socio-economy-baseline-population-by-age-and-sex
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
