@@ -279,6 +279,11 @@ categories:
             - (name:stateofpalestine_population_projection_1997-2021)
             - (name:palestine-population-admin-0-to-2_bysex-and-agegroup_2017)
           exclude:
+        metadata_overrides:
+          - dataset_name: palestine-population-admin-0-to-2_bysex-and-agegroup_2017
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
