@@ -36,6 +36,9 @@ categories:
           - dataset_name: unhcr-population-data-for-nga
             display_state: complete
             comments: 
+          - dataset_name: unhcr-demographics-residing-nga
+            display_state: incomplete
+            comments: 
 
 #RETURNEES
       - name: returnees
