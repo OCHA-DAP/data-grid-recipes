@@ -20,6 +20,7 @@ categories:
         rules:
           include:
             - (name:nigeria-baseline-data-iom-dtm)
+            - (name:nigeria-location-assessment-data)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -40,6 +41,9 @@ categories:
             display_state: incomplete
             comments: 
           - dataset_name: unhcr-demographics-residing-nga
+            display_state: incomplete
+            comments: 
+          - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
             display_state: incomplete
             comments: 
 
@@ -148,9 +152,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
