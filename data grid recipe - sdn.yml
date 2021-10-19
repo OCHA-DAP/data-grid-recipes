@@ -20,31 +20,15 @@ categories:
         rules:
           include:
             - (name:sudan-displacement-data-idps-iom-dtm)
-            - (name:sudan-idp-camps)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-idp-camps
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-refugee-camps)
-            - (name:refugee-population-of-sudan-unhcr)
             - (name:unhcr-population-data-for-sdn)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-refugee-camps
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: refugee-population-of-sudan-unhcr
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -324,15 +308,11 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:sudan-humanitarian-needs-overview-2015-2020)
             - (name:worldpop-by-cod-sdn)
             - (name:population-socio-economy-baseline-population-by-age-and-sex)
           exclude:
         metadata_overrides:
           - dataset_name: worldpop-by-cod-sdn
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: population-socio-economy-baseline-population-by-age-and-sex
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
