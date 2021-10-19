@@ -20,32 +20,15 @@ categories:
         rules:
           include:
             - (name:ethiopia-baseline-assessment-data-iom-dtm)
-            - (name:ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm)
-            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-displacement-northern-region-tigray-idps-site-assessment-iom-dtm
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: ethiopia-displacement-data-village-assessment-iom-dtm
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-demographics-residing-eth)
-            - (name:ethiopia-refugee-camp-locations)
             - (name:unhcr-population-data-for-eth)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-refugee-camp-locations
-            display_state: incomplete
-            comments: Data is not up to date and does not contain the number of refugees or persons of concerns.
-
 #RETURNEES
       - name: returnees
         title: Returnees
