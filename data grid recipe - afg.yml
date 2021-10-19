@@ -16,18 +16,14 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
             - (name:afghanistan-conflict-induced-displacements-in-2021)
-            - (name:afghanistan-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-conflict-induced-displacements-in-2021
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: afghanistan-humanitarian-needs-overview
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
@@ -37,12 +33,12 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:afghanistan-humanitarian-needs-overview)
+            - (name:unhcr-population-data-for-afg)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+          - dataset_name: unhcr-population-data-for-afg
+            display_state: complete
+            comments: 
 
 #RETURNEES
       - name: returnees
@@ -58,14 +54,6 @@ categories:
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
-          include:
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
-          exclude:
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -74,20 +62,6 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (name:acled-database)
-            - (name:afghanistan-natural-disaster-incidents-in-2021)
-          exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2021
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -162,23 +136,6 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (name:afghanistan-natural-disaster-incidents-in-2021)
-            - (name:afghanistan-violence-against-civilians-and-vital-civilian-facilities)
-          exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2021
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-          - dataset_name: afghanistan-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -193,10 +150,10 @@ categories:
           include:
             - (name:afghanistan-acute-food-insecurity-country-data)
           exclude:
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
             - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
@@ -207,15 +164,6 @@ categories:
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -325,15 +273,6 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -343,14 +282,6 @@ categories:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division.
-        rules:
-          include:
-            - (name:afghanistan-subnational-population-statistics)
-          exclude:
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
