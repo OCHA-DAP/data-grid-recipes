@@ -23,9 +23,6 @@ categories:
             - (name:nigeria-location-assessment-data)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-baseline-data-iom-dtm
-            display_state: incomplete
-            comments: 
           - dataset_name: nigeria-location-assessment-data
             display_state: incomplete
             comments: 
