@@ -183,13 +183,8 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
-            - (name:state-of-palestine-settlements)
+            - (name:hotosm_pse_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-settlements
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #ROADS
       - name: roads
         title: Roads
