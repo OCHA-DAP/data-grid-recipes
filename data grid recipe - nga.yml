@@ -187,14 +187,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:highresolutionpopulationdensitymaps-nga)
             - (name:hotosm_nga_populated_places)
             - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
         metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-nga
-            display_state: incomplete
-            comments: The dataset is not disaggregated by admin boundaries
           - dataset_name: hotosm_nga_populated_places
             display_state: incomplete
             comments: 
@@ -277,7 +273,13 @@ categories:
         rules:
           include:
             - (name:nigeria-2016-population-data)
+            - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-nga
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
