@@ -178,15 +178,11 @@ categories:
         rules:
           include:
             - (name:zimbabwe-settlements)
-            - (name:highresolutionpopulationdensitymaps-zwe)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-settlements
             display_state: incomplete
             comments: Dataset is not up to date
-          - dataset_name: highresolutionpopulationdensitymaps-zwe
-            display_state: incomplete
-            comments: The dataset is not disaggregated by admin boundaries.
 
 #ROADS
       - name: roads
@@ -266,11 +262,15 @@ categories:
           include:
             - (name:zimbabwe-baseline-population-projection)
             - (name:zimbabwe-administrative-levels-0-2-population-statistics)
+            - (name:highresolutionpopulationdensitymaps-zwe)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-baseline-population-projection
             display_state: incomplete
             comments: 
+          - dataset_name: highresolutionpopulationdensitymaps-zwe
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries.
 
 #POVERTY RATE
       - name: poverty_rate
