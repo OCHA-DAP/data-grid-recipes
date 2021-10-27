@@ -188,15 +188,11 @@ categories:
         rules:
           include:
             - (name:hotosm_nga_populated_places)
-            - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_nga_populated_places
             display_state: incomplete
             comments: 
-          - dataset_name: highresolutionpopulationdensitymaps-nga
-            display_state: incomplete
-            comments: The dataset is not disaggregated by admin boundaries
 
 #ROADS
       - name: roads
@@ -273,7 +269,13 @@ categories:
         rules:
           include:
             - (name:nigeria-2016-population-data)
+            - (name:highresolutionpopulationdensitymaps-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-nga
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
