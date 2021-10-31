@@ -162,14 +162,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:highresolutionpopulationdensitymaps-cmr)
             - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
-        metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-cmr
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #ROADS
       - name: roads
         title: Roads
@@ -242,9 +236,13 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:highresolutionpopulationdensitymaps-cmr)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-cmr
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
