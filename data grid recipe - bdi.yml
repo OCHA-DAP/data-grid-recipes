@@ -177,15 +177,11 @@ categories:
         rules:
           include:
             - (name:hotosm_bdi_populated_places)
-            - (name:highresolutionpopulationdensitymaps-bdi)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_bdi_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: highresolutionpopulationdensitymaps-bdi
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
 
 #ROADS
       - name: roads
@@ -263,7 +259,13 @@ categories:
         rules:
           include:
             - (name:burundi-administrative-level-0-2-population-statistics-2018)
+            - (name:highresolutionpopulationdensitymaps-bdi)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-bdi
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
