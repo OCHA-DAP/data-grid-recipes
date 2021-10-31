@@ -177,13 +177,7 @@ categories:
         rules:
           include:
             - (name:chad-populated-places-settlements)
-            - (name:highresolutionpopulationdensitymaps-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-tcd
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-
 #ROADS
       - name: roads
         title: Roads
@@ -260,8 +254,14 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:highresolutionpopulationdensitymaps-tcd)
             - (name:population-statistics-of-chad)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-tcd
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
