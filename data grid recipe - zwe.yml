@@ -224,15 +224,11 @@ categories:
         rules:
           include:
             - (name:zimbabwe-healthsites)
-            - (name:hotosm_zwe_health_facilities)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_zwe_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
 #EDUCATION FACILITIES
       - name: education_facilities
