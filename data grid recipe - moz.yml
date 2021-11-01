@@ -177,15 +177,11 @@ categories:
         rules:
           include:
             - (name:hotosm_moz_populated_places)
-            - (name:highresolutionpopulationdensitymaps-moz)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_moz_populated_places
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: highresolutionpopulationdensitymaps-moz
-            display_state: incomplete
-            comments: The dataset is not disaggregated by admin boundaries.
 
 #ROADS
       - name: roads
@@ -265,8 +261,14 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:highresolutionpopulationdensitymaps-moz)
             - (name:mozambique-subnational-population-statistics)
           exclude:
+        metadata_overrides:
+          - dataset_name: highresolutionpopulationdensitymaps-moz
+            display_state: incomplete
+            comments: The dataset is not disaggregated by admin boundaries.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
