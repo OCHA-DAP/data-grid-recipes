@@ -210,7 +210,6 @@ categories:
         rules:
           include:
             - (name:pakistan-healthsites)
-            - (name:hotosm_pak_health_facilities)
             - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
             - (name:pakistan-health)
           exclude:
@@ -218,9 +217,6 @@ categories:
           - dataset_name: pakistan-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: hotosm_pak_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: health-facilities-in-khyber-pakhtunkhwa-tribal-districts
             display_state: incomplete
             comments: The data in this dataset provides complimentary data.
