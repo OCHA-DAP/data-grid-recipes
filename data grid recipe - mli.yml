@@ -105,7 +105,6 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:mali-access-data-march-2019)
             - (name:mali-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
         metadata_overrides:
@@ -173,15 +172,11 @@ categories:
         rules:
           include:
             - (name:mali-settlements)
-            - (name:highresolutionpopulationdensitymaps-mli)
           exclude:
         metadata_overrides:
           - dataset_name: mali-settlements
             display_state: incomplete
             comments: 
-          - dataset_name: highresolutionpopulationdensitymaps-mli
-            display_state: incomplete
-            comments: The dataset is not desaggregated by admin boundaries.
 
 #ROADS
       - name: roads
