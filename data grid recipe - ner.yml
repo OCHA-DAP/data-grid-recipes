@@ -247,13 +247,7 @@ categories:
         rules:
           include:
             - (name:niger-administrative-level-0-3-population-statistics)
-            - (name:highresolutionpopulationdensitymaps-ner)
           exclude:
-        metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-ner
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
