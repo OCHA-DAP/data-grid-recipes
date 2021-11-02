@@ -105,8 +105,6 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:severity-of-humanitarian-access-difficulties-in-yemen)
-            - (name:yemen-hard-to-reach-districts)
             - (name:yemen-violence-aganist-civilian-and-vital-civilian-faciltities)
           exclude:
         metadata_overrides:
