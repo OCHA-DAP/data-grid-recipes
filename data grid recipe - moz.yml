@@ -19,9 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:mozambique-displacement-data-site-assessment-idai-iom-dtm)
-            - (name:mozambique-displacement-data-daily-sites-tracking-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -36,8 +36,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-idai-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -80,13 +81,9 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:aerial-survey-idai-24-29-march-2019)
           exclude:
-        metadata_overrides:
-          - dataset_name: aerial-survey-idai-24-29-march-2019
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -101,26 +98,18 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-road-access-constraints-cyclone-idai
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:mozambique-road-access-constraints-cyclone-idai)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-road-access-constraints-cyclone-idai
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -221,14 +210,10 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:mozambique-health-facility-damages-after-cyclone-idai)
             - (name:mozambique-healthsites)
             - (name:mozambique-health-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-health-facility-damages-after-cyclone-idai
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: mozambique-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
@@ -261,14 +246,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:highresolutionpopulationdensitymaps-moz)
             - (name:mozambique-subnational-population-statistics)
           exclude:
-        metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-moz
-            display_state: incomplete
-            comments: The dataset is not disaggregated by admin boundaries.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
