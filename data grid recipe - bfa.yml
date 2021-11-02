@@ -249,14 +249,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:highresolutionpopulationdensitymaps-bfa)
             - (name:burkina-faso-population-statistic)
           exclude:
-        metadata_overrides:
-          - dataset_name: highresolutionpopulationdensitymaps-bfa
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
