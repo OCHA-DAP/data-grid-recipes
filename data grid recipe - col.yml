@@ -27,9 +27,8 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:unhcr-population-data-for-col)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -170,13 +169,9 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:colombia-high-resolution-population-density-maps-demographic-estimates)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-high-resolution-population-density-maps-demographic-estimates
-            display_state: incomplete
-            comments: The dataset is not desaggregated by admin boundaries.
-
+            - (private:false)
+            - (private:true)
 #ROADS
       - name: roads
         title: Roads
