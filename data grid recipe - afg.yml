@@ -222,15 +222,15 @@ categories:
         rules:
           include:
             - (name:afghanistan-healthsites)
-            - (name:2018-impact-of-explosive-weapons-on-health-facilities)
+            - (name:afghanistan-health-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
-          - dataset_name: 2018-impact-of-explosive-weapons-on-health-facilities
+          - dataset_name: afghanistan-health-facilities
             display_state: incomplete
-            comments: Dataset covers only affected health facilities.
+            comments: The dataset is missing geo-coordinates.
 
 #EDUCATION FACILITIES
       - name: education_facilities
