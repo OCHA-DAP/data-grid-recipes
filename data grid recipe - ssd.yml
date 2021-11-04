@@ -20,7 +20,6 @@ categories:
         rules:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
-            - (name:sudan-idp-registration-dtm-iom)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -42,7 +41,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:south-sudan-displacement-multi-sectoral-village-assessment-idps-returnees-iom-dtm)
+            - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
