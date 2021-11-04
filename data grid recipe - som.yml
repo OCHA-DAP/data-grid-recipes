@@ -220,6 +220,11 @@ categories:
           include:
             - (name:somalia-schools-and-enrollment)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-schools-and-enrollment
+            display_state: incomplete
+            comments: The dataset is missing geo-coordinates.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
