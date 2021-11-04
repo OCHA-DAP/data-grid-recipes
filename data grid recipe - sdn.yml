@@ -163,6 +163,11 @@ categories:
           include:
             - (name:sudan-administrative-boundaries-levels-0-2)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-administrative-boundaries-levels-0-2
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -236,7 +241,7 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: sudan-schools
             display_state: incomplete
-            comments: 
+            comments: The dataset is missing geo-coordinates.
 
 
 #POPULATION AND SOCIO-ECONOMY
