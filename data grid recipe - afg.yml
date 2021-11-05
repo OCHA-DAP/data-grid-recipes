@@ -230,7 +230,7 @@ categories:
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: afghanistan-health-facilities
             display_state: incomplete
-            comments: The dataset is missing geo-coordinates.
+            comments: The dataset is missing geo-coordinates and indications of the types of facilities.
 
 #EDUCATION FACILITIES
       - name: education_facilities
