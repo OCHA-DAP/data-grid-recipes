@@ -58,9 +58,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:nigeria-displacements-returnees-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
