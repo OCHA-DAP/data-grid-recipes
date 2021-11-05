@@ -187,6 +187,7 @@ categories:
         rules:
           include:
             - (name:hotosm_nga_populated_places)
+            - (name:bottom-up-gridded-population-estimates-for-nigeria)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_nga_populated_places
