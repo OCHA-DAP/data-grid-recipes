@@ -216,12 +216,11 @@ categories:
           include:
             - (name:south-sudan-village-assessment-education-facilities-iom-dtm)
             - (name:south-sudan-schools-and-enrolment-data-2015-sssams)
-            - (name:hotosm_sdn_education_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_sdn_education_facilities
+          - dataset_name: south-sudan-schools-and-enrolment-data-2015-sssams
             display_state: incomplete
-            comments: 
+            comments: Dataset not contains coordinates location of the school
 
 
 #POPULATION AND SOCIO-ECONOMY
