@@ -251,8 +251,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:state-of-palestine-west-bank-schools)
-            - (name:state-of-palestine-gaza-strip-schools)
+            - (name:state-of-palestine-education-facilities)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
