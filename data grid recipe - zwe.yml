@@ -67,13 +67,9 @@ categories:
         rules:
           include:
             - (name:zimbabwe-operational-presence)
-            - (name:ngoaidmap-zwe)
             - (name:iati-zwe)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-zwe
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
           - dataset_name: iati-zwe
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
