@@ -173,13 +173,9 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:zimbabwe-settlements)
           exclude:
-        metadata_overrides:
-          - dataset_name: zimbabwe-settlements
-            display_state: incomplete
-            comments: Dataset is not up to date
-
+            - (private:false)
+            - (private:true)
 #ROADS
       - name: roads
         title: Roads
