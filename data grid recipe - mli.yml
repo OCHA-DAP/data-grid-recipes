@@ -175,8 +175,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-settlements
-            display_state: incomplete
-            comments: 
+            display_state: complete
+            comments: Although the dataset is dated (from 2015), partners in the field confirmed the dataset reflects the latest available data for Populated Paces.
 
 #ROADS
       - name: roads
@@ -185,11 +185,15 @@ categories:
         rules:
           include:
             - (name:mali-roads)
+            - (name:hotosm_mali_roads)
           exclude:
         metadata_overrides:
           - dataset_name: mali-roads
             display_state: incomplete
             comments: 
+          - dataset_name: hotosm_mali_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
       - name: airports
@@ -198,11 +202,15 @@ categories:
         rules:
           include:
             - (name:ourairports-mli)
+            - (name:hotosm_mali_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-mli
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_mali_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -230,7 +238,13 @@ categories:
         rules:
           include:
             - (name:mali-schools)
+            - (name:hotosm_mali_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_mali_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -245,6 +259,11 @@ categories:
           include:
             - (name:population-projection-2018-of-mali-admin-levels-3-disaggregated-by-sex)
           exclude:
+        metadata_overrides:
+          - dataset_name: population-projection-2018-of-mali-admin-levels-3-disaggregated-by-sex
+            display_state: complete
+            comments: Although the dataset is dated (from 2020), partners in the field confirmed the dataset reflects the latest available data for Baseline Population.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
