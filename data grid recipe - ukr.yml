@@ -96,9 +96,13 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:ukraine-security-incidents)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ukraine-security-incidents
+            display_state: incomplete
+            comments: The coordinates of the conflict events are missing from the dataset.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -114,9 +118,13 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
+            - (name:ukraine-entry-exit-crossing-points)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ukraine-entry-exit-crossing-points
+            display_state: complete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -136,6 +144,9 @@ categories:
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
+        flags:
+          - key: not_applicable
+            comments: 
         rules:
           include:
           exclude:
@@ -194,12 +205,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-ukr)
+            - (name:ukraine-certified-airfields-2021)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-ukr
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: ukraine-certified-airfields-2021
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
@@ -232,6 +243,11 @@ categories:
           include:
             - (name:ukraine-education-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-education-facilities
+            display_state: incomplete
+            comments: The coordinates of education facilities are missing from the dataset.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
