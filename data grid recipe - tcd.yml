@@ -203,11 +203,15 @@ categories:
         rules:
           include:
             - (name:ourairports-tcd)
+            - (name:hotosm_chad_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-tcd
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_chad_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
