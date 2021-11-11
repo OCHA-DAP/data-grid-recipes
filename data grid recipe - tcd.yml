@@ -204,6 +204,7 @@ categories:
           include:
             - (name:ourairports-tcd)
             - (name:hotosm_chad_airports)
+            - (name:chad-aerodromes)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-tcd
@@ -212,6 +213,9 @@ categories:
           - dataset_name: hotosm_chad_airports
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: chad-aerodromes
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
