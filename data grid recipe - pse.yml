@@ -197,6 +197,9 @@ categories:
             - (name:wfp-geonode-palestine-streets-and-pathways)
           exclude:
         metadata_overrides:
+          - dataset_name: state-of-palestine-roads
+            display_state: incomplete
+            comments: The data covers only Gaza Strip roads.
           - dataset_name: hotosm_pse_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
