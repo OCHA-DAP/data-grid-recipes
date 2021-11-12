@@ -166,6 +166,11 @@ categories:
           include:
             - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points
+            display_state: complete
+            comments: The data is available upon request.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
