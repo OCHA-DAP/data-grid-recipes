@@ -220,6 +220,7 @@ categories:
         rules:
           include:
             - (name:sudan-healthsites)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-healthsites
