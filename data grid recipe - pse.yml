@@ -100,13 +100,7 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-humanitarian-access)
-            - (name:opt-violent-and-threatening-incidents-against-healthcare)
           exclude:
-        metadata_overrides:
-          - dataset_name: opt-violent-and-threatening-incidents-against-healthcare
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -120,6 +114,9 @@ categories:
           - dataset_name: state-of-palestine-hebron_h2_closures
             display_state: incomplete
             comments: The dataset covers information on small area. It's not up-to-date.
+          - dataset_name: state-of-palestine-roads
+            display_state: incomplete
+            comments: The data covers only Gaza Strip roads.
 
 
 #FOOD SECURITY AND NUTRITION
@@ -174,7 +171,6 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
-            - (name:hotosm_pse_populated_places)
           exclude:
 #ROADS
       - name: roads
@@ -184,8 +180,6 @@ categories:
           include:
             - (name:state-of-palestine-roads)
             - (name:hotosm_pse_roads)
-            - (name:wfp-geonode-palestine-road-network-main-roads)
-            - (name:wfp-geonode-palestine-streets-and-pathways)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-roads
@@ -194,12 +188,6 @@ categories:
           - dataset_name: hotosm_pse_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: wfp-geonode-palestine-road-network-main-roads
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-          - dataset_name: wfp-geonode-palestine-streets-and-pathways
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #AIRPORTS
       - name: airports
