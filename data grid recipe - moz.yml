@@ -61,11 +61,15 @@ categories:
           include:
             - (name:mozambique-operational-presence)
             - (name:iati-moz)
+            - (name:mozambique-5w-april-to-september-2021)
           exclude:
         metadata_overrides:
           - dataset_name: iati-moz
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
+          - dataset_name: mozambique-5w-april-to-september-2021
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
