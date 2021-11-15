@@ -180,6 +180,11 @@ categories:
           include:
             - (name:hotosm_afg_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_populated_places
+            display_state: complete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -188,6 +193,11 @@ categories:
           include:
             - (name:hotosm_afg_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_roads
+            display_state: complete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -196,6 +206,11 @@ categories:
           include:
             - (name:hotosm_afg_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_airports
+            display_state: complete
+            comments: 
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
