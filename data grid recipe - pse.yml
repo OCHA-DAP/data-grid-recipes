@@ -171,7 +171,6 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
-            - (name:hotosm_pse_populated_places)
           exclude:
 #ROADS
       - name: roads
