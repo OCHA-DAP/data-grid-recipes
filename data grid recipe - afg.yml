@@ -183,7 +183,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_populated_places
             display_state: complete
-            comments: 
+            comments: The data is used in country. 
 
 #ROADS
       - name: roads
@@ -196,7 +196,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_roads
             display_state: complete
-            comments: 
+            comments: The data is used in country.
 
 #AIRPORTS
       - name: airports
@@ -209,7 +209,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_airports
             display_state: complete
-            comments: 
+            comments: The data is used in country.
 
 
 #HEALTH AND EDUCATION
