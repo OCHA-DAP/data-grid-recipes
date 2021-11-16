@@ -241,6 +241,7 @@ categories:
         rules:
           include:
             - (name:hotosm_afg_education_facilities)
+            - (name:afghanistan-schools)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_afg_education_facilities
