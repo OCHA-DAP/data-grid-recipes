@@ -186,11 +186,15 @@ categories:
         rules:
           include:
             - (name:ourairports-mmr)
+            - (name:myanmar-airport)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-mmr
             display_state: incomplete
             comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: myanmar-airport
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
