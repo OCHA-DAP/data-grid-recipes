@@ -64,6 +64,9 @@ categories:
             - (name:mozambique-5w-april-to-september-2021)
           exclude:
         metadata_overrides:
+          - dataset_name: mozambique-operational-presence
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
           - dataset_name: iati-moz
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
