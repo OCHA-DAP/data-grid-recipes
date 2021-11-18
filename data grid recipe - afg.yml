@@ -248,7 +248,7 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: afghanistan-schools
-            display_state: incomplete
+            display_state: complete
             comments: The dataset is missing geo-coordinates of the education facilities.
 
 
