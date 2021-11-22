@@ -266,4 +266,9 @@ categories:
           include:
             - (name:sudan-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-mpi
+            display_state: complete
+            comments: 
+
 
