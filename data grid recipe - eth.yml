@@ -239,4 +239,9 @@ categories:
           include:
             - (name:ethiopia-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-mpi
+            display_state: complete
+            comments: 
+
 
