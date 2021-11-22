@@ -274,4 +274,9 @@ categories:
           include:
             - (name:nigeria-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-mpi
+            display_state: complete
+            comments: 
+
 
