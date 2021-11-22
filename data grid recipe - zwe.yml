@@ -86,9 +86,6 @@ categories:
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        flags:
-          - key: not_applicable
-            comments: 
         rules:
           include:
             - (name:zimbabwe-affected-areas-and-needs-data)
@@ -243,4 +240,9 @@ categories:
           include:
             - (name:zimbabwe-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: zimbabwe-mpi
+            display_state: complete
+            comments: 
+
 
