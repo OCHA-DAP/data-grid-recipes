@@ -204,11 +204,15 @@ categories:
         rules:
           include:
             - (name:zimbabwe-healthsites)
+            - (name:zimbabwe-health-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: zimbabwe-healthsites
             display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: zimbabwe-health-facilities
+            display_state: complete
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
