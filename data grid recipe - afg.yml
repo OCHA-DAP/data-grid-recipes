@@ -40,7 +40,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2021)
+            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -137,13 +137,12 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:afghanistan-prevalence-of-global-acute-malnutrition-gam)
             - (name:wfp-geonode-ica-afghanistan-prevalence-of-global-acute-malnutrition-gam)
           exclude:
         metadata_overrides:
           - dataset_name: wfp-geonode-ica-afghanistan-prevalence-of-global-acute-malnutrition-gam
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            display_state: complete
+            comments: 
 
 #FOOD PRICES
       - name: food_prices
@@ -223,13 +222,9 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:afghanistan-healthsites)
             - (name:afghanistan-health-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
           - dataset_name: afghanistan-health-facilities
             display_state: complete
             comments: 
@@ -240,13 +235,9 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_afg_education_facilities)
             - (name:afghanistan-schools)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_afg_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: afghanistan-schools
             display_state: complete
             comments: 
