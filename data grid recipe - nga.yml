@@ -246,10 +246,14 @@ categories:
         rules:
           include:
             - (name:hotosm_nga_education_facilities)
+            - (name:nigeria-education-facilities)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_nga_education_facilities
             display_state: incomplete
+            comments: 
+          - dataset_name: nigeria-education-facilities
+            display_state: complete
             comments: 
 
 
