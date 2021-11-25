@@ -20,27 +20,15 @@ categories:
         rules:
           include:
             - (name:chad-site-village-assessment-lac-province-data-iom-dtm)
-            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
-        metadata_overrides:
-          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
             - (name:unhcr-population-data-for-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
-            display_state: incomplete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -185,34 +173,16 @@ categories:
         rules:
           include:
             - (name:chad-roads-osm-ministry-of-transport)
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm)
-            - (name:wfp-geonode-chad-road-network-main-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm
-            display_state: incomplete
-            comments: The data is updated in near-real time from OpenStreetMap servers. OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
-          - dataset_name: wfp-geonode-chad-road-network-main-roads
-            display_state: incomplete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-tcd)
-            - (name:hotosm_chad_airports)
             - (name:chad-aerodromes)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-tcd
-            display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_chad_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
           - dataset_name: chad-aerodromes
             display_state: complete
             comments: 
@@ -229,14 +199,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:chad-healthsites)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-healthsites
-            display_state: incomplete
-            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -272,4 +236,9 @@ categories:
           include:
             - (name:chad-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-mpi
+            display_state: complete
+            comments: 
+
 
