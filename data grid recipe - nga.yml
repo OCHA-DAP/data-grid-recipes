@@ -40,7 +40,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: unhcr-population-data-for-nga
-            display_state: complete
+            display_state: incomplete
             comments: 
           - dataset_name: refugees-residing-nga
             display_state: incomplete
@@ -49,7 +49,7 @@ categories:
             display_state: incomplete
             comments: 
           - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #RETURNEES
