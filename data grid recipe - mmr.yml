@@ -97,11 +97,15 @@ categories:
         rules:
           include:
             - (name:myanmar-attacks-on-aid-operations-education-health-and-protection)
+            - (name:mimu-geonode-hard-to-reach-towns)
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-attacks-on-aid-operations-education-health-and-protection
             display_state: incomplete
             comments: The data may not be comprehensive.
+          - dataset_name: mimu-geonode-hard-to-reach-towns
+            display_state: complete
+            comments: 
 
 #TRANSPORTATION STATUS
       - name: transportation_status
