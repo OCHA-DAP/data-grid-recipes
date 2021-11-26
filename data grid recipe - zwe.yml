@@ -225,6 +225,7 @@ categories:
         rules:
           include:
             - (name:zimbabwe-education-facilities-in-zimbabwe)
+            - (name:zimbabwe-schools-in-zimbabwe)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
