@@ -20,13 +20,7 @@ categories:
         rules:
           include:
             - (name:nigeria-baseline-data-iom-dtm)
-            - (name:nigeria-location-assessment-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-location-assessment-data
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
