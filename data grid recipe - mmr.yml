@@ -228,6 +228,14 @@ categories:
             - (name:mimu-geonode-formal-sector-school-location-upper-myanmar)
             - (name:mimu-geonode-formal-sector-school-location-lower-myanmar)
           exclude:
+        metadata_overrides:
+          - dataset_name: mimu-geonode-formal-sector-school-location-upper-myanmar
+            display_state: complete
+            comments: Part I
+          - dataset_name: mimu-geonode-formal-sector-school-location-lower-myanmar
+            display_state: complete
+            comments: Part II
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
