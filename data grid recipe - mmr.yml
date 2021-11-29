@@ -96,13 +96,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:myanmar-attacks-on-aid-operations-education-health-and-protection)
             - (name:mimu-geonode-hard-to-reach-towns)
           exclude:
         metadata_overrides:
-          - dataset_name: myanmar-attacks-on-aid-operations-education-health-and-protection
-            display_state: incomplete
-            comments: The data may not be comprehensive.
           - dataset_name: mimu-geonode-hard-to-reach-towns
             display_state: complete
             comments: 
@@ -113,8 +109,9 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:myanmar-transportation-network)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -138,6 +135,11 @@ categories:
           include:
             - (name:myanmar-baseline-data-nutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-baseline-data-nutrition
+            display_state: incomplete
+            comments: The dataset is not up-to-date
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -176,26 +178,16 @@ categories:
         rules:
           include:
             - (name:mimu-geonode-myanmar-road-network)
-            - (name:hotosm_mmr_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_mmr_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-mmr)
             - (name:myanmar-airport)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-mmr
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
           - dataset_name: myanmar-airport
             display_state: complete
             comments: 
