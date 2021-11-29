@@ -20,13 +20,7 @@ categories:
         rules:
           include:
             - (name:burundi-baseline-assessment-data-iom-dtm)
-            - (name:burundi-displacement-data-emergency-event-tracking-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-displacement-data-emergency-event-tracking-iom-dtm
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -34,13 +28,7 @@ categories:
         rules:
           include:
             - (name:unhcr-population-data-for-bdi)
-            - (name:burundi-voluntary-repatriation-statistics-2017-2021)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-voluntary-repatriation-statistics-2017-2021
-            display_state: incomplete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -91,9 +79,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:burundi-emergencies-tracking-tool-ett)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -108,9 +95,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:burundi-emergencies-tracking-tool-ett)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: burundi-emergencies-tracking-tool-ett
+            display_state: incomplete
+            comments: Dataset gives the accessibility constraints due to natural hazards only.
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
@@ -144,9 +135,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:treatment-of-moderate-acute-malnutrition-in-burundi)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -225,14 +215,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:burundi-health-district-boundaries)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-health-district-boundaries
-            display_state: incomplete
-            comments: Dataset is not up to date.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -268,4 +252,9 @@ categories:
           include:
             - (name:burundi-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-mpi
+            display_state: complete
+            comments: 
+
 
