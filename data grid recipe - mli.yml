@@ -269,4 +269,9 @@ categories:
           include:
             - (name:mali-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-mpi
+            display_state: complete
+            comments: 
+
 
