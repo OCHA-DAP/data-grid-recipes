@@ -240,7 +240,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-schools
             display_state: complete
-            comments: 
+            comments: The data is only available upon request.
 
 
 #POPULATION AND SOCIO-ECONOMY
