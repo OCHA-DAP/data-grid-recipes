@@ -209,14 +209,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:burkina-faso-health-districts-districts-de-sante)
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-health-districts-districts-de-sante
-            display_state: incomplete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -256,4 +250,9 @@ categories:
           include:
             - (name:burkina-faso-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-mpi
+            display_state: complete
+            comments: 
+
 
