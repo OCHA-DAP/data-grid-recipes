@@ -248,4 +248,9 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-mpi
+            display_state: complete
+            comments: 
+
 
