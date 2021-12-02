@@ -162,15 +162,11 @@ categories:
         rules:
           include:
             - (name:somalia-settlements-p-coded-shapefile)
-            - (name:hotosm_som_populated_places)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-settlements-p-coded-shapefile
             display_state: complete
             comments: An updated version of this data is not available. It has been confirmed by country office that it's the only currently available data on settlements.
-          - dataset_name: hotosm_som_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
