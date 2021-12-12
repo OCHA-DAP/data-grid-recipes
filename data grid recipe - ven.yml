@@ -178,13 +178,7 @@ categories:
         rules:
           include:
             - (name:venezuela-roads-network)
-            - (name:hotosm_ven_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_ven_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #AIRPORTS
       - name: airports
         title: Airports
