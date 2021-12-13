@@ -113,7 +113,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: democratic-republic-of-the-congo-road-network-main-roads
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 
@@ -178,7 +178,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: democratic-republic-of-the-congo-road-network-main-roads
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #AIRPORTS
