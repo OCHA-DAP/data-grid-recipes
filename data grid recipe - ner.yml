@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-ner)
+            - (name:refugees-by-admin-2-in-niger)
           exclude:
 #RETURNEES
       - name: returnees
@@ -182,15 +182,11 @@ categories:
         rules:
           include:
             - (name:hotosm_niger_roads)
-            - (name:niger-roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_niger_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: niger-roads
-            display_state: incomplete
-            comments: Dataset is old.
 
 #AIRPORTS
       - name: airports
@@ -199,15 +195,11 @@ categories:
         rules:
           include:
             - (name:ourairports-ner)
-            - (name:hotosm_niger_airports)
           exclude:
         metadata_overrides:
           - dataset_name: ourairports-ner
             display_state: incomplete
             comments: Ourairports data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_niger_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -248,7 +240,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:niger-administrative-level-0-3-population-statistics)
+            - (name:niger-subnational-population-statistics)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -258,4 +250,9 @@ categories:
           include:
             - (name:niger-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-mpi
+            display_state: complete
+            comments: 
+
 
