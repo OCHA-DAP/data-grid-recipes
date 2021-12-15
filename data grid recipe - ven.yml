@@ -232,7 +232,6 @@ categories:
         rules:
           include:
             - (name:venezuela-administrative-level-0-1-2-and-3-population-statistics-and-gazeteer)
-            - (name:venezuela-administrative-level-0-1-2-and-3-population-statistics-and-gazeteer)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
