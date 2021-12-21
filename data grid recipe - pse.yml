@@ -91,7 +91,13 @@ categories:
         rules:
           include:
             - (name:acled-database)
+            - (name:palestine-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: palestine-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
