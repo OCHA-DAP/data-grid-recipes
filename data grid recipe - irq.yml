@@ -79,8 +79,13 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:iraq-severity-of-humanitarian-conditions)
+            - (name:iraq-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -89,7 +94,13 @@ categories:
           include:
             - (name:acled-data-for-iraq)
             - (name:acled-database)
+            - (name:iraq-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -164,12 +175,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:settlements-villages-towns-cities)
+            - (name:iraq-populated-places-2021)
           exclude:
         metadata_overrides:
-          - dataset_name: settlements-villages-towns-cities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. 
+          - dataset_name: iraq-populated-places-2021
+            display_state: complete
+            comments: 
 
 #ROADS
       - name: roads
@@ -245,9 +256,13 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:iraq-population-2021-cso-projection)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: iraq-population-2021-cso-projection
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
