@@ -37,11 +37,6 @@ categories:
           include:
             - (name:sahel-population-movement)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movement
-            display_state: incomplete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
