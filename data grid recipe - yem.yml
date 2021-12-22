@@ -63,13 +63,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:yemen-education-cluster-5w-2019)
+            - (name:yemen-monthly-organizations-presence-3w)
             - (name:iati-yem)
           exclude:
         metadata_overrides:
-          - dataset_name: yemen-education-cluster-5w-2019
-            display_state: incomplete
-            comments: Dataset is not up to date.
           - dataset_name: iati-yem
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
@@ -97,7 +94,7 @@ categories:
         rules:
           include:
             - (name:acled-data-for-yemen)
-            - (name:acled-database)
+            - (name:yemen-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
