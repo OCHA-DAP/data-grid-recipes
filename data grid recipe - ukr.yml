@@ -96,11 +96,15 @@ categories:
         rules:
           include:
             - (name:ukraine-security-incidents)
+            - (name:ukraine-acled-conflict-data)
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-security-incidents
             display_state: incomplete
             comments: The coordinates of the conflict events are missing from the dataset.
+          - dataset_name: ukraine-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
