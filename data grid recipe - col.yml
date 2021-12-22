@@ -89,11 +89,15 @@ categories:
         rules:
           include:
             - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
+            - (name:colombia-acled-conflict-data)
           exclude:
         metadata_overrides:
           - dataset_name: eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio
             display_state: incomplete
             comments: The data in this dataset does not include coordinates describing the location of the conflict events.
+          - dataset_name: colombia-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
