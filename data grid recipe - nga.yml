@@ -105,9 +105,13 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:nigeria-acled-conflict-data)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: nigeria-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
