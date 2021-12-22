@@ -35,10 +35,10 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sahel-population-movment)
+            - (name:sahel-population-movement)
           exclude:
         metadata_overrides:
-          - dataset_name: sahel-population-movment
+          - dataset_name: sahel-population-movement
             display_state: incomplete
             comments: 
 
