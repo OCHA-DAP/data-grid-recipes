@@ -205,6 +205,11 @@ categories:
           include:
             - (name:location-of-health-facilities-hospital-in-haiti)
           exclude:
+        metadata_overrides:
+          - dataset_name: location-of-health-facilities-hospital-in-haiti
+            display_state: complete
+            comments: Geo-coordinates are unavailable for some of the facilities.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
