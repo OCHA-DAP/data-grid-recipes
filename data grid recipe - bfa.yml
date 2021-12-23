@@ -60,6 +60,11 @@ categories:
           include:
             - (name:burkina-humanitarian-needs-overview-2021)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-humanitarian-needs-overview-2021
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -147,6 +152,11 @@ categories:
           include:
             - (name:cadre-harmonise)
           exclude:
+        metadata_overrides:
+          - dataset_name: cadre-harmonise
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -155,6 +165,11 @@ categories:
           include:
             - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
+        metadata_overrides:
+          - dataset_name: bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -190,6 +205,11 @@ categories:
           include:
             - (name:settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: settlements
+            display_state: complete
+            comments: Although the dataset is dated (from 2015), partners in the field confirmed the dataset reflects the latest available data for Popuated Places in the country.
+
 #ROADS
       - name: roads
         title: Roads
@@ -198,6 +218,11 @@ categories:
           include:
             - (name:wfp-geonode-burkina-faso-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-burkina-faso-road-network-main-roads
+            display_state: complete
+            comments: Although the dataset is dated (from 2017), partners in the field confirmed the dataset reflects the latest available data for Roads in the country.
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -252,6 +277,11 @@ categories:
           include:
             - (name:burkina-faso-population-statistic)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-population-statistic
+            display_state: complete
+            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Baseline Population in the country.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
