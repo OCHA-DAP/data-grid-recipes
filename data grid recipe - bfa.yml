@@ -34,6 +34,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-bfa)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-bfa
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -71,6 +76,9 @@ categories:
             - (name:iati-bfa)
           exclude:
         metadata_overrides:
+          - dataset_name: burkina-faso-presence-operationnelle
+            display_state: complete
+            comments: 
           - dataset_name: iati-bfa
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
@@ -169,6 +177,11 @@ categories:
           include:
             - (name:burkina-faso-administrative-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-administrative-boundaries
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
