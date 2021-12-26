@@ -99,7 +99,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-acled-conflict-data
             display_state: incomplete
-            comments: 
+            comments: More granular data is avaialble after registration on ACLED site.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -215,6 +215,11 @@ categories:
           include:
             - (name:yemen-herams-dataset-2020-list-of-health-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-herams-dataset-2020-list-of-health-facilities
+            display_state: complete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
