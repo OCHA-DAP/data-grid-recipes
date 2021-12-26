@@ -41,7 +41,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-displacement-population-movement-migrants-and-returns-iom-dtm
             display_state: incomplete
-            comments: Dataset is not up to date.
+            comments: 
 
 #HNO
       - name: hno
@@ -96,6 +96,11 @@ categories:
             - (name:acled-data-for-yemen)
             - (name:yemen-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-acled-conflict-data
+            display_state: incomplete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -107,7 +112,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-violence-aganist-civilian-and-vital-civilian-faciltities
             display_state: incomplete
-            comments: The dataset covers health related access constraints.
+            comments: The dataset only covers health related access constraints.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
