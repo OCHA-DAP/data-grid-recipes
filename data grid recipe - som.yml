@@ -110,7 +110,7 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites
             display_state: incomplete
-            comments: The data may not be comprehensive.
+            comments: The data may not be comprehensive and it's out of date(from 2020).
 
 #TRANSPORTATION STATUS
       - name: transportation_status
