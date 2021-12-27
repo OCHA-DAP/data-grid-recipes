@@ -94,9 +94,13 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
+            - (name:south-sudan-acled-conflict-data)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: south-sudan-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -206,7 +210,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:south-sudan-health)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
