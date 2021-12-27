@@ -204,12 +204,12 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:libya-healthsites)
+            - (name:libya-health-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: libya-healthsites
+          - dataset_name: libya-health-facilities
             display_state: incomplete
-            comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
+            comments: The coordinates of health facilities are missing from the dataset.
 
 #EDUCATION FACILITIES
       - name: education_facilities
