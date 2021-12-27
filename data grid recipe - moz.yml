@@ -63,14 +63,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-operational-presence)
             - (name:iati-moz)
             - (name:mozambique-5w-april-to-september-2021)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-operational-presence
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: iati-moz
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
