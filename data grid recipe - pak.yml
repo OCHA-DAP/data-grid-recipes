@@ -111,7 +111,7 @@ categories:
         metadata_overrides:
           - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
-            comments: The data may not be comprehensive.
+            comments: The data may not be comprehensive. The dataset is not up-to-date.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
