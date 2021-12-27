@@ -224,18 +224,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:nigeria-healthsites)
             - (name:nigeria-health-facilities)
-            - (name:nigeria-hospitals-and-clinics-with-registration-status-and-location)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-healthsites
-            display_state: incomplete
-            comments: 
-          - dataset_name: nigeria-hospitals-and-clinics-with-registration-status-and-location
-            display_state: incomplete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
