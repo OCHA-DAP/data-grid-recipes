@@ -101,9 +101,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:severite-des-contraintes-d-acces-humanitaire)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: severite-des-contraintes-d-acces-humanitaire
+            display_state: incomplete
+            comments: 
+
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
