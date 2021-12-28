@@ -167,13 +167,9 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_zwe_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_zwe_populated_places
-            display_state: incomplete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #ROADS
       - name: roads
         title: Roads
