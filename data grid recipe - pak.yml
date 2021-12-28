@@ -143,8 +143,12 @@ categories:
         rules:
           include:
             - (name:pakistan-national-nutrition-survey)
-            - (name:pakistan-national-nutrition-survey)
           exclude:
+        metadata_overrides:
+          - dataset_name: pakistan-national-nutrition-survey
+            display_state: complete
+            comments: This dataset was recommended by the IMWG in country.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
