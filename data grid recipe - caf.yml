@@ -84,9 +84,8 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:republique-de-la-centrafrique-severite-des-besoins)
           exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
