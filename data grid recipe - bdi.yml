@@ -21,6 +21,11 @@ categories:
           include:
             - (name:burundi-baseline-assessment-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-baseline-assessment-data-iom-dtm
+            display_state: complete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,6 +34,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-bdi)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-bdi
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -37,6 +47,11 @@ categories:
           include:
             - (name:burundi-voluntary-repatriation-statistics-2017-2021)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-voluntary-repatriation-statistics-2017-2021
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -45,6 +60,11 @@ categories:
           include:
             - (name:burundi-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -61,9 +81,12 @@ categories:
             - (name:iati-bdi)
           exclude:
         metadata_overrides:
+          - dataset_name: burundi-operational-presence
+            display_state: complete
+            comments: 
           - dataset_name: iati-bdi
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: The dataset only covers activities reported via IATI. Therefore, the dataset may not cover the full range of activities in the humanitarian response.
 
 #FUNDING
       - name: funding
@@ -81,6 +104,11 @@ categories:
           include:
             - (name:burundi-emergencies-tracking-tool-ett)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-emergencies-tracking-tool-ett
+            display_state: complete
+            comments: 
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -142,6 +170,11 @@ categories:
           include:
             - (name:treatment-of-moderate-acute-malnutrition-in-burundi)
           exclude:
+        metadata_overrides:
+          - dataset_name: treatment-of-moderate-acute-malnutrition-in-burundi
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -165,6 +198,14 @@ categories:
             - (name:burundi-administrative-level-0-1-and-2-administrative-boundaries)
             - (name:burundi-administrative-level-0-1-and-2-administrative-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-administrative-level-0-1-and-2-administrative-boundaries
+            display_state: complete
+            comments: 
+          - dataset_name: burundi-administrative-level-0-1-and-2-administrative-boundaries
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -186,6 +227,11 @@ categories:
           include:
             - (name:burundi-road-network)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-road-network
+            display_state: complete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -213,6 +259,11 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: complete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -240,6 +291,11 @@ categories:
           include:
             - (name:burundi-administrative-level-0-2-population-statistics-2018)
           exclude:
+        metadata_overrides:
+          - dataset_name: burundi-administrative-level-0-2-population-statistics-2018
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
