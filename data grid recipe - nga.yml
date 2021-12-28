@@ -180,13 +180,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_nga_populated_places)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_nga_populated_places
-            display_state: incomplete
-            comments: 
-
 #ROADS
       - name: roads
         title: Roads
