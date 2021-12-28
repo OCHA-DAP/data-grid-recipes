@@ -105,8 +105,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:eventos-y-afectados-por-violencia-armada-en-colombia-2012-2018-por-departamento-y-municipio)
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
