@@ -206,6 +206,11 @@ categories:
           include:
             - (name:colombia-health-facilities-2021)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-health-facilities-2021
+            display_state: incomplete
+            comments: The coordinates of health facilities are missing from the dataset.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -214,6 +219,11 @@ categories:
           include:
             - (name:centros-educativos-2020)
           exclude:
+        metadata_overrides:
+          - dataset_name: centros-educativos-2020
+            display_state: incomplete
+            comments: The coordinates of education facilities are missing from the dataset.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
