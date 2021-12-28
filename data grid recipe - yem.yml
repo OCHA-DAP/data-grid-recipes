@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:yemen-humanitarian-needs-overview)
+            - (name:yemen-displacement-data-tracking-idp-returnees-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -36,13 +36,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:yemen-displacement-population-movement-migrants-and-returns-iom-dtm)
+            - (name:yemen-displacement-data-tracking-idp-returnees-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-displacement-population-movement-migrants-and-returns-iom-dtm
-            display_state: incomplete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -93,7 +88,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-yemen)
             - (name:yemen-acled-conflict-data)
           exclude:
         metadata_overrides:
@@ -199,7 +193,7 @@ categories:
         metadata_overrides:
           - dataset_name: ourairports-yem
             display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+            comments: Ourairports data relies on user contributions and may not be comprehensive. Furthermore, partners on the ground in Yemen report that the status and useability of most airports is unknown.
 
 
 #HEALTH AND EDUCATION
