@@ -64,7 +64,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-yem
             display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
+            comments: The dataset only covers activities reported via IATI. Consequently, the dataset is considered incomplete as it may not cover the full range of activities in the humanitarian response.
 
 #FUNDING
       - name: funding
@@ -140,6 +140,11 @@ categories:
           include:
             - (name:yemen-nutrition-smart-survey)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-nutrition-smart-survey
+            display_state: complete
+            comments: This dataset was confirmed as the latest available in December 2021. However, new assessments were ongoing at the time and preliminary results are expected in February 2022.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
