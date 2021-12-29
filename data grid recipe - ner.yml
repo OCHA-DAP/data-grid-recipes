@@ -21,6 +21,11 @@ categories:
           include:
             - (name:niger-population-movment)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-population-movment
+            display_state: complete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,6 +34,11 @@ categories:
           include:
             - (name:refugees-by-admin-2-in-niger)
           exclude:
+        metadata_overrides:
+          - dataset_name: refugees-by-admin-2-in-niger
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -37,6 +47,11 @@ categories:
           include:
             - (name:sahel-population-movement)
           exclude:
+        metadata_overrides:
+          - dataset_name: sahel-population-movement
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -45,6 +60,11 @@ categories:
           include:
             - (name:niger-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -63,7 +83,10 @@ categories:
         metadata_overrides:
           - dataset_name: iati-ner
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.?
+          - dataset_name: niger-operational-presence
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
@@ -88,7 +111,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-niger)
             - (name:niger-acled-conflict-data)
           exclude:
         metadata_overrides:
@@ -132,6 +154,11 @@ categories:
           include:
             - (name:cadre-harmonise)
           exclude:
+        metadata_overrides:
+          - dataset_name: cadre-harmonise
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -167,6 +194,11 @@ categories:
           include:
             - (name:niger-administrative-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-administrative-boundaries
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -175,6 +207,11 @@ categories:
           include:
             - (name:niger-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-settlements
+            display_state: complete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -215,6 +252,11 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: complete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -240,8 +282,13 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:niger-subnational-population-statistics)
+            - (name:niger-administrative-level-0-3-population-statistics)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-administrative-level-0-3-population-statistics
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
