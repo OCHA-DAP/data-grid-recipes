@@ -92,7 +92,7 @@ categories:
         metadata_overrides:
           - dataset_name: democratic-republic-of-congo-acled-conflict-data
             display_state: incomplete
-            comments: More granular data is available after registration. 
+            comments: More granular data is available after registration.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
