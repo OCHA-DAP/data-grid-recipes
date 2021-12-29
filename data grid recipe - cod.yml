@@ -172,6 +172,11 @@ categories:
           include:
             - (name:dr-congo-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: dr-congo-settlements
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 #ROADS
       - name: roads
         title: Roads
