@@ -49,8 +49,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: sahel-population-movement
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: Dataset contains data about returnees in Diffa only.
 
 #HNO
       - name: hno
