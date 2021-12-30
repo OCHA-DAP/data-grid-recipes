@@ -203,12 +203,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:settlements)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
-          - dataset_name: settlements
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
             display_state: complete
-            comments: Although the dataset is dated (from 2015), partners in the field confirmed the dataset reflects the latest available data for Popuated Places in the country.
+            comments: 
 
 #ROADS
       - name: roads
@@ -221,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: wfp-geonode-burkina-faso-road-network-main-roads
             display_state: complete
-            comments: Although the dataset is dated (from 2017), partners in the field confirmed the dataset reflects the latest available data for Roads in the country.
+            comments: 
 
 #AIRPORTS
       - name: airports
