@@ -104,6 +104,11 @@ categories:
           include:
             - (name:republique-de-la-centrafrique-severite-des-besoins)
           exclude:
+        metadata_overrides:
+          - dataset_name: republique-de-la-centrafrique-severite-des-besoins
+            display_state: complete
+            comments: 
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -250,6 +255,11 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: complete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -277,6 +287,11 @@ categories:
           include:
             - (name:car-data-20160215-population-by-admin)
           exclude:
+        metadata_overrides:
+          - dataset_name: car-data-20160215-population-by-admin
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
