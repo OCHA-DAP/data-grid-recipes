@@ -295,7 +295,7 @@ categories:
         metadata_overrides:
           - dataset_name: car-data-20160215-population-by-admin
             display_state: complete
-            comments: 
+            comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Baseline Population in the country.
 
 #POVERTY RATE
       - name: poverty_rate
