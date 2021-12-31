@@ -141,9 +141,13 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:syrian-arab-republic-food-security-agriculture-severity-classification)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-food-security-agriculture-severity-classification
+            display_state: incomplete
+            comments: The Integrated Phase Classification (IPC) is not applied in the Syrian Arab Republic.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
