@@ -21,6 +21,11 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-deplace-site-assessment-ocha
+            display_state: complete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -99,6 +104,11 @@ categories:
           include:
             - (name:drc-severity-of-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-severity-of-needs
+            display_state: complete
+            comments: 
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
