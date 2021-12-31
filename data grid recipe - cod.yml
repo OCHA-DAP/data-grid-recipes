@@ -205,7 +205,7 @@ categories:
         metadata_overrides:
           - dataset_name: drc-administrative-boundaries-levels-0-2
             display_state: complete
-            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Baseline Population.
+            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
 
 #POPULATED PLACES
       - name: populated_places
