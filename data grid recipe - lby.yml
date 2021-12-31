@@ -164,12 +164,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_lby_populated_places)
+            - (name:admin-boundaries-villages-libya-cods)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_lby_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: admin-boundaries-villages-libya-cods
+            display_state: complete
+            comments: 
 
 #ROADS
       - name: roads
