@@ -29,6 +29,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-cod
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -37,6 +42,11 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-idps-site-assessment-ocha
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -45,6 +55,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -61,6 +76,9 @@ categories:
             - (name:iati-cod)
           exclude:
         metadata_overrides:
+          - dataset_name: drc_presence_operationnelle
+            display_state: complete
+            comments: 
           - dataset_name: iati-cod
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
@@ -105,7 +123,7 @@ categories:
         metadata_overrides:
           - dataset_name: attacks-on-ebola-response
             display_state: incomplete
-            comments: The dataset covers health related access constraints
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -134,6 +152,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-acute-food-insecurity-country-data
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -142,6 +165,11 @@ categories:
           include:
             - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
+        metadata_overrides:
+          - dataset_name: prevalence-de-la-malnutrition-en-rdc
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -164,6 +192,11 @@ categories:
           include:
             - (name:drc-administrative-boundaries-levels-0-2)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-administrative-boundaries-levels-0-2
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -172,6 +205,11 @@ categories:
           include:
             - (name:dr-congo-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: dr-congo-settlements
+            display_state: complete
+            comments: dataset/west-and-central-africa-administrative-boundaries-levels
+
 #ROADS
       - name: roads
         title: Roads
@@ -244,6 +282,11 @@ categories:
           include:
             - (name:rdc-statistiques-des-populations)
           exclude:
+        metadata_overrides:
+          - dataset_name: rdc-statistiques-des-populations
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
