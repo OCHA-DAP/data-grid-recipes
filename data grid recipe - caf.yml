@@ -202,6 +202,11 @@ categories:
           include:
             - (name:central-african-republic-administrative-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: central-african-republic-administrative-boundaries
+            display_state: complete
+            comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions in the country.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
