@@ -93,7 +93,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-acled-conflict-data
             display_state: incomplete
-            comments: More granular data is avaialble after registration on ACLED site.
+            comments: The dataset contains summary data that is reported at national rather than subnational level. Granular data at individual event level is available after registration on ACLED site.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
