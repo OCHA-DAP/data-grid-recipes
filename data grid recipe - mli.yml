@@ -216,7 +216,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-settlements
             display_state: complete
-            comments: Although the dataset is dated from 2015, partners in the field confirmed the dataset reflects the latest available data for Populated Paces.
+            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Populated Paces.
 
 #ROADS
       - name: roads
@@ -229,7 +229,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-roads
             display_state: complete
-            comments: 
+            comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Roads.
 
 #AIRPORTS
       - name: airports
@@ -288,7 +288,7 @@ categories:
         metadata_overrides:
           - dataset_name: population-projection-2018-of-mali-admin-levels-3-disaggregated-by-sex
             display_state: complete
-            comments: Although the dataset is dated from 2020, partners in the field confirmed the dataset reflects the latest available data for Baseline Population.
+            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Baseline Population.
 
 #POVERTY RATE
       - name: poverty_rate
