@@ -85,9 +85,13 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
+            - (name:south-sudan-flood-data)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: south-sudan-flood-data
+            display_state: complete
+            comments: 
+
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -219,13 +223,7 @@ categories:
         rules:
           include:
             - (name:south-sudan-village-assessment-education-facilities-iom-dtm)
-            - (name:south-sudan-schools-and-enrolment-data-2015-sssams)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-schools-and-enrolment-data-2015-sssams
-            display_state: incomplete
-            comments: Dataset not contains coordinates location of the school
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
