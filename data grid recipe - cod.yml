@@ -203,12 +203,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:dr-congo-settlements)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
-          - dataset_name: dr-congo-settlements
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
             display_state: complete
-            comments: dataset/west-and-central-africa-administrative-boundaries-levels
+            comments: 
 
 #ROADS
       - name: roads
