@@ -143,7 +143,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-nutrition-smart-survey
             display_state: complete
-            comments: This dataset was confirmed as the latest available in December 2021. However, new assessments were ongoing at the time and preliminary results are expected in February 2022.
+            comments: This dataset was confirmed to be the latest available as at December 2021. However, new assessments were ongoing at the time of the confirmation and preliminary results are expected in February 2022.
 
 #FOOD PRICES
       - name: food_prices
