@@ -21,6 +21,11 @@ categories:
           include:
             - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-baseline-assessment-data-iom-dtm
+            display_state: complete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,6 +34,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-cmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-cmr
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -37,6 +47,11 @@ categories:
           include:
             - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-baseline-assessment-data-iom-dtm
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -45,6 +60,11 @@ categories:
           include:
             - (name:cameroon-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -61,9 +81,12 @@ categories:
             - (name:iati-cmr)
           exclude:
         metadata_overrides:
+          - dataset_name: cameroon-5w-operational-presence
+            display_state: complete
+            comments: 
           - dataset_name: iati-cmr
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country.?Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -116,6 +139,11 @@ categories:
           include:
             - (name:wfp-geonode-cameroon-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-cameroon-road-network-main-roads
+            display_state: complete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -130,6 +158,11 @@ categories:
           include:
             - (name:cadre-harmonise)
           exclude:
+        metadata_overrides:
+          - dataset_name: cadre-harmonise
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -138,6 +171,11 @@ categories:
           include:
             - (name:cameroon-malnutrition-prevalence)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-malnutrition-prevalence
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -160,6 +198,11 @@ categories:
           include:
             - (name:cameroon-administrative-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-administrative-boundaries
+            display_state: complete
+            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -168,6 +211,11 @@ categories:
           include:
             - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
+        metadata_overrides:
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
+            display_state: complete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -176,6 +224,11 @@ categories:
           include:
             - (name:wfp-geonode-cameroon-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-cameroon-road-network-main-roads
+            display_state: complete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -203,6 +256,11 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: complete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
