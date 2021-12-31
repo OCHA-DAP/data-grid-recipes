@@ -126,7 +126,7 @@ categories:
         metadata_overrides:
           - dataset_name: severite-des-contraintes-d-acces-humanitaire
             display_state: incomplete
-            comments: Dataset is available on request.
+            comments: Data is available only upon request.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
