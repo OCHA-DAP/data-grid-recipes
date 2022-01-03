@@ -190,7 +190,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-administrative-boundaries-populated-places
             display_state: complete
-            comments: The locations of populated places can be found in the resource: syr_humanitarian_locations.
+            comments: The locations of populated places can be found in the resource syr_humanitarian_locations.
 
 #ROADS
       - name: roads
