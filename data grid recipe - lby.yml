@@ -169,7 +169,7 @@ categories:
         metadata_overrides:
           - dataset_name: admin-boundaries-villages-libya-cods
             display_state: incomplete
-            comments: The locations of populated places can be found in the resource: Libya Common Operational Dataset. The dataset is not up-to-date.
+            comments: The locations of populated places can be found in the resource: Libya Common Operational Dataset.
 
 #ROADS
       - name: roads
