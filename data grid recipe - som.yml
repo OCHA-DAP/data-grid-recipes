@@ -250,6 +250,6 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-poverty-rate
             display_state: incomplete
-            comments: 
+            comments: Data is from 2019.
 
 
