@@ -83,7 +83,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-ner
             display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.?
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
           - dataset_name: niger-operational-presence
             display_state: complete
             comments: 
