@@ -191,14 +191,10 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_ukr_north_roads)
-            - (name:hotosm_ukr_south_roads)
+            - (name:hotosm_ukr_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_ukr_north_roads
-            display_state: complete
-            comments: 
-          - dataset_name: hotosm_ukr_south_roads
+          - dataset_name: hotosm_ukr_roads
             display_state: complete
             comments: 
 
