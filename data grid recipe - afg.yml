@@ -168,7 +168,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:afghanistan-administrative-level-0-2-and-unama-region-boundary-polygons-lines-and-points)
+            - (name:cod-ab-afg)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -253,7 +253,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-subnational-population-statistics)
+            - (name:cod-ps-afg)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
