@@ -169,7 +169,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places)
+            - (name:cod-ab-pak)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -249,10 +249,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:pakistan-administrative-level-0-3-population-statistics)
+            - (name:cod-ps-pak)
           exclude:
         metadata_overrides:
-          - dataset_name: pakistan-administrative-level-0-3-population-statistics
+          - dataset_name: cod-ps-pak
             display_state: complete
             comments: 
 
