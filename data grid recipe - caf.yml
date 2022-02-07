@@ -200,10 +200,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:central-african-republic-administrative-boundaries)
+            - (name:cod-ab-caf)
           exclude:
         metadata_overrides:
-          - dataset_name: central-african-republic-administrative-boundaries
+          - dataset_name: cod-ab-caf
             display_state: complete
             comments: 
 
@@ -290,10 +290,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:car-data-20160215-population-by-admin)
+            - (name:cod-ps-caf)
           exclude:
         metadata_overrides:
-          - dataset_name: car-data-20160215-population-by-admin
+          - dataset_name: cod-ps-caf
             display_state: complete
             comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Baseline Population in the country.
 
