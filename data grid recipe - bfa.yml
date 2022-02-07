@@ -190,10 +190,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:burkina-faso-administrative-boundaries)
+            - (name:cod-ab-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-administrative-boundaries
+          - dataset_name: cod-ab-bfa
             display_state: complete
             comments: 
 
@@ -275,10 +275,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:burkina-faso-population-statistic)
+            - (name:cod-ps-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-population-statistic
+          - dataset_name: cod-ps-bfa
             display_state: complete
             comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Baseline Population in the country.
 
