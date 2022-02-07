@@ -246,7 +246,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:myanmar-population-census-2014)
+            - (name:cod-ps-mmr)
             - (name:myanmar-population-statistics-2011)
           exclude:
         metadata_overrides:
