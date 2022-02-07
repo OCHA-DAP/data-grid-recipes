@@ -195,11 +195,11 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:burundi-administrative-level-0-1-and-2-administrative-boundaries)
+            - (name:cod-ab-bdi)
             - (name:burundi-administrative-level-0-1-and-2-administrative-boundaries)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-administrative-level-0-1-and-2-administrative-boundaries
+          - dataset_name: cod-ab-bdi
             display_state: complete
             comments: 
           - dataset_name: burundi-administrative-level-0-1-and-2-administrative-boundaries
@@ -289,10 +289,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:burundi-administrative-level-0-2-population-statistics-2018)
+            - (name:cod-ps-bdi)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-administrative-level-0-2-population-statistics-2018
+          - dataset_name: cod-ps-bdi
             display_state: complete
             comments: 
 
