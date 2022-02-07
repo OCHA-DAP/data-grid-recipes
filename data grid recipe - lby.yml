@@ -156,7 +156,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:admin-boundaries-villages-libya-cods)
+            - (name:cod-ab-lby)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -164,10 +164,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:admin-boundaries-villages-libya-cods)
+            - (name:cod-ab-lby)
           exclude:
         metadata_overrides:
-          - dataset_name: admin-boundaries-villages-libya-cods
+          - dataset_name: cod-ab-lby
             display_state: incomplete
             comments: The locations of populated places can be found in the resource Libya Common Operational Dataset. The dataset is not up-to-date.
 
