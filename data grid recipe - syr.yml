@@ -177,7 +177,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:syrian-arab-republic-administrative-boundaries-populated-places)
+            - (name:cod-ab-syr)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -185,10 +185,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:syrian-arab-republic-administrative-boundaries-populated-places)
+            - (name:cod-ab-syr)
           exclude:
         metadata_overrides:
-          - dataset_name: syrian-arab-republic-administrative-boundaries-populated-places
+          - dataset_name: cod-ab-syr
             display_state: complete
             comments: The locations of populated places can be found in the resource syr_humanitarian_locations.
 
