@@ -200,10 +200,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:drc-administrative-boundaries-levels-0-2)
+            - (name:cod-ab-cod)
           exclude:
         metadata_overrides:
-          - dataset_name: drc-administrative-boundaries-levels-0-2
+          - dataset_name: cod-ab-cod
             display_state: complete
             comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
 
