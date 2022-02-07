@@ -160,7 +160,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:colombia-administrative-boundaries-levels-0-3)
+            - (name:cod-ab-col)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -236,10 +236,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:colombia-population-estimates-and-projections)
+            - (name:cod-ps-col)
           exclude:
         metadata_overrides:
-          - dataset_name: colombia-population-estimates-and-projections
+          - dataset_name: cod-ps-col
             display_state: complete
             comments: 
 
