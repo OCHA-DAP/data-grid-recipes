@@ -170,7 +170,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:south-sudan-administrative-boundaries)
+            - (name:cod-ab-ssd)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -236,7 +236,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:south-sudan-administrative-levels-0-2-2020-population-estimates)
+            - (name:cod-ps-ssd)
             - (name:south-sudan-population-statistics)
             - (name:south-sudan-administrative-levels-0-2-2020-population-estimates)
           exclude:
