@@ -192,10 +192,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:niger-administrative-boundaries)
+            - (name:cod-ab-ner)
           exclude:
         metadata_overrides:
-          - dataset_name: niger-administrative-boundaries
+          - dataset_name: cod-ab-ner
             display_state: complete
             comments: 
 
@@ -282,10 +282,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:niger-administrative-level-0-3-population-statistics)
+            - (name:cod-ps-ner)
           exclude:
         metadata_overrides:
-          - dataset_name: niger-administrative-level-0-3-population-statistics
+          - dataset_name: cod-ps-ner
             display_state: complete
             comments: 
 
