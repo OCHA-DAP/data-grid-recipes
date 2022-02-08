@@ -62,8 +62,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-who-does-what-where-july-to-september-2021)
             - (name:iati-afg)
+            - (name:afghanistan-who-does-what-where-october-to-december-2021)
           exclude:
         metadata_overrides:
           - dataset_name: iati-afg
