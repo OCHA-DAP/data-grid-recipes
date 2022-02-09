@@ -121,7 +121,7 @@ categories:
             comments: The dataset covers information on small area. It's not up-to-date.
           - dataset_name: state-of-palestine-roads
             display_state: incomplete
-            comments: The data covers only Gaza Strip roads.
+            comments: The data lack indicaion of status and current practability.
 
 
 #FOOD SECURITY AND NUTRITION
