@@ -176,6 +176,7 @@ categories:
         rules:
           include:
             - (name:ukraine-subnational-administrative-divisions)
+            - (name:cod-ab-ukr)
           exclude:
 #POPULATED PLACES
       - name: populated_places
