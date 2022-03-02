@@ -109,6 +109,7 @@ categories:
         rules:
           include:
             - (name:ukraine-entry-exit-crossing-points)
+            - (name:ukraine-border-crossings)
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-entry-exit-crossing-points
