@@ -187,6 +187,11 @@ categories:
           include:
             - (name:ukraine-populated-places)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-populated-places
+            display_state: incomplete
+            comments: The coordinates representing the location of populated places are missing from the dataset.
+
 #ROADS
       - name: roads
         title: Roads
