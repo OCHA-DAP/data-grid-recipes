@@ -259,13 +259,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:ukraine-baseline-population-data)
+            - (name:cod-ps-ukr)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-baseline-population-data
-            display_state: incomplete
-            comments: The data in the dataset does not cover the entire population of Ukraine.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
