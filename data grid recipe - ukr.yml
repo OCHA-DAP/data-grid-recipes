@@ -48,8 +48,9 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:2021-humanitarian-needs-overview-people-in-need)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -62,7 +63,6 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ukraine-who-does-what-where-3w)
             - (name:iati-ukr)
           exclude:
         metadata_overrides:
@@ -84,8 +84,9 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:2021-humanitarian-needs-overview-people-in-need)
           exclude:
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
