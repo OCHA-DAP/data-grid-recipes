@@ -63,11 +63,15 @@ categories:
         rules:
           include:
             - (name:iati-ukr)
+            - (name:ukraine-who-does-what-where-3w)
           exclude:
         metadata_overrides:
           - dataset_name: iati-ukr
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
+          - dataset_name: ukraine-who-does-what-where-3w
+            display_state: incomplete
+            comments: The dataset is marked as incomplete because it does not contain the organisations involved in the response, and is thus a 2W instead of a 3W.
 
 #FUNDING
       - name: funding
