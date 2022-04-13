@@ -79,19 +79,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-south-sudan)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:south-sudan-flood-data)
-          exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-flood-data
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -118,15 +105,6 @@ categories:
             display_state: incomplete
             comments: The data may not be comprehensive.
 
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:wfp-geonode-south-sudan-road-network-main-roads)
-            - (name:south-sudan-road-network)
-          exclude:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
