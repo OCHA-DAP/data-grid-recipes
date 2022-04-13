@@ -96,19 +96,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-congo-the-democratic-republic-of-the)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:drc-severity-of-needs)
-          exclude:
-        metadata_overrides:
-          - dataset_name: drc-severity-of-needs
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -134,19 +121,6 @@ categories:
           - dataset_name: attacks-on-ebola-response
             display_state: incomplete
             comments: The incidents reported are not a complete nor a representative list of all incidents.
-
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:democratic-republic-of-the-congo-road-network-main-roads)
-          exclude:
-        metadata_overrides:
-          - dataset_name: democratic-republic-of-the-congo-road-network-main-roads
-            display_state: complete
-            comments: 
 
 
 #FOOD SECURITY AND NUTRITION
