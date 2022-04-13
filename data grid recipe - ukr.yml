@@ -81,15 +81,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-ukraine)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -107,19 +98,6 @@ categories:
           include:
             - (name:ukraine-entry-exit-crossing-points)
             - (name:ukraine-border-crossings)
-          exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-entry-exit-crossing-points
-            display_state: complete
-            comments: 
-
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:ukraine-entry-exit-crossing-points)
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-entry-exit-crossing-points
