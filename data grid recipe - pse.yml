@@ -76,14 +76,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-occupied-palestinian-territory)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:opt-humanitarian-needs-overview)
-          exclude:
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -106,23 +98,6 @@ categories:
           include:
             - (name:state-of-palestine-humanitarian-access)
           exclude:
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:state-of-palestine-hebron_h2_closures)
-            - (name:state-of-palestine-roads)
-          exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-hebron_h2_closures
-            display_state: incomplete
-            comments: The dataset covers information on small area. It's not up-to-date.
-          - dataset_name: state-of-palestine-roads
-            display_state: incomplete
-            comments: The data lack indicaion of status and current practability.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
