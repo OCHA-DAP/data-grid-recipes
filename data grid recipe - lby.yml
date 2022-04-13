@@ -73,14 +73,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-libya)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:libya-humanitarian-needs-overview)
-          exclude:
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -98,15 +90,6 @@ categories:
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
           exclude:
