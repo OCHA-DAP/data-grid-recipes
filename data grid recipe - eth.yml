@@ -73,14 +73,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-ethiopia)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:ethiopia-2020-severity-of-needs-analysis-xlsx)
-          exclude:
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -104,19 +96,6 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-eth-trs-roads-osm)
-          exclude:
-        metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-eth-trs-roads-osm
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
