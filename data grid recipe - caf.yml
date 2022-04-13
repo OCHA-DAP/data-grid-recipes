@@ -91,19 +91,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-central-african-republic)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:republique-de-la-centrafrique-severite-des-besoins)
-          exclude:
-        metadata_overrides:
-          - dataset_name: republique-de-la-centrafrique-severite-des-besoins
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -127,19 +114,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: republique-centraficaine-acces-physique-dans-les-communes
-            display_state: complete
-            comments: 
-
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:wfp-geonode-central-african-republic-road-network-main-roads)
-          exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-central-african-republic-road-network-main-roads
             display_state: complete
             comments: 
 
