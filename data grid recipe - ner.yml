@@ -21,11 +21,6 @@ categories:
           include:
             - (name:niger-population-movment)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-population-movment
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -96,15 +91,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-niger)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -131,15 +117,6 @@ categories:
             display_state: incomplete
             comments: The incidents reported are not a complete nor a representative list of all incidents.
 
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
