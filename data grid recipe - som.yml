@@ -78,14 +78,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-somalia)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:somalia-humanitarian-needs-overview)
-          exclude:
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -112,14 +104,6 @@ categories:
             display_state: incomplete
             comments: The data may not be comprehensive and it's out of date(from 2020).
 
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:somalia-transportation-status)
-          exclude:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
