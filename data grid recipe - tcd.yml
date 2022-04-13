@@ -93,15 +93,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-chad)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -127,20 +118,6 @@ categories:
           - dataset_name: severite-des-contraintes-d-acces-humanitaire
             display_state: incomplete
             comments: Data is available only upon request.
-
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm)
-            - (name:wfp-geonode-chad-road-network-main-roads)
-          exclude:
-        metadata_overrides:
-          - dataset_name: wfp-ogcserver-gis-wfp-org-geonode-tcd-trs-roads-osm
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
 
 
 #FOOD SECURITY AND NUTRITION
