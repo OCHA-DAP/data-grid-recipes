@@ -96,19 +96,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-burundi)
           exclude:
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
-        rules:
-          include:
-            - (name:burundi-emergencies-tracking-tool-ett)
-          exclude:
-        metadata_overrides:
-          - dataset_name: burundi-emergencies-tracking-tool-ett
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -134,19 +121,6 @@ categories:
           - dataset_name: burundi-emergencies-tracking-tool-ett
             display_state: incomplete
             comments: Dataset gives the accessibility constraints due to natural hazards only.
-
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (name:burundi-road-network)
-          exclude:
-        metadata_overrides:
-          - dataset_name: burundi-road-network
-            display_state: complete
-            comments: 
 
 
 #FOOD SECURITY AND NUTRITION
