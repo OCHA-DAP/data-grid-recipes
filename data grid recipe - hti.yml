@@ -44,7 +44,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:haiti-pin-hno-2019)
+            - (name:haiti-humanitarian-needs-overview)
           exclude:
 
 #COORDINATION & CONTEXT
