@@ -58,10 +58,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:burkina-humanitarian-needs-overview-2021)
+            - (name:burkina-faso-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-humanitarian-needs-overview-2021
+          - dataset_name: burkina-faso-humanitarian-needs-overview
             display_state: complete
             comments: 
 
