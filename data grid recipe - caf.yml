@@ -264,7 +264,7 @@ categories:
         metadata_overrides:
           - dataset_name: cod-ps-caf
             display_state: complete
-            comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Baseline Population in the country.
+            comments: 
 
 #POVERTY RATE
       - name: poverty_rate
