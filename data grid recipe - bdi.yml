@@ -117,6 +117,14 @@ categories:
             display_state: incomplete
             comments: Dataset gives the accessibility constraints due to natural hazards only.
 
+#CLIMATIC HAZARDS
+      - name: climatic_hazards
+        title: Climatic Hazards
+        description: Tabular or vector data representing the type of climatic event (droughts, floods and storms), location, date of onset and duration, and at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+        rules:
+          include:
+            - (name:burundi-emergencies-tracking-tool-ett)
+          exclude:
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
