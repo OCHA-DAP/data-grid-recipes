@@ -70,7 +70,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:nigeria-operational-presence)
+            - (name:nigeria-northeast-nigeria-3ws-january-march-2022)
             - (name:iati-nga)
           exclude:
         metadata_overrides:
