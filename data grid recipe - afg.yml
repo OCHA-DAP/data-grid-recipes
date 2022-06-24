@@ -114,8 +114,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-natural-disaster-incidents-in-2022
-            display_state: incomplete
-            comments: drought data is missing.
+            display_state: complete
+            comments: 
 
 
 #FOOD SECURITY AND NUTRITION
