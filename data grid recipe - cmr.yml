@@ -273,9 +273,8 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
+            - (name:cod-ps-cmr)
           exclude:
-            - (private:false)
-            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
