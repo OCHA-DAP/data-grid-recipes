@@ -59,7 +59,7 @@ categories:
         rules:
           include:
             - (name:iati-hti)
-            - (name:haiti-organizations-physical-presence)
+            - (name:haiti-operational-presence)
           exclude:
         metadata_overrides:
           - dataset_name: iati-hti
