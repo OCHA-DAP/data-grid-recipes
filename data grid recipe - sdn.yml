@@ -111,8 +111,9 @@ categories:
         description: Tabular or vector data representing the type of climatic event (droughts, floods and storms), location, date of onset and duration, and at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:2021-hazards-planning-numbers)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
