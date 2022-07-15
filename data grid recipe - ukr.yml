@@ -191,12 +191,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ukraine-certified-airfields-2021)
+            - (name:ukraine-certified-airfields)
           exclude:
         metadata_overrides:
-          - dataset_name: ukraine-certified-airfields-2021
-            display_state: complete
-            comments: 
+          - dataset_name: ukraine-certified-airfields
+            display_state: incomplete
+            comments: The coordinates of airports are missing from the dataset.
 
 
 #HEALTH AND EDUCATION
