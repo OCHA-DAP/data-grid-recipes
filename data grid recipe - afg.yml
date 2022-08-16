@@ -63,7 +63,7 @@ categories:
         rules:
           include:
             - (name:iati-afg)
-            - (name:afghanistan-who-does-what-where-january-to-march-2022)
+            - (name:afghanistan-who-does-what-where-april-to-june-2022)
           exclude:
         metadata_overrides:
           - dataset_name: iati-afg
