@@ -70,7 +70,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:nigeria-northeast-nigeria-3ws-january-march-2022)
+            - (name:nigeria-northeast-nigeria-3ws-april-june-2022)
             - (name:iati-nga)
           exclude:
         metadata_overrides:
@@ -118,9 +118,13 @@ categories:
         description: Tabular or vector data representing the type of climatic event (droughts, floods and storms), location, date of onset and duration, and at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
+            - (name:north-east-nigeria-flood-affected-geographical-areas)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: north-east-nigeria-flood-affected-geographical-areas
+            display_state: complete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -192,7 +196,7 @@ categories:
         metadata_overrides:
           - dataset_name: ourairports-nga
             display_state: incomplete
-            comments: 
+            comments: Our airports data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
