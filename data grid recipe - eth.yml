@@ -93,9 +93,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:ethiopia-attacks-on-aid-operations-education-health-and-protection)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ethiopia-attacks-on-aid-operations-education-health-and-protection
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 #CLIMATIC HAZARDS
       - name: climatic_hazards
         title: Climatic Hazards
