@@ -62,7 +62,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:somalia-operational-presence)
+            - (name:ocha_som_drought_operational_presence_2022)
             - (name:iati-som)
           exclude:
         metadata_overrides:
@@ -97,11 +97,11 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites)
+            - (name:somalia-drought-population-pin-access-and-ipc_2022)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-violence-agaiinst-civilian-and-vital-civilian-facilitites
-            display_state: incomplete
+          - dataset_name: somalia-drought-population-pin-access-and-ipc_2022
+            display_state: complete
             comments: The data may not be comprehensive and it's out of date(from 2020).
 
 #CLIMATIC HAZARDS
@@ -110,9 +110,13 @@ categories:
         description: Tabular or vector data representing the type of climatic event (droughts, floods and storms), location, date of onset and duration, and at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
+            - (name:somalia-cumulative-drought-response-2022)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: somalia-cumulative-drought-response-2022
+            display_state: complete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
