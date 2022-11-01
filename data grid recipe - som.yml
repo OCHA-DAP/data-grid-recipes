@@ -139,6 +139,11 @@ categories:
           include:
             - (name:somalia-2020-post-deyr-total-acute-malnutrition-burden)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-2020-post-deyr-total-acute-malnutrition-burden
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
