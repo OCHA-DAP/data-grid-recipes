@@ -44,14 +44,8 @@ categories:
         rules:
           include:
             - (name:sudan-2022-humanitarian-needs-overview-hno)
-            - (name:2020-multi-sectoral-needs-assessment-analysis-results-of-household-data-sudan)
             - (name:sudan-2022-multisector-needs-assessment-msna-data-analysis)
           exclude:
-        metadata_overrides:
-          - dataset_name: 2020-multi-sectoral-needs-assessment-analysis-results-of-household-data-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
