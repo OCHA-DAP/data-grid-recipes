@@ -50,6 +50,11 @@ categories:
           include:
             - (name:somalia-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The data is out of date
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -220,7 +225,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-education-facilities
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
