@@ -58,6 +58,11 @@ categories:
           include:
             - (name:nigeria-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-humanitarian-needs-overview
+            display_state: incomplete
+            comments: Needs to be updated
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -74,6 +79,9 @@ categories:
             - (name:iati-nga)
           exclude:
         metadata_overrides:
+          - dataset_name: nigeria-northeast-nigeria-3ws-april-june-2022
+            display_state: incomplete
+            comments: Needs to be updated
           - dataset_name: iati-nga
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
