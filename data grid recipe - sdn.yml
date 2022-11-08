@@ -46,6 +46,11 @@ categories:
             - (name:sudan-2022-humanitarian-needs-overview-hno)
             - (name:sudan-2022-multisector-needs-assessment-msna-data-analysis)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-2022-humanitarian-needs-overview-hno
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -62,6 +67,9 @@ categories:
             - (name:iati-sdn)
           exclude:
         metadata_overrides:
+          - dataset_name: sudan-operational-presence
+            display_state: incomplete
+            comments: 
           - dataset_name: iati-sdn
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -108,6 +116,11 @@ categories:
           include:
             - (name:2021-floods-and-drought-hazards)
           exclude:
+        metadata_overrides:
+          - dataset_name: 2021-floods-and-drought-hazards
+            display_state: incomplete
+            comments: 
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -130,6 +143,11 @@ categories:
           include:
             - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
           exclude:
+        metadata_overrides:
+          - dataset_name: simple-spatial-survey-method-s3m-ii-for-sudan-2018
+            display_state: incomplete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -179,7 +197,7 @@ categories:
         metadata_overrides:
           - dataset_name: unhas-air-fields-sudan
             display_state: incomplete
-            comments: The data do not contain indication of the type of aircraft each accomodates.
+            comments: The data do not contain indication of the type of aircraft each air field accomodates.
 
 
 #HEALTH AND EDUCATION
@@ -220,8 +238,9 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:sudan-2022-humanitarian-needs-overview-hno)
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
