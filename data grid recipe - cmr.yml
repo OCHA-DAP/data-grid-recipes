@@ -21,11 +21,6 @@ categories:
           include:
             - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: cameroon-baseline-assessment-data-iom-dtm
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -34,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-cmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-cmr
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -47,11 +37,6 @@ categories:
           include:
             - (name:cameroon-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: cameroon-baseline-assessment-data-iom-dtm
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -81,9 +66,6 @@ categories:
             - (name:iati-cmr)
           exclude:
         metadata_overrides:
-          - dataset_name: cameroon-5w-operational-presence
-            display_state: complete
-            comments: 
           - dataset_name: iati-cmr
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
@@ -160,7 +142,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cameroon-malnutrition-prevalence
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FOOD PRICES
@@ -275,6 +257,11 @@ categories:
           include:
             - (name:cod-ps-cmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-cmr
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -285,7 +272,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cameroon-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
