@@ -29,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-caf)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-caf
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -42,11 +37,6 @@ categories:
           include:
             - (name:car-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: car-baseline-assessment-data-iom-dtm
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -55,11 +45,6 @@ categories:
           include:
             - (name:republique-centre-africaine-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: republique-centre-africaine-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -76,9 +61,6 @@ categories:
             - (name:iati-caf)
           exclude:
         metadata_overrides:
-          - dataset_name: republique-centrafricaine-presence-operationnelle
-            display_state: complete
-            comments: 
           - dataset_name: iati-caf
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
@@ -153,11 +135,6 @@ categories:
           include:
             - (name:nutrition-in-central-african-republic)
           exclude:
-        metadata_overrides:
-          - dataset_name: nutrition-in-central-african-republic
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -285,7 +262,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: central-african-republic-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
