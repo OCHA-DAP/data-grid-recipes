@@ -45,13 +45,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:burkina-faso-displacement-data-site-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-displacement-data-site-assessment-iom-dtm
-            display_state: incomplete
-            comments: Dataset is old.
-
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -81,9 +77,6 @@ categories:
             - (name:iati-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: burkina-faso-presence-operationnelle
-            display_state: complete
-            comments: 
           - dataset_name: iati-bfa
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
