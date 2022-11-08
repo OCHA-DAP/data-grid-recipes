@@ -50,6 +50,11 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -234,7 +239,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-schools
-            display_state: complete
+            display_state: incomplete
             comments: The data is only available upon request.
 
 
