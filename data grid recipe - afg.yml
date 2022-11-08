@@ -266,7 +266,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
