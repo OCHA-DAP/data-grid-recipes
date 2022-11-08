@@ -77,6 +77,9 @@ categories:
             - (name:iati-bfa)
           exclude:
         metadata_overrides:
+          - dataset_name: burkina-faso-presence-operationnelle
+            display_state: incomplete
+            comments: 
           - dataset_name: iati-bfa
             display_state: incomplete
             comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
