@@ -40,7 +40,7 @@ categories:
             comments: 
           - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
             display_state: incomplete
-            comments: 
+            comments: Out of date
 
 #RETURNEES
       - name: returnees
@@ -50,6 +50,11 @@ categories:
           include:
             - (name:nigeria-displacements-returnees-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-displacements-returnees-iom-dtm
+            display_state: incomplete
+            comments: Out of date
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -75,12 +80,12 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:nigeria-northeast-nigeria-3ws-april-june-2022)
+            - (name:nigeria-northeast-nigeria-3ws-july-september-2022)
             - (name:iati-nga)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-northeast-nigeria-3ws-april-june-2022
-            display_state: incomplete
+          - dataset_name: nigeria-northeast-nigeria-3ws-july-september-2022
+            display_state: complete
             comments: Needs to be updated
           - dataset_name: iati-nga
             display_state: incomplete
@@ -177,6 +182,11 @@ categories:
           include:
             - (name:cod-ab-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-nga
+            display_state: incomplete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -185,6 +195,11 @@ categories:
           include:
             - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
+        metadata_overrides:
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
+            display_state: incomplete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
@@ -193,6 +208,11 @@ categories:
           include:
             - (name:wfp-geonode-nigeria-road-network-main-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-geonode-nigeria-road-network-main-roads
+            display_state: incomplete
+            comments: Out of date
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -247,6 +267,11 @@ categories:
           include:
             - (name:cod-ps-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-nga
+            display_state: incomplete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
