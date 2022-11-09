@@ -47,8 +47,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: iraq-humanitarian-needs-overview
-            display_state: incomplete
-            comments: Data is due for an update
+            display_state: complete
+            comments: HRP/HNO is not planned for 2023
 
 
 #COORDINATION & CONTEXT
@@ -66,6 +66,9 @@ categories:
             - (name:iati-irq)
           exclude:
         metadata_overrides:
+          - dataset_name: iraq-humanitarian-operational-presence-3w
+            display_state: incomplete
+            comments: 
           - dataset_name: iati-irq
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
@@ -169,6 +172,11 @@ categories:
           include:
             - (name:cod-ab-irq)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-irq
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -224,7 +232,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: iraq-healthsites
-            display_state: complete
+            display_state: incomplete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 
 #EDUCATION FACILITIES
@@ -267,4 +275,9 @@ categories:
           include:
             - (name:iraq-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-mpi
+            display_state: incomplete
+            comments: 
+
 
