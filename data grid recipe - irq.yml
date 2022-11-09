@@ -45,6 +45,11 @@ categories:
           include:
             - (name:iraq-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-humanitarian-needs-overview
+            display_state: incomplete
+            comments: Data is due for an update
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -219,7 +224,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: iraq-healthsites
-            display_state: incomplete
+            display_state: complete
             comments: Healthsites data are derived from OpenStreetMap. Dataset completeness is difficult to determine.
 
 #EDUCATION FACILITIES
