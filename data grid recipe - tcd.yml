@@ -29,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-tcd
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -42,11 +37,6 @@ categories:
           include:
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
-        metadata_overrides:
-          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -55,11 +45,6 @@ categories:
           include:
             - (name:chad-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -251,7 +236,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: chad-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
