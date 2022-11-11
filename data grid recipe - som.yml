@@ -194,8 +194,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-roads
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The latest data has no geolocations
 
 #AIRPORTS
       - name: airports
@@ -205,6 +205,11 @@ categories:
           include:
             - (name:somalia-airstrip)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-airstrip
+            display_state: incomplete
+            comments: The latest data has no geolocations
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
