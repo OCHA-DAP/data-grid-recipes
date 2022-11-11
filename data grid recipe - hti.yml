@@ -161,6 +161,11 @@ categories:
           include:
             - (name:cod-ab-hti)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-hti
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -246,7 +251,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
