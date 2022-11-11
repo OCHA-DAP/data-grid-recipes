@@ -55,6 +55,11 @@ categories:
           include:
             - (name:bdi_jiaf-1-1_and_hno2022)
           exclude:
+        metadata_overrides:
+          - dataset_name: bdi_jiaf-1-1_and_hno2022
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
