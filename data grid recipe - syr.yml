@@ -269,4 +269,9 @@ categories:
           include:
             - (name:syrian-arab-republic-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-mpi
+            display_state: incomplete
+            comments: 
+
 
