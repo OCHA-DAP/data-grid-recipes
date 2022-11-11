@@ -49,6 +49,11 @@ categories:
           include:
             - (name:opt-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: opt-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -152,6 +157,11 @@ categories:
           include:
             - (name:cod-ab-pse)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-pse
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -181,6 +191,11 @@ categories:
           include:
             - (name:ports-airports-crossings)
           exclude:
+        metadata_overrides:
+          - dataset_name: ports-airports-crossings
+            display_state: complete
+            comments: 
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
