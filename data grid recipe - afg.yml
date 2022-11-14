@@ -256,6 +256,7 @@ categories:
         rules:
           include:
             - (name:cod-ps-afg)
+            - (name:afghanistan-district-level-population-estimates-urban-rural)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
