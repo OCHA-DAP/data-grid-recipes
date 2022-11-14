@@ -21,6 +21,11 @@ categories:
           include:
             - (name:nigeria-baseline-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-baseline-data-iom-dtm
+            display_state: incomplete
+            comments: More information on the IDPS can also be found on this dataset https://data.humdata.org/dataset/nigeria-location-assessment-data
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -160,6 +165,11 @@ categories:
           include:
             - (name:nigeria-acute-malnutrition-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-acute-malnutrition-data
+            display_state: incomplete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
