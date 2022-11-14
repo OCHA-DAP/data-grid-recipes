@@ -98,6 +98,7 @@ categories:
           include:
             - (name:ukraine-entry-exit-crossing-points)
             - (name:ukraine-border-crossings)
+            - (name:black-sea-grain-initiative-vessel-movements)
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-entry-exit-crossing-points
