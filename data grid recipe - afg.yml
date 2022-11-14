@@ -103,6 +103,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-humanitarian-access-incidents-2022)
+            - (name:afghanistan-districts-affected-by-winter)
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-humanitarian-access-incidents-2022
