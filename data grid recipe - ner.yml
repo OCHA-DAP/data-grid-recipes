@@ -50,11 +50,6 @@ categories:
           include:
             - (name:niger-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-humanitarian-needs-overview
-            display_state: incomplete
-            comments: Dataset is not up to date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -74,6 +69,9 @@ categories:
           - dataset_name: iati-ner
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+          - dataset_name: niger-operational-presence
+            display_state: incomplete
+            comments: Dataset is not up to date.
 
 #FUNDING
       - name: funding
