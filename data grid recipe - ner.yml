@@ -71,7 +71,7 @@ categories:
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
           - dataset_name: niger-operational-presence
             display_state: incomplete
-            comments: Dataset is not up to date.
+            comments: The dataset is not up-to-date.
 
 #FUNDING
       - name: funding
@@ -142,6 +142,11 @@ categories:
           include:
             - (name:surveillance-des-maladies-de-la-malnutrition-moderee-et-de-la-malnutrition-severe-au-niger)
           exclude:
+        metadata_overrides:
+          - dataset_name: surveillance-des-maladies-de-la-malnutrition-moderee-et-de-la-malnutrition-severe-au-niger
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
