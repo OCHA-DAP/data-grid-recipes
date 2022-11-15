@@ -58,7 +58,7 @@ categories:
         metadata_overrides:
           - dataset_name: cameroon-humanitarian-needs-overview
             display_state: complete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
