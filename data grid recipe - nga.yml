@@ -70,8 +70,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-humanitarian-needs-overview
-            display_state: incomplete
-            comments: Needs to be updated
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
@@ -203,10 +203,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:west-and-central-africa-administrative-boundaries-levels)
+            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: west-and-central-africa-administrative-boundaries-levels
+          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
             display_state: complete
             comments: 
 
