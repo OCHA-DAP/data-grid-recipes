@@ -53,12 +53,12 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:nigeria-displacements-returnees-iom-dtm)
+            - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-displacements-returnees-iom-dtm
-            display_state: incomplete
-            comments: Out of date
+          - dataset_name: northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state
+            display_state: complete
+            comments: 
 
 #HNO
       - name: hno
