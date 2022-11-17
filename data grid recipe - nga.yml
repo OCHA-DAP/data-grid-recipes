@@ -203,10 +203,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
-          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
             display_state: complete
             comments: 
 
@@ -276,10 +276,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-nga)
+            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ps-nga
+          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
             display_state: complete
             comments: 
 
