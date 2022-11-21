@@ -261,6 +261,11 @@ categories:
             - (name:cod-ps-afg)
             - (name:afghanistan-district-level-population-estimates-urban-rural)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-district-level-population-estimates-urban-rural
+            display_state: incomplete
+            comments: The data is only available upon request. The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
