@@ -115,9 +115,13 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
+            - (name:impact-of-cyclones-2016-to-2022)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: impact-of-cyclones-2016-to-2022
+            display_state: incomplete
+            comments: The data may not be comprehensive.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -186,12 +190,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_moz_roads)
+            - (name:mozambique-roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_moz_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: mozambique-roads
+            display_state: complete
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -231,12 +235,12 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_moz_education_facilities)
+            - (name:mozambique-schools-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_moz_education_facilities
+          - dataset_name: mozambique-schools-facilities
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+            comments: 
 
 
 #POPULATION AND SOCIO-ECONOMY
