@@ -37,6 +37,11 @@ categories:
           include:
             - (name:iraq-returnee-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: iraq-returnee-data-iom-dtm
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -278,6 +283,6 @@ categories:
         metadata_overrides:
           - dataset_name: iraq-mpi
             display_state: incomplete
-            comments: 
+            comments: Data is out of date
 
 
