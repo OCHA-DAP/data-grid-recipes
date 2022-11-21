@@ -32,17 +32,9 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:refugees-residing-nga)
-            - (name:unhcr-demographics-residing-nga)
             - (name:nigeria-refugees-and-asylum-seekers-in-nigeria)
           exclude:
         metadata_overrides:
-          - dataset_name: refugees-residing-nga
-            display_state: incomplete
-            comments: 
-          - dataset_name: unhcr-demographics-residing-nga
-            display_state: incomplete
-            comments: 
           - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
             display_state: incomplete
             comments: Out of date
