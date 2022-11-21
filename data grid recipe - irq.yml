@@ -67,7 +67,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: iraq-humanitarian-operational-presence-3w
-            display_state: incomplete
+            display_state: complete
             comments: 
           - dataset_name: iati-irq
             display_state: incomplete
