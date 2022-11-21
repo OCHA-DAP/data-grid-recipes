@@ -186,11 +186,11 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-ssd)
+            - (name:south-sudan-airstrips)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-ssd
-            display_state: incomplete
+          - dataset_name: south-sudan-airstrips
+            display_state: complete
             comments: 
 
 
