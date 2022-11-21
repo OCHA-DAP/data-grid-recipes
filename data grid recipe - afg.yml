@@ -109,6 +109,9 @@ categories:
           - dataset_name: afghanistan-humanitarian-access-incidents-2022
             display_state: complete
             comments: 
+          - dataset_name: afghanistan-districts-affected-by-winter
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #CLIMATIE IMPACT
       - name: climate_impact
