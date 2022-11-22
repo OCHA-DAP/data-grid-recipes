@@ -254,4 +254,9 @@ categories:
             - (name:myanmar-poverty-rate)
             - (name:myanmar-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-poverty-rate
+            display_state: incomplete
+            comments: 
+
 
