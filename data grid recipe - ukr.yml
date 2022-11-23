@@ -63,8 +63,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:iati-ukr)
             - (name:ukraine-who-does-what-where-3w)
+            - (name:iati-ukr)
           exclude:
         metadata_overrides:
           - dataset_name: iati-ukr
@@ -98,8 +98,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:ukraine-entry-exit-crossing-points)
             - (name:ukraine-border-crossings)
+            - (name:ukraine-entry-exit-crossing-points)
             - (name:black-sea-grain-initiative-vessel-movements)
           exclude:
         metadata_overrides:
@@ -163,7 +163,6 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:ukraine-subnational-administrative-divisions)
             - (name:cod-ab-ukr)
           exclude:
 #POPULATED PLACES
