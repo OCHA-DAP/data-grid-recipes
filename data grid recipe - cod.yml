@@ -290,7 +290,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: democratic-republic-of-the-congo-mpi
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
