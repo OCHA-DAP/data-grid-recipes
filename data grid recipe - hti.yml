@@ -139,6 +139,11 @@ categories:
           include:
             - (name:haiti-acute-malnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-acute-malnutrition
+            display_state: incomplete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -211,7 +216,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: location-of-health-facilities-hospital-in-haiti
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #EDUCATION FACILITIES
