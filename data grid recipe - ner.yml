@@ -35,13 +35,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:sahel-population-movement)
+            - (name:niger-retour-des-personnes-deplacees-internes)
           exclude:
-        metadata_overrides:
-          - dataset_name: sahel-population-movement
-            display_state: incomplete
-            comments: Dataset contains data about returnees in Diffa only.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -74,9 +69,6 @@ categories:
           - dataset_name: iati-ner
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
-          - dataset_name: niger-operational-presence
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
 
 #FUNDING
       - name: funding
