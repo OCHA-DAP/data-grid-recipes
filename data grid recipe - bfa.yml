@@ -153,7 +153,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FOOD PRICES
