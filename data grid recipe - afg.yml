@@ -243,8 +243,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-schools
-            display_state: incomplete
-            comments: The data is only available upon request. The data is not up to date.
+            display_state: complete
+            comments: The data is only available upon request.
 
 
 #POPULATION AND SOCIO-ECONOMY
