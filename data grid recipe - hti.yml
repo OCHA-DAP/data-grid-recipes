@@ -70,9 +70,6 @@ categories:
           - dataset_name: iati-hti
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
-          - dataset_name: haiti-operational-presence
-            display_state: incomplete
-            comments: The dataset is out of date
 
 #FUNDING
       - name: funding
