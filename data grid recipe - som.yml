@@ -150,10 +150,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:somalia-2020-post-deyr-total-acute-malnutrition-burden)
+            - (name:somalia-acute-malnutrition-burden-and-prevalence)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-2020-post-deyr-total-acute-malnutrition-burden
+          - dataset_name: somalia-acute-malnutrition-burden-and-prevalence
             display_state: complete
             comments: 
 
