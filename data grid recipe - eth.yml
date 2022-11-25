@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: ethiopia-humanitarian-needs-overview
             display_state: incomplete
-            comments: 
+            comments: The data is not up to date.
 
 
 #COORDINATION & CONTEXT
@@ -68,7 +68,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-eth
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -126,8 +126,9 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:ethiopia-acute-food-insecurity-country-data)
           exclude:
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
