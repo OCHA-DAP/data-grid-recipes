@@ -57,8 +57,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is out of date
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
@@ -72,10 +72,13 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ocha_som_drought_operational_presence_2022)
+            - (name:somalia-who-is-doing-what-and-where-3w-october-2022)
             - (name:iati-som)
           exclude:
         metadata_overrides:
+          - dataset_name: somalia-who-is-doing-what-and-where-3w-october-2022
+            display_state: complete
+            comments: 
           - dataset_name: iati-som
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -199,8 +202,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-roads
-            display_state: incomplete
-            comments: The latest data has no geolocations
+            display_state: complete
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -208,12 +211,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:somalia-airstrip)
+            - (name:somalia-airports)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-airstrip
-            display_state: incomplete
-            comments: The latest data has no geolocations
+          - dataset_name: somalia-airports
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
