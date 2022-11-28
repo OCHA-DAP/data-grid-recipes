@@ -245,6 +245,6 @@ categories:
         metadata_overrides:
           - dataset_name: ethiopia-mpi
             display_state: incomplete
-            comments: 
+            comments: The data is not up-to-date.
 
 
