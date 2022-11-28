@@ -52,7 +52,7 @@ categories:
         metadata_overrides:
           - dataset_name: opt-humanitarian-needs-overview
             display_state: incomplete
-            comments: 
+            comments: The data is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -71,7 +71,7 @@ categories:
         metadata_overrides:
           - dataset_name: iati-pse
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
@@ -243,6 +243,6 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-mpi
             display_state: incomplete
-            comments: 
+            comments: The data is not up-to-date.
 
 
