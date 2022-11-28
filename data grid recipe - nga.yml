@@ -159,7 +159,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-acute-malnutrition-data
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #FOOD PRICES
