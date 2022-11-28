@@ -53,7 +53,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is not up to date.
+            comments: The data is not up-to-date.
 
 
 #COORDINATION & CONTEXT
