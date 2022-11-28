@@ -135,10 +135,10 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:food-security)
+            - (name:food-security-malnutrition)
           exclude:
         metadata_overrides:
-          - dataset_name: food-security
+          - dataset_name: food-security-malnutrition
             display_state: complete
             comments: 
 
@@ -148,10 +148,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:food-security)
+            - (name:food-security-malnutrition)
           exclude:
         metadata_overrides:
-          - dataset_name: food-security
+          - dataset_name: food-security-malnutrition
             display_state: complete
             comments: 
 
