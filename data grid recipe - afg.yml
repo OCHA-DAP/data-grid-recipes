@@ -277,6 +277,6 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-mpi
             display_state: incomplete
-            comments: The data is not up to date.
+            comments: The data is not up-to-date.
 
 
