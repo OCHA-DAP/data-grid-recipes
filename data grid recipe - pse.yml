@@ -108,6 +108,11 @@ categories:
           include:
             - (name:state-of-palestine-humanitarian-access)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-humanitarian-access
+            display_state: incomplete
+            comments: The data is not up-to-date.
+
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
