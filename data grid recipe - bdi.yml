@@ -53,10 +53,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:bdi_jiaf-1-1_and_hno2022)
+            - (name:burundi-humanitarian-needs-overview)
           exclude:
         metadata_overrides:
-          - dataset_name: bdi_jiaf-1-1_and_hno2022
+          - dataset_name: burundi-humanitarian-needs-overview
             display_state: incomplete
             comments: 
 
