@@ -81,7 +81,7 @@ categories:
             comments: 
           - dataset_name: iati-bdi
             display_state: incomplete
-            comments: The dataset only covers activities reported via IATI. Therefore, the dataset may not cover the full range of activities in the humanitarian response.
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
