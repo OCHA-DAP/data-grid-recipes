@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-idp-s
             display_state: incomplete
-            comments: The data is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -57,7 +57,7 @@ categories:
         metadata_overrides:
           - dataset_name: opt-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -111,7 +111,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-humanitarian-access
             display_state: incomplete
-            comments: The data is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -139,7 +139,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-msna-findings
             display_state: incomplete
-            comments: The data is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -258,6 +258,6 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-mpi
             display_state: incomplete
-            comments: The data is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 
