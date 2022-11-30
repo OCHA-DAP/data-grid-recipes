@@ -20,11 +20,15 @@ categories:
         rules:
           include:
             - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
+            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
           - dataset_name: northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state
             display_state: complete
             comments: More information on the IDPS can also be found on this dataset https://data.humdata.org/dataset/nigeria-location-assessment-data
+          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+            display_state: incomplete
+            comments: Complementary SAAD data for BAY states
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -46,11 +50,15 @@ categories:
         rules:
           include:
             - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
+            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
           - dataset_name: northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state
             display_state: complete
             comments: 
+          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+            display_state: incomplete
+            comments: Complementary SAAD data for BAY states
 
 #HNO
       - name: hno
@@ -272,10 +280,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
+            - (name:cod-ps-nga)
           exclude:
         metadata_overrides:
-          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+          - dataset_name: cod-ps-nga
             display_state: complete
             comments: 
 
