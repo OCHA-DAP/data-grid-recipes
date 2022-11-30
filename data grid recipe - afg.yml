@@ -186,7 +186,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_populated_places
             display_state: complete
-            comments: The data is used in country. 
+            comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
@@ -199,7 +199,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_roads
             display_state: complete
-            comments: The data is used in country.
+            comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
 
 #AIRPORTS
       - name: airports
@@ -212,7 +212,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_afg_airports
             display_state: complete
-            comments: The data is used in country.
+            comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
