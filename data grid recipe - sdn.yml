@@ -43,13 +43,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-2022-humanitarian-needs-overview-hno)
+            - (name:sudan-2023-hno-baseline-data)
             - (name:sudan-2022-multisector-needs-assessment-msna-data-analysis)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-2022-humanitarian-needs-overview-hno
-            display_state: incomplete
-            comments: 
           - dataset_name: sudan-2022-multisector-needs-assessment-msna-data-analysis
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -66,13 +63,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-operational-presence)
+            - (name:sudan-who-is-doing-what-and-where-3ws)
             - (name:iati-sdn)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-operational-presence
-            display_state: incomplete
-            comments: 
           - dataset_name: iati-sdn
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -117,13 +111,8 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:2021-floods-and-drought-hazards)
+            - (name:sudan-people-affected-by-floods-2022)
           exclude:
-        metadata_overrides:
-          - dataset_name: 2021-floods-and-drought-hazards
-            display_state: incomplete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -144,13 +133,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:simple-spatial-survey-method-s3m-ii-for-sudan-2018)
+            - (name:gam-mam-and-sam-based-on-muac-measurements-2022)
           exclude:
-        metadata_overrides:
-          - dataset_name: simple-spatial-survey-method-s3m-ii-for-sudan-2018
-            display_state: incomplete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -195,10 +179,10 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:unhas-air-fields-sudan)
+            - (name:unhas-destination-points-in-sudan)
           exclude:
         metadata_overrides:
-          - dataset_name: unhas-air-fields-sudan
+          - dataset_name: unhas-destination-points-in-sudan
             display_state: incomplete
             comments: The data do not contain indication of the type of aircraft each air field accomodates.
 
@@ -254,6 +238,6 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-mpi
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
