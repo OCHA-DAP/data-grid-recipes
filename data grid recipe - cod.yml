@@ -277,10 +277,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:rdc-statistiques-des-populations)
+            - (name:cod-ps-cod)
           exclude:
         metadata_overrides:
-          - dataset_name: rdc-statistiques-des-populations
+          - dataset_name: cod-ps-cod
             display_state: complete
             comments: 
 
