@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:ocha-somalia-population-idp-pin-operational-priority-areas-access-ipc5)
+            - (name:somalia-displacement-idps-emergency-trends-tracking-ett-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -81,7 +81,7 @@ categories:
             comments: 
           - dataset_name: iati-som
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
