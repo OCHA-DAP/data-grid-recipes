@@ -186,13 +186,8 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-eth)
+            - (name:ethiopian-airdromes)
           exclude:
-        metadata_overrides:
-          - dataset_name: ourairports-eth
-            display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
