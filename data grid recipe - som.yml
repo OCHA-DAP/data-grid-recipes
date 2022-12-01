@@ -40,12 +40,12 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:unhcr-population-data-for-som)
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: unhcr-population-data-for-som
-            display_state: complete
-            comments: Refugee returnees by UNHCR
+          - dataset_name: somalia-displacement-idps-returnees-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: Out of date
 
 #HNO
       - name: hno
