@@ -19,11 +19,11 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
+            - (name:unhcr-population-data-for-nga)
             - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state
+          - dataset_name: unhcr-population-data-for-nga
             display_state: complete
             comments: More information on the IDPS can also be found on this dataset https://data.humdata.org/dataset/nigeria-location-assessment-data
           - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
@@ -40,8 +40,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
-            display_state: incomplete
-            comments: Out of date
+            display_state: complete
+            comments: 
 
 #RETURNEES
       - name: returnees
