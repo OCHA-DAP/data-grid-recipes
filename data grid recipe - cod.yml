@@ -21,11 +21,6 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
-        metadata_overrides:
-          - dataset_name: drc-displacement-deplace-site-assessment-ocha
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
