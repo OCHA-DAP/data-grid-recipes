@@ -243,7 +243,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:/mozambique-school-data)
+            - (name:mozambique-school-data)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
