@@ -99,11 +99,6 @@ categories:
           include:
             - (name:republique-centraficaine-acces-physique-dans-les-communes)
           exclude:
-        metadata_overrides:
-          - dataset_name: republique-centraficaine-acces-physique-dans-les-communes
-            display_state: complete
-            comments: 
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -143,7 +138,7 @@ categories:
         metadata_overrides:
           - dataset_name: nutrition-in-central-african-republic
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #FOOD PRICES
       - name: food_prices
@@ -183,7 +178,7 @@ categories:
         metadata_overrides:
           - dataset_name: central-african-republic-settlements
             display_state: complete
-            comments: Although the dataset is dated (from 2018), partners in the field confirmed the dataset reflects the latest available data for Populated Places in the country.
+            comments: Although this dataset was last updated in 2018, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
@@ -228,7 +223,7 @@ categories:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
 
 #EDUCATION FACILITIES
       - name: education_facilities
