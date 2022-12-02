@@ -106,8 +106,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: severite-des-contraintes-d-acces-humanitaire
-            display_state: incomplete
-            comments: Data is available only upon request.
+            display_state: complete
+            comments: Data is available upon request.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -179,6 +179,11 @@ categories:
           include:
             - (name:chad-populated-places-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-populated-places-settlements
+            display_state: complete
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
+
 #ROADS
       - name: roads
         title: Roads
@@ -187,6 +192,11 @@ categories:
           include:
             - (name:chad-roads-osm-ministry-of-transport)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-roads-osm-ministry-of-transport
+            display_state: complete
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -198,7 +208,7 @@ categories:
         metadata_overrides:
           - dataset_name: chad-aerodromes
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
@@ -214,6 +224,11 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: complete
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
