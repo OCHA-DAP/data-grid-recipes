@@ -63,7 +63,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-who-is-doing-what-and-where-3ws)
+            - (name:sudan-operational-presence)
             - (name:iati-sdn)
           exclude:
         metadata_overrides:
