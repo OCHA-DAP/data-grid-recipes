@@ -140,11 +140,6 @@ categories:
           include:
             - (name:cameroon-malnutrition-prevalence)
           exclude:
-        metadata_overrides:
-          - dataset_name: cameroon-malnutrition-prevalence
-            display_state: incomplete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -170,7 +165,7 @@ categories:
         metadata_overrides:
           - dataset_name: cod-ab-cmr
             display_state: complete
-            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
+            comments: 
 
 #POPULATED PLACES
       - name: populated_places
@@ -228,7 +223,7 @@ categories:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
 
 #EDUCATION FACILITIES
       - name: education_facilities
