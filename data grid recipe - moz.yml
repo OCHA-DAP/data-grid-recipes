@@ -70,6 +70,7 @@ categories:
           include:
             - (name:mozambique-hrp-and-gombe-erp-response-data)
             - (name:mozambique-5w-april-to-september-2021)
+            - (name:iati-moz)
           exclude:
         metadata_overrides:
           - dataset_name: mozambique-hrp-and-gombe-erp-response-data
@@ -112,7 +113,7 @@ categories:
         metadata_overrides:
           - dataset_name: mozambique-attacks-on-aid-operations-education-health-and-protection
             display_state: incomplete
-            comments: The data may not be comprehensive.
+            comments: The incidents reported are not a complete nor a representative list of all incidents.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -269,4 +270,9 @@ categories:
           include:
             - (name:mozambique-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
