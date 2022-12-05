@@ -213,13 +213,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:health-facilities-in-sub-saharan-africa)
+            - (name:herams-cabo-delgado-dataset)
           exclude:
-        metadata_overrides:
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: complete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
