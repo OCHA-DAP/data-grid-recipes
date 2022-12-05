@@ -221,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-schools
             display_state: complete
-            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.The data is only available upon request.
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.The data is only available upon request.
 
 
 #POPULATION AND SOCIO-ECONOMY
