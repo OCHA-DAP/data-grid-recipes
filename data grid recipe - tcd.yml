@@ -37,11 +37,6 @@ categories:
           include:
             - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
           exclude:
-        metadata_overrides:
-          - dataset_name: population-au-tchad-et-total-idps-retournes-refugies-sadd
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
