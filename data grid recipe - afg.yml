@@ -29,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-afg)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-afg
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -50,11 +45,6 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -106,9 +96,6 @@ categories:
             - (name:afghanistan-districts-affected-by-winter)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-access-incidents-2022
-            display_state: complete
-            comments: 
           - dataset_name: afghanistan-districts-affected-by-winter
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
@@ -121,11 +108,6 @@ categories:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2022)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2022
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -148,11 +130,6 @@ categories:
           include:
             - (name:afghanistan-malnutrition-prevalence)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-malnutrition-prevalence
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -231,7 +208,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-health-facilities
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -244,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-schools
             display_state: complete
-            comments: The data is only available upon request.
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.The data is only available upon request.
 
 
 #POPULATION AND SOCIO-ECONOMY
