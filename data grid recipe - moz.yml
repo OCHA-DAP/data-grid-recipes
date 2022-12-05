@@ -21,11 +21,6 @@ categories:
           include:
             - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -68,16 +63,9 @@ categories:
         rules:
           include:
             - (name:mozambique-hrp-and-gombe-erp-response-data)
-            - (name:mozambique-5w-april-to-september-2021)
             - (name:iati-moz)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-hrp-and-gombe-erp-response-data
-            display_state: complete
-            comments: 
-          - dataset_name: mozambique-5w-april-to-september-2021
-            display_state: complete
-            comments: 
           - dataset_name: iati-moz
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
@@ -125,11 +113,6 @@ categories:
           include:
             - (name:impact-of-cyclones-2016-to-2022)
           exclude:
-        metadata_overrides:
-          - dataset_name: impact-of-cyclones-2016-to-2022
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
