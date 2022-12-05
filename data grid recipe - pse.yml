@@ -96,7 +96,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
             - (name:palestine-acled-conflict-data)
           exclude:
         metadata_overrides:
@@ -183,6 +182,11 @@ categories:
           include:
             - (name:state-of-palestine-admin-level-2-boundaries)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-admin-level-2-boundaries
+            display_state: complete
+            comments: Although this dataset was last updated in 2019, the OCHA country office has confirmed that it is operational.
+
 #ROADS
       - name: roads
         title: Roads
@@ -194,7 +198,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-roads
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #AIRPORTS
       - name: airports
@@ -207,7 +211,7 @@ categories:
         metadata_overrides:
           - dataset_name: ports-airports-crossings
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
@@ -223,6 +227,11 @@ categories:
           include:
             - (name:state-of-palestine-health-0)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-health-0
+            display_state: complete
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
