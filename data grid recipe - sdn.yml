@@ -103,7 +103,7 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
-            comments: The incidents reported are not a complete nor a representative list of all incidents.
+            comments: The incidents reported are not a complete nor a representative list of all incidents across all sectors.
 
 #CLIMATIE IMPACT
       - name: climate_impact
