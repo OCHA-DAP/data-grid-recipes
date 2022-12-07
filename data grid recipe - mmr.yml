@@ -21,6 +21,11 @@ categories:
           include:
             - (name:myanmar-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,6 +42,11 @@ categories:
           include:
             - (name:myanmar-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -45,6 +55,11 @@ categories:
           include:
             - (name:myanmar-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -135,7 +150,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-baseline-data-nutrition
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: The dataset is not up-to-date.
 
 #FOOD PRICES
       - name: food_prices
@@ -243,7 +258,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-population-statistics-2011
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: The dataset is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
