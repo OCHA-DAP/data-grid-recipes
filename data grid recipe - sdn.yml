@@ -165,6 +165,11 @@ categories:
           include:
             - (name:sudan-settlement-26-july-2020)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-settlement-26-july-2020
+            display_state: complete
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
+
 #ROADS
       - name: roads
         title: Roads
@@ -173,6 +178,11 @@ categories:
           include:
             - (name:sudan-road-network)
           exclude:
+        metadata_overrides:
+          - dataset_name: sudan-road-network
+            display_state: complete
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
+
 #AIRPORTS
       - name: airports
         title: Airports
