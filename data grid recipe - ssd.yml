@@ -51,6 +51,11 @@ categories:
           include:
             - (name:south-sudan-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -241,7 +246,11 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:south-sudan-resilience-capacity-index)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: south-sudan-resilience-capacity-index
+            display_state: incomplete
+            comments: Recent poverty estimates are unavailable but this dataset provides the resilience capacity level at the subnational level. Poverty and resilience capacity are interconnected as the former impacts the coping capacity of a family to survive.
+
 
