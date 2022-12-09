@@ -282,7 +282,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: iraq-mpi
-            display_state: incomplete
-            comments: Data is out of date
+            display_state: complete
+            comments: 
 
 
