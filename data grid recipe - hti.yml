@@ -214,7 +214,7 @@ categories:
         metadata_overrides:
           - dataset_name: location-of-health-facilities-hospital-in-haiti
             display_state: incomplete
-            comments: 
+            comments: Out of date
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -253,7 +253,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-mpi
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 
