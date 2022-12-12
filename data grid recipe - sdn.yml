@@ -250,9 +250,4 @@ categories:
           include:
             - (name:sudan-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
