@@ -251,9 +251,4 @@ categories:
           include:
             - (name:afghanistan-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
