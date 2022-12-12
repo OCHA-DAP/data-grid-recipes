@@ -282,7 +282,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-mpi
-            display_state: incomplete
-            comments: dataset out of date
+            display_state: complete
+            comments: 
 
 
