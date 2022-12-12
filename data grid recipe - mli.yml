@@ -295,7 +295,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-mpi
-            display_state: incomplete
-            comments: Dataset is out of date
+            display_state: complete
+            comments: 
 
 
