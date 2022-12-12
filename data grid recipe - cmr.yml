@@ -265,9 +265,4 @@ categories:
           include:
             - (name:cameroon-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: cameroon-mpi
-            display_state: incomplete
-            comments: 
-
 
