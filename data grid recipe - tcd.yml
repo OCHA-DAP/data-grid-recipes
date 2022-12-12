@@ -266,7 +266,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: chad-mpi
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 
