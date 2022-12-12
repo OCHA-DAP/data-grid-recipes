@@ -77,7 +77,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: burundi-operational-presence
-            display_state: complete
+            display_state: incomplete
             comments: 
           - dataset_name: iati-bdi
             display_state: incomplete
