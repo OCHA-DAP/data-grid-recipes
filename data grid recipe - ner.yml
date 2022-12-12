@@ -264,9 +264,4 @@ categories:
           include:
             - (name:niger-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-mpi
-            display_state: incomplete
-            comments: 
-
 
