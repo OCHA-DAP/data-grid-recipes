@@ -237,9 +237,4 @@ categories:
           include:
             - (name:ethiopia-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
