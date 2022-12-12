@@ -259,4 +259,9 @@ categories:
           include:
             - (name:central-african-republic-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: central-african-republic-mpi
+            display_state: complete
+            comments: 
+
 
