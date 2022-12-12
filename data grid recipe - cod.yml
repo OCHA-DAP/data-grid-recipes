@@ -77,7 +77,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: drc_presence_operationnelle
-            display_state: complete
+            display_state: incomplete
             comments: 
           - dataset_name: iati-cod
             display_state: incomplete
