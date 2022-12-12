@@ -40,8 +40,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: Out of date
 
 #RETURNEES
       - name: returnees
