@@ -251,9 +251,4 @@ categories:
           include:
             - (name:mozambique-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-mpi
-            display_state: complete
-            comments: 
-
 
