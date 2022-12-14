@@ -252,10 +252,14 @@ categories:
         rules:
           include:
             - (name:south-sudan-resilience-capacity-index)
+            - (name:south-sudan-poverty-rates)
           exclude:
         metadata_overrides:
           - dataset_name: south-sudan-resilience-capacity-index
             display_state: incomplete
             comments: Recent poverty estimates are unavailable but this dataset provides the resilience capacity level at the subnational level. Poverty and resilience capacity are interconnected as the former impacts the coping capacity of a family to survive.
+          - dataset_name: south-sudan-poverty-rates
+            display_state: complete
+            comments: 
 
 
