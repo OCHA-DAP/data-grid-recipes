@@ -242,9 +242,4 @@ categories:
           include:
             - (name:libya-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: libya-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
