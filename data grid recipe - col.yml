@@ -239,9 +239,4 @@ categories:
           include:
             - (name:colombia-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-mpi
-            display_state: complete
-            comments: 
-
 
