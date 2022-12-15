@@ -253,9 +253,4 @@ categories:
           include:
             - (name:ukraine-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-mpi
-            display_state: incomplete
-            comments: 
-
 
