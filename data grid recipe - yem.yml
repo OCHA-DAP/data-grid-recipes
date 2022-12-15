@@ -242,9 +242,4 @@ categories:
           include:
             - (name:yemen-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-mpi
-            display_state: incomplete
-            comments: 
-
 
