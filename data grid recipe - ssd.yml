@@ -91,11 +91,15 @@ categories:
         rules:
           include:
             - (name:south-sudan-acled-conflict-data)
+            - (name:south-sudan-access-incidents)
           exclude:
         metadata_overrides:
           - dataset_name: south-sudan-acled-conflict-data
             display_state: incomplete
             comments: More granular data is available after registration.
+          - dataset_name: south-sudan-access-incidents
+            display_state: complete
+            comments: 
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
