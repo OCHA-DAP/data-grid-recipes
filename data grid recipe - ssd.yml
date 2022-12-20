@@ -188,7 +188,13 @@ categories:
         rules:
           include:
             - (name:hotosm_ssd_populated_places)
+            - (name:south-sudan-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-settlements
+            display_state: complete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
