@@ -43,12 +43,12 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mozambique_-humanitarian-needs-2022)
+            - (name:mozambique-hno-hrp-2023-dataset)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique_-humanitarian-needs-2022
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+          - dataset_name: mozambique-hno-hrp-2023-dataset
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
