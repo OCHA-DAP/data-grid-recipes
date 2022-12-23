@@ -130,6 +130,11 @@ categories:
           include:
             - (name:yemen-nutrition-smart-survey)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-nutrition-smart-survey
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
