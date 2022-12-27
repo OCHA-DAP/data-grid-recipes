@@ -152,7 +152,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: food-security-malnutrition
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FOOD PRICES
