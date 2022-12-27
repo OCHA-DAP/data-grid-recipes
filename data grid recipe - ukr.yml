@@ -184,7 +184,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_ukr_roads
             display_state: complete
-            comments: 
+            comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
 
 #AIRPORTS
       - name: airports
@@ -196,8 +196,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-certified-airfields
-            display_state: incomplete
-            comments: The coordinates of airports are missing from the dataset.
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
