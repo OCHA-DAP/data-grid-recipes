@@ -55,11 +55,6 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -110,13 +105,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:syria-violent-and-threatening-incidents-against-healthcare)
+            - (name:syria-humanitarian-access-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: syria-violent-and-threatening-incidents-against-healthcare
-            display_state: incomplete
-            comments: The dataset covers health related access constraints. The dataset is not up-to-date.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
