@@ -220,7 +220,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: wfp-geonode-nigeria-road-network-main-roads
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #AIRPORTS
