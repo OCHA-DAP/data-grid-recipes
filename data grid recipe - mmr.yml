@@ -74,11 +74,15 @@ categories:
           include:
             - (name:myanmar-consolidated-3w)
             - (name:iati-mmr)
+            - (name:myanmar-operational-presence)
           exclude:
         metadata_overrides:
           - dataset_name: iati-mmr
             display_state: incomplete
             comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
+          - dataset_name: myanmar-operational-presence
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
