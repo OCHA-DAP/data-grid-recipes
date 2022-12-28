@@ -132,7 +132,7 @@ categories:
         metadata_overrides:
           - dataset_name: nutrition-in-central-african-republic
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2019, the OCHA country office has confirmed that it is operational.
 
 #FOOD PRICES
       - name: food_prices
