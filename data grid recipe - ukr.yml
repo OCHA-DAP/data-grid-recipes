@@ -99,14 +99,7 @@ categories:
         rules:
           include:
             - (name:ukraine-border-crossings)
-            - (name:ukraine-entry-exit-crossing-points)
-            - (name:black-sea-grain-initiative-vessel-movements)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-entry-exit-crossing-points
-            display_state: complete
-            comments: 
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -128,9 +121,13 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:black-sea-grain-initiative-vessel-movements)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: black-sea-grain-initiative-vessel-movements
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
