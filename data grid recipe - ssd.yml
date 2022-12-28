@@ -90,13 +90,9 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:south-sudan-acled-conflict-data)
             - (name:south-sudan-access-incidents)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-acled-conflict-data
-            display_state: incomplete
-            comments: More granular data is available after registration.
           - dataset_name: south-sudan-access-incidents
             display_state: complete
             comments: 
@@ -107,13 +103,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:south-sudan-attacks-on-civilians-and-vital-civilian-facilities)
             - (name:south-sudan-humanitarian-access-incidents)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-attacks-on-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The data may not be comprehensive.
           - dataset_name: south-sudan-humanitarian-access-incidents
             display_state: complete
             comments: 
@@ -187,10 +179,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_ssd_populated_places)
+            - (name:south-sudan-settlements)
             - (name:south-sudan-settlements)
           exclude:
         metadata_overrides:
+          - dataset_name: south-sudan-settlements
+            display_state: complete
+            comments: 
           - dataset_name: south-sudan-settlements
             display_state: complete
             comments: 
