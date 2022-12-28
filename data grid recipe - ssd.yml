@@ -197,7 +197,6 @@ categories:
         rules:
           include:
             - (name:hotosm_ssd_roads)
-            - (name:south-sudan-road-network)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_ssd_roads
