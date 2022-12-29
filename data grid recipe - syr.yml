@@ -167,12 +167,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:cod-ab-syr)
+            - (name:syrian-arab-republic-pop-places)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ab-syr
+          - dataset_name: syrian-arab-republic-pop-places
             display_state: complete
-            comments: The locations of populated places can be found in the resource syr_humanitarian_locations.
+            comments: 
 
 #ROADS
       - name: roads
