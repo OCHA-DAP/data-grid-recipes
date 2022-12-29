@@ -160,13 +160,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:cod-ab-lby)
+            - (name:libya-populated-places)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-lby
-            display_state: incomplete
-            comments: The locations of populated places can be found in the resource Libya Common Operational Dataset. The dataset is not up-to-date.
-
 #ROADS
       - name: roads
         title: Roads
