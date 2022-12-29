@@ -190,10 +190,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:somalia-populated-places)
+            - (name:cod-st-som)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-populated-places
+          - dataset_name: cod-st-som
             display_state: complete
             comments: 
 
