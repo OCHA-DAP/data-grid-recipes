@@ -176,6 +176,11 @@ categories:
           include:
             - (name:haiti-osm-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-osm-settlements
+            display_state: complete
+            comments: 
+
 #ROADS
       - name: roads
         title: Roads
