@@ -219,12 +219,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-bfa)
+            - (name:global-logistics)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-bfa
-            display_state: incomplete
-            comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: global-logistics
+            display_state: complete
+            comments: 
 
 
 #HEALTH AND EDUCATION
