@@ -200,11 +200,6 @@ categories:
           include:
             - (name:global-logistics)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-logistics
-            display_state: complete
-            comments: 
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
