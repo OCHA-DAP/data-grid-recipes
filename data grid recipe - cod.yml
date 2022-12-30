@@ -226,7 +226,7 @@ categories:
         metadata_overrides:
           - dataset_name: global-logistics
             display_state: complete
-            comments: Although this dataset was last updated in 2015, it is operational
+            comments: Although this dataset was last updated in 2020, it is operational
 
 
 #HEALTH AND EDUCATION
