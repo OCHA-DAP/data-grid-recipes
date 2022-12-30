@@ -221,12 +221,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-cod)
+            - (name:global-logistics)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-cod
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+          - dataset_name: global-logistics
+            display_state: complete
+            comments: Although this dataset was last updated in 2015, it is operational
 
 
 #HEALTH AND EDUCATION
