@@ -100,7 +100,7 @@ categories:
         metadata_overrides:
           - dataset_name: sind-safeguarding-healthcare-monthly-news-briefs-dataset
             display_state: incomplete
-            comments: The data may not be comprehensive
+            comments: The data may not be comprehensive.
 
 #CLIMATIE IMPACT
       - name: climate_impact
