@@ -190,7 +190,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_bdi_populated_places
             display_state: complete
-            comments: 
+            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed it to be the best available dataset for this subcategory.
 
 #ROADS
       - name: roads
