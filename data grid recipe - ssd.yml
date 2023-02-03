@@ -95,7 +95,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-access-incidents
             display_state: complete
-            comments: 
+            comments: The data contributor has shared this summary version of the dataset, but the full version of the dataset is not available for public access due to its sensitive nature.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -108,7 +108,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-humanitarian-access-incidents
             display_state: complete
-            comments: 
+            comments: The data contributor has shared this summary version of the dataset, but the full version of the dataset is not available for public access due to its sensitive nature.
 
 #CLIMATIE IMPACT
       - name: climate_impact
