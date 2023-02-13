@@ -124,13 +124,9 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:black-sea-grain-initiative-vessel-movements)
           exclude:
-        metadata_overrides:
-          - dataset_name: black-sea-grain-initiative-vessel-movements
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
