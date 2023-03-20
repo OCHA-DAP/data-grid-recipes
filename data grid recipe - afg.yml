@@ -58,7 +58,7 @@ categories:
         rules:
           include:
             - (name:iati-afg)
-            - (name:afghanistan-who-does-what-where-july-to-september-2022)
+            - (name:afghanistan-who-does-what-where-october-to-december-2022)
           exclude:
         metadata_overrides:
           - dataset_name: iati-afg
@@ -92,7 +92,7 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afghanistan-humanitarian-access-incidents-2022)
+            - (name:afghanistan-humanitarian-access-incidents-2023)
             - (name:afghanistan-districts-affected-by-winter)
           exclude:
         metadata_overrides:
