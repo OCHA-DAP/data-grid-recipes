@@ -35,9 +35,13 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:people-in-need-idps-refugees-and-returnees-in-2020)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: people-in-need-idps-refugees-and-returnees-in-2020
+            display_state: incomplete
+            comments: The dataset is not up to date
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -85,12 +89,12 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:haiti-acled-conflict-data)
+            - (name:ucdp-data-for-haiti)
           exclude:
         metadata_overrides:
-          - dataset_name: haiti-acled-conflict-data
-            display_state: incomplete
-            comments: More granular data is available after registration.
+          - dataset_name: ucdp-data-for-haiti
+            display_state: complete
+            comments: 
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
