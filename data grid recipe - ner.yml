@@ -198,12 +198,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:global-logistics)
+            - (name:hotosm_niger_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: global-logistics
-            display_state: complete
-            comments: Although this dataset was last updated in 2020, it is operational.
+          - dataset_name: hotosm_niger_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
 
 #HEALTH AND EDUCATION
