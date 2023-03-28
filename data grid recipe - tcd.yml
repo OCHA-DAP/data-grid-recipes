@@ -198,10 +198,10 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:global-logistics)
+            - (name:chad-aerodromes)
           exclude:
         metadata_overrides:
-          - dataset_name: global-logistics
+          - dataset_name: chad-aerodromes
             display_state: complete
             comments: 
 
