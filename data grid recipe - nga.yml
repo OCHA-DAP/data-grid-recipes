@@ -86,15 +86,11 @@ categories:
         rules:
           include:
             - (name:nigeria-northeast-nigeria-3ws-july-september-2022)
-            - (name:iati-nga)
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-northeast-nigeria-3ws-july-september-2022
             display_state: complete
             comments: Needs to be updated
-          - dataset_name: iati-nga
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
 
 #FUNDING
       - name: funding
@@ -110,12 +106,12 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:nigeria-acled-conflict-data)
+            - (name:ucdp-data-for-nigeria)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-acled-conflict-data
-            display_state: incomplete
-            comments: More granular data is available after registration.
+          - dataset_name: ucdp-data-for-nigeria
+            display_state: complete
+            comments: 
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
