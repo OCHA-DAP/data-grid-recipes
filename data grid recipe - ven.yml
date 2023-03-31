@@ -61,13 +61,7 @@ categories:
         rules:
           include:
             - (name:venezuela-who-does-what-and-where-3w)
-            - (name:iati-ven)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-ven
-            display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
