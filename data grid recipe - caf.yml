@@ -58,13 +58,7 @@ categories:
         rules:
           include:
             - (name:republique-centrafricaine-presence-operationnelle)
-            - (name:iati-caf)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-caf
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
