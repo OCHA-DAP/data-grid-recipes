@@ -64,13 +64,7 @@ categories:
         rules:
           include:
             - (name:sudan-operational-presence)
-            - (name:iati-sdn)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-sdn
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #FUNDING
       - name: funding
         title: Funding
