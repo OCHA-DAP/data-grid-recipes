@@ -68,15 +68,11 @@ categories:
         rules:
           include:
             - (name:syrian-arab-republic-who-does-what-where-3w)
-            - (name:iati-syr)
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-who-does-what-where-3w
             display_state: incomplete
             comments: This dataset only contains 3W data response from the Damascus Hub. 3W response from Amman and Gaziantep hubs is not captured.
-          - dataset_name: iati-syr
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
