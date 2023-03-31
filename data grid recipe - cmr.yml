@@ -63,13 +63,7 @@ categories:
         rules:
           include:
             - (name:cameroon-5w-operational-presence)
-            - (name:iati-cmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-cmr
-            display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
