@@ -63,13 +63,7 @@ categories:
         rules:
           include:
             - (name:mozambique-hrp-and-gombe-erp-response-data)
-            - (name:iati-moz)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-moz
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
