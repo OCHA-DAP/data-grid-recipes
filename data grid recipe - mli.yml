@@ -73,15 +73,11 @@ categories:
         rules:
           include:
             - (name:mali-operational-presence)
-            - (name:iati-mli)
           exclude:
         metadata_overrides:
           - dataset_name: mali-operational-presence
             display_state: complete
             comments: 
-          - dataset_name: iati-mli
-            display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
