@@ -59,13 +59,7 @@ categories:
         rules:
           include:
             - (name:colombia-4ws)
-            - (name:iati-col)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-col
-            display_state: incomplete
-            comments: Dataset contains data about Interaction member organizations but not other organizations working in the country. Dataset is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
