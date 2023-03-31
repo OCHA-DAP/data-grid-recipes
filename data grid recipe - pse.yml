@@ -66,13 +66,9 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:iati-pse)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-pse
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
-
+            - (private:false)
+            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
