@@ -21,6 +21,11 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-deplace-site-assessment-ocha
+            display_state: incomplete
+            comments: Dataset not up-to date
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -44,8 +49,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: drc-displacement-idps-site-assessment-ocha
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: Dataset not up-to date
 
 #HNO
       - name: hno
@@ -77,7 +82,7 @@ categories:
         metadata_overrides:
           - dataset_name: drc_presence_operationnelle
             display_state: incomplete
-            comments: 
+            comments: Dataset not up-to date
 
 #FUNDING
       - name: funding
@@ -155,8 +160,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: prevalence-de-la-malnutrition-en-rdc
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: Dataset not up-to date
 
 #FOOD PRICES
       - name: food_prices
