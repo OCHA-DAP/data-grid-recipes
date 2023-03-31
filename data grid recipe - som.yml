@@ -73,15 +73,11 @@ categories:
         rules:
           include:
             - (name:somalia-who-is-doing-what-and-where-3w-october-2022)
-            - (name:iati-som)
           exclude:
         metadata_overrides:
           - dataset_name: somalia-who-is-doing-what-and-where-3w-october-2022
             display_state: complete
             comments: 
-          - dataset_name: iati-som
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
