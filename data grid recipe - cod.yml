@@ -73,15 +73,11 @@ categories:
         rules:
           include:
             - (name:drc_presence_operationnelle)
-            - (name:iati-cod)
           exclude:
         metadata_overrides:
           - dataset_name: drc_presence_operationnelle
             display_state: incomplete
             comments: 
-          - dataset_name: iati-cod
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
 
 #FUNDING
       - name: funding
