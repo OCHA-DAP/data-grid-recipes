@@ -73,15 +73,11 @@ categories:
         rules:
           include:
             - (name:burundi-operational-presence)
-            - (name:iati-bdi)
           exclude:
         metadata_overrides:
           - dataset_name: burundi-operational-presence
             display_state: incomplete
             comments: 
-          - dataset_name: iati-bdi
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
 
 #FUNDING
       - name: funding
