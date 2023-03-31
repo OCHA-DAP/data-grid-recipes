@@ -64,13 +64,7 @@ categories:
         rules:
           include:
             - (name:ukraine-who-does-what-where-3w)
-            - (name:iati-ukr)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-ukr
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
