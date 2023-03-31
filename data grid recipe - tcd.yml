@@ -63,13 +63,7 @@ categories:
         rules:
           include:
             - (name:chad-operational-presence)
-            - (name:iati-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-tcd
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
-
 #FUNDING
       - name: funding
         title: Funding
