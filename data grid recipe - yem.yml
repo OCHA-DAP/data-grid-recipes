@@ -58,13 +58,7 @@ categories:
         rules:
           include:
             - (name:yemen-monthly-organizations-presence-3w)
-            - (name:iati-yem)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-yem
-            display_state: incomplete
-            comments: The dataset only covers activities reported via IATI. Consequently, the dataset is considered incomplete as it may not cover the full range of activities in the humanitarian response.
-
 #FUNDING
       - name: funding
         title: Funding
