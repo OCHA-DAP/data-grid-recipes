@@ -69,13 +69,7 @@ categories:
         rules:
           include:
             - (name:south-sudan-operational-presence)
-            - (name:iati-ssd)
           exclude:
-        metadata_overrides:
-          - dataset_name: iati-ssd
-            display_state: incomplete
-            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
-
 #FUNDING
       - name: funding
         title: Funding
