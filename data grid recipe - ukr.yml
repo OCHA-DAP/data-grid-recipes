@@ -46,11 +46,6 @@ categories:
           include:
             - (name:ukraine-hno)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-hno
-            display_state: incomplete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
