@@ -54,6 +54,11 @@ categories:
           include:
             - (name:2022-multi-sectoral-needs-assessment-occupied-palestinian-territory-opt)
           exclude:
+        metadata_overrides:
+          - dataset_name: 2022-multi-sectoral-needs-assessment-occupied-palestinian-territory-opt
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
