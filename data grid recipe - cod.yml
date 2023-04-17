@@ -49,8 +49,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: drc-displacement-idps-site-assessment-ocha
-            display_state: incomplete
-            comments: Dataset not up-to date
+            display_state: complete
+            comments: 
 
 #HNO
       - name: hno
