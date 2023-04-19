@@ -69,6 +69,11 @@ categories:
           include:
             - (name:haiti-operational-presence)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-operational-presence
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
@@ -83,11 +88,11 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-haiti)
+            - (name:haiti-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: ucdp-data-for-haiti
-            display_state: complete
+          - dataset_name: haiti-acled-conflict-data
+            display_state: incomplete
             comments: 
 
 #HUMANITARIAN ACCESS
@@ -176,7 +181,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-osm-settlements
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #ROADS
