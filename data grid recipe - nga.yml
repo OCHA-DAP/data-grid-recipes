@@ -38,11 +38,6 @@ categories:
           include:
             - (name:nigeria-refugees-and-asylum-seekers-in-nigeria)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-refugees-and-asylum-seekers-in-nigeria
-            display_state: incomplete
-            comments: Out of date
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -89,8 +84,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-northeast-nigeria-3ws-july-september-2022
-            display_state: complete
-            comments: Needs to be updated
+            display_state: incomplete
+            comments: The data has passed the update frequency
 
 #FUNDING
       - name: funding
@@ -106,11 +101,11 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:ucdp-data-for-nigeria)
+            - (name:nigeria-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: ucdp-data-for-nigeria
-            display_state: complete
+          - dataset_name: nigeria-acled-conflict-data
+            display_state: incomplete
             comments: 
 
 #HUMANITARIAN ACCESS
@@ -124,7 +119,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-violence-agaiinst-civilians-and-vital-civilian-faciltties
             display_state: incomplete
-            comments: The dataset covers health related access constraints
+            comments: The dataset only covers health related access constraints
 
 #CLIMATIE IMPACT
       - name: climate_impact
