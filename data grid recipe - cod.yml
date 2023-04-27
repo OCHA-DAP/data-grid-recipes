@@ -81,8 +81,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: drc_presence_operationnelle
-            display_state: incomplete
-            comments: Dataset not up-to date
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
