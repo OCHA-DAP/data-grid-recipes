@@ -71,7 +71,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-operational-presence
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FUNDING
