@@ -19,13 +19,10 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:unhcr-population-data-for-nga)
+            - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
             - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: unhcr-population-data-for-nga
-            display_state: complete
-            comments: More information on the IDPS can also be found on this dataset https://data.humdata.org/dataset/nigeria-location-assessment-data
           - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
             display_state: incomplete
             comments: Complementary SAAD data for BAY states
@@ -36,8 +33,13 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:nigeria-refugees-and-asylum-seekers-in-nigeria)
+            - (name:unhcr-population-data-for-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-nga
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -85,7 +87,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-northeast-nigeria-3ws-july-september-2022
             display_state: incomplete
-            comments: The data has passed the update frequency
+            comments: 
 
 #FUNDING
       - name: funding
