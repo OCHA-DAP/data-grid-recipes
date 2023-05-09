@@ -160,8 +160,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: prevalence-de-la-malnutrition-en-rdc
-            display_state: incomplete
-            comments: Dataset not up-to date
+            display_state: complete
+            comments: 
 
 #FOOD PRICES
       - name: food_prices
