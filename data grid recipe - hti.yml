@@ -222,7 +222,7 @@ categories:
         metadata_overrides:
           - dataset_name: location-of-health-facilities-hospital-in-haiti
             display_state: incomplete
-            comments: Out of date
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
