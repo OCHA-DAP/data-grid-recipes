@@ -114,9 +114,13 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:ethiopia-targeted-populaton-food-cluster)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ethiopia-targeted-populaton-food-cluster
+            display_state: incomplete
+            comments: The data contains drought specific targeted population by the Food Cluster in country with no IPC phase classification.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
