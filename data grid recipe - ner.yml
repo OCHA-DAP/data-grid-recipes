@@ -130,8 +130,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: surveillance-des-maladies-de-la-malnutrition-moderee-et-de-la-malnutrition-severe-au-niger
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #FOOD PRICES
       - name: food_prices
