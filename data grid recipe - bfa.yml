@@ -213,12 +213,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-bfa)
+            - (name:hotosm_bfa_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-bfa
+          - dataset_name: hotosm_bfa_airports
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. The dataset is not up-to-date
 
 
 #HEALTH AND EDUCATION
