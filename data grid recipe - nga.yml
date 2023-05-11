@@ -19,12 +19,11 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
             - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
           - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #REFUGEES POCs
@@ -46,16 +45,12 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state)
             - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: northeast-nigeria-displacement-for-borno-adamawa-and-yobe-states-bay-state
+          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
             display_state: complete
             comments: 
-          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
-            display_state: incomplete
-            comments: Complementary SAAD data for BAY states
 
 #HNO
       - name: hno
@@ -222,12 +217,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-nga)
+            - (name:hotosm_nga_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-nga
+          - dataset_name: hotosm_nga_airports
             display_state: incomplete
-            comments: Our airports data relies on user contributions and may not be comprehensive.
+            comments: 
 
 
 #HEALTH AND EDUCATION
