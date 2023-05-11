@@ -207,12 +207,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-bdi)
+            - (name:hotosm_bdi_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-bdi
+          - dataset_name: hotosm_bdi_airports
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
