@@ -218,7 +218,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_bfa_airports
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. The dataset is not up-to-date
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
