@@ -174,13 +174,8 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-ven)
+            - (name:hotosm_ven_airports)
           exclude:
-        metadata_overrides:
-          - dataset_name: ourairports-ven
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
