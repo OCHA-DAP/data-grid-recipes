@@ -44,12 +44,11 @@ categories:
         rules:
           include:
             - (name:sudan-humanitarian-needs-overview)
-            - (name:sudan-2022-multisector-needs-assessment-msna-data-analysis)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-2022-multisector-needs-assessment-msna-data-analysis
+          - dataset_name: sudan-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -93,11 +92,15 @@ categories:
         rules:
           include:
             - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
+            - (name:border-crossing-points-sudan)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
             comments: The incidents reported are not a complete nor a representative list of all incidents across all sectors.
+          - dataset_name: border-crossing-points-sudan
+            display_state: complete
+            comments: 
 
 #CLIMATIE IMPACT
       - name: climate_impact
