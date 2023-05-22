@@ -178,7 +178,7 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:yemen-airports-and-seaports)
+            - (name:hotosm_yem_airports)
           exclude:
 
 #HEALTH AND EDUCATION
