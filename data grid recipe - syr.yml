@@ -103,6 +103,11 @@ categories:
           include:
             - (name:syria-humanitarian-access-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: syria-humanitarian-access-severity
+            display_state: incomplete
+            comments: 
+
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
