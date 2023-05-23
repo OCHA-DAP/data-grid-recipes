@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -45,7 +45,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #HNO
       - name: hno
