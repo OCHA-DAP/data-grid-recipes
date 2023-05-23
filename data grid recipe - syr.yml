@@ -21,6 +21,11 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,6 +42,11 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
+            display_state: incomplete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
