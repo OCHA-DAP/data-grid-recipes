@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: burundi-statistiques-des-rapatriements-par-province-et-commune
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date
 
 #HNO
       - name: hno
