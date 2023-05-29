@@ -34,6 +34,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-mli)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-mli
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
