@@ -96,13 +96,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:sudan-violence-against-civilians-and-vital-civilian-facilities)
             - (name:border-crossing-points-sudan)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The incidents reported are not a complete nor a representative list of all incidents across all sectors.
           - dataset_name: border-crossing-points-sudan
             display_state: complete
             comments: 
