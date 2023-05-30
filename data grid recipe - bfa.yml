@@ -102,13 +102,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:burkina-faso-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-violence-against-civilians-and-vital-civilian-facilities
-            display_state: incomplete
-            comments: The incidents reported are not a complete nor a representative list of all incidents.
-
+            - (private:false)
+            - (private:true)
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
