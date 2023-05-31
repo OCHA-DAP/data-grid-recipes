@@ -198,11 +198,6 @@ categories:
           include:
             - (name:centros-educativos-2020)
           exclude:
-        metadata_overrides:
-          - dataset_name: centros-educativos-2020
-            display_state: incomplete
-            comments: The coordinates of education facilities are missing from the dataset.
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
