@@ -185,11 +185,6 @@ categories:
           include:
             - (name:colombia-health-facilities-2021)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-health-facilities-2021
-            display_state: incomplete
-            comments: The coordinates of health facilities are missing from the dataset.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
