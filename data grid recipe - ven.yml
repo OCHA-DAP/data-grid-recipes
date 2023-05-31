@@ -89,13 +89,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:sind-safeguarding-healthcare-monthly-news-briefs-dataset)
           exclude:
-        metadata_overrides:
-          - dataset_name: sind-safeguarding-healthcare-monthly-news-briefs-dataset
-            display_state: incomplete
-            comments: The data may not be comprehensive.
-
+            - (private:false)
+            - (private:true)
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
