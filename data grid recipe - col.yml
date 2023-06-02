@@ -109,16 +109,18 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:colombia-people-in-need-pin-del-cluster-en-seguridad-alimentaria-y-nutricion-san-sp)
           exclude:
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:tasa-de-desnutricion-aguda-en-menores-de-5-anos-2020)
           exclude:
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
