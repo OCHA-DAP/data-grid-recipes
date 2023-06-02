@@ -19,8 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:colombia-humanitarian-needs-overview)
           exclude:
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -156,6 +157,11 @@ categories:
           include:
             - (name:colombia-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-roads
+            display_state: incomplete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
