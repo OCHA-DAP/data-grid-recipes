@@ -86,7 +86,6 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afghanistan-humanitarian-access-incidents-2023)
             - (name:afghanistan-districts-affected-by-winter)
           exclude:
         metadata_overrides:
@@ -210,13 +209,9 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:afghanistan-schools)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-schools
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.The data is only available upon request.
-
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
