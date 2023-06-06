@@ -101,7 +101,7 @@ categories:
         metadata_overrides:
           - dataset_name: border-crossing-points-sudan
             display_state: incomplete
-            comments: 
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
 #CLIMATIE IMPACT
       - name: climate_impact
