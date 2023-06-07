@@ -36,8 +36,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: unhcr-population-data-for-cod
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is out of date
 
 #RETURNEES
       - name: returnees
