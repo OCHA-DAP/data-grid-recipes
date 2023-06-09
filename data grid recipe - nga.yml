@@ -19,10 +19,10 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
+            - (name:nigeria-baseline-data-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+          - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: complete
             comments: 
 
