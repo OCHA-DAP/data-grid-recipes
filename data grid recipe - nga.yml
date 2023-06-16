@@ -77,11 +77,11 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:nigeria-northeast-nigeria-3ws-july-september-2022)
+            - (name:nigeria-who-is-doing-what-where-3ws)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-northeast-nigeria-3ws-july-september-2022
-            display_state: incomplete
+          - dataset_name: nigeria-who-is-doing-what-where-3ws
+            display_state: complete
             comments: 
 
 #FUNDING
