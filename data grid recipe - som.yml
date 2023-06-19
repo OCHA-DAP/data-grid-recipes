@@ -95,11 +95,6 @@ categories:
           include:
             - (name:somalia-acled-conflict-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-acled-conflict-data
-            display_state: incomplete
-            comments: More granular data is available after registration.
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
