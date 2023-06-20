@@ -232,6 +232,11 @@ categories:
           include:
             - (name:south-sudan-village-assessment-education-facilities-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-village-assessment-education-facilities-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
