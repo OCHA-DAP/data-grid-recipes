@@ -72,12 +72,12 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:somalia-who-is-doing-what-and-where-3w-october-2022)
+            - (name:somalia-who-is-doing-what-and-where-3w)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-who-is-doing-what-and-where-3w-october-2022
-            display_state: incomplete
-            comments: The data has passed frequency of update
+          - dataset_name: somalia-who-is-doing-what-and-where-3w
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
