@@ -45,12 +45,12 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:burundi-statistiques-des-rapatriements-par-province-et-commune)
+            - (name:burundi-voluntary-repatriation-statistics-2017-2021)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-statistiques-des-rapatriements-par-province-et-commune
-            display_state: incomplete
-            comments: The dataset is not up-to-date
+          - dataset_name: burundi-voluntary-repatriation-statistics-2017-2021
+            display_state: complete
+            comments: 
 
 #HNO
       - name: hno
