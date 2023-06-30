@@ -191,6 +191,11 @@ categories:
           include:
             - (name:haiti-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-roads
+            display_state: incomplete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
