@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:yemen-idps-refugees-and-migrants)
+            - (name:yemen-displacement-daily-tracking-idps-returnees-iom-dtm)
           exclude:
 #HNO
       - name: hno
