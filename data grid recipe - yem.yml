@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:yemen-displacement-data-tracking-idp-returnees-iom-dtm)
+            - (name:yemen-idps-refugees-and-migrants)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:yemen-displacement-data-tracking-idp-returnees-iom-dtm)
+            - (name:yemen-idps-refugees-and-migrants)
           exclude:
 #HNO
       - name: hno
@@ -81,9 +81,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:yemen-humanitarian-access)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -169,7 +168,7 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:hotosm_yem_airports)
+            - (name:yemen-airports-and-seaports)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -183,13 +182,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:yem-health-facilities)
+            - (name:yemen-health-facilities-2023)
           exclude:
-        metadata_overrides:
-          - dataset_name: yem-health-facilities
-            display_state: incomplete
-            comments: The coordinates of health facilities are missing from the dataset.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -210,7 +204,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:population-estimates-in-yemen-for-2019)
+            - (name:yemen-population-estimates)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
