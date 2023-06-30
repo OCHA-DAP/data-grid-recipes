@@ -84,12 +84,12 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:south-sudan-access-incidents)
+            - (name:south-sudan-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-access-incidents
+          - dataset_name: south-sudan-acled-conflict-data
             display_state: complete
-            comments: The data contributor has shared this summary version of the dataset, but the full version of the dataset is not available for public access due to its sensitive nature.
+            comments: 
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
