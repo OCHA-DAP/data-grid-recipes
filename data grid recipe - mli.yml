@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-baseline-assessment-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: The dataset is not up to date.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-baseline-assessment-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: The dataset is not up to date.
 
 #HNO
       - name: hno
@@ -157,8 +157,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: 2019-nutrition-smart-survey-results-and-2020-trends
-            display_state: complete
-            comments: Although this dataset was last updated in (year), the OCHA country office has confirmed that it is operational.
+            display_state: incomplete
+            comments: The dataset is not up to date.
 
 #FOOD PRICES
       - name: food_prices
