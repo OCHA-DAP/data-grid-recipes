@@ -203,13 +203,7 @@ categories:
         rules:
           include:
             - (name:herams-cabo-delgado-dataset)
-            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-        metadata_overrides:
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
