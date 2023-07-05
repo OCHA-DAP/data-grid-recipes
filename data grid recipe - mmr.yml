@@ -76,6 +76,9 @@ categories:
             - (name:myanmar-operational-presence)
           exclude:
         metadata_overrides:
+          - dataset_name: myanmar-consolidated-3w
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
           - dataset_name: myanmar-operational-presence
             display_state: complete
             comments: 
