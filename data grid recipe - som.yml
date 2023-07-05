@@ -21,6 +21,11 @@ categories:
           include:
             - (name:somalia-displacement-idps-emergency-trends-tracking-ett-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-displacement-idps-emergency-trends-tracking-ett-iom-dtm
+            display_state: complete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
