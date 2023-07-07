@@ -72,16 +72,12 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:myanmar-consolidated-3w)
             - (name:myanmar-operational-presence)
           exclude:
         metadata_overrides:
-          - dataset_name: myanmar-consolidated-3w
+          - dataset_name: myanmar-operational-presence
             display_state: incomplete
             comments: The dataset is not up-to-date.
-          - dataset_name: myanmar-operational-presence
-            display_state: complete
-            comments: 
 
 #FUNDING
       - name: funding
