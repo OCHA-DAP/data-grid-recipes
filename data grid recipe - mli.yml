@@ -23,8 +23,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-baseline-assessment-data-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up to date.
+            display_state: complete
+            comments: 
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -49,8 +49,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-baseline-assessment-data-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up to date.
+            display_state: complete
+            comments: 
 
 #HNO
       - name: hno
