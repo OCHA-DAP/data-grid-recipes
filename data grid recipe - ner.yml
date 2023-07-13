@@ -117,13 +117,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:surveillance-des-maladies-de-la-malnutrition-moderee-et-de-la-malnutrition-severe-au-niger)
+            - (name:niger-nouvelles-admissions-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: surveillance-des-maladies-de-la-malnutrition-moderee-et-de-la-malnutrition-severe-au-niger
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -170,13 +165,8 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_niger_roads)
+            - (name:niger-routes)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_niger_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #AIRPORTS
       - name: airports
         title: Airports
