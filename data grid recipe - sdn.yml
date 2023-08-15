@@ -20,10 +20,10 @@ categories:
         rules:
           include:
             - (name:sudan-displacement-data-idps-iom-dtm)
-            - (name:sudan-displacement-data-idps-iom-dtm)
+            - (name:sudan-displacement-situation-idps-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-displacement-data-idps-iom-dtm
+          - dataset_name: sudan-displacement-situation-idps-iom-dtm
             display_state: incomplete
             comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
 
