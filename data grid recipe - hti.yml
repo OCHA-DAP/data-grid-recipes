@@ -194,7 +194,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-roads
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up to date
 
 #AIRPORTS
       - name: airports
