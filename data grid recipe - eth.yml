@@ -43,7 +43,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:ethiopia-humanitarian-response-plan)
+            - (name:ethiopia-humanitarian-needs-overview)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -93,6 +93,11 @@ categories:
           include:
             - (name:ethiopia-flood-response-monitoring)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-flood-response-monitoring
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -110,7 +115,7 @@ categories:
         metadata_overrides:
           - dataset_name: ethiopia-targeted-populaton-food-cluster
             display_state: incomplete
-            comments: The data contains drought specific targeted population by the Food Cluster in country with no IPC phase classification.
+            comments: The data contains drought specific targeted population by the Food Cluster in country. The dataset is marked as incomplete because it does not use IPC phase classification.
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
