@@ -45,10 +45,10 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:2022-humanitarian-profile-borno-adamawa-and-yobe-states)
+            - (name:nigeria-displacements-returnees-iom-dtm)
           exclude:
         metadata_overrides:
-          - dataset_name: 2022-humanitarian-profile-borno-adamawa-and-yobe-states
+          - dataset_name: nigeria-displacements-returnees-iom-dtm
             display_state: complete
             comments: 
 
