@@ -81,7 +81,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-who-is-doing-what-and-where-3w
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FUNDING
@@ -150,7 +150,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-acute-malnutrition-burden-and-prevalence
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FOOD PRICES
