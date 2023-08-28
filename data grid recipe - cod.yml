@@ -59,9 +59,13 @@ categories:
         rules:
           include:
             - (name:democratic-republic-of-the-congo-humanitarian-needs-overview)
+            - (name:eastern-democratic-republic-of-the-congo-crisis)
           exclude:
         metadata_overrides:
           - dataset_name: democratic-republic-of-the-congo-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+          - dataset_name: eastern-democratic-republic-of-the-congo-crisis
             display_state: complete
             comments: 
 
