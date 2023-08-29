@@ -193,8 +193,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-roads
-            display_state: incomplete
-            comments: The dataset is not up to date
+            display_state: complete
+            comments: 
 
 #AIRPORTS
       - name: airports
