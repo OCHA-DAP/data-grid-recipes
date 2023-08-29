@@ -124,7 +124,7 @@ categories:
         metadata_overrides:
           - dataset_name: ocha-somalia-population-idp-pin-operational-priority-areas-access-ipc5
             display_state: incomplete
-            comments: 
+            comments: This dataset is out of date
 
 
 #FOOD SECURITY AND NUTRITION
@@ -235,7 +235,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-health-facilities-data
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #EDUCATION FACILITIES
@@ -276,6 +276,6 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-poverty-rate
             display_state: incomplete
-            comments: Data is from 2019.
+            comments: 
 
 
