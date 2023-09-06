@@ -57,13 +57,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-who-does-what-where-january-to-march-2023)
+            - (name:afghanistan-who-does-what-where-april-to-june-2023)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-who-does-what-where-january-to-march-2023
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -199,11 +194,6 @@ categories:
           include:
             - (name:afghanistan-health-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-health-facilities
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
