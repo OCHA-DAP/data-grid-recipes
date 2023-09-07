@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:niger-retour-des-personnes-deplacees-internes)
+            - (name:niger-displacement-data-baseline-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
