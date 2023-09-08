@@ -194,6 +194,11 @@ categories:
           include:
             - (name:afghanistan-health-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-health-facilities
+            display_state: complete
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in Aug 2023 that it is operational.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
