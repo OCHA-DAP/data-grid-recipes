@@ -23,7 +23,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-displacement-idps-emergency-trends-tracking-ett-iom-dtm
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #REFUGEES POCs
@@ -36,7 +36,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: unhcr-population-data-for-som
-            display_state: complete
+            display_state: incomplete
             comments:  The UNHCR Data on forcibly Displaced Populations and Stateless Persons are the most authoritative openly available data on refugees and persons of concerns. The data are therefore included on the Data Grids as complete datasets despite not being subnational datasets as required of Data Grid datasets.
 
 #RETURNEES
