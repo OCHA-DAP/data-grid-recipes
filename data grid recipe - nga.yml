@@ -231,7 +231,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #EDUCATION FACILITIES
