@@ -81,7 +81,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-3w
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FUNDING
@@ -119,7 +119,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
@@ -146,7 +146,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-acute-malnutrition-data
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FOOD PRICES
