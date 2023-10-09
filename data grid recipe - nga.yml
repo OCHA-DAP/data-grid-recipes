@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: incomplete
-            comments: 
+            comments: The dataset is out of date
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-displacements-returnees-iom-dtm
             display_state: incomplete
-            comments: 
+            comments: The dataset is out of date
 
 #HNO
       - name: hno
