@@ -23,7 +23,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #REFUGEES POCs
@@ -49,7 +49,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-displacements-returnees-iom-dtm
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #HNO
