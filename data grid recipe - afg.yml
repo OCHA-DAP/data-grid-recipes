@@ -97,6 +97,11 @@ categories:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2023)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-natural-disaster-incidents-in-2023
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
