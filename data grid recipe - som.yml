@@ -37,7 +37,7 @@ categories:
         metadata_overrides:
           - dataset_name: unhcr-population-data-for-som
             display_state: complete
-            comments:  The UNHCR Data on forcibly Displaced Populations and Stateless Persons are the most authoritative openly available data on refugees and persons of concerns. The data are therefore included on the Data Grids as complete datasets despite not being subnational datasets as required of Data Grid datasets.
+            comments: The UNHCR Data on forcibly Displaced Populations and Stateless Persons are the most authoritative openly available data on refugees and persons of concerns. The data are therefore included on the Data Grids as complete datasets despite not being subnational datasets as required of Data Grid datasets.
 
 #RETURNEES
       - name: returnees
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-displacement-idps-returnees-baseline-assessment-iom-dtm
             display_state: complete
-            comments: Data is from 2021.
+            comments: 
 
 #HNO
       - name: hno
@@ -82,7 +82,7 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-who-is-doing-what-and-where-3w
             display_state: incomplete
-            comments: 
+            comments: This dataset is out of date
 
 #FUNDING
       - name: funding
@@ -191,7 +191,7 @@ categories:
         metadata_overrides:
           - dataset_name: cod-st-som
             display_state: incomplete
-            comments: 
+            comments: This is the best available dataset but is yet to be verified and is therefore not comprehensive
 
 #ROADS
       - name: roads
@@ -199,12 +199,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:somalia-roads)
+            - (name:hotosm_som_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-roads
-            display_state: complete
-            comments: 
+          - dataset_name: hotosm_som_roads
+            display_state: incomplete
+            comments: This dataset is out of date
 
 #AIRPORTS
       - name: airports
@@ -276,6 +276,6 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-poverty-rate
             display_state: incomplete
-            comments: 
+            comments: This dataset is out of date
 
 
