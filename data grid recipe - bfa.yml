@@ -23,8 +23,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: situation-des-personnes-deplacees-internes
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up to date.
 
 #REFUGEES POCs
       - name: refugees_poc
