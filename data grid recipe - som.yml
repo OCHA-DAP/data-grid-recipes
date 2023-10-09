@@ -204,7 +204,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_som_roads
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -276,6 +276,6 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-poverty-rate
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: 
 
 
