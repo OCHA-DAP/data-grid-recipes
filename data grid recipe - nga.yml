@@ -213,7 +213,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_nga_airports
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: 
 
 
 #HEALTH AND EDUCATION
