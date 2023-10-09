@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -37,7 +37,7 @@ categories:
         metadata_overrides:
           - dataset_name: unhcr-population-data-for-nga
             display_state: complete
-            comments: 
+            comments: The UNHCR Data on forcibly Displaced Populations and Stateless Persons are the most authoritative openly available data on refugees and persons of concerns. The data are therefore included on the Data Grids as complete datasets despite not being subnational datasets as required of Data Grid datasets.
 
 #RETURNEES
       - name: returnees
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-displacements-returnees-iom-dtm
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 #HNO
       - name: hno
@@ -82,7 +82,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-3w
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 #FUNDING
       - name: funding
@@ -120,7 +120,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 
 #FOOD SECURITY AND NUTRITION
@@ -147,7 +147,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-acute-malnutrition-data
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 #FOOD PRICES
       - name: food_prices
@@ -213,7 +213,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_nga_airports
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 
 #HEALTH AND EDUCATION
@@ -232,7 +232,7 @@ categories:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
-            comments: The dataset is out of date
+            comments: This dataset is out of date
 
 #EDUCATION FACILITIES
       - name: education_facilities
