@@ -72,7 +72,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-operational-presence
             display_state: incomplete
-            comments: 
+            comments: This dataset is out of date
 
 #FUNDING
       - name: funding
