@@ -20,7 +20,13 @@ categories:
         rules:
           include:
             - (name:escalations-in-gaza-key-figures)
+            - (name:state-of-palestine-idp-s)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-idp-s
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
