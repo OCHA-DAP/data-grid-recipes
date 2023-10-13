@@ -97,6 +97,11 @@ categories:
           include:
             - (name:tchad-suivi-des-inondations)
           exclude:
+        metadata_overrides:
+          - dataset_name: tchad-suivi-des-inondations
+            display_state: incomplete
+            comments: Le jeu de donn?es n'a pas ?t? actualis? cette ann?e, car le pays n'a connu aucune inondation.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
