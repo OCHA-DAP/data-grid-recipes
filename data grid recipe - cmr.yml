@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: cameroon-baseline-assessment-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up to date.
+            comments: The dataset is not up-to-date.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -45,7 +45,7 @@ categories:
         metadata_overrides:
           - dataset_name: cameroon-baseline-assessment-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up to date.
+            comments: The dataset is not up-to-date.
 
 #HNO
       - name: hno
@@ -132,7 +132,7 @@ categories:
         metadata_overrides:
           - dataset_name: cameroon-malnutrition-prevalence
             display_state: incomplete
-            comments: The dataset is not up to date.
+            comments: The dataset is not up-to-date.
 
 #FOOD PRICES
       - name: food_prices
