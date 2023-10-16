@@ -102,6 +102,11 @@ categories:
           include:
             - (name:cameroun-situations-des-inondations)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroun-situations-des-inondations
+            display_state: incomplete
+            comments: The dataset was not updated this year as the country did not experience any major flooding.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
