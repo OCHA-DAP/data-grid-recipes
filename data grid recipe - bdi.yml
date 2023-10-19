@@ -137,10 +137,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:burundi-severe-acute-malnutrition)
+            - (name:burundi-malnutrition-prevalence)
           exclude:
         metadata_overrides:
-          - dataset_name: burundi-severe-acute-malnutrition
+          - dataset_name: burundi-malnutrition-prevalence
             display_state: complete
             comments: 
 
