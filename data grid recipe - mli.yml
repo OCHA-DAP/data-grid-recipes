@@ -126,7 +126,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-suivi-des-inondations
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up to date.
 
 
 #FOOD SECURITY AND NUTRITION
