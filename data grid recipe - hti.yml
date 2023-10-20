@@ -100,8 +100,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-humanitarian-access-severity
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: This is the best available dataset but does not cover the whole country
 
 #CLIMATIE IMPACT
       - name: climate_impact
