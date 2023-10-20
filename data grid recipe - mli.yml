@@ -125,7 +125,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-suivi-des-inondations
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
