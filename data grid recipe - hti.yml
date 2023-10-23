@@ -52,7 +52,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-humanitarian-needs-overview
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 
