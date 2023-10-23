@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -45,7 +45,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 #HNO
       - name: hno
@@ -167,7 +167,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-pop-places
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #ROADS
@@ -239,8 +239,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-baseline-population
-            display_state: complete
-            comments: The dataset is available upon request.
+            display_state: incomplete
+            comments: The dataset is available upon request. 
 
 #POVERTY RATE
       - name: poverty_rate
