@@ -45,6 +45,11 @@ categories:
           include:
             - (name:ukraine-hno)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-hno
+            display_state: incomplete
+            comments: The data is scheduled to receive an update in the first part of December.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
