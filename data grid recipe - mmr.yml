@@ -23,8 +23,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The data is scheduled to receive an update in the first part of December.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -44,8 +44,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The data is scheduled to receive an update in the first part of December.
 
 #HNO
       - name: hno
@@ -57,8 +57,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The data is scheduled to receive an update in the first part of December.
 
 
 #COORDINATION & CONTEXT
