@@ -209,7 +209,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-schools
             display_state: complete
-            comments: Names and location of schools is only shared between specific partners in the response and is not available on HDX, in-line with the Information Sharing Protocol for Afghanistan (May 2023). 
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 
 #POPULATION AND SOCIO-ECONOMY
