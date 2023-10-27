@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
+            - (name:afghanistan-voluntary-repatriation-2023)
           exclude:
 #HNO
       - name: hno
@@ -45,6 +45,11 @@ categories:
           include:
             - (name:afghanistan-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -81,14 +86,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:afghanistan-districts-affected-by-winter)
             - (name:afghanistan-humanitarian-access-incidents-2023)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-districts-affected-by-winter
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -97,11 +96,6 @@ categories:
           include:
             - (name:afghanistan-natural-disaster-incidents-in-2023)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-natural-disaster-incidents-in-2023
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -230,13 +224,7 @@ categories:
         rules:
           include:
             - (name:cod-ps-afg)
-            - (name:afghanistan-district-level-population-estimates-urban-rural)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-district-level-population-estimates-urban-rural
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
