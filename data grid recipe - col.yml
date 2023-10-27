@@ -45,6 +45,11 @@ categories:
           include:
             - (name:colombia-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-humanitarian-needs-overview
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -59,6 +64,11 @@ categories:
           include:
             - (name:colombia-4ws)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-4ws
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
@@ -83,6 +93,11 @@ categories:
           include:
             - (name:acceso-humanitario-colombia)
           exclude:
+        metadata_overrides:
+          - dataset_name: acceso-humanitario-colombia
+            display_state: incomplete
+            comments: 
+
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -103,18 +118,26 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
+            - (name:colombia-seguridad-alimentaria)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: colombia-seguridad-alimentaria
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:colombia-desnutricion-aguda)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: colombia-desnutricion-aguda
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -155,7 +178,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: colombia-roads
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #AIRPORTS
