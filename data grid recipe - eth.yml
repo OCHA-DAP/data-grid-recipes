@@ -45,6 +45,11 @@ categories:
           include:
             - (name:ethiopia-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: ethiopia-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
