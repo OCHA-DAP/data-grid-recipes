@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: The dataset is not up-to-date
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-displacements-returnees-iom-dtm
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: The dataset is not up-to-date
 
 #HNO
       - name: hno
@@ -82,7 +82,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-3w
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: The dataset is not up-to-date
 
 #FUNDING
       - name: funding
@@ -119,8 +119,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas
-            display_state: incomplete
-            comments: This dataset is out of date
+            display_state: complete
+            comments: 
 
 
 #FOOD SECURITY AND NUTRITION
@@ -232,7 +232,7 @@ categories:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
-            comments: This dataset is out of date
+            comments: The dataset is not up-to-date
 
 #EDUCATION FACILITIES
       - name: education_facilities
