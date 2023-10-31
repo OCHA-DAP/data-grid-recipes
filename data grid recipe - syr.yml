@@ -172,7 +172,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-pop-places
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #ROADS
