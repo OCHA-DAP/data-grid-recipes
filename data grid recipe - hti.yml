@@ -53,7 +53,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-humanitarian-needs-overview
             display_state: incomplete
-            comments: 
+            comments: This dataset is out of date
 
 
 #COORDINATION & CONTEXT
