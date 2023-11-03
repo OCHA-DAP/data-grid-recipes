@@ -115,11 +115,6 @@ categories:
           include:
             - (name:sudan-people-affected-by-floods-2022)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-people-affected-by-floods-2022
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
