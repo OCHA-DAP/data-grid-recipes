@@ -23,7 +23,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #REFUGEES POCs
@@ -44,7 +44,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #HNO
