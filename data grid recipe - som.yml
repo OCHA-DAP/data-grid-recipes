@@ -119,12 +119,12 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:ocha-somalia-population-idp-pin-operational-priority-areas-access-ipc5)
+            - (name:somalia-floods)
           exclude:
         metadata_overrides:
-          - dataset_name: ocha-somalia-population-idp-pin-operational-priority-areas-access-ipc5
-            display_state: incomplete
-            comments: This dataset is out of date
+          - dataset_name: somalia-floods
+            display_state: complete
+            comments: 
 
 
 #FOOD SECURITY AND NUTRITION
