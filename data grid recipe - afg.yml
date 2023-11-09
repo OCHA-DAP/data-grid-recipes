@@ -21,6 +21,11 @@ categories:
           include:
             - (name:afghanistan-displacement-data-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
+            display_state: complete
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed in Oct 2023 that it is the last available data on IDPs.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -118,6 +123,11 @@ categories:
           include:
             - (name:afghanistan-malnutrition-prevalence)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-malnutrition-prevalence
+            display_state: complete
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed in Oct 2023 that it is operational.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -196,7 +206,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-health-facilities
             display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in Aug 2023 that it is operational.
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in Oct 2023 that it is operational.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -225,6 +235,11 @@ categories:
           include:
             - (name:cod-ps-afg)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-afg
+            display_state: complete
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in Oct 2023 that it is operational.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
