@@ -26,6 +26,9 @@ categories:
           - dataset_name: data-on-displaced-persons-in-unrwa-shelters
             display_state: incomplete
             comments: The data in this dataset contains displaced people due to the escalations in Gaza, since October 7, 2023.
+          - dataset_name: state-of-palestine-idp-s
+            display_state: incomplete
+            comments: The data in this dataset contains displaced people due to demolitions in West Bank, since 2009
 
 #REFUGEES POCs
       - name: refugees_poc
