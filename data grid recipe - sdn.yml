@@ -25,7 +25,7 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-displacement-data-idps-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The data in this dataset provides information on IDPs pre-conflict.
           - dataset_name: sudan-displacement-situation-idps-iom-dtm
             display_state: complete
             comments: The data in this dataset provides information on IDPs post-conflict(after 15 April 2023).
