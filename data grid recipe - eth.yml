@@ -172,11 +172,6 @@ categories:
           include:
             - (name:ethiopia-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-roads
-            display_state: incomplete
-            comments: The data do not contain some indication of the importance of each road segment in the network.
-
 #AIRPORTS
       - name: airports
         title: Airports
