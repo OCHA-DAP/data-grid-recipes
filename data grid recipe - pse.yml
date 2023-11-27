@@ -235,8 +235,9 @@ categories:
             comments: 
         rules:
           include:
-            - (name:state-of-palestine-schools)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
