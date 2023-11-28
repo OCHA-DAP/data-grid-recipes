@@ -19,17 +19,8 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:data-on-displaced-persons-in-unrwa-shelters)
             - (name:state-of-palestine-idp-s)
           exclude:
-        metadata_overrides:
-          - dataset_name: data-on-displaced-persons-in-unrwa-shelters
-            display_state: incomplete
-            comments: The data in this dataset contains displaced people due to the escalations in Gaza, since October 7, 2023.
-          - dataset_name: state-of-palestine-idp-s
-            display_state: incomplete
-            comments: The data in this dataset contains displaced people due to demolitions in West Bank, since 2009.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -44,6 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         flags:
           - key: not_applicable
+            display_text: 
             comments: 
         rules:
           include:
@@ -58,11 +50,6 @@ categories:
           include:
             - (name:opt-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: opt-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -101,11 +88,6 @@ categories:
           include:
             - (name:state-of-palestine-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-humanitarian-access
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -221,22 +203,19 @@ categories:
           include:
             - (name:state-of-palestine-health-0)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-health-0
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         flags:
           - key: not_applicable
+            display_text: 
             comments: 
         rules:
           include:
-            - (name:state-of-palestine-schools)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
