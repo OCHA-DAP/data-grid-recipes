@@ -76,8 +76,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-who-does-what-where-3w
-            display_state: incomplete
-            comments: This dataset only contains 3W data response from the Damascus Hub. 3W response from Amman and Gaziantep hubs is not captured.
+            display_state: complete
+            comments: 
 
 #FUNDING
       - name: funding
