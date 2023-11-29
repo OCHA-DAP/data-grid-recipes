@@ -67,7 +67,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-who-does-what-where-april-to-june-2023)
+            - (name:afghanistan-who-does-what-where-july-to-september-2023)
           exclude:
 #FUNDING
       - name: funding
