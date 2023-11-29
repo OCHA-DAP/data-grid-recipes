@@ -167,8 +167,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cod-ab-hti
-            display_state: incomplete
-            comments: This dataset is out of date
+            display_state: complete
+            comments: This is the latest available data
 
 #POPULATED PLACES
       - name: populated_places
@@ -180,8 +180,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-osm-settlements
-            display_state: incomplete
-            comments: 
+            display_state: complete
+            comments: This is the latest available data
 
 #ROADS
       - name: roads
@@ -253,7 +253,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-hti)
+            - (name:haiti-subnational-population)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
