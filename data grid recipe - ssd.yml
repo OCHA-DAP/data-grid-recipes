@@ -54,7 +54,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: The data is scheduled to receive an update by the second week of December.
 
 
 #COORDINATION & CONTEXT
