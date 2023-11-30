@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: The data is scheduled to receive an update by the third week of December.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -45,7 +45,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: The data is scheduled to receive an update by the third week of December.
 
 #HNO
       - name: hno
@@ -58,7 +58,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: The data is scheduled to receive an update by the third week of December.
 
 
 #COORDINATION & CONTEXT
@@ -102,13 +102,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:mimu-geonode-hard-to-reach-towns)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-hard-to-reach-towns
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -251,13 +247,7 @@ categories:
         rules:
           include:
             - (name:cod-ps-mmr)
-            - (name:myanmar-population-statistics-2011)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-population-statistics-2011
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
