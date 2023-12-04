@@ -184,9 +184,8 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
+            - (name:yemen-health-facilities-2023)
           exclude:
-            - (private:false)
-            - (private:true)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
