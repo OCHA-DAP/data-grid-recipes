@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: ukraine-hno
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December
+            comments: The data is scheduled to receive an update in the first part of December.
 
 
 #COORDINATION & CONTEXT
@@ -123,7 +123,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         flags:
           - key: not_applicable
-            display_text: 
+            display_text: Not applicable for the current humanitarian context.
             comments: 
         rules:
           include:
