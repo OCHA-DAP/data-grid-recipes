@@ -123,8 +123,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         flags:
           - key: not_applicable
-            display_text: Not Applicable.
-            comments: This data is only shared between specific partners in the response and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            display_text: 
+            comments: 
         rules:
           include:
           exclude:
