@@ -123,7 +123,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         flags:
           - key: not_applicable
-            display_text: Not applicable for current humanitarian context.
+            display_text: 
             comments: 
         rules:
           include:
