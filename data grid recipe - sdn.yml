@@ -96,13 +96,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:border-crossing-points-sudan)
+            - (name:sudan-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: border-crossing-points-sudan
-            display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
