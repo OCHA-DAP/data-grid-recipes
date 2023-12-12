@@ -211,6 +211,11 @@ categories:
           include:
             - (name:state-of-palestine-schools)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-schools
+            display_state: complete
+            comments: Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
