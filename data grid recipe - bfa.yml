@@ -209,7 +209,7 @@ categories:
         metadata_overrides:
           - dataset_name: burkina-faso-roads
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
 
 #AIRPORTS
       - name: airports
