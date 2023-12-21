@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
             display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed in Oct 2023 that it is the last available data on IDPs.
+            comments: Although this dataset was last updated in 2022, this is the last available data on IDPs according to IOM.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -69,6 +69,11 @@ categories:
           include:
             - (name:afghanistan-who-does-what-where-july-to-september-2023)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-who-does-what-where-july-to-september-2023
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
