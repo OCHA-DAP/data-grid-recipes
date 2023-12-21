@@ -62,6 +62,11 @@ categories:
           include:
             - (name:venezuela-who-does-what-and-where-3w)
           exclude:
+        metadata_overrides:
+          - dataset_name: venezuela-who-does-what-and-where-3w
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
@@ -126,9 +131,13 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
+            - (name:faostat-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: faostat-food-prices-for-venezuela-bolivarian-republic-of
+            display_state: incomplete
+            comments: Data is not subnational
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -224,7 +233,11 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:percentage-of-households-in-poverty-and-extreme-poverty-in-venezuela-from-2002-to-2021)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: percentage-of-households-in-poverty-and-extreme-poverty-in-venezuela-from-2002-to-2021
+            display_state: incomplete
+            comments: Data is not subnational
+
 
