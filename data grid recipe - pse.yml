@@ -134,8 +134,13 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-state-of-palestine)
+            - (name:state-of-palestine-price-of-basic-commodities-in-gaza)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
+            display_state: incomplete
+            comments: The data in this dataset covers only Gaza.
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
