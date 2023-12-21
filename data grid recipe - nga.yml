@@ -58,12 +58,12 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:nigeria-humanitarian-needs-overview)
+            - (name:humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
         metadata_overrides:
-          - dataset_name: nigeria-humanitarian-needs-overview
-            display_state: incomplete
-            comments: This dataset is out of date, it will be updated by Mid-November
+          - dataset_name: humanitarian-profile-borno-adamawa-and-yobe-states
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
