@@ -194,7 +194,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-roads
             display_state: complete
-            comments: 
+            comments: This is the latest available data from Haiti National Center for Geospatial Information (CNIGS)
 
 #AIRPORTS
       - name: airports
