@@ -106,7 +106,7 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         flags:
           - key: not_applicable
-            display_text: Not Applicable.
+            display_text: 
             comments: 
         rules:
           include:
