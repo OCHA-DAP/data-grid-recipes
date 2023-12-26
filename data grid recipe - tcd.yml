@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:population-au-tchad-et-total-idps-retournes-refugies-sadd)
+            - (name:chad-site-village-assessment-lac-province-data-iom-dtm)
           exclude:
 #HNO
       - name: hno
