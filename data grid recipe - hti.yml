@@ -207,7 +207,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-unhas-helicopter-landing-zones
             display_state: incomplete
-            comments: The dataset contains information on helicopters which are relevant for logistics and humanitarian operations. The data is currently not updating from source
+            comments: 
 
 
 #HEALTH AND EDUCATION
