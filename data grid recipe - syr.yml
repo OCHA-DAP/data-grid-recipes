@@ -58,7 +58,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-humanitarian-needs-overview
             display_state: incomplete
-            comments: Dataset will be updated by end of November 2023
+            comments: 
 
 
 #COORDINATION & CONTEXT
