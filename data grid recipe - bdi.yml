@@ -56,15 +56,15 @@ categories:
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        flags:
+          - key: not_applicable
+            display_text: Not Applicable.
+            comments: 
         rules:
           include:
-            - (name:burundi-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: burundi-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
