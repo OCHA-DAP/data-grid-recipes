@@ -47,8 +47,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mozambique_-humanitarian-needs-2022
-            display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
@@ -64,6 +64,11 @@ categories:
           include:
             - (name:mozambique-hrp-and-gombe-erp-response-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-hrp-and-gombe-erp-response-data
+            display_state: incomplete
+            comments: The datase is out of date
+
 #FUNDING
       - name: funding
         title: Funding
