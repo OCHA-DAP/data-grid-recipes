@@ -41,7 +41,7 @@ categories:
         flags:
           - key: not_applicable
             display_text: 
-            comments: Not applicable for the current humanitarian context."
+            comments: Not applicable for the current humanitarian context.
         rules:
           include:
           exclude:
