@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: mali-baseline-assessment-data-iom-dtm
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated on April in 2023, this is the last available data on IDPs according to IOM.
 
 #HNO
       - name: hno
