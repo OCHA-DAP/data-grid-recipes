@@ -112,6 +112,10 @@ categories:
       - name: food_security
         title: Food security
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        flags:
+          - key: not_applicable
+            display_text: Not applicable for the current humanitarian context.
+            comments: 
         rules:
           include:
           exclude:
@@ -196,6 +200,10 @@ categories:
       - name: health_facilities
         title: Health Facilities
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        flags:
+          - key: not_applicable
+            display_text: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: 
         rules:
           include:
             - (name:ukraine-health-facilities)
@@ -209,6 +217,10 @@ categories:
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        flags:
+          - key: not_applicable
+            display_text: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: 
         rules:
           include:
             - (name:ukraine-education-facilities)
