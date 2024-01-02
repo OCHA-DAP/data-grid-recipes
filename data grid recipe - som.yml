@@ -203,7 +203,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_som_roads
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #AIRPORTS
