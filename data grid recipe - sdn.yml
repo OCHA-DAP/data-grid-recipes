@@ -123,6 +123,11 @@ categories:
           include:
             - (name:gam-mam-and-sam-based-on-muac-measurements-2022)
           exclude:
+        metadata_overrides:
+          - dataset_name: gam-mam-and-sam-based-on-muac-measurements-2022
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
