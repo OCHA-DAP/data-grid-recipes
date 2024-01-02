@@ -118,8 +118,13 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:2022-multi-sectoral-needs-assessment-occupied-palestinian-territory-opt)
+            - (name:state-of-palestine-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-acute-food-insecurity-country-data
+            display_state: incomplete
+            comments: The data in this dataset covers only Gaza Strip.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -144,7 +149,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
             display_state: incomplete
-            comments: The data in this dataset covers only Gaza.
+            comments: The data in this dataset covers only Gaza Strip.
 
 
 #GEOGRAPHY AND INFRASTRUCTURE
