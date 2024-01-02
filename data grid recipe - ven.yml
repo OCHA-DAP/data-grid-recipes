@@ -62,11 +62,6 @@ categories:
           include:
             - (name:venezuela-who-does-what-and-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: venezuela-who-does-what-and-where-3w
-            display_state: incomplete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -181,6 +176,11 @@ categories:
           include:
             - (name:hotosm_ven_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_ven_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
