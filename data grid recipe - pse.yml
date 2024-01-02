@@ -99,13 +99,9 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:west-bank-and-gaza-wash-vulnerability-and-flood-events)
           exclude:
-        metadata_overrides:
-          - dataset_name: west-bank-and-gaza-wash-vulnerability-and-flood-events
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
