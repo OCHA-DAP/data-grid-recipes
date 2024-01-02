@@ -126,13 +126,9 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:faostat-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
-        metadata_overrides:
-          - dataset_name: faostat-food-prices-for-venezuela-bolivarian-republic-of
-            display_state: incomplete
-            comments: Data is not subnational
-
+            - (private:false)
+            - (private:true)
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
