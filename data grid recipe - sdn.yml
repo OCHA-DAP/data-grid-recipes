@@ -38,6 +38,10 @@ categories:
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: Not applicable for the current humanitarian context."
         rules:
           include:
             - (name:sudan-returnee-data-iom-dtm)
