@@ -186,7 +186,7 @@ categories:
         metadata_overrides:
           - dataset_name: syr_roads_streets
             display_state: complete
-            comments: 
+            comments: This is the latest available data on roads confirmed by the contributor
 
 #AIRPORTS
       - name: airports
