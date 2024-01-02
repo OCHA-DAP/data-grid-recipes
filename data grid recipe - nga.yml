@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: Although this dataset was last updated in April 2023, this is the last available data on IDPs according to IOM.
 
 #REFUGEES POCs
       - name: refugees_poc
@@ -50,7 +50,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-displacements-returnees-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up-to-date
+            comments: Although this dataset was last updated in November 2022, this is the last available data on IDPs according to IOM.
 
 #HNO
       - name: hno
