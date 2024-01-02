@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: ukraine-hno
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
