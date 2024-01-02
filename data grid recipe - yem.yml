@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-humanitarian-needs-overview
             display_state: incomplete
-            comments: The data is scheduled to receive an update in the first part of December.
+            comments: 
 
 
 #COORDINATION & CONTEXT
@@ -148,10 +148,10 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_yem_populated_places)
+            - (name:yemen-populated-places)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_yem_populated_places
+          - dataset_name: yemen-populated-places
             display_state: complete
             comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
 
