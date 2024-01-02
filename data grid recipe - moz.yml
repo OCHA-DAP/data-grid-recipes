@@ -67,7 +67,7 @@ categories:
         metadata_overrides:
           - dataset_name: mozambique-hrp-and-gombe-erp-response-data
             display_state: incomplete
-            comments: The datase is out of date
+            comments: 
 
 #FUNDING
       - name: funding
