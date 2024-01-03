@@ -187,12 +187,12 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:hotosm_niger_airports)
+            - (name:niger-aeroports)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_niger_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: niger-aeroports
+            display_state: complete
+            comments: Ces donn?es sont uniquement partag?es entre des partenaires sp?cifiques dans le cadre de la r?ponse et ne sont pas disponibles sur HDX, conform?ment au Protocole de Partage d'Informations pour la r?ponse.
 
 
 #HEALTH AND EDUCATION
