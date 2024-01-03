@@ -225,7 +225,7 @@ categories:
         metadata_overrides:
           - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
             display_state: incomplete
-            comments: The dataset does not include the coordinates of education facilities.
+            comments: The dataset does not include the education facilities coordinates.
 
 
 #POPULATION AND SOCIO-ECONOMY
