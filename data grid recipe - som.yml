@@ -203,7 +203,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_som_roads
-            display_state: complete
+            display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
