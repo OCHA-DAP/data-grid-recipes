@@ -192,7 +192,7 @@ categories:
         metadata_overrides:
           - dataset_name: niger-aeroports
             display_state: complete
-            comments: Ces donn?es sont uniquement partag?es entre des partenaires sp?cifiques dans le cadre de la r?ponse et ne sont pas disponibles sur HDX, conform?ment au Protocole de Partage d'Informations pour la r?ponse.
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 
 #HEALTH AND EDUCATION
