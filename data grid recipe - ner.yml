@@ -171,7 +171,7 @@ categories:
         metadata_overrides:
           - dataset_name: niger-settlements
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
@@ -222,6 +222,11 @@ categories:
             - (name:niger-base-de-donnees-des-etablissements-scolaires)
             - (name:niger-base-de-donnees-des-etablissements-scolaires)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
+            display_state: incomplete
+            comments: The dataset does not include the coordinates of education facilities.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
