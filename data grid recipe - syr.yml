@@ -244,7 +244,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-baseline-population
-            display_state: incomplete
+            display_state: complete
             comments: The dataset is available upon request. 
 
 #POVERTY RATE
