@@ -51,11 +51,6 @@ categories:
           include:
             - (name:south-sudan-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The data is scheduled to receive an update by the second week of December.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -222,7 +217,7 @@ categories:
         metadata_overrides:
           - dataset_name: health-facilities-in-sub-saharan-africa
             display_state: incomplete
-            comments: The dataset is not up to date
+            comments: The dataset is not up-to-date.
 
 #EDUCATION FACILITIES
       - name: education_facilities
