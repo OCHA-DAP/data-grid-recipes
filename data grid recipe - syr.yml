@@ -196,6 +196,11 @@ categories:
           include:
             - (name:hotosm_syr_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_syr_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
