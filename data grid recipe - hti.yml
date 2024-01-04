@@ -239,7 +239,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-education-facilities
             display_state: incomplete
-            comments: This is the latest available data but the Geo-coordinates are unavailable. 
+            comments: This is the latest available data but the geo-coordinates are unavailable. 
 
 
 #POPULATION AND SOCIO-ECONOMY
