@@ -188,7 +188,7 @@ categories:
         metadata_overrides:
           - dataset_name: chad-aerodromes
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
