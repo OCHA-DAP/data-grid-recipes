@@ -118,11 +118,6 @@ categories:
           include:
             - (name:nutrition-in-central-african-republic)
           exclude:
-        metadata_overrides:
-          - dataset_name: nutrition-in-central-african-republic
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
