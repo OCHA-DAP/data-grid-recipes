@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: burundi-baseline-assessment-data-iom-dtm
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated on July in 2023, this is the last available data on IDPs according to IOM.
 
 #REFUGEES POCs
       - name: refugees_poc
