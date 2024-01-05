@@ -193,7 +193,7 @@ categories:
         metadata_overrides:
           - dataset_name: ukraine-certified-airfields
             display_state: complete
-            comments: 
+            comments: Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 
 #HEALTH AND EDUCATION
