@@ -211,7 +211,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-health-facilities
             display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in 2023 that it is operational.
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed in 2023 that it is operational. Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 #EDUCATION FACILITIES
       - name: education_facilities
