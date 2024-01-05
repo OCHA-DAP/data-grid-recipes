@@ -27,14 +27,8 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:refugees-inside-south-sudan)
             - (name:unhcr-population-data-for-ssd)
           exclude:
-        metadata_overrides:
-          - dataset_name: refugees-inside-south-sudan
-            display_state: incomplete
-            comments: Dataset contains only 11 locations (ADM2 level)
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -104,8 +98,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: south-sudan-flood-data
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up-to-date. It only refers to floods in 2022.
 
 
 #FOOD SECURITY AND NUTRITION
@@ -130,11 +124,6 @@ categories:
           include:
             - (name:south-sudan-nutrition-gam-rates)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-nutrition-gam-rates
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -167,9 +156,6 @@ categories:
             - (name:south-sudan-settlements)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-settlements
-            display_state: complete
-            comments: 
           - dataset_name: south-sudan-settlements
             display_state: complete
             comments: 
