@@ -134,7 +134,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-food-security-agriculture-severity-classification
             display_state: incomplete
-            comments: The Integrated Phase Classification (IPC) is not applied in the Syrian Arab Republic.
+            comments: The Integrated Phase Classification (IPC) is not applied in the Syrian Arab Republic. This dataset is out of date
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
