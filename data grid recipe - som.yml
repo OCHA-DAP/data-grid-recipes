@@ -62,8 +62,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-humanitarian-needs-overview
-            display_state: incomplete
-            comments: This dataset is out of date
+            display_state: complete
+            comments: 
 
 
 #COORDINATION & CONTEXT
