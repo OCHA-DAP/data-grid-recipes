@@ -87,7 +87,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-humanitarian-access
             display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: The latest access data is only shared between organizations in the response and is not shared publicly due to data sensitivity.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -221,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-schools
             display_state: complete
-            comments: Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: Coordinates are only shared between specific partners and is not available on HDX.
 
 
 #POPULATION AND SOCIO-ECONOMY
