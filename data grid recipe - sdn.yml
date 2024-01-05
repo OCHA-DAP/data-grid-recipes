@@ -215,7 +215,7 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-schools
             display_state: incomplete
-            comments: The dataset is missing geo-coordinates.
+            comments: The dataset is missing geo-coordinates. The dataset is not up-to-date.
 
 
 #POPULATION AND SOCIO-ECONOMY
