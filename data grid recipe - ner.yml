@@ -39,8 +39,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: niger-displacement-data-baseline-assessment-iom-dtm
-            display_state: complete
-            comments: Although this dataset was last updated in April 2023, this is the last available data on Returnees according to IOM.
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #HNO
       - name: hno
@@ -223,6 +223,9 @@ categories:
             - (name:niger-base-de-donnees-des-etablissements-scolaires)
           exclude:
         metadata_overrides:
+          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
+            display_state: incomplete
+            comments: Geo-coordinates are unavailable.
           - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
             display_state: incomplete
             comments: The dataset does not include the education facilities coordinates.
