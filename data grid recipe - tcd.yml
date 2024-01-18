@@ -162,12 +162,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:chad-populated-places-settlements)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
-          - dataset_name: chad-populated-places-settlements
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
             display_state: complete
-            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
