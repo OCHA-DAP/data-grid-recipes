@@ -192,7 +192,7 @@ categories:
         metadata_overrides:
           - dataset_name: settlements
             display_state: complete
-            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Populated Places in the country.
+            comments: 
 
 #ROADS
       - name: roads
