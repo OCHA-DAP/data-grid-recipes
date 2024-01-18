@@ -197,7 +197,7 @@ categories:
         metadata_overrides:
           - dataset_name: west-and-central-africa-administrative-boundaries-levels
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
