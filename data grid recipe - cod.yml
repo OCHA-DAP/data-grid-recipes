@@ -151,8 +151,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: prevalence-de-la-malnutrition-en-rdc
-            display_state: incomplete
-            comments: The dataset is not up to date.
+            display_state: complete
+            comments: 
 
 #FOOD PRICES
       - name: food_prices
@@ -162,6 +162,11 @@ categories:
           include:
             - (name:wfp-food-prices-for-democratic-republic-of-the-congo)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-democratic-republic-of-the-congo
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
