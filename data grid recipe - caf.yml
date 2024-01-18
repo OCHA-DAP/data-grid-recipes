@@ -182,7 +182,7 @@ categories:
         metadata_overrides:
           - dataset_name: republique-centrafricaine-aerodromes
             display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
