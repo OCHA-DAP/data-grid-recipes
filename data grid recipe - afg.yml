@@ -42,6 +42,11 @@ categories:
           include:
             - (name:afghanistan-voluntary-repatriation-2023)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-voluntary-repatriation-2023
+            display_state: complete
+            comments: 
+
 #HNO
       - name: hno
         title: Humanitarian Needs
