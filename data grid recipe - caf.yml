@@ -169,7 +169,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_caf_roads
             display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed it to be the best available dataset for this subcategory.
+            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
 
 #AIRPORTS
       - name: airports
@@ -182,7 +182,7 @@ categories:
         metadata_overrides:
           - dataset_name: republique-centrafricaine-aerodromes
             display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
+            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
 
 
 #HEALTH AND EDUCATION
