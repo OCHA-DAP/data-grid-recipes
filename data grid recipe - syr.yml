@@ -153,6 +153,11 @@ categories:
           include:
             - (name:wfp-food-prices-for-syrian-arab-republic)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-syrian-arab-republic
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -188,11 +193,6 @@ categories:
           include:
             - (name:syr_roads_streets)
           exclude:
-        metadata_overrides:
-          - dataset_name: syr_roads_streets
-            display_state: complete
-            comments: This is the latest available data on roads confirmed by the contributor
-
 #AIRPORTS
       - name: airports
         title: Airports
