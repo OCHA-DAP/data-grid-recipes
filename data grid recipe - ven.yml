@@ -159,11 +159,6 @@ categories:
           include:
             - (name:venezuela-roads-network)
           exclude:
-        metadata_overrides:
-          - dataset_name: venezuela-roads-network
-            display_state: incomplete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
