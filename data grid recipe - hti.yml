@@ -101,7 +101,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-humanitarian-access-severity
             display_state: incomplete
-            comments: This is the best available dataset but does not cover the whole country
+            comments: It only covers three departments out of 10. Ouest, Sud and Artibonite.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -186,7 +186,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-osm-settlements
             display_state: complete
-            comments: This is the latest available data
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
@@ -244,7 +244,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-education-facilities
             display_state: incomplete
-            comments: This is the latest available data but the geo-coordinates are unavailable. 
+            comments: Geo-coordinates are unavailable.
 
 
 #POPULATION AND SOCIO-ECONOMY
@@ -258,8 +258,9 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:haiti-subnational-population)
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
