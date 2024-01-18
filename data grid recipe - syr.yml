@@ -74,11 +74,6 @@ categories:
           include:
             - (name:syrian-arab-republic-who-does-what-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-who-does-what-where-3w
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -105,8 +100,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syria-humanitarian-access-severity
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -182,8 +177,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-pop-places
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #ROADS
       - name: roads
