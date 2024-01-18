@@ -158,7 +158,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-populated-places
             display_state: complete
-            comments: Although this data is compiled from crowd sourced information, it is marked as complete because the OCHA country office has confirmed that it is operational.
+            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
 
 #ROADS
       - name: roads
