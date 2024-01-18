@@ -135,13 +135,9 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:myanmar-baseline-data-nutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-baseline-data-nutrition
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -181,6 +177,11 @@ categories:
           include:
             - (name:mimu-geonode-myanmar-road-network)
           exclude:
+        metadata_overrides:
+          - dataset_name: mimu-geonode-myanmar-road-network
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #AIRPORTS
       - name: airports
         title: Airports
@@ -191,8 +192,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-airport
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 
 #HEALTH AND EDUCATION
