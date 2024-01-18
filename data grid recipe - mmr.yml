@@ -180,7 +180,7 @@ categories:
         metadata_overrides:
           - dataset_name: mimu-geonode-myanmar-road-network
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -193,7 +193,7 @@ categories:
         metadata_overrides:
           - dataset_name: myanmar-airport
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 
 #HEALTH AND EDUCATION
