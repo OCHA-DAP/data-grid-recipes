@@ -95,7 +95,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-border-crossings
-            display_state: incomplete
+            display_state: complete
             comments: 
 
 #CLIMATIE IMPACT
