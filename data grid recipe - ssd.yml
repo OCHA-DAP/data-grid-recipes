@@ -93,11 +93,6 @@ categories:
           include:
             - (name:south-sudan-humanitarian-access-incidents)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-humanitarian-access-incidents
-            display_state: incomplete
-            comments: The data contributor has shared this summary version of the dataset, but the full version of the dataset is not available for public access due to its sensitive nature.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
