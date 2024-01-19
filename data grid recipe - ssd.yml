@@ -155,6 +155,11 @@ categories:
             - (name:south-sudan-settlements)
             - (name:south-sudan-settlements)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-settlements
+            display_state: complete
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
+
 #ROADS
       - name: roads
         title: Roads
