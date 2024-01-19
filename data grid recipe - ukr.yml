@@ -198,7 +198,7 @@ categories:
         metadata_overrides:
           - dataset_name: ukraine-certified-airfields
             display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational. Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 
 #HEALTH AND EDUCATION
