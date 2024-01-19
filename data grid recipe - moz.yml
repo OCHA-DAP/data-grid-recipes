@@ -57,12 +57,12 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-hrp-and-gombe-erp-response-data)
+            - (name:mozambique-hrp-2023-5ws-response-january-november)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-hrp-and-gombe-erp-response-data
-            display_state: incomplete
-            comments: 
+          - dataset_name: mozambique-hrp-2023-5ws-response-january-november
+            display_state: complete
+            comments: Information on organizations are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
 
 #FUNDING
       - name: funding
