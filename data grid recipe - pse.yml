@@ -147,7 +147,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
             display_state: incomplete
-            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.The data in this dataset covers only Gaza Strip.
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation. The data in this dataset covers only Gaza Strip.
 
 
 #GEOGRAPHY AND INFRASTRUCTURE
