@@ -222,7 +222,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-schools
             display_state: incomplete
-            comments: Geo-coordinates are unavailable.The dataset is not up-to-date.
+            comments: Geo-coordinates are unavailable. The dataset is not up-to-date.
 
 
 #POPULATION AND SOCIO-ECONOMY
