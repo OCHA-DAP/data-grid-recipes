@@ -92,7 +92,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-humanitarian-access
             display_state: incomplete
-            comments: The latest access data is only shared between organizations in the response and is not shared publicly due to data sensitivity.
+            comments: The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: climate_impact
