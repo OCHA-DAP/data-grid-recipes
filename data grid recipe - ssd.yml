@@ -21,11 +21,6 @@ categories:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -42,11 +37,6 @@ categories:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
