@@ -21,11 +21,6 @@ categories:
           include:
             - (name:sudan-displacement-situation-idps-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-displacement-situation-idps-iom-dtm
-            display_state: complete
-            comments: The data in this dataset provides information on IDPs post-conflict(after 15 April 2023).
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -154,11 +149,6 @@ categories:
           include:
             - (name:sudan-settlement-26-july-2020)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-settlement-26-july-2020
-            display_state: complete
-            comments: Although this dataset was last updated in 2020, the OCHA country office has confirmed that it is operational.
-
 #ROADS
       - name: roads
         title: Roads
@@ -215,7 +205,7 @@ categories:
         metadata_overrides:
           - dataset_name: sudan-schools
             display_state: incomplete
-            comments: The dataset is missing geo-coordinates. The dataset is not up-to-date.
+            comments: Geo-coordinates are unavailable. The dataset is not up-to-date.
 
 
 #POPULATION AND SOCIO-ECONOMY
