@@ -21,11 +21,6 @@ categories:
           include:
             - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-baseline-assessment-data-iom-dtm
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -47,11 +42,6 @@ categories:
           include:
             - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-baseline-assessment-data-iom-dtm
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
