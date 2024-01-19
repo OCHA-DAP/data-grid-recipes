@@ -161,7 +161,7 @@ categories:
         metadata_overrides:
           - dataset_name: cod-st-som
             display_state: incomplete
-            comments: Estimates have not been confirmed by the IMWG
+            comments: Estimates have not been confirmed by the IMWG.
 
 #ROADS
       - name: roads
