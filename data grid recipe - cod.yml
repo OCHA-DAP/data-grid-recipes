@@ -104,6 +104,10 @@ categories:
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
+        flags:
+          - key: not_applicable
+            display_text: Not available
+            comments: 
         rules:
           include:
           exclude:
