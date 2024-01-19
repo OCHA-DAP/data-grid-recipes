@@ -21,6 +21,11 @@ categories:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -37,6 +42,11 @@ categories:
           include:
             - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -96,11 +106,6 @@ categories:
           include:
             - (name:south-sudan-flood-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-flood-data
-            display_state: incomplete
-            comments: The dataset is not up-to-date. It only refers to floods in 2022.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -124,6 +129,11 @@ categories:
           include:
             - (name:south-sudan-nutrition-gam-rates)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-nutrition-gam-rates
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -155,11 +165,6 @@ categories:
             - (name:south-sudan-settlements)
             - (name:south-sudan-settlements)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-settlements
-            display_state: complete
-            comments: 
-
 #ROADS
       - name: roads
         title: Roads
@@ -171,7 +176,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-road-network_hdx
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
 
 #AIRPORTS
       - name: airports
@@ -184,7 +189,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-airstrips
             display_state: complete
-            comments: 
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
@@ -216,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-village-assessment-education-facilities-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The dataset may only cover some schools in States where IDPs are located.
 
 
 #POPULATION AND SOCIO-ECONOMY
@@ -231,8 +236,6 @@ categories:
         rules:
           include:
             - (name:cod-ps-ssd)
-            - (name:south-sudan-population-statistics)
-            - (name:south-sudan-administrative-levels-0-2-2020-population-estimates)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -242,9 +245,4 @@ categories:
           include:
             - (name:south-sudan-resilience-capacity-index)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-resilience-capacity-index
-            display_state: complete
-            comments: Recent poverty estimates are unavailable but this dataset provides the resilience capacity level at the subnational level. Poverty and resilience capacity are interconnected as the former impacts the coping capacity of a family to survive.
-
 
