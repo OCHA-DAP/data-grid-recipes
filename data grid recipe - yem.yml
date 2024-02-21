@@ -86,7 +86,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-humanitarian-access
             display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: This data is only shared between specific partners and is only available on request.
 
 #CLIMATIE IMPACT
       - name: climate_impact
