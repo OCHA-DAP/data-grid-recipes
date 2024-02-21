@@ -211,7 +211,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-health-facilities
             display_state: complete
-            comments: Coordinates are only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: Coordinates are only shared between specific partners and is not available on HDX.
 
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -224,7 +224,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-schools
             display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
+            comments: This data is only shared between specific partners and is not available on HDX.
 
 
 #POPULATION AND SOCIO-ECONOMY
