@@ -57,7 +57,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-3ws-2023-jan-nov)
+            - (name:yemen-monthly-organizations-presence-3w)
           exclude:
 #FUNDING
       - name: funding
