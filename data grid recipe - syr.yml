@@ -173,7 +173,7 @@ categories:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-pop-places
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 #ROADS
       - name: roads
