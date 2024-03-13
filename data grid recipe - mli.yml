@@ -143,10 +143,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:2019-nutrition-smart-survey-results-and-2020-trends)
+            - (name:mali-malnutrition)
           exclude:
         metadata_overrides:
-          - dataset_name: 2019-nutrition-smart-survey-results-and-2020-trends
+          - dataset_name: mali-malnutrition
             display_state: incomplete
             comments: The dataset is not up to date.
 
