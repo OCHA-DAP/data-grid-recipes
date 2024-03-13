@@ -102,9 +102,13 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:mali-contraintes-d-acces-humanitaire)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: mali-contraintes-d-acces-humanitaire
+            display_state: complete
+            comments: This data is only shared between specific partners and is not available on HDX.
+
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
