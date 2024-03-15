@@ -241,8 +241,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mali-formation-sanitaires
-            display_state: incomplete
-            comments: Types of health facilities are missing.
+            display_state: complete
+            comments: 
 
 #EDUCATION FACILITIES
       - name: education_facilities
