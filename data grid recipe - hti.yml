@@ -136,11 +136,11 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:haiti-acute-malnutrition)
+            - (name:haiti-acutemalnutrition)
           exclude:
         metadata_overrides:
-          - dataset_name: haiti-acute-malnutrition
-            display_state: incomplete
+          - dataset_name: haiti-acutemalnutrition
+            display_state: complete
             comments: 
 
 #FOOD PRICES
