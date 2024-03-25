@@ -19,32 +19,52 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:nigeria-baseline-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-baseline-data-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-moz)
+            - (name:unhcr-population-data-for-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-nga
+            display_state: complete
+            comments: 
+
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:nigeria-displacements-returnees-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-displacements-returnees-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mozambique-2024-humanitarian-needs-and-response-data)
+            - (name:humanitarian-profile-borno-adamawa-and-yobe-states)
           exclude:
+        metadata_overrides:
+          - dataset_name: humanitarian-profile-borno-adamawa-and-yobe-states
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -57,10 +77,10 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-3ws-2023-jan-nov)
+            - (name:nigeria-3w)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-3ws-2023-jan-nov
+          - dataset_name: nigeria-3w
             display_state: complete
             comments: 
 
@@ -70,7 +90,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-mozambique)
+            - (name:fts-requirements-and-funding-data-for-nigeria)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -78,8 +98,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
-            - (name:mozambique-acled-conflict-data)
+            - (name:nigeria-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -96,10 +115,10 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:impact-of-cyclones)
+            - (name:nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)
           exclude:
         metadata_overrides:
-          - dataset_name: impact-of-cyclones
+          - dataset_name: nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas
             display_state: complete
             comments: 
 
@@ -115,7 +134,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:mozambique-acute-food-insecurity-country-data)
+            - (name:cadre-harmonise)
           exclude:
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -123,16 +142,15 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-mozambique)
+            - (name:wfp-food-prices-for-nigeria)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -146,20 +164,25 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:cod-ab-moz)
+            - (name:cod-ab-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-nga
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_moz_populated_places)
+            - (name:west-and-central-africa-administrative-boundaries-levels)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_moz_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: west-and-central-africa-administrative-boundaries-levels
+            display_state: complete
+            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
 
 #ROADS
       - name: roads
@@ -167,7 +190,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:mozambique-roads)
+            - (name:nigeria-road-network)
           exclude:
 #AIRPORTS
       - name: airports
@@ -175,10 +198,10 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:hotosm_moz_airports)
+            - (name:hotosm_nga_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_moz_airports
+          - dataset_name: hotosm_nga_airports
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
@@ -194,16 +217,26 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:herams-cabo-delgado-dataset)
+            - (name:health-facilities-in-sub-saharan-africa)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:mozambique-school-data)
+            - (name:hotosm_nga_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_nga_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -216,14 +249,24 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-moz)
+            - (name:cod-ps-nga)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-nga
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:mozambique-mpi)
+            - (name:nigeria-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-mpi
+            display_state: complete
+            comments: 
+
 

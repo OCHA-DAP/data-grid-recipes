@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:ukraine-idp-estimates)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,15 +27,20 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-moz)
+            - (name:ukraine-refugee-situation)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-refugee-situation
+            display_state: incomplete
+            comments: Dataset is missing locations. 
+
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:ukraine-displacement-data-returnees-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -43,7 +48,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mozambique-2024-humanitarian-needs-and-response-data)
+            - (name:ukraine-hno)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -57,20 +62,15 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-3ws-2023-jan-nov)
+            - (name:ukraine-who-does-what-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-3ws-2023-jan-nov
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-mozambique)
+            - (name:fts-requirements-and-funding-data-for-ukraine)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -78,8 +78,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
-            - (name:mozambique-acled-conflict-data)
+            - (name:ukraine-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -87,22 +86,22 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:ukraine-border-crossings)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: ukraine-border-crossings
+            display_state: complete
+            comments: 
+
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:impact-of-cyclones)
           exclude:
-        metadata_overrides:
-          - dataset_name: impact-of-cyclones
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -113,14 +112,23 @@ categories:
       - name: food_security
         title: Food security
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: Not applicable for the current humanitarian context.
         rules:
           include:
-            - (name:mozambique-acute-food-insecurity-country-data)
           exclude:
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: Not applicable for the current humanitarian context.
         rules:
           include:
           exclude:
@@ -132,8 +140,13 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-mozambique)
+            - (name:wfp-food-prices-for-ukraine)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-ukraine
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -146,7 +159,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:cod-ab-moz)
+            - (name:cod-ab-ukr)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -154,33 +167,33 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_moz_populated_places)
+            - (name:ukraine-populated-places)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_moz_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:mozambique-roads)
+            - (name:hotosm_ukr_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_ukr_roads
+            display_state: complete
+            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response. 
+
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:hotosm_moz_airports)
+            - (name:ukraine-certified-airfields)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_moz_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: ukraine-certified-airfields
+            display_state: complete
+            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
 
 
 #HEALTH AND EDUCATION
@@ -192,18 +205,36 @@ categories:
       - name: health_facilities
         title: Health Facilities
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        flags:
+          - key: not_applicable
+            display_text: Not available
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:herams-cabo-delgado-dataset)
+            - (name:ukraine-health-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-health-facilities
+            display_state: incomplete
+            comments: The coordinates of health facilities are missing from the dataset.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        flags:
+          - key: not_applicable
+            display_text: Not available
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:mozambique-school-data)
+            - (name:ukraine-education-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-education-facilities
+            display_state: incomplete
+            comments: The coordinates of education facilities are missing from the dataset.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -216,7 +247,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-moz)
+            - (name:cod-ps-ukr)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -224,6 +255,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:mozambique-mpi)
+            - (name:ukraine-mpi)
           exclude:
 
