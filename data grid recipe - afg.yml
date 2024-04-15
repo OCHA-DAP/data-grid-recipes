@@ -40,13 +40,8 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2024)
+            - (name:afghanistan-voluntary-repatriation-2023)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-voluntary-repatriation-2024
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
