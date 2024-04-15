@@ -45,11 +45,6 @@ categories:
           include:
             - (name:chad-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-humanitarian-needs-overview
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
