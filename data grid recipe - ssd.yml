@@ -59,6 +59,11 @@ categories:
           include:
             - (name:south-sudan-operational-presence)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-operational-presence
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -117,12 +122,12 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:south-sudan-nutrition-gam-rates)
+            - (name:south-sudan-acute-malnutrition)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-nutrition-gam-rates
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+          - dataset_name: south-sudan-acute-malnutrition
+            display_state: complete
+            comments: 
 
 #FOOD PRICES
       - name: food_prices
