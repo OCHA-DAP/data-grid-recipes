@@ -126,7 +126,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:somalia-acute-malnutrition-burden-and-prevalence)
+            - (name:somalia-acute-malnutrition-analysis)
           exclude:
 #FOOD PRICES
       - name: food_prices
