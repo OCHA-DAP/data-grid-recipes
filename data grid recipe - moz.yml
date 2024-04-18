@@ -61,7 +61,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: mozambique-3ws-2023-jan-nov
-            display_state: complete
+            display_state: incomplete
             comments: 
 
 #FUNDING
@@ -123,9 +123,13 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:mozambique-acute-malnutrtion-by-admin2)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: mozambique-acute-malnutrtion-by-admin2
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
