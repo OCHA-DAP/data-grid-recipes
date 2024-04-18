@@ -40,7 +40,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:afghanistan-voluntary-repatriation-2023)
+            - (name:afghan-refugee-return-2024)
           exclude:
 #HNO
       - name: hno
