@@ -142,11 +142,6 @@ categories:
           include:
             - (name:wfp-food-prices-for-ukraine)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-ukraine
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
