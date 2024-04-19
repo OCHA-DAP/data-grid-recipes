@@ -50,11 +50,6 @@ categories:
           include:
             - (name:haiti-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -69,11 +64,6 @@ categories:
           include:
             - (name:haiti-operational-presence)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-operational-presence
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -151,11 +141,6 @@ categories:
           include:
             - (name:wfp-food-prices-for-haiti)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-haiti
-            display_state: complete
-            comments: 
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
