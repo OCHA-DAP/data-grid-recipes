@@ -21,6 +21,11 @@ categories:
           include:
             - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-displacement-idps-returnees-baseline-assessment-iom-dtm
+            display_state: incomplete
+            comments: 
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
