@@ -59,11 +59,6 @@ categories:
           include:
             - (name:mozambique-3ws-2023-jan-nov)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-3ws-2023-jan-nov
-            display_state: incomplete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
