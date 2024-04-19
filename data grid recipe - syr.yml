@@ -21,11 +21,6 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -69,11 +64,6 @@ categories:
           include:
             - (name:syrian-arab-republic-who-does-what-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-who-does-what-where-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -143,11 +133,6 @@ categories:
           include:
             - (name:wfp-food-prices-for-syrian-arab-republic)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-syrian-arab-republic
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
