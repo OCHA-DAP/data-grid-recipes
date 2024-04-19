@@ -21,11 +21,6 @@ categories:
           include:
             - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-displacement-idps-returnees-baseline-assessment-iom-dtm
-            display_state: incomplete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -50,11 +45,6 @@ categories:
           include:
             - (name:somalia-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -69,11 +59,6 @@ categories:
           include:
             - (name:somalia-who-is-doing-what-and-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-who-is-doing-what-and-where-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
