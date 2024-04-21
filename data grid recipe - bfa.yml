@@ -21,11 +21,6 @@ categories:
           include:
             - (name:situation-des-personnes-deplacees-internes)
           exclude:
-        metadata_overrides:
-          - dataset_name: situation-des-personnes-deplacees-internes
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -56,11 +51,6 @@ categories:
           include:
             - (name:burkina-faso-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -75,11 +65,6 @@ categories:
           include:
             - (name:burkina-faso-presence-operationnelle)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-presence-operationnelle
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -136,11 +121,6 @@ categories:
           include:
             - (name:cadre-harmonise)
           exclude:
-        metadata_overrides:
-          - dataset_name: cadre-harmonise
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
