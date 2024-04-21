@@ -21,11 +21,6 @@ categories:
           include:
             - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-baseline-assessment-data-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -60,11 +55,6 @@ categories:
           include:
             - (name:mali-humanitarian-needs-overview)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-humanitarian-needs-overview
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -79,11 +69,6 @@ categories:
           include:
             - (name:mali-operational-presence)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-operational-presence
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -146,11 +131,6 @@ categories:
           include:
             - (name:cadre-harmonise)
           exclude:
-        metadata_overrides:
-          - dataset_name: cadre-harmonise
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -172,11 +152,6 @@ categories:
           include:
             - (name:wfp-food-prices-for-mali)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-mali
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
