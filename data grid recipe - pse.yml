@@ -21,11 +21,6 @@ categories:
           include:
             - (name:state-of-palestine-idp-s)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-idp-s
-            display_state: complete
-            comments: 
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
