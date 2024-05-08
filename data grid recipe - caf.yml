@@ -21,11 +21,6 @@ categories:
           include:
             - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
           exclude:
-        metadata_overrides:
-          - dataset_name: statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
