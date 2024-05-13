@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-displacement-data-baseline-assessment-iom-dtm
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: updating status of IDPs
 
 #REFUGEES POCs
       - name: refugees_poc
