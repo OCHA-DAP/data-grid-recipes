@@ -83,11 +83,6 @@ categories:
           include:
             - (name:somalia-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-humanitarian-access
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -179,11 +174,6 @@ categories:
           include:
             - (name:somalia-airports)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-airports
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
