@@ -133,11 +133,6 @@ categories:
           include:
             - (name:cameroon-malnutrition-prevalence)
           exclude:
-        metadata_overrides:
-          - dataset_name: cameroon-malnutrition-prevalence
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
