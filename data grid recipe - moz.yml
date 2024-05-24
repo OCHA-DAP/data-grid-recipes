@@ -168,6 +168,11 @@ categories:
           include:
             - (name:mozambique-roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-roads
+            display_state: complete
+            comments: 
+
 #AIRPORTS
       - name: airports
         title: Airports
