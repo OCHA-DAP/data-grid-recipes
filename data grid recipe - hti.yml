@@ -194,11 +194,6 @@ categories:
           include:
             - (name:haiti-unhas-helicopter-landing-zones)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-unhas-helicopter-landing-zones
-            display_state: incomplete
-            comments: 
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -221,11 +216,6 @@ categories:
           include:
             - (name:haiti-education-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-education-facilities
-            display_state: complete
-            comments: 
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -238,11 +228,11 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-hti)
+            - (name:haiti-subnational-population)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ps-hti
-            display_state: incomplete
+          - dataset_name: haiti-subnational-population
+            display_state: complete
             comments: The dataset is not up to date.
 
 #POVERTY RATE
