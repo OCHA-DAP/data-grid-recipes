@@ -223,8 +223,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: haiti-education-facilities
-            display_state: incomplete
-            comments: Geo-coordinates are unavailable.
+            display_state: complete
+            comments: 
 
 
 #POPULATION AND SOCIO-ECONOMY
