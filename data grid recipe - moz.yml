@@ -93,11 +93,6 @@ categories:
           include:
             - (name:impact-of-cyclones)
           exclude:
-        metadata_overrides:
-          - dataset_name: impact-of-cyclones
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -120,11 +115,6 @@ categories:
           include:
             - (name:mozambique-acute-malnutrtion-by-admin2)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-acute-malnutrtion-by-admin2
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -168,11 +158,6 @@ categories:
           include:
             - (name:mozambique-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-roads
-            display_state: complete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
