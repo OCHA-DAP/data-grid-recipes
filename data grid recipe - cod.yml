@@ -29,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-cod
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -42,11 +37,6 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
-        metadata_overrides:
-          - dataset_name: drc-displacement-idps-site-assessment-ocha
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -106,11 +96,6 @@ categories:
           include:
             - (name:internally-displaced-persons-natural-disaster)
           exclude:
-        metadata_overrides:
-          - dataset_name: internally-displaced-persons-natural-disaster
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -133,11 +118,6 @@ categories:
           include:
             - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
-        metadata_overrides:
-          - dataset_name: prevalence-de-la-malnutrition-en-rdc
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -218,11 +198,6 @@ categories:
           include:
             - (name:health-facilities-in-sub-saharan-africa)
           exclude:
-        metadata_overrides:
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -250,11 +225,6 @@ categories:
           include:
             - (name:cod-ps-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-cod
-            display_state: complete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -263,9 +233,4 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: democratic-republic-of-the-congo-mpi
-            display_state: complete
-            comments: 
-
 
