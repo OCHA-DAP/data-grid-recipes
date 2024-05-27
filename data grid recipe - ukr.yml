@@ -29,11 +29,6 @@ categories:
           include:
             - (name:ukraine-refugee-situation)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-refugee-situation
-            display_state: incomplete
-            comments: Dataset is missing locations. 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -88,11 +83,6 @@ categories:
           include:
             - (name:ukraine-border-crossings)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-border-crossings
-            display_state: complete
-            comments: 
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
