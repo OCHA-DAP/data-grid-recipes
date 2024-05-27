@@ -37,11 +37,6 @@ categories:
           include:
             - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -111,11 +106,6 @@ categories:
           include:
             - (name:syrian-arab-republic-food-security-agriculture-severity-classification)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-food-security-agriculture-severity-classification
-            display_state: incomplete
-            comments: The Integrated Phase Classification (IPC) is not applied in the Syrian Arab Republic. This dataset is out of date
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -155,11 +145,6 @@ categories:
           include:
             - (name:syrian-arab-republic-pop-places)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-pop-places
-            display_state: incomplete
-            comments: 
-
 #ROADS
       - name: roads
         title: Roads
