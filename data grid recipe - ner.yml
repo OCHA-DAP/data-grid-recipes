@@ -145,11 +145,6 @@ categories:
           include:
             - (name:cod-ab-ner)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-ner
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -171,11 +166,6 @@ categories:
           include:
             - (name:niger-routes)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-routes
-            display_state: complete
-            comments: 
-
 #AIRPORTS
       - name: airports
         title: Airports
@@ -184,11 +174,6 @@ categories:
           include:
             - (name:niger-aeroports)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-aeroports
-            display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -234,11 +219,6 @@ categories:
           include:
             - (name:cod-ps-ner)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-ner
-            display_state: complete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -247,9 +227,4 @@ categories:
           include:
             - (name:niger-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-mpi
-            display_state: complete
-            comments: 
-
 
