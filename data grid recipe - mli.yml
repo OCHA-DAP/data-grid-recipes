@@ -29,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-mli)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-mli
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -77,11 +72,6 @@ categories:
           include:
             - (name:fts-requirements-and-funding-data-for-mali)
           exclude:
-        metadata_overrides:
-          - dataset_name: fts-requirements-and-funding-data-for-mali
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -99,11 +89,6 @@ categories:
           include:
             - (name:mali-contraintes-d-acces-humanitaire)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-contraintes-d-acces-humanitaire
-            display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -112,11 +97,6 @@ categories:
           include:
             - (name:mali-suivi-des-inondations)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-suivi-des-inondations
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -139,11 +119,6 @@ categories:
           include:
             - (name:mali-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-malnutrition
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -166,11 +141,6 @@ categories:
           include:
             - (name:cod-ab-mli)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-mli
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -224,11 +194,6 @@ categories:
           include:
             - (name:mali-formation-sanitaires)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-formation-sanitaires
-            display_state: complete
-            comments: 
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -237,11 +202,6 @@ categories:
           include:
             - (name:mali-schools)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-schools
-            display_state: complete
-            comments: 
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -269,9 +229,4 @@ categories:
           include:
             - (name:mali-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-mpi
-            display_state: complete
-            comments: 
-
 
