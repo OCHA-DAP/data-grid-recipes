@@ -59,11 +59,6 @@ categories:
           include:
             - (name:republique-centrafricaine-presence-operationnelle)
           exclude:
-        metadata_overrides:
-          - dataset_name: republique-centrafricaine-presence-operationnelle
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -110,11 +105,6 @@ categories:
           include:
             - (name:central-african-republic-acute-food-insecurity-country-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: central-african-republic-acute-food-insecurity-country-data
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -145,11 +135,6 @@ categories:
           include:
             - (name:cod-ab-caf)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-caf
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -216,11 +201,6 @@ categories:
           include:
             - (name:republique-centrafricaine-base-de-donnees-des-etablissements-scolaires)
           exclude:
-        metadata_overrides:
-          - dataset_name: republique-centrafricaine-base-de-donnees-des-etablissements-scolaires
-            display_state: complete
-            comments: 
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -235,11 +215,6 @@ categories:
           include:
             - (name:cod-ps-caf)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-caf
-            display_state: complete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -248,9 +223,4 @@ categories:
           include:
             - (name:central-african-republic-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: central-african-republic-mpi
-            display_state: complete
-            comments: 
-
 
