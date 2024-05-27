@@ -136,11 +136,6 @@ categories:
           include:
             - (name:cod-ab-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-tcd
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -226,11 +221,6 @@ categories:
           include:
             - (name:cod-ps-tcd)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-tcd
-            display_state: complete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -239,9 +229,4 @@ categories:
           include:
             - (name:chad-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: chad-mpi
-            display_state: complete
-            comments: 
-
 
