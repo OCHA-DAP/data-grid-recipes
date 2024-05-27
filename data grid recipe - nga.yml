@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-baseline-data-iom-dtm
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #REFUGEES POCs
       - name: refugees_poc
