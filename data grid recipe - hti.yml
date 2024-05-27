@@ -37,11 +37,6 @@ categories:
           include:
             - (name:haiti-displacement-idps-baseline-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-displacement-idps-baseline-assessment-iom-dtm
-            display_state: complete
-            comments: 
-
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -91,7 +86,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-humanitarian-access-severity
             display_state: incomplete
-            comments: It only covers three departments out of 10. Ouest, Sud and Artibonite.
+            comments: The geographic coverage is limited
 
 #CLIMATIE IMPACT
       - name: climate_impact
@@ -101,11 +96,6 @@ categories:
           include:
             - (name:haiti-floods)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-floods
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -128,11 +118,6 @@ categories:
           include:
             - (name:haiti-acutemalnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-acutemalnutrition
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -155,11 +140,6 @@ categories:
           include:
             - (name:cod-ab-hti)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-hti
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -168,11 +148,6 @@ categories:
           include:
             - (name:haiti-osm-settlements)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-osm-settlements
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #ROADS
       - name: roads
         title: Roads
@@ -230,11 +205,6 @@ categories:
           include:
             - (name:haiti-subnational-population)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-subnational-population
-            display_state: complete
-            comments: The dataset is not up to date.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -243,9 +213,4 @@ categories:
           include:
             - (name:haiti-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-mpi
-            display_state: complete
-            comments: 
-
 
