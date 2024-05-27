@@ -135,11 +135,6 @@ categories:
           include:
             - (name:cod-ab-som)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-som
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -223,9 +218,4 @@ categories:
           include:
             - (name:somalia-poverty-rate)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-poverty-rate
-            display_state: incomplete
-            comments: 
-
 
