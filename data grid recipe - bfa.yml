@@ -21,11 +21,6 @@ categories:
           include:
             - (name:situation-des-personnes-deplacees-internes)
           exclude:
-        metadata_overrides:
-          - dataset_name: situation-des-personnes-deplacees-internes
-            display_state: incomplete
-            comments: The dataset is not up to date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -34,11 +29,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-bfa)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-bfa
-            display_state: complete
-            comments: 
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -94,11 +84,6 @@ categories:
           include:
             - (name:burkina-faso-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-humanitarian-access
-            display_state: complete
-            comments: This data is only shared between specific partners and is not available on HDX.
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
@@ -107,11 +92,6 @@ categories:
           include:
             - (name:burkina-faso-suivi-des-inondations)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-suivi-des-inondations
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -134,11 +114,6 @@ categories:
           include:
             - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
-        metadata_overrides:
-          - dataset_name: bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -161,11 +136,6 @@ categories:
           include:
             - (name:cod-ab-bfa)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-bfa
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -174,11 +144,6 @@ categories:
           include:
             - (name:settlements)
           exclude:
-        metadata_overrides:
-          - dataset_name: settlements
-            display_state: complete
-            comments: 
-
 #ROADS
       - name: roads
         title: Roads
@@ -251,11 +216,6 @@ categories:
           include:
             - (name:cod-ps-bfa)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-bfa
-            display_state: complete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -264,9 +224,4 @@ categories:
           include:
             - (name:burkina-faso-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-mpi
-            display_state: complete
-            comments: 
-
 
