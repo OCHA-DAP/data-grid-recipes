@@ -140,6 +140,11 @@ categories:
           include:
             - (name:cod-ab-hti)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-hti
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -167,8 +172,13 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:haiti-unhas-helicopter-landing-zones)
+            - (name:hotosm_hti_airports)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_hti_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
