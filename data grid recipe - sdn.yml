@@ -152,11 +152,6 @@ categories:
           include:
             - (name:sudan-road-network)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-road-network
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #AIRPORTS
       - name: airports
         title: Airports
