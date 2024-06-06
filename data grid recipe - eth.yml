@@ -146,11 +146,6 @@ categories:
           include:
             - (name:ethiopia-settlements)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-settlements
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 #ROADS
       - name: roads
         title: Roads
@@ -167,11 +162,6 @@ categories:
           include:
             - (name:ethiopian-airdromes)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopian-airdromes
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -199,11 +189,6 @@ categories:
           include:
             - (name:ethiopia-schools)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-schools
-            display_state: complete
-            comments: Coordinates are only shared between specific partners and is not available on HDX.
-
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
