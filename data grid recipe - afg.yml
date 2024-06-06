@@ -118,11 +118,6 @@ categories:
           include:
             - (name:afghanistan-malnutrition-prevalence)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-malnutrition-prevalence
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -198,11 +193,6 @@ categories:
           include:
             - (name:afghanistan-health-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-health-facilities
-            display_state: complete
-            comments: Coordinates are only shared between specific partners and is not available on HDX.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -230,11 +220,6 @@ categories:
           include:
             - (name:cod-ps-afg)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-afg
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
