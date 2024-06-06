@@ -137,6 +137,11 @@ categories:
           include:
             - (name:cod-ab-moz)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-moz
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
