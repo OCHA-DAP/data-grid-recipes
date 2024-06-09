@@ -179,11 +179,6 @@ categories:
           include:
             - (name:state-of-palestine-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-roads
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
-
 #AIRPORTS
       - name: airports
         title: Airports
@@ -192,11 +187,6 @@ categories:
           include:
             - (name:ports-airports-crossings)
           exclude:
-        metadata_overrides:
-          - dataset_name: ports-airports-crossings
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -218,11 +208,15 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-schools)
+            - (name:state-of-palestine-education-indicators)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-schools
             display_state: incomplete
             comments: Geo-coordinates are unavailable. The dataset is not up-to-date.
+          - dataset_name: state-of-palestine-education-indicators
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation. The data in this dataset covers only Gaza Strip.
 
 
 #POPULATION AND SOCIO-ECONOMY
