@@ -136,6 +136,11 @@ categories:
           include:
             - (name:cod-ab-yem)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-yem
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
