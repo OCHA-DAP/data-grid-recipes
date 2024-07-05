@@ -92,6 +92,11 @@ categories:
           include:
             - (name:mali-suivi-des-inondations)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-suivi-des-inondations
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -114,6 +119,11 @@ categories:
           include:
             - (name:mali-malnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-malnutrition
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -156,9 +166,13 @@ categories:
         rules:
           include:
             - (name:hotosm_mali_roads)
+            - (name:hotosm_mli_roads)
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_mali_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_mli_roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
