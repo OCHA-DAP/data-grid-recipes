@@ -136,6 +136,11 @@ categories:
           include:
             - (name:cod-ab-ssd)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-ssd
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
