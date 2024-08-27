@@ -43,7 +43,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:afghanistan-humanitarian-needs-overview)
+            - (name:afghanistan-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
