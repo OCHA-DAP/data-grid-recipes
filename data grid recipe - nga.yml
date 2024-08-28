@@ -131,7 +131,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:northeast-and-northwest-nigeria-acute-malnutrition)
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
 #FOOD PRICES
       - name: food_prices
