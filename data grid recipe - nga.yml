@@ -166,7 +166,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:west-and-central-africa-administrative-boundaries-levels)
+            - (name:grid3-nga-settlement-extents-v3-1)
           exclude:
 #ROADS
       - name: roads
