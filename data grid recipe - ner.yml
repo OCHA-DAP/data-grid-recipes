@@ -43,10 +43,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:niger-humanitarian-needs-overview)
+            - (name:niger-humanitarian-needs)
           exclude:
         metadata_overrides:
-          - dataset_name: niger-humanitarian-needs-overview
+          - dataset_name: niger-humanitarian-needs
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
