@@ -44,10 +44,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:opt-humanitarian-needs-overview)
+            - (name:opt-humanitarian-needs)
           exclude:
         metadata_overrides:
-          - dataset_name: opt-humanitarian-needs-overview
+          - dataset_name: opt-humanitarian-needs
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
