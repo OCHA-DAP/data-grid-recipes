@@ -44,7 +44,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:burkina-faso-humanitarian-needs-overview)
+            - (name:burkina-faso-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
