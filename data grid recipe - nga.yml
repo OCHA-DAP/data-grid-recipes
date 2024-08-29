@@ -53,7 +53,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:nigeria-humanitarian-needs-overview)
+            - (name:nigeria-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
