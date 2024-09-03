@@ -43,10 +43,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:colombia-humanitarian-needs-overview)
+            - (name:colombia-humanitarian-needs)
           exclude:
         metadata_overrides:
-          - dataset_name: colombia-humanitarian-needs-overview
+          - dataset_name: colombia-humanitarian-needs
             display_state: complete
             comments: 
 
