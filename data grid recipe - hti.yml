@@ -83,11 +83,6 @@ categories:
           include:
             - (name:haiti-humanitarian-access-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-humanitarian-access-severity
-            display_state: incomplete
-            comments: The geographic coverage is limited
-
 #CLIMATIE IMPACT
       - name: climate_impact
         title: Climate Impact
