@@ -29,6 +29,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-tcd)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-tcd
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -114,6 +119,11 @@ categories:
           include:
             - (name:chad-nutrition-smart-survey)
           exclude:
+        metadata_overrides:
+          - dataset_name: chad-nutrition-smart-survey
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -151,8 +161,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: west-and-central-africa-administrative-boundaries-levels
-            display_state: complete
-            comments: Although this dataset was last updated in 2021, the OCHA country office has confirmed that it is operational.
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #ROADS
       - name: roads
