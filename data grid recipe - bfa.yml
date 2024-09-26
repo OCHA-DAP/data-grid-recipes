@@ -29,6 +29,11 @@ categories:
           include:
             - (name:unhcr-population-data-for-bfa)
           exclude:
+        metadata_overrides:
+          - dataset_name: unhcr-population-data-for-bfa
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -92,6 +97,11 @@ categories:
           include:
             - (name:burkina-faso-suivi-des-inondations)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-suivi-des-inondations
+            display_state: incomplete
+            comments: The dataset is not up to date.
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -154,8 +164,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-roads
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
       - name: airports
@@ -216,6 +226,11 @@ categories:
           include:
             - (name:cod-ps-bfa)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-bfa
+            display_state: complete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
