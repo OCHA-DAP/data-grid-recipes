@@ -19,8 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:myanmar-humanitarian-needs)
           exclude:
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -35,13 +36,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:myanmar-humanitarian-needs)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-humanitarian-needs
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -79,7 +76,6 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
             - (name:myanmar-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
@@ -155,7 +151,6 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-town)
             - (name:mimu-geonode-myanmar-town-points-pcode)
           exclude:
 #ROADS
@@ -240,12 +235,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:myanmar-poverty-rate)
             - (name:myanmar-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-poverty-rate
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
