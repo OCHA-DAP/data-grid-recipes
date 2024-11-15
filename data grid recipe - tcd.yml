@@ -170,12 +170,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:chad-roads-osm-ministry-of-transport)
+            - (name:hotosm_tcd_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: chad-roads-osm-ministry-of-transport
+          - dataset_name: hotosm_tcd_roads
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
       - name: airports
@@ -202,12 +202,12 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:health-facilities-in-sub-saharan-africa)
+            - (name:hotosm_tcd_health_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: health-facilities-in-sub-saharan-africa
+          - dataset_name: hotosm_tcd_health_facilities
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #EDUCATION FACILITIES
       - name: education_facilities
