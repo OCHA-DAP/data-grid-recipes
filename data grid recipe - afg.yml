@@ -57,7 +57,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-who-does-what-where-april-to-june-2024)
+            - (name:afghanistan-who-does-what-where-july-to-september-2024)
           exclude:
 #FUNDING
       - name: funding
@@ -150,8 +150,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_afg_populated_places
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+            display_state: incomplete
+            comments: 
 
 #ROADS
       - name: roads
@@ -161,11 +161,6 @@ categories:
           include:
             - (name:hotosm_afg_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_afg_roads
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
-
 #AIRPORTS
       - name: airports
         title: Airports
@@ -176,8 +171,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_afg_airports
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+            display_state: incomplete
+            comments: 
 
 
 #HEALTH AND EDUCATION
