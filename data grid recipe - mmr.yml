@@ -130,6 +130,14 @@ categories:
           include:
             - (name:wfp-food-prices-for-myanmar)
           exclude:
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:myanmar-mpi)
+          exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
@@ -165,19 +173,14 @@ categories:
             display_state: incomplete
             comments: 
 
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:myanmar-airport)
+            - (name:cod-ps-mmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-airport
-            display_state: incomplete
-            comments: 
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -214,26 +217,4 @@ categories:
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
-
-#POPULATION AND SOCIO-ECONOMY
-  - name: socio-economic
-    title: Population & Socio-economy
-    description: Data regarding populations and key indicators relating to social and economic factors.
-    data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
-        rules:
-          include:
-            - (name:cod-ps-mmr)
-          exclude:
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
-        rules:
-          include:
-            - (name:myanmar-mpi)
-          exclude:
 
