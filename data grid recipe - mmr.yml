@@ -54,7 +54,7 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
