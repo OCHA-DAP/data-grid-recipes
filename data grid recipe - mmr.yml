@@ -213,4 +213,22 @@ categories:
             display_state: incomplete
             comments: The dataset contains the location of floods but not the impact.
 
+#RAINFALL
+      - name: climate_rainfall
+        title: Rainfall
+        description: TBC
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#DROUGHT
+      - name: climate_drought
+        title: Drought
+        description: TBC
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 
