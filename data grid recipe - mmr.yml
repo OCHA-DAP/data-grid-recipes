@@ -86,23 +86,10 @@ categories:
           exclude:
             - (private:false)
             - (private:true)
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Climate Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-            - (name:myanmar-townships-affected-by-flooding)
-          exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-townships-affected-by-flooding
-            display_state: incomplete
-            comments: The dataset contains the location of floods but not the impact.
 
-
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
     description: Data about a population's access to food and key nutrition indicators.
     data_series:
 #FOOD SECURITY
@@ -124,12 +111,13 @@ categories:
             - (private:true)
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices
+        title: Food Prices & Market Monitor
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-myanmar)
           exclude:
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -139,10 +127,10 @@ categories:
             - (name:myanmar-mpi)
           exclude:
 
-#GEOGRAPHY AND INFRASTRUCTURE
-  - name: geography_and_infrastructure
-    title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+#REFERENCE DATA
+  - name: reference_data
+    title: Reference Data
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
@@ -173,20 +161,6 @@ categories:
             display_state: incomplete
             comments: 
 
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
-        rules:
-          include:
-            - (name:cod-ps-mmr)
-          exclude:
-
-#HEALTH AND EDUCATION
-  - name: health_and_education
-    title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
-    data_series:
 #HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
@@ -216,5 +190,32 @@ categories:
           - dataset_name: mimu-geonode-formal-sector-school-location-lower-myanmar
             display_state: incomplete
             comments: The dataset is not up-to-date.
+
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-mmr)
+          exclude:
+
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Data about climate forecasting and impact
+    data_series:
+#CLIMATIE IMPACT
+      - name: climate_impact
+        title: Climate Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+        rules:
+          include:
+            - (name:myanmar-townships-affected-by-flooding)
+          exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-townships-affected-by-flooding
+            display_state: incomplete
+            comments: The dataset contains the location of floods but not the impact.
 
 
