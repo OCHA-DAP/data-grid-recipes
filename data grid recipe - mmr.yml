@@ -233,8 +233,17 @@ categories:
             - (private:true)
 
 #COUNTRY SPECIFIC
-  - name: aob
+  - name: country_specific
     title: Country Specific
     description: TBC
     data_series:
+#CHOLERA
+      - name: cholera
+        title: Cholera Epidemic
+        description: TBC
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 
