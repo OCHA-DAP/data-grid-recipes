@@ -158,6 +158,11 @@ categories:
           include:
             - (name:hotosm_syr_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_syr_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #AIRPORTS
       - name: airports
         title: Airports
