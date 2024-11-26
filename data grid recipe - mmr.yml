@@ -202,20 +202,16 @@ categories:
     data_series:
 #CLIMATIE IMPACT
       - name: climate_impact
-        title: Climate Impact
+        title: Flood Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:myanmar-townships-affected-by-flooding)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-townships-affected-by-flooding
-            display_state: incomplete
-            comments: The dataset contains the location of floods but not the impact.
-
+            - (private:false)
+            - (private:true)
 #RAINFALL
       - name: climate_rainfall
-        title: Rainfall
+        title: Rainfall forecast
         description: TBC
         rules:
           include:
@@ -223,8 +219,8 @@ categories:
             - (private:false)
             - (private:true)
 #DROUGHT
-      - name: climate_drought
-        title: Drought
+      - name: climate_hotspots
+        title: Agricultural Hotspots
         description: TBC
         rules:
           include:
