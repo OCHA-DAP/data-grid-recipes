@@ -43,7 +43,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mozambique_humanitarian-needs)
+            - (name:mozambique-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
