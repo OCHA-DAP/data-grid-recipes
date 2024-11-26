@@ -200,19 +200,19 @@ categories:
     title: Climate
     description: Data about climate forecasting and impact
     data_series:
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Flood Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+#RAINFALL
+      - name: climate_rainfall
+        title: Rainfall forecast
+        description: TBC
         rules:
           include:
           exclude:
             - (private:false)
             - (private:true)
-#RAINFALL
-      - name: climate_rainfall
-        title: Rainfall forecast
-        description: TBC
+#CLIMATIE IMPACT
+      - name: climate_impact
+        title: Flood Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
           exclude:
