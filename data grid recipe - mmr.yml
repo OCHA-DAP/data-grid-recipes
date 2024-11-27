@@ -221,6 +221,10 @@ categories:
       - name: forecast
         title: Forecast
         description: TBC
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
         rules:
           include:
           exclude:
