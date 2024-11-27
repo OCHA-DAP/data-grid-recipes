@@ -163,11 +163,12 @@ categories:
           include:
             - (name:mimu-geonode-myanmar-road-network)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-myanmar-road-network
-            display_state: incomplete
-            comments: 
 
+#HEALTH AND EDUCATION
+  - name: health_and_education
+    title: Health & Education
+    description: Data describing health and education related facilities and key indicators.
+    data_series:
 #HEALTH FACILITIES
       - name: health_facilities
         title: Health Facilities
@@ -176,11 +177,6 @@ categories:
           include:
             - (name:hotosm_mmr_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_mmr_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -201,41 +197,29 @@ categories:
     description: Data about climate forecasting and impact
     data_series:
 #RAINFALL
-      - name: climate_rainfall
-        title: Rainfall forecast
+      - name: hazards
+        title: Hazards
         description: TBC
         rules:
           include:
+            - (name:mmr-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
-      - name: climate_impact
-        title: Flood Impact
+      - name: impact
+        title: Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
+            - (name:myanmar-townships-affected-by-flooding)
           exclude:
-            - (private:false)
-            - (private:true)
-#DROUGHT
-      - name: climate_hotspots
-        title: Agricultural Hotspots
-        description: TBC
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: myanmar-townships-affected-by-flooding
+            display_state: incomplete
+            comments: The dataset contains the location of floods but not the impact.
 
-#COUNTRY SPECIFIC
-  - name: country_specific
-    title: Country Specific
-    description: TBC
-    data_series:
-#CHOLERA
-      - name: cholera
-        title: Cholera Epidemic
+#DROUGHT
+      - name: forecast
+        title: Forecast
         description: TBC
         rules:
           include:
