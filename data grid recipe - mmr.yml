@@ -21,6 +21,11 @@ categories:
           include:
             - (name:idmc-idp-data-mmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: idmc-idp-data-mmr
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -163,6 +168,11 @@ categories:
           include:
             - (name:mimu-geonode-myanmar-road-network)
           exclude:
+        metadata_overrides:
+          - dataset_name: mimu-geonode-myanmar-road-network
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
