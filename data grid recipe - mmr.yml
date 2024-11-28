@@ -132,8 +132,8 @@ categories:
           exclude:
 
 #REFERENCE DATA
-  - name: reference_data
-    title: Reference Data
+  - name: geography_and_infrastructure
+    title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #BASELINE POPULATION
