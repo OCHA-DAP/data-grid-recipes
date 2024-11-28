@@ -136,14 +136,6 @@ categories:
     title: Geography & Infrastructure
     description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
-        rules:
-          include:
-            - (name:cod-ps-mmr)
-          exclude:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
         title: Administrative Divisions
@@ -151,6 +143,14 @@ categories:
         rules:
           include:
             - (name:mimu-geonode-myanmar-state-and-region-boundaries-with-sub-regions-mimu)
+          exclude:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-mmr)
           exclude:
 #POPULATED PLACES
       - name: populated_places
