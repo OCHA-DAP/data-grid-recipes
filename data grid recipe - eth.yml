@@ -114,7 +114,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:ethiopia-severe-acute-malnutrition-2021)
+            - (name:ethiopia-severe-acute-malnutrition)
           exclude:
 #FOOD PRICES
       - name: food_prices
