@@ -151,6 +151,7 @@ categories:
         rules:
           include:
             - (name:burkina-faso-roads)
+            - (name:hotosm_bfa_roads)
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-roads
