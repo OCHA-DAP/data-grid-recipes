@@ -157,6 +157,9 @@ categories:
           - dataset_name: burkina-faso-roads
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_bfa_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
       - name: airports
