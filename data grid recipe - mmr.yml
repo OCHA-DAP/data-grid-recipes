@@ -95,7 +95,7 @@ categories:
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
     title: Food Security, Nutrition & Poverty
-    description: Data about a population's access to food and key nutrition indicators.
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -117,7 +117,7 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
-        description: Timeseries prices for common food commodities at a set of locations
+        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
             - (name:wfp-food-prices-for-myanmar)
@@ -178,7 +178,7 @@ categories:
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -205,12 +205,12 @@ categories:
 #CLIMATE
   - name: climate
     title: Climate
-    description: Data about climate forecasting and impact
+    description: Current and historical data about climate hazards, impact & forecast.
     data_series:
 #RAINFALL
       - name: hazards
         title: Hazards
-        description: TBC
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
             - (name:mmr-rainfall-subnational)
@@ -231,7 +231,7 @@ categories:
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: TBC
+        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
