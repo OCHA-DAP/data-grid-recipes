@@ -206,6 +206,11 @@ categories:
           include:
             - (name:hotosm_mmr_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_mmr_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
