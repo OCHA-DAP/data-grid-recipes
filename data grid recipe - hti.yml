@@ -91,6 +91,11 @@ categories:
           include:
             - (name:haiti-floods)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-floods
+            display_state: incomplete
+            comments: This dataset is not up-to-date
+
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
