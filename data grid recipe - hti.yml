@@ -94,7 +94,7 @@ categories:
         metadata_overrides:
           - dataset_name: haiti-floods
             display_state: incomplete
-            comments: This dataset is not up-to-date
+            comments: This dataset is not up-to-date.
 
 
 #FOOD SECURITY AND NUTRITION
@@ -206,6 +206,11 @@ categories:
           include:
             - (name:haiti-education-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-education-facilities
+            display_state: incomplete
+            comments: This dataset is not up-to-date.
+
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
