@@ -218,7 +218,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:haiti-subnational-population)
+            - (name:cod-ps-hti)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
