@@ -112,7 +112,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:gam-mam-and-sam-based-on-muac-measurements-2022)
+            - (name:gam-mam-and-sam-based-on-muac-measurements)
           exclude:
 #FOOD PRICES
       - name: food_prices
