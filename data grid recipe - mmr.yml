@@ -116,7 +116,7 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-myanmar)
-            - (name:global-market-monitor)
+            - (name:wfp-food-prices-for-burkina-faso)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
