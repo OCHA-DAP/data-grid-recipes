@@ -121,8 +121,13 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-myanmar)
-            - (name:global-acute-food-insecurity-country-data)
+            - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: 
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
