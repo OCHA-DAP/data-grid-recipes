@@ -113,6 +113,7 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-burkina-faso)
+            - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -208,7 +209,7 @@ categories:
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
