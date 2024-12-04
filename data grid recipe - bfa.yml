@@ -144,11 +144,6 @@ categories:
           include:
             - (name:cod-ps-bfa)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-bfa
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -165,11 +160,6 @@ categories:
           include:
             - (name:hotosm_bfa_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_bfa_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -184,11 +174,6 @@ categories:
           include:
             - (name:hotosm_bfa_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_bfa_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -197,11 +182,6 @@ categories:
           include:
             - (name:hotosm_bfa_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_bfa_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #CLIMATE
   - name: climate
