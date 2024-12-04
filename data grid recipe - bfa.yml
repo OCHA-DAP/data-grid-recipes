@@ -19,20 +19,15 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:idmc-idp-data-mmr)
+            - (name:situation-des-personnes-deplacees-internes)
           exclude:
-        metadata_overrides:
-          - dataset_name: idmc-idp-data-mmr
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-mmr)
+            - (name:unhcr-population-data-for-bfa)
           exclude:
 #RETURNEES
       - name: returnees
@@ -49,7 +44,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:myanmar-humanitarian-needs)
+            - (name:burkina-faso-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -63,16 +58,15 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:burkina-faso-presence-operationnelle)
           exclude:
-            - (private:false)
-            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-myanmar)
+            - (name:fts-requirements-and-funding-data-for-burkina-faso)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -80,7 +74,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:myanmar-acled-conflict-data)
+            - (name:burkina-faso-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -88,9 +82,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:burkina-faso-humanitarian-access)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -103,7 +96,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:myanmar-acute-food-insecurity-country-data)
+            - (name:cadre-harmonise)
           exclude:
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -111,30 +104,23 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:bilan-sur-la-malnutrition-aigue-moderee-mam-et-la-malnutrition-aigue-severe-mas-au-burkina-faso)
           exclude:
-            - (private:false)
-            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
         description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
-            - (name:wfp-food-prices-for-myanmar)
-            - (name:global-market-monitor)
+            - (name:wfp-food-prices-for-burkina-faso)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:myanmar-mpi)
+            - (name:burkina-faso-mpi)
           exclude:
 
 #REFERENCE DATA
@@ -148,7 +134,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-state-and-region-boundaries-with-sub-regions-mimu)
+            - (name:cod-ab-bfa)
           exclude:
 #BASELINE POPULATION
       - name: baseline_population
@@ -156,15 +142,20 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-mmr)
+            - (name:cod-ps-bfa)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-bfa
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-town-points-pcode)
+            - (name:settlements)
           exclude:
 #ROADS
       - name: roads
@@ -172,12 +163,12 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-road-network)
+            - (name:hotosm_bfa_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: mimu-geonode-myanmar-road-network
+          - dataset_name: hotosm_bfa_roads
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #HEALTH AND EDUCATION
@@ -191,20 +182,25 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:hotosm_mmr_health_facilities)
+            - (name:hotosm_bfa_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_bfa_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:mimu-geonode-formal-sector-school-location-upper-myanmar)
+            - (name:hotosm_bfa_education_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: mimu-geonode-formal-sector-school-location-upper-myanmar
+          - dataset_name: hotosm_bfa_education_facilities
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
 #CLIMATE
@@ -218,21 +214,17 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:mmr-rainfall-subnational)
           exclude:
+            - (private:false)
+            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:myanmar-townships-affected-by-flooding)
+            - (name:burkina-faso-suivi-des-inondations)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-townships-affected-by-flooding
-            display_state: incomplete
-            comments: The dataset contains the location of floods but not the impact.
-
 #DROUGHT
       - name: forecast
         title: Forecast
