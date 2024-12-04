@@ -21,11 +21,6 @@ categories:
           include:
             - (name:idmc-idp-data-mmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: idmc-idp-data-mmr
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -123,11 +118,6 @@ categories:
             - (name:wfp-food-prices-for-myanmar)
             - (name:global-market-monitor)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: 
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -174,11 +164,6 @@ categories:
           include:
             - (name:mimu-geonode-myanmar-road-network)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-myanmar-road-network
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -201,11 +186,6 @@ categories:
           include:
             - (name:mimu-geonode-formal-sector-school-location-upper-myanmar)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-formal-sector-school-location-upper-myanmar
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #CLIMATE
   - name: climate
@@ -228,11 +208,6 @@ categories:
           include:
             - (name:myanmar-townships-affected-by-flooding)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-townships-affected-by-flooding
-            display_state: incomplete
-            comments: The dataset contains the location of floods but not the impact.
-
 #DROUGHT
       - name: forecast
         title: Forecast
