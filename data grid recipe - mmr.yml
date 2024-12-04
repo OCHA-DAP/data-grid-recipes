@@ -121,7 +121,6 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-myanmar)
-            - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
