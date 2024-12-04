@@ -120,6 +120,7 @@ categories:
         description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
+            - (name:wfp-food-prices-for-myanmar)
             - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
