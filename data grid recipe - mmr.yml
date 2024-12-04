@@ -116,7 +116,7 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-myanmar)
-            - (name:wfp-food-prices-for-burkina-faso)
+            - (name:sind-protection-in-danger-monthly-news-briefs-dataset)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
