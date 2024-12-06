@@ -158,8 +158,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: hotosm_caf_roads
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #AIRPORTS
       - name: airports
