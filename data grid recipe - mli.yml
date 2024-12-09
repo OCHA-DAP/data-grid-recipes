@@ -113,6 +113,7 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-mali)
+            - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
