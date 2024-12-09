@@ -172,7 +172,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:afghanistan-health-facilities)
+            - (name:hotosm_afg_health_facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -180,7 +180,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:afghanistan-schools)
+            - (name:hotosm_afg_education_facilities)
           exclude:
 
 #CLIMATE
