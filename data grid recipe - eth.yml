@@ -174,20 +174,15 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:health-facilities-in-sub-saharan-africa)
+            - (name:hotosm_eth_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: health-facilities-in-sub-saharan-africa
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:ethiopia-schools)
+            - (name:hotosm_eth_education_facilities)
           exclude:
 
 #POPULATION AND SOCIO-ECONOMY
