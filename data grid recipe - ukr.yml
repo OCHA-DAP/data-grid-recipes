@@ -191,13 +191,9 @@ categories:
             comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:ukraine-health-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-health-facilities
-            display_state: incomplete
-            comments: The coordinates of health facilities are missing from the dataset.
-
+            - (private:false)
+            - (private:true)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -208,13 +204,9 @@ categories:
             comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:ukraine-education-facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: ukraine-education-facilities
-            display_state: incomplete
-            comments: The coordinates of education facilities are missing from the dataset.
-
+            - (private:false)
+            - (private:true)
 
 #CLIMATE
   - name: climate
