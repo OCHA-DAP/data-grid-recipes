@@ -240,6 +240,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:ukraine-mpi)
+            - (name:world-bank-poverty-indicators-for-ukraine)
           exclude:
 
