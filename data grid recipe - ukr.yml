@@ -234,4 +234,9 @@ categories:
           include:
             - (name:world-bank-poverty-indicators-for-ukraine)
           exclude:
+        metadata_overrides:
+          - dataset_name: world-bank-poverty-indicators-for-ukraine
+            display_state: incomplete
+            comments: This dataset is not up-to-date
+
 
