@@ -46,6 +46,11 @@ categories:
           include:
             - (name:burkina-faso-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-humanitarian-needs
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -84,6 +89,11 @@ categories:
           include:
             - (name:burkina-faso-humanitarian-access)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-humanitarian-access
+            display_state: incomplete
+            comments: This data is only shared between specific partners and is not available on HDX.
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -161,6 +171,11 @@ categories:
           include:
             - (name:hotosm_bfa_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_bfa_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -175,6 +190,11 @@ categories:
           include:
             - (name:hotosm_bfa_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_bfa_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -183,6 +203,11 @@ categories:
           include:
             - (name:hotosm_bfa_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_bfa_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #CLIMATE
   - name: climate
