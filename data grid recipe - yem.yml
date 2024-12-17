@@ -45,6 +45,11 @@ categories:
           include:
             - (name:yemen-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -53,17 +58,12 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
             - (name:yemen-monthly-organizations-presence-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-monthly-organizations-presence-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -88,20 +88,11 @@ categories:
           include:
             - (name:yemen-humanitarian-access)
           exclude:
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Climate Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -121,17 +112,36 @@ categories:
           exclude:
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        title: Food Prices & Market Monitor
+        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
             - (name:wfp-food-prices-for-yemen)
+            - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-yemen
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
-#GEOGRAPHY AND INFRASTRUCTURE
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:yemen-mpi)
+          exclude:
+        metadata_overrides:
+          - dataset_name: yemen-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
+
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
@@ -141,23 +151,26 @@ categories:
           include:
             - (name:cod-ab-yem)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-yem
-            display_state: complete
-            comments: 
-
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:yemen-population-estimates)
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:yemen-populated-places)
+            - (name:hotosm_yem_populated_places)
           exclude:
         metadata_overrides:
-          - dataset_name: yemen-populated-places
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+          - dataset_name: hotosm_yem_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -165,21 +178,18 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:yemen-roads)
+            - (name:hotosm_yem_roads)
           exclude:
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include:
-            - (name:yemen-airports-and-seaports)
-          exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_yem_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -203,25 +213,38 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
-#POPULATION AND SOCIO-ECONOMY
-  - name: socio-economic
-    title: Population & Socio-economy
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards, impact & forecast.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:yemen-population-estimates)
+            - (name:yem-rainfall-subnational)
           exclude:
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:yemen-mpi)
+            - (name:yemen-flood-preparedness-and-response)
           exclude:
+#DROUGHT
+      - name: forecast
+        title: Forecast
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 
