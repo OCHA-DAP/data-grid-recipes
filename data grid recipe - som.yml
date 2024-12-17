@@ -191,8 +191,13 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:somalia-health-facilities-data)
+            - (name:hotosm_som_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_som_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
