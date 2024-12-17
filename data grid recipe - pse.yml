@@ -46,6 +46,11 @@ categories:
           include:
             - (name:opt-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: opt-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -114,6 +119,7 @@ categories:
           include:
             - (name:state-of-palestine-price-of-basic-commodities-in-gaza)
             - (name:wfp-food-prices-for-state-of-palestine)
+            - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -211,7 +217,7 @@ categories:
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
