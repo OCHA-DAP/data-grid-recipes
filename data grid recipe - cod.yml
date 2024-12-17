@@ -21,6 +21,11 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-deplace-site-assessment-ocha
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,11 +34,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-cod
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -42,6 +42,11 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-idps-site-assessment-ocha
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -50,6 +55,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -58,7 +68,7 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
@@ -84,28 +94,15 @@ categories:
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
-        flags:
-          - key: not_applicable
-            display_text: Not available
-            comments: 
         rules:
           include:
-          exclude:
-            - (private:false)
-            - (private:true)
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Climate Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-            - (name:internally-displaced-persons-natural-disaster)
+            - (name:drc-acces-humanitaire)
           exclude:
 
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -123,19 +120,38 @@ categories:
           include:
             - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
+        metadata_overrides:
+          - dataset_name: prevalence-de-la-malnutrition-en-rdc
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        title: Food Prices & Market Monitor
+        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
             - (name:wfp-food-prices-for-democratic-republic-of-the-congo)
+            - (name:global-market-monitor)
           exclude:
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:democratic-republic-of-the-congo-mpi)
+          exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
-#GEOGRAPHY AND INFRASTRUCTURE
+
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
@@ -145,11 +161,14 @@ categories:
           include:
             - (name:cod-ab-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-cod
-            display_state: complete
-            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
-
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-cod)
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -176,24 +195,11 @@ categories:
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include:
-            - (name:hotosm_cod_airports)
-          exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_cod_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -222,25 +228,38 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
-#POPULATION AND SOCIO-ECONOMY
-  - name: socio-economic
-    title: Population & Socio-economy
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards, impact & forecast.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:cod-ps-cod)
+            - (name:cod-rainfall-subnational)
           exclude:
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-mpi)
+            - (name:internally-displaced-persons-natural-disaster)
           exclude:
+#DROUGHT
+      - name: forecast
+        title: Forecast
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 
