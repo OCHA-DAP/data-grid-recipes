@@ -21,6 +21,11 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-deplace-site-assessment-ocha
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -29,11 +34,6 @@ categories:
           include:
             - (name:unhcr-population-data-for-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: unhcr-population-data-for-cod
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -42,6 +42,11 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
+        metadata_overrides:
+          - dataset_name: drc-displacement-idps-site-assessment-ocha
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -50,6 +55,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -86,9 +96,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:drc-acces-humanitaire)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -111,6 +120,11 @@ categories:
           include:
             - (name:prevalence-de-la-malnutrition-en-rdc)
           exclude:
+        metadata_overrides:
+          - dataset_name: prevalence-de-la-malnutrition-en-rdc
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
@@ -128,6 +142,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -142,11 +161,6 @@ categories:
           include:
             - (name:cod-ab-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-cod
-            display_state: complete
-            comments: Although the dataset is dated (from 2019), partners in the field confirmed the dataset reflects the latest available data for Administrative Divisions.
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -225,9 +239,8 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
+            - (name:cod-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
