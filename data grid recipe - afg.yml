@@ -43,8 +43,14 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:afg-jiaf-humanitarian-needs-pin-and-severity)
             - (name:afghanistan-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -160,6 +166,11 @@ categories:
           include:
             - (name:hotosm_afg_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -174,6 +185,11 @@ categories:
           include:
             - (name:hotosm_afg_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -182,6 +198,11 @@ categories:
           include:
             - (name:hotosm_afg_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_afg_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #CLIMATE
   - name: climate
@@ -208,7 +229,7 @@ categories:
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
