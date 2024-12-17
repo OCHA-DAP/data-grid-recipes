@@ -43,13 +43,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:colombia-humanitarian-needs)
+            - (name:col-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-humanitarian-needs
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -64,11 +59,6 @@ categories:
           include:
             - (name:colombia-4ws)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-4ws
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -93,11 +83,6 @@ categories:
           include:
             - (name:acceso-humanitario-colombia)
           exclude:
-        metadata_overrides:
-          - dataset_name: acceso-humanitario-colombia
-            display_state: complete
-            comments: 
-
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -112,11 +97,6 @@ categories:
           include:
             - (name:colombia-seguridad-alimentaria)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-seguridad-alimentaria
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -125,11 +105,6 @@ categories:
           include:
             - (name:colombia-desnutricion-aguda)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-desnutricion-aguda
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
@@ -137,6 +112,7 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-colombia)
+            - (name:global-market-monitor)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -146,6 +122,11 @@ categories:
           include:
             - (name:colombia-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -168,11 +149,6 @@ categories:
           include:
             - (name:cod-ps-col)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-col
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -181,11 +157,6 @@ categories:
           include:
             - (name:divipola-nivel-centros-poblados-de-colombia)
           exclude:
-        metadata_overrides:
-          - dataset_name: divipola-nivel-centros-poblados-de-colombia
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 #ROADS
       - name: roads
         title: Roads
@@ -194,11 +165,6 @@ categories:
           include:
             - (name:colombia-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-roads
-            display_state: complete
-            comments: 
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -233,9 +199,8 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
+            - (name:col-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
@@ -247,7 +212,7 @@ categories:
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
