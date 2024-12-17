@@ -45,6 +45,11 @@ categories:
           include:
             - (name:yemen-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -59,11 +64,6 @@ categories:
           include:
             - (name:yemen-monthly-organizations-presence-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-monthly-organizations-presence-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -117,7 +117,13 @@ categories:
         rules:
           include:
             - (name:wfp-food-prices-for-yemen)
+            - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-yemen
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -126,6 +132,11 @@ categories:
           include:
             - (name:yemen-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -140,11 +151,6 @@ categories:
           include:
             - (name:cod-ab-yem)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-yem
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -159,12 +165,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:yemen-populated-places)
+            - (name:hotosm_yem_populated_places)
           exclude:
         metadata_overrides:
-          - dataset_name: yemen-populated-places
-            display_state: complete
-            comments: Although this data is compiled from crowd-sourced information, it is marked as complete because the IMWG has confirmed that is operational for the response.
+          - dataset_name: hotosm_yem_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 #ROADS
       - name: roads
@@ -172,8 +178,13 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:yemen-roads)
+            - (name:hotosm_yem_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_yem_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -213,22 +224,20 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
+            - (name:yem-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
+            - (name:yemen-flood-preparedness-and-response)
           exclude:
-            - (private:false)
-            - (private:true)
 #DROUGHT
       - name: forecast
         title: Forecast
-        description: Current forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
         flags:
           - key: not_applicable
             display_text: 
