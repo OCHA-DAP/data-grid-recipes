@@ -157,11 +157,6 @@ categories:
           include:
             - (name:hotosm_hti_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_hti_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
@@ -170,11 +165,6 @@ categories:
           include:
             - (name:hotosm_hti_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_hti_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
