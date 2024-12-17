@@ -43,13 +43,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:colombia-humanitarian-needs)
+            - (name:col-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-humanitarian-needs
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -58,17 +53,12 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
             - (name:colombia-4ws)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-4ws
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
@@ -93,24 +83,11 @@ categories:
           include:
             - (name:acceso-humanitario-colombia)
           exclude:
-        metadata_overrides:
-          - dataset_name: acceso-humanitario-colombia
-            display_state: complete
-            comments: 
 
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Climate Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-            - (name:colombia-desastres-naturales)
-          exclude:
-
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -120,11 +97,6 @@ categories:
           include:
             - (name:colombia-seguridad-alimentaria)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-seguridad-alimentaria
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -133,24 +105,33 @@ categories:
           include:
             - (name:colombia-desnutricion-aguda)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-desnutricion-aguda
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        title: Food Prices & Market Monitor
+        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
             - (name:wfp-food-prices-for-colombia)
+            - (name:global-market-monitor)
           exclude:
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:colombia-mpi)
+          exclude:
+        metadata_overrides:
+          - dataset_name: colombia-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
-#GEOGRAPHY AND INFRASTRUCTURE
+
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
@@ -160,6 +141,14 @@ categories:
           include:
             - (name:cod-ab-col)
           exclude:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-col)
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -168,11 +157,6 @@ categories:
           include:
             - (name:divipola-nivel-centros-poblados-de-colombia)
           exclude:
-        metadata_overrides:
-          - dataset_name: divipola-nivel-centros-poblados-de-colombia
-            display_state: complete
-            comments: Although this dataset was last updated in 2022, the OCHA country office has confirmed that it is operational.
-
 #ROADS
       - name: roads
         title: Roads
@@ -181,29 +165,11 @@ categories:
           include:
             - (name:colombia-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: colombia-roads
-            display_state: complete
-            comments: 
-
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include:
-            - (name:ourairports-col)
-          exclude:
-        metadata_overrides:
-          - dataset_name: ourairports-col
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -222,30 +188,38 @@ categories:
             - (name:centros-educativos-2020)
           exclude:
 
-#POPULATION AND SOCIO-ECONOMY
-  - name: socio-economic
-    title: Population & Socio-economy
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards, impact & forecast.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:cod-ps-col)
+            - (name:col-rainfall-subnational)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-col
-            display_state: complete
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+        rules:
+          include:
+            - (name:colombia-desastres-naturales)
+          exclude:
+#DROUGHT
+      - name: forecast
+        title: Forecast
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        flags:
+          - key: not_applicable
+            display_text: 
             comments: 
-
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:colombia-mpi)
           exclude:
+            - (private:false)
+            - (private:true)
 
