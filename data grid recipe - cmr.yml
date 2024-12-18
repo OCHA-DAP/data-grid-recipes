@@ -45,6 +45,11 @@ categories:
           include:
             - (name:cameroon-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
