@@ -21,6 +21,10 @@ categories:
           include:
             - (name:idmc-idp-data-mmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: idmc-idp-data-mmr
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -126,7 +130,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: global-market-monitor
-            display_state: incomplete
             comments: This complementary dataset is not subnational.
 
 #POVERTY RATE
@@ -219,6 +222,10 @@ categories:
           include:
             - (name:myanmar-townships-affected-by-flooding)
           exclude:
+        metadata_overrides:
+          - dataset_name: myanmar-townships-affected-by-flooding
+            comments: The dataset contains the location of floods but not the impact.
+
 #DROUGHT
       - name: forecast
         title: Forecast
