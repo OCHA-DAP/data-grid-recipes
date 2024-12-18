@@ -128,6 +128,11 @@ categories:
           include:
             - (name:mali-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -163,6 +168,11 @@ categories:
           include:
             - (name:hotosm_mli_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_mli_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #ROADS
       - name: roads
         title: Roads
@@ -172,6 +182,14 @@ categories:
             - (name:hotosm_mali_roads)
             - (name:hotosm_mli_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_mali_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_mli_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
