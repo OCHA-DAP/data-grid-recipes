@@ -120,6 +120,11 @@ categories:
             - (name:wfp-food-prices-for-afghanistan)
             - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: This complementary dataset is not subnational.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
