@@ -64,6 +64,11 @@ categories:
           include:
             - (name:south-sudan-operational-presence)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-operational-presence
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
@@ -150,13 +155,18 @@ categories:
           include:
             - (name:cod-ps-ssd)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-ssd
+            display_state: incomplete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:south-sudan-settlements)
+            - (name:hotosm_ssd_populated_places)
             - (name:south-sudan-settlements)
           exclude:
 #ROADS
@@ -187,7 +197,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:south-sudan-village-assessment-education-facilities-iom-dtm)
+            - (name:hotosm_ssd_education_facilities)
           exclude:
 
 #CLIMATE
