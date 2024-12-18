@@ -161,8 +161,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:west-and-central-africa-administrative-boundaries-levels)
+            - (name:hotosm_tcd_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_tcd_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #ROADS
       - name: roads
         title: Roads
