@@ -167,7 +167,6 @@ categories:
         rules:
           include:
             - (name:hotosm_ssd_populated_places)
-            - (name:south-sudan-settlements)
           exclude:
 #ROADS
       - name: roads
