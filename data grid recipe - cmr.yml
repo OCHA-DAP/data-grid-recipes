@@ -128,6 +128,11 @@ categories:
           include:
             - (name:cameroon-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroon-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
