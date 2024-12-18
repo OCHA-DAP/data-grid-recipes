@@ -65,6 +65,11 @@ categories:
           include:
             - (name:mozambique-operational-presence)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-operational-presence
+            display_state: incomplete
+            comments: 
+
 #FUNDING
       - name: funding
         title: Funding
