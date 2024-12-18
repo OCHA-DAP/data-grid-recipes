@@ -44,7 +44,13 @@ categories:
         rules:
           include:
             - (name:nigeria-humanitarian-needs)
+            - (name:nga-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-humanitarian-needs
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
