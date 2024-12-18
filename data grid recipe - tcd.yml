@@ -120,6 +120,10 @@ categories:
             - (name:global-market-monitor)
             - (name:wfp-food-prices-for-chad)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            comments: This complementary dataset is not subnational.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -163,11 +167,6 @@ categories:
           include:
             - (name:hotosm_tcd_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_tcd_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
@@ -176,11 +175,6 @@ categories:
           include:
             - (name:hotosm_tcd_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_tcd_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -195,11 +189,6 @@ categories:
           include:
             - (name:hotosm_tcd_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_tcd_health_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -208,11 +197,6 @@ categories:
           include:
             - (name:hotosm_tcd_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_tcd_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #CLIMATE
   - name: climate
