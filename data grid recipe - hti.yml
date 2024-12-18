@@ -122,6 +122,11 @@ categories:
           include:
             - (name:haiti-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-mpi
+            display_state: incomplete
+            comments: This dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
