@@ -45,6 +45,11 @@ categories:
           include:
             - (name:south-sudan-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-humanitarian-needs
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -159,7 +164,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:south-sudan-road-network_hdx)
+            - (name:hotosm_ssd_roads)
           exclude:
 
 #HEALTH AND EDUCATION
