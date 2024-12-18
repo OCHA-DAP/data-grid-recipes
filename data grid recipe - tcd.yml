@@ -215,7 +215,7 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:dataset/tcd-rainfall-subnational)
+            - (name:tcd-rainfall-subnational)
           exclude:
 #CLIMATIE IMPACT
       - name: impact
