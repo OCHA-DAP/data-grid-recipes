@@ -117,6 +117,7 @@ categories:
         rules:
           include:
             - (name:global-market-monitor)
+            - (name:wfp-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
