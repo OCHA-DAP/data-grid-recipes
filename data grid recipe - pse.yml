@@ -89,10 +89,6 @@ categories:
           include:
             - (name:state-of-palestine-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-humanitarian-access
-            comments: The dataset is not up-to-date.
-
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
