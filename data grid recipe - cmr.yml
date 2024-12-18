@@ -166,6 +166,11 @@ categories:
           include:
             - (name:hotosm_cmr_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_cmr_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -180,6 +185,11 @@ categories:
           include:
             - (name:hotosm_cmr_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_cmr_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
@@ -188,6 +198,11 @@ categories:
           include:
             - (name:hotosm_cmr_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_cmr_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 
 #CLIMATE
   - name: climate
@@ -200,9 +215,8 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
+            - (name:cmr-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
