@@ -44,7 +44,6 @@ categories:
         rules:
           include:
             - (name:nigeria-humanitarian-needs)
-            - (name:nga-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
 
 #COORDINATION & CONTEXT
