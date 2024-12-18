@@ -53,7 +53,7 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
@@ -83,19 +83,11 @@ categories:
           include:
             - (name:nigeria-access-severity)
           exclude:
-#CLIMATIE IMPACT
-      - name: climate_impact
-        title: Climate Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-            - (name:nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)
-          exclude:
 
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -115,17 +107,25 @@ categories:
           exclude:
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        title: Food Prices & Market Monitor
+        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
             - (name:wfp-food-prices-for-nigeria)
           exclude:
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:nigeria-mpi)
+          exclude:
 
-#GEOGRAPHY AND INFRASTRUCTURE
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
@@ -138,6 +138,19 @@ categories:
         metadata_overrides:
           - dataset_name: cod-ab-nga
             display_state: complete
+            comments: 
+
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-nga)
+          exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-nga
+            display_state: incomplete
             comments: 
 
 #POPULATED PLACES
@@ -156,24 +169,11 @@ categories:
           include:
             - (name:nigeria-road-network)
           exclude:
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include:
-            - (name:hotosm_nga_airports)
-          exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_nga_airports
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -197,30 +197,39 @@ categories:
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
 
-#POPULATION AND SOCIO-ECONOMY
-  - name: socio-economic
-    title: Population & Socio-economy
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards, impact & forecast.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:cod-ps-nga)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-nga
-            display_state: incomplete
+            - (private:false)
+            - (private:true)
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+        rules:
+          include:
+            - (name:nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)
+          exclude:
+#DROUGHT
+      - name: forecast
+        title: Forecast
+        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
+        flags:
+          - key: not_applicable
+            display_text: 
             comments: 
-
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:nigeria-mpi)
           exclude:
+            - (private:false)
+            - (private:true)
 
