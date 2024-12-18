@@ -191,11 +191,6 @@ categories:
           include:
             - (name:hotosm_nga_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_nga_education_facilities
-            display_state: incomplete
-            comments: 
-
 
 #CLIMATE
   - name: climate
@@ -208,9 +203,8 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
+            - (name:nga-rainfall-subnational)
           exclude:
-            - (private:false)
-            - (private:true)
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
