@@ -88,6 +88,11 @@ categories:
           include:
             - (name:niger-analyse-des-contraintes-d-acces)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-analyse-des-contraintes-d-acces
+            display_state: incomplete
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response. The dataset is not up-to-date.
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -157,6 +162,11 @@ categories:
           include:
             - (name:hotosm_ner_populated_places)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_ner_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
 #ROADS
       - name: roads
         title: Roads
@@ -188,6 +198,14 @@ categories:
             - (name:niger-base-de-donnees-des-etablissements-scolaires)
             - (name:niger-base-de-donnees-des-etablissements-scolaires)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
+            display_state: incomplete
+            comments: Geo-coordinates are unavailable.
+          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
+            display_state: incomplete
+            comments: The dataset does not include the education facilities coordinates.
+
 
 #CLIMATE
   - name: climate
