@@ -182,7 +182,7 @@ categories:
         metadata_overrides:
           - dataset_name: hotosm_som_roads
             display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+            comments: 
 
 
 #HEALTH AND EDUCATION
