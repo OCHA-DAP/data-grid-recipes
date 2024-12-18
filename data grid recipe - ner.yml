@@ -132,6 +132,11 @@ categories:
           include:
             - (name:niger-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: niger-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
