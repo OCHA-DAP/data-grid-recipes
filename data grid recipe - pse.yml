@@ -48,7 +48,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: opt-humanitarian-needs
-            display_state: incomplete
             comments: The dataset is not up-to-date.
 
 
@@ -89,6 +88,10 @@ categories:
           include:
             - (name:state-of-palestine-humanitarian-access)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-humanitarian-access
+            comments: The dataset is not up-to-date.
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -105,7 +108,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-acute-food-insecurity-country-data
-            display_state: incomplete
             comments: The data in this dataset covers only Gaza Strip.
 
 #ACUTE MALNUTRITION
@@ -128,10 +130,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
-            display_state: incomplete
             comments: The data in this dataset covers only Gaza Strip.
           - dataset_name: global-market-monitor
-            display_state: incomplete
             comments: This complementary dataset is not subnational.
 
 #POVERTY RATE
