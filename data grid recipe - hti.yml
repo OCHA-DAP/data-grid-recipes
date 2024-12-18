@@ -146,11 +146,6 @@ categories:
           include:
             - (name:cod-ab-hti)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-hti
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -189,6 +184,11 @@ categories:
           include:
             - (name:location-of-health-facilities-hospital-in-haiti)
           exclude:
+        metadata_overrides:
+          - dataset_name: location-of-health-facilities-hospital-in-haiti
+            display_state: incomplete
+            comments: This dataset is not up-to-date.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
