@@ -125,6 +125,10 @@ categories:
             - (name:wfp-food-prices-for-syrian-arab-republic)
             - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            comments: This complementary dataset is not subnational
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -156,13 +160,17 @@ categories:
           include:
             - (name:syrian-arab-republic-baseline-population)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-baseline-population
+            comments: The dataset is available upon request. 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:syrian-arab-republic-pop-places)
+            - (name:hotosm_syr_populated_places)
           exclude:
 #ROADS
       - name: roads
