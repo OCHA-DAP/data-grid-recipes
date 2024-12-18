@@ -89,6 +89,10 @@ categories:
           include:
             - (name:mali-contraintes-d-acces-humanitaire)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-contraintes-d-acces-humanitaire
+            comments: This data is only shared between specific partners and is not available on HDX.
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -120,6 +124,10 @@ categories:
             - (name:wfp-food-prices-for-mali)
             - (name:global-market-monitor)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            comments: This complementary dataset is not subnational.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -168,11 +176,6 @@ categories:
           include:
             - (name:hotosm_mli_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_mli_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
@@ -182,14 +185,6 @@ categories:
             - (name:hotosm_mali_roads)
             - (name:hotosm_mli_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_mali_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_mli_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
