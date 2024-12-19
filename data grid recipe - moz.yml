@@ -49,7 +49,7 @@ categories:
         metadata_overrides:
           - dataset_name: mozambique-humanitarian-needs
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -68,7 +68,7 @@ categories:
         metadata_overrides:
           - dataset_name: mozambique-operational-presence
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #FUNDING
       - name: funding
