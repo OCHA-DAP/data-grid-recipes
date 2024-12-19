@@ -181,26 +181,16 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:location-of-health-facilities-hospital-in-haiti)
+            - (name:hotosm_hti_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: location-of-health-facilities-hospital-in-haiti
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:haiti-education-facilities)
+            - (name:hotosm_hti_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-education-facilities
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
-
 
 #CLIMATE
   - name: climate
