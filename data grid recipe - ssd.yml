@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-humanitarian-needs
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -67,7 +67,7 @@ categories:
         metadata_overrides:
           - dataset_name: south-sudan-operational-presence
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 #FUNDING
       - name: funding
@@ -159,11 +159,6 @@ categories:
           include:
             - (name:cod-ps-ssd)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-ssd
-            display_state: incomplete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
