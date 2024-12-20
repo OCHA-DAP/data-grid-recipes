@@ -83,6 +83,11 @@ categories:
           include:
             - (name:republique-centraficaine-acces-physique-dans-les-communes)
           exclude:
+        metadata_overrides:
+          - dataset_name: republique-centraficaine-acces-physique-dans-les-communes
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
