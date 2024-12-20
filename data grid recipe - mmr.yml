@@ -23,7 +23,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: idmc-idp-data-mmr
-            comments: The dataset is not up-to-date.
+            display_state: incomplete
+            comments: This dataset is not subnational. The dataset is not up-to-date.
 
 #REFUGEES POCs
       - name: refugees_poc
