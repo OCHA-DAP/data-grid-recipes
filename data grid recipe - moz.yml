@@ -43,7 +43,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mozambique-humanitarian-needs)
+            - (name:moz-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -123,7 +123,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: global-market-monitor
-            comments: This complementary dataset is not subnational
+            comments: This complementary dataset is not subnational.
 
 #POVERTY RATE
       - name: poverty_rate
