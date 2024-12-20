@@ -156,7 +156,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-state-and-region-boundaries-with-sub-regions-mimu)
+            - (name:cod-ab-mmr)
           exclude:
 #BASELINE POPULATION
       - name: baseline_population
