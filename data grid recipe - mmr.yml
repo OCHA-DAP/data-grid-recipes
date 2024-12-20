@@ -52,8 +52,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: myanmar-humanitarian-needs
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: This dataset is not subnational.
 
 
 #COORDINATION & CONTEXT
