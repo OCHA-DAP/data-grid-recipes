@@ -44,13 +44,7 @@ categories:
         rules:
           include:
             - (name:mozambique-humanitarian-needs)
-            - (name:moz-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-humanitarian-needs
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
