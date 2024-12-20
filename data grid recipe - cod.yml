@@ -113,13 +113,8 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:prevalence-de-la-malnutrition-en-rdc)
+            - (name:rdc-ipc-amn)
           exclude:
-        metadata_overrides:
-          - dataset_name: prevalence-de-la-malnutrition-en-rdc
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
