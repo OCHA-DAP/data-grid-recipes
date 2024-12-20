@@ -45,6 +45,10 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: syrian-arab-republic-humanitarian-needs
+            comments: The dataset is not subnational.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -157,7 +161,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-baseline-population
-            comments: The dataset is available upon request. 
+            comments: This data is only shared between specific partners and is only available on request.
 
 #POPULATED PLACES
       - name: populated_places
