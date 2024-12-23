@@ -45,6 +45,10 @@ categories:
           include:
             - (name:somalia-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-humanitarian-needs
+            comments: The dataset is not subnational.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
