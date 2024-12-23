@@ -47,8 +47,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cameroon-humanitarian-needs
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The dataset is not subnational.
 
 
 #COORDINATION & CONTEXT
@@ -120,10 +119,6 @@ categories:
             - (name:global-market-monitor)
             - (name:wfp-food-prices-for-cameroon)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-market-monitor
-            comments: This complementary dataset is not subnational.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
