@@ -44,12 +44,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:burkina-faso-humanitarian-needs)
+            - (name:bfa-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-humanitarian-needs
-            comments: The dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
