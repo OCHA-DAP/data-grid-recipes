@@ -49,12 +49,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:myanmar-humanitarian-needs)
+            - (name:mmr-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: myanmar-humanitarian-needs
-            comments: This dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
