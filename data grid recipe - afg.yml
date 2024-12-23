@@ -109,6 +109,11 @@ categories:
           include:
             - (name:afghanistan-malnutrition-prevalence)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-malnutrition-prevalence
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
