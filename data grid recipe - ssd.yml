@@ -92,6 +92,11 @@ categories:
           include:
             - (name:south-sudan-humanitarian-access-incidents)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-humanitarian-access-incidents
+            display_state: incomplete
+            comments: 
+
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
