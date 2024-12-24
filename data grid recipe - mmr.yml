@@ -168,13 +168,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:mimu-geonode-myanmar-town-points-pcode)
+            - (name:hotosm_mmr_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: mimu-geonode-myanmar-town-points-pcode
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #ROADS
       - name: roads
         title: Roads
