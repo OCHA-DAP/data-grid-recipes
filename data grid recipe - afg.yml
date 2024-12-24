@@ -107,10 +107,10 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:afghanistan-malnutrition-prevalence)
+            - (name:afg-malnutrition-prevalence)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-malnutrition-prevalence
+          - dataset_name: afg-malnutrition-prevalence
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
