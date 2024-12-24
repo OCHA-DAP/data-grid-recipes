@@ -222,6 +222,11 @@ categories:
           include:
             - (name:internally-displaced-persons-natural-disaster)
           exclude:
+        metadata_overrides:
+          - dataset_name: internally-displaced-persons-natural-disaster
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #DROUGHT
       - name: forecast
         title: Forecast
