@@ -138,7 +138,7 @@ categories:
             comments: The data in this dataset covers only Gaza Strip.
           - dataset_name: wfp-food-prices-for-state-of-palestine
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             comments: This complementary dataset is not subnational.
 
