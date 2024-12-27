@@ -21,6 +21,11 @@ categories:
           include:
             - (name:nigeria-site-assessment-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-site-assessment-data
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
