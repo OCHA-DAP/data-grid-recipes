@@ -19,8 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:venezuela-iom-dtm-idps)
           exclude:
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -118,6 +119,11 @@ categories:
             - (name:global-market-monitor)
             - (name:wfp-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-venezuela-bolivarian-republic-of
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -161,6 +167,11 @@ categories:
           include:
             - (name:venezuela-populated-places)
           exclude:
+        metadata_overrides:
+          - dataset_name: venezuela-populated-places
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #ROADS
       - name: roads
         title: Roads
