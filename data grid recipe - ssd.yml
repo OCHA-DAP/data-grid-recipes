@@ -65,7 +65,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: south-sudan-operational-presence
-            display_state: incomplete
             comments: The dataset is not up-to-date.
 
 #FUNDING
