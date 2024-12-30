@@ -108,7 +108,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:nutrition-in-central-african-republic)
+            - (name:republique-centrafricaine-analyse-de-la-malnutrition-aigue-de-l-ipc)
           exclude:
 #FOOD PRICES
       - name: food_prices
