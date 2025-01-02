@@ -187,7 +187,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:niger-structures-sanitaires)
+            - (name:hotosm_ner_health_facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -195,15 +195,8 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:niger-base-de-donnees-des-etablissements-scolaires)
-            - (name:niger-base-de-donnees-des-etablissements-scolaires)
+            - (name:hotosm_ner_education_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
-            comments: Geo-coordinates are unavailable.
-          - dataset_name: niger-base-de-donnees-des-etablissements-scolaires
-            comments: The dataset does not include the education facilities coordinates.
-
 
 #CLIMATE
   - name: climate
