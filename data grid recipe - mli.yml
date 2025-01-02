@@ -42,6 +42,11 @@ categories:
           include:
             - (name:mali-baseline-assessment-data-iom-dtm)
           exclude:
+        metadata_overrides:
+          - dataset_name: mali-baseline-assessment-data-iom-dtm
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -164,11 +169,6 @@ categories:
           include:
             - (name:cod-ps-mli)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-mli
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
@@ -206,7 +206,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:mali-schools)
+            - (name:hotosm_mli_education_facilities)
           exclude:
 
 #CLIMATE
