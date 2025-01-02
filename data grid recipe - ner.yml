@@ -89,6 +89,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: niger-analyse-des-contraintes-d-acces
+            display_state: incomplete
             comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response. The dataset is not up-to-date.
 
 
