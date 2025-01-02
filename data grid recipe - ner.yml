@@ -173,7 +173,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:niger-routes)
+            - (name:hotosm_ner_roads)
           exclude:
 
 #HEALTH AND EDUCATION
