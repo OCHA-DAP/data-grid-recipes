@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:car-baseline-assessment-data-iom-dtm)
+            - (name:statistiques-detaillees-des-sites-pdis-en-republique-centrafricaine)
           exclude:
 #HNO
       - name: hno
