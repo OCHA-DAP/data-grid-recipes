@@ -86,8 +86,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: burkina-faso-humanitarian-access
-            display_state: incomplete
-            comments: The dataset is not up-to-date. This data is only shared between specific partners and is not available on HDX.
+            display_state: complete
+            comments: This data is only shared between specific partners and is not available on HDX.
 
 
 #FOOD SECURITY NUTRITION POVERTY
