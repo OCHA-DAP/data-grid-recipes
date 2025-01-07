@@ -85,13 +85,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:niger-analyse-des-contraintes-d-acces)
           exclude:
-        metadata_overrides:
-          - dataset_name: niger-analyse-des-contraintes-d-acces
-            display_state: incomplete
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response. The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
