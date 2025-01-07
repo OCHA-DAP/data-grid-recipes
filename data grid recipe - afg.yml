@@ -59,6 +59,11 @@ categories:
           include:
             - (name:afghanistan-who-does-what-where-july-to-september-2024)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-who-does-what-where-july-to-september-2024
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FUNDING
       - name: funding
         title: Funding
@@ -101,6 +106,11 @@ categories:
           include:
             - (name:afghanistan-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-acute-food-insecurity-country-data
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
