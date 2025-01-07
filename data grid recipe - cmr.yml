@@ -125,6 +125,11 @@ categories:
           include:
             - (name:cameroun-analyse-analyse-ipc-de-la-malnutrition-aigue)
           exclude:
+        metadata_overrides:
+          - dataset_name: cameroun-analyse-analyse-ipc-de-la-malnutrition-aigue
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
