@@ -105,6 +105,11 @@ categories:
           include:
             - (name:haiti-acutemalnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: haiti-acutemalnutrition
+            display_state: incomplete
+            comments: This dataset is not up-to-date.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
