@@ -43,12 +43,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:somalia-humanitarian-needs)
+            - (name:som-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-humanitarian-needs
-            comments: The dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
