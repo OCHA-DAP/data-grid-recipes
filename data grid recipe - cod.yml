@@ -21,11 +21,6 @@ categories:
           include:
             - (name:drc-displacement-deplace-site-assessment-ocha)
           exclude:
-        metadata_overrides:
-          - dataset_name: drc-displacement-deplace-site-assessment-ocha
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
@@ -42,11 +37,6 @@ categories:
           include:
             - (name:drc-displacement-idps-site-assessment-ocha)
           exclude:
-        metadata_overrides:
-          - dataset_name: drc-displacement-idps-site-assessment-ocha
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
