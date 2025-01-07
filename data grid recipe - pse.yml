@@ -20,14 +20,11 @@ categories:
         rules:
           include:
             - (name:state-of-palestine-idp-s)
-            - (name:the-state-of-palestine-escalation-of-hostilities)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-idp-s
             display_state: incomplete
             comments: The dataset is not up-to-date.
-          - dataset_name: the-state-of-palestine-escalation-of-hostilities
-            comments: This dataset is not subnational.
 
 #REFUGEES POCs
       - name: refugees_poc
