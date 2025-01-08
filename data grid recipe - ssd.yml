@@ -126,8 +126,9 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:south-sudan-resilience-capacity-index)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
