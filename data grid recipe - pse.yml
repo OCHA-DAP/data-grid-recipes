@@ -217,7 +217,13 @@ categories:
         rules:
           include:
             - (name:hotosm_pse_education_facilities)
+            - (name:state-of-palestine-israeli-occupation-violations-against-education)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-israeli-occupation-violations-against-education
+            display_state: incomplete
+            comments: Geo-coordinates are not available.
+
 
 #CLIMATE
   - name: climate
