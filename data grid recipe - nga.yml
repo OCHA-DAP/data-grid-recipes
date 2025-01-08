@@ -182,7 +182,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:grid3-nga-settlement-extents-v3-1)
+            - (name:hotosm_col_populated_places)
           exclude:
 #ROADS
       - name: roads
