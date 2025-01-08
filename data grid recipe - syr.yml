@@ -192,6 +192,7 @@ categories:
         rules:
           include:
             - (name:hotosm_syr_health_facilities)
+            - (name:women-and-family-healthcare-services-in-northwest-syria)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
