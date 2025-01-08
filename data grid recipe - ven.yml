@@ -170,13 +170,8 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:venezuela-populated-places)
+            - (name:hotosm_ven_populated_places)
           exclude:
-        metadata_overrides:
-          - dataset_name: venezuela-populated-places
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #ROADS
       - name: roads
         title: Roads
