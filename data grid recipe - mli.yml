@@ -165,6 +165,11 @@ categories:
           include:
             - (name:cod-ps-mli)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-mli
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
