@@ -160,7 +160,7 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:divipola-nivel-centros-poblados-de-colombia)
+            - (name:hotosm_col_populated_places)
           exclude:
 #ROADS
       - name: roads
