@@ -63,11 +63,6 @@ categories:
           include:
             - (name:syrian-arab-republic-who-does-what-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-who-does-what-where-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
