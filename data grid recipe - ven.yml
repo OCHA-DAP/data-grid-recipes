@@ -119,11 +119,6 @@ categories:
             - (name:global-market-monitor)
             - (name:wfp-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-venezuela-bolivarian-republic-of
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
