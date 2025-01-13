@@ -37,6 +37,11 @@ categories:
           include:
             - (name:afghan-refugee-return-2024)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghan-refugee-return-2024
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
