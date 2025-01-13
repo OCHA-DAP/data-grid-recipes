@@ -233,7 +233,7 @@ categories:
 #CLIMATE
   - name: climate
     title: Climate
-    description: Current and historical data about climate hazards, impact & forecast.
+    description: Current and historical data about climate hazards & impact.
     data_series:
 #RAINFALL
       - name: hazards
@@ -248,19 +248,6 @@ categories:
       - name: impact
         title: Impact
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
-#DROUGHT
-      - name: forecast
-        title: Forecast
-        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
-        flags:
-          - key: not_applicable
-            display_text: 
-            comments: 
         rules:
           include:
           exclude:
