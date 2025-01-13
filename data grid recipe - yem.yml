@@ -214,7 +214,7 @@ categories:
 #CLIMATE
   - name: climate
     title: Climate
-    description: Current and historical data about climate hazards, impact & forecast.
+    description: Current and historical data about climate hazards & impact.
     data_series:
 #RAINFALL
       - name: hazards
@@ -232,17 +232,4 @@ categories:
           include:
             - (name:yemen-flood-preparedness-and-response)
           exclude:
-#DROUGHT
-      - name: forecast
-        title: Forecast
-        description: Forecast data with projections for riverine floods, seasonal rainfall forecasts, or major storms.
-        flags:
-          - key: not_applicable
-            display_text: 
-            comments: 
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
 
