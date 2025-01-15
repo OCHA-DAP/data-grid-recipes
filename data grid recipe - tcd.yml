@@ -214,7 +214,7 @@ categories:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
             display_state: incomplete
-            comments: This complementary dataset is not subnational.
+            comments: This complementary dataset is not subnational and is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: impact
