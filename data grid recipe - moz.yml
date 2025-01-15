@@ -55,6 +55,11 @@ categories:
           include:
             - (name:mozambique-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not subnational.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
