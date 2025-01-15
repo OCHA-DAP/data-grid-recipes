@@ -199,7 +199,7 @@ categories:
         metadata_overrides:
           - dataset_name: women-and-family-healthcare-services-in-northwest-syria
             display_state: incomplete
-            comments: This dataset covers only Northwest. The dataset is not up-to-date.
+            comments: This dataset covers only Northwest and is not up-to-date.
 
 #EDUCATION FACILITIES
       - name: education_facilities
