@@ -225,6 +225,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
+            display_state: incomplete
             comments: This complementary dataset is not subnational.
 
 #CLIMATIE IMPACT
