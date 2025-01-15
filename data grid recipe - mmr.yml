@@ -122,8 +122,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: wfp-food-prices-for-myanmar
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            display_state: complete
+            comments: 
           - dataset_name: global-market-monitor
             comments: This complementary dataset is not subnational.
 
