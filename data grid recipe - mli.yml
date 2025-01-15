@@ -229,10 +229,10 @@ categories:
         rules:
           include:
             - (name:mli-rainfall-subnational)
-            - (name:This complementary dataset is not subnational)
+            - (name:asap-hotspots-monthly)
           exclude:
         metadata_overrides:
-          - dataset_name: This complementary dataset is not subnational
+          - dataset_name: asap-hotspots-monthly
             display_state: incomplete
             comments: This complementary dataset is not subnational.
 
