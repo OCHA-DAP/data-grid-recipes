@@ -216,7 +216,13 @@ categories:
         rules:
           include:
             - (name:syr-rainfall-subnational)
+            - (name:asap-hotspots-monthly)
+            - (name:syr-ndvi-subnational)
           exclude:
+        metadata_overrides:
+          - dataset_name: asap-hotspots-monthly
+            comments: This complementary dataset is not subnational.
+
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
