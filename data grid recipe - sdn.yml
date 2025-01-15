@@ -48,6 +48,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: sudan-humanitarian-needs
+            display_state: incomplete
             comments: This dataset is not subnational.
 
 
