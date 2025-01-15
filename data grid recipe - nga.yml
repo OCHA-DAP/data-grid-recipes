@@ -130,8 +130,12 @@ categories:
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
+          - dataset_name: wfp-food-prices-for-nigeria
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
-            comments: This complementary dataset is not subnational
+            display_state: incomplete
+            comments: This complementary dataset is not subnational and is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
