@@ -114,11 +114,6 @@ categories:
           include:
             - (name:mali-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-malnutrition
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices & Market Monitor
