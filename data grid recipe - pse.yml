@@ -24,7 +24,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-idp-s
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: The dataset is not up-to-date. The dataset is not subnational.
 
 #REFUGEES POCs
       - name: refugees_poc
