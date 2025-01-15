@@ -47,6 +47,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: ukraine-humanitarian-needs
+            display_state: incomplete
             comments: The dataset is not subnational.
 
 
