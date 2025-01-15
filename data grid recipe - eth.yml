@@ -57,6 +57,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: ethiopia-humanitarian-needs
+            display_state: incomplete
             comments: This dataset is not subnational.
 
 
