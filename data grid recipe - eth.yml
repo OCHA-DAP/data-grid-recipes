@@ -234,6 +234,8 @@ categories:
         rules:
           include:
             - (name:eth-rainfall-subnational)
+            - (name:eth-ndvi-subnational)
+            - (name:asap-hotspots-monthly)
           exclude:
 #CLIMATIE IMPACT
       - name: impact
