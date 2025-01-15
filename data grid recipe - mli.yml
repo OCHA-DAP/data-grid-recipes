@@ -225,6 +225,7 @@ categories:
           include:
             - (name:mli-rainfall-subnational)
             - (name:asap-hotspots-monthly)
+            - (name:mli-ndvi-subnational)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
