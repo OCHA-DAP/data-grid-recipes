@@ -131,7 +131,7 @@ categories:
         metadata_overrides:
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This complementary dataset is not subnational.
+            comments: This complementary dataset is not subnational. The dataset is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
