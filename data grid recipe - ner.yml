@@ -123,6 +123,9 @@ categories:
           - dataset_name: wfp-food-prices-for-niger
             display_state: incomplete
             comments: The dataset is not up-to-date.
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
