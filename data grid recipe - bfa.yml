@@ -224,6 +224,7 @@ categories:
         rules:
           include:
             - (name:bfa-rainfall-subnational)
+            - (name:bfa-ndvi-subnational)
           exclude:
 #CLIMATIE IMPACT
       - name: impact
