@@ -43,8 +43,13 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:ukr-jiaf-humanitarian-needs-and-response-plan)
+            - (name:ukraine-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-humanitarian-needs
+            display_state: incomplete
+            comments: The dataset is not subnational.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
