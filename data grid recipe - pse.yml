@@ -189,7 +189,13 @@ categories:
         rules:
           include:
             - (name:hotosm_pse_populated_places)
+            - (name:worldpop-population-counts-2015-2030-pse)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-pse
+            display_state: incomplete
+            comments: This dataset is complementary. 
+
 #ROADS
       - name: roads
         title: Roads
