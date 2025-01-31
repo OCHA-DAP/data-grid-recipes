@@ -224,7 +224,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-israeli-occupation-violations-against-education
             display_state: incomplete
-            comments: This dataset is complimentary. Geo-coordinates are not available.
+            comments: This dataset is complementary. Geo-coordinates are not available.
 
 
 #CLIMATE
