@@ -179,7 +179,13 @@ categories:
         rules:
           include:
             - (name:ukraine-populated-places)
+            - (name:worldpop-population-counts-2015-2030-ukr)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-ukr
+            display_state: incomplete
+            comments: This dataset is complementary.
+
 #ROADS
       - name: roads
         title: Roads
