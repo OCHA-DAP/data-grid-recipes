@@ -221,7 +221,7 @@ categories:
         metadata_overrides:
           - dataset_name: floodscan
             display_state: incomplete
-            comments: This dataset is complementary. 
+            comments: This dataset is complementary. The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: impact
