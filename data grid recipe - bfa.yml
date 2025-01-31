@@ -180,7 +180,13 @@ categories:
         rules:
           include:
             - (name:hotosm_bfa_populated_places)
+            - (name:worldpop-population-counts-2015-2030-vfa)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-vfa
+            display_state: incomplete
+            comments: This dataset is complementary.
+
 #ROADS
       - name: roads
         title: Roads
