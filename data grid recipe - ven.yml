@@ -171,7 +171,13 @@ categories:
         rules:
           include:
             - (name:hotosm_ven_populated_places)
+            - (name:worldpop-population-counts-2015-2025-ven)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2025-ven
+            display_state: incomplete
+            comments: This dataset is complementary.
+
 #ROADS
       - name: roads
         title: Roads
