@@ -236,7 +236,7 @@ categories:
             comments: This complementary dataset is not subnational.
           - dataset_name: floodscan
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: This dataset is complementary. The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: impact
