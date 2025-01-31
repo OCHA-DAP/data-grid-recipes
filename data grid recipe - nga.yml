@@ -228,7 +228,13 @@ categories:
         rules:
           include:
             - (name:nga-rainfall-subnational)
+            - (name:floodscan)
           exclude:
+        metadata_overrides:
+          - dataset_name: floodscan
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
