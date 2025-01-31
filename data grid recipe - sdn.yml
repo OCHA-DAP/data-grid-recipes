@@ -216,7 +216,13 @@ categories:
         rules:
           include:
             - (name:sdn-rainfall-subnational)
+            - (name:floodscan)
           exclude:
+        metadata_overrides:
+          - dataset_name: floodscan
+            display_state: incomplete
+            comments: This dataset is complementary. 
+
 #CLIMATIE IMPACT
       - name: impact
         title: Impact
