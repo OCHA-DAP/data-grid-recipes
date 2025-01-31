@@ -162,7 +162,13 @@ categories:
         rules:
           include:
             - (name:hotosm_som_populated_places)
+            - (name:worldpop-population-counts-2015-2030-som)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-som
+            display_state: incomplete
+            comments: This dataset is complementary.
+
 #ROADS
       - name: roads
         title: Roads
