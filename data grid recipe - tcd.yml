@@ -165,7 +165,13 @@ categories:
         rules:
           include:
             - (name:hotosm_tcd_populated_places)
+            - (name:worldpop-population-counts-2015-2030-tcd)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-tcd
+            display_state: incomplete
+            comments: This dataset is complementary.
+
 #ROADS
       - name: roads
         title: Roads
@@ -211,11 +217,15 @@ categories:
             - (name:tcd-rainfall-subnational)
             - (name:asap-hotspots-monthly)
             - (name:tcd-ndvi-subnational)
+            - (name:floodscan)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
             display_state: incomplete
             comments: This complementary dataset is not subnational.
+          - dataset_name: floodscan
+            display_state: incomplete
+            comments: This dataset is complementary. The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: impact
