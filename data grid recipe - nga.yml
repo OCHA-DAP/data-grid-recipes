@@ -19,15 +19,20 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:sudan-displacement-situation-countrywide-idps-iom-dtm)
+            - (name:nigeria-site-assessment-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-site-assessment-data
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees & Persons of Concern
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-sdn)
+            - (name:unhcr-population-data-for-nga)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,22 +40,21 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:nigeria-site-assessment-data)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: nigeria-site-assessment-data
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-humanitarian-needs)
+            - (name:nga-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarian-needs
-            display_state: incomplete
-            comments: This dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -63,15 +67,20 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-operational-presence)
+            - (name:nigeria-3w)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-3w
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-sudan)
+            - (name:fts-requirements-and-funding-data-for-nigeria)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -79,7 +88,7 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:sudan-acled-conflict-data)
+            - (name:nigeria-acled-conflict-data)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -87,9 +96,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:nigeria-access-severity)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -102,7 +110,7 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:sudan-acute-food-insecurity-country-data)
+            - (name:cadre-harmonise)
           exclude:
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -110,7 +118,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:gam-mam-and-sam-based-on-muac-measurements)
+            - (name:nigeria-acute-malnutrition-data)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -118,16 +126,16 @@ categories:
         description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
-            - (name:wfp-food-prices-for-sudan)
+            - (name:wfp-food-prices-for-nigeria)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-food-prices-for-sudan
+          - dataset_name: wfp-food-prices-for-nigeria
             display_state: incomplete
             comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This complementary dataset is not subnational. The dataset is not up-to-date.
+            comments: This complementary dataset is not subnational and is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
@@ -135,9 +143,13 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
+            - (name:nigeria-mpi)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: nigeria-mpi
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -150,10 +162,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:cod-ab-sdn)
+            - (name:cod-ab-nga)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ab-sdn
+          - dataset_name: cod-ab-nga
             display_state: complete
             comments: 
 
@@ -163,7 +175,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-sdn)
+            - (name:cod-ps-nga)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -171,13 +183,13 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_sdn_populated_places)
-            - (name:worldpop-population-counts-2015-2021-sdn)
+            - (name:hotosm_nga_populated_places)
+            - (name:worldpop-population-counts-2015-2030-nga)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2021-sdn
+          - dataset_name: worldpop-population-counts-2015-2030-nga
             display_state: incomplete
-            comments: This dataset is complementary. The dataset is not up-to-date.
+            comments: This dataset is complementary.
 
 #ROADS
       - name: roads
@@ -185,7 +197,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_roads)
+            - (name:hotosm_nga_roads)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -199,7 +211,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_health_facilities)
+            - (name:hotosm_nga_health_facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -207,7 +219,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_education_facilities)
+            - (name:hotosm_nga_education_facilities)
           exclude:
 
 #CLIMATE
@@ -221,7 +233,7 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:sdn-rainfall-subnational)
+            - (name:nga-rainfall-subnational)
             - (name:floodscan)
           exclude:
         metadata_overrides:
@@ -235,6 +247,6 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:sudan-people-affected-by-floods)
+            - (name:nigeria-nema-flood-affected-geographical-areasnorth-east-nigeria-flood-affected-geographical-areas)
           exclude:
 
