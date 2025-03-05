@@ -112,21 +112,13 @@ categories:
 
 #FOOD PRICES
       - name: food_prices
-        title: Food Prices & Market Monitor
+        title: Food Prices
         description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
         rules:
           include:
-            - (name:wfp-food-prices-for-haiti)
-            - (name:global-market-monitor)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-food-prices-for-haiti
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: This complementary dataset is not subnational and is not up-to-date.
-
+            - (private:false)
+            - (private:true)
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
