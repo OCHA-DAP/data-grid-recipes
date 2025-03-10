@@ -128,12 +128,17 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
+        description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
+            - (name:wfp-food-prices-for-yemen)
+            - (name:global-market-monitor)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -176,7 +181,7 @@ categories:
         metadata_overrides:
           - dataset_name: worldpop-population-counts-2015-2030-yem
             display_state: incomplete
-            comments: This dataset is complementary.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #ROADS
       - name: roads
