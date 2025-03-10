@@ -125,7 +125,7 @@ categories:
             comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This complementary dataset is not subnational and is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory. Ths dataset is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
@@ -175,7 +175,7 @@ categories:
         metadata_overrides:
           - dataset_name: worldpop-population-counts-2015-2030-cod
             display_state: incomplete
-            comments: This dataset is complementary.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #ROADS
       - name: roads
