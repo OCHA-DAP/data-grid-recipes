@@ -116,9 +116,17 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
+            - (name:global-market-monitor)
+            - (name:worldpop-population-counts-2015-2025-ven)
           exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+          - dataset_name: worldpop-population-counts-2015-2025-ven
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -166,13 +174,7 @@ categories:
         rules:
           include:
             - (name:hotosm_ven_populated_places)
-            - (name:worldpop-population-counts-2015-2025-ven)
           exclude:
-        metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2025-ven
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
 #ROADS
       - name: roads
         title: Roads
