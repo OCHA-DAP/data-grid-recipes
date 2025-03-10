@@ -58,7 +58,7 @@ categories:
         metadata_overrides:
           - dataset_name: ethiopia-humanitarian-needs
             display_state: incomplete
-            comments: This dataset is not subnational.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 
 #COORDINATION & CONTEXT
@@ -130,7 +130,7 @@ categories:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Time series for common food commodities prices at subnational locations and for change in food basket prices at the country level.
+        description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
             - (name:wfp-food-prices-for-ethiopia)
@@ -142,7 +142,7 @@ categories:
             comments: 
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This complementary dataset is not subnational. The dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
 
 #POVERTY RATE
       - name: poverty_rate
@@ -196,7 +196,7 @@ categories:
         metadata_overrides:
           - dataset_name: worldpop-population-counts-2015-2030-eth
             display_state: incomplete
-            comments: This dataset is complementary.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #ROADS
       - name: roads
@@ -248,10 +248,10 @@ categories:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
             display_state: incomplete
-            comments: This complementary dataset is not subnational.
+            comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: floodscan
             display_state: incomplete
-            comments: This dataset is complementary. The dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
 
 #CLIMATIE IMPACT
       - name: impact
