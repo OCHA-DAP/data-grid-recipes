@@ -150,7 +150,7 @@ categories:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
         title: Administrative Divisions
-        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
         rules:
           include:
             - (name:cod-ab-mli)
