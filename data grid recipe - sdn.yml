@@ -44,13 +44,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sudan-humanitarian-needs)
+            - (name:sdn-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: sudan-humanitarian-needs
-            display_state: incomplete
-            comments: This dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
