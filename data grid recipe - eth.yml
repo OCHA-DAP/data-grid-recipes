@@ -132,9 +132,6 @@ categories:
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-food-prices-for-ethiopia
-            display_state: complete
-            comments: 
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
