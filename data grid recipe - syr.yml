@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
+            - (name:syrian-arab-republic-displacement-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:syrian-arab-republic-idp-movements-and-idp-spontaneous-return-movements-data)
+            - (name:syrian-arab-republic-displacement-data-iom-dtm)
           exclude:
 #HNO
       - name: hno
