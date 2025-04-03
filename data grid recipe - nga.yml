@@ -23,7 +23,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-site-assessment-data
-            display_state: incomplete
             comments: The dataset is not up-to-date.
 
 #REFUGEES POCs
@@ -44,7 +43,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: nigeria-site-assessment-data
-            display_state: incomplete
             comments: The dataset is not up-to-date.
 
 #HNO
