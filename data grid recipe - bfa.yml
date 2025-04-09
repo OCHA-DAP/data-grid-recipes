@@ -121,9 +121,6 @@ categories:
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-food-prices-for-burkina-faso
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. This dataset is not up-to-date.
@@ -136,11 +133,6 @@ categories:
           include:
             - (name:burkina-faso-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: burkina-faso-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -170,8 +162,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cod-ps-bfa
-            display_state: complete
-            comments: 
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
 
 #POPULATED PLACES
       - name: populated_places
@@ -240,7 +232,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: floodscan
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. This dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory. 
 
 #CLIMATIE IMPACT
       - name: impact
