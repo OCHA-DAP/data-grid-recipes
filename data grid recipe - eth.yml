@@ -228,7 +228,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: floodscan
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory. 
 
 #CLIMATIE IMPACT
       - name: impact
