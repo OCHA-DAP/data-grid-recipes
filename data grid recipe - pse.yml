@@ -116,6 +116,11 @@ categories:
           include:
             - (name:state-of-palestine-malnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: state-of-palestine-malnutrition
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
