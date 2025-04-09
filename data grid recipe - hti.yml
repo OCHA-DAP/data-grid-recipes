@@ -105,11 +105,6 @@ categories:
           include:
             - (name:haiti-acutemalnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-acutemalnutrition
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -120,9 +115,6 @@ categories:
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
-          - dataset_name: wfp-food-prices-for-haiti
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. This dataset is not up-to-date.
@@ -229,9 +221,4 @@ categories:
           include:
             - (name:haiti-floods)
           exclude:
-        metadata_overrides:
-          - dataset_name: haiti-floods
-            display_state: incomplete
-            comments: This dataset is not up-to-date.
-
 
