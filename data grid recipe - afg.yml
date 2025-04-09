@@ -101,6 +101,11 @@ categories:
           include:
             - (name:afghanistan-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-acute-food-insecurity-country-data
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -109,6 +114,11 @@ categories:
           include:
             - (name:afg-malnutrition-prevalence)
           exclude:
+        metadata_overrides:
+          - dataset_name: afg-malnutrition-prevalence
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
