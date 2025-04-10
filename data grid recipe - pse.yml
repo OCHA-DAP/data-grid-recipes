@@ -135,9 +135,6 @@ categories:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
             display_state: incomplete
             comments: The data in this dataset covers only Gaza Strip.
-          - dataset_name: wfp-food-prices-for-state-of-palestine
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
@@ -150,11 +147,6 @@ categories:
           include:
             - (name:state-of-palestine-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-mpi
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
