@@ -97,6 +97,11 @@ categories:
           include:
             - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: democratic-republic-of-the-congo-acute-food-insecurity-country-data
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -105,6 +110,11 @@ categories:
           include:
             - (name:rdc-ipc-amn)
           exclude:
+        metadata_overrides:
+          - dataset_name: rdc-ipc-amn
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -155,6 +165,11 @@ categories:
           include:
             - (name:cod-ps-cod)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-cod
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
