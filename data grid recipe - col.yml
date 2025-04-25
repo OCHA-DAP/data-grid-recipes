@@ -65,7 +65,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-colombia)
+            - (name:col-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
