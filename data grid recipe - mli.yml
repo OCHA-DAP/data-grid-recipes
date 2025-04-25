@@ -70,7 +70,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-mali)
+            - (name:mli-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
