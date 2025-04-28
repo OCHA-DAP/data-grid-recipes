@@ -98,6 +98,11 @@ categories:
             - (name:south-sudan-acute-food-insecurity)
             - (name:south-sudan-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-acute-food-insecurity
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
