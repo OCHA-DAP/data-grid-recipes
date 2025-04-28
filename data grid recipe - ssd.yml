@@ -102,6 +102,9 @@ categories:
           - dataset_name: south-sudan-acute-food-insecurity
             display_state: complete
             comments: 
+          - dataset_name: south-sudan-acute-food-insecurity-country-data
+            display_state: complete
+            comments: 
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
