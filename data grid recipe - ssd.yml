@@ -95,13 +95,9 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:south-sudan-acute-food-insecurity)
             - (name:south-sudan-acute-food-insecurity-country-data)
           exclude:
         metadata_overrides:
-          - dataset_name: south-sudan-acute-food-insecurity
-            display_state: complete
-            comments: 
           - dataset_name: south-sudan-acute-food-insecurity-country-data
             display_state: complete
             comments: 
