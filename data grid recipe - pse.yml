@@ -82,6 +82,11 @@ categories:
           include:
             - (name:palestine-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: palestine-acled-conflict-data
+            display_state: complete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
