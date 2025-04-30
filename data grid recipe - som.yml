@@ -105,8 +105,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: somalia-acute-food-insecurity-country-data
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            display_state: complete
+            comments: 
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -116,6 +116,11 @@ categories:
           include:
             - (name:somalia-acute-malnutrition-analysis)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-acute-malnutrition-analysis
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -152,6 +157,11 @@ categories:
           include:
             - (name:cod-ab-som)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-som
+            display_state: complete
+            comments: 
+
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
