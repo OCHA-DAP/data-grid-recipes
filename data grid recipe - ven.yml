@@ -122,6 +122,7 @@ categories:
         rules:
           include:
             - (name:global-market-monitor)
+            - (name:wfp-food-prices-for-venezuela-bolivarian-republic-of)
             - (name:worldpop-population-counts-2015-2025-ven)
           exclude:
         metadata_overrides:
