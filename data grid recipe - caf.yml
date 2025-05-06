@@ -159,6 +159,11 @@ categories:
           include:
             - (name:cod-ab-caf)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ab-caf
+            display_state: complete
+            comments: 
+
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
