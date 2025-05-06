@@ -127,7 +127,7 @@ categories:
         metadata_overrides:
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 #POVERTY RATE
       - name: poverty_rate
