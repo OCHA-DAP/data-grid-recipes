@@ -133,7 +133,7 @@ categories:
         metadata_overrides:
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. This dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #POVERTY RATE
       - name: poverty_rate
