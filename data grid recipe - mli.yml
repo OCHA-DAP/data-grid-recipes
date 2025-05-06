@@ -43,13 +43,8 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mali-humanitarian-needs)
+            - (name:mli-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: mali-humanitarian-needs
-            display_state: incomplete
-            comments: The dataset is not subnational.
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -135,7 +130,7 @@ categories:
             comments: The dataset is not up-to-date.
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. This dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #POVERTY RATE
       - name: poverty_rate
