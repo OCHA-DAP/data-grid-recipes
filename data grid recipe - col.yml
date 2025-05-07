@@ -91,7 +91,7 @@ categories:
         metadata_overrides:
           - dataset_name: acceso-humanitario-colombia
             display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: 
 
 
 #FOOD SECURITY NUTRITION POVERTY
