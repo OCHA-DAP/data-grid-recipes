@@ -121,14 +121,8 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:global-market-monitor)
             - (name:wfp-food-prices-for-venezuela-bolivarian-republic-of)
           exclude:
-        metadata_overrides:
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
