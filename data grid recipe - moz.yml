@@ -127,11 +127,6 @@ categories:
           include:
             - (name:mozambique-acute-malnutrtion-by-admin2)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-acute-malnutrtion-by-admin2
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
