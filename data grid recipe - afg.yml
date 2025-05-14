@@ -141,6 +141,11 @@ categories:
           include:
             - (name:afghanistan-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: afghanistan-mpi
+            display_state: complete
+            comments: 
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
