@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:desplazamientos-colombia)
+            - (name:libya-baseline-assessment-data-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-col)
+            - (name:unhcr-population-data-for-lby)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:colombia-retornados-por-desplazamiento)
+            - (name:libya-baseline-assessment-data-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -43,8 +43,13 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:col-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:libya-humanitarian-needs-overview)
           exclude:
+        metadata_overrides:
+          - dataset_name: libya-humanitarian-needs-overview
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -53,19 +58,25 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: Operational Presence
+        title: 3w - Who is doing what where
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:colombia-4ws)
+            - (name:libya-operational-presence)
+            - (name:iati-lby)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-lby
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently.
+
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:col-requirements-and-funding-data)
+            - (name:fts-requirements-and-funding-data-for-libya)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -73,12 +84,12 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:colombia-acled-conflict-data)
+            - (name:libya-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: colombia-acled-conflict-data
-            display_state: complete
-            comments: 
+          - dataset_name: libya-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
 
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -86,18 +97,22 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:acceso-humanitario-colombia)
+            - (name:libya-humanitarian-access)
           exclude:
-        metadata_overrides:
-          - dataset_name: acceso-humanitario-colombia
-            display_state: incomplete
-            comments: 
+#CLIMATIE IMPACT
+      - name: climate_impact
+        title: Climate Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 
-
-#FOOD SECURITY NUTRITION POVERTY
-  - name: food_security_nutrition_poverty
-    title: Food Security, Nutrition & Poverty
-    description: Data about a population's access to food, key nutrition indicators and poverty rates.
+#FOOD SECURITY AND NUTRITION
+  - name: food_security_and_nutrition
+    title: Food Security & Nutrition
+    description: Data about a population's access to food and key nutrition indicators.
     data_series:
 #FOOD SECURITY
       - name: food_security
@@ -105,64 +120,39 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:colombia-seguridad-alimentaria)
           exclude:
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:colombia-desnutricion-aguda)
           exclude:
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Time series for common food commodities prices at sub-national locations. 
+        description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-colombia)
-            - (name:global-market-monitor)
-          exclude:
-        metadata_overrides:
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
-        rules:
-          include:
-            - (name:colombia-pobreza-multidimensional-departamental)
+            - (name:wfp-food-prices-for-libya)
           exclude:
 
-#REFERENCE DATA
+#GEOGRAPHY AND INFRASTRUCTURE
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
       - name: administrative_divisions
         title: Administrative Divisions
-        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. 
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:cod-ab-col)
-          exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-col
-            display_state: complete
-            comments: 
-
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
-        rules:
-          include:
-            - (name:cod-ps-col)
+            - (name:cod-ab-lby)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -170,27 +160,39 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_col_populated_places)
-            - (name:worldpop-population-counts-2015-2030-col)
+            - (name:libya-populated-places)
           exclude:
-        metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2030-col
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
 #ROADS
       - name: roads
         title: Roads
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:colombia-roads)
+            - (name:hotosm_lby_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_lby_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
+#AIRPORTS
+      - name: airports
+        title: Airports
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
+        rules:
+          include:
+            - (name:ourairports-lby)
+          exclude:
+        metadata_overrides:
+          - dataset_name: ourairports-lby
+            display_state: incomplete
+            comments: OurAirports data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities.
+    description: Data describing health and education related facilities and key indicators.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -198,36 +200,46 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:colombia-health-facilities-2021)
+            - (name:libya-health-facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: libya-health-facilities
+            display_state: incomplete
+            comments: The coordinates of health facilities are missing from the dataset.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_col_education_facilities)
+            - (name:hotosm_lby_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_lby_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
 
-#CLIMATE
-  - name: climate
-    title: Climate
-    description: Current and historical data about climate hazards & impact.
+
+#POPULATION AND SOCIO-ECONOMY
+  - name: socio-economic
+    title: Population & Socio-economy
+    description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
-#RAINFALL
-      - name: hazards
-        title: Hazards
-        description: Current and historical data about climate hazards such as droughts, floods and storms. 
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:col-rainfall-subnational)
+            - (name:libya-total-population-by-mantika)
           exclude:
-#CLIMATIE IMPACT
-      - name: impact
-        title: Impact
-        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:colombia-desastres-naturales)
+            - (name:libya-mpi)
           exclude:
 
