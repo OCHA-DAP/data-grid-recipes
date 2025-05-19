@@ -88,11 +88,6 @@ categories:
           include:
             - (name:acceso-humanitario-colombia)
           exclude:
-        metadata_overrides:
-          - dataset_name: acceso-humanitario-colombia
-            display_state: incomplete
-            comments: 
-
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
