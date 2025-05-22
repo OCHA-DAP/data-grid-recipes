@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:sudan-displacement-situation-countrywide-idps-iom-dtm)
+            - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-sdn)
+            - (name:unhcr-population-data-for-ssd)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,16 +35,15 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
+            - (name:south-sudan-displacement-data-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
-            - (private:false)
-            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:sdn-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:south-sudan-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -58,7 +57,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:sudan-operational-presence)
+            - (name:south-sudan-operational-presence)
           exclude:
 #FUNDING
       - name: funding
@@ -66,7 +65,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:sdn-requirements-and-funding-data)
+            - (name:ssd-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -74,10 +73,10 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:sudan-acled-conflict-data)
+            - (name:south-sudan-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-acled-conflict-data
+          - dataset_name: south-sudan-acled-conflict-data
             display_state: complete
             comments: 
 
@@ -87,9 +86,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:south-sudan-access-incidents-jan-dec_2024)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -102,10 +100,10 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:sudan-acute-food-insecurity-country-data)
+            - (name:south-sudan-acute-food-insecurity-country-data)
           exclude:
         metadata_overrides:
-          - dataset_name: sudan-acute-food-insecurity-country-data
+          - dataset_name: south-sudan-acute-food-insecurity-country-data
             display_state: complete
             comments: 
 
@@ -115,15 +113,20 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:gam-mam-and-sam-based-on-muac-measurements)
+            - (name:south-sudan-acute-malnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-acute-malnutrition
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:wfp-food-prices-for-sudan)
+            - (name:wfp-food-prices-for-south-sudan)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
@@ -152,10 +155,10 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
         rules:
           include:
-            - (name:cod-ab-sdn)
+            - (name:cod-ab-ssd)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ab-sdn
+          - dataset_name: cod-ab-ssd
             display_state: complete
             comments: 
 
@@ -165,21 +168,26 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-sdn)
+            - (name:cod-ps-ssd)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-ssd
+            display_state: complete
+            comments: 
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_sdn_populated_places)
-            - (name:worldpop-population-counts-2015-2021-sdn)
+            - (name:hotosm_ssd_populated_places)
+            - (name:worldpop-population-counts-2015-2030-ssd)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2021-sdn
+          - dataset_name: worldpop-population-counts-2015-2030-ssd
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #ROADS
       - name: roads
@@ -187,7 +195,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_roads)
+            - (name:hotosm_ssd_roads)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -201,7 +209,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_health_facilities)
+            - (name:south-sudan-health-facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -209,7 +217,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_sdn_education_facilities)
+            - (name:hotosm_ssd_education_facilities)
           exclude:
 
 #CLIMATE
@@ -223,12 +231,16 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:sdn-rainfall-subnational)
+            - (name:ssd-rainfall-subnational)
+            - (name:asap-hotspots-monthly)
+            - (name:ssd-ndvi-subnational)
             - (name:floodscan)
           exclude:
         metadata_overrides:
-          - dataset_name: floodscan
+          - dataset_name: asap-hotspots-monthly
             display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+          - dataset_name: floodscan
             comments: This dataset is complementary and adds value to the subcategory. 
 
 #CLIMATIE IMPACT
@@ -237,6 +249,6 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:sudan-people-affected-by-floods)
+            - (name:south-sudan-flood-data)
           exclude:
 
