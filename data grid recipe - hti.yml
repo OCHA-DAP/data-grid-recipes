@@ -97,10 +97,11 @@ categories:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included. 
         rules:
           include:
             - (name:haiti-acute-food-insecurity-country-data)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
           - dataset_name: haiti-acute-food-insecurity-country-data
