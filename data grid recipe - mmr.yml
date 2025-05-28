@@ -59,9 +59,8 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
+            - (name:mimu-hdp-nexus-5w)
           exclude:
-            - (private:false)
-            - (private:true)
 #FUNDING
       - name: funding
         title: Funding
