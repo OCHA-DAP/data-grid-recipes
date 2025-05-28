@@ -168,7 +168,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: syrian-arab-republic-baseline-population
-            comments: This data is only shared between specific partners and is only available on request.
+            comments: This data is only shared between specific partners and is available on request only.
 
 #POPULATED PLACES
       - name: populated_places
