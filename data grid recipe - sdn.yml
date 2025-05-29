@@ -103,11 +103,15 @@ categories:
         rules:
           include:
             - (name:sudan-acute-food-insecurity-country-data)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
           - dataset_name: sudan-acute-food-insecurity-country-data
             display_state: complete
             comments: 
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
