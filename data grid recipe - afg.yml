@@ -105,7 +105,13 @@ categories:
         rules:
           include:
             - (name:afghanistan-acute-food-insecurity-country-data)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
