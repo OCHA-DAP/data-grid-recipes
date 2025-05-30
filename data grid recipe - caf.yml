@@ -102,6 +102,11 @@ categories:
           include:
             - (name:central-african-republic-acute-food-insecurity-country-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: central-african-republic-acute-food-insecurity-country-data
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
