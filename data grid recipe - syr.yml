@@ -45,11 +45,6 @@ categories:
           include:
             - (name:syrian-arab-republic-humanitarian-needs)
           exclude:
-        metadata_overrides:
-          - dataset_name: syrian-arab-republic-humanitarian-needs
-            display_state: complete
-            comments: 
-
 
 #COORDINATION & CONTEXT
   - name: coordination_context
