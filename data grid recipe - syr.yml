@@ -43,10 +43,10 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:syr-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:yr-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
         metadata_overrides:
-          - dataset_name: syr-jiaf-humanitarian-needs-pin-and-severity
+          - dataset_name: yr-jiaf-humanitarian-needs-pin-and-severity
             display_state: complete
             comments: 
 
