@@ -105,11 +105,17 @@ categories:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included. 
         rules:
           include:
             - (name:cadre-harmonise)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
