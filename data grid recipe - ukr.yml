@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:drc-displacement-deplace-site-assessment-ocha)
+            - (name:ukraine-displacement-data-baseline-assessment-raion-level-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
-            - (name:unhcr-population-data-for-cod)
+            - (name:unhcr-population-data-for-ukr)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:drc-displacement-idps-site-assessment-ocha)
+            - (name:ukraine-displacement-data-returnees-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -43,7 +43,7 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:cod-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:ukraine-humanitarian-needs)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -57,7 +57,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:drc_presence_operationnelle)
+            - (name:ukraine-who-does-what-where-3w)
           exclude:
 #FUNDING
       - name: funding
@@ -65,7 +65,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:cod-requirements-and-funding-data)
+            - (name:ukr-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -73,15 +73,20 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:democratic-republic-of-congo-acled-conflict-data)
+            - (name:ukraine-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-acled-conflict-data
+            display_state: complete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:drc-acces-humanitaire)
+            - (name:ukraine-border-crossings)
           exclude:
 
 #FOOD SECURITY NUTRITION POVERTY
@@ -93,39 +98,35 @@ categories:
       - name: food_security
         title: Food security
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included. 
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: Not applicable for the current humanitarian context.
         rules:
           include:
-            - (name:democratic-republic-of-the-congo-acute-food-insecurity-country-data)
-            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: democratic-republic-of-the-congo-acute-food-insecurity-country-data
-            display_state: complete
-            comments: 
-          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
+            - (private:false)
+            - (private:true)
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: Not applicable for the current humanitarian context.
         rules:
           include:
-            - (name:rdc-ipc-amn)
           exclude:
-        metadata_overrides:
-          - dataset_name: rdc-ipc-amn
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
         description: Time series for common food commodities prices at sub-national locations.
         rules:
           include:
-            - (name:wfp-food-prices-for-democratic-republic-of-the-congo)
+            - (name:wfp-food-prices-for-ukraine)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
@@ -154,25 +155,19 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
         rules:
           include:
-            - (name:cod-ab-cod)
+            - (name:cod-ab-ukr)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-cod
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-cod)
+            - (name:cod-ps-ukr)
           exclude:
         metadata_overrides:
-          - dataset_name: cod-ps-cod
-            display_state: complete
-            comments: 
+          - dataset_name: cod-ps-ukr
+            comments: This data is only shared between specific partners and is not available on HDX.
 
 #POPULATED PLACES
       - name: populated_places
@@ -180,11 +175,11 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_cod_populated_places)
-            - (name:worldpop-population-counts-2015-2030-cod)
+            - (name:ukraine-populated-places)
+            - (name:worldpop-population-counts-2015-2030-ukr)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2030-cod
+          - dataset_name: worldpop-population-counts-2015-2030-ukr
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
@@ -194,7 +189,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_cod_roads)
+            - (name:hotosm_ukr_roads)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -206,18 +201,28 @@ categories:
       - name: health_facilities
         title: Health Facilities
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:hotosm_cod_health_facilities)
           exclude:
+            - (private:false)
+            - (private:true)
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
         rules:
           include:
-            - (name:hotosm_cod_education_facilities)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #CLIMATE
   - name: climate
@@ -230,7 +235,7 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:cod-rainfall-subnational)
+            - (name:ukr-rainfall-subnational)
           exclude:
 #CLIMATIE IMPACT
       - name: impact
@@ -238,6 +243,7 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:internally-displaced-persons-natural-disaster)
           exclude:
+            - (private:false)
+            - (private:true)
 
