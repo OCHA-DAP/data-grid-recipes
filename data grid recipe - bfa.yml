@@ -23,7 +23,7 @@ categories:
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
-        title: Refugees, forcibly displaced and stateless people
+        title: Refugees forcibly displaced and stateless people
         description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location.
         rules:
           include:
