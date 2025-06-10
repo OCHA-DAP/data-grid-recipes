@@ -27,9 +27,8 @@ categories:
         description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
+            - (name:unhcr-population-data-for-ssd)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
