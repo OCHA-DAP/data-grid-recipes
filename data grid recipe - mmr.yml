@@ -156,11 +156,6 @@ categories:
           include:
             - (name:cod-ab-mmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-mmr
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
