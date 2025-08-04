@@ -121,8 +121,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: republique-centrafricaine-analyse-de-la-malnutrition-aigue-de-l-ipc
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            display_state: complete
+            comments: 
 
 #FOOD PRICES
       - name: food_prices
