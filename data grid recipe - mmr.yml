@@ -164,11 +164,6 @@ categories:
           include:
             - (name:cod-ps-mmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-mmr
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
