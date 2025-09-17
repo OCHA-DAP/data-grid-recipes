@@ -164,6 +164,10 @@ categories:
           include:
             - (name:cod-ps-mmr)
           exclude:
+        metadata_overrides:
+          - dataset_name: cod-ps-mmr
+            comments: This data is only shared between specific partners and is not available on HDX.
+
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
