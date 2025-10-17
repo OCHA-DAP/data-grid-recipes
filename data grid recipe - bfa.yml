@@ -237,10 +237,10 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:bfa-rainfall-subnational)
-            - (name:bfa-ndvi-subnational)
             - (name:asap-hotspots-monthly)
             - (name:floodscan)
+            - (name:bfa-rainfall-subnational)
+            - (name:bfa-ndvi-subnational)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
