@@ -20,7 +20,11 @@ categories:
         rules:
           include:
             - (name:situation-des-personnes-deplacees-internes)
+            - (name:unhcr-population-data-for-bfa)
           exclude:
+        complementary_datasets:
+          - dataset_name: unhcr-population-data-for-bfa
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
