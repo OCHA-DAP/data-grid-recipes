@@ -253,6 +253,7 @@ categories:
         complementary_datasets:
           - dataset_name: asap-hotspots-monthly
           - dataset_name: floodscan
+          - dataset_name: bfa-ndvi-subnational
 
 #CLIMATIE IMPACT
       - name: impact
