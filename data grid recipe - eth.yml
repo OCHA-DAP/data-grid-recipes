@@ -35,8 +35,9 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:ethiopia-displacement-data-village-assessment-iom-dtm)
           exclude:
+            - (private:false)
+            - (private:true)
 #HNO
       - name: hno
         title: Humanitarian Needs
@@ -81,11 +82,6 @@ categories:
             - (name:ethiopia-acled-conflict-data)
             - (name:ethiopia-acled-conflict-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-acled-conflict-data
-            display_state: complete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
