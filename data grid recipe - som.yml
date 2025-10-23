@@ -75,11 +75,6 @@ categories:
           include:
             - (name:somalia-acled-conflict-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-acled-conflict-data
-            display_state: complete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -111,11 +106,6 @@ categories:
           include:
             - (name:somalia-acute-malnutrition-analysis)
           exclude:
-        metadata_overrides:
-          - dataset_name: somalia-acute-malnutrition-analysis
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
