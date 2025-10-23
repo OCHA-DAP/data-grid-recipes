@@ -75,11 +75,6 @@ categories:
           include:
             - (name:south-sudan-acled-conflict-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-acled-conflict-data
-            display_state: complete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
@@ -102,11 +97,6 @@ categories:
           include:
             - (name:south-sudan-acute-food-insecurity-country-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-acute-food-insecurity-country-data
-            display_state: complete
-            comments: 
-
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -115,11 +105,6 @@ categories:
           include:
             - (name:south-sudan-acute-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-acute-malnutrition
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
