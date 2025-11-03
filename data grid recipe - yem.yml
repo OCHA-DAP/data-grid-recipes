@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:yemen-displacement-daily-tracking-idps-returnees-iom-dtm)
+            - (name:yemen-displacement-daily-tracking-idps-returnees-iom-dtm-from-june-2025)
           exclude:
 #HNO
       - name: hno
@@ -124,11 +124,6 @@ categories:
           include:
             - (name:yemen-acute-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-acute-malnutrition
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
