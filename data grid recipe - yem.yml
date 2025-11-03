@@ -124,6 +124,11 @@ categories:
           include:
             - (name:yemen-acute-malnutrition)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-acute-malnutrition
+            display_state: complete
+            comments: 
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
