@@ -197,14 +197,18 @@ categories:
         rules:
           include:
             - (name:hotosm_bfa_populated_places)
+            - (name:settlements)
             - (name:worldpop-population-counts-2015-2030-bfa)
           exclude:
         metadata_overrides:
+          - dataset_name: settlements
+            comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: worldpop-population-counts-2015-2030-bfa
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
+          - dataset_name: settlements
           - dataset_name: worldpop-population-counts-2015-2030-bfa
 
 #ROADS
@@ -261,6 +265,8 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
+          - dataset_name: bfa-ndvi-subnational
+            comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
           - dataset_name: asap-hotspots-monthly
