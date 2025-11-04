@@ -20,10 +20,10 @@ categories:
         rules:
           include:
             - (name:situation-des-personnes-deplacees-internes)
-            - (name:unhcr-population-data-for-bfa)
+            - (name:burkina-faso-languages)
           exclude:
         complementary_datasets:
-          - dataset_name: unhcr-population-data-for-bfa
+          - dataset_name: burkina-faso-languages
 
 #REFUGEES POCs
       - name: refugees_poc
