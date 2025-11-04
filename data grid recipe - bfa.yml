@@ -197,18 +197,18 @@ categories:
         rules:
           include:
             - (name:hotosm_bfa_populated_places)
-            - (name:settlements)
+            - (name:bfa_settlements)
             - (name:worldpop-population-counts-2015-2030-bfa)
           exclude:
         metadata_overrides:
-          - dataset_name: settlements
+          - dataset_name: bfa_settlements
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: worldpop-population-counts-2015-2030-bfa
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: settlements
+          - dataset_name: bfa_settlements
           - dataset_name: worldpop-population-counts-2015-2030-bfa
 
 #ROADS
