@@ -149,7 +149,15 @@ categories:
         rules:
           include:
             - (name:burkina-faso-mpi)
+            - (name:world-bank-poverty-indicators-for-burkina-faso)
           exclude:
+        metadata_overrides:
+          - dataset_name: world-bank-poverty-indicators-for-burkina-faso
+            comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: world-bank-poverty-indicators-for-burkina-faso
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
