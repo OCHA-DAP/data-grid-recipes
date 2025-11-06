@@ -87,9 +87,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
+            - (name:mozambique-access-incidents-january-to-september)
           exclude:
-            - (private:false)
-            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
