@@ -27,6 +27,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: afghanistan-flow-monitoring-counting-data-iom-dtm
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
@@ -121,6 +124,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -147,6 +153,9 @@ categories:
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-market-monitor
 
 #POVERTY RATE
       - name: poverty_rate
@@ -175,11 +184,6 @@ categories:
           include:
             - (name:cod-ab-afg)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-afg
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -201,6 +205,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-afg
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-afg
 
 #ROADS
       - name: roads
@@ -251,6 +258,9 @@ categories:
           - dataset_name: asap-hotspots-monthly
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: asap-hotspots-monthly
 
 #CLIMATIE IMPACT
       - name: impact
