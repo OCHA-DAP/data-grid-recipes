@@ -111,6 +111,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -130,16 +133,19 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:global-market-monitor)
             - (name:wfp-food-prices-for-central-african-republic)
+            - (name:global-market-monitor)
           exclude:
         metadata_overrides:
-          - dataset_name: global-market-monitor
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: wfp-food-prices-for-central-african-republic
             display_state: incomplete
             comments: The dataset is not up-to-date.
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-market-monitor
 
 #POVERTY RATE
       - name: poverty_rate
@@ -168,11 +174,6 @@ categories:
           include:
             - (name:cod-ab-caf)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-caf
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -194,6 +195,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-caf
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-caf
 
 #ROADS
       - name: roads
@@ -244,6 +248,9 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: floodscan
 
 #CLIMATIE IMPACT
       - name: impact
