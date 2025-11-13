@@ -45,13 +45,9 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:ethiopia-humanitarian-needs)
           exclude:
-        metadata_overrides:
-          - dataset_name: ethiopia-humanitarian-needs
-            display_state: incomplete
-            comments: This dataset is not subnational. 
-
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -133,6 +129,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: global-market-monitor
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -181,6 +180,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-eth
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-eth
 
 #ROADS
       - name: roads
@@ -236,6 +238,10 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: asap-hotspots-monthly
+          - dataset_name: floodscan
 
 #CLIMATIE IMPACT
       - name: impact
