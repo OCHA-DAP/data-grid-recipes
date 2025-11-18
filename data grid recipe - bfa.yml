@@ -20,7 +20,11 @@ categories:
         rules:
           include:
             - (name:situation-des-personnes-deplacees-internes)
+            - (name:burkina-faso-languages)
           exclude:
+        complementary_datasets:
+          - dataset_name: burkina-faso-languages
+
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
@@ -145,7 +149,15 @@ categories:
         rules:
           include:
             - (name:burkina-faso-mpi)
+            - (name:world-bank-poverty-indicators-for-burkina-faso)
           exclude:
+        metadata_overrides:
+          - dataset_name: world-bank-poverty-indicators-for-burkina-faso
+            comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: world-bank-poverty-indicators-for-burkina-faso
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -185,14 +197,18 @@ categories:
         rules:
           include:
             - (name:hotosm_bfa_populated_places)
+            - (name:settlements)
             - (name:worldpop-population-counts-2015-2030-bfa)
           exclude:
         metadata_overrides:
+          - dataset_name: settlements
+            comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: worldpop-population-counts-2015-2030-bfa
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
+          - dataset_name: settlements
           - dataset_name: worldpop-population-counts-2015-2030-bfa
 
 #ROADS
@@ -237,10 +253,10 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:bfa-rainfall-subnational)
-            - (name:bfa-ndvi-subnational)
             - (name:asap-hotspots-monthly)
             - (name:floodscan)
+            - (name:bfa-rainfall-subnational)
+            - (name:bfa-ndvi-subnational)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
@@ -249,10 +265,13 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
+          - dataset_name: bfa-ndvi-subnational
+            comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
           - dataset_name: asap-hotspots-monthly
           - dataset_name: floodscan
+          - dataset_name: bfa-ndvi-subnational
 
 #CLIMATIE IMPACT
       - name: impact
