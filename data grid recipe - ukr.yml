@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:ukraine-displacement-data-baseline-assessment-raion-level-iom-dtm)
+            - (name:ukr-iom-dtm-from-api)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -134,6 +134,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: global-market-monitor
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -182,6 +185,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-ukr
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-ukr
 
 #ROADS
       - name: roads
