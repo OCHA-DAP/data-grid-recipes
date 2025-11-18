@@ -19,9 +19,12 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:situation-des-personnes-deplacees-internes)
             - (name:burkina-faso-languages)
           exclude:
+        metadata_overrides:
+          - dataset_name: burkina-faso-languages
+            comments: This dataset is complementary and adds value to the subcategory. 
+
         complementary_datasets:
           - dataset_name: burkina-faso-languages
 
