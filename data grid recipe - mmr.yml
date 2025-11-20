@@ -110,6 +110,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -181,6 +184,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-mmr
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-mmr
 
 #ROADS
       - name: roads
