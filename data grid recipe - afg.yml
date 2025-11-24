@@ -253,14 +253,18 @@ categories:
           include:
             - (name:afg-rainfall-subnational)
             - (name:asap-hotspots-monthly)
+            - (name:afghanistan-combined-drought-indicator-cdi)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+          - dataset_name: afghanistan-combined-drought-indicator-cdi
+            comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
           - dataset_name: asap-hotspots-monthly
+          - dataset_name: afghanistan-combined-drought-indicator-cdi
 
 #CLIMATIE IMPACT
       - name: impact
