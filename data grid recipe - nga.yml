@@ -67,11 +67,6 @@ categories:
           include:
             - (name:nigeria-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-3w
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FUNDING
       - name: funding
         title: Funding
@@ -120,6 +115,9 @@ categories:
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -196,6 +194,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-nga
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-nga
 
 #ROADS
       - name: roads
