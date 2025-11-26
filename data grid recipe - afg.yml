@@ -260,7 +260,7 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: afghanistan-combined-drought-indicator-cdi
-            display_state: complete
+            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
