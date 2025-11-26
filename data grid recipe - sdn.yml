@@ -236,14 +236,19 @@ categories:
           include:
             - (name:sdn-rainfall-subnational)
             - (name:floodscan)
+            - (name:asap-hotspots-monthly)
           exclude:
         metadata_overrides:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
+          - dataset_name: asap-hotspots-monthly
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory. 
 
         complementary_datasets:
           - dataset_name: floodscan
+          - dataset_name: asap-hotspots-monthly
 
 #CLIMATIE IMPACT
       - name: impact
