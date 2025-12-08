@@ -77,7 +77,6 @@ categories:
         rules:
           include:
             - (name:ethiopia-acled-conflict-data)
-            - (name:ethiopia-acled-conflict-data)
           exclude:
         metadata_overrides:
           - dataset_name: ethiopia-acled-conflict-data
@@ -154,11 +153,6 @@ categories:
           include:
             - (name:cod-ab-eth)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-eth
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
