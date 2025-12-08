@@ -119,7 +119,7 @@ categories:
         metadata_overrides:
           - dataset_name: afghanistan-acute-food-insecurity-country-data
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
