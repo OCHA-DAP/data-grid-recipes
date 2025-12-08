@@ -118,7 +118,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: afghanistan-acute-food-insecurity-country-data
-            display_state: complete
+            display_state: incomplete
             comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             display_state: incomplete
