@@ -20,16 +20,7 @@ categories:
         rules:
           include:
             - (name:afghanistan-displacement-data-climate-vulnerability-assessment-iom-dtm)
-            - (name:afghanistan-flow-monitoring-counting-data-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-flow-monitoring-counting-data-iom-dtm
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
-        complementary_datasets:
-          - dataset_name: afghanistan-flow-monitoring-counting-data-iom-dtm
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
