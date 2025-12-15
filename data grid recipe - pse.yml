@@ -19,13 +19,9 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:state-of-palestine-idp-s)
           exclude:
-        metadata_overrides:
-          - dataset_name: state-of-palestine-idp-s
-            display_state: incomplete
-            comments: The dataset is not up-to-date. The dataset is not subnational.
-
+            - (private:false)
+            - (private:true)
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
@@ -119,6 +115,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -129,8 +128,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-malnutrition
-            display_state: complete
-            comments: The data in this dataset covers only Gaza Strip.
+            display_state: incomplete
+            comments: The data in this dataset covers only Gaza Strip. The dataset is not up-to-date. 
 
 #FOOD PRICES
       - name: food_prices
@@ -149,6 +148,9 @@ categories:
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-market-monitor
 
 #POVERTY RATE
       - name: poverty_rate
@@ -172,11 +174,6 @@ categories:
           include:
             - (name:cod-ab-pse)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-pse
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -198,6 +195,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-pse
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-pse
 
 #ROADS
       - name: roads
@@ -234,6 +234,9 @@ categories:
           - dataset_name: state-of-palestine-israeli-occupation-violations-against-education
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. Geo-coordinates are not available.
+
+        complementary_datasets:
+          - dataset_name: state-of-palestine-israeli-occupation-violations-against-education
 
 
 #CLIMATE
