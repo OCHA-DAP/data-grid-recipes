@@ -45,6 +45,11 @@ categories:
           include:
             - (name:afg-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: afg-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
