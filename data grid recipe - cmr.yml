@@ -140,6 +140,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: global-market-monitor
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -163,11 +166,6 @@ categories:
           include:
             - (name:cod-ab-cmr)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-cmr
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -189,6 +187,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-cmr
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-cmr
 
 #ROADS
       - name: roads
@@ -239,6 +240,9 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: floodscan
 
 #CLIMATIE IMPACT
       - name: impact
