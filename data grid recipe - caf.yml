@@ -45,6 +45,11 @@ categories:
           include:
             - (name:caf-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: caf-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
