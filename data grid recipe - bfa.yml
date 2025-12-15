@@ -46,6 +46,11 @@ categories:
           include:
             - (name:bfa-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: bfa-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
