@@ -144,12 +144,13 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
             display_state: incomplete
-            comments: The data in this dataset covers only Gaza Strip.
+            comments: This dataset is complementary and adds value to the subcategory. The data in this dataset covers only Gaza Strip. 
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
+          - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
           - dataset_name: global-market-monitor
 
 #POVERTY RATE
