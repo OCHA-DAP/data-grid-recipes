@@ -45,6 +45,11 @@ categories:
           include:
             - (name:south-sudan-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: south-sudan-humanitarian-needs
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
