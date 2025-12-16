@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: mozambique-humanitarian-needs
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -82,6 +82,9 @@ categories:
             - (name:mozambique-acled-conflict-data)
           exclude:
         metadata_overrides:
+          - dataset_name: acled-database
+            display_state: complete
+            comments: 
           - dataset_name: mozambique-acled-conflict-data
             display_state: complete
             comments: 
