@@ -45,6 +45,11 @@ categories:
           include:
             - (name:somalia-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: somalia-humanitarian-needs
+            display_state: incomplete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -130,6 +135,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
 
+        complementary_datasets:
+          - dataset_name: global-market-monitor
+
 #POVERTY RATE
       - name: poverty_rate
         title: Poverty Rate
@@ -185,6 +193,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-som
+
 #ROADS
       - name: roads
         title: Roads
@@ -239,6 +250,10 @@ categories:
           - dataset_name: floodscan
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: asap-hotspots-monthly
+          - dataset_name: floodscan
 
 #CLIMATIE IMPACT
       - name: impact
