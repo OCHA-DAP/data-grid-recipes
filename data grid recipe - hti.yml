@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: hti-jiaf-humanitarian-needs-pin-and-severity
             display_state: incomplete
-            comments: 
+            comments: This dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
