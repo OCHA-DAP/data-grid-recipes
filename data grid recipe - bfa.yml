@@ -49,7 +49,7 @@ categories:
         metadata_overrides:
           - dataset_name: bfa-jiaf-humanitarian-needs-pin-and-severity
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
