@@ -159,11 +159,6 @@ categories:
           include:
             - (name:cod-ab-ner)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-ner
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
