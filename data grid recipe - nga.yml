@@ -56,7 +56,7 @@ categories:
         metadata_overrides:
           - dataset_name: nigeria-humanitarian-needs
             display_state: incomplete
-            comments: This dataset is not up-to-date.
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
