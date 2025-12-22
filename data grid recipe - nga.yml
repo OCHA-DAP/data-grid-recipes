@@ -168,11 +168,6 @@ categories:
           include:
             - (name:cod-ab-nga)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-nga
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
