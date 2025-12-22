@@ -53,6 +53,11 @@ categories:
           include:
             - (name:nigeria-humanitarian-needs)
           exclude:
+        metadata_overrides:
+          - dataset_name: nigeria-humanitarian-needs
+            display_state: incomplete
+            comments: This dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
