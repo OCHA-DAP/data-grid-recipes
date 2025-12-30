@@ -48,7 +48,7 @@ categories:
         metadata_overrides:
           - dataset_name: yemen-humanitarian-needs
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
 
 #COORDINATION & CONTEXT
@@ -162,6 +162,11 @@ categories:
           include:
             - (name:yemen-mpi)
           exclude:
+        metadata_overrides:
+          - dataset_name: yemen-mpi
+            display_state: complete
+            comments: 
+
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -176,11 +181,6 @@ categories:
           include:
             - (name:cod-ab-yem)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-yem
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
