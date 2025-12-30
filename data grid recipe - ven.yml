@@ -47,6 +47,11 @@ categories:
           include:
             - (name:ven-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: ven-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -150,11 +155,6 @@ categories:
           include:
             - (name:cod-ab-ven)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-ven
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -176,6 +176,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2025-ven
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2025-ven
 
 #ROADS
       - name: roads
