@@ -129,7 +129,7 @@ categories:
         metadata_overrides:
           - dataset_name: state-of-palestine-malnutrition
             display_state: incomplete
-            comments: The data in this dataset covers only Gaza Strip. The dataset is not up-to-date. 
+            comments: The data in this dataset covers only Gaza Strip.
 
 #FOOD PRICES
       - name: food_prices
