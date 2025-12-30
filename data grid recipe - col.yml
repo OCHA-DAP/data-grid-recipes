@@ -45,6 +45,11 @@ categories:
           include:
             - (name:col-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
+        metadata_overrides:
+          - dataset_name: col-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -108,6 +113,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
@@ -129,6 +137,9 @@ categories:
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-market-monitor
 
 #POVERTY RATE
       - name: poverty_rate
@@ -152,11 +163,6 @@ categories:
           include:
             - (name:cod-ab-col)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ab-col
-            display_state: complete
-            comments: 
-
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
@@ -178,6 +184,9 @@ categories:
           - dataset_name: worldpop-population-counts-2015-2030-col
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-col
 
 #ROADS
       - name: roads
