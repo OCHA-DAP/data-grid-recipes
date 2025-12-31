@@ -127,11 +127,6 @@ categories:
           include:
             - (name:rdc-ipc-amn)
           exclude:
-        metadata_overrides:
-          - dataset_name: rdc-ipc-amn
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -174,7 +169,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cod-ab-cod
-            display_state: incomplete
             comments: The dataset is not up-to-date.
 
 #BASELINE POPULATION
@@ -185,11 +179,6 @@ categories:
           include:
             - (name:cod-ps-cod)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-cod
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
