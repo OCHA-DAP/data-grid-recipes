@@ -43,12 +43,12 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:cameroon-humanitarian-needs)
+            - (name:global-hpc-hno)
           exclude:
         metadata_overrides:
-          - dataset_name: cameroon-humanitarian-needs
+          - dataset_name: global-hpc-hno
             display_state: incomplete
-            comments: This dataset is not subnational. The dataset is not up-to-date.
+            comments: This dataset is not disaggregated by location and/or sector.
 
 
 #COORDINATION & CONTEXT
