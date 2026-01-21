@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:yemen-displacement-daily-tracking-idps-returnees-iom-dtm-from-june-2025)
+            - (name:haiti-displacement-idps-baseline-assessment-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
-            - (name:unhcr-population-data-for-yem)
+            - (name:unhcr-population-data-for-hti)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:yemen-displacement-daily-tracking-idps-returnees-iom-dtm-from-june-2025)
+            - (name:haiti-displacement-idps-baseline-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -62,7 +62,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:yemen-monthly-organizations-presence-3w)
+            - (name:haiti-operational-presence)
           exclude:
 #FUNDING
       - name: funding
@@ -70,7 +70,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:yem-requirements-and-funding-data)
+            - (name:hti-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -78,10 +78,10 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:yemen-acled-conflict-data)
+            - (name:haiti-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: yemen-acled-conflict-data
+          - dataset_name: haiti-acled-conflict-data
             display_state: complete
             comments: 
 
@@ -91,13 +91,8 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:yemen-humanitarian-access)
+            - (name:haiti-humanitarian-access-severity)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-humanitarian-access
-            display_state: complete
-            comments: This data is only shared between specific partners and is only available on request.
-
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -110,11 +105,11 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included. 
         rules:
           include:
-            - (name:yemen-acute-food-insecurity-country-data)
+            - (name:haiti-acute-food-insecurity-country-data)
             - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
-          - dataset_name: yemen-acute-food-insecurity-country-data
+          - dataset_name: haiti-acute-food-insecurity-country-data
             display_state: complete
             comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
@@ -130,20 +125,15 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:yemen-acute-malnutrition)
+            - (name:haiti-acutemalnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-acute-malnutrition
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Time series for common food commodities prices at sub-national locations. 
+        description: Time series for common food commodities prices at sub-national locations.
         rules:
           include:
-            - (name:wfp-food-prices-for-yemen)
+            - (name:wfp-food-prices-for-haiti)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
@@ -160,13 +150,9 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:yemen-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-mpi
-            display_state: complete
-            comments: 
-
+            - (private:false)
+            - (private:true)
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -179,7 +165,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
         rules:
           include:
-            - (name:cod-ab-yem)
+            - (name:cod-ab-hti)
           exclude:
 #BASELINE POPULATION
       - name: baseline_population
@@ -187,7 +173,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:yemen-population-estimates)
+            - (name:cod-ps-hti)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -195,16 +181,16 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_yem_populated_places)
-            - (name:worldpop-population-counts-2015-2030-yem)
+            - (name:hotosm_hti_populated_places)
+            - (name:worldpop-population-counts-2015-2030-hti)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2030-yem
+          - dataset_name: worldpop-population-counts-2015-2030-hti
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: worldpop-population-counts-2015-2030-yem
+          - dataset_name: worldpop-population-counts-2015-2030-hti
 
 #ROADS
       - name: roads
@@ -212,7 +198,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_yem_roads)
+            - (name:hotosm_hti_roads)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -226,19 +212,15 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:yemen-health-facilities-2023)
+            - (name:hotosm_hti_health_facilities)
           exclude:
-        metadata_overrides:
-          - dataset_name: yemen-health-facilities-2023
-            comments: This data is only shared between specific partners and is only available on request.
-
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_yem_education_facilities)
+            - (name:hotosm_hti_education_facilities)
           exclude:
 
 #CLIMATE
@@ -252,7 +234,7 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:yem-rainfall-subnational)
+            - (name:hti-rainfall-subnational)
           exclude:
 #CLIMATIE IMPACT
       - name: impact
@@ -260,6 +242,7 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:yemen-flood-preparedness-and-response)
           exclude:
+            - (private:false)
+            - (private:true)
 
