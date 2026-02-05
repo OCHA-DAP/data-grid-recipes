@@ -49,7 +49,10 @@ categories:
         metadata_overrides:
           - dataset_name: global-hpc-hno
             display_state: incomplete
-            comments: This dataset is not disaggregated by location and/or sector.
+            comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
