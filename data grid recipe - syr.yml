@@ -54,6 +54,9 @@ categories:
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
+        complementary_datasets:
+          - dataset_name: syr-jiaf-humanitarian-needs-pin-and-severity
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
