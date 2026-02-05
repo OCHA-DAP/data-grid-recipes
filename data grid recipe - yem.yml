@@ -55,7 +55,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: yem-jiaf-humanitarian-needs-and-response-plan
+          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
