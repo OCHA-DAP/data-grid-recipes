@@ -194,6 +194,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
+          - dataset_name: cod-ab-syr
           - dataset_name: worldpop-population-counts-2015-2030-syr
 
 #ROADS
