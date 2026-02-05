@@ -54,6 +54,9 @@ categories:
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: yem-jiaf-humanitarian-needs-and-response-plan
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
