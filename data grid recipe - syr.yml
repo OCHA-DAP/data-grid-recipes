@@ -188,6 +188,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cod-ab-syr
+            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: worldpop-population-counts-2015-2030-syr
             display_state: incomplete
