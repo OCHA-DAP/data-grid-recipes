@@ -124,11 +124,6 @@ categories:
           include:
             - (name:south-sudan-acute-malnutrition)
           exclude:
-        metadata_overrides:
-          - dataset_name: south-sudan-acute-malnutrition
-            display_state: complete
-            comments: 
-
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
@@ -177,11 +172,6 @@ categories:
           include:
             - (name:cod-ps-ssd)
           exclude:
-        metadata_overrides:
-          - dataset_name: cod-ps-ssd
-            display_state: complete
-            comments: 
-
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
