@@ -47,6 +47,9 @@ categories:
             - (name:global-hpc-hno)
           exclude:
         metadata_overrides:
+          - dataset_name: col-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
           - dataset_name: global-hpc-hno
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
