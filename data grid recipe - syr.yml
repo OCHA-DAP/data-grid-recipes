@@ -55,7 +55,7 @@ categories:
             comments: The dataset is not up-to-date.
 
         complementary_datasets:
-          - dataset_name: syr-jiaf-humanitarian-needs-pin-and-severity
+          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
