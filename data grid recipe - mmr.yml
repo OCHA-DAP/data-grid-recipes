@@ -45,8 +45,16 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:mmr-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:global-hpc-hno)
           exclude:
+        metadata_overrides:
+          - dataset_name: global-hpc-hno
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
