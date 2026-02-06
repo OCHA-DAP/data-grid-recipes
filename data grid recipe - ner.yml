@@ -111,9 +111,6 @@ categories:
             - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
-          - dataset_name: cadre-harmonise
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
