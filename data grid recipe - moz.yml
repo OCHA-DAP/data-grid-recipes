@@ -52,7 +52,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory. 
           - dataset_name: moz-jiaf-humanitarian-needs-pin-and-severity
             display_state: incomplete
-            comments: 
+            comments: The dataset is not up-to-date.
 
         complementary_datasets:
           - dataset_name: global-hpc-hno
