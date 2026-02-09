@@ -137,6 +137,9 @@ categories:
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
+          - dataset_name: wfp-food-prices-for-cameroon
+            display_state: complete
+            comments: 
 
         complementary_datasets:
           - dataset_name: global-market-monitor
