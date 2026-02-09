@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:niger-population-movement)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
-            - (name:unhcr-population-data-for-moz)
+            - (name:refugees-by-admin-2-in-niger)
           exclude:
 #RETURNEES
       - name: returnees
@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:mozambique-displacement-data-baseline-assessment-northern-mozambique-crisis-iom-dtm)
+            - (name:niger-displacement-data-baseline-assessment-iom-dtm)
           exclude:
 #HNO
       - name: hno
@@ -44,18 +44,12 @@ categories:
         rules:
           include:
             - (name:global-hpc-hno)
-            - (name:moz-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
         metadata_overrides:
           - dataset_name: global-hpc-hno
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. 
-          - dataset_name: moz-jiaf-humanitarian-needs-pin-and-severity
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            comments: This dataset is not disaggregated by location and/or sector.
 
-        complementary_datasets:
-          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
@@ -69,7 +63,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:mozambique-operational-presence)
+            - (name:niger-operational-presence)
           exclude:
 #FUNDING
       - name: funding
@@ -77,7 +71,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:moz-requirements-and-funding-data)
+            - (name:ner-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -85,14 +79,10 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-database)
-            - (name:mozambique-acled-conflict-data)
+            - (name:niger-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: acled-database
-            display_state: complete
-            comments: 
-          - dataset_name: mozambique-acled-conflict-data
+          - dataset_name: niger-acled-conflict-data
             display_state: complete
             comments: 
 
@@ -102,8 +92,9 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:mozambique-access-incidents-january-to-september)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
@@ -113,15 +104,19 @@ categories:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included.
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included. 
         rules:
           include:
-            - (name:mozambique-acute-food-insecurity-country-data)
+            - (name:cadre-harmonise)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
-          - dataset_name: mozambique-acute-food-insecurity-country-data
-            display_state: complete
-            comments: 
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
 
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
@@ -129,7 +124,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:mozambique-acute-malnutrtion-by-admin2)
+            - (name:niger-nouvelles-admissions-malnutrition)
           exclude:
 #FOOD PRICES
       - name: food_prices
@@ -137,13 +132,13 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:wfp-food-prices-for-mozambique)
+            - (name:wfp-food-prices-for-niger)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
           - dataset_name: global-market-monitor
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. 
+            comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
           - dataset_name: global-market-monitor
@@ -154,13 +149,8 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:mozambique-mpi)
+            - (name:niger-mpi)
           exclude:
-        metadata_overrides:
-          - dataset_name: mozambique-mpi
-            display_state: complete
-            comments: 
-
 
 #REFERENCE DATA
   - name: geography_and_infrastructure
@@ -173,7 +163,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
         rules:
           include:
-            - (name:cod-ab-moz)
+            - (name:cod-ab-ner)
           exclude:
 #BASELINE POPULATION
       - name: baseline_population
@@ -181,7 +171,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:cod-ps-moz)
+            - (name:cod-ps-ner)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -189,16 +179,16 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_moz_populated_places)
-            - (name:worldpop-population-counts-2015-2030-moz)
+            - (name:hotosm_ner_populated_places)
+            - (name:worldpop-population-counts-2015-2030-ner)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2030-moz
+          - dataset_name: worldpop-population-counts-2015-2030-ner
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: worldpop-population-counts-2015-2030-moz
+          - dataset_name: worldpop-population-counts-2015-2030-ner
 
 #ROADS
       - name: roads
@@ -206,7 +196,7 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_moz_roads)
+            - (name:hotosm_ner_roads)
           exclude:
 
 #HEALTH AND EDUCATION
@@ -220,7 +210,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:hotosm_moz_health_facilities)
+            - (name:hotosm_ner_health_facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -228,7 +218,7 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:hotosm_moz_education_facilities)
+            - (name:hotosm_ner_education_facilities)
           exclude:
 
 #CLIMATE
@@ -242,9 +232,9 @@ categories:
         description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (name:moz-rainfall-subnational)
+            - (name:ner-rainfall-subnational)
             - (name:asap-hotspots-monthly)
-            - (name:moz-ndvi-subnational)
+            - (name:ner-ndvi-subnational)
             - (name:floodscan)
           exclude:
         metadata_overrides:
@@ -253,7 +243,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: floodscan
             display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory. 
+            comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
           - dataset_name: asap-hotspots-monthly
@@ -265,6 +255,6 @@ categories:
         description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (name:impact-of-cyclones)
+            - (name:niger-situation-des-inondations)
           exclude:
 

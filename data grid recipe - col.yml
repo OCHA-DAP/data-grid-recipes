@@ -1,12 +1,12 @@
 ---
 
 
+
 inherits_from:
 name: global_default
 title:  Global Default Core Data
 description:
 categories:
-
 
 #AFFECTED PEOPLE
   - name: affected_people
@@ -16,70 +16,47 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+            - (name:desplazamientos-colombia)
           exclude:
-            - (name:restricciones-de-acceso) #unidentifiable with poor metadata
-            - (name:idps-anual-departamental) #national level data
-            - (name:tendencias-humanitarias-y-paz)
-            - (name:tendencias-humanitarias-y-paz-dic-2015)
-            - (name:subsidiariedad-uariv15)
-            - (name:idps-data-by-year-and-municipality)
-            - (name:desplazamientosmasivos)
-        metadata_overrides:
-          - dataset_name: afectados-y-eventos-de-desplazamientos-masivos-2012-2019-por-departamento-y-municipio
-            display_state: incomplete
-            comment: 
-
 #REFUGEES POCs
       - name: refugees_poc
-        title: Refugees & Persons of Concern
-        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
+        title: Refugees, forcibly displaced and stateless people
+        description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
-            - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
+            - (name:unhcr-population-data-for-col)
           exclude:
-            - (name:olds-asylum-applications-of-venezuelans-in-the-americas-and-europe-during-2014-2017) #national level data only
-            - (name:colombia-venezuela-border-humanitarian-crisis#)
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (vocab_Topics:"returnees" AND subnational:1)
-            - (name:retornos-y-reubicaciones)
+            - (name:colombia-retornados-por-desplazamiento)
           exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
+            - (name:col-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:global-hpc-hno)
           exclude:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (vocab_Topics:"casualties" AND subnational:1)
-            - (vocab_Topics:"fatalities - deaths" AND subnational:1)
-            - (name:mortalidad)
-            - (name:morbilidad)
-          exclude:
-#MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-            - (vocab_Topics:"missing persons" AND subnational:1)
-          exclude:
+        metadata_overrides:
+          - dataset_name: col-jiaf-humanitarian-needs-pin-and-severity
+            display_state: incomplete
+            comments: The dataset is not up-to-date.
+          - dataset_name: global-hpc-hno
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -88,133 +65,118 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
-            - (title:"InterAction member activities in")
-            - (name:ngoaidmap-col)
+            - (name:colombia-4ws)
           exclude:
-            - (name:ngoaidmap-col) #dataset does not contain data below national level.
-        metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
-            display_state: incomplete
-            comments: The dataset is only available in a JSON format, and tabular data is preferred for this subcategory.
-          - dataset_name: ngoaidmap-col
-            display_state: incomplete
-            comments: Dataset does not include all administrative regions
-          - dataset_name: colombia-3w-who-does-what-where
-            display_state: incomplete
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (vocab_Topics:"affected area" AND subnational:1)
+            - (name:col-requirements-and-funding-data)
           exclude:
-            - (vocab_Topics:"damage assessment")
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (vocab_Topics:"violence and conflict" AND subnational:1)
-            - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1)
-            - (organization:acled)
+            - (name:colombia-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: colombia-acled-conflict-data
+            display_state: complete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (vocab_Topics:"humanitarian access" AND subnational:1)
-          exclude:
-        metadata_overrides:
-          - dataset_name: 3w-who-is-doing-what-where-in-colombia-jan-dec-2018
-            display_state: incomplete
-            comments:
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
-            - (vocab_Topics:"transportation status" AND subnational:1)
-          exclude:
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (vocab_Topics:"damaged buildings" AND subnational:1)
-            - (vocab_Topics:"damage assessment" AND subnational:1)
+            - (name:acceso-humanitario-colombia)
           exclude:
 
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included.
         rules:
           include:
-            - (vocab_Topics:"integrated phase classification - ipc" AND subnational:1)
-            - (vocab_Topics:"food security" AND subnational:1)
+            - (name:colombia-seguridad-alimentaria)
+            - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
-            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
-            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
+        metadata_overrides:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
+
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (vocab_Topics:"global acute malnutrition - gam" AND subnational:1)
-          exclude:
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
-        rules:
-          include:
-            - (vocab_Topics:"severe acute malnutrition - sam" AND subnational:1)
+            - (name:colombia-desnutricion-aguda)
           exclude:
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Timeseries prices for common food commodities  at a set of locations
+        description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1)
             - (name:wfp-food-prices-for-colombia)
+            - (name:global-market-monitor)
           exclude:
-            - (name:wfp-food-prices)
+        metadata_overrides:
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
 
+        complementary_datasets:
+          - dataset_name: global-market-monitor
 
-#GEOGRAPHY AND INFRASTRUCTURE
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+            - (name:colombia-pobreza-multidimensional-departamental)
+          exclude:
+
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions
+      - name: administrative_divisions
         title: Administrative Divisions
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. 
         rules:
           include:
-            - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
-            - ((vocab_Topics:"administrative divisions" OR vocab_Topics:"administrative boundaries") AND vocab_Topics:"cod" AND subnational:1)
-            - (name:colombia-administrative-boundaries-levels-0-3)
+            - (name:cod-ab-col)
+          exclude:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-col)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -222,37 +184,30 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (vocab_Topics:"populated places - settlements" AND subnational:1)
+            - (name:hotosm_col_populated_places)
+            - (name:worldpop-population-counts-2015-2030-col)
           exclude:
+        metadata_overrides:
+          - dataset_name: worldpop-population-counts-2015-2030-col
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-col
+
 #ROADS
-      - name:  roads
+      - name: roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (vocab_Topics:"roads" AND vocab_Topics:"transportation" AND subnational:1)
+            - (name:colombia-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_col_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include:
-            - (vocab_Topics:"airports" AND subnational:1)
-          exclude:
-        metadata_overrides:
-          - dataset_name: ourairports-col
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -260,9 +215,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (vocab_Topics:"health facilities" AND subnational:1)
-            - (vocab_Topics:hospitals AND subnational:1)
-            - (name:colombia-healthsites)
+            - (name:colombia-health-facilities-2021)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -270,66 +223,28 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (vocab_Topics:"education facilities - schools" AND subnational:1)
-          exclude:
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
+            - (name:hotosm_col_education_facilities)
           exclude:
 
-#POPULATION AND SOCIO-ECONOMIC INDICATORS
-  - name: socio-economic
-    title: Population & Socio-economic Indicators
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards & impact.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND subnational:1)
-            - (vocab_Topics:"demographics" AND subnational:1)
+            - (name:col-rainfall-subnational)
           exclude:
-            - (vocab_Topics:"people in need - pin")
-            - (vocab_Topics:"affected population")
-            - (vocab_Topics:"displacement")
-            - (vocab_Topics:"internally displaced persons - idp")
-            - (vocab_Topics:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"zipped geotiff")
-            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:demographic-ethnic-data-on-colombia)
-            - (name:colombia-poverty-rate)
-            - (name:proyecciones-de-poblacion-municipalmente)
-            - (name:demographic-ethnic-data-on-colombia)
-            - (name:multi-sector-municipal-data-from-1993-census)
-            - (name:worldpop-colombia-population)
-            - (name:municipal-population-density)
-
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
-          exclude:
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-        metadata_overrides:
-          - dataset_name:
-            display_state:
-            comments:
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
-        rules:
-          include:
-            - (vocab_Topics:poverty AND subnational:1)
+            - (name:colombia-desastres-naturales)
           exclude:
 
