@@ -62,6 +62,9 @@ categories:
             display_state: incomplete
             comments: The dataset is not up-to-date.
 
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
