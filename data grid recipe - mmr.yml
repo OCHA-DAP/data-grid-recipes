@@ -148,7 +148,7 @@ categories:
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: wfp-food-prices-for-myanmar
+          - dataset_name: global-market-monitor
 
 #POVERTY RATE
       - name: poverty_rate
