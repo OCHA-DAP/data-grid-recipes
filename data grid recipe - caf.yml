@@ -147,8 +147,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: wfp-food-prices-for-central-african-republic
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
+            display_state: complete
+            comments: 
           - dataset_name: global-market-monitor
             display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
