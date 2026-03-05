@@ -43,22 +43,15 @@ categories:
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
         rules:
           include:
-            - (name:ven-jiaf-humanitarian-needs-pin-and-severity)
-            - (name:global-hpc-hno)
           exclude:
-        metadata_overrides:
-          - dataset_name: ven-jiaf-humanitarian-needs-pin-and-severity
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-          - dataset_name: global-hpc-hno
-            display_state: incomplete
-            comments: This dataset is complementary and adds value to the subcategory.
-
-        complementary_datasets:
-          - dataset_name: global-hpc-hno
-
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
