@@ -44,12 +44,17 @@ categories:
         rules:
           include:
             - (name:global-hpc-hno)
+            - (name:ner-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
         metadata_overrides:
           - dataset_name: global-hpc-hno
             display_state: incomplete
             comments: This dataset is not disaggregated by location and/or sector.
+          - dataset_name: ner-jiaf-humanitarian-needs-pin-and-severity
+            comments: This data is only shared between specific partners and is only available on request.
 
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
