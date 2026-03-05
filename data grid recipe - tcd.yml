@@ -44,6 +44,7 @@ categories:
         rules:
           include:
             - (name:global-hpc-hno)
+            - (name:tcd-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
         metadata_overrides:
           - dataset_name: global-hpc-hno
