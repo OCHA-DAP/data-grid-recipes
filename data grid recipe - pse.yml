@@ -43,10 +43,15 @@ categories:
       - name: hno
         title: Humanitarian Needs
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
         rules:
           include:
-            - (name:opt-humanitarian-needs)
           exclude:
+            - (private:false)
+            - (private:true)
 
 #COORDINATION & CONTEXT
   - name: coordination_context
