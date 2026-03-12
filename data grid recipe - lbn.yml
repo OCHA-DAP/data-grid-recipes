@@ -19,7 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:afghanistan-displacement-data-climate-vulnerability-assessment-iom-dtm)
+            - (name:lebanon-displacement-data-idp-tracking-iom-dtm)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,7 +27,7 @@ categories:
         description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
-            - (name:unhcr-population-data-for-afg)
+            - (name:unhcr-population-data-for-lbn)
           exclude:
 #RETURNEES
       - name: returnees
@@ -66,7 +66,7 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-operational-presence)
+            - (name:lebanon-operational-presence)
           exclude:
 #FUNDING
       - name: funding
@@ -74,7 +74,7 @@ categories:
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:afg-requirements-and-funding-data)
+            - (name:lbn-requirements-and-funding-data)
           exclude:
 #CONFLICT EVENTS
       - name: conflict_events
@@ -82,10 +82,10 @@ categories:
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:afghanistan-acled-conflict-data)
+            - (name:lebanon-acled-conflict-data)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-acled-conflict-data
+          - dataset_name: lebanon-acled-conflict-data
             display_state: complete
             comments: 
 
@@ -113,11 +113,11 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included.
         rules:
           include:
-            - (name:afghanistan-acute-food-insecurity-country-data)
+            - (name:lebanon-acute-food-insecurity-country-data)
             - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
-          - dataset_name: afghanistan-acute-food-insecurity-country-data
+          - dataset_name: lebanon-acute-food-insecurity-country-data
             display_state: complete
             comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
@@ -146,7 +146,7 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:wfp-food-prices-for-afghanistan)
+            - (name:faostat-food-prices-for-lebanon)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
