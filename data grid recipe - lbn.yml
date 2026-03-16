@@ -74,11 +74,6 @@ categories:
           include:
             - (name:lbn-requirements-and-funding-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: lbn-requirements-and-funding-data
-            display_state: complete
-            comments: 
-
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
@@ -87,11 +82,6 @@ categories:
           include:
             - (name:lebanon-acled-conflict-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: lebanon-acled-conflict-data
-            display_state: complete
-            comments: 
-
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
