@@ -2,12 +2,11 @@
 
 
 
-inherits_from: 
-name: som_data_completeness
-title:  Somalia Data Completeness
-description:  
-categories: 
-
+inherits_from:
+name: global_default
+title:  Global Default Core Data
+description:
+categories:
 
 #AFFECTED PEOPLE
   - name: affected_people
@@ -17,65 +16,43 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (vocab_Topics:"internally displaced persons - idp" AND subnational:1)
+            - (name:somalia-harmonised-idp-figures)
           exclude:
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:reach-som-baidoa-idp-settlement-assessment-kii-cleandata-april2017) #not tabular data
-            - (name:reach-som-baidoa-idp-settlement-assessment-hh-survey-cleandata-april2017) #not tabular data
-            - (name:reach-som-baidoa-idp-settlement-assessment-facility-mapping-cleandata-april2017) #not tabular data
-            - (name:somalia-kismayo-idp-settlement-assessment-household-dataset) #not tabular data
-            - (name:somalia-kismayo-idp-settlement-assessment-facility-dataset) #not tabular data
-            - (name:internal-displacement-profiling-in-hargeisa) #not tabular data
-
 #REFUGEES POCs
       - name: refugees_poc
-        title: Refugees & Persons of Concern
-        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
+        title: Refugees, forcibly displaced and stateless people
+        description: Tabular data of the number of refugees, forcibly displaced and stateless people, either in the country or originating from the country, disaggregated by their current location. The category includes refugees, people in refugee-like situations, asylum-seekers, other people in need of international protection, internally displaced persons (IDPs), stateless individuals, as well as those that have found a durable solution to their displacement. Locations may refer to administrative divisions or other identifiable areas (e.g., camps).
         rules:
           include:
-            - (vocab_Topics:"refugees" AND subnational:1)
-            - (vocab_Topics:"persons of concern - populations of concern - poc" AND subnational:1)
+            - (name:unhcr-population-data-for-som)
           exclude:
-            - (name:unicef-esaro-regional-refugee-db-2018) #not subnational
-            - (name:hoa-refugee-database) #subnational but does not include Somalia
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
 #RETURNEES
       - name: returnees
         title: Returnees
-        description: Tabular data of the number of displaced people who have returned. 
+        description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (vocab_Topics:"returnees" AND subnational:1)
+            - (name:somalia-displacement-idps-returnees-baseline-assessment-iom-dtm)
           exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules: 
-          include:
-            - (vocab_Topics:"displaced persons locations - camps - shelters" AND subnational:1)
-          exclulde:
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (vocab_Topics:"casualties" AND subnational:1)
-            - (vocab_Topics:"fatalities - deaths" AND subnational:1)
-            - (name:"acled-data-for-somalia" AND subnational:1)
+            - (name:global-hpc-hno)
+            - (name:som-jiaf-humanitarian-needs-pin-and-severity)
           exclude:
- #MISSING PERSONS
-      - name: missing_persons
-        title: Missing Persons
-        description: Current number of people missing, disaggregated by location.
-        rules:
-          include:
-            - (vocab_Topics:"missing persons" AND subnational:1)
-          exclude:
+        metadata_overrides:
+          - dataset_name: global-hpc-hno
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: global-hpc-hno
 
 
 #COORDINATION & CONTEXT
@@ -85,186 +62,145 @@ categories:
     data_series:
 #WHO WHAT WHERE
       - name: 3w
-        title: 3w - Who is doing what where
+        title: Operational Presence
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (vocab_Topics:"who is doing what and where - 3w - 4w - 5w" AND subnational:1)
-            - (title:"InterAction member activities in")
+            - (name:somalia-operational-presence)
           exclude:
-            - (name:somalia-3w-q1-2015) #Dataset is delinquent
-            - (name:ngoaidmap-somalia) #Dataset is a duplication
-            - (name:3w-matrix-for-somalia-ngo-consortium) #Dataset is a duplication
-            - (name:ngoaidmap-som) #Dataset is delinquent
-            - (name:somalia-who-is-doing-what-and-where-3w-2016) #Dataset is delinquent
-            - (name:adeso-somalia-data) #Dataset is delinquent
-        metadata_overrides:
-          - dataset_name: ngoaidmap-som
-            display_state: incomplete
-            comments: Only covers activities by InterAction Members.
-#AFFECTED AREAS
-      - name: affected_areas
-        title: Affected Areas
-        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (vocab_Topics:"affected area" AND subnational:1)
+            - (name:som-requirements-and-funding-data)
           exclude:
-            - (vocab_Topics:"damage assessment")
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (vocab_Topics:"violence and conflict" AND subnational:1)
-            - (vocab_Topics:"security incidents" AND subnational:1)
-            - (vocab_Topics:"armed violence" AND subnational:1)
-            - (organization:acled)
+            - (name:somalia-acled-conflict-data)
           exclude:
-            - (name:acled-conflict-data-for-africa-1997-lastyear)
+        metadata_overrides:
+          - dataset_name: somalia-acled-conflict-data
+            display_state: complete
+            comments: 
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (vocab_Topics:"humanitarian access" AND subnational:1)
           exclude:
-#TRANSPORTATION STATUS
-      - name: transportation_status
-        title: Transportation Status
-        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
-        rules:
-          include:
-            - (vocab_Topics:"roadblocks - checkpoints - obstacles" AND subnational:1)
-            - (vocab_Topics:"transportation status" AND subnational:1)
-          exclude:
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (vocab_Topics:"damaged buildings" AND subnational:1)
-            - (vocab_Topics:"damage assessment" AND subnational:1)
-          exclude:
+            - (private:false)
+            - (private:true)
 
-
-#FOOD SECURITY AND NUTRITION
-  - name: food_security_and_nutrition
-    title: Food Security & Nutrition
-    description: Data about a population's access to food and key nutrition indicators.
+#FOOD SECURITY NUTRITION POVERTY
+  - name: food_security_nutrition_poverty
+    title: Food Security, Nutrition & Poverty
+    description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
       - name: food_security
         title: Food security
-        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division. Where available, tabular data on rural population livelihood as well as crop & livestock production are included.
         rules:
           include:
-            - (vocab_Topics:"integrated phase classification - ipc" AND subnational:1)
-            - (vocab_Topics:"food security" AND subnational:1)
+            - (name:somalia-acute-food-insecurity-country-data)
           exclude:
-            - (name:coping-strategy-index-csi) # This is a default exclude for wfp coping strategies; if it can be updated regularly, we may want to add a new subcategory for this one
-            - (name:food-consumption-score-fcs) # This is a default exclude for wfp food consumption score; if can be updated regularly, we may want to add a new subcategory for this one
-            - (name:somalia-3w-q1-2015) #This a 3W
-            - (name:humanitarian-data-for-eastern-africa-region) #not subnational
-            - (name:ethiopia-food-security-0) #Dataset is a duplication
-            - (name:somalia-drought-situation-in-somalia) #Dataset is about drought
-            - (name:ethiopia-food-security-0-0) #Dataset is a duplication
-            - (name:horn-of-africa-food-security) #Dataset is a duplication
-            - (name:somalia-food-insecurity-phase-east-africa-drought-2011-fewsnet-07-22-2011) #Dataset is delinquent 
-            - (name:projected-ipc-population-estimates-february-june-2016) #old dataset
-        metadata_overrides:
-          - dataset_name: ethiopia-food-security
-            display_state: incompete
-            comments: " "
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (vocab_Topics:"global acute malnutrition - gam" AND subnational:1)
+            - (name:somalia-acute-malnutrition-analysis)
           exclude:
-           - (name:regional-nutrition-dashboard) #not subnational
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
-        rules:
-          include:
-            - (vocab_Topics:"severe acute malnutrition - sam" AND subnational:1)
-          exclude:
-            - (name:regional-nutrition-dashboard) #not subnational
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
-        description: Timeseries prices for common food commodities at a set of locations
+        description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (vocab_Topics:"food prices" AND vocab_Topics:"food security" AND subnational:1)
-            - (name:"wfp-food-prices-for-somalia" AND subnational:1)
+            - (name:wfp-food-prices-for-somalia)
+            - (name:global-market-monitor)
           exclude:
-          
-          
+        metadata_overrides:
+          - dataset_name: wfp-food-prices-for-somalia
+            display_state: complete
+            comments: 
+          - dataset_name: global-market-monitor
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory. 
 
-#GEOGRAPHY AND INFRASTRUCTURE
+        complementary_datasets:
+          - dataset_name: global-market-monitor
+
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+
+#REFERENCE DATA
   - name: geography_and_infrastructure
     title: Geography & Infrastructure
-    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    description: Data describing the administrative divisions as well as baseline population, populated places and key physical geography and infrastructure.
     data_series:
 #ADMINISTRATIVE DIVISIONS
-      - name:  administrative_divisions 
-        title: Administrative Divisions 
-        description:  Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a perfered set of administrative boundaries as the Common Operational Dataset (COD). 
-        rules:  
-          include: 
-              - (vocab_Topics:"administrative divisions" AND vocab_Topics:"common operational dataset - cod" AND subnational:1)
-          exclude: 
+      - name: administrative_divisions
+        title: Administrative Divisions
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division.
+        rules:
+          include:
+            - (name:cod-ab-som)
+          exclude:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+            - (name:cod-ps-som)
+          exclude:
 #POPULATED PLACES
       - name: populated_places
         title: Populated Places
-        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages). 
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (vocab_Topics:"populated places - settlements" AND subnational:1)
+            - (name:hotosm_som_populated_places)
+            - (name:worldpop-population-counts-2015-2030-som)
           exclude:
         metadata_overrides:
-          - dataset_name: somalia-population-data
+          - dataset_name: worldpop-population-counts-2015-2030-som
             display_state: incomplete
-            comments:
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: worldpop-population-counts-2015-2030-som
+
 #ROADS
-      - name:  roads
+      - name: roads
         title: Roads
-        description:  Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network.  The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-              - (vocab_Topics:"roads" AND subnational:1)
+            - (name:hotosm_som_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_som_roads  #replace XXX with country code to include this override
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-#AIRPORTS
-      - name: airports
-        title: Airports
-        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
-        rules:
-          include: 
-            - (vocab_Topics:"airports" AND subnational:1)
-          exclude:
-        metadata_overrides:
-          - dataset_name: ourairports-som  #replace XXX with country code to include this override
-            display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
-
-
 
 #HEALTH AND EDUCATION
   - name: health_and_education
     title: Health & Education
-    description: Data describing health and education related facilities and key indicators.
+    description: Data describing health and education related facilities.
     data_series:
 #HEALTH FACILITIES
       - name: health_facilities
@@ -272,8 +208,7 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (vocab_Topics:"health facilities" AND subnational:1)
-            - (vocab_Topics:hospitals AND subnational:1)
+            - (name:hotosm_som_health_facilities)
           exclude:
 #EDUCATION FACILITIES
       - name: education_facilities
@@ -281,64 +216,43 @@ categories:
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (vocab_Topics:"education facilities - schools" AND subnational:1)
-          exclude:
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (vocab_Topics:"affected facilities" AND vocab_Topics:"education facilities - schools" AND subnational:1)
+            - (name:hotosm_som_education_facilities)
           exclude:
 
-
-#POPULATION AND SOCIO-ECONOMIC INDICATORS
-  - name: socio-economic
-    title: Population & Socio-economic Indicators
-    description: Data regarding populations and key indicators relating to social and economic factors.
+#CLIMATE
+  - name: climate
+    title: Climate
+    description: Current and historical data about climate hazards & impact.
     data_series:
-#BASELINE POPULATION
-      - name: baseline_population
-        title: Baseline Population
-        description: Total population aggregated by administrative division.
+#RAINFALL
+      - name: hazards
+        title: Hazards
+        description: Current and historical data about climate hazards such as droughts, floods and storms. 
         rules:
           include:
-            - (vocab_Topics:"baseline population" AND subnational:1)
-            - (vocab_Topics:"demographics" AND subnational:1)
+            - (name:som-rainfall-subnational)
+            - (name:asap-hotspots-monthly)
+            - (name:som-ndvi-subnational)
+            - (name:floodscan)
           exclude:
-            - (vocab_Topics:"people in need - pin")
-            - (vocab_Topics:"affected population")
-            - (vocab_Topics:"displacement")
-            - (vocab_Topics:"internally displaced persons - idp")
-            - (vocab_Topics:"humanitarian needs overview - hno")
-            - (organization:"worldpop" AND title:" - Population" AND res_format:"geotiff")
-            - (organization:unhabitat-guo AND title:" - Demographic, Health, Education and Transport indicators")
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
-            - (name:total-migrants-total-migrants)
-            - (name:somalia-iom-dtm-dataset-round-3) #not a baseline population dataset
-            - (name:boderlands-analysis-dataset) #not a baseline population dataset
-            - (name:worldpop-by-cod-som)
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
-        description: Total population disaggregated age and sex categories, aggregated by administrative division. 
-        rules:
-          include:
-            - (vocab_Topics:"baseline population" AND vocab_Topics:"sex and age disaggregated data - sadd" AND subnational:1)
-          exclude:
-            - (organization:afdb) #African Development Bank Group datasets are not subnational
         metadata_overrides:
-          - dataset_name: 
-            display_state: 
-            comments: 
-#POVERTY RATE
-      - name: poverty_rate
-        title: Poverty Rate
-        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+          - dataset_name: asap-hotspots-monthly
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory.
+          - dataset_name: floodscan
+            display_state: incomplete
+            comments: This dataset is complementary and adds value to the subcategory. 
+
+        complementary_datasets:
+          - dataset_name: asap-hotspots-monthly
+          - dataset_name: floodscan
+
+#CLIMATIE IMPACT
+      - name: impact
+        title: Impact
+        description: Tabular or vector data containing current and historical impacts of climate events relating to floods, droughts and storms. The data should specify the location of the event, date of the event, and contain at least one indicator of impact such as spatial extent of event, disruption to affected populations, destroyed infrastructure, and/or affected vegetation.
         rules:
           include:
-            - (vocab_Topics:poverty AND subnational:1)
+            - (name:somalia-floods)
           exclude:
-
 
