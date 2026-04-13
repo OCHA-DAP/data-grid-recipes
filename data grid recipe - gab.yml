@@ -1,0 +1,321 @@
+---
+
+
+
+inherits_from:
+name: global_default
+title:  Global Default Core Data
+description:
+categories:
+
+#AFFECTED PEOPLE
+  - name: affected_people
+    title: Affected People
+    description: Data about the people affected by a crisis.
+    data_series:
+#IDPs
+      - name: idp
+        title: Internally-Displaced Persons
+        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#REFUGEES POCs
+      - name: refugees_poc
+        title: Refugees & Persons of Concern
+        description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#RETURNEES
+      - name: returnees
+        title: Returnees
+        description: Tabular data of the number of displaced people who have returned.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#HUM PROFILE LOCATIONS
+      - name: humanitarian_profile_locations
+        title: Humanitarian Profile Locations
+        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#CASUALTIES
+      - name: casualties
+        title: Casualties
+        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
+        rules:
+          include:
+            - (name:acled-data-for-gabon)
+          exclude:
+
+#COORDINATION & CONTEXT
+  - name: coordination_context
+    title: Coordination & Context
+    description: Core data relating to the coordination of humanitarian activities in a country or crisis and an understanding of the context in which humanitarian activities are taking place.
+    data_series:
+#WHO WHAT WHERE
+      - name: 3w
+        title: 3w - Who is doing what where
+        description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
+        rules:
+          include:
+            - (name:iati-gab)
+          exclude:
+        metadata_overrides:
+          - dataset_name: iati-gab
+            display_state: incomplete
+            comments: Dataset contains data about some organizations but not all working in the country. Dataset is disaggregated geographically, but inconsistently.
+
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#AFFECTED AREAS
+      - name: affected_areas
+        title: Affected Areas
+        description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#CONFLICT EVENTS
+      - name: conflict_events
+        title: Conflict Events
+        description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
+        rules:
+          include:
+            - (name:acled-data-for-gabon)
+          exclude:
+#HUMANITARIAN ACCESS
+      - name: humanitarian_access
+        title: Humanitarian Access
+        description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#TRANSPORTATION STATUS
+      - name: transportation_status
+        title: Transportation Status
+        description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#DAMAGED BUILDINGS
+      - name: damaged_buildings
+        title: Damaged & Destroyed Buildings
+        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+
+#FOOD SECURITY AND NUTRITION
+  - name: food_security_and_nutrition
+    title: Food Security & Nutrition
+    description: Data about a population's access to food and key nutrition indicators.
+    data_series:
+#FOOD SECURITY
+      - name: food_security
+        title: Food security
+        description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
+        rules:
+          include:
+            - (name:cadre-harmonise)
+          exclude:
+#GAM
+      - name: gam
+        title: Global Acute Malnutrition Rate
+        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#SAM
+      - name: sam
+        title: Severe Acute Malnutrition Rate
+        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#FOOD PRICES
+      - name: food_prices
+        title: Food Prices
+        description: Timeseries prices for common food commodities at a set of locations
+        rules:
+          include:
+            - (name:wfp-food-prices-for-gabon)
+          exclude:
+
+#GEOGRAPHY AND INFRASTRUCTURE
+  - name: geography_and_infrastructure
+    title: Geography & Infrastructure
+    description: Data describing the administrative divisions as well as populated places and key physical geography and infrastructure.
+    data_series:
+#ADMINISTRATIVE DIVISIONS
+      - name: administrative_divisions
+        title: Administrative Divisions
+        description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
+        rules:
+          include:
+            - (name:gabon-administrative-boundaries)
+          exclude:
+#POPULATED PLACES
+      - name: populated_places
+        title: Populated Places
+        description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
+        rules:
+          include:
+            - (name:gabon-settlements)
+            - (name:hotosm_gab_populated_places)
+          exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_gab_populated_places
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
+#ROADS
+      - name: roads
+        title: Roads
+        description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
+        rules:
+          include:
+            - (name:hotosm_gabon_roads)
+          exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_gabon_roads
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain data about practicability of a road.
+
+#AIRPORTS
+      - name: airports
+        title: Airports
+        description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
+        rules:
+          include:
+            - (name:ourairports-gab)
+            - (name:hotosm_gab_airports)
+          exclude:
+        metadata_overrides:
+          - dataset_name: ourairports-gab
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+          - dataset_name: hotosm_gab_airports
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
+
+#HEALTH AND EDUCATION
+  - name: health_and_education
+    title: Health & Education
+    description: Data describing health and education related facilities and key indicators.
+    data_series:
+#HEALTH FACILITIES
+      - name: health_facilities
+        title: Health Facilities
+        description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
+        rules:
+          include:
+            - (name:gabon-healthsites)
+            - (name:hotosm_gab_health_facilities)
+            - (name:health-facilities-in-sub-saharan-africa)
+          exclude:
+        metadata_overrides:
+          - dataset_name: gabon-healthsites
+            display_state: incomplete
+            comments: Healthsites data are derived from OpensStreetMap. Dataset completeness is difficult to determine.
+          - dataset_name: hotosm_gab_health_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+          - dataset_name: health-facilities-in-sub-saharan-africa
+            display_state: incomplete
+            comments: 
+
+#EDUCATION FACILITIES
+      - name: education_facilities
+        title: Education Facilities
+        description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
+        rules:
+          include:
+            - (name:hotosm_gab_education_facilities)
+          exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_gab_education_facilities
+            display_state: incomplete
+            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
+
+#AFFECTED SCHOOLS
+      - name: affected_schools
+        title: Affected Schools
+        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+
+#POPULATION AND SOCIO-ECONOMY
+  - name: socio-economic
+    title: Population & Socio-economy
+    description: Data regarding populations and key indicators relating to social and economic factors.
+    data_series:
+#BASELINE POPULATION
+      - name: baseline_population
+        title: Baseline Population
+        description: Total population aggregated by administrative division.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#BASELINE POPULATION SADD
+      - name: baseline_population_sadd
+        title: Baseline Population by Age & Sex
+        description: Total population disaggregated age and sex categories, aggregated by administrative division.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+#POVERTY RATE
+      - name: poverty_rate
+        title: Poverty Rate
+        description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
+
