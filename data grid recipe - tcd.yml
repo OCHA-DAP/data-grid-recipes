@@ -127,7 +127,7 @@ categories:
         description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
-            - (name:chad-nutrition-smart-survey)
+            - (name:chad-acute-malnutrition)
           exclude:
 #FOOD PRICES
       - name: food_prices
