@@ -106,7 +106,7 @@ categories:
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
-    title: Food Security & Nutrition
+    title: Food Security, Nutrition & Poverty
     description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
