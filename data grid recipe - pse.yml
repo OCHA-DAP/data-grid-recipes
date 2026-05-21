@@ -100,7 +100,7 @@ categories:
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
-    title: Food Security, Nutrition & Poverty
+    title: Food Security & Nutrition
     description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
@@ -117,7 +117,6 @@ categories:
             display_state: complete
             comments: The data in this dataset covers only Gaza Strip. 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -142,16 +141,14 @@ categories:
         description: Time series for common food commodities prices at sub-national locations. 
         rules:
           include:
-            - (name:state-of-palestine-price-of-basic-commodities-in-gaza)
             - (name:wfp-food-prices-for-state-of-palestine)
+            - (name:state-of-palestine-price-of-basic-commodities-in-gaza)
             - (name:global-market-monitor)
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-price-of-basic-commodities-in-gaza
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory. The data in this dataset covers only Gaza Strip. 
           - dataset_name: global-market-monitor
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -191,7 +188,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: worldpop-population-counts-2015-2030-pse
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
