@@ -99,7 +99,7 @@ categories:
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
-    title: Food Security, Nutrition & Poverty
+    title: Food Security & Nutrition
     description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
@@ -116,7 +116,6 @@ categories:
             display_state: complete
             comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -142,7 +141,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: global-market-monitor
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -230,15 +228,14 @@ categories:
         rules:
           include:
             - (name:lbn-rainfall-subnational)
-            - (name:asap-hotspots-monthly)
+            - (name:lbn-ndvi-subnational)
           exclude:
         metadata_overrides:
-          - dataset_name: asap-hotspots-monthly
-            display_state: incomplete
+          - dataset_name: lbn-ndvi-subnational
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: asap-hotspots-monthly
+          - dataset_name: lbn-ndvi-subnational
 
 #CLIMATIE IMPACT
       - name: impact
