@@ -43,12 +43,11 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
-            - (name:global-hpc-hno)
             - (name:syr-jiaf-humanitarian-needs-pin-and-severity)
+            - (name:global-hpc-hno)
           exclude:
         metadata_overrides:
           - dataset_name: global-hpc-hno
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -101,7 +100,7 @@ categories:
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
-    title: Food Security, Nutrition & Poverty
+    title: Food Security & Nutrition
     description: Data about a population's access to food, key nutrition indicators and poverty rates.
     data_series:
 #FOOD SECURITY
@@ -132,7 +131,6 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: global-market-monitor
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -176,10 +174,8 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: cod-ab-syr
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
           - dataset_name: worldpop-population-counts-2015-2030-syr
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
@@ -229,12 +225,11 @@ categories:
         rules:
           include:
             - (name:syr-rainfall-subnational)
-            - (name:asap-hotspots-monthly)
             - (name:syr-ndvi-subnational)
+            - (name:asap-hotspots-monthly)
           exclude:
         metadata_overrides:
           - dataset_name: asap-hotspots-monthly
-            display_state: incomplete
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
