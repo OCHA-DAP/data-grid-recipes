@@ -35,7 +35,7 @@ categories:
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:dtm-sudan-return-monitoring-snapshot)
+            - (name:sudan-displacement-situation-countrywide-idps-iom-dtm)
           exclude:
 #HNO
       - name: hno
