@@ -21,10 +21,6 @@ categories:
           include:
             - (name:nigeria-site-assessment-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-site-assessment-data
-            comments: The dataset is not up-to-date.
-
 #REFUGEES POCs
       - name: refugees_poc
         title: Refugees, forcibly displaced and stateless people
@@ -41,10 +37,6 @@ categories:
           include:
             - (name:nigeria-site-assessment-data)
           exclude:
-        metadata_overrides:
-          - dataset_name: nigeria-site-assessment-data
-            comments: The dataset is not up-to-date.
-
 #HNO
       - name: hno
         title: Humanitarian Needs
