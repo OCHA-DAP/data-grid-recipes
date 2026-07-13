@@ -118,7 +118,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: yemen-acute-food-insecurity-country-data
-            display_state: incomplete
+            display_state: complete
             comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             comments: This dataset is complementary and adds value to the subcategory.
