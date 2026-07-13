@@ -115,7 +115,7 @@ categories:
         metadata_overrides:
           - dataset_name: somalia-acute-food-insecurity-country-data
             display_state: incomplete
-            comments: This dataset is not up to date.
+            comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             comments: This dataset is complementary and adds value to the subcategory.
 
