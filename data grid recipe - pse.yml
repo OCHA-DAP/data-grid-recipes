@@ -114,7 +114,7 @@ categories:
           exclude:
         metadata_overrides:
           - dataset_name: state-of-palestine-acute-food-insecurity-country-data
-            display_state: complete
+            display_state: incomplete
             comments: The data in this dataset covers only Gaza Strip. 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             comments: This dataset is complementary and adds value to the subcategory.
