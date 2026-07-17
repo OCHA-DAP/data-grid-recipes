@@ -66,11 +66,6 @@ categories:
           include:
             - (name:venezuela-who-does-what-and-where-3w)
           exclude:
-        metadata_overrides:
-          - dataset_name: venezuela-who-does-what-and-where-3w
-            display_state: complete
-            comments: 
-
 #FUNDING
       - name: funding
         title: Funding
