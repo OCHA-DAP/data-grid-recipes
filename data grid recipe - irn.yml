@@ -19,9 +19,7 @@ categories:
         description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm)
-            - (name:indonesia-displacement-data-lombok-earthquake-site-assessment-iom-dtm)
-            - (name:idmc-idp-data-for-indonesia)
+            - (name:idmc-idp-data-for-iran-islamic-republic-of)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -29,9 +27,8 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:unhcr-demographics-residing-irn)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
@@ -47,22 +44,26 @@ categories:
         description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
         rules:
           include:
-            - (name:indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm)
           exclude:
-        metadata_overrides:
-          - dataset_name: indonesia-displacement-data-sulawesi-earthquake-site-assessment-iom-dtm
-            display_state: incomplete
-            comments: The dataset is not up-to-date.
-
+            - (private:false)
+            - (private:true)
+#HNO
+      - name: hno
+        title: Humanitarian Needs
+        description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
+        rules:
+          include:
+          exclude:
+            - (private:false)
+            - (private:true)
 #CASUALTIES
       - name: casualties
         title: Casualties
         description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
         rules:
           include:
-            - (name:indonesia-number-of-casualties-caused-by-natural-disaster-1815-2018)
-            - (name:indonesia-dengue-fever-cases-by-province-2015-2017)
-            - (name:indonesia-monthly-humanitarian-update)
+            - (name:acled-data-for-iran-islamic-republic-of)
+            - (name:acled-database)
           exclude:
 
 #COORDINATION & CONTEXT
@@ -76,30 +77,38 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:ngoaidmap-idn)
-            - (name:iati-idn)
-            - (name:4w-central-sulawesi-earthquake-and-tsunami-2018)
+            - (name:iati-irn)
           exclude:
         metadata_overrides:
-          - dataset_name: ngoaidmap-idn
+          - dataset_name: iati-irn
             display_state: incomplete
-            comments: Only covers activities by InterAction Members.
+            comments: Dataset contains data about some organizations but not all working in the country. Data is disaggregated geographically, but inconsistently
 
+#FUNDING
+      - name: funding
+        title: Funding
+        description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
+        rules:
+          include:
+            - (name:fts-requirements-and-funding-data-for-iran-islamic-republic-of)
+          exclude:
 #AFFECTED AREAS
       - name: affected_areas
         title: Affected Areas
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:indonesia-monthly-humanitarian-update)
           exclude:
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:acled-data-for-indonesia)
+            - (name:acled-data-for-iran-islamic-republic-of)
+            - (name:acled-database)
           exclude:
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
@@ -107,51 +116,36 @@ categories:
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:indonesia-monthly-humanitarian-update)
-            - (name:indonesia-vulnerability-to-food-insecurity-2015)
           exclude:
+            - (private:false)
+            - (private:true)
 #TRANSPORTATION STATUS
       - name: transportation_status
         title: Transportation Status
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:indonesia-flight-routes)
-            - (name:indonesia-sea-routes)
+            - (name:wfp-geonode-iran-road-network-main-roads)
+            - (name:hotosm_irn_railways)
+            - (name:hotosm_irn_roads)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_irn_railways
+            display_state: incomplete
+            comments: 
+          - dataset_name: hotosm_irn_roads
+            display_state: incomplete
+            comments: 
+
 #DAMAGED BUILDINGS
       - name: damaged_buildings
         title: Damaged & Destroyed Buildings
         description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
         rules:
           include:
-            - (name:damage-assessment-of-pantoloan-area-in-central-sulawesi-2846)
-            - (name:damage-assessment-oftawaeli-area-in-central-sulawesi-2847)
-            - (name:damage-assessment-of-taipa-area-in-central-sulawesi-2845)
-            - (name:ma-sulawesi-earthquake-2018-copernicus-building-damage-classfcn)
-            - (name:potentially-damaged-buildings-gathering-sites-over-gili-islands-lombok-utara-district-indonesia-2837)
-            - (name:damage-assessment-of-gumantar-and-dangiang-desa-kagayan-district-lombok-island-indonesia-2836)
           exclude:
-        metadata_overrides:
-          - dataset_name: damage-assessment-of-pantoloan-area-in-central-sulawesi-2846
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-          - dataset_name: damage-assessment-oftawaeli-area-in-central-sulawesi-2847
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-          - dataset_name: damage-assessment-of-taipa-area-in-central-sulawesi-2845
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-          - dataset_name: ma-sulawesi-earthquake-2018-copernicus-building-damage-classfcn
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-          - dataset_name: potentially-damaged-buildings-gathering-sites-over-gili-islands-lombok-utara-district-indonesia-2837
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-          - dataset_name: damage-assessment-of-gumantar-and-dangiang-desa-kagayan-district-lombok-island-indonesia-2836
-            display_state: incomplete
-            comments: Dataset is not considered complete by its contributor.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -164,8 +158,9 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:indonesia-vulnerability-to-food-insecurity-2015)
           exclude:
+            - (private:false)
+            - (private:true)
 #GAM
       - name: gam
         title: Global Acute Malnutrition Rate
@@ -190,7 +185,7 @@ categories:
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices)
+            - (name:wfp-food-prices-for-iran-islamic-republic-of)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -204,9 +199,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:indonesia-administrative-boundary-polygons-lines-and-places-levels-0-4b)
-            - (name:indonesia-administrative-boundary-2017)
-            - (name:indonesia-administrative-boundary-2017)
+            - (name:administrative-boundaries-1-2)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -214,12 +207,12 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:indonesian-capital-cities)
+            - (name:hotosm_irn_populated_places)
           exclude:
         metadata_overrides:
-          - dataset_name: indonesian-capital-cities
+          - dataset_name: hotosm_irn_populated_places
             display_state: incomplete
-            comments: Dataset is limited to captials of administrative divsions.
+            comments: 
 
 #ROADS
       - name: roads
@@ -227,50 +220,22 @@ categories:
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_idn_sumatra_roads)
-            - (name:hotosm_idn_westjava_roads)
-            - (name:hotosm_idn_eastjava_roads)
-            - (name:hotosm_idn_sulawesi_roads)
-            - (name:hotosm_idn_kalimantan_roads)
-            - (name:hotosm_idn_maluku_roads)
-            - (name:hotosm_idn_westpapua_roads)
+            - (name:wfp-geonode-iran-road-network-main-roads)
+            - (name:hotosm_irn_roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_idn_sumatra_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_westjava_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_eastjava_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_sulawesi_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_kalimantan_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_maluku_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_idn_westpapua_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-
 #AIRPORTS
       - name: airports
         title: Airports
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:ourairports-idn)
-            - (name:indonesia-airport)
+            - (name:ourairports-irn)
+            - (name:hotosm_irn_airports)
           exclude:
         metadata_overrides:
-          - dataset_name: ourairports-idn
+          - dataset_name: hotosm_irn_airports
             display_state: incomplete
-            comments: OurAirports data relies on user contributions and may not be comprehensive.
+            comments: 
 
 
 #HEALTH AND EDUCATION
@@ -284,18 +249,27 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:indonesia-health-facilities)
-            - (name:indonesia-healthsites)
+            - (name:iran-healthsites)
+            - (name:hotosm_irn_health_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_irn_health_facilities
+            display_state: incomplete
+            comments: 
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:average-number-of-years-of-education-received-by-people-aged-15-and-older-2015-2016)
-            - (name:indonesia-education-facilities)
+            - (name:hotosm_irn_education_facilities)
           exclude:
+        metadata_overrides:
+          - dataset_name: hotosm_irn_education_facilities
+            display_state: incomplete
+            comments: 
+
 #AFFECTED SCHOOLS
       - name: affected_schools
         title: Affected Schools
@@ -306,9 +280,9 @@ categories:
             - (private:false)
             - (private:true)
 
-#POPULATION AND SOCIO-ECONOMIC INDICATORS
+#POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
-    title: Population & Socio-economic Indicators
+    title: Population & Socio-economy
     description: Data regarding populations and key indicators relating to social and economic factors.
     data_series:
 #BASELINE POPULATION
@@ -317,38 +291,15 @@ categories:
         description: Total population aggregated by administrative division.
         rules:
           include:
-            - (name:indonesia-population-by-age-group-sex-and-urban-rural-2010)
-            - (name:indonesia-population-projection-by-province-2010-2035)
-            - (name:dhs-data-for-indonesia)
-            - (name:indonesia-vulnerability-to-food-insecurity-2015)
-            - (name:population-at-village-level-admin4-of-banten-province)
-            - (name:population-at-village-level-admin4-of-lampung-province)
-            - (name:2018-population-projection-central-sulawesi-province)
+            - (name:iran-census-population-results-from-dis-aggregated-by-gender-and-age)
           exclude:
-        metadata_overrides:
-          - dataset_name: indonesia-population-by-age-group-sex-and-urban-rural-2010
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-          - dataset_name: indonesia-population-projection-by-province-2010-2035
-            display_state: incomplete
-            comments: The dataset is not publicly available and must be requested from the contributor.
-          - dataset_name: population-at-village-level-admin4-of-banten-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-          - dataset_name: population-at-village-level-admin4-of-lampung-province
-            display_state: incomplete
-            comments: Dataset covers a limited area.
-          - dataset_name: 2018-population-projection-central-sulawesi-province
-            display_state: incomplete
-            comments: Data covers a limited area.
-
 #BASELINE POPULATION SADD
       - name: baseline_population_sadd
         title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:indonesia-population-by-age-group-sex-and-urban-rural-2010)
+            - (name:iran-census-population-results-from-dis-aggregated-by-gender-and-age)
           exclude:
 #POVERTY RATE
       - name: poverty_rate
@@ -356,6 +307,7 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:percentage-of-population-living-below-poverty-line-by-province-in-indonesia-2007-2018)
           exclude:
+            - (private:false)
+            - (private:true)
 
