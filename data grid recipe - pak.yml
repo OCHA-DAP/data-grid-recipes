@@ -16,10 +16,10 @@ categories:
 #IDPs
       - name: idp
         title: Internally-Displaced Persons
-        description: Tabular data of the number of displaced people by location.  Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available.
+        description: Tabular data of the number of displaced people by location or vector or tabular data with coordinates representing the locations at which displaced people are gathered. Locations can be administrative divisions, coordinates or other locations (such as camps) if an additional dataset defining those locations is also available.
         rules:
           include:
-            - (name:philippines-displacement-data-mindanao-earthquake-site-assessment-iom-dtm)
+            - (name:pakistan-idps-data)
           exclude:
 #REFUGEES POCs
       - name: refugees_poc
@@ -27,24 +27,15 @@ categories:
         description: Tabular data of the number of refugees and persons of concern either in the country or originating from the country disaggregated by their current location. Locations can be administrative divisions or other locations (such as camps) if an additional dataset defining those locations is also available or if the locations' coordinates are defined in the tabular data.
         rules:
           include:
+            - (name:afghan-refugees-in-pakistan)
           exclude:
-            - (private:false)
-            - (private:true)
 #RETURNEES
       - name: returnees
         title: Returnees
         description: Tabular data of the number of displaced people who have returned.
         rules:
           include:
-            - (name:marawi-conflict-idp-and-returned-figures-by-month-and-region)
-          exclude:
-#HUM PROFILE LOCATIONS
-      - name: humanitarian_profile_locations
-        title: Humanitarian Profile Locations
-        description: Vector or tabular data with coordinates representing the locations at which displaced people are gathered.
-        rules:
-          include:
-            - (name:philippines-displacement-data-mindanao-earthquake-site-assessment-iom-dtm)
+            - (name:pakistan-returnees)
           exclude:
 #HNO
       - name: hno
@@ -52,17 +43,13 @@ categories:
         description: Tabular data of the number of people in need of humanitarian assistance by location and humanitarian cluster/sector.
         rules:
           include:
+            - (name:pakistan-humanitarian-needs-overview)
           exclude:
-            - (private:false)
-            - (private:true)
-#CASUALTIES
-      - name: casualties
-        title: Casualties
-        description: Number of deaths and/or persons injured, disaggregated by location.  Values can be cumulative totals or a time series of new deaths and/or injured persons.
-        rules:
-          include:
-            - (name:acled-data-for-philippines)
-          exclude:
+        metadata_overrides:
+          - dataset_name: pakistan-humanitarian-needs-overview
+            display_state: complete
+            comments: 
+
 
 #COORDINATION & CONTEXT
   - name: coordination_context
@@ -75,15 +62,21 @@ categories:
         description: List of organizations working on humanitarian issues, by humanitarian cluster/sector and disaggregated by administrative division.
         rules:
           include:
-            - (name:philippines-covid-19-response-who-does-what-where)
+            - (name:who-is-doing-what-where-and-when)
+            - (name:iati-pak)
           exclude:
+        metadata_overrides:
+          - dataset_name: iati-pak
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data that is useful to understanding the situation.
+
 #FUNDING
       - name: funding
         title: Funding
         description: Tabular data listing the amount of funding provided by humanitarian cluster/sector.
         rules:
           include:
-            - (name:fts-requirements-and-funding-data-for-philippines)
+            - (name:fts-requirements-and-funding-data-for-pakistan)
           exclude:
 #AFFECTED AREAS
       - name: affected_areas
@@ -91,28 +84,34 @@ categories:
         description: Vector data or tabular data by administrative division which describe the type and/or severity of impacts geographically.
         rules:
           include:
-            - (name:philippines-key-figures-on-the-severely-affected)
           exclude:
+            - (private:false)
+            - (private:true)
 #CONFLICT EVENTS
       - name: conflict_events
         title: Conflict Events
         description: Vector data or tabular data with coordinates describing the location, date, and type of conflict event.
         rules:
           include:
-            - (name:philippines-2019-natural-disaster-events-data)
+            - (name:pakistan-acled-conflict-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: pakistan-acled-conflict-data
+            display_state: incomplete
+            comments: More granular data is available after registration.
+
 #HUMANITARIAN ACCESS
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
         rules:
           include:
-            - (name:philippines-geohazards-data)
+            - (name:pakistan-violence-against-civilians-and-vital-civilian-facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: philippines-geohazards-data
+          - dataset_name: pakistan-violence-against-civilians-and-vital-civilian-facilities
             display_state: incomplete
-            comments: Dataset covers only volcanoes and seisms prone area.
+            comments: The data may not be comprehensive. The dataset is not up-to-date.
 
 #TRANSPORTATION STATUS
       - name: transportation_status
@@ -120,21 +119,9 @@ categories:
         description: Vector or tabular data representing local transportation routes with an indication of status or current practicability.
         rules:
           include:
-            - (name:wfp-geonode-philippines-road-network-main-roads)
           exclude:
-        metadata_overrides:
-          - dataset_name: wfp-geonode-philippines-road-network-main-roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
-#DAMAGED BUILDINGS
-      - name: damaged_buildings
-        title: Damaged & Destroyed Buildings
-        description: Vector data with locations of damaged/destroyed buildings and an indication of damage level or tabular data indicating percentage or total number of buildings in each damage category by administrative divisions.
-        rules:
-          include:
-            - (name:philippines-key-figures-on-the-severely-affected)
-          exclude:
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY AND NUTRITION
   - name: food_security_and_nutrition
@@ -147,33 +134,28 @@ categories:
         description: Vector data representing the IPC phase classification or tabular data representing population or percentage of population by IPC phase and administrative division.
         rules:
           include:
-            - (name:philippines-chronic-food-insecurity)
+            - (name:pakistan-acute-food-insecurity-country-data)
           exclude:
-#GAM
-      - name: gam
-        title: Global Acute Malnutrition Rate
-        description: Tabular data specifying the global acute malnutrition (GAM) rate by administrative division.
+#ACUTE MALNUTRITION
+      - name: acute_malnutrition
+        title: Acute Malnutrition
+        description: Tabular data specifying the global acute malnutrition (GAM) or the severe acute malnutrition rate by administrative division.
         rules:
           include:
+            - (name:pakistan-national-nutrition-survey)
           exclude:
-            - (private:false)
-            - (private:true)
-#SAM
-      - name: sam
-        title: Severe Acute Malnutrition Rate
-        description: Tabular data specifying the severe acute malnutrition (SAM) rate by administrative division.
-        rules:
-          include:
-          exclude:
-            - (private:false)
-            - (private:true)
+        metadata_overrides:
+          - dataset_name: pakistan-national-nutrition-survey
+            display_state: complete
+            comments: This dataset was recommended by the IMWG in country.
+
 #FOOD PRICES
       - name: food_prices
         title: Food Prices
         description: Timeseries prices for common food commodities at a set of locations
         rules:
           include:
-            - (name:wfp-food-prices-for-philippines)
+            - (name:wfp-food-prices-for-pakistan)
           exclude:
 
 #GEOGRAPHY AND INFRASTRUCTURE
@@ -187,7 +169,7 @@ categories:
         description: Vector geographic data describing the sub-national administrative divisions of a location, usually a country, including the names and unique identifiers, usually p-codes, of each administrative division. To be considered "complete", and included here, the humanitarian community working in the location has to have endorsed a preferred set of administrative boundaries as the Common Operational Dataset (COD).
         rules:
           include:
-            - (name:philippines-administrative-levels-0-to-3)
+            - (name:cod-ab-pak)
           exclude:
 #POPULATED PLACES
       - name: populated_places
@@ -195,33 +177,20 @@ categories:
         description: Vector data or tabular data with coordinates representing the location of populated places (cities, towns, villages).
         rules:
           include:
-            - (name:hotosm_phl_north_populated_places)
-            - (name:hotosm_phl_south_populated_places)
+            - (name:pakistan-settlement)
           exclude:
-        metadata_overrides:
-          - dataset_name: hotosm_phl_north_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_phl_south_populated_places
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-
 #ROADS
       - name: roads
         title: Roads
         description: Geographic data describing the location of roads with some indication of the importance of each road segment in the transportation network. The data should exclude or indicate roads that are not usable by typical four-wheel-drive vehicles (footpaths, etc.).
         rules:
           include:
-            - (name:hotosm_phl_south_roads)
-            - (name:hotosm_phl_north_roads)
+            - (name:hotosm_pak_roads)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
-          - dataset_name: hotosm_phl_north_roads
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive. Dataset does not always contain information about practicability of a road.
+          - dataset_name: hotosm_pak_roads
+            display_state: complete
+            comments: 
 
 #AIRPORTS
       - name: airports
@@ -229,8 +198,13 @@ categories:
         description: Geographic data representing all operational airports including a name or other unique identifier and an indication of what types of aircraft can use each.
         rules:
           include:
-            - (name:philippines-airport-locations)
+            - (name:ourairports-pak)
           exclude:
+        metadata_overrides:
+          - dataset_name: ourairports-pak
+            display_state: incomplete
+            comments: Ourairports data relies on user contributions and may not be comprehensive.
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
@@ -243,34 +217,26 @@ categories:
         description: Vector data or tabular data with coordinates representing health facilities with some indication of the type of facility (clinic, hospital, etc.).
         rules:
           include:
-            - (name:philippines-pre-disaster-indicators)
+            - (name:health-facilities-in-khyber-pakhtunkhwa-tribal-districts)
           exclude:
+        metadata_overrides:
+          - dataset_name: health-facilities-in-khyber-pakhtunkhwa-tribal-districts
+            display_state: incomplete
+            comments: The data in this dataset provides complimentary data.
+
 #EDUCATION FACILITIES
       - name: education_facilities
         title: Education Facilities
         description: Vector data or tabular data with coordinates representing education facilities with some indication of the type of facility (school, university, etc.).
         rules:
           include:
-            - (name:philippines-education-0-0)
-            - (name:hotosm_phl_south_education_facilities)
-            - (name:hotosm_phl_north_education_facilities)
+            - (name:hotosm_pak_education_facilities)
           exclude:
         metadata_overrides:
-          - dataset_name: hotosm_phl_south_education_facilities
-            display_state: incomplete
-            comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
-          - dataset_name: hotosm_phl_north_education_facilities
+          - dataset_name: hotosm_pak_education_facilities
             display_state: incomplete
             comments: OpenStreetMap data relies on user contributions and may not be comprehensive.
 
-#AFFECTED SCHOOLS
-      - name: affected_schools
-        title: Affected Schools
-        description: Vector data or tabular data with coordinates representing education facilities that have been affected by a crisis with some indication of the nature of the effect and the operational status of each facility.
-        rules:
-          include:
-            - (name:philippines-key-figures-on-the-severely-affected)
-          exclude:
 
 #POPULATION AND SOCIO-ECONOMY
   - name: socio-economic
@@ -280,28 +246,15 @@ categories:
 #BASELINE POPULATION
       - name: baseline_population
         title: Baseline Population
-        description: Total population aggregated by administrative division.
-        rules:
-          include:
-            - (name:philippines-population-projections-by-province-level)
-          exclude:
-        metadata_overrides:
-          - dataset_name: philippines-population-projections-by-province-level
-            display_state: incomplete
-            comments: Dataset is not endorsed as COD.
-
-#BASELINE POPULATION SADD
-      - name: baseline_population_sadd
-        title: Baseline Population by Age & Sex
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:philippines-population-projections-by-province-level)
+            - (name:cod-ps-pak)
           exclude:
         metadata_overrides:
-          - dataset_name: philippines-population-projections-by-province-level
-            display_state: incomplete
-            comments: Dataset is not endorsed as COD.
+          - dataset_name: cod-ps-pak
+            display_state: complete
+            comments: 
 
 #POVERTY RATE
       - name: poverty_rate
@@ -309,6 +262,6 @@ categories:
         description: Population living under a defined poverty threshold, aggregated by administrative division and represented as a percentage of total population or as an absolute number.
         rules:
           include:
-            - (name:philippines-poverty-statistics)
+            - (name:pakistan-mpi)
           exclude:
 
