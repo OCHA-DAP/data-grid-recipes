@@ -92,14 +92,15 @@ categories:
       - name: humanitarian_access
         title: Humanitarian Access
         description: Tabular or vector data describing the location of natural hazards, permissions, active fighting, or other access constraints that impact the delivery of humanitarian interventions.
+        flags:
+          - key: not_applicable
+            display_text: 
+            comments: 
         rules:
           include:
-            - (name:afghanistan-humanitarian-access-incidents)
           exclude:
-        metadata_overrides:
-          - dataset_name: afghanistan-humanitarian-access-incidents
-            comments: This data is only shared between specific partners and is not available on HDX, in-line with the Information Sharing Protocol for the response.
-
+            - (private:false)
+            - (private:true)
 
 #FOOD SECURITY NUTRITION POVERTY
   - name: food_security_nutrition_poverty
