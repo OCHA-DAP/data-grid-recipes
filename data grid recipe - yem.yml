@@ -255,5 +255,6 @@ categories:
         rules:
           include:
             - (name:yemen-flood-preparedness-and-response)
+            - (name:flood-preparedness-and-response)
           exclude:
 
