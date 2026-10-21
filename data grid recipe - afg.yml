@@ -175,7 +175,7 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:afghanistan-subnational-population-statistics-estimates-for-2027)
+            - (name:cod-ps-afg)
           exclude:
 #POPULATED PLACES
       - name: populated_places
