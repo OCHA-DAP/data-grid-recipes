@@ -174,14 +174,14 @@ categories:
         rules:
           include:
             - (name:hotosm_sdn_populated_places)
-            - (name:worldpop-population-counts-2015-2021-sdn)
+            - (name:worldpop-population-counts-2015-2030-sdn)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2021-sdn
+          - dataset_name: worldpop-population-counts-2015-2030-sdn
             comments: This dataset is complementary and adds value to the subcategory. The dataset is not up-to-date.
 
         complementary_datasets:
-          - dataset_name: worldpop-population-counts-2015-2021-sdn
+          - dataset_name: worldpop-population-counts-2015-2030-sdn
 
 #ROADS
       - name: roads
