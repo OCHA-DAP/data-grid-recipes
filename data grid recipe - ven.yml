@@ -157,14 +157,14 @@ categories:
         rules:
           include:
             - (name:hotosm_ven_populated_places)
-            - (name:worldpop-population-counts-2015-2025-ven)
+            - (name:worldpop-population-counts-2015-2030-ven)
           exclude:
         metadata_overrides:
-          - dataset_name: worldpop-population-counts-2015-2025-ven
+          - dataset_name: worldpop-population-counts-2015-2030-ven
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: worldpop-population-counts-2015-2025-ven
+          - dataset_name: worldpop-population-counts-2015-2030-ven
 
 #ROADS
       - name: roads
