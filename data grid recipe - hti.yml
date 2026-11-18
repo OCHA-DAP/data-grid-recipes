@@ -128,6 +128,7 @@ categories:
         rules:
           include:
             - (name:haiti-acutemalnutrition)
+            - (name:hti-acute-malnutrition)
           exclude:
 #FOOD PRICES
       - name: food_prices
