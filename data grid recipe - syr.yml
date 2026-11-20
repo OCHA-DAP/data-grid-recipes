@@ -111,6 +111,11 @@ categories:
           include:
             - (name:syria-acute-food-insecurity-classification)
           exclude:
+        metadata_overrides:
+          - dataset_name: syria-acute-food-insecurity-classification
+            display_state: complete
+            comments: 
+
 #ACUTE MALNUTRITION
       - name: acute_malnutrition
         title: Acute Malnutrition
