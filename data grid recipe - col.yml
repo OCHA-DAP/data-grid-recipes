@@ -112,6 +112,9 @@ categories:
             - (name:fao-diem-monitoring-system-household-surveys-aggregated-data)
           exclude:
         metadata_overrides:
+          - dataset_name: colombia-acute-food-insecurity-classification
+            display_state: complete
+            comments: 
           - dataset_name: fao-diem-monitoring-system-household-surveys-aggregated-data
             comments: This dataset is complementary and adds value to the subcategory.
 
