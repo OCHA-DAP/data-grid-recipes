@@ -173,14 +173,14 @@ categories:
         rules:
           include:
             - (name:hotosm_ven_roads)
-            - (name:venezuela-planet-road-surface-data)
+            - (name:venezuela-bolivarian-republic-of-planet-road-surface-data)
           exclude:
         metadata_overrides:
-          - dataset_name: venezuela-planet-road-surface-data
+          - dataset_name: venezuela-bolivarian-republic-of-planet-road-surface-data
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: venezuela-planet-road-surface-data
+          - dataset_name: venezuela-bolivarian-republic-of-planet-road-surface-data
 
 
 #HEALTH AND EDUCATION
