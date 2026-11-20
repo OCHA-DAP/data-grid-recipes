@@ -189,14 +189,14 @@ categories:
         rules:
           include:
             - (name:hotosm_syr_roads)
-            - (name:syria-planet-road-surface-data)
+            - (name:syrian-arab-republic-planet-road-surface-data)
           exclude:
         metadata_overrides:
-          - dataset_name: syria-planet-road-surface-data
+          - dataset_name: syrian-arab-republic-planet-road-surface-data
             comments: This dataset is complementary and adds value to the subcategory.
 
         complementary_datasets:
-          - dataset_name: syria-planet-road-surface-data
+          - dataset_name: syrian-arab-republic-planet-road-surface-data
 
 
 #HEALTH AND EDUCATION
