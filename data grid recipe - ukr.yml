@@ -193,7 +193,15 @@ categories:
         rules:
           include:
             - (name:hotosm_ukr_roads)
+            - (name:ukraine-planet-road-surface-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: ukraine-planet-road-surface-data
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: ukraine-planet-road-surface-data
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
