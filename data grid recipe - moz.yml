@@ -194,7 +194,15 @@ categories:
         rules:
           include:
             - (name:hotosm_moz_roads)
+            - (name:mozambique-planet-road-surface-data)
           exclude:
+        metadata_overrides:
+          - dataset_name: mozambique-planet-road-surface-data
+            comments: This dataset is complementary and adds value to the subcategory.
+
+        complementary_datasets:
+          - dataset_name: mozambique-planet-road-surface-data
+
 
 #HEALTH AND EDUCATION
   - name: health_and_education
