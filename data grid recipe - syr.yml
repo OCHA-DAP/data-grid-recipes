@@ -161,10 +161,10 @@ categories:
         description: Total population disaggregated age and sex categories, aggregated by administrative division.
         rules:
           include:
-            - (name:syrian-arab-republic-baseline-population)
+            - (name:cod-ps-syr)
           exclude:
         metadata_overrides:
-          - dataset_name: syrian-arab-republic-baseline-population
+          - dataset_name: cod-ps-syr
             comments: This data is only shared between specific partners and is available on request only.
 
 #POPULATED PLACES
